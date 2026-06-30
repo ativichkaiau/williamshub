@@ -6,7 +6,8 @@ import Link from 'next/link';
 export interface SubjectCard {
   code: string;
   name: string;
-  count: number;
+  count: number; // distinct lectures (L1, L2, …)
+  modules: number;
   slug: string;
 }
 
@@ -70,7 +71,7 @@ export default function CurriculumBrowser({
                   {s.code}
                 </span>
                 <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
-                  {s.count} lecture{s.count === 1 ? '' : 's'} →
+                  {s.count} lecture{s.count === 1 ? '' : 's'} · {s.modules} modules →
                 </span>
               </div>
               <span className="mt-2 text-sm font-bold text-slate-900 transition group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-400">

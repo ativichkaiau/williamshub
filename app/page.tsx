@@ -4,12 +4,17 @@ import CurriculumBrowser, { type YearData } from '../components/CurriculumBrowse
 
 export default function Home() {
   const years: YearData[] = curriculum.map((y) => {
-    const subjects = y.subjects.map((s) => ({
-      code: s.code,
-      name: s.name,
-      count: lecturesBySubject[s.code]?.length ?? 0,
-      slug: subjectSlug(s.code),
-    }));
+    const subjects = y.subjects.map((s) => {
+      const mods = lecturesBySubject[s.code] ?? [];
+      return {
+        code: s.code,
+        name: s.name,
+        // distinct lectures (L1, L2, …), not module count
+        count: new Set(mods.map((l) => l.source)).size,
+        modules: mods.length,
+        slug: subjectSlug(s.code),
+      };
+    });
     return {
       year: y.year,
       label: y.label,

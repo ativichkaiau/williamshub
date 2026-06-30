@@ -1,0 +1,44 @@
+// Per-lecture signature colors (L1–L9) and per-section semantic colors.
+// Class strings are literal so Tailwind's content scanner keeps them.
+
+export interface LectureTheme {
+  dot: string;
+  text: string;
+  chipBg: string;
+  grad: string;
+}
+
+export const lectureThemes: Record<string, LectureTheme> = {
+  l1: { dot: 'bg-rose-500', text: 'text-rose-600 dark:text-rose-400', chipBg: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-200', grad: 'from-rose-400 to-pink-500' },
+  l2: { dot: 'bg-sky-500', text: 'text-sky-600 dark:text-sky-400', chipBg: 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200', grad: 'from-sky-400 to-blue-500' },
+  l3: { dot: 'bg-violet-500', text: 'text-violet-600 dark:text-violet-400', chipBg: 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-200', grad: 'from-violet-400 to-purple-500' },
+  l4: { dot: 'bg-amber-500', text: 'text-amber-600 dark:text-amber-400', chipBg: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200', grad: 'from-amber-400 to-orange-500' },
+  l5: { dot: 'bg-teal-500', text: 'text-teal-600 dark:text-teal-400', chipBg: 'bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-200', grad: 'from-teal-400 to-emerald-500' },
+  l6: { dot: 'bg-orange-500', text: 'text-orange-600 dark:text-orange-400', chipBg: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-200', grad: 'from-orange-400 to-red-500' },
+  l7: { dot: 'bg-indigo-500', text: 'text-indigo-600 dark:text-indigo-400', chipBg: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200', grad: 'from-indigo-400 to-blue-500' },
+  l8: { dot: 'bg-fuchsia-500', text: 'text-fuchsia-600 dark:text-fuchsia-400', chipBg: 'bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-900/40 dark:text-fuchsia-200', grad: 'from-fuchsia-400 to-pink-500' },
+  l9: { dot: 'bg-cyan-500', text: 'text-cyan-600 dark:text-cyan-400', chipBg: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-200', grad: 'from-cyan-400 to-sky-500' },
+};
+
+// Accepts a slug ('l5') or a source string ('L5 — Vascular Disorders').
+export function lectureTheme(slugOrSource: string): LectureTheme {
+  const m = slugOrSource.match(/^l(\d+)/i);
+  const key = m ? `l${m[1]}` : '';
+  return lectureThemes[key] ?? lectureThemes.l1;
+}
+
+export interface SectionColor {
+  dot: string;
+  text: string;
+}
+
+export const sectionColors: Record<string, SectionColor> = {
+  highYield: { dot: 'bg-amber-500', text: 'text-amber-600 dark:text-amber-400' },
+  mechanism: { dot: 'bg-teal-500', text: 'text-teal-600 dark:text-teal-400' },
+  exam: { dot: 'bg-sky-500', text: 'text-sky-600 dark:text-sky-400' },
+  investigation: { dot: 'bg-indigo-500', text: 'text-indigo-600 dark:text-indigo-400' },
+  treatment: { dot: 'bg-emerald-500', text: 'text-emerald-600 dark:text-emerald-400' },
+  mnemonic: { dot: 'bg-violet-500', text: 'text-violet-600 dark:text-violet-400' },
+  trap: { dot: 'bg-rose-500', text: 'text-rose-600 dark:text-rose-400' },
+  quiz: { dot: 'bg-fuchsia-500', text: 'text-fuchsia-600 dark:text-fuchsia-400' },
+};

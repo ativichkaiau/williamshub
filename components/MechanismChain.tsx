@@ -49,9 +49,12 @@ function Arrow() {
 export default function MechanismChain({ chain }: { chain: Chain }) {
   return (
     <section className="clay clay-surface p-5">
-      <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-        {chain.title}
-      </h3>
+      <div className="mb-4 flex items-center gap-2">
+        <span className="h-2.5 w-2.5 rounded-full bg-teal-500" />
+        <h3 className="text-sm font-bold uppercase tracking-wide text-teal-600 dark:text-teal-400">
+          {chain.title}
+        </h3>
+      </div>
 
       {/* Spine */}
       <div className="flex flex-wrap items-center gap-2">

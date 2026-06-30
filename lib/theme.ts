@@ -22,6 +22,12 @@ export const lectureThemes: Record<string, LectureTheme> = {
   l11: { dot: 'bg-red-500', text: 'text-red-600 dark:text-red-400', chipBg: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-200', grad: 'from-red-400 to-rose-500' },
   l12: { dot: 'bg-blue-500', text: 'text-blue-600 dark:text-blue-400', chipBg: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200', grad: 'from-blue-400 to-indigo-500' },
   l13: { dot: 'bg-purple-500', text: 'text-purple-600 dark:text-purple-400', chipBg: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-200', grad: 'from-purple-400 to-fuchsia-500' },
+  l14: { dot: 'bg-pink-500', text: 'text-pink-600 dark:text-pink-400', chipBg: 'bg-pink-100 text-pink-700 dark:bg-pink-900/40 dark:text-pink-200', grad: 'from-pink-400 to-rose-500' },
+  l15: { dot: 'bg-lime-500', text: 'text-lime-600 dark:text-lime-400', chipBg: 'bg-lime-100 text-lime-700 dark:bg-lime-900/40 dark:text-lime-200', grad: 'from-lime-400 to-green-500' },
+  l16: { dot: 'bg-green-500', text: 'text-green-600 dark:text-green-400', chipBg: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-200', grad: 'from-green-400 to-emerald-500' },
+  l17: { dot: 'bg-yellow-500', text: 'text-yellow-600 dark:text-yellow-400', chipBg: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-200', grad: 'from-yellow-400 to-amber-500' },
+  l18: { dot: 'bg-sky-500', text: 'text-sky-600 dark:text-sky-400', chipBg: 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200', grad: 'from-sky-400 to-blue-500' },
+  l19: { dot: 'bg-stone-500', text: 'text-stone-600 dark:text-stone-400', chipBg: 'bg-stone-100 text-stone-700 dark:bg-stone-900/40 dark:text-stone-200', grad: 'from-stone-400 to-amber-500' },
 };
 
 // Accepts a slug ('l5') or a source string ('L5 — Vascular Disorders').

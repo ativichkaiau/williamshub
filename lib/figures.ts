@@ -50,4 +50,50 @@ export const ATHEROSCLEROSIS_PLAQUE = `<svg viewBox="0 0 440 160" xmlns="http://
   <text x="360" y="130" text-anchor="middle" font-size="11" fill="#475569">Rupture + thrombus</text>
 </svg>`;
 
-export const STARLING_FORCES = '';
+export const RAAS_PATHWAY = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Renin-angiotensin-aldosterone system and drug block points" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <rect x="150" y="12" width="140" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="220" y="29" text-anchor="middle">Angiotensinogen</text>
+    <line x1="220" y1="38" x2="220" y2="56" stroke="#94a3b8"/><text x="258" y="51" fill="#475569" font-size="11">Renin</text>
+    <rect x="160" y="56" width="120" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="220" y="73" text-anchor="middle">Angiotensin I</text>
+    <line x1="220" y1="82" x2="220" y2="100" stroke="#94a3b8"/><text x="262" y="95" fill="#dc2626" font-size="11">ACE ✗ ACEi</text>
+    <rect x="158" y="100" width="124" height="26" rx="6" fill="#e0e7ff" stroke="#a5b4fc"/><text x="220" y="117" text-anchor="middle">Angiotensin II</text>
+    <text x="120" y="118" text-anchor="end" fill="#dc2626" font-size="11">ARB ✗ (AT1)</text>
+    <line x1="200" y1="126" x2="120" y2="150" stroke="#94a3b8"/><line x1="240" y1="126" x2="320" y2="150" stroke="#94a3b8"/>
+    <rect x="40" y="150" width="150" height="30" rx="6" fill="#fee2e2" stroke="#fecaca"/><text x="115" y="169" text-anchor="middle">Vasoconstriction ↑PVR</text>
+    <rect x="250" y="150" width="160" height="30" rx="6" fill="#fef3c7" stroke="#fde68a"/><text x="330" y="169" text-anchor="middle">Aldosterone → ↑Na⁺/H₂O</text>
+    <text x="330" y="196" text-anchor="middle" fill="#dc2626" font-size="11">MRA ✗</text>
+    <line x1="115" y1="180" x2="200" y2="212" stroke="#94a3b8"/><line x1="330" y1="186" x2="240" y2="212" stroke="#94a3b8"/>
+    <rect x="170" y="212" width="100" height="28" rx="6" fill="#fee2e2" stroke="#fca5a5"/><text x="220" y="230" text-anchor="middle" font-weight="600" fill="#b91c1c">↑ Blood pressure</text>
+  </g>
+</svg>`;
+
+export const BP_DETERMINANTS = `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Blood pressure determinants: BP equals cardiac output times peripheral resistance" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="200" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <rect x="160" y="12" width="120" height="28" rx="6" fill="#fee2e2" stroke="#fca5a5"/><text x="220" y="30" text-anchor="middle" font-weight="600">Blood pressure</text>
+    <text x="220" y="56" text-anchor="middle" fill="#475569">= CO × PVR</text>
+    <line x1="180" y1="62" x2="110" y2="84" stroke="#94a3b8"/><line x1="260" y1="62" x2="330" y2="84" stroke="#94a3b8"/>
+    <rect x="50" y="84" width="120" height="26" rx="6" fill="#dbeafe" stroke="#bfdbfe"/><text x="110" y="101" text-anchor="middle">Cardiac output</text>
+    <rect x="270" y="84" width="130" height="26" rx="6" fill="#dcfce7" stroke="#bbf7d0"/><text x="335" y="101" text-anchor="middle">Periph. resistance</text>
+    <text x="110" y="128" text-anchor="middle" fill="#475569">= HR × SV</text>
+    <line x1="80" y1="134" x2="50" y2="152" stroke="#94a3b8"/><line x1="140" y1="134" x2="170" y2="152" stroke="#94a3b8"/>
+    <rect x="6" y="152" width="80" height="24" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="46" y="168" text-anchor="middle" font-size="11">Heart rate</text>
+    <rect x="98" y="152" width="120" height="24" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="158" y="168" text-anchor="middle" font-size="11">Preload·Contract.</text>
+    <text x="335" y="128" text-anchor="middle" font-size="11" fill="#475569">SNS · RAAS · vessel tone</text>
+  </g>
+</svg>`;
+
+export const HYPERTROPHY_PATTERNS = `<svg viewBox="0 0 440 160" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Normal, concentric (pressure overload) and eccentric (volume overload) hypertrophy" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="160" rx="10" fill="#fbfbff"/>
+  <g stroke="#9ca3af" fill="#fecaca">
+    <circle cx="80" cy="60" r="34" stroke-width="6"/><circle cx="80" cy="60" r="26" fill="#ffffff" stroke="none"/>
+    <circle cx="220" cy="60" r="34" stroke-width="14"/><circle cx="220" cy="60" r="16" fill="#ffffff" stroke="none"/>
+    <circle cx="360" cy="60" r="40" stroke-width="5"/><circle cx="360" cy="60" r="33" fill="#ffffff" stroke="none"/>
+  </g>
+  <g font-size="11" fill="#475569" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="80" y="120">Normal</text>
+    <text x="220" y="120">Concentric</text><text x="220" y="134" font-size="10">pressure overload (HTN/AS)</text>
+    <text x="360" y="124">Eccentric</text><text x="360" y="138" font-size="10">volume overload (AR/dilated)</text>
+  </g>
+</svg>`;

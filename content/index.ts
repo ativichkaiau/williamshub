@@ -61,73 +61,73 @@ import rightSidedHf from './lectures/right-sided-hf';
 import antianginalPrinciples from './lectures/antianginal-principles';
 import organicNitrates from './lectures/organic-nitrates';
 import betaBlockersCcbAngina from './lectures/beta-blockers-ccb-angina';
+// L14 — Pathology of Heart Failure
+import hfPathologyOverview from './lectures/hf-pathology-overview';
+import cardiacHypertrophyRemodeling from './lectures/cardiac-hypertrophy-remodeling';
+import hfOrganPathology from './lectures/hf-organ-pathology';
+// L15 — Drugs Used in Heart Failure
+import hfPharmacologyPillars from './lectures/hf-pharmacology-pillars';
+import digoxinInotropes from './lectures/digoxin-inotropes';
+import hfOtherDrugs from './lectures/hf-other-drugs';
+// L16 — Hypertension
+import htnClassification from './lectures/htn-classification';
+import htnPathophysiology from './lectures/htn-pathophysiology';
+import hypertensiveTargetOrganDamage from './lectures/hypertensive-target-organ-damage';
+// L17 — Shock
+import shockMechanismsTypes from './lectures/shock-mechanisms-types';
+import vasopressorsInotropes from './lectures/vasopressors-inotropes';
+// L18 — Antihypertensive Drugs
+import antihypertensiveOverview from './lectures/antihypertensive-overview';
+import htnDiureticsRaas from './lectures/htn-diuretics-raas';
+import htnCcbSympatholytics from './lectures/htn-ccb-sympatholytics';
+// L19 — Vascular Diseases II
+import vasculitisOverview from './lectures/vasculitis-overview';
+import largeMediumVasculitis from './lectures/large-medium-vasculitis';
+import smallVesselAndVenous from './lectures/small-vessel-and-venous';
 
 export * from './curriculum';
 
-// Registry of all lecture modules, ordered chronologically by lecture (L1 → L13).
+// Registry of all lecture modules, ordered chronologically by lecture (L1 → L19).
 // Each module belongs to exactly ONE lecture (its `source`). Add new modules here.
 export const lectures: Lecture[] = [
-  // L1 — Cardiac Arrhythmias
-  avBlock,
-  atrialFibrillation,
-  atrialFlutter,
-  prematureContractions,
-  ventricularTachycardia,
-  ventricularFibrillation,
-  // L2 — Abnormal ECG
-  stemiLocalization,
-  bundleBranchBlock,
-  escapeRhythmsSinusDysfunction,
-  // L3 — Congenital Heart Disease
-  vsd,
-  asd,
-  pda,
-  tetralogyOfFallot,
-  // L4 — Antiarrhythmic Drugs
+  // L1
+  avBlock, atrialFibrillation, atrialFlutter, prematureContractions, ventricularTachycardia, ventricularFibrillation,
+  // L2
+  stemiLocalization, bundleBranchBlock, escapeRhythmsSinusDysfunction,
+  // L3
+  vsd, asd, pda, tetralogyOfFallot,
+  // L4
   antiarrhythmicDrugs,
-  // L5 — Vascular Disorders
-  atherosclerosis,
-  arteriosclerosisPatterns,
-  aorticAneurysm,
-  aorticDissection,
-  // L6 — Ischemic Heart Disease
-  ihdOverview,
-  myocardialInfarctionPathology,
-  miComplications,
-  // L7 — Coagulation & Hemostasis
-  antiplatelets,
-  anticoagulants,
-  fibrinolytics,
-  // L8 — Valvular Heart Disease
-  aorticStenosis,
-  mitralStenosis,
-  mitralValveProlapse,
-  rheumaticHeartDisease,
-  infectiveEndocarditis,
-  nonbacterialEndocarditis,
-  // L9 — Acute Coronary Syndrome
-  acsSpectrum,
-  acsManagement,
-  // L10 — Cardiomyopathy & Myocarditis
-  cardiomyopathyOverview,
-  dilatedCardiomyopathy,
-  hypertrophicCardiomyopathy,
-  restrictiveCardiomyopathy,
-  arvc,
-  myocarditis,
-  // L11 — Cardiogenic Shock
-  cardiogenicShock,
-  scaiShockClassification,
-  cardiacArrest,
-  // L12 — Heart Failure
-  heartFailureOverview,
-  hfrefSystolic,
-  hfpefDiastolic,
-  rightSidedHf,
-  // L13 — Antianginal Drugs
-  antianginalPrinciples,
-  organicNitrates,
-  betaBlockersCcbAngina,
+  // L5
+  atherosclerosis, arteriosclerosisPatterns, aorticAneurysm, aorticDissection,
+  // L6
+  ihdOverview, myocardialInfarctionPathology, miComplications,
+  // L7
+  antiplatelets, anticoagulants, fibrinolytics,
+  // L8
+  aorticStenosis, mitralStenosis, mitralValveProlapse, rheumaticHeartDisease, infectiveEndocarditis, nonbacterialEndocarditis,
+  // L9
+  acsSpectrum, acsManagement,
+  // L10
+  cardiomyopathyOverview, dilatedCardiomyopathy, hypertrophicCardiomyopathy, restrictiveCardiomyopathy, arvc, myocarditis,
+  // L11
+  cardiogenicShock, scaiShockClassification, cardiacArrest,
+  // L12
+  heartFailureOverview, hfrefSystolic, hfpefDiastolic, rightSidedHf,
+  // L13
+  antianginalPrinciples, organicNitrates, betaBlockersCcbAngina,
+  // L14
+  hfPathologyOverview, cardiacHypertrophyRemodeling, hfOrganPathology,
+  // L15
+  hfPharmacologyPillars, digoxinInotropes, hfOtherDrugs,
+  // L16
+  htnClassification, htnPathophysiology, hypertensiveTargetOrganDamage,
+  // L17
+  shockMechanismsTypes, vasopressorsInotropes,
+  // L18
+  antihypertensiveOverview, htnDiureticsRaas, htnCcbSympatholytics,
+  // L19
+  vasculitisOverview, largeMediumVasculitis, smallVesselAndVenous,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(
@@ -159,7 +159,7 @@ export interface LectureSet {
   items: Lecture[];
 }
 
-// Numeric sort so L10–L13 follow L9 (not L1).
+// Numeric sort so L10–L19 follow L9 (not L1).
 export const lectureSets: LectureSet[] = Object.entries(lecturesBySource)
   .map(([source, items]) => ({ slug: lectureSetSlug(source), source, items }))
   .sort((a, b) => a.source.localeCompare(b.source, undefined, { numeric: true }));

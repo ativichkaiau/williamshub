@@ -18,10 +18,33 @@ import pda from './lectures/pda';
 import tetralogyOfFallot from './lectures/tetralogy-of-fallot';
 // L4 — Antiarrhythmic Drugs
 import antiarrhythmicDrugs from './lectures/antiarrhythmic-drugs';
+// L5 — Vascular Disorders
+import atherosclerosis from './lectures/atherosclerosis';
+import arteriosclerosisPatterns from './lectures/arteriosclerosis-patterns';
+import aorticAneurysm from './lectures/aortic-aneurysm';
+import aorticDissection from './lectures/aortic-dissection';
+// L6 — Ischemic Heart Disease
+import ihdOverview from './lectures/ihd-overview';
+import myocardialInfarctionPathology from './lectures/myocardial-infarction-pathology';
+import miComplications from './lectures/mi-complications';
+// L7 — Coagulation & Hemostasis
+import antiplatelets from './lectures/antiplatelets';
+import anticoagulants from './lectures/anticoagulants';
+import fibrinolytics from './lectures/fibrinolytics';
+// L8 — Valvular Heart Disease
+import aorticStenosis from './lectures/aortic-stenosis';
+import mitralStenosis from './lectures/mitral-stenosis';
+import mitralValveProlapse from './lectures/mitral-valve-prolapse';
+import rheumaticHeartDisease from './lectures/rheumatic-heart-disease';
+import infectiveEndocarditis from './lectures/infective-endocarditis';
+import nonbacterialEndocarditis from './lectures/nonbacterial-endocarditis';
+// L9 — Acute Coronary Syndrome
+import acsSpectrum from './lectures/acs-spectrum';
+import acsManagement from './lectures/acs-management';
 
 export * from './curriculum';
 
-// Registry of all lecture modules, ordered chronologically by lecture (L1 → L4).
+// Registry of all lecture modules, ordered chronologically by lecture (L1 → L9).
 // Each module belongs to exactly ONE lecture (its `source`). Add new modules here.
 export const lectures: Lecture[] = [
   // L1 — Cardiac Arrhythmias
@@ -42,13 +65,36 @@ export const lectures: Lecture[] = [
   tetralogyOfFallot,
   // L4 — Antiarrhythmic Drugs
   antiarrhythmicDrugs,
+  // L5 — Vascular Disorders
+  atherosclerosis,
+  arteriosclerosisPatterns,
+  aorticAneurysm,
+  aorticDissection,
+  // L6 — Ischemic Heart Disease
+  ihdOverview,
+  myocardialInfarctionPathology,
+  miComplications,
+  // L7 — Coagulation & Hemostasis
+  antiplatelets,
+  anticoagulants,
+  fibrinolytics,
+  // L8 — Valvular Heart Disease
+  aorticStenosis,
+  mitralStenosis,
+  mitralValveProlapse,
+  rheumaticHeartDisease,
+  infectiveEndocarditis,
+  nonbacterialEndocarditis,
+  // L9 — Acute Coronary Syndrome
+  acsSpectrum,
+  acsManagement,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(
   lectures.map((l) => [l.id, l]),
 );
 
-// Group by source lecture for the catalog (keys sort chronologically: L1 < L2 < L3 < L4).
+// Group by source lecture for the catalog (keys sort chronologically: L1 < L2 < … < L9).
 export const lecturesBySource = lectures.reduce<Record<string, Lecture[]>>((acc, l) => {
   (acc[l.source] ??= []).push(l);
   return acc;

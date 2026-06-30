@@ -98,6 +98,10 @@ export const atrialFibrillation: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Atrial fibrillation', ecg: 'afib', caption: 'Irregularly irregular, no discrete P waves, fibrillatory baseline.' },
+  ],
 };
 
 export default atrialFibrillation;

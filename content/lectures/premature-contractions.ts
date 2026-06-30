@@ -109,6 +109,11 @@ export const prematureContractions: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'PAC', ecg: 'pac', caption: 'Early abnormal P + narrow QRS; non-compensatory pause.' },
+    { title: 'PVC', ecg: 'pvc', caption: 'Early wide bizarre QRS, no P; full compensatory pause.' },
+  ],
 };
 
 export default prematureContractions;

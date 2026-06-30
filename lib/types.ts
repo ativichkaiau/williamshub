@@ -101,6 +101,13 @@ export interface QuizQuestion {
   tests?: TagKind;          // which lens this question drills (often 'exam')
 }
 
+export interface Figure {
+  title: string;
+  caption?: string;
+  ecg?: string; // rhythm name → <EcgStrip> (e.g. 'afib', 'mobitz-i', 'stemi')
+  svg?: string; // raw inline SVG (physiology / pathology figures)
+}
+
 export interface Lecture {
   id: string;               // 'aortic-dissection'
   title: string;
@@ -117,6 +124,7 @@ export interface Lecture {
   mnemonics: Mnemonic[];
   traps: TrapCard[];
   quiz: QuizQuestion[];
+  figures?: Figure[]; // optional EKG / physiology / pathology diagrams
 }
 
 // ---------------------------------------------------------------------------

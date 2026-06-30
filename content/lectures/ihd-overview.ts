@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { ATHEROSCLEROSIS_PLAQUE } from '../../lib/figures';
 
 export const ihdOverview: Lecture = {
   id: 'ihd-overview',
@@ -96,6 +97,10 @@ export const ihdOverview: Lecture = {
       explanation: 'Rest pain, crescendo pattern, prolonged duration, and lack of relief define unstable angina — an acute coronary syndrome from an unstable plaque, not the exertional/relieved pattern of stable angina.',
       tests: 'exam',
     },
+  ],
+
+  figures: [
+    { title: 'Stable plaque vs acute plaque change', svg: ATHEROSCLEROSIS_PLAQUE, caption: 'Stable stenosis → chronic coronary syndrome; rupture + thrombus → ACS.' },
   ],
 };
 

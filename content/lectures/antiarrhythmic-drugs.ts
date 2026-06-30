@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { CARDIAC_ACTION_POTENTIAL } from '../../lib/figures';
 
 export const antiarrhythmicDrugs: Lecture = {
   id: 'antiarrhythmic-drugs',
@@ -111,6 +112,10 @@ export const antiarrhythmicDrugs: Lecture = {
       explanation: 'IV adenosine causes transient AV nodal block that interrupts the AVNRT re-entrant circuit — the first-line acute drug after vagal maneuvers fail.',
       tests: 'treatment',
     },
+  ],
+
+  figures: [
+    { title: 'Cardiac action potential & drug-class targets', svg: CARDIAC_ACTION_POTENTIAL, caption: 'Class I → phase 0 (Na⁺); III → phase 3 (K⁺); IV → Ca²⁺; II → SA/AV nodes.' },
   ],
 };
 

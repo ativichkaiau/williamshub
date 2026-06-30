@@ -97,6 +97,10 @@ export const ventricularFibrillation: Lecture = {
       tests: 'treatment',
     },
   ],
+
+  figures: [
+    { title: 'Ventricular fibrillation', ecg: 'vf', caption: 'Chaotic baseline — no P, QRS, or T. Defibrillate.' },
+  ],
 };
 
 export default ventricularFibrillation;

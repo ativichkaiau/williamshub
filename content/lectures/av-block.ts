@@ -105,6 +105,13 @@ export const avBlock: Lecture = {
       tests: 'treatment',
     },
   ],
+
+  figures: [
+    { title: '1° AV block', ecg: 'first-degree', caption: 'Constant prolonged PR (>200 ms); every P conducts.' },
+    { title: '2° Mobitz I (Wenckebach)', ecg: 'mobitz-i', caption: 'PR lengthens progressively, then a QRS drops.' },
+    { title: '2° Mobitz II', ecg: 'mobitz-ii', caption: 'Constant PR with a sudden dropped QRS.' },
+    { title: '3° (complete)', ecg: 'third-degree', caption: 'P waves and QRS march independently (AV dissociation).' },
+  ],
 };
 
 export default avBlock;

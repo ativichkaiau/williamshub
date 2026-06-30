@@ -1,4 +1,5 @@
 import MechanismChain from './MechanismChain';
+import EcgStrip from './EcgStrip';
 import Quiz from './Quiz';
 import RecallGate from './RecallGate';
 import { Rich } from './Rich';
@@ -40,6 +41,35 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
 
       {/* Mechanism */}
       <MechanismChain chain={l.mechanism} />
+
+      {/* Diagrams: EKG / physiology / pathology */}
+      {l.figures && l.figures.length > 0 && (
+        <Card>
+          <div className="mb-3 flex items-center gap-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
+            <h3 className="text-sm font-bold uppercase tracking-wide text-red-600 dark:text-red-400">
+              Diagrams
+            </h3>
+          </div>
+          <div className="space-y-4">
+            {l.figures.map((f, i) => (
+              <figure key={i}>
+                <figcaption className="mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200">
+                  {f.title}
+                </figcaption>
+                {f.ecg ? (
+                  <EcgStrip rhythm={f.ecg} />
+                ) : f.svg ? (
+                  <div dangerouslySetInnerHTML={{ __html: f.svg }} />
+                ) : null}
+                {f.caption ? (
+                  <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{f.caption}</p>
+                ) : null}
+              </figure>
+            ))}
+          </div>
+        </Card>
+      )}
 
       {/* Exam findings */}
       <Card>

@@ -103,6 +103,10 @@ export const ventricularTachycardia: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Monomorphic VT', ecg: 'vt', caption: 'Wide, regular, fast complexes; no P waves.' },
+  ],
 };
 
 export default ventricularTachycardia;

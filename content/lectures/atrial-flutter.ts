@@ -85,6 +85,10 @@ export const atrialFlutter: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Atrial flutter (sawtooth)', ecg: 'flutter', caption: 'Sawtooth F waves with ratioed (here 2:1) AV conduction.' },
+  ],
 };
 
 export default atrialFlutter;

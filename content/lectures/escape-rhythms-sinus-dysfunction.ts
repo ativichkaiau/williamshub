@@ -109,6 +109,10 @@ export const escapeRhythmsSinusDysfunction: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Sinus bradycardia', ecg: 'sinus-brady', caption: 'Sinus rhythm <60/min; a P before every QRS.' },
+  ],
 };
 
 export default escapeRhythmsSinusDysfunction;

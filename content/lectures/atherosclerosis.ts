@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { ATHEROSCLEROSIS_PLAQUE } from '../../lib/figures';
 
 export const atherosclerosis: Lecture = {
   id: 'atherosclerosis',
@@ -89,6 +90,10 @@ export const atherosclerosis: Lecture = {
       explanation: 'A thin fibrous cap over a large lipid/necrotic core is the “vulnerable plaque” that ruptures and thromboses, causing ACS — independent of overall stenosis severity.',
       tests: 'mechanism',
     },
+  ],
+
+  figures: [
+    { title: 'Plaque progression', svg: ATHEROSCLEROSIS_PLAQUE, caption: 'Fatty streak → fibroatheroma (thin cap + lipid core) → rupture + thrombus.' },
   ],
 };
 

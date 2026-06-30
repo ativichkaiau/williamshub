@@ -89,6 +89,10 @@ export const stemiLocalization: Lecture = {
       tests: 'investigation',
     },
   ],
+
+  figures: [
+    { title: 'ST-elevation (STEMI)', ecg: 'stemi', caption: 'Convex ST elevation in the leads facing the infarct.' },
+  ],
 };
 
 export default stemiLocalization;

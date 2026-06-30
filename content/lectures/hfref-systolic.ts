@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { FRANK_STARLING } from '../../lib/figures';
 
 export const hfrefSystolic: Lecture = {
   id: 'hfref-systolic',
@@ -82,6 +83,10 @@ export const hfrefSystolic: Lecture = {
       explanation: 'Neurohormonal blockade (ACEi/ARB, beta-blockers, MRAs, and SGLT2 inhibitors) interrupts the RAAS/SNS-driven remodeling cycle and improves survival in HFrEF.',
       tests: 'treatment',
     },
+  ],
+
+  figures: [
+    { title: 'Frank-Starling curves', svg: FRANK_STARLING, caption: 'The failing ventricle shifts down/right — less stroke volume for a given preload.' },
   ],
 };
 

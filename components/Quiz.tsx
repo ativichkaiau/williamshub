@@ -8,22 +8,21 @@ function QuizItem({ q }: { q: QuizQuestion }) {
   const answered = chosen !== null;
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4">
-      <p className="text-sm font-medium text-slate-900">{q.stem}</p>
+    <div className="clay-inset clay-surface p-4">
+      <p className="text-sm font-medium text-slate-900 dark:text-white">{q.stem}</p>
       <div className="mt-3 space-y-2">
         {q.options.map((o) => {
           const isCorrect = o.id === q.answerId;
           const isChosen = o.id === chosen;
-          let cls =
-            'w-full text-left text-sm px-3 py-2 rounded-lg border transition ';
+          let cls = 'clay-node w-full text-left text-sm px-3 py-2 transition ';
           if (!answered) {
-            cls += 'border-slate-200 bg-white hover:bg-slate-50 cursor-pointer';
+            cls += 'clay-surface text-slate-700 dark:text-slate-200 active:translate-y-px';
           } else if (isCorrect) {
-            cls += 'border-emerald-300 bg-emerald-50 text-emerald-900';
+            cls += 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/45 dark:text-emerald-100';
           } else if (isChosen) {
-            cls += 'border-rose-300 bg-rose-50 text-rose-900';
+            cls += 'bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100';
           } else {
-            cls += 'border-slate-200 bg-white text-slate-500';
+            cls += 'clay-surface text-slate-400 dark:text-slate-500';
           }
           return (
             <button
@@ -33,18 +32,18 @@ function QuizItem({ q }: { q: QuizQuestion }) {
               onClick={() => setChosen(o.id)}
               className={cls}
             >
-              <span className="font-medium uppercase">{o.id}.</span> {o.text}
+              <span className="font-bold uppercase">{o.id}.</span> {o.text}
             </button>
           );
         })}
       </div>
       {answered && (
-        <div className="mt-3 rounded-lg bg-slate-50 p-3 text-sm leading-relaxed text-slate-600">
+        <div className="clay mt-3 p-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
           <span
             className={
               chosen === q.answerId
-                ? 'font-semibold text-emerald-700'
-                : 'font-semibold text-rose-700'
+                ? 'font-bold text-emerald-600 dark:text-emerald-400'
+                : 'font-bold text-rose-500 dark:text-rose-400'
             }
           >
             {chosen === q.answerId ? 'Correct. ' : 'Not quite. '}

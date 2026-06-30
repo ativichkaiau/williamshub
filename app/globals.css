@@ -4,8 +4,62 @@
 
 :root {
   color-scheme: light;
+  --bg-1: #d7f5e6; /* mint */
+  --bg-2: #eef2ff; /* pale indigo */
+  --bg-3: #ece9fe; /* lavender */
+  --clay-surface: #eef2f8;
+  --clay-d: rgba(15, 23, 42, 0.13); /* dark shadow */
+  --clay-l: rgba(255, 255, 255, 0.95); /* light shadow */
+  --grid: rgba(15, 23, 42, 0.04);
+}
+
+.dark {
+  color-scheme: dark;
+  --bg-1: #0a1322;
+  --bg-2: #0e1526;
+  --bg-3: #1a1740;
+  --clay-surface: #1c2740;
+  --clay-d: rgba(0, 0, 0, 0.55);
+  --clay-l: rgba(148, 163, 184, 0.08);
+  --grid: rgba(148, 163, 184, 0.05);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-2);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2) 48%, var(--bg-3));
+  background-size:
+    28px 28px,
+    28px 28px,
+    100% 100%;
+  background-attachment: fixed;
+}
+
+/* Claymorphism — soft, puffy extruded surfaces. */
+@layer components {
+  .clay {
+    background: var(--clay-surface);
+    border-radius: 22px;
+    box-shadow: 7px 7px 16px var(--clay-d), -7px -7px 16px var(--clay-l);
+  }
+  .clay-pill {
+    background: var(--clay-surface);
+    border-radius: 9999px;
+    box-shadow: 5px 5px 11px var(--clay-d), -5px -5px 11px var(--clay-l);
+  }
+  .clay-node {
+    border-radius: 14px;
+    box-shadow: 4px 4px 9px var(--clay-d), -4px -4px 9px var(--clay-l);
+  }
+  .clay-inset {
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 9px var(--clay-d), inset -4px -4px 9px var(--clay-l);
+  }
 }

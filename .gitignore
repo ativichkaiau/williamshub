@@ -20,10 +20,11 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
-# Editor / OS
+# Editor / OS / tooling
 .DS_Store
 .vscode/
 .idea/
+.claude/
 *.swp
 
 # TypeScript

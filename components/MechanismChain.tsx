@@ -3,14 +3,14 @@
 import { useState } from 'react';
 import type { MechanismChain as Chain, MechanismStep, Emphasis } from '../lib/types';
 
-// Functional, not decorative. Renders the ordered spine left→right with arrows,
-// then forks labelled branches. 'key' steps are exam-critical; 'danger' steps are lethal.
-// Hover/tap a node with a `detail` to reveal the one-line "why".
+// Claymorphic mechanism diagram. Ordered spine left→right with arrows, then
+// labelled branches. 'key' steps are exam-critical (mint), 'danger' steps lethal (rose).
+// Tap a node with a `detail` to reveal the one-line "why".
 
 const tone: Record<Emphasis, string> = {
-  normal: 'border-slate-200 bg-white text-slate-800',
-  key: 'border-teal-300 bg-teal-50 text-teal-900 ring-1 ring-teal-200',
-  danger: 'border-rose-300 bg-rose-50 text-rose-900 ring-1 ring-rose-200',
+  normal: 'clay-surface text-slate-700 dark:text-slate-200',
+  key: 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/45 dark:text-emerald-100',
+  danger: 'bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100',
 };
 
 function Node({ step }: { step: MechanismStep }) {
@@ -20,8 +20,8 @@ function Node({ step }: { step: MechanismStep }) {
     <button
       type="button"
       onClick={() => step.detail && setOpen((v) => !v)}
-      className={`group relative rounded-xl border px-3 py-2 text-sm font-medium shadow-sm transition ${tone[e]} ${
-        step.detail ? 'cursor-pointer hover:shadow-md' : 'cursor-default'
+      className={`clay-node relative px-3 py-2 text-sm font-medium transition ${tone[e]} ${
+        step.detail ? 'cursor-pointer active:translate-y-px' : 'cursor-default'
       }`}
     >
       <span className="flex items-center gap-1.5">
@@ -30,7 +30,7 @@ function Node({ step }: { step: MechanismStep }) {
         {step.label}
       </span>
       {step.detail && open && (
-        <span className="absolute left-0 top-full z-10 mt-1 w-56 rounded-lg border border-slate-200 bg-white p-2 text-left text-xs font-normal text-slate-600 shadow-lg">
+        <span className="clay clay-surface absolute left-0 top-full z-10 mt-2 w-56 p-3 text-left text-xs font-normal text-slate-600 dark:text-slate-300">
           {step.detail}
         </span>
       )}
@@ -39,13 +39,17 @@ function Node({ step }: { step: MechanismStep }) {
 }
 
 function Arrow() {
-  return <span className="select-none text-slate-300" aria-hidden>→</span>;
+  return (
+    <span className="select-none text-slate-400 dark:text-slate-500" aria-hidden>
+      →
+    </span>
+  );
 }
 
 export default function MechanismChain({ chain }: { chain: Chain }) {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
+    <section className="clay clay-surface p-5">
+      <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
         {chain.title}
       </h3>
 
@@ -61,9 +65,12 @@ export default function MechanismChain({ chain }: { chain: Chain }) {
 
       {/* Branches */}
       {chain.branches?.map((b, bi) => (
-        <div key={bi} className="mt-4 border-l-2 border-dashed border-slate-200 pl-4">
+        <div
+          key={bi}
+          className="mt-4 border-l-2 border-dashed border-slate-300 pl-4 dark:border-slate-600"
+        >
           {b.title && (
-            <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
+            <div className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-400 dark:text-slate-500">
               ↳ {b.title}
             </div>
           )}

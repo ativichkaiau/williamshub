@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { PV_LOOP_VALVE } from '../../lib/figures';
 
 export const aorticStenosis: Lecture = {
   id: 'aortic-stenosis',
@@ -79,6 +80,11 @@ export const aorticStenosis: Lecture = {
       explanation: 'Exertional syncope + an ejection systolic murmur radiating to the carotids + a soft S2 = aortic stenosis, with concentric LVH from chronic pressure overload.',
       tests: 'exam',
     },
+  ],
+
+  figures: [
+    { title: 'Murmur timing — aortic stenosis', murmur: 'aortic-stenosis', caption: 'Ejection (crescendo–decrescendo) systolic murmur between S1 and S2; radiates to the carotids.' },
+    { title: 'Pressure-volume loop', svg: PV_LOOP_VALVE, caption: 'AS = pressure overload → tall loop; regurgitation = volume overload → wide loop.' },
   ],
 };
 

@@ -99,6 +99,10 @@ export const aorticDissection: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — acute aortic regurgitation', murmur: 'aortic-regurgitation', caption: 'Early-diastolic decrescendo murmur right after S2 (ascending/root involvement).' },
+  ],
 };
 
 export default aorticDissection;

@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { WIGGERS_CYCLE, PV_LOOP_NORMAL } from '../../lib/figures';
 
 export const heartFailureOverview: Lecture = {
   id: 'heart-failure-overview',
@@ -77,6 +78,11 @@ export const heartFailureOverview: Lecture = {
       explanation: 'A positive hepatojugular reflux with elevated JVP demonstrates systemic venous congestion (backward right-heart failure).',
       tests: 'exam',
     },
+  ],
+
+  figures: [
+    { title: 'Wiggers cardiac cycle', svg: WIGGERS_CYCLE, caption: 'Aortic/LV/LA pressures, LV volume, ECG, and heart sounds across one cycle.' },
+    { title: 'LV pressure-volume loop', svg: PV_LOOP_NORMAL, caption: 'Filling → isovolumic contraction → ejection → isovolumic relaxation.' },
   ],
 };
 

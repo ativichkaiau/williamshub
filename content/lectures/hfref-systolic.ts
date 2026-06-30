@@ -1,5 +1,5 @@
 import type { Lecture } from '../../lib/types';
-import { FRANK_STARLING } from '../../lib/figures';
+import { FRANK_STARLING, PV_LOOP_HF } from '../../lib/figures';
 
 export const hfrefSystolic: Lecture = {
   id: 'hfref-systolic',
@@ -87,6 +87,7 @@ export const hfrefSystolic: Lecture = {
 
   figures: [
     { title: 'Frank-Starling curves', svg: FRANK_STARLING, caption: 'The failing ventricle shifts down/right — less stroke volume for a given preload.' },
+    { title: 'Pressure-volume loops', svg: PV_LOOP_HF, caption: 'HFrEF (red): right-shifted loop with reduced stroke volume / EF.' },
   ],
 };
 

@@ -98,6 +98,10 @@ export const vsd: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — VSD', murmur: 'vsd', caption: 'Harsh pansystolic murmur (plateau) filling S1→S2 at the LLSB.' },
+  ],
 };
 
 export default vsd;

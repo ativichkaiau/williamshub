@@ -83,6 +83,10 @@ export const mitralValveProlapse: Lecture = {
       tests: 'mechanism',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — MVP', murmur: 'mvp', caption: 'Mid-systolic click followed by a late-systolic murmur.' },
+  ],
 };
 
 export default mitralValveProlapse;

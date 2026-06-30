@@ -97,3 +97,83 @@ export const HYPERTROPHY_PATTERNS = `<svg viewBox="0 0 440 160" xmlns="http://ww
     <text x="360" y="124">Eccentric</text><text x="360" y="138" font-size="10">volume overload (AR/dilated)</text>
   </g>
 </svg>`;
+
+export const PV_LOOP_NORMAL = `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Normal left-ventricular pressure-volume loop with phases" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="240" rx="10" fill="#fbfbff"/>
+  <line x1="55" y1="206" x2="418" y2="206" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="55" y1="22" x2="55" y2="206" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M360,165 L360,58 C322,46 214,44 168,52 L168,168 C226,176 322,173 360,165 Z" fill="none" stroke="#0d9488" stroke-width="2.5"/>
+  <g font-size="11" fill="#475569">
+    <text x="235" y="230" text-anchor="middle">LV volume →</text>
+    <text x="20" y="118" transform="rotate(-90 20 118)">LV pressure →</text>
+    <text x="264" y="40" fill="#0d9488">Ejection</text>
+    <text x="264" y="190" fill="#0d9488">Filling</text>
+    <text x="374" y="116" font-size="10">IVC</text>
+    <text x="150" y="116" text-anchor="end" font-size="10">IVR</text>
+    <text x="168" y="222" text-anchor="middle" font-size="10">ESV</text>
+    <text x="360" y="222" text-anchor="middle" font-size="10">EDV</text>
+  </g>
+</svg>`;
+
+export const PV_LOOP_HF = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pressure-volume loops: normal vs systolic HF vs diastolic HF" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <line x1="55" y1="200" x2="418" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="55" y1="20" x2="55" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M340,158 L340,54 C306,44 214,42 172,50 L172,160 C224,168 306,165 340,158 Z" fill="none" stroke="#0d9488" stroke-width="2.2"/>
+  <path d="M388,168 L388,86 C360,76 296,74 266,80 L266,170 C312,176 360,173 388,168 Z" fill="none" stroke="#e11d48" stroke-width="2.2"/>
+  <path d="M334,128 L334,52 C302,42 232,40 196,48 L196,130 C244,142 300,138 334,128 Z" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <g font-size="11" fill="#475569">
+    <text x="235" y="228" text-anchor="middle">LV volume →</text>
+    <text x="20" y="118" transform="rotate(-90 20 118)">LV pressure →</text>
+  </g>
+  <g font-size="11">
+    <rect x="64" y="28" width="14" height="3" fill="#0d9488"/><text x="84" y="32" fill="#0d9488">Normal</text>
+    <rect x="64" y="44" width="14" height="3" fill="#e11d48"/><text x="84" y="48" fill="#e11d48">HFrEF (right shift, ↓SV)</text>
+    <rect x="64" y="60" width="14" height="3" fill="#d97706"/><text x="84" y="64" fill="#d97706">HFpEF (↑filling pressure)</text>
+  </g>
+</svg>`;
+
+export const PV_LOOP_VALVE = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pressure-volume loops: normal vs pressure overload vs volume overload" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <line x1="55" y1="200" x2="418" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="55" y1="18" x2="55" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M340,160 L340,72 C306,62 214,60 172,68 L172,162 C224,170 306,167 340,160 Z" fill="none" stroke="#0d9488" stroke-width="2.2"/>
+  <path d="M340,160 L340,34 C306,24 214,22 172,30 L172,162 C224,170 306,167 340,160 Z" fill="none" stroke="#e11d48" stroke-width="2.2"/>
+  <path d="M390,164 L376,92 C322,74 226,72 176,82 L172,164 C240,172 330,170 390,164 Z" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <g font-size="11" fill="#475569">
+    <text x="235" y="228" text-anchor="middle">LV volume →</text>
+    <text x="20" y="118" transform="rotate(-90 20 118)">LV pressure →</text>
+  </g>
+  <g font-size="11">
+    <rect x="64" y="26" width="14" height="3" fill="#0d9488"/><text x="84" y="30" fill="#0d9488">Normal</text>
+    <rect x="64" y="42" width="14" height="3" fill="#e11d48"/><text x="84" y="46" fill="#e11d48">Pressure overload (AS) — tall</text>
+    <rect x="64" y="58" width="14" height="3" fill="#d97706"/><text x="84" y="62" fill="#d97706">Volume overload (MR/AR) — wide</text>
+  </g>
+</svg>`;
+
+export const WIGGERS_CYCLE = `<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Wiggers cardiac cycle: pressures, ventricular volume, ECG and heart sounds" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="300" rx="10" fill="#fbfbff"/>
+  <rect x="98" y="24" width="84" height="232" fill="#fde68a" opacity="0.35"/>
+  <text x="140" y="20" text-anchor="middle" font-size="10" fill="#92400e">Systole</text>
+  <text x="318" y="20" text-anchor="middle" font-size="10" fill="#475569">Diastole</text>
+  <!-- aortic pressure -->
+  <path d="M50,108 L100,106 C108,84 124,52 158,48 C176,58 182,86 184,96 C186,104 188,110 196,112 C210,116 360,128 410,128" fill="none" stroke="#e11d48" stroke-width="2"/>
+  <!-- LV pressure -->
+  <path d="M50,132 L96,130 L104,108 C116,60 150,44 162,48 C176,72 178,100 182,112 L190,132 L196,150 C220,140 360,136 410,134" fill="none" stroke="#0d9488" stroke-width="2"/>
+  <!-- LA pressure -->
+  <path d="M50,140 C70,134 84,142 100,138 C120,144 150,150 182,150 C240,142 330,132 410,128" fill="none" stroke="#64748b" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <g font-size="10">
+    <text x="414" y="128" fill="#e11d48">Aortic</text>
+    <text x="414" y="140" fill="#0d9488">LV</text>
+    <text x="414" y="152" fill="#64748b">LA</text>
+  </g>
+  <!-- LV volume -->
+  <path d="M50,196 L100,194 C120,196 150,232 184,234 C220,234 232,210 252,202 C300,184 360,182 410,182" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <text x="54" y="186" font-size="10" fill="#4f46e5">LV volume</text>
+  <!-- ECG -->
+  <path d="M50,262 L70,262 L78,254 L86,262 L96,262 L100,266 L106,236 L112,272 L118,262 L150,262 L162,252 L178,262 L410,262" fill="none" stroke="#334155" stroke-width="1.4"/>
+  <text x="54" y="252" font-size="10" fill="#334155">ECG</text>
+  <!-- heart sounds -->
+  <line x1="100" y1="276" x2="100" y2="292" stroke="#334155" stroke-width="2"/><text x="100" y="290" text-anchor="middle" font-size="9" fill="#334155" dx="-12">S1</text>
+  <line x1="184" y1="276" x2="184" y2="292" stroke="#334155" stroke-width="2"/><text x="196" y="290" text-anchor="middle" font-size="9" fill="#334155">S2</text>
+</svg>`;

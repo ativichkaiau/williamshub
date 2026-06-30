@@ -97,6 +97,10 @@ export const asd: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Heart sounds — ASD', murmur: 'asd', caption: 'Soft ejection systolic murmur + a WIDELY FIXED split S2 (A2/P2).' },
+  ],
 };
 
 export default asd;

@@ -90,6 +90,10 @@ export const mitralStenosis: Lecture = {
       tests: 'exam',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — mitral stenosis', murmur: 'mitral-stenosis', caption: 'Loud S1, an opening snap after S2, then a mid-diastolic rumble.' },
+  ],
 };
 
 export default mitralStenosis;

@@ -101,6 +101,10 @@ export const tetralogyOfFallot: Lecture = {
       tests: 'treatment',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — TOF', murmur: 'tof', caption: 'Ejection systolic murmur (pulmonary stenosis) + single S2.' },
+  ],
 };
 
 export default tetralogyOfFallot;

@@ -104,6 +104,10 @@ export const pda: Lecture = {
       tests: 'treatment',
     },
   ],
+
+  figures: [
+    { title: 'Murmur timing — PDA', murmur: 'pda', caption: 'Continuous "machinery" murmur peaking around S2 (systole + diastole).' },
+  ],
 };
 
 export default pda;

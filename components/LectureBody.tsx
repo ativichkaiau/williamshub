@@ -1,5 +1,6 @@
 import MechanismChain from './MechanismChain';
 import EcgStrip from './EcgStrip';
+import MurmurStrip from './MurmurStrip';
 import Quiz from './Quiz';
 import RecallGate from './RecallGate';
 import { Rich } from './Rich';
@@ -59,6 +60,8 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
                 </figcaption>
                 {f.ecg ? (
                   <EcgStrip rhythm={f.ecg} />
+                ) : f.murmur ? (
+                  <MurmurStrip murmur={f.murmur} />
                 ) : f.svg ? (
                   <div dangerouslySetInnerHTML={{ __html: f.svg }} />
                 ) : null}

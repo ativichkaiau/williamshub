@@ -106,6 +106,7 @@ export interface Figure {
   caption?: string;
   ecg?: string; // rhythm name → <EcgStrip> (e.g. 'afib', 'mobitz-i', 'stemi')
   svg?: string; // raw inline SVG (physiology / pathology figures)
+  murmur?: string; // murmur name → <MurmurStrip> (e.g. 'aortic-stenosis', 'mvp')
 }
 
 export interface Lecture {

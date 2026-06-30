@@ -1,4 +1,5 @@
 import type { Lecture } from '../../lib/types';
+import { PV_LOOP_HF } from '../../lib/figures';
 
 export const hfpefDiastolic: Lecture = {
   id: 'hfpef-diastolic',
@@ -78,6 +79,10 @@ export const hfpefDiastolic: Lecture = {
       explanation: 'Preserved EF with concentric LVH, an S4, and a sustained apex in a hypertensive patient is HFpEF — diastolic dysfunction from a stiff hypertrophied ventricle.',
       tests: 'exam',
     },
+  ],
+
+  figures: [
+    { title: 'Pressure-volume loops', svg: PV_LOOP_HF, caption: 'HFpEF (amber): steep filling (EDPVR) → high filling pressure at near-normal volume.' },
   ],
 };
 

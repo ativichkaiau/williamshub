@@ -41,10 +41,30 @@ import nonbacterialEndocarditis from './lectures/nonbacterial-endocarditis';
 // L9 — Acute Coronary Syndrome
 import acsSpectrum from './lectures/acs-spectrum';
 import acsManagement from './lectures/acs-management';
+// L10 — Cardiomyopathy & Myocarditis
+import cardiomyopathyOverview from './lectures/cardiomyopathy-overview';
+import dilatedCardiomyopathy from './lectures/dilated-cardiomyopathy';
+import hypertrophicCardiomyopathy from './lectures/hypertrophic-cardiomyopathy';
+import restrictiveCardiomyopathy from './lectures/restrictive-cardiomyopathy';
+import arvc from './lectures/arvc';
+import myocarditis from './lectures/myocarditis';
+// L11 — Cardiogenic Shock
+import cardiogenicShock from './lectures/cardiogenic-shock';
+import scaiShockClassification from './lectures/scai-shock-classification';
+import cardiacArrest from './lectures/cardiac-arrest';
+// L12 — Heart Failure
+import heartFailureOverview from './lectures/heart-failure-overview';
+import hfrefSystolic from './lectures/hfref-systolic';
+import hfpefDiastolic from './lectures/hfpef-diastolic';
+import rightSidedHf from './lectures/right-sided-hf';
+// L13 — Antianginal Drugs
+import antianginalPrinciples from './lectures/antianginal-principles';
+import organicNitrates from './lectures/organic-nitrates';
+import betaBlockersCcbAngina from './lectures/beta-blockers-ccb-angina';
 
 export * from './curriculum';
 
-// Registry of all lecture modules, ordered chronologically by lecture (L1 → L9).
+// Registry of all lecture modules, ordered chronologically by lecture (L1 → L13).
 // Each module belongs to exactly ONE lecture (its `source`). Add new modules here.
 export const lectures: Lecture[] = [
   // L1 — Cardiac Arrhythmias
@@ -88,13 +108,33 @@ export const lectures: Lecture[] = [
   // L9 — Acute Coronary Syndrome
   acsSpectrum,
   acsManagement,
+  // L10 — Cardiomyopathy & Myocarditis
+  cardiomyopathyOverview,
+  dilatedCardiomyopathy,
+  hypertrophicCardiomyopathy,
+  restrictiveCardiomyopathy,
+  arvc,
+  myocarditis,
+  // L11 — Cardiogenic Shock
+  cardiogenicShock,
+  scaiShockClassification,
+  cardiacArrest,
+  // L12 — Heart Failure
+  heartFailureOverview,
+  hfrefSystolic,
+  hfpefDiastolic,
+  rightSidedHf,
+  // L13 — Antianginal Drugs
+  antianginalPrinciples,
+  organicNitrates,
+  betaBlockersCcbAngina,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(
   lectures.map((l) => [l.id, l]),
 );
 
-// Group by source lecture for the catalog (keys sort chronologically: L1 < L2 < … < L9).
+// Group by source lecture for the catalog.
 export const lecturesBySource = lectures.reduce<Record<string, Lecture[]>>((acc, l) => {
   (acc[l.source] ??= []).push(l);
   return acc;
@@ -119,9 +159,10 @@ export interface LectureSet {
   items: Lecture[];
 }
 
+// Numeric sort so L10–L13 follow L9 (not L1).
 export const lectureSets: LectureSet[] = Object.entries(lecturesBySource)
   .map(([source, items]) => ({ slug: lectureSetSlug(source), source, items }))
-  .sort((a, b) => a.source.localeCompare(b.source));
+  .sort((a, b) => a.source.localeCompare(b.source, undefined, { numeric: true }));
 
 export const lectureSetBySlug: Record<string, LectureSet> = Object.fromEntries(
   lectureSets.map((s) => [s.slug, s]),

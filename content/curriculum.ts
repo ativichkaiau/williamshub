@@ -83,6 +83,10 @@ export const subjectOfSource: Record<string, string> = {
   'L7 — Coagulation & Hemostasis': 'HCVS-2',
   'L8 — Valvular Heart Disease': 'HCVS-2',
   'L9 — Acute Coronary Syndrome': 'HCVS-2',
+  'L10 — Cardiomyopathy & Myocarditis': 'HCVS-2',
+  'L11 — Cardiogenic Shock': 'HCVS-2',
+  'L12 — Heart Failure': 'HCVS-2',
+  'L13 — Antianginal Drugs': 'HCVS-2',
 };
 
 export function subjectSlug(code: string): string {

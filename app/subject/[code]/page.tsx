@@ -60,7 +60,9 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
     (acc[l.source] ??= []).push(l);
     return acc;
   }, {});
-  const sources = Object.entries(groups).sort(([a], [b]) => a.localeCompare(b));
+  const sources = Object.entries(groups).sort(([a], [b]) =>
+    a.localeCompare(b, undefined, { numeric: true }),
+  );
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-8">

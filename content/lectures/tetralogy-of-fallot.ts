@@ -4,7 +4,7 @@ export const tetralogyOfFallot: Lecture = {
   id: 'tetralogy-of-fallot',
   title: 'Tetralogy of Fallot (TOF)',
   system: 'cardiovascular',
-  source: 'L3 — Congenital Heart Disease (Peds, MedCMU 2025)',
+  source: 'L3 — Congenital Heart Disease',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

@@ -4,7 +4,7 @@ export const bundleBranchBlock: Lecture = {
   id: 'bundle-branch-block',
   title: 'Bundle Branch Block (RBBB vs LBBB)',
   system: 'cardiovascular',
-  source: 'L2 — Abnormal ECG (Cardiology, MedCMU)',
+  source: 'L2 — Abnormal ECG',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

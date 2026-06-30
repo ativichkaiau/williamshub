@@ -4,7 +4,7 @@ export const asd: Lecture = {
   id: 'asd',
   title: 'Atrial Septal Defect (ASD)',
   system: 'cardiovascular',
-  source: 'L3 — Congenital Heart Disease (Peds, MedCMU 2025)',
+  source: 'L3 — Congenital Heart Disease',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

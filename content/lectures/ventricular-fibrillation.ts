@@ -4,7 +4,7 @@ export const ventricularFibrillation: Lecture = {
   id: 'ventricular-fibrillation',
   title: 'Ventricular Fibrillation (VF)',
   system: 'cardiovascular',
-  source: 'L1 — Cardiac Arrhythmias (MedCMU)',
+  source: 'L1 — Cardiac Arrhythmias',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

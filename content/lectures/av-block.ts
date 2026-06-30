@@ -4,12 +4,11 @@ export const avBlock: Lecture = {
   id: 'av-block',
   title: 'Atrioventricular (AV) Block',
   system: 'cardiovascular',
-  source: 'L1/L2 — Arrhythmias & Abnormal ECG (MedCMU)',
+  source: 'L1 — Cardiac Arrhythmias',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },
     { kind: 'lecture', label: 'L1 Arrhythmias' },
-    { kind: 'lecture', label: 'L2 Abnormal ECG' },
     { kind: 'disease', label: 'Heart block' },
     { kind: 'mechanism', label: 'Conduction block' },
     { kind: 'investigation', label: 'ECG' },

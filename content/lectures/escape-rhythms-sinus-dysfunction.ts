@@ -4,7 +4,7 @@ export const escapeRhythmsSinusDysfunction: Lecture = {
   id: 'escape-rhythms-sinus-dysfunction',
   title: 'Escape Rhythms & Sinus Node Dysfunction',
   system: 'cardiovascular',
-  source: 'L2 — Abnormal ECG (Cardiology, MedCMU)',
+  source: 'L2 — Abnormal ECG',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

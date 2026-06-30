@@ -4,7 +4,7 @@ export const stemiLocalization: Lecture = {
   id: 'stemi-localization',
   title: 'STEMI Localization & Reciprocal Changes',
   system: 'cardiovascular',
-  source: 'L2 — Abnormal ECG (Cardiology, MedCMU)',
+  source: 'L2 — Abnormal ECG',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

@@ -4,7 +4,7 @@ export const pda: Lecture = {
   id: 'pda',
   title: 'Patent Ductus Arteriosus (PDA)',
   system: 'cardiovascular',
-  source: 'L3 — Congenital Heart Disease (Peds, MedCMU 2025)',
+  source: 'L3 — Congenital Heart Disease',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

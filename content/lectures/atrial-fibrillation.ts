@@ -4,7 +4,7 @@ export const atrialFibrillation: Lecture = {
   id: 'atrial-fibrillation',
   title: 'Atrial Fibrillation (AF)',
   system: 'cardiovascular',
-  source: 'L1/L2 — Arrhythmias & Abnormal ECG (MedCMU)',
+  source: 'L1 — Cardiac Arrhythmias',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

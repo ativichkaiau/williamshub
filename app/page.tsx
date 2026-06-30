@@ -57,7 +57,9 @@ function LectureCard({ l }: { l: Lecture }) {
 }
 
 export default function Home() {
-  const sources = Object.entries(lecturesBySource);
+  const sources = Object.entries(lecturesBySource).sort(([a], [b]) =>
+    a.localeCompare(b),
+  );
   const systems = new Set(lectures.map((l) => l.system));
 
   return (

@@ -4,7 +4,7 @@ export const antiarrhythmicDrugs: Lecture = {
   id: 'antiarrhythmic-drugs',
   title: 'Antiarrhythmic Drugs (Vaughan-Williams)',
   system: 'cardiovascular',
-  source: 'L4 — Antiarrhythmic Drugs (Pharmacology, MedCMU)',
+  source: 'L4 — Antiarrhythmic Drugs',
   updated: '2026-06-30',
   tags: [
     { kind: 'system', label: 'Cardiovascular' },

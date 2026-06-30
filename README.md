@@ -11,15 +11,9 @@ studying becomes building and building becomes studying.
 
 See [DESIGN.md](DESIGN.md) for the full information architecture, schema, and feature roadmap.
 
-## Content library — 14 modules from lectures L1–L4
+## Content library — 14 modules across lectures L1–L4
 
-**L3 — Congenital Heart Disease**
-- Ventricular Septal Defect (VSD)
-- Atrial Septal Defect (ASD)
-- Patent Ductus Arteriosus (PDA)
-- Tetralogy of Fallot (TOF)
-
-**L1 / L2 — Arrhythmias & ECG**
+**L1 — Cardiac Arrhythmias**
 - Atrioventricular (AV) Block
 - Atrial Fibrillation
 - Atrial Flutter
@@ -27,12 +21,18 @@ See [DESIGN.md](DESIGN.md) for the full information architecture, schema, and fe
 - Ventricular Tachycardia (VT)
 - Ventricular Fibrillation (VF)
 
-**L2 — ECG skills**
+**L2 — Abnormal ECG**
 - STEMI Localization & Reciprocal Changes
 - Bundle Branch Block (RBBB vs LBBB)
 - Escape Rhythms & Sinus Node Dysfunction
 
-**L4 — Pharmacology**
+**L3 — Congenital Heart Disease**
+- Ventricular Septal Defect (VSD)
+- Atrial Septal Defect (ASD)
+- Patent Ductus Arteriosus (PDA)
+- Tetralogy of Fallot (TOF)
+
+**L4 — Antiarrhythmic Drugs**
 - Antiarrhythmic Drugs (Vaughan-Williams)
 
 Each module carries: high-yield summary · mechanism chain · physical-exam findings ·

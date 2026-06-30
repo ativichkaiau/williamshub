@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { lectures, lectureById, lectureSetSlug } from '../../../content';
+import { lectures, lectureById, lectureSetSlug, subjectOfSource, subjectSlug } from '../../../content';
 import MechanismChain from '../../../components/MechanismChain';
 import Quiz from '../../../components/Quiz';
 import RecallGate from '../../../components/RecallGate';
@@ -31,13 +31,15 @@ export default function LecturePage({ params }: { params: { id: string } }) {
   const l = lectureById[params.id];
   if (!l) notFound();
 
+  const subjectCode = subjectOfSource[l.source];
+
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
       <Link
-        href="/"
+        href={subjectCode ? `/subject/${subjectSlug(subjectCode)}` : '/'}
         className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
       >
-        ← All lectures
+        ← {subjectCode ?? 'All lectures'}
       </Link>
 
       {/* Header */}

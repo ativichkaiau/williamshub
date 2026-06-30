@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { lectureSets, lectureSetBySlug } from '../../../content';
+import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug } from '../../../content';
 import MechanismChain from '../../../components/MechanismChain';
 import { Rich } from '../../../components/Rich';
 
@@ -25,13 +25,15 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
   const set = lectureSetBySlug[params.set];
   if (!set) notFound();
 
+  const subjectCode = subjectOfSource[set.source];
+
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
       <Link
-        href="/"
+        href={subjectCode ? `/subject/${subjectSlug(subjectCode)}` : '/'}
         className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
       >
-        ← All lectures
+        ← {subjectCode ?? 'All lectures'}
       </Link>
 
       {/* Header */}

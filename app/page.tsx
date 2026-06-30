@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { lectures, lectureById, lecturesBySource } from '../content';
+import { lectures, lectureById, lecturesBySource, lectureSetSlug } from '../content';
 import type { Lecture } from '../lib/types';
 
 const systemDot: Record<string, string> = {
@@ -162,15 +162,21 @@ export default function Home() {
       <div id="catalog" className="scroll-mt-20">
         {sources.map(([source, items]) => (
           <section key={source} className="mb-9">
-            <div className="mb-4 flex items-center gap-2">
+            <Link
+              href={`/lecture-set/${lectureSetSlug(source)}`}
+              className="group mb-4 flex items-center gap-2"
+            >
               <span className={`h-3 w-3 rounded-full ${lectureDot(source)}`} />
-              <h2 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
+              <h2 className="text-base font-black tracking-tight text-slate-900 transition group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-400">
                 {source}
               </h2>
               <span className="clay-pill px-2.5 py-0.5 text-xs font-semibold text-slate-500 dark:text-slate-300">
                 {items.length}
               </span>
-            </div>
+              <span className="text-xs font-semibold text-emerald-600 opacity-0 transition group-hover:opacity-100 dark:text-emerald-400">
+                View whole lecture →
+              </span>
+            </Link>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {items.map((l) => (
                 <LectureCard key={l.id} l={l} />

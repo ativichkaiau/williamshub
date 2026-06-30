@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { lectures, lectureById } from '../../../content';
+import { lectures, lectureById, lectureSetSlug } from '../../../content';
 import MechanismChain from '../../../components/MechanismChain';
 import Quiz from '../../../components/Quiz';
 import RecallGate from '../../../components/RecallGate';
@@ -42,10 +42,13 @@ export default function LecturePage({ params }: { params: { id: string } }) {
 
       {/* Header */}
       <header className="mb-6 mt-4">
-        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-rose-400">
+        <Link
+          href={`/lecture-set/${lectureSetSlug(l.source)}`}
+          className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-rose-400 transition hover:text-rose-500"
+        >
           <span className="h-2 w-2 rounded-full bg-rose-500" />
           {l.source}
-        </div>
+        </Link>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-900 dark:text-white">
           {l.title}
         </h1>

@@ -50,3 +50,23 @@ export const lecturesBySource = lectures.reduce<Record<string, Lecture[]>>((acc,
   (acc[l.source] ??= []).push(l);
   return acc;
 }, {});
+
+// Consolidated "whole lecture" sets — every module of one lecture on a single page.
+export function lectureSetSlug(source: string): string {
+  const m = source.match(/^L(\d+)/i);
+  return m ? `l${m[1]}` : source.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+}
+
+export interface LectureSet {
+  slug: string;
+  source: string;
+  items: Lecture[];
+}
+
+export const lectureSets: LectureSet[] = Object.entries(lecturesBySource)
+  .map(([source, items]) => ({ slug: lectureSetSlug(source), source, items }))
+  .sort((a, b) => a.source.localeCompare(b.source));
+
+export const lectureSetBySlug: Record<string, LectureSet> = Object.fromEntries(
+  lectureSets.map((s) => [s.slug, s]),
+);

@@ -205,6 +205,16 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // HIM — Human Immunology (Year 2)
+  'L1 — Cells & Tissues of the Immune System': 'HIM',
+  'L2 — Innate Immunity': 'HIM',
+  'L3 — Immunoglobulins': 'HIM',
+  'L4 — Complement System': 'HIM',
+  'L5 — Cell-Mediated Immunity': 'HIM',
+  'L6 — MHC & Antigen Presentation': 'HIM',
+  'L7 — Lymphocyte Development': 'HIM',
+  'L8 — Immunodeficiency': 'HIM',
+
   // BHCB — Basic Histology and Cell Biology (Year 2)
   'L1 — Cytology': 'BHCB',
   'L2 — Cytoskeleton': 'BHCB',

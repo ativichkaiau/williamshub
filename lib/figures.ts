@@ -2099,3 +2099,262 @@ export const INTERMEDIATE_FILAMENT_TABLE = `<svg viewBox="0 0 470 250" xmlns="ht
   <text x="16" y="224" font-size="8.5" fill="#475569">Immunohistochemistry for these IFs identifies a tumour's tissue of origin (e.g. keratin⁺ = carcinoma vs vimentin⁺ = sarcoma).</text>
   <text x="16" y="240" font-size="8.5" fill="#64748b">Mnemonic — "Every Mature Man Never Gets Lucky": Epithelium-keratin, Mesenchyme-vimentin, Muscle-desmin, Neuron-NF, Glia-GFAP, (nucleus) Lamin.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HIM — Human Immunology figures
+// ---------------------------------------------------------------------------
+
+export const INNATE_ADAPTIVE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Innate vs adaptive immunity" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Innate vs adaptive immunity</text>
+  <rect x="14" y="30" width="224" height="196" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="126" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">INNATE (fast, non-specific)</text>
+  <g font-size="8.5" fill="#9a3412"><text x="24" y="68">• Immediate (minutes–hours), no memory</text><text x="24" y="84">• Germline PRRs recognise PAMPs</text><text x="24" y="100">• Barriers: skin, mucosa, pH</text><text x="24" y="116">• Cells: neutrophil, macrophage,</text><text x="36" y="130">dendritic cell, NK, mast, eos/baso</text><text x="24" y="146">• Complement, interferons, cytokines</text><text x="24" y="162">• Same response each time</text></g>
+  <text x="24" y="186" font-size="8.5" font-weight="700" fill="#c2410c">Phagocytosis · inflammation · NK killing</text>
+  <text x="24" y="210" font-size="8" fill="#64748b">Dendritic cell = the bridge → presents antigen →</text>
+  <rect x="244" y="30" width="222" height="196" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="355" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">ADAPTIVE (slow, specific)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="254" y="68">• Days to develop; MEMORY (faster 2nd time)</text><text x="254" y="84">• Clonal, antigen-specific receptors</text><text x="254" y="100">• B cells → antibodies (humoral)</text><text x="254" y="116">• T cells (cell-mediated):</text><text x="266" y="130">CD4⁺ helper, CD8⁺ cytotoxic, Treg</text><text x="254" y="146">• Needs MHC-presented antigen</text><text x="254" y="162">• Diversity by V(D)J recombination</text></g>
+  <text x="254" y="186" font-size="8.5" font-weight="700" fill="#1d4ed8">Highly specific · memory · self-tolerance</text>
+  <text x="16" y="242" font-size="8.5" fill="#0369a1">Lymphocyte markers: T cell CD3; helper CD4; cytotoxic CD8; Treg CD4⁺CD25⁺FoxP3⁺; B cell CD19/20; NK CD16/56.</text>
+</svg>`;
+
+export const LYMPHOID_ORGANS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Primary and secondary lymphoid organs" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lymphoid organs: where lymphocytes are made vs meet antigen</text>
+  <rect x="14" y="30" width="220" height="170" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="124" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#6d28d9">PRIMARY (develop/mature)</text>
+  <g font-size="9" fill="#5b21b6"><text x="24" y="72" font-weight="700">Bone marrow</text><text x="34" y="86">• all haematopoiesis</text><text x="34" y="100">• B cells mature here</text><text x="24" y="122" font-weight="700">Thymus</text><text x="34" y="136">• T cells mature (positive/</text><text x="46" y="149">negative selection)</text><text x="34" y="163">• involutes with age</text></g>
+  <text x="24" y="186" font-size="8" fill="#7c3aed">Central tolerance is established here.</text>
+  <rect x="240" y="30" width="226" height="170" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="353" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#15803d">SECONDARY (meet antigen)</text>
+  <g font-size="9" fill="#166534"><text x="250" y="72" font-weight="700">Lymph nodes</text><text x="260" y="86">• filter lymph; B (follicle/cortex),</text><text x="272" y="99">T (paracortex)</text><text x="250" y="120" font-weight="700">Spleen</text><text x="260" y="134">• filters blood; white pulp = immune,</text><text x="272" y="147">red pulp = old RBCs; encapsulated bugs</text><text x="250" y="168" font-weight="700">MALT</text><text x="260" y="182">• mucosa: tonsils, Peyer's patches, appendix</text></g>
+  <text x="16" y="216" font-size="8" fill="#64748b">Germinal centres (2° follicles) = sites of B-cell affinity maturation &amp; class switching.</text>
+</svg>`;
+
+export const TLR_PRR = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pattern recognition receptors" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Innate recognition: PRRs sense PAMPs / DAMPs</text>
+  <!-- cell -->
+  <path d="M30 60 h300 v150 h-300 z" fill="#eff6ff" stroke="#3b82f6"/>
+  <rect x="30" y="56" width="300" height="8" fill="#93c5fd"/>
+  <text x="180" y="76" text-anchor="middle" font-size="8" fill="#1e40af">phagocyte / sentinel cell</text>
+  <!-- surface TLRs -->
+  <g><rect x="70" y="48" width="8" height="20" fill="#1d4ed8"/><rect x="140" y="48" width="8" height="20" fill="#1d4ed8"/><rect x="230" y="48" width="8" height="20" fill="#1d4ed8"/></g>
+  <text x="72" y="42" font-size="7.5" fill="#1d4ed8">TLR4</text><text x="138" y="42" font-size="7.5" fill="#1d4ed8">TLR5</text><text x="222" y="42" font-size="7.5" fill="#1d4ed8">TLR1/2/6</text>
+  <text x="40" y="98" font-size="8" font-weight="700" fill="#1e40af">Surface TLRs → bacterial/fungal:</text>
+  <text x="40" y="112" font-size="8" fill="#1e40af">TLR4 = LPS · TLR5 = flagellin · TLR2 = lipopeptide/PGN</text>
+  <!-- endosome -->
+  <circle cx="150" cy="165" r="34" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="150" y="150" text-anchor="middle" font-size="7.5" fill="#1e40af">endosome</text>
+  <g fill="#1d4ed8"><rect x="132" y="160" width="5" height="10"/><rect x="150" y="168" width="5" height="10"/><rect x="166" y="158" width="5" height="10"/></g>
+  <text x="150" y="188" text-anchor="middle" font-size="7" fill="#1e40af">TLR3/7/8/9</text>
+  <text x="40" y="222" font-size="8" fill="#1e40af">Endosomal TLRs → nucleic acids: TLR3 dsRNA · 7/8 ssRNA · 9 CpG DNA</text>
+  <!-- right panel -->
+  <rect x="342" y="30" width="122" height="200" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="403" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Signalling →</text>
+  <g font-size="8" fill="#9a3412"><text x="350" y="70">• NF-κB → inflammatory</text><text x="360" y="82">cytokines (TNF, IL-1, IL-6)</text><text x="350" y="102">• Type I interferon</text><text x="360" y="114">(antiviral, esp. endosomal)</text><text x="350" y="134">• ↑ phagocytosis</text><text x="350" y="154">• Recruit neutrophils</text><text x="350" y="174">• Activate/mature</text><text x="360" y="186">dendritic cells → T cells</text></g>
+  <text x="350" y="212" font-size="7.5" fill="#64748b">PAMP = microbial; DAMP =</text>
+  <text x="350" y="223" font-size="7.5" fill="#64748b">host damage signal</text>
+</svg>`;
+
+export const NK_CELL = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="NK cell recognition" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">NK cell: "missing self" &amp; ADCC</text>
+  <!-- healthy -->
+  <circle cx="90" cy="90" r="34" fill="#dcfce7" stroke="#16a34a"/>
+  <rect x="72" y="54" width="8" height="14" fill="#15803d"/><rect x="100" y="54" width="8" height="14" fill="#15803d"/>
+  <text x="90" y="94" text-anchor="middle" font-size="8" fill="#15803d">MHC I</text><text x="90" y="106" text-anchor="middle" font-size="8" fill="#15803d">present</text>
+  <text x="90" y="140" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">Healthy → inhibited</text>
+  <text x="90" y="153" text-anchor="middle" font-size="7.5" fill="#166534">(no killing)</text>
+  <!-- infected -->
+  <circle cx="230" cy="90" r="34" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="230" y="90" text-anchor="middle" font-size="9" fill="#b91c1c">MHC I</text>
+  <text x="230" y="102" text-anchor="middle" font-size="9" fill="#b91c1c">LOST ✗</text>
+  <text x="230" y="140" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Virus/tumour → killed</text>
+  <text x="230" y="153" text-anchor="middle" font-size="7.5" fill="#991b1b">perforin + granzyme</text>
+  <!-- ADCC -->
+  <circle cx="375" cy="90" r="34" fill="#fef9c3" stroke="#ca8a04"/>
+  <g stroke="#a16207" stroke-width="2"><path d="M341 78 l-14 -6"/><path d="M341 90 l-16 0"/></g>
+  <text x="375" y="90" text-anchor="middle" font-size="8" fill="#a16207">IgG-coated</text>
+  <text x="375" y="140" text-anchor="middle" font-size="8.5" font-weight="700" fill="#a16207">ADCC (CD16/FcγR)</text>
+  <text x="375" y="153" text-anchor="middle" font-size="7.5" fill="#854d0e">antibody-directed kill</text>
+  <text x="16" y="180" font-size="8.5" fill="#0369a1">NK = innate lymphoid. Balance of activating vs inhibitory (KIR) receptors. Activated by IL-12/IL-15 → also make IFN-γ.</text>
+  <text x="16" y="194" font-size="8" fill="#64748b">Kills cells that DOWN-regulate MHC I (the opposite of what CTLs need) — covering the viral immune-evasion gap.</text>
+</svg>`;
+
+export const ANTIBODY_STRUCTURE = `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Antibody structure" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Immunoglobulin structure (Y-shaped)</text>
+  <!-- heavy chains -->
+  <g stroke="#1d4ed8" stroke-width="12" fill="none" stroke-linecap="round"><path d="M180 60 L150 150 L150 210"/><path d="M280 60 L310 150 L310 210"/></g>
+  <!-- light chains -->
+  <g stroke="#16a34a" stroke-width="10" fill="none" stroke-linecap="round"><path d="M150 55 L172 120"/><path d="M310 55 L288 120"/></g>
+  <!-- disulfide hinge -->
+  <line x1="150" y1="150" x2="310" y2="150" stroke="#dc2626" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="230" y="144" text-anchor="middle" font-size="8" fill="#b91c1c">hinge (flexible) + S–S bonds</text>
+  <!-- antigen sites -->
+  <circle cx="150" cy="52" r="8" fill="#f59e0b"/><circle cx="310" cy="52" r="8" fill="#f59e0b"/>
+  <text x="230" y="40" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Antigen-binding sites (2) = variable + hypervariable (CDRs)</text>
+  <!-- labels -->
+  <text x="120" y="90" font-size="8" fill="#15803d" text-anchor="end">light chain</text>
+  <text x="120" y="180" font-size="8" fill="#1d4ed8" text-anchor="end">heavy chain</text>
+  <!-- Fab / Fc brackets -->
+  <path d="M120 48 q-20 55 12 105" stroke="#7c3aed" stroke-width="1.5" fill="none"/>
+  <text x="95" y="105" font-size="9" font-weight="700" fill="#6d28d9">Fab</text>
+  <text x="95" y="118" font-size="7.5" fill="#6d28d9">(binds Ag)</text>
+  <path d="M340 155 q20 30 0 60" stroke="#7c3aed" stroke-width="1.5" fill="none"/>
+  <text x="350" y="188" font-size="9" font-weight="700" fill="#6d28d9">Fc</text>
+  <text x="350" y="201" font-size="7.5" fill="#6d28d9">(effector:</text>
+  <text x="350" y="212" font-size="7.5" fill="#6d28d9">complement,</text>
+  <text x="350" y="223" font-size="7.5" fill="#6d28d9">FcR, isotype)</text>
+  <text x="16" y="240" font-size="8.5" fill="#0369a1">V region = Ag specificity; C region (Fc) = biological function &amp; class. Papain cuts → 2 Fab + 1 Fc; pepsin → F(ab')₂.</text>
+  <text x="16" y="254" font-size="8" fill="#64748b">Isotype (class, by heavy chain) vs allotype (allelic) vs idiotype (the unique variable/antigen-binding region).</text>
+</svg>`;
+
+export const ANTIBODY_CLASSES = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Antibody isotypes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The 5 immunoglobulin isotypes</text>
+  <g font-size="8.5" font-weight="700" fill="#475569"><text x="20" y="42">Class</text><text x="90" y="42">Form</text><text x="180" y="42">Key roles</text></g>
+  <line x1="16" y1="48" x2="464" y2="48" stroke="#cbd5e1"/>
+  <g font-size="8.5">
+    <text x="20" y="68" font-weight="700" fill="#1d4ed8">IgG</text><text x="90" y="68" fill="#334155">monomer</text><text x="180" y="68" fill="#475569">Most abundant; only Ig to cross PLACENTA; opsonisation, complement, neutralisation, ADCC; 2° response</text>
+    <text x="20" y="92" font-weight="700" fill="#15803d">IgA</text><text x="90" y="92" fill="#334155">monomer/dimer</text><text x="180" y="92" fill="#475569">Mucosal &amp; secretory (dimer + J chain + secretory piece); saliva, breast milk, gut</text>
+    <text x="20" y="116" font-weight="700" fill="#b45309">IgM</text><text x="90" y="116" fill="#334155">pentamer</text><text x="180" y="116" fill="#475569">FIRST in 1° response; best complement activator; naïve B-cell receptor (as monomer)</text>
+    <text x="20" y="140" font-weight="700" fill="#b91c1c">IgE</text><text x="90" y="140" fill="#334155">monomer</text><text x="180" y="140" fill="#475569">Allergy/anaphylaxis (mast cell/basophil FcεR) + antiparasitic (eosinophils); lowest serum level</text>
+    <text x="20" y="164" font-weight="700" fill="#6d28d9">IgD</text><text x="90" y="164" fill="#334155">monomer</text><text x="180" y="164" fill="#475569">Naïve B-cell surface receptor (with IgM); function otherwise unclear</text>
+  </g>
+  <line x1="16" y1="176" x2="464" y2="176" stroke="#e2e8f0"/>
+  <text x="16" y="196" font-size="9" fill="#0369a1" font-weight="700">Mnemonics</text>
+  <text x="16" y="212" font-size="8.5" fill="#475569">Serum level: IgG &gt; IgA &gt; IgM &gt; IgD &gt; IgE ("GAMDE"). IgM = Multimer/first; IgG = Greatest + placenta.</text>
+  <text x="16" y="228" font-size="8.5" fill="#64748b">Class switch (isotype switching) in germinal centres changes the heavy-chain constant region, not the antigen specificity.</text>
+</svg>`;
+
+export const COMPLEMENT_PATHWAYS = `<svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Complement pathways" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="270" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Complement: 3 triggers → one C3 hub → MAC</text>
+  <!-- three pathways -->
+  <rect x="14" y="30" width="145" height="52" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="86" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Classical</text>
+  <text x="86" y="63" text-anchor="middle" font-size="7.5" fill="#1e40af">Ab (IgM/IgG) + antigen</text>
+  <text x="86" y="75" text-anchor="middle" font-size="7.5" fill="#1e40af">→ C1 → C4 → C2</text>
+  <rect x="167" y="30" width="145" height="52" rx="7" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="239" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Lectin</text>
+  <text x="239" y="63" text-anchor="middle" font-size="7.5" fill="#166534">MBL binds mannose</text>
+  <text x="239" y="75" text-anchor="middle" font-size="7.5" fill="#166534">→ MASP → C4 → C2</text>
+  <rect x="320" y="30" width="146" height="52" rx="7" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="393" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Alternative</text>
+  <text x="393" y="63" text-anchor="middle" font-size="7.5" fill="#9a3412">spontaneous C3 tickover</text>
+  <text x="393" y="75" text-anchor="middle" font-size="7.5" fill="#9a3412">on microbial surface</text>
+  <line x1="86" y1="82" x2="200" y2="104" stroke="#94a3b8"/><line x1="239" y1="82" x2="230" y2="104" stroke="#94a3b8"/><line x1="393" y1="82" x2="260" y2="104" stroke="#94a3b8"/>
+  <rect x="170" y="104" width="140" height="26" rx="6" fill="#334155"/><text x="240" y="121" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">C3 convertase → C3</text>
+  <line x1="240" y1="130" x2="240" y2="150" stroke="#334155" stroke-width="1.5"/>
+  <!-- branches from C3 -->
+  <rect x="20" y="150" width="130" height="40" rx="6" fill="#fef9c3"/><text x="85" y="166" text-anchor="middle" font-size="8.5" font-weight="700" fill="#a16207">C3b → opsonisation</text><text x="85" y="180" text-anchor="middle" font-size="7.5" fill="#854d0e">phagocytosis (CR1)</text>
+  <rect x="160" y="150" width="150" height="40" rx="6" fill="#fee2e2"/><text x="235" y="166" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">C3a, C5a → anaphylatoxins</text><text x="235" y="180" text-anchor="middle" font-size="7.5" fill="#991b1b">inflammation; C5a chemotaxis</text>
+  <rect x="320" y="150" width="146" height="40" rx="6" fill="#e0e7ff"/><text x="393" y="166" text-anchor="middle" font-size="8.5" font-weight="700" fill="#4338ca">C5b → MAC (C5b-9)</text><text x="393" y="180" text-anchor="middle" font-size="7.5" fill="#3730a3">pore → lysis</text>
+  <text x="16" y="212" font-size="8.5" fill="#0369a1" font-weight="700">All three converge on C3. Deficiency patterns:</text>
+  <text x="16" y="228" font-size="8.5" fill="#475569">• Early (C1–C4): pyogenic + immune-complex disease (SLE-like). • C3: severe recurrent pyogenic infections.</text>
+  <text x="16" y="244" font-size="8.5" fill="#475569">• Terminal (C5–C9/MAC): recurrent Neisseria. • C1-inhibitor: hereditary angioedema (↑bradykinin).</text>
+  <text x="16" y="260" font-size="8" fill="#64748b">Regulators: DAF/CD55 &amp; CD59 (block MAC) — lost in PNH.</text>
+</svg>`;
+
+export const T_CELL_ACTIVATION = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="T cell activation two signals" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">T-cell activation needs TWO signals</text>
+  <!-- APC -->
+  <rect x="20" y="40" width="180" height="170" rx="10" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="110" y="60" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">APC (dendritic cell)</text>
+  <rect x="180" y="80" width="16" height="26" fill="#ea580c"/><text x="150" y="78" font-size="7.5" fill="#c2410c">MHC + peptide</text>
+  <rect x="180" y="140" width="16" height="20" fill="#16a34a"/><text x="150" y="138" font-size="7.5" fill="#15803d">B7 (CD80/86)</text>
+  <!-- T cell -->
+  <rect x="270" y="40" width="180" height="170" rx="10" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="360" y="60" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Naïve T cell</text>
+  <rect x="274" y="80" width="16" height="26" fill="#1d4ed8"/><text x="300" y="78" font-size="7.5" fill="#1d4ed8">TCR + CD3 (+CD4/8)</text>
+  <rect x="274" y="140" width="16" height="20" fill="#16a34a"/><text x="300" y="138" font-size="7.5" fill="#15803d">CD28</text>
+  <!-- signals -->
+  <line x1="196" y1="93" x2="274" y2="93" stroke="#dc2626" stroke-width="2"/><text x="235" y="88" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">Signal 1</text>
+  <line x1="196" y1="150" x2="274" y2="150" stroke="#16a34a" stroke-width="2"/><text x="235" y="145" text-anchor="middle" font-size="8" font-weight="700" fill="#15803d">Signal 2 (co-stim)</text>
+  <text x="235" y="180" text-anchor="middle" font-size="8" fill="#334155">Signal 3 = cytokines</text>
+  <text x="235" y="192" text-anchor="middle" font-size="8" fill="#334155">(IL-2 → proliferation)</text>
+  <text x="16" y="224" font-size="8.5" fill="#0369a1">Signal 1 only (no co-stim) → ANERGY/tolerance. IL-2 drives clonal expansion. CTLA-4/PD-1 = inhibitory checkpoints.</text>
+  <text x="16" y="238" font-size="8" fill="#64748b">CD4 binds MHC II; CD8 binds MHC I. Naïve T cells are primed by dendritic cells in lymph nodes.</text>
+</svg>`;
+
+export const TH_SUBSETS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="CD4 helper T cell subsets" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">CD4⁺ helper T-cell subsets</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Subset</text><text x="95" y="40">Driven by</text><text x="175" y="40">Makes</text><text x="285" y="40">Defends against / role</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="64" font-weight="700" fill="#b91c1c">Th1</text><text x="95" y="64" fill="#334155">IL-12, IFN-γ</text><text x="175" y="64" fill="#475569">IFN-γ</text><text x="285" y="64" fill="#475569">Intracellular (macrophage activation, CTL); T-bet</text>
+    <text x="18" y="86" font-weight="700" fill="#2563eb">Th2</text><text x="95" y="86" fill="#334155">IL-4</text><text x="175" y="86" fill="#475569">IL-4/5/13</text><text x="285" y="86" fill="#475569">Helminths; allergy; IgE + eosinophils; GATA3</text>
+    <text x="18" y="108" font-weight="700" fill="#ea580c">Th17</text><text x="95" y="108" fill="#334155">IL-6, TGF-β</text><text x="175" y="108" fill="#475569">IL-17</text><text x="285" y="108" fill="#475569">Extracellular bacteria/fungi (neutrophils); RORγt</text>
+    <text x="18" y="130" font-weight="700" fill="#7c3aed">Tfh</text><text x="95" y="130" fill="#334155">IL-6/21</text><text x="175" y="130" fill="#475569">IL-21</text><text x="285" y="130" fill="#475569">B-cell help in germinal centres (class switch); Bcl-6</text>
+    <text x="18" y="152" font-weight="700" fill="#15803d">Treg</text><text x="95" y="152" fill="#334155">TGF-β, IL-2</text><text x="175" y="152" fill="#475569">IL-10, TGF-β</text><text x="285" y="152" fill="#475569">Suppression / self-tolerance; FoxP3 (CD4⁺CD25⁺)</text>
+  </g>
+  <line x1="16" y1="164" x2="464" y2="164" stroke="#e2e8f0"/>
+  <text x="16" y="184" font-size="9" fill="#0369a1" font-weight="700">Effector arm reminders</text>
+  <text x="16" y="200" font-size="8.5" fill="#475569">Th1 → IFN-γ + CD40L "licenses" macrophages (granuloma/TB) &amp; supports CD8 CTLs.</text>
+  <text x="16" y="216" font-size="8.5" fill="#475569">CD8 CTL kills via perforin/granzyme &amp; Fas–FasL (recognises antigen on MHC I).</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">FoxP3 mutation → IPEX (severe autoimmunity); loss of Th1/IFN-γ axis → mycobacterial disease.</text>
+</svg>`;
+
+export const MHC_PROCESSING = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="MHC class I and II antigen processing" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">MHC I vs II — two antigen-presentation routes</text>
+  <!-- MHC I -->
+  <rect x="14" y="30" width="224" height="196" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="126" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">MHC class I → CD8⁺</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="68">• On ALL nucleated cells</text><text x="24" y="84">• Presents ENDOGENOUS (cytosolic)</text><text x="36" y="97">antigen — viral/tumour/self</text><text x="24" y="113">• Cytosolic protein → PROTEASOME</text><text x="36" y="126">→ peptide → TAP → ER → MHC I</text><text x="24" y="142">• 1 chain (α) + β2-microglobulin</text><text x="24" y="158">• Peptide ~8–10 aa (closed groove)</text><text x="24" y="174">• Loci: HLA-A, -B, -C</text></g>
+  <text x="24" y="198" font-size="8.5" font-weight="700" fill="#1d4ed8">→ CD8 cytotoxic T cell (kills the cell)</text>
+  <text x="24" y="216" font-size="7.5" fill="#64748b">"Endogenous = Inside = class I (1×CD8=8)"</text>
+  <!-- MHC II -->
+  <rect x="244" y="30" width="222" height="196" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="355" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">MHC class II → CD4⁺</text>
+  <g font-size="8.5" fill="#991b1b"><text x="254" y="68">• On APCs only (DC, macrophage, B)</text><text x="254" y="84">• Presents EXOGENOUS antigen —</text><text x="266" y="97">engulfed/phagocytosed microbes</text><text x="254" y="113">• Endosome/lysosome digests →</text><text x="266" y="126">peptide loads (invariant chain/CLIP)</text><text x="254" y="142">• 2 chains (α + β)</text><text x="254" y="158">• Peptide ~13–25 aa (open groove)</text><text x="254" y="174">• Loci: HLA-DR, -DQ, -DP</text></g>
+  <text x="254" y="198" font-size="8.5" font-weight="700" fill="#b91c1c">→ CD4 helper T cell (coordinates)</text>
+  <text x="254" y="216" font-size="7.5" fill="#64748b">"Exogenous = Outside = class II (2×CD4=8)"</text>
+  <text x="16" y="244" font-size="8.5" fill="#0369a1">Rule of 8: MHC I × CD8 = 8; MHC II × CD4 = 8. Cross-presentation = DCs put exogenous antigen on MHC I to prime CD8.</text>
+  <text x="16" y="258" font-size="8" fill="#64748b">HLA is codominant, polygenic &amp; highly polymorphic → transplant matching &amp; disease links (B27, DQ2/8).</text>
+</svg>`;
+
+export const THYMIC_SELECTION = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Thymic positive and negative selection" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">T-cell development &amp; thymic selection</text>
+  <!-- stages -->
+  <rect x="16" y="32" width="448" height="26" rx="6" fill="#f1f5f9"/>
+  <text x="70" y="49" text-anchor="middle" font-size="8" fill="#475569">DN (CD4⁻8⁻)</text>
+  <text x="180" y="49" text-anchor="middle" font-size="8" fill="#475569">→ DP (CD4⁺8⁺)</text>
+  <text x="330" y="49" text-anchor="middle" font-size="8" fill="#475569">→ SP (CD4⁺ or CD8⁺)</text>
+  <text x="430" y="49" text-anchor="middle" font-size="8" fill="#475569">→ blood</text>
+  <!-- positive selection -->
+  <rect x="16" y="66" width="224" height="100" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="128" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Positive selection (cortex)</text>
+  <g font-size="8.5" fill="#166534"><text x="24" y="104">Can the TCR bind self-MHC?</text><text x="24" y="120" font-weight="700">YES (weakly) → SURVIVE</text><text x="24" y="136">NO binding → death by neglect</text><text x="24" y="152">= ensures MHC restriction</text></g>
+  <!-- negative selection -->
+  <rect x="244" y="66" width="220" height="100" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="354" y="84" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Negative selection (medulla)</text>
+  <g font-size="8.5" fill="#991b1b"><text x="252" y="104">Does the TCR bind self-antigen</text><text x="252" y="118">strongly?</text><text x="252" y="134" font-weight="700">YES (strong) → DELETED (apoptosis)</text><text x="252" y="150">= central tolerance (needs AIRE)</text></g>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1" font-weight="700">Two-step rule: keep cells that see self-MHC (positive), delete cells that react to self-peptide (negative).</text>
+  <text x="16" y="206" font-size="8.5" fill="#475569">AIRE presents tissue-specific self-antigens in the medulla — its loss → APECED autoimmunity.</text>
+  <text x="16" y="222" font-size="8.5" fill="#475569">Escapees are caught by PERIPHERAL tolerance: anergy (no co-stim), Treg suppression, deletion.</text>
+  <text x="16" y="238" font-size="8" fill="#64748b">B cells do the analogous thing in bone marrow (central) → receptor editing / clonal deletion.</text>
+</svg>`;
+
+export const IMMUNODEFICIENCY_MAP = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Immunodeficiency infection patterns" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Which arm is broken? → the infection pattern tells you</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Defect</text><text x="150" y="40">Typical infections</text><text x="310" y="40">Example diseases</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="64" font-weight="700" fill="#1d4ed8">B cell / antibody</text><text x="150" y="64" fill="#475569">encapsulated bacteria,</text><text x="150" y="75" fill="#475569">recurrent sinopulmonary</text><text x="310" y="64" fill="#475569">XLA (Bruton BTK), CVID,</text><text x="310" y="75" fill="#475569">selective IgA, hyper-IgM (CD40L)</text>
+    <text x="18" y="96" font-weight="700" fill="#b91c1c">T cell</text><text x="150" y="96" fill="#475569">viruses, fungi,</text><text x="150" y="107" fill="#475569">intracellular, PCP</text><text x="310" y="96" fill="#475569">DiGeorge (22q11, no thymus),</text><text x="310" y="107" fill="#475569">MHC II defect (bare lymphocyte)</text>
+    <text x="18" y="128" font-weight="700" fill="#7c3aed">Combined (T+B)</text><text x="150" y="128" fill="#475569">everything, early + severe</text><text x="310" y="128" fill="#475569">SCID (IL2Rγc, ADA), Wiskott-Aldrich</text>
+    <text x="18" y="160" font-weight="700" fill="#ea580c">Phagocyte</text><text x="150" y="160" fill="#475569">catalase⁺ bacteria &amp;</text><text x="150" y="171" fill="#475569">fungi, abscesses</text><text x="310" y="160" fill="#475569">CGD (NADPH oxidase; NBT/DHR),</text><text x="310" y="171" fill="#475569">LAD (integrin; delayed cord), Chediak</text>
+    <text x="18" y="192" font-weight="700" fill="#15803d">Complement</text><text x="150" y="192" fill="#475569">Neisseria (terminal),</text><text x="150" y="203" fill="#475569">pyogenic/SLE (early)</text><text x="310" y="192" fill="#475569">C5–C9 → Neisseria; C1-INH → HAE</text>
+  </g>
+  <line x1="16" y1="214" x2="464" y2="214" stroke="#e2e8f0"/>
+  <text x="16" y="232" font-size="8.5" fill="#0369a1" font-weight="700">Primary = genetic (often present in infancy). Secondary = acquired (commoner): HIV, drugs, malnutrition, malignancy.</text>
+  <text x="16" y="248" font-size="8.5" fill="#475569">HIV kills CD4⁺ T cells → opportunistic infections (PCP, CMV, TB) once CD4 falls. Spleen loss ≈ antibody defect (encapsulated).</text>
+</svg>`;

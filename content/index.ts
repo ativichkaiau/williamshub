@@ -575,6 +575,26 @@ import publicationTypesImrad from './lectures/publication-types-imrad';
 import peerReviewJournalMetrics from './lectures/peer-review-journal-metrics';
 import academicAuthorship from './lectures/academic-authorship';
 
+// ── HIM (Human Immunology) ──
+import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
+import lymphoidOrgans from './lectures/lymphoid-organs';
+import innateBarriersPrr from './lectures/innate-barriers-prr';
+import innateNkInterferon from './lectures/innate-nk-interferon';
+import antibodyStructure from './lectures/antibody-structure';
+import antibodyClassesFunctions from './lectures/antibody-classes-functions';
+import complementPathways from './lectures/complement-pathways';
+import complementFunctionsRegulation from './lectures/complement-functions-regulation';
+import tCellActivation from './lectures/t-cell-activation';
+import cd4HelperSubsets from './lectures/cd4-helper-subsets';
+import cd8CtlNkEffectors from './lectures/cd8-ctl-nk-effectors';
+import mhcStructureGenetics from './lectures/mhc-structure-genetics';
+import antigenProcessingPresentation from './lectures/antigen-processing-presentation';
+import bCellDevelopmentTolerance from './lectures/b-cell-development-tolerance';
+import tCellDevelopmentThymicSelection from './lectures/t-cell-development-thymic-selection';
+import primaryImmunodeficiencyAntibodyT from './lectures/primary-immunodeficiency-antibody-t';
+import primaryImmunodeficiencyPhagocyteComplement from './lectures/primary-immunodeficiency-phagocyte-complement';
+import secondaryImmunodeficiencyHiv from './lectures/secondary-immunodeficiency-hiv';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -918,6 +938,24 @@ export const lectures: Lecture[] = [
   publicationTypesImrad, peerReviewJournalMetrics,
   // L9 Academic Authorship
   academicAuthorship,
+
+  // ── HIM (Human Immunology) ──
+  // L1 Cells & Tissues of the Immune System
+  immuneSystemOverviewCells, lymphoidOrgans,
+  // L2 Innate Immunity
+  innateBarriersPrr, innateNkInterferon,
+  // L3 Immunoglobulins
+  antibodyStructure, antibodyClassesFunctions,
+  // L4 Complement System
+  complementPathways, complementFunctionsRegulation,
+  // L5 Cell-Mediated Immunity
+  tCellActivation, cd4HelperSubsets, cd8CtlNkEffectors,
+  // L6 MHC & Antigen Presentation
+  mhcStructureGenetics, antigenProcessingPresentation,
+  // L7 Lymphocyte Development
+  bCellDevelopmentTolerance, tCellDevelopmentThymicSelection,
+  // L8 Immunodeficiency
+  primaryImmunodeficiencyAntibodyT, primaryImmunodeficiencyPhagocyteComplement, secondaryImmunodeficiencyHiv,
 
   // ── BHCB (Basic Histology and Cell Biology) ──
   // L1 Cytology

@@ -117,7 +117,7 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
             {l.treatment.map((t, i) => (
               <li key={i}>
                 <span className="font-semibold text-slate-900 dark:text-white">{t.logic}</span>
-                {t.detail ? <span className="text-slate-500 dark:text-slate-400"> — {t.detail}</span> : null}
+                {t.detail ? <span className="text-slate-500 dark:text-slate-400"> — <Rich text={t.detail} /></span> : null}
               </li>
             ))}
           </ul>

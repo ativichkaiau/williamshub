@@ -616,3 +616,124 @@ export const BONE_TUMOR_LOCATIONS = `<svg viewBox="0 0 440 250" xmlns="http://ww
   <text x="16" y="228" font-size="10" fill="#475569">Osteosarcoma: Codman triangle, ↑young. Ewing: small round blue cells, &lt;15 y.</text>
   <text x="16" y="242" font-size="10" fill="#0369a1">Metastasis = most common malignant bone tumor overall.</text>
 </svg>`;
+
+export const HYPOTHALAMIC_PITUITARY_AXIS = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Hypothalamic-pituitary target-gland hormone axes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Hypothalamus → anterior pituitary → target</text>
+  <g font-size="9" font-weight="700" fill="#64748b" text-anchor="middle">
+    <text x="88" y="40">Hypothalamus</text><text x="212" y="40">Pituitary</text><text x="330" y="40">Target</text><text x="424" y="40">Effector</text>
+  </g>
+  <g font-size="10">
+    <!-- GH -->
+    <text x="88" y="62" text-anchor="middle" fill="#be123c">GHRH(+)/SST(−)</text><text x="212" y="62" text-anchor="middle" font-weight="700" fill="#9f1239">GH</text><text x="330" y="62" text-anchor="middle" fill="#7c2d12">Liver</text><text x="424" y="62" text-anchor="middle" fill="#7c2d12">IGF-1</text>
+    <!-- TSH -->
+    <text x="88" y="86" text-anchor="middle" fill="#0369a1">TRH(+)</text><text x="212" y="86" text-anchor="middle" font-weight="700" fill="#075985">TSH</text><text x="330" y="86" text-anchor="middle" fill="#0c4a6e">Thyroid</text><text x="424" y="86" text-anchor="middle" fill="#0c4a6e">T3/T4</text>
+    <!-- ACTH -->
+    <text x="88" y="110" text-anchor="middle" fill="#6d28d9">CRH(+)</text><text x="212" y="110" text-anchor="middle" font-weight="700" fill="#5b21b6">ACTH</text><text x="330" y="110" text-anchor="middle" fill="#4c1d95">Adrenal</text><text x="424" y="110" text-anchor="middle" fill="#4c1d95">Cortisol</text>
+    <!-- Gonadotropins -->
+    <text x="88" y="134" text-anchor="middle" fill="#b45309">GnRH(+)*</text><text x="212" y="134" text-anchor="middle" font-weight="700" fill="#92400e">LH/FSH</text><text x="330" y="134" text-anchor="middle" fill="#78350f">Gonads</text><text x="424" y="134" text-anchor="middle" fill="#78350f">Sex steroids</text>
+    <!-- PRL -->
+    <text x="88" y="158" text-anchor="middle" fill="#0f766e">Dopamine(−)</text><text x="212" y="158" text-anchor="middle" font-weight="700" fill="#115e59">Prolactin</text><text x="330" y="158" text-anchor="middle" fill="#134e4a">Breast</text><text x="424" y="158" text-anchor="middle" fill="#134e4a">Milk</text>
+  </g>
+  <g stroke="#cbd5e1"><line x1="130" y1="58" x2="180" y2="58"/><line x1="130" y1="82" x2="180" y2="82"/><line x1="130" y1="106" x2="180" y2="106"/><line x1="130" y1="130" x2="180" y2="130"/><line x1="130" y1="154" x2="180" y2="154"/></g>
+  <line x1="16" y1="172" x2="454" y2="172" stroke="#e2e8f0"/>
+  <text x="16" y="192" font-size="10" fill="#475569">*GnRH: PULSATILE stimulates; CONTINUOUS suppresses (leuprolide) → the drug paradox.</text>
+  <text x="16" y="208" font-size="10" fill="#475569">Prolactin is the only one under tonic INHIBITION (dopamine) → stalk lesion ↑PRL.</text>
+  <text x="16" y="228" font-size="10" fill="#0369a1">Mass effect on optic chiasm → bitemporal hemianopsia; apoplexy = emergency.</text>
+</svg>`;
+
+export const ADRENAL_STEROIDOGENESIS = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Adrenal cortex zones and steroidogenesis with 21-hydroxylase block" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Adrenal cortex: GFR — Salt, Sugar, Sex</text>
+  <g>
+    <rect x="16" y="34" width="150" height="52" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="24" y="52" font-size="10.5" font-weight="700" fill="#1d4ed8">Zona Glomerulosa</text>
+    <text x="24" y="68" font-size="10" fill="#1e3a8a">→ Aldosterone (salt)</text>
+    <text x="24" y="80" font-size="9" fill="#64748b">RAAS / K⁺ control</text>
+    <rect x="16" y="94" width="150" height="52" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="24" y="112" font-size="10.5" font-weight="700" fill="#c2410c">Zona Fasciculata</text>
+    <text x="24" y="128" font-size="10" fill="#7c2d12">→ Cortisol (sugar)</text>
+    <text x="24" y="140" font-size="9" fill="#64748b">ACTH control</text>
+    <rect x="16" y="154" width="150" height="52" rx="8" fill="#fdf4ff" stroke="#e9a8f0"/>
+    <text x="24" y="172" font-size="10.5" font-weight="700" fill="#a21caf">Zona Reticularis</text>
+    <text x="24" y="188" font-size="10" fill="#701a75">→ Androgens (sex)</text>
+    <text x="24" y="200" font-size="9" fill="#64748b">DHEA</text>
+  </g>
+  <!-- 21-hydroxylase block -->
+  <g>
+    <line x1="200" y1="70" x2="200" y2="180" stroke="#94a3b8" stroke-dasharray="4 3"/>
+    <text x="212" y="60" font-size="11" font-weight="700" fill="#dc2626">21-hydroxylase deficiency (CAH)</text>
+    <line x1="220" y1="78" x2="300" y2="78" stroke="#dc2626" stroke-width="2"/><line x1="256" y1="70" x2="264" y2="86" stroke="#dc2626" stroke-width="2"/>
+    <text x="220" y="100" font-size="10" fill="#7f1d1d">✗ Aldosterone → salt wasting</text>
+    <line x1="220" y1="118" x2="300" y2="118" stroke="#dc2626" stroke-width="2"/><line x1="256" y1="110" x2="264" y2="126" stroke="#dc2626" stroke-width="2"/>
+    <text x="220" y="140" font-size="10" fill="#7f1d1d">✗ Cortisol → ↑ACTH</text>
+    <text x="220" y="164" font-size="10" font-weight="700" fill="#15803d">↑↑ Androgens → virilization</text>
+    <text x="212" y="192" font-size="9.5" fill="#475569">Precursors shunt to the open pathway (sex steroids).</text>
+  </g>
+  <text x="16" y="228" font-size="10" fill="#0369a1">"The deeper you go, the sweeter it gets"; only glomerulosa lacks 17α-hydroxylase.</text>
+  <text x="16" y="242" font-size="10" fill="#475569">Conn = aldo excess; Cushing = cortisol excess; CAH = 21-OH block.</text>
+</svg>`;
+
+export const MEN_SYNDROMES = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Multiple endocrine neoplasia syndromes comparison" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Multiple Endocrine Neoplasia (autosomal dominant)</text>
+  <g>
+    <rect x="16" y="30" width="140" height="150" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="86" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">MEN 1 (Wermer)</text>
+    <text x="86" y="62" text-anchor="middle" font-size="9" fill="#64748b">MEN1 tumor suppressor</text>
+    <g font-size="10" fill="#1e3a8a"><text x="26" y="84">• Parathyroid</text><text x="26" y="104">• Pancreas (NET)</text><text x="26" y="124">• Pituitary</text></g>
+    <text x="86" y="152" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">"3 P's"</text>
+  </g>
+  <g>
+    <rect x="166" y="30" width="140" height="150" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="236" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">MEN 2A (Sipple)</text>
+    <text x="236" y="62" text-anchor="middle" font-size="9" fill="#64748b">RET proto-oncogene</text>
+    <g font-size="10" fill="#7c2d12"><text x="176" y="84">• Medullary thyroid</text><text x="176" y="104">• Pheochromocytoma</text><text x="176" y="124">• Parathyroid</text></g>
+    <text x="236" y="152" text-anchor="middle" font-size="9.5" fill="#c2410c">MTC + pheo + PTH</text>
+  </g>
+  <g>
+    <rect x="316" y="30" width="138" height="150" rx="8" fill="#fdf4ff" stroke="#e9a8f0"/>
+    <text x="385" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#a21caf">MEN 2B</text>
+    <text x="385" y="62" text-anchor="middle" font-size="9" fill="#64748b">RET proto-oncogene</text>
+    <g font-size="10" fill="#701a75"><text x="326" y="84">• Medullary thyroid</text><text x="326" y="104">• Pheochromocytoma</text><text x="326" y="124">• Mucosal neuromas</text><text x="326" y="140">• Marfanoid habitus</text></g>
+    <text x="385" y="162" text-anchor="middle" font-size="9.5" fill="#a21caf">NO parathyroid</text>
+  </g>
+  <text x="16" y="200" font-size="10" fill="#0369a1">Medullary thyroid carcinoma + pheo → look for RET (MEN 2). Prophylactic thyroidectomy.</text>
+</svg>`;
+
+export const CUSHING_WORKUP = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cushing syndrome laboratory interpretation of the four causes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cushing syndrome: localizing the source</text>
+  <!-- header row -->
+  <g font-size="10" font-weight="700" fill="#475569">
+    <text x="150" y="46" text-anchor="middle">ACTH</text>
+    <text x="270" y="46" text-anchor="middle">Low-dose Dex</text>
+    <text x="410" y="46" text-anchor="middle">High-dose Dex</text>
+  </g>
+  <line x1="16" y1="52" x2="464" y2="52" stroke="#cbd5e1"/>
+  <g font-size="10">
+    <!-- Cushing disease -->
+    <text x="16" y="74" font-size="10.5" font-weight="700" fill="#5b21b6">Cushing disease (pituitary)</text>
+    <text x="150" y="90" text-anchor="middle" fill="#15803d">↑ High</text>
+    <text x="270" y="90" text-anchor="middle" fill="#dc2626">no suppress</text>
+    <text x="410" y="90" text-anchor="middle" font-weight="700" fill="#15803d">SUPPRESSES</text>
+    <line x1="16" y1="100" x2="464" y2="100" stroke="#eef2f7"/>
+    <!-- Ectopic -->
+    <text x="16" y="122" font-size="10.5" font-weight="700" fill="#9f1239">Ectopic ACTH (e.g. SCLC)</text>
+    <text x="150" y="138" text-anchor="middle" fill="#15803d">↑↑ Very high</text>
+    <text x="270" y="138" text-anchor="middle" fill="#dc2626">no suppress</text>
+    <text x="410" y="138" text-anchor="middle" fill="#dc2626">no suppress</text>
+    <line x1="16" y1="148" x2="464" y2="148" stroke="#eef2f7"/>
+    <!-- Adrenal -->
+    <text x="16" y="170" font-size="10.5" font-weight="700" fill="#c2410c">Adrenal (adenoma/ca)</text>
+    <text x="150" y="186" text-anchor="middle" fill="#dc2626">↓ Low</text>
+    <text x="270" y="186" text-anchor="middle" fill="#dc2626">no suppress</text>
+    <text x="410" y="186" text-anchor="middle" fill="#dc2626">no suppress</text>
+    <line x1="16" y1="196" x2="464" y2="196" stroke="#eef2f7"/>
+    <!-- Exogenous -->
+    <text x="16" y="218" font-size="10.5" font-weight="700" fill="#0f766e">Exogenous (iatrogenic)</text>
+    <text x="150" y="234" text-anchor="middle" fill="#dc2626">↓ Low</text>
+    <text x="270" y="234" text-anchor="middle" font-weight="700" fill="#15803d">SUPPRESSED</text>
+    <text x="410" y="234" text-anchor="middle" font-weight="700" fill="#15803d">SUPPRESSED</text>
+  </g>
+</svg>`;

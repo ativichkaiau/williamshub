@@ -125,6 +125,12 @@ export const subjectOfSource: Record<string, string> = {
   'L7 — Drugs & Bone Metabolism': 'HMS-2',
   'L8 — Musculoskeletal Tumors': 'HMS-2',
 
+  // HEN-2 — Human Endocrine System-2 (Year 3)
+  'L1 — Pituitary & Hypothalamus Pathology': 'HEN-2',
+  'L2 — Pituitary & Hypothalamic Drugs': 'HEN-2',
+  'L3 — Adrenal Pathology & MEN': 'HEN-2',
+  'L4 — Cushing Syndrome': 'HEN-2',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

@@ -253,6 +253,28 @@ import tumorClassificationGrading from './lectures/tumor-classification-grading'
 import softTissueTumors from './lectures/soft-tissue-tumors';
 import boneTumors from './lectures/bone-tumors';
 
+// ── HEN-2 (Human Endocrine System-2) ─────────────────────────────────────────
+// L1 — Pituitary & Hypothalamus Pathology
+import pituitaryAdenomasHyperpituitarism from './lectures/pituitary-adenomas-hyperpituitarism';
+import hypopituitarism from './lectures/hypopituitarism';
+import posteriorPituitarySyndromes from './lectures/posterior-pituitary-syndromes';
+import craniopharyngioma from './lectures/craniopharyngioma';
+// L2 — Pituitary & Hypothalamic Drugs
+import gnrhGonadotropinDrugs from './lectures/gnrh-gonadotropin-drugs';
+import growthHormoneProlactinDrugs from './lectures/growth-hormone-prolactin-drugs';
+import posteriorPituitaryDrugs from './lectures/posterior-pituitary-drugs';
+// L3 — Adrenal Pathology & MEN
+import hyperaldosteronism from './lectures/hyperaldosteronism';
+import adrenalCushingPathology from './lectures/adrenal-cushing-pathology';
+import adrenalInsufficiency from './lectures/adrenal-insufficiency';
+import congenitalAdrenalHyperplasia from './lectures/congenital-adrenal-hyperplasia';
+import pheochromocytomaParaganglioma from './lectures/pheochromocytoma-paraganglioma';
+import neuroblastoma from './lectures/neuroblastoma';
+import multipleEndocrineNeoplasia from './lectures/multiple-endocrine-neoplasia';
+// L4 — Cushing Syndrome
+import cushingDiagnosisWorkup from './lectures/cushing-diagnosis-workup';
+import cushingManagementSteroidWithdrawal from './lectures/cushing-management-steroid-withdrawal';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -382,6 +404,17 @@ export const lectures: Lecture[] = [
   calciumHomeostasisHormones, osteoporosisDrugs,
   // L8 Musculoskeletal Tumors
   tumorClassificationGrading, softTissueTumors, boneTumors,
+
+  // ── HEN-2 (Human Endocrine System-2) ──
+  // L1 Pituitary & Hypothalamus Pathology
+  pituitaryAdenomasHyperpituitarism, hypopituitarism, posteriorPituitarySyndromes, craniopharyngioma,
+  // L2 Pituitary & Hypothalamic Drugs
+  gnrhGonadotropinDrugs, growthHormoneProlactinDrugs, posteriorPituitaryDrugs,
+  // L3 Adrenal Pathology & MEN
+  hyperaldosteronism, adrenalCushingPathology, adrenalInsufficiency, congenitalAdrenalHyperplasia,
+  pheochromocytomaParaganglioma, neuroblastoma, multipleEndocrineNeoplasia,
+  // L4 Cushing Syndrome
+  cushingDiagnosisWorkup, cushingManagementSteroidWithdrawal,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

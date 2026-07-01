@@ -222,6 +222,37 @@ import glycosidicBondsPolysaccharides from './lectures/glycosidic-bonds-polysacc
 import fattyAcidsMembranes from './lectures/fatty-acids-membranes';
 import cholesterolSteroidsLipoproteins from './lectures/cholesterol-steroids-lipoproteins';
 
+// ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
+// L1 — Diseases of Bone
+import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
+import developmentalBoneDisorders from './lectures/developmental-bone-disorders';
+import metabolicBoneDisease from './lectures/metabolic-bone-disease';
+import osteomyelitisAvnPaget from './lectures/osteomyelitis-avn-paget';
+// L2 — Diseases of Skeletal Muscle
+import neurogenicMuscularDystrophy from './lectures/neurogenic-muscular-dystrophy';
+import inflammatoryMyopathies from './lectures/inflammatory-myopathies';
+import metabolicToxicNmjMyopathy from './lectures/metabolic-toxic-nmj-myopathy';
+// L3 — Diseases of Joint
+import jointAnatomySynovialFluid from './lectures/joint-anatomy-synovial-fluid';
+import osteoarthritisRheumatoid from './lectures/osteoarthritis-rheumatoid';
+import spondyloarthropathiesCrystalArthritis from './lectures/spondyloarthropathies-crystal-arthritis';
+// L4 — Autacoids, NSAIDs & Salicylates
+import coxPathwayNsaids from './lectures/cox-pathway-nsaids';
+import nsaidAcetaminophenSafety from './lectures/nsaid-acetaminophen-safety';
+// L5 — Antirheumatic & Gout Drugs
+import rheumatoidArthritisDrugs from './lectures/rheumatoid-arthritis-drugs';
+import goutDrugs from './lectures/gout-drugs';
+// L6 — MSK Rehabilitation & Modalities
+import rehabThermotherapyElectrotherapy from './lectures/rehab-thermotherapy-electrotherapy';
+import rehabModalitiesSelection from './lectures/rehab-modalities-selection';
+// L7 — Drugs & Bone Metabolism
+import calciumHomeostasisHormones from './lectures/calcium-homeostasis-hormones';
+import osteoporosisDrugs from './lectures/osteoporosis-drugs';
+// L8 — Musculoskeletal Tumors
+import tumorClassificationGrading from './lectures/tumor-classification-grading';
+import softTissueTumors from './lectures/soft-tissue-tumors';
+import boneTumors from './lectures/bone-tumors';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -333,6 +364,24 @@ export const lectures: Lecture[] = [
   carbohydrateStructureIsomerism, glycosidicBondsPolysaccharides,
   // L12 Lipid Chemistry
   fattyAcidsMembranes, cholesterolSteroidsLipoproteins,
+
+  // ── HMS-2 (Human Musculoskeletal System-2) ──
+  // L1 Diseases of Bone
+  boneBiologyRemodeling, developmentalBoneDisorders, metabolicBoneDisease, osteomyelitisAvnPaget,
+  // L2 Diseases of Skeletal Muscle
+  neurogenicMuscularDystrophy, inflammatoryMyopathies, metabolicToxicNmjMyopathy,
+  // L3 Diseases of Joint
+  jointAnatomySynovialFluid, osteoarthritisRheumatoid, spondyloarthropathiesCrystalArthritis,
+  // L4 Autacoids, NSAIDs & Salicylates
+  coxPathwayNsaids, nsaidAcetaminophenSafety,
+  // L5 Antirheumatic & Gout Drugs
+  rheumatoidArthritisDrugs, goutDrugs,
+  // L6 MSK Rehabilitation & Modalities
+  rehabThermotherapyElectrotherapy, rehabModalitiesSelection,
+  // L7 Drugs & Bone Metabolism
+  calciumHomeostasisHormones, osteoporosisDrugs,
+  // L8 Musculoskeletal Tumors
+  tumorClassificationGrading, softTissueTumors, boneTumors,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

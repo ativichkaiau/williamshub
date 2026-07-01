@@ -115,6 +115,16 @@ export const subjectOfSource: Record<string, string> = {
   'L17 — Antidepressants': 'HNS-2',
   'L18 — CNS Infections & Immune Disorders': 'HNS-2',
 
+  // HMS-2 — Human Musculoskeletal System-2 (Year 3)
+  'L1 — Diseases of Bone': 'HMS-2',
+  'L2 — Diseases of Skeletal Muscle': 'HMS-2',
+  'L3 — Diseases of Joint': 'HMS-2',
+  'L4 — Autacoids, NSAIDs & Salicylates': 'HMS-2',
+  'L5 — Antirheumatic & Gout Drugs': 'HMS-2',
+  'L6 — MSK Rehabilitation & Modalities': 'HMS-2',
+  'L7 — Drugs & Bone Metabolism': 'HMS-2',
+  'L8 — Musculoskeletal Tumors': 'HMS-2',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

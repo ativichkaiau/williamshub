@@ -558,3 +558,61 @@ export const LIPOPROTEIN_CLASSES = `<svg viewBox="0 0 460 200" xmlns="http://www
   </g>
   <text x="16" y="182" font-size="10.5" fill="#0369a1">Chylomicron = most TG / lowest density; HDL = most protein / highest density</text>
 </svg>`;
+
+// ── Musculoskeletal figures (HMS-2) ──────────────────────────────────────────
+
+export const ARACHIDONIC_ACID_PATHWAY = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Arachidonic acid pathway with steroid and NSAID block points" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <rect x="140" y="12" width="180" height="24" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="230" y="29" text-anchor="middle">Membrane phospholipid</text>
+    <line x1="230" y1="36" x2="230" y2="54" stroke="#94a3b8"/><text x="238" y="49" font-size="10.5" fill="#475569">phospholipase A₂</text><text x="238" y="62" font-size="10.5" fill="#dc2626">✗ corticosteroids</text>
+    <rect x="150" y="66" width="160" height="24" rx="6" fill="#fef9c3" stroke="#fde047"/><text x="230" y="83" text-anchor="middle">Arachidonic acid</text>
+    <!-- COX branch -->
+    <line x1="200" y1="90" x2="120" y2="118" stroke="#94a3b8"/><text x="70" y="108" font-size="10.5" fill="#475569">COX</text><text x="20" y="121" font-size="10" fill="#dc2626">✗ NSAIDs / aspirin</text>
+    <rect x="40" y="124" width="150" height="22" rx="6" fill="#fee2e2" stroke="#fca5a5"/><text x="115" y="139" text-anchor="middle" font-size="11">Prostaglandins / TXA₂</text>
+    <text x="40" y="166" font-size="10" fill="#475569">Pain · fever · inflammation ·</text>
+    <text x="40" y="180" font-size="10" fill="#475569">gastric protection · platelet TXA₂</text>
+    <!-- LOX branch -->
+    <line x1="260" y1="90" x2="340" y2="118" stroke="#94a3b8"/><text x="345" y="110" font-size="10.5" fill="#475569">5-LOX</text>
+    <rect x="285" y="124" width="130" height="22" rx="6" fill="#dbeafe" stroke="#93c5fd"/><text x="350" y="139" text-anchor="middle" font-size="11">Leukotrienes</text>
+    <text x="290" y="166" font-size="10" fill="#475569">Bronchoconstriction,</text><text x="290" y="180" font-size="10" fill="#475569">allergy, chemotaxis</text>
+  </g>
+  <text x="16" y="212" font-size="10.5" fill="#0369a1">Aspirin = irreversible COX; other NSAIDs = reversible. COX-2-selective (coxibs) spare gastric COX-1.</text>
+  <text x="16" y="230" font-size="10.5" fill="#7c3aed">Corticosteroids block PLA₂ → suppress BOTH prostaglandins and leukotrienes.</text>
+</svg>`;
+
+export const CRYSTAL_ARTHRITIS = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Gout versus pseudogout crystal comparison" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <!-- Gout panel -->
+  <rect x="16" y="34" width="200" height="120" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="116" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="#c2410c">Gout (MSU)</text>
+  <g stroke="#dc2626" stroke-width="2"><line x1="50" y1="70" x2="90" y2="82"/><line x1="70" y1="110" x2="118" y2="98"/><line x1="120" y1="70" x2="160" y2="84"/><line x1="140" y1="120" x2="185" y2="108"/></g>
+  <text x="116" y="140" text-anchor="middle" font-size="10.5" fill="#7c2d12">Needle-shaped ·</text>
+  <text x="116" y="152" text-anchor="middle" font-size="10.5" fill="#7c2d12">NEGATIVE birefringence</text>
+  <!-- Pseudogout panel -->
+  <rect x="244" y="34" width="200" height="120" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="344" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">Pseudogout (CPPD)</text>
+  <g fill="#93c5fd" stroke="#2563eb" stroke-width="1.4"><rect x="280" y="66" width="18" height="11" transform="rotate(20 289 71)"/><rect x="330" y="86" width="18" height="11" transform="rotate(-15 339 91)"/><rect x="380" y="70" width="18" height="11" transform="rotate(30 389 75)"/><rect x="320" y="118" width="18" height="11" transform="rotate(10 329 123)"/></g>
+  <text x="344" y="140" text-anchor="middle" font-size="10.5" fill="#1e3a8a">Rhomboid ·</text>
+  <text x="344" y="152" text-anchor="middle" font-size="10.5" fill="#1e3a8a">POSITIVE birefringence</text>
+  <text x="16" y="178" font-size="10" fill="#0369a1">Gout: first MTP (podagra), ↑urate. Pseudogout: knee, chondrocalcinosis, &gt;50 y.</text>
+</svg>`;
+
+export const BONE_TUMOR_LOCATIONS = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Bone tumor locations along a long bone" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">Bone tumors by site (long bone)</text>
+  <!-- long bone silhouette -->
+  <path d="M180,36 q30,-6 60,0 q6,10 -8,18 q-14,6 -14,20 l0,90 q0,14 14,20 q14,8 8,18 q-30,6 -60,0 q-6,-10 8,-18 q14,-6 14,-20 l0,-90 q0,-14 -14,-20 q-14,-8 -8,-18 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="176" y1="70" x2="244" y2="70" stroke="#cbd5e1" stroke-dasharray="3 3"/>
+  <line x1="176" y1="188" x2="244" y2="188" stroke="#cbd5e1" stroke-dasharray="3 3"/>
+  <g font-size="10.5">
+    <text x="20" y="52" fill="#7c3aed">Epiphysis → Giant cell tumor</text>
+    <circle cx="210" cy="50" r="4" fill="#7c3aed"/>
+    <text x="20" y="78" fill="#dc2626">Metaphysis → Osteosarcoma</text><text x="20" y="90" fill="#dc2626">(around the knee), osteochondroma</text>
+    <circle cx="210" cy="80" r="4" fill="#dc2626"/>
+    <text x="250" y="132" fill="#0891b2">Diaphysis →</text><text x="250" y="144" fill="#0891b2">Ewing sarcoma</text>
+    <circle cx="228" cy="130" r="4" fill="#0891b2"/>
+  </g>
+  <text x="16" y="228" font-size="10" fill="#475569">Osteosarcoma: Codman triangle, ↑young. Ewing: small round blue cells, &lt;15 y.</text>
+  <text x="16" y="242" font-size="10" fill="#0369a1">Metastasis = most common malignant bone tumor overall.</text>
+</svg>`;

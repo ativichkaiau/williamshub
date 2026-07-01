@@ -363,6 +363,27 @@ import incretinBasedTherapy from './lectures/incretin-based-therapy';
 import metforminThiazolidinediones from './lectures/metformin-thiazolidinediones';
 import sglt2AlphaGlucosidaseSelection from './lectures/sglt2-alpha-glucosidase-selection';
 
+// ── HGA (Human Gross Anatomy) · Part 1: Upper Limb & Back ─────────────────────
+// L1 — Pectoral Girdle, Superficial Back & Axilla
+import pectoralGirdleBones from './lectures/pectoral-girdle-bones';
+import superficialBackPectoralMuscles from './lectures/superficial-back-pectoral-muscles';
+import axillaBrachialPlexus from './lectures/axilla-brachial-plexus';
+// L2 — Humerus, Shoulder Region & Cubital Fossa
+import shoulderRegionRotatorCuff from './lectures/shoulder-region-rotator-cuff';
+import armCompartmentsHumerusFractures from './lectures/arm-compartments-humerus-fractures';
+import cubitalFossa from './lectures/cubital-fossa';
+// L3 — Forearm, Wrist Bones & Dorsum of Hand
+import radiusUlnaCarpalsFractures from './lectures/radius-ulna-carpals-fractures';
+import forearmFlexorCompartment from './lectures/forearm-flexor-compartment';
+import forearmExtensorCompartmentSnuffbox from './lectures/forearm-extensor-compartment-snuffbox';
+// L4 — Palm of Hand & Joints of Upper Limb
+import palmIntrinsicMuscles from './lectures/palm-intrinsic-muscles';
+import handNerveLesions from './lectures/hand-nerve-lesions';
+import upperLimbJoints from './lectures/upper-limb-joints';
+// L5 — Deep Back & Joints of Vertebral Column
+import intrinsicBackMusclesSuboccipital from './lectures/intrinsic-back-muscles-suboccipital';
+import vertebralColumnJointsDiscs from './lectures/vertebral-column-joints-discs';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -551,6 +572,18 @@ export const lectures: Lecture[] = [
   // L12 Drugs Used in Diabetes
   insulinTherapyRegimens, insulinSecretagogues, incretinBasedTherapy,
   metforminThiazolidinediones, sglt2AlphaGlucosidaseSelection,
+
+  // ── HGA (Human Gross Anatomy) · Part 1: Upper Limb & Back ──
+  // L1 Pectoral Girdle, Superficial Back & Axilla
+  pectoralGirdleBones, superficialBackPectoralMuscles, axillaBrachialPlexus,
+  // L2 Humerus, Shoulder Region & Cubital Fossa
+  shoulderRegionRotatorCuff, armCompartmentsHumerusFractures, cubitalFossa,
+  // L3 Forearm, Wrist Bones & Dorsum of Hand
+  radiusUlnaCarpalsFractures, forearmFlexorCompartment, forearmExtensorCompartmentSnuffbox,
+  // L4 Palm of Hand & Joints of Upper Limb
+  palmIntrinsicMuscles, handNerveLesions, upperLimbJoints,
+  // L5 Deep Back & Joints of Vertebral Column
+  intrinsicBackMusclesSuboccipital, vertebralColumnJointsDiscs,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

@@ -153,6 +153,13 @@ export const subjectOfSource: Record<string, string> = {
   'L11 — Mendelian, Multifactorial & Population Genetics': 'HGD',
   'L12 — Prenatal Diagnosis': 'HGD',
 
+  // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
+  'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
+  'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',
+  'L3 — Forearm, Wrist Bones & Dorsum of Hand': 'HGA',
+  'L4 — Palm of Hand & Joints of Upper Limb': 'HGA',
+  'L5 — Deep Back & Joints of Vertebral Column': 'HGA',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',
@@ -166,6 +173,18 @@ export const subjectOfSource: Record<string, string> = {
   'L10 — Molecular Techniques': 'MBH',
   'L11 — Carbohydrate Chemistry': 'MBH',
   'L12 — Lipid Chemistry': 'MBH',
+};
+
+// Optional sub-grouping of a subject's lectures into "Parts" (e.g. HGA, a very
+// large subject, is taught as Part 1–5). Maps a lecture `source` → part label.
+// Subjects without entries here just render their lectures flat (ungrouped).
+export const partOfSource: Record<string, string> = {
+  // HGA Part 1 — Upper Limb & Back
+  'L1 — Pectoral Girdle, Superficial Back & Axilla': 'Part 1 · Upper Limb & Back',
+  'L2 — Humerus, Shoulder Region & Cubital Fossa': 'Part 1 · Upper Limb & Back',
+  'L3 — Forearm, Wrist Bones & Dorsum of Hand': 'Part 1 · Upper Limb & Back',
+  'L4 — Palm of Hand & Joints of Upper Limb': 'Part 1 · Upper Limb & Back',
+  'L5 — Deep Back & Joints of Vertebral Column': 'Part 1 · Upper Limb & Back',
 };
 
 export function subjectSlug(code: string): string {

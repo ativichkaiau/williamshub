@@ -5,6 +5,7 @@ import {
   subjectBySlug,
   subjectSlug,
   lectureSetSlug,
+  partOfSource,
 } from '../../../content';
 import { lectureTheme } from '../../../lib/theme';
 import type { Lecture } from '../../../lib/types';
@@ -64,6 +65,18 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
     a.localeCompare(b, undefined, { numeric: true }),
   );
 
+  // Group sources into "Parts" (e.g. HGA Part 1–5) while preserving order.
+  // Subjects without any part mapping fall into a single undefined-part group
+  // and render exactly as before (no headers).
+  const partedGroups: { part: string | undefined; sources: typeof sources }[] = [];
+  for (const entry of sources) {
+    const part = partOfSource[entry[0]];
+    const last = partedGroups[partedGroups.length - 1];
+    if (last && last.part === part) last.sources.push(entry);
+    else partedGroups.push({ part, sources: [entry] });
+  }
+  const hasParts = partedGroups.some((g) => g.part);
+
   return (
     <main className="mx-auto max-w-5xl px-5 py-8">
       <Link
@@ -87,30 +100,42 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         </p>
       </header>
 
-      {sources.map(([source, lects]) => {
-        const theme = lectureTheme(source);
-        return (
-          <section key={source} className="mb-9">
-            <div className={`mb-3 h-1 w-12 rounded-full bg-gradient-to-r ${theme.grad}`} />
-            <Link
-              href={`/lecture-set/${lectureSetSlug(source)}`}
-              className="group mb-4 flex items-center gap-2"
-            >
-              <span className={`h-3 w-3 rounded-full ${theme.dot}`} />
-              <h2 className={`text-base font-black tracking-tight transition ${theme.text}`}>{source}</h2>
-              <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{lects.length}</span>
-              <span className={`text-xs font-semibold opacity-0 transition group-hover:opacity-100 ${theme.text}`}>
-                View whole lecture →
+      {partedGroups.map((group) => (
+        <div key={group.part ?? '_'}>
+          {hasParts && group.part ? (
+            <div className="mb-5 mt-2 flex items-center gap-3">
+              <span className="clay-pill px-3 py-1 text-sm font-black tracking-tight text-slate-900 dark:text-white">
+                {group.part}
               </span>
-            </Link>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {lects.map((l) => (
-                <LectureCard key={l.id} l={l} theme={theme} />
-              ))}
+              <span className="h-px flex-1 bg-slate-200 dark:bg-white/10" />
             </div>
-          </section>
-        );
-      })}
+          ) : null}
+          {group.sources.map(([source, lects]) => {
+            const theme = lectureTheme(source);
+            return (
+              <section key={source} className="mb-9">
+                <div className={`mb-3 h-1 w-12 rounded-full bg-gradient-to-r ${theme.grad}`} />
+                <Link
+                  href={`/lecture-set/${lectureSetSlug(source)}`}
+                  className="group mb-4 flex items-center gap-2"
+                >
+                  <span className={`h-3 w-3 rounded-full ${theme.dot}`} />
+                  <h2 className={`text-base font-black tracking-tight transition ${theme.text}`}>{source}</h2>
+                  <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{lects.length}</span>
+                  <span className={`text-xs font-semibold opacity-0 transition group-hover:opacity-100 ${theme.text}`}>
+                    View whole lecture →
+                  </span>
+                </Link>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {lects.map((l) => (
+                    <LectureCard key={l.id} l={l} theme={theme} />
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      ))}
 
       <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite

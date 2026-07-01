@@ -917,3 +917,85 @@ export const THALASSEMIA_SCREENING = `<svg viewBox="0 0 470 240" xmlns="http://w
   <text x="16" y="210" font-size="9.5" fill="#475569">At-risk severe disease: Hb Bart's hydrops (α-thal-1 × α-thal-1), homozygous β-thal, β-thal/HbE.</text>
   <text x="16" y="226" font-size="9.5" fill="#0369a1">Prenatal Dx: CVS (10–13 wk), amniocentesis (15–20 wk), cordocentesis, or PGT before implantation.</text>
 </svg>`;
+
+export const BRACHIAL_PLEXUS = `<svg viewBox="0 0 490 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Brachial plexus organization from roots to terminal branches" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Brachial plexus (C5–T1)</text>
+  <g font-size="9" font-weight="700" fill="#64748b" text-anchor="middle">
+    <text x="50" y="38">Roots</text><text x="140" y="38">Trunks</text><text x="228" y="38">Divisions</text><text x="318" y="38">Cords</text><text x="430" y="38">Branches</text>
+  </g>
+  <!-- roots -->
+  <g font-size="9.5" fill="#0369a1" text-anchor="middle"><text x="50" y="60">C5</text><text x="50" y="86">C6</text><text x="50" y="112">C7</text><text x="50" y="138">C8</text><text x="50" y="164">T1</text></g>
+  <!-- trunks -->
+  <g font-size="9" fill="#7c3aed" text-anchor="middle"><text x="140" y="70">Upper</text><text x="140" y="112">Middle</text><text x="140" y="150">Lower</text></g>
+  <g stroke="#cbd5e1"><line x1="66" y1="58" x2="118" y2="66"/><line x1="66" y1="84" x2="118" y2="66"/><line x1="66" y1="110" x2="120" y2="108"/><line x1="66" y1="136" x2="118" y2="146"/><line x1="66" y1="162" x2="118" y2="146"/></g>
+  <!-- divisions -->
+  <g font-size="8.5" fill="#c2410c" text-anchor="middle"><text x="228" y="92">anterior ×3</text><text x="228" y="128">posterior ×3</text></g>
+  <!-- cords -->
+  <g font-size="9" fill="#15803d" text-anchor="middle"><text x="318" y="70">Lateral</text><text x="318" y="112">Posterior</text><text x="318" y="150">Medial</text></g>
+  <!-- branches -->
+  <g font-size="8.8" fill="#334155"><text x="378" y="60">Musculocutaneous (C5-7)</text><text x="378" y="86">Axillary (C5-6)</text><text x="378" y="112">Radial (C5-T1)</text><text x="378" y="138">Median (C5-T1)</text><text x="378" y="162">Ulnar (C8-T1)</text></g>
+  <g stroke="#cbd5e1"><line x1="346" y1="66" x2="374" y2="58"/><line x1="346" y1="108" x2="374" y2="84"/><line x1="346" y1="112" x2="374" y2="110"/><line x1="346" y1="112" x2="374" y2="136"/><line x1="346" y1="148" x2="374" y2="160"/></g>
+  <text x="16" y="196" font-size="10" fill="#475569">"Real Texans Drink Cold Beer": Roots → Trunks → Divisions → Cords → Branches.</text>
+  <text x="16" y="212" font-size="9.5" fill="#0369a1">Upper-trunk (C5-6) injury = Erb palsy ("waiter's tip"); lower-trunk (C8-T1) = Klumpke (claw hand).</text>
+  <text x="16" y="228" font-size="9.5" fill="#475569">Posterior cord → axillary + radial ("wrist drop"); lateral+medial cords → median.</text>
+</svg>`;
+
+export const HUMERUS_NERVE_INJURY = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Humerus fracture sites and the nerve injured at each" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Humerus fractures → nerve at risk</text>
+  <!-- humerus silhouette -->
+  <path d="M205,34 q26,-6 42,0 q6,10 2,22 l-4,18 q-2,10 0,20 l0,70 q0,10 -6,18 l-16,22 q-6,8 -16,8 q-10,0 -12,-10 l-2,-18 q-1,-10 5,-16 q8,-8 8,-20 l0,-74 q0,-12 -4,-22 q-4,-12 4,-18 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <g font-size="10.5">
+    <circle cx="216" cy="60" r="4" fill="#be123c"/><text x="20" y="56" font-weight="700" fill="#be123c">Surgical neck</text><text x="20" y="70" fill="#7f1d1d">→ Axillary n. (deltoid, ↓shoulder abduction)</text>
+    <circle cx="220" cy="120" r="4" fill="#c2410c"/><text x="20" y="112" font-weight="700" fill="#c2410c">Midshaft / radial groove</text><text x="20" y="126" fill="#7c2d12">→ Radial n. (WRIST DROP)</text>
+    <circle cx="212" cy="192" r="4" fill="#7c3aed"/><text x="278" y="186" font-weight="700" fill="#7c3aed">Supracondylar</text><text x="270" y="200" fill="#4c1d95">→ Median n. +</text><text x="270" y="213" fill="#4c1d95">brachial artery</text>
+    <circle cx="238" cy="206" r="4" fill="#0891b2"/><text x="300" y="228" font-weight="700" fill="#0891b2">Medial epicondyle</text><text x="300" y="241" fill="#155e75">→ Ulnar n. (claw)</text>
+  </g>
+</svg>`;
+
+export const HAND_NERVE_LESIONS = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Median, ulnar and radial nerve hand lesions" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Upper-limb nerve lesions in the hand</text>
+  <g>
+    <rect x="14" y="30" width="150" height="150" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="89" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Median nerve</text>
+    <g font-size="9" fill="#1e3a8a"><text x="20" y="66">Carpal tunnel (wrist)</text><text x="20" y="80">"Ape / simian hand"</text><text x="20" y="94">Loss of thumb opposition</text><text x="20" y="108">Thenar wasting</text><text x="20" y="122">"Hand of benediction"</text><text x="20" y="136">on making a fist</text><text x="20" y="152">Sensory: lateral 3½</text><text x="20" y="164">digits (palmar)</text></g>
+  </g>
+  <g>
+    <rect x="168" y="30" width="150" height="150" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="243" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">Ulnar nerve</text>
+    <g font-size="9" fill="#7c2d12"><text x="174" y="66">Guyon canal / elbow</text><text x="174" y="80">"Claw hand" (4th-5th)</text><text x="174" y="94">Froment sign +</text><text x="174" y="108">Loss of ab/adduction</text><text x="174" y="122">(interossei)</text><text x="174" y="136">Hypothenar wasting</text><text x="174" y="152">Sensory: medial 1½</text><text x="174" y="164">digits</text></g>
+  </g>
+  <g>
+    <rect x="322" y="30" width="144" height="150" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+    <text x="394" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Radial nerve</text>
+    <g font-size="9" fill="#7f1d1d"><text x="328" y="66">Radial groove / PIN</text><text x="328" y="80">"WRIST DROP"</text><text x="328" y="94">Loss of extension</text><text x="328" y="108">(wrist &amp; fingers)</text><text x="328" y="122">Triceps spared if</text><text x="328" y="136">below groove</text><text x="328" y="152">Sensory: dorsal</text><text x="328" y="164">"snuffbox" web</text></g>
+  </g>
+  <text x="16" y="202" font-size="9.5" fill="#0369a1">"Ulnar paradox": a more proximal (elbow) ulnar lesion gives LESS clawing than a distal one.</text>
+</svg>`;
+
+export const VERTEBRAL_LIGAMENTS = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Intervertebral disc and vertebral column ligaments" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Vertebral joints, disc &amp; ligaments (sagittal)</text>
+  <!-- two vertebral bodies -->
+  <rect x="120" y="44" width="120" height="46" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <rect x="120" y="140" width="120" height="46" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <!-- disc -->
+  <rect x="120" y="94" width="120" height="42" rx="8" fill="#fef9c3" stroke="#fde047"/>
+  <ellipse cx="180" cy="115" rx="20" ry="13" fill="#fca5a5" stroke="#ef4444"/>
+  <text x="180" y="118" text-anchor="middle" font-size="8" fill="#7f1d1d">nucleus</text>
+  <text x="128" y="132" font-size="8" fill="#a16207">annulus fibrosus</text>
+  <!-- ALL -->
+  <line x1="116" y1="44" x2="116" y2="186" stroke="#2563eb" stroke-width="3"/><text x="20" y="118" font-size="9.5" font-weight="700" fill="#1d4ed8">ALL (anterior)</text>
+  <!-- PLL -->
+  <line x1="244" y1="44" x2="244" y2="186" stroke="#c2410c" stroke-width="3"/><text x="250" y="86" font-size="9.5" font-weight="700" fill="#c2410c">PLL (posterior,</text><text x="250" y="99" font-size="9.5" fill="#7c2d12">narrow → weak)</text>
+  <!-- herniation arrow -->
+  <path d="M240,115 q26,2 40,10" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker></defs>
+  <text x="286" y="128" font-size="9" fill="#b91c1c">postero-lateral</text><text x="286" y="140" font-size="9" fill="#b91c1c">herniation →</text><text x="286" y="152" font-size="9" fill="#b91c1c">nerve root</text>
+  <!-- ligamentum flavum + spinous -->
+  <text x="286" y="176" font-size="9" fill="#15803d">ligamentum flavum,</text><text x="286" y="188" font-size="9" fill="#15803d">inter/supraspinous lig.</text>
+  <text x="16" y="220" font-size="9.5" fill="#475569">Common herniation: L4-L5, L5-S1, C5-C6. Disc herniates postero-laterally (PLL is weak there).</text>
+  <text x="16" y="236" font-size="9.5" fill="#0369a1">Atlanto-occipital = "yes" nod (flex/extend); atlanto-axial = "no" rotation (dens + transverse lig).</text>
+</svg>`;

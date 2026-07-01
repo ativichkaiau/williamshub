@@ -1534,3 +1534,568 @@ export const IMRAD_STRUCTURE = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.
   <text x="332" y="210" font-size="8" fill="#64748b">general</text>
   <text x="16" y="248" font-size="8.5" fill="#64748b">Title + structured Abstract sit on top; References + funding/COI below. Read Methods before believing Results.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// BHCB — Basic Histology & Cell Biology (histology / cell-biology figures)
+// ---------------------------------------------------------------------------
+
+export const HE_STAINING = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Hematoxylin and eosin staining" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">H&amp;E staining — what turns which colour &amp; why</text>
+  <rect x="16" y="34" width="220" height="150" rx="8" fill="#f5edf7" stroke="#c084cc"/>
+  <text x="126" y="54" text-anchor="middle" font-size="11" font-weight="700" fill="#7b2d8e">Haematoxylin → blue/purple</text>
+  <text x="126" y="70" text-anchor="middle" font-size="8.5" fill="#7b2d8e">basic dye · stains ACIDIC (anionic) parts</text>
+  <text x="126" y="82" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7b2d8e">= BASOPHILIA</text>
+  <g font-size="9" fill="#6b21a8"><text x="26" y="104">• Nucleus — DNA (chromatin)</text><text x="26" y="120">• Nucleolus — rRNA</text><text x="26" y="136">• RER / ribosomes (Nissl bodies)</text><text x="26" y="152">• cartilage matrix</text></g>
+  <text x="26" y="174" font-size="8" fill="#7b2d8e">basic dye binds negatively-charged phosphate of nucleic acids</text>
+  <rect x="244" y="34" width="220" height="150" rx="8" fill="#fdecec" stroke="#e77"/>
+  <text x="354" y="54" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Eosin → pink/red</text>
+  <text x="354" y="70" text-anchor="middle" font-size="8.5" fill="#b91c1c">acidic dye · stains BASIC (cationic) parts</text>
+  <text x="354" y="82" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">= ACIDOPHILIA / EOSINOPHILIA</text>
+  <g font-size="9" fill="#991b1b"><text x="254" y="104">• Cytoplasm (proteins)</text><text x="254" y="120">• Mitochondria</text><text x="254" y="136">• Collagen / most ECM fibres</text><text x="254" y="152">• RBCs, keratin, muscle</text></g>
+  <text x="254" y="174" font-size="8" fill="#b91c1c">acid dye binds positively-charged amino groups of proteins</text>
+  <text x="16" y="204" font-size="9" fill="#0369a1">Other stains: PAS → magenta (glycogen, basement membrane, mucin); Osmium/Sudan → lipid; Cresyl violet → Nissl.</text>
+  <text x="16" y="222" font-size="9" fill="#334155" font-weight="700">EM: TEM = ultrathin section, internal ultrastructure · SEM = surface / 3-D.</text>
+  <text x="16" y="240" font-size="8.5" fill="#64748b">"Basophilic" = loves the BASIC dye (blue); "acidophilic/eosinophilic" = loves the ACID dye (pink). Don't invert it.</text>
+</svg>`;
+
+export const CELL_MEMBRANE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Fluid mosaic plasma membrane" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Plasma membrane — fluid mosaic model</text>
+  <text x="16" y="40" font-size="8.5" fill="#64748b">Extracellular</text>
+  <text x="16" y="176" font-size="8.5" fill="#64748b">Cytoplasm</text>
+  <!-- bilayer -->
+  <g>
+    <line x1="40" y1="60" x2="440" y2="60" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="40" y1="120" x2="440" y2="120" stroke="#f59e0b" stroke-width="1"/>
+  </g>
+  <g fill="#fbbf24">
+    ${Array.from({length:33}).map((_,i)=>`<circle cx="${48+i*12}" cy="64" r="4.5"/>`).join('')}
+    ${Array.from({length:33}).map((_,i)=>`<circle cx="${48+i*12}" cy="116" r="4.5"/>`).join('')}
+  </g>
+  <g stroke="#fcd34d" stroke-width="1.4">
+    ${Array.from({length:33}).map((_,i)=>`<line x1="${48+i*12}" y1="68" x2="${48+i*12}" y2="90"/><line x1="${48+i*12}" y1="112" x2="${48+i*12}" y2="90"/>`).join('')}
+  </g>
+  <text x="452" y="66" font-size="7.5" fill="#b45309">heads</text>
+  <text x="452" y="93" font-size="7.5" fill="#b45309">(hydrophilic)</text>
+  <text x="452" y="112" font-size="7.5" fill="#b45309">tails</text>
+  <!-- integral protein -->
+  <rect x="150" y="52" width="26" height="76" rx="7" fill="#60a5fa" stroke="#1d4ed8"/>
+  <text x="163" y="146" text-anchor="middle" font-size="7.5" fill="#1d4ed8">integral</text>
+  <rect x="300" y="52" width="20" height="76" rx="6" fill="#60a5fa" stroke="#1d4ed8"/>
+  <text x="310" y="146" text-anchor="middle" font-size="7.5" fill="#1d4ed8">channel</text>
+  <!-- peripheral -->
+  <ellipse cx="230" cy="128" rx="16" ry="8" fill="#a78bfa" stroke="#6d28d9"/>
+  <text x="230" y="150" text-anchor="middle" font-size="7.5" fill="#6d28d9">peripheral</text>
+  <!-- cholesterol -->
+  <rect x="205" y="72" width="6" height="34" rx="2" fill="#f472b6"/><rect x="255" y="72" width="6" height="34" rx="2" fill="#f472b6"/>
+  <text x="230" y="42" text-anchor="middle" font-size="7.5" fill="#be185d">cholesterol (fluidity buffer)</text>
+  <!-- glycocalyx -->
+  <g stroke="#16a34a" stroke-width="1.3" fill="none">
+    <path d="M120 52 q4 -12 10 -8 q6 -10 12 -2"/><path d="M340 52 q4 -12 10 -8 q6 -10 12 -2"/>
+  </g>
+  <circle cx="132" cy="40" r="3" fill="#22c55e"/><circle cx="352" cy="40" r="3" fill="#22c55e"/>
+  <text x="360" y="30" font-size="7.5" fill="#15803d">glycocalyx (carb chains → recognition/adhesion)</text>
+  <text x="16" y="196" font-size="9" fill="#0369a1">Bilayer = selectively permeable barrier. Integral (transmembrane) proteins = channels/carriers/receptors; peripheral = surface.</text>
+  <text x="16" y="214" font-size="9" fill="#475569">Transport: passive (channels/facilitated, no ATP) vs active (Na⁺/K⁺-ATPase, SGLT — uses ATP). Apical vs basolateral = polarity.</text>
+  <text x="16" y="231" font-size="8.5" fill="#64748b">TEM = trilaminar ("railroad track"): two dense lines (heads) + a lucent centre (tails).</text>
+</svg>`;
+
+export const NUCLEUS_CHROMATIN = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Nucleus and chromatin" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The nucleus — chromatin, nucleolus, envelope</text>
+  <ellipse cx="140" cy="140" rx="120" ry="92" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <ellipse cx="140" cy="140" rx="112" ry="84" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="264" y="70" font-size="8.5" fill="#6d28d9">nuclear envelope = double membrane</text>
+  <text x="264" y="82" font-size="8.5" fill="#6d28d9">(continuous with RER)</text>
+  <!-- pores -->
+  <g fill="#fbbf24"><rect x="128" y="47" width="10" height="5" rx="2"/><rect x="42" y="120" width="5" height="10" rx="2"/><rect x="235" y="150" width="5" height="10" rx="2"/><rect x="150" y="228" width="10" height="5" rx="2"/></g>
+  <text x="264" y="100" font-size="8.5" fill="#b45309">nuclear pores → selective mRNA/protein traffic</text>
+  <!-- nucleolus -->
+  <circle cx="120" cy="150" r="30" fill="#8b5cf6"/>
+  <text x="120" y="154" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">nucleolus</text>
+  <text x="264" y="126" font-size="8.5" fill="#6d28d9" font-weight="700">Nucleolus = rRNA synthesis + ribosome assembly</text>
+  <text x="264" y="138" font-size="8" fill="#6d28d9">(basophilic; prominent in protein-active cells)</text>
+  <!-- heterochromatin clumps -->
+  <g fill="#4c1d95">${[[180,110],[70,110],[95,205],[185,180]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="9"/>`).join('')}</g>
+  <text x="264" y="164" font-size="8.5" font-weight="700" fill="#4c1d95">Heterochromatin (dark) = condensed, INACTIVE</text>
+  <text x="264" y="184" font-size="8.5" font-weight="700" fill="#c4b5fd">Euchromatin (pale) = open, ACTIVE (transcribed)</text>
+  <text x="264" y="204" font-size="8.5" fill="#334155">Barr body = inactivated X (drumstick in neutrophils)</text>
+  <text x="264" y="216" font-size="8" fill="#64748b">Both are basophilic — stain with haematoxylin.</text>
+  <text x="16" y="242" font-size="8.5" fill="#0369a1">"Open cells" (neurons, hepatocytes) show pale euchromatic nuclei + big nucleoli; lymphocytes = dense heterochromatic.</text>
+</svg>`;
+
+export const CYTOSKELETON_THREE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Three cytoskeletal filament types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cytoskeleton — three filament systems</text>
+  <!-- microfilaments -->
+  <rect x="14" y="30" width="150" height="200" rx="8" fill="#fef2f2" stroke="#f87171"/>
+  <text x="89" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Microfilaments</text>
+  <text x="89" y="62" text-anchor="middle" font-size="8" fill="#b91c1c">actin · ~6–8 nm (thinnest)</text>
+  <g stroke="#ef4444" stroke-width="2.5" fill="none"><path d="M30 78 q10 -6 20 0 q10 6 20 0 q10 -6 20 0 q10 6 20 0 q10 -6 20 0 q10 6 20 0"/></g>
+  <g font-size="8" fill="#991b1b"><text x="24" y="100">• G-actin → F-actin (polar)</text><text x="24" y="115">• treadmilling; ATP</text><text x="24" y="130">• motor: MYOSIN</text><text x="24" y="145">• microvilli core, terminal web</text><text x="24" y="160">• muscle contraction</text><text x="24" y="175">• cell cortex, cytokinesis</text><text x="24" y="190">• cell crawling / motility</text></g>
+  <!-- intermediate -->
+  <rect x="170" y="30" width="146" height="200" rx="8" fill="#fffbeb" stroke="#f59e0b"/>
+  <text x="243" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b45309">Intermediate</text>
+  <text x="243" y="62" text-anchor="middle" font-size="8" fill="#b45309">~10 nm · rope-like, stable</text>
+  <g stroke="#f59e0b" stroke-width="2.5" fill="none"><path d="M186 78 q14 -4 28 0 q14 4 28 0 q14 -4 28 0 q14 4 28 0"/></g>
+  <g font-size="8" fill="#92400e"><text x="180" y="100">• tension-bearing (mechanical)</text><text x="180" y="115">• NOT dynamic, no motors</text><text x="180" y="130">— keratin (epithelium)</text><text x="180" y="145">— vimentin (mesenchyme)</text><text x="180" y="160">— desmin (muscle)</text><text x="180" y="175">— neurofilament (neuron)</text><text x="180" y="190">— GFAP (astrocyte); lamin (nucleus)</text></g>
+  <!-- microtubules -->
+  <rect x="322" y="30" width="146" height="200" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="395" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Microtubules</text>
+  <text x="395" y="62" text-anchor="middle" font-size="8" fill="#1d4ed8">~25 nm (thickest), hollow</text>
+  <g stroke="#3b82f6" stroke-width="5" fill="none" opacity="0.8"><line x1="336" y1="78" x2="456" y2="78"/></g>
+  <g font-size="8" fill="#1e40af"><text x="332" y="100">• α/β-tubulin dimers</text><text x="332" y="115">• γ-TuRC nucleates (centrosome)</text><text x="332" y="130">• dynamic instability</text><text x="332" y="145">• motors: KINESIN (→ +/out)</text><text x="332" y="160">    DYNEIN (→ −/in)</text><text x="332" y="175">• mitotic spindle, cilia 9+2</text><text x="332" y="190">• axonal transport, organelle traffic</text></g>
+  <text x="16" y="245" font-size="8.5" fill="#64748b">Diameter mnemonic: micro(FIL)ament thinnest 6 → INTERmediate 10 → micro(TUB)ule thickest 25 nm.</text>
+</svg>`;
+
+export const MICROTUBULE_MOTORS = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Microtubule motor proteins" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Microtubule polarity &amp; motor proteins</text>
+  <!-- centrosome -->
+  <circle cx="60" cy="110" r="26" fill="#e0e7ff" stroke="#6366f1"/>
+  <rect x="50" y="100" width="8" height="18" fill="#4338ca"/><rect x="62" y="100" width="18" height="8" fill="#4338ca"/>
+  <text x="60" y="150" text-anchor="middle" font-size="8" font-weight="700" fill="#4338ca">centrosome</text>
+  <text x="60" y="162" text-anchor="middle" font-size="7.5" fill="#4338ca">(γ-TuRC) = MTOC</text>
+  <text x="60" y="174" text-anchor="middle" font-size="7.5" fill="#334155">minus (−) end</text>
+  <!-- microtubule -->
+  <rect x="86" y="104" width="330" height="12" rx="3" fill="#bfdbfe" stroke="#3b82f6"/>
+  <text x="410" y="150" text-anchor="middle" font-size="7.5" fill="#334155">plus (+) end</text>
+  <text x="410" y="162" text-anchor="middle" font-size="7.5" fill="#334155">(cell periphery)</text>
+  <!-- kinesin -->
+  <g><circle cx="180" cy="90" r="9" fill="#16a34a"/><line x1="180" y1="99" x2="176" y2="104" stroke="#16a34a" stroke-width="2"/><line x1="180" y1="99" x2="186" y2="104" stroke="#16a34a" stroke-width="2"/><path d="M190 90 h34" stroke="#16a34a" stroke-width="2" marker-end="url(#agr)"/></g>
+  <text x="230" y="86" font-size="8.5" font-weight="700" fill="#15803d">KINESIN → anterograde (− to +)</text>
+  <text x="230" y="98" font-size="7.5" fill="#15803d">soma → axon terminal</text>
+  <!-- dynein -->
+  <g><circle cx="300" cy="140" r="9" fill="#dc2626"/><line x1="300" y1="131" x2="296" y2="126" stroke="#dc2626" stroke-width="2"/><line x1="300" y1="131" x2="304" y2="126" stroke="#dc2626" stroke-width="2"/><path d="M290 140 h-34" stroke="#dc2626" stroke-width="2" marker-end="url(#agr)"/></g>
+  <text x="150" y="140" font-size="8.5" font-weight="700" fill="#b91c1c">DYNEIN → retrograde (+ to −)</text>
+  <text x="150" y="152" font-size="7.5" fill="#b91c1c">terminal → soma</text>
+  <defs><marker id="agr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#334155"/></marker></defs>
+  <text x="16" y="190" font-size="8.5" fill="#64748b">"Kinesin walKs to the + (Kinesin/Kiddo goes out); Dynein Drags back in." Also builds the mitotic spindle &amp; drives cilia (dynein arms).</text>
+</svg>`;
+
+export const EPITHELIAL_TYPES = `<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Types of epithelium" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="500" height="300" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Classifying epithelium — layers × cell shape</text>
+  <!-- helper: basement membrane line drawn per cell -->
+  <g font-size="9" font-weight="700" fill="#0369a1"><text x="90" y="40" text-anchor="middle">Squamous (flat)</text><text x="230" y="40" text-anchor="middle">Cuboidal</text><text x="370" y="40" text-anchor="middle">Columnar</text></g>
+  <text x="20" y="76" font-size="9" font-weight="700" fill="#7c3aed" transform="rotate(-90 20 76)" text-anchor="middle">Simple</text>
+  <!-- simple squamous -->
+  <g><line x1="40" y1="88" x2="140" y2="88" stroke="#94a3b8"/><ellipse cx="70" cy="80" rx="18" ry="6" fill="#ddd6fe" stroke="#7c3aed"/><ellipse cx="110" cy="80" rx="18" ry="6" fill="#ddd6fe" stroke="#7c3aed"/><circle cx="70" cy="80" r="3" fill="#4c1d95"/><circle cx="110" cy="80" r="3" fill="#4c1d95"/></g>
+  <text x="90" y="102" text-anchor="middle" font-size="7" fill="#6d28d9">endothelium · alveoli · Bowman</text>
+  <!-- simple cuboidal -->
+  <g><line x1="185" y1="88" x2="285" y2="88" stroke="#94a3b8"/><rect x="200" y="68" width="20" height="20" fill="#ddd6fe" stroke="#7c3aed"/><rect x="222" y="68" width="20" height="20" fill="#ddd6fe" stroke="#7c3aed"/><rect x="244" y="68" width="20" height="20" fill="#ddd6fe" stroke="#7c3aed"/><circle cx="210" cy="78" r="4" fill="#4c1d95"/><circle cx="232" cy="78" r="4" fill="#4c1d95"/><circle cx="254" cy="78" r="4" fill="#4c1d95"/></g>
+  <text x="230" y="102" text-anchor="middle" font-size="7" fill="#6d28d9">thyroid · kidney tubules</text>
+  <!-- simple columnar -->
+  <g><line x1="325" y1="88" x2="425" y2="88" stroke="#94a3b8"/><rect x="340" y="58" width="16" height="30" fill="#ddd6fe" stroke="#7c3aed"/><rect x="358" y="58" width="16" height="30" fill="#ddd6fe" stroke="#7c3aed"/><rect x="376" y="58" width="16" height="30" fill="#ddd6fe" stroke="#7c3aed"/><circle cx="348" cy="80" r="4" fill="#4c1d95"/><circle cx="366" cy="80" r="4" fill="#4c1d95"/><circle cx="384" cy="80" r="4" fill="#4c1d95"/></g>
+  <text x="375" y="102" text-anchor="middle" font-size="7" fill="#6d28d9">gut · gallbladder</text>
+  <line x1="16" y1="112" x2="484" y2="112" stroke="#e2e8f0"/>
+  <text x="20" y="158" font-size="9" font-weight="700" fill="#be185d" transform="rotate(-90 20 158)" text-anchor="middle">Stratified</text>
+  <!-- stratified squamous -->
+  <g><line x1="40" y1="182" x2="140" y2="182" stroke="#94a3b8"/><rect x="50" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><rect x="68" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><rect x="86" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><ellipse cx="66" cy="150" rx="14" ry="6" fill="#fbcfe8" stroke="#be185d"/><ellipse cx="94" cy="150" rx="14" ry="6" fill="#fbcfe8" stroke="#be185d"/><ellipse cx="80" cy="136" rx="14" ry="5" fill="#fce7f3" stroke="#be185d"/></g>
+  <text x="90" y="200" text-anchor="middle" font-size="7" fill="#9d174d">epidermis (kerat.) · esophagus (non-k)</text>
+  <!-- pseudostratified -->
+  <g><line x1="185" y1="182" x2="285" y2="182" stroke="#94a3b8"/><rect x="196" y="150" width="14" height="32" fill="#fbcfe8" stroke="#be185d"/><rect x="212" y="150" width="14" height="32" fill="#fbcfe8" stroke="#be185d"/><rect x="228" y="150" width="14" height="32" fill="#fbcfe8" stroke="#be185d"/><rect x="244" y="150" width="14" height="32" fill="#fbcfe8" stroke="#be185d"/><circle cx="203" cy="176" r="3.5" fill="#831843"/><circle cx="219" cy="162" r="3.5" fill="#831843"/><circle cx="235" cy="174" r="3.5" fill="#831843"/><circle cx="251" cy="164" r="3.5" fill="#831843"/><g stroke="#be185d" stroke-width="1">${Array.from({length:8}).map((_,i)=>`<line x1="${198+i*8}" y1="150" x2="${198+i*8}" y2="144"/>`).join('')}</g></g>
+  <text x="230" y="200" text-anchor="middle" font-size="7" fill="#9d174d">respiratory (ciliated + goblet)</text>
+  <!-- transitional -->
+  <g><line x1="325" y1="182" x2="425" y2="182" stroke="#94a3b8"/><rect x="335" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><rect x="353" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><rect x="371" y="164" width="16" height="18" fill="#fbcfe8" stroke="#be185d"/><path d="M336 150 q12 -12 24 0" fill="#fce7f3" stroke="#be185d"/><path d="M362 150 q12 -12 24 0" fill="#fce7f3" stroke="#be185d"/></g>
+  <text x="375" y="200" text-anchor="middle" font-size="7" fill="#9d174d">urothelium (bladder, umbrella cells)</text>
+  <line x1="16" y1="214" x2="484" y2="214" stroke="#e2e8f0"/>
+  <text x="16" y="234" font-size="9" fill="#0369a1">Name by (1) layers — simple = 1, stratified = many; (2) shape of the SURFACE (apical) cell.</text>
+  <text x="16" y="250" font-size="9" fill="#475569">Pseudostratified = ONE layer, all touch BM, nuclei at different heights → looks layered (respiratory tract).</text>
+  <text x="16" y="266" font-size="9" fill="#475569">Transitional (urothelium) = stretches; dome/umbrella cells flatten when full.</text>
+  <text x="16" y="284" font-size="8.5" fill="#64748b">Keratinized (skin, dry) loses nuclei in surface layer; non-keratinized (esophagus, wet) keeps them.</text>
+</svg>`;
+
+export const CELL_JUNCTIONS = `<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Junctional complex of epithelium" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="400" height="320" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Junctional complex (apical → basal)</text>
+  <!-- two cell membranes -->
+  <line x1="150" y1="34" x2="150" y2="300" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="250" y1="34" x2="250" y2="300" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="120" y="46" font-size="8" fill="#94a3b8" text-anchor="end">cell 1</text>
+  <text x="280" y="46" font-size="8" fill="#94a3b8">cell 2</text>
+  <!-- tight junction -->
+  <g><rect x="150" y="52" width="100" height="4" fill="#dc2626"/><rect x="150" y="60" width="100" height="4" fill="#dc2626"/></g>
+  <text x="16" y="60" font-size="9.5" font-weight="700" fill="#b91c1c">1 · Zonula occludens</text>
+  <text x="16" y="72" font-size="8" fill="#991b1b">TIGHT junction — occludin, claudin</text>
+  <text x="16" y="83" font-size="8" fill="#991b1b">seals gap → blocks paracellular leak</text>
+  <!-- adherens -->
+  <g stroke="#16a34a" stroke-width="2"><line x1="150" y1="104" x2="250" y2="104"/></g>
+  <rect x="146" y="98" width="8" height="20" fill="#22c55e"/><rect x="246" y="98" width="8" height="20" fill="#22c55e"/>
+  <text x="16" y="106" font-size="9.5" font-weight="700" fill="#15803d">2 · Zonula adherens</text>
+  <text x="16" y="118" font-size="8" fill="#166534">belt — cadherin (Ca²⁺) → catenin → ACTIN</text>
+  <!-- desmosome -->
+  <g><rect x="140" y="150" width="14" height="30" rx="2" fill="#7c3aed"/><rect x="246" y="150" width="14" height="30" rx="2" fill="#7c3aed"/><line x1="154" y1="165" x2="246" y2="165" stroke="#7c3aed" stroke-width="2"/></g>
+  <path d="M120 155 q-14 10 0 20" stroke="#a78bfa" stroke-width="2" fill="none"/><path d="M280 155 q14 10 0 20" stroke="#a78bfa" stroke-width="2" fill="none"/>
+  <text x="16" y="150" font-size="9.5" font-weight="700" fill="#6d28d9">3 · Macula adherens</text>
+  <text x="16" y="196" font-size="8" fill="#5b21b6">DESMOSOME "spot weld" — desmoglein/</text>
+  <text x="16" y="207" font-size="8" fill="#5b21b6">desmocollin (Ca²⁺) → plakins → KERATIN IF</text>
+  <!-- gap junction -->
+  <g fill="#f59e0b">${[230,244,258,272].map(y=>`<rect x="146" y="${y}" width="8" height="8"/><rect x="246" y="${y}" width="8" height="8"/><rect x="154" y="${y}" width="92" height="3" y2="0"/>`).join('')}</g>
+  <text x="16" y="238" font-size="9.5" font-weight="700" fill="#b45309">4 · Gap junction</text>
+  <text x="16" y="250" font-size="8" fill="#92400e">connexons (6 connexins) → pore;</text>
+  <text x="16" y="261" font-size="8" fill="#92400e">communication (cardiac, smooth muscle)</text>
+  <!-- hemidesmosome -->
+  <line x1="150" y1="296" x2="360" y2="296" stroke="#0891b2" stroke-width="3"/>
+  <rect x="140" y="284" width="14" height="14" rx="2" fill="#0891b2"/>
+  <text x="16" y="292" font-size="9.5" font-weight="700" fill="#0e7490">5 · Hemidesmosome</text>
+  <text x="16" y="312" font-size="8" fill="#155e75">"half" — INTEGRIN → basal lamina (laminin). Anchors cell to basement membrane.</text>
+  <text x="264" y="300" font-size="8" fill="#0891b2">basement membrane</text>
+</svg>`;
+
+export const EPITHELIAL_SURFACE = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Apical surface specializations and basement membrane" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Apical specializations &amp; the basement membrane</text>
+  <!-- microvilli -->
+  <g stroke="#2563eb" stroke-width="2.5">${Array.from({length:7}).map((_,i)=>`<line x1="${30+i*9}" y1="60" x2="${30+i*9}" y2="34"/>`).join('')}</g>
+  <rect x="24" y="60" width="66" height="18" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="57" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Microvilli</text>
+  <text x="57" y="106" text-anchor="middle" font-size="7.5" fill="#1e40af">ACTIN core, non-motile</text>
+  <text x="57" y="117" text-anchor="middle" font-size="7.5" fill="#1e40af">brush/striated border</text>
+  <text x="57" y="128" text-anchor="middle" font-size="7.5" fill="#1e40af">gut, PCT → absorption</text>
+  <!-- stereocilia -->
+  <g stroke="#7c3aed" stroke-width="2.5">${Array.from({length:5}).map((_,i)=>`<line x1="${175+i*12}" y1="60" x2="${175+i*12}" y2="26"/>`).join('')}</g>
+  <rect x="168" y="60" width="66" height="18" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="201" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#6d28d9">Stereocilia</text>
+  <text x="201" y="106" text-anchor="middle" font-size="7.5" fill="#5b21b6">long microvilli (actin)</text>
+  <text x="201" y="117" text-anchor="middle" font-size="7.5" fill="#5b21b6">epididymis, ear hair cells</text>
+  <!-- cilia -->
+  <g stroke="#16a34a" stroke-width="2.5">${Array.from({length:6}).map((_,i)=>`<line x1="${320+i*11}" y1="60" x2="${318+i*11}" y2="28"/>`).join('')}</g>
+  <rect x="312" y="60" width="72" height="18" fill="#dcfce7" stroke="#16a34a"/>
+  <g fill="#15803d">${[320,331,342,353,364,375].map(x=>`<circle cx="${x}" cy="70" r="2"/>`).join('')}</g>
+  <text x="348" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Cilia</text>
+  <text x="348" y="106" text-anchor="middle" font-size="7.5" fill="#166534">MICROTUBULE 9+2 axoneme</text>
+  <text x="348" y="117" text-anchor="middle" font-size="7.5" fill="#166534">basal body 9+0; MOTILE</text>
+  <text x="348" y="128" text-anchor="middle" font-size="7.5" fill="#166534">airway, uterine tube</text>
+  <line x1="16" y1="144" x2="454" y2="144" stroke="#e2e8f0"/>
+  <text x="16" y="162" font-size="10" font-weight="700" fill="#0369a1">Basement membrane (PAS +)</text>
+  <rect x="200" y="150" width="254" height="12" fill="#fef3c7" stroke="#d97706"/>
+  <text x="327" y="159" text-anchor="middle" font-size="7.5" fill="#92400e">basal lamina: lamina lucida + lamina densa</text>
+  <text x="16" y="182" font-size="8.5" fill="#475569">• Basal lamina — laminin, type IV collagen, perlecan (by EPITHELIUM); lamina lucida (integrin) + lamina densa.</text>
+  <text x="16" y="198" font-size="8.5" fill="#475569">• Reticular lamina — type III collagen / reticular fibres (by FIBROBLASTS of connective tissue).</text>
+  <text x="16" y="214" font-size="8.5" fill="#64748b">Role: attachment, filtration barrier (glomerulus), scaffold for repair.</text>
+</svg>`;
+
+export const GLAND_TYPES = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Classification of glands and secretion modes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Glands — exocrine vs endocrine, and how they secrete</text>
+  <rect x="150" y="30" width="180" height="22" rx="6" fill="#334155"/><text x="240" y="45" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">Epithelium invaginates → gland</text>
+  <line x1="200" y1="52" x2="110" y2="66" stroke="#94a3b8"/><line x1="280" y1="52" x2="380" y2="66" stroke="#94a3b8"/>
+  <rect x="40" y="66" width="150" height="22" rx="6" fill="#dcfce7"/><text x="115" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Exocrine → duct → surface</text>
+  <rect x="300" y="66" width="150" height="22" rx="6" fill="#fce7f3"/><text x="375" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="#be185d">Endocrine → ductless → blood</text>
+  <text x="375" y="104" text-anchor="middle" font-size="8" fill="#9d174d">hormones (e.g. thyroid, islets)</text>
+  <text x="115" y="104" text-anchor="middle" font-size="8" fill="#166534">by duct shape (simple/compound;</text>
+  <text x="115" y="115" text-anchor="middle" font-size="8" fill="#166534">tubular/acinar/tubuloacinar)</text>
+  <line x1="16" y1="128" x2="464" y2="128" stroke="#e2e8f0"/>
+  <text x="16" y="146" font-size="10" font-weight="700" fill="#0369a1">Exocrine secretion modes</text>
+  <!-- merocrine -->
+  <g><rect x="26" y="156" width="60" height="60" rx="6" fill="#e0f2fe" stroke="#0284c7"/><circle cx="56" cy="200" r="10" fill="#7dd3fc"/><circle cx="48" cy="170" r="3" fill="#0369a1"/><circle cx="62" cy="166" r="3" fill="#0369a1"/></g>
+  <text x="56" y="230" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0369a1">Merocrine</text>
+  <text x="56" y="242" text-anchor="middle" font-size="7.5" fill="#075985">exocytosis, cell intact</text>
+  <text x="56" y="253" text-anchor="middle" font-size="7.5" fill="#075985">(most; salivary, pancreas)</text>
+  <!-- apocrine -->
+  <g><rect x="170" y="156" width="60" height="60" rx="6" fill="#ede9fe" stroke="#7c3aed"/><path d="M170 172 q30 -14 60 0" fill="#c4b5fd"/><circle cx="200" cy="196" r="9" fill="#a78bfa"/></g>
+  <text x="200" y="230" text-anchor="middle" font-size="8.5" font-weight="700" fill="#6d28d9">Apocrine</text>
+  <text x="200" y="242" text-anchor="middle" font-size="7.5" fill="#5b21b6">apical cytoplasm pinched</text>
+  <text x="200" y="253" text-anchor="middle" font-size="7.5" fill="#5b21b6">(mammary, axillary sweat)</text>
+  <!-- holocrine -->
+  <g><rect x="314" y="156" width="60" height="60" rx="6" fill="#fef2f2" stroke="#dc2626"/><circle cx="330" cy="200" r="6" fill="#fca5a5"/><circle cx="348" cy="192" r="6" fill="#fca5a5"/><circle cx="358" cy="205" r="6" fill="#fca5a5"/><circle cx="340" cy="180" r="6" fill="#fca5a5"/></g>
+  <text x="344" y="230" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Holocrine</text>
+  <text x="344" y="242" text-anchor="middle" font-size="7.5" fill="#991b1b">whole cell ruptures</text>
+  <text x="344" y="253" text-anchor="middle" font-size="7.5" fill="#991b1b">(sebaceous gland)</text>
+  <g font-size="8" fill="#334155"><text x="392" y="176">Product:</text><text x="392" y="192" fill="#0369a1">Serous = watery,</text><text x="392" y="203" fill="#0369a1">protein/enzyme (pancreas)</text><text x="392" y="218" fill="#6d28d9">Mucous = viscous,</text><text x="392" y="229" fill="#6d28d9">mucin (goblet cell)</text></g>
+</svg>`;
+
+export const CONNECTIVE_TISSUE_CELLS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Connective tissue cells" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Connective tissue = cells + fibres + ground substance</text>
+  <!-- fibroblast -->
+  <g><path d="M40 60 q40 -20 80 6 q-40 8 -80 -6" fill="#dbeafe" stroke="#2563eb"/><ellipse cx="80" cy="58" rx="12" ry="6" fill="#1d4ed8"/></g>
+  <text x="80" y="88" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Fibroblast</text>
+  <text x="80" y="100" text-anchor="middle" font-size="7.5" fill="#1e40af">makes collagen, elastin,</text>
+  <text x="80" y="111" text-anchor="middle" font-size="7.5" fill="#1e40af">ground substance (most common)</text>
+  <!-- macrophage -->
+  <g><path d="M200 46 q30 4 26 24 q6 16 -14 18 q-24 8 -30 -12 q-14 -14 4 -26 q6 -10 14 -4" fill="#fee2e2" stroke="#dc2626"/><circle cx="208" cy="60" r="7" fill="#b91c1c"/></g>
+  <text x="212" y="88" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Macrophage</text>
+  <text x="212" y="100" text-anchor="middle" font-size="7.5" fill="#991b1b">phagocytosis + antigen</text>
+  <text x="212" y="111" text-anchor="middle" font-size="7.5" fill="#991b1b">presentation (from monocyte)</text>
+  <!-- mast cell -->
+  <g><circle cx="340" cy="58" r="22" fill="#fef9c3" stroke="#ca8a04"/><g fill="#a16207">${[[332,50],[348,50],[340,66],[330,62],[350,62],[338,48]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="3"/>`).join('')}</g></g>
+  <text x="340" y="88" text-anchor="middle" font-size="9" font-weight="700" fill="#a16207">Mast cell</text>
+  <text x="340" y="100" text-anchor="middle" font-size="7.5" fill="#854d0e">histamine + heparin granules</text>
+  <text x="340" y="111" text-anchor="middle" font-size="7.5" fill="#854d0e">(allergy, inflammation)</text>
+  <line x1="16" y1="124" x2="464" y2="124" stroke="#e2e8f0"/>
+  <!-- plasma cell -->
+  <g><circle cx="90" cy="164" r="22" fill="#ede9fe" stroke="#7c3aed"/><circle cx="82" cy="160" r="10" fill="#6d28d9"/><g stroke="#a78bfa" stroke-width="2"><line x1="80" y1="156" x2="84" y2="164"/><line x1="76" y1="160" x2="88" y2="160"/></g></g>
+  <text x="90" y="200" text-anchor="middle" font-size="9" font-weight="700" fill="#6d28d9">Plasma cell</text>
+  <text x="90" y="212" text-anchor="middle" font-size="7.5" fill="#5b21b6">antibodies; "clock-face"</text>
+  <text x="90" y="223" text-anchor="middle" font-size="7.5" fill="#5b21b6">nucleus (from B-cell)</text>
+  <!-- adipocyte -->
+  <g><circle cx="240" cy="164" r="24" fill="#fff7ed" stroke="#ea580c"/><circle cx="240" cy="164" r="18" fill="#ffedd5"/><ellipse cx="255" cy="178" rx="6" ry="4" fill="#c2410c"/></g>
+  <text x="240" y="200" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Adipocyte</text>
+  <text x="240" y="212" text-anchor="middle" font-size="7.5" fill="#9a3412">single fat droplet pushes</text>
+  <text x="240" y="223" text-anchor="middle" font-size="7.5" fill="#9a3412">nucleus to rim ("signet ring")</text>
+  <!-- fibres box -->
+  <rect x="330" y="140" width="134" height="90" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="397" y="158" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Fibres</text>
+  <g font-size="7.5" fill="#166534"><text x="340" y="176">• Collagen I — strong (tendon)</text><text x="340" y="190">• Reticular — collagen III (mesh)</text><text x="340" y="204">• Elastic — elastin + fibrillin</text></g>
+  <text x="340" y="222" font-size="7.5" fill="#0369a1">+ ground substance = GAGs/water</text>
+</svg>`;
+
+export const SKIN_LAYERS = `<svg viewBox="0 0 470 320" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Skin layers epidermis and dermis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="320" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Skin — epidermis (5 layers) + dermis + appendages</text>
+  <!-- epidermis strata -->
+  <g>
+    <rect x="30" y="30" width="230" height="18" fill="#fca5a5"/><text x="145" y="43" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7f1d1d">Corneum (dead, keratin flakes)</text>
+    <rect x="30" y="48" width="230" height="12" fill="#fcd34d"/><text x="145" y="58" text-anchor="middle" font-size="7.5" fill="#78350f">Lucidum (thick skin only)</text>
+    <rect x="30" y="60" width="230" height="18" fill="#a7f3d0"/><text x="145" y="73" text-anchor="middle" font-size="8" fill="#065f46">Granulosum (keratohyalin granules)</text>
+    <rect x="30" y="78" width="230" height="30" fill="#93c5fd"/><text x="145" y="97" text-anchor="middle" font-size="8" fill="#1e3a8a">Spinosum (desmosomes, "prickle")</text>
+    <rect x="30" y="108" width="230" height="18" fill="#c4b5fd"/><text x="145" y="121" text-anchor="middle" font-size="8" fill="#4c1d95">Basale (stem cells, mitosis)</text>
+  </g>
+  <text x="268" y="44" font-size="9" font-weight="700" fill="#b91c1c">Epidermis</text>
+  <text x="268" y="56" font-size="7.5" fill="#334155">keratinized stratified</text>
+  <text x="268" y="67" font-size="7.5" fill="#334155">squamous epithelium</text>
+  <text x="268" y="84" font-size="7.5" fill="#6d28d9">"Come, Let's Get Sun Burnt"</text>
+  <text x="268" y="95" font-size="7.5" fill="#6d28d9">= Corneum→Lucidum→Granulosum</text>
+  <text x="268" y="106" font-size="7.5" fill="#6d28d9">→Spinosum→Basale</text>
+  <!-- epidermal cells -->
+  <circle cx="70" cy="118" r="5" fill="#111"/><text x="268" y="122" font-size="7.5" fill="#334155">● Melanocyte (basale) → melanin</text>
+  <circle cx="120" cy="90" r="4" fill="#7c3aed"/><text x="268" y="134" font-size="7.5" fill="#334155">● Langerhans (spinosum) → immune APC</text>
+  <circle cx="90" cy="120" r="3.5" fill="#dc2626"/><text x="268" y="146" font-size="7.5" fill="#334155">● Merkel (basale) → touch receptor</text>
+  <!-- dermis -->
+  <rect x="30" y="126" width="230" height="150" fill="#fee2e2"/>
+  <path d="M30 132 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 q20 -14 30 0" fill="none" stroke="#f87171" stroke-width="2"/>
+  <text x="145" y="150" text-anchor="middle" font-size="8" fill="#991b1b">Papillary dermis (loose CT, ridges)</text>
+  <text x="145" y="230" text-anchor="middle" font-size="8" fill="#991b1b">Reticular dermis (dense irregular CT)</text>
+  <!-- receptors -->
+  <ellipse cx="70" cy="160" rx="8" ry="12" fill="#fbbf24" stroke="#b45309"/><text x="268" y="170" font-size="7.5" fill="#b45309">Meissner (papillae) → light touch</text>
+  <g><circle cx="160" cy="245" r="14" fill="none" stroke="#7c3aed"/><circle cx="160" cy="245" r="9" fill="none" stroke="#a78bfa"/><circle cx="160" cy="245" r="4" fill="#7c3aed"/></g>
+  <text x="268" y="184" font-size="7.5" fill="#6d28d9">Pacinian (deep, "onion") → vibration/pressure</text>
+  <text x="268" y="198" font-size="7.5" fill="#334155">Ruffini → stretch; free endings → pain/temp</text>
+  <!-- hair follicle + glands -->
+  <path d="M210 130 q6 60 -4 130" stroke="#78350f" stroke-width="7" fill="none"/>
+  <ellipse cx="205" cy="264" rx="10" ry="8" fill="#fde68a" stroke="#b45309"/>
+  <text x="268" y="224" font-size="7.5" fill="#78350f">Hair follicle + arrector pili muscle</text>
+  <ellipse cx="235" cy="200" rx="12" ry="9" fill="#fef9c3" stroke="#ca8a04"/><text x="268" y="238" font-size="7.5" fill="#a16207">Sebaceous gland → sebum (holocrine)</text>
+  <path d="M220 250 q-8 20 6 24" stroke="#0891b2" stroke-width="3" fill="none"/><text x="268" y="252" font-size="7.5" fill="#0e7490">Sweat gland (eccrine, merocrine)</text>
+  <text x="16" y="292" font-size="8.5" fill="#0369a1">Thick skin (palm/sole) = 5 layers incl. lucidum, no hair. Thin skin = 4 layers (no lucidum), has hair.</text>
+  <text x="16" y="308" font-size="8.5" fill="#64748b">Below dermis = hypodermis (subcutaneous fat, not part of skin proper).</text>
+</svg>`;
+
+export const CARTILAGE_TYPES = `<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Three types of cartilage" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cartilage — avascular, chondrocytes in lacunae</text>
+  <!-- hyaline -->
+  <rect x="16" y="30" width="148" height="130" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="90" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Hyaline</text>
+  <g fill="#bfdbfe">${[[50,74],[120,80],[70,110],[110,120],[80,140]].map(p=>`<ellipse cx="${p[0]}" cy="${p[1]}" rx="12" ry="9"/>`).join('')}</g>
+  <g fill="#1e40af">${[[50,74],[120,80],[70,110],[110,120],[80,140]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="3"/>`).join('')}</g>
+  <text x="90" y="176" text-anchor="middle" font-size="7.5" fill="#1e40af">type II collagen (glassy)</text>
+  <text x="90" y="188" text-anchor="middle" font-size="7.5" fill="#1e40af">most common; articular,</text>
+  <text x="90" y="199" text-anchor="middle" font-size="7.5" fill="#1e40af">trachea, growth plate, fetal</text>
+  <!-- elastic -->
+  <rect x="172" y="30" width="148" height="130" rx="8" fill="#faf5ff" stroke="#a855f7"/>
+  <text x="246" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">Elastic</text>
+  <g stroke="#c084fc" stroke-width="1" fill="none">${Array.from({length:6}).map((_,i)=>`<path d="M186 ${64+i*14} q30 -8 60 0 q30 8 60 0"/>`).join('')}</g>
+  <g fill="#ede9fe">${[[210,80],[280,100],[240,130]].map(p=>`<ellipse cx="${p[0]}" cy="${p[1]}" rx="11" ry="8"/>`).join('')}</g>
+  <g fill="#6d28d9">${[[210,80],[280,100],[240,130]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="3"/>`).join('')}</g>
+  <text x="246" y="176" text-anchor="middle" font-size="7.5" fill="#6d28d9">type II + elastic fibres</text>
+  <text x="246" y="188" text-anchor="middle" font-size="7.5" fill="#6d28d9">flexible; ear (pinna),</text>
+  <text x="246" y="199" text-anchor="middle" font-size="7.5" fill="#6d28d9">epiglottis</text>
+  <!-- fibrocartilage -->
+  <rect x="328" y="30" width="136" height="130" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="396" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#c2410c">Fibrocartilage</text>
+  <g stroke="#fb923c" stroke-width="2.5" fill="none">${Array.from({length:5}).map((_,i)=>`<line x1="340" y1="${66+i*16}" x2="452" y2="${60+i*16}"/>`).join('')}</g>
+  <g fill="#ffedd5">${[[370,84],[420,116],[390,140]].map(p=>`<ellipse cx="${p[0]}" cy="${p[1]}" rx="9" ry="7"/>`).join('')}</g>
+  <g fill="#c2410c">${[[370,84],[420,116],[390,140]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.5"/>`).join('')}</g>
+  <text x="396" y="176" text-anchor="middle" font-size="7.5" fill="#c2410c">type I collagen (tough)</text>
+  <text x="396" y="188" text-anchor="middle" font-size="7.5" fill="#c2410c">NO perichondrium; disc,</text>
+  <text x="396" y="199" text-anchor="middle" font-size="7.5" fill="#c2410c">meniscus, pubic symphysis</text>
+</svg>`;
+
+export const OSTEON_HAVERSIAN = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Osteon and bone cells" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Compact bone — the osteon (Haversian system)</text>
+  <!-- concentric lamellae -->
+  <g fill="none" stroke="#d97706" stroke-width="2">${[16,30,44,58,72].map(r=>`<circle cx="120" cy="140" r="${r}"/>`).join('')}</g>
+  <circle cx="120" cy="140" r="10" fill="#fca5a5" stroke="#b91c1c"/>
+  <text x="120" y="143" text-anchor="middle" font-size="6.5" fill="#7f1d1d">canal</text>
+  <!-- osteocytes in lacunae -->
+  <g fill="#7c3aed">${[[120,117],[143,140],[120,163],[97,140],[120,98],[158,140]].map(p=>`<ellipse cx="${p[0]}" cy="${p[1]}" rx="4" ry="2.5"/>`).join('')}</g>
+  <text x="120" y="228" text-anchor="middle" font-size="8" fill="#334155">concentric lamellae + osteocytes in lacunae</text>
+  <text x="120" y="240" text-anchor="middle" font-size="7.5" fill="#64748b">(linked by canaliculi)</text>
+  <!-- labels -->
+  <line x1="120" y1="140" x2="250" y2="70" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="254" y="66" font-size="8.5" font-weight="700" fill="#b91c1c">Haversian (central) canal</text>
+  <text x="254" y="78" font-size="7.5" fill="#991b1b">vessels + nerve (runs long axis)</text>
+  <text x="254" y="96" font-size="8" fill="#334155">Volkmann canals = transverse, connect osteons</text>
+  <line x1="140" y1="120" x2="250" y2="112" stroke="#7c3aed" stroke-width="0.8"/>
+  <text x="254" y="116" font-size="8" fill="#6d28d9">Osteocyte = mature, in lacuna, senses load</text>
+  <!-- cells legend -->
+  <rect x="250" y="130" width="200" height="106" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="260" y="148" font-size="9" font-weight="700" fill="#334155">The 4 bone cells</text>
+  <g font-size="7.5" fill="#475569"><text x="260" y="164">• Osteoprogenitor — stem (periosteum)</text><text x="260" y="180">• OsteoBlast — Builds matrix (osteoid)</text><text x="260" y="196">• Osteocyte — trapped osteoblast, maintains</text><text x="260" y="212">• OsteoClast — Chews bone (multinucleate,</text><text x="272" y="224">from monocyte; ruffled border, resorbs)</text></g>
+  <text x="16" y="42" font-size="8" fill="#64748b">Compact (cortical) = osteons. Spongy (trabecular) = struts, no true osteons.</text>
+</svg>`;
+
+export const SARCOMERE = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Skeletal muscle sarcomere" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Sarcomere = Z-line to Z-line (skeletal/cardiac striation)</text>
+  <!-- Z lines -->
+  <line x1="60" y1="40" x2="60" y2="130" stroke="#111" stroke-width="3"/>
+  <line x1="420" y1="40" x2="420" y2="130" stroke="#111" stroke-width="3"/>
+  <line x1="240" y1="46" x2="240" y2="124" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="60" y="150" text-anchor="middle" font-size="8" font-weight="700" fill="#111">Z</text>
+  <text x="420" y="150" text-anchor="middle" font-size="8" font-weight="700" fill="#111">Z</text>
+  <text x="240" y="150" text-anchor="middle" font-size="8" fill="#6b7280">M line</text>
+  <!-- thin filaments (actin) from Z -->
+  <g stroke="#dc2626" stroke-width="2.5">
+    ${[52,60,68,76,84].map((y)=>`<line x1="60" y1="${y}" x2="210" y2="${y}"/>`).join('')}
+    ${[52,60,68,76,84].map((y)=>`<line x1="270" y1="${y}" x2="420" y2="${y}"/>`).join('')}
+    ${[96,104,112].map((y)=>`<line x1="60" y1="${y}" x2="210" y2="${y}"/><line x1="270" y1="${y}" x2="420" y2="${y}"/>`).join('')}
+  </g>
+  <!-- thick filaments (myosin) center -->
+  <g stroke="#2563eb" stroke-width="5">${[58,72,86,100,110].map(y=>`<line x1="150" y1="${y}" x2="330" y2="${y}"/>`).join('')}</g>
+  <!-- band annotations -->
+  <line x1="150" y1="168" x2="330" y2="168" stroke="#2563eb" stroke-width="1"/><text x="240" y="180" text-anchor="middle" font-size="8" font-weight="700" fill="#1d4ed8">A band (thick; dark) — constant</text>
+  <line x1="60" y1="188" x2="150" y2="188" stroke="#dc2626" stroke-width="1"/><line x1="330" y1="188" x2="420" y2="188" stroke="#dc2626" stroke-width="1"/>
+  <text x="105" y="200" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">I band (thin only)</text><text x="375" y="200" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">I band</text>
+  <text x="240" y="60" text-anchor="middle" font-size="7.5" fill="#1d4ed8">H zone (thick only)</text>
+  <text x="16" y="218" font-size="8.5" fill="#0369a1">Sliding filament: on contraction, I band &amp; H zone SHORTEN; A band stays fixed (thin slides over thick). Ca²⁺→troponin→tropomyosin moves.</text>
+</svg>`;
+
+export const MUSCLE_COMPARISON = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Skeletal cardiac smooth muscle comparison" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Three muscle types</text>
+  <!-- skeletal -->
+  <rect x="14" y="30" width="150" height="200" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="89" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Skeletal</text>
+  <rect x="26" y="58" width="126" height="26" rx="3" fill="#bfdbfe"/><g stroke="#1d4ed8" stroke-width="1">${Array.from({length:12}).map((_,i)=>`<line x1="${30+i*10}" y1="58" x2="${30+i*10}" y2="84"/>`).join('')}</g>
+  <g fill="#1e3a8a">${[34,58,120].map(x=>`<circle cx="${x}" cy="62" r="3"/>`).join('')}</g>
+  <g font-size="8" fill="#1e40af"><text x="24" y="104">• striated</text><text x="24" y="120">• multinucleate, PERIPHERAL</text><text x="24" y="136">• voluntary; T-tubule TRIAD</text><text x="24" y="152">  (T-tubule + 2 SR)</text><text x="24" y="168">• cylindrical, unbranched</text><text x="24" y="184">• NMJ; no gap junctions</text><text x="24" y="200">• satellite cells (repair)</text></g>
+  <!-- cardiac -->
+  <rect x="170" y="30" width="146" height="200" rx="8" fill="#fef2f2" stroke="#ef4444"/>
+  <text x="243" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Cardiac</text>
+  <path d="M182 58 h50 v26 h-50 z M232 58 h50 v26 h-50" fill="#fecaca" stroke="#b91c1c"/><line x1="232" y1="58" x2="232" y2="84" stroke="#7f1d1d" stroke-width="2.5"/>
+  <circle cx="207" cy="71" r="4" fill="#7f1d1d"/><circle cx="257" cy="71" r="4" fill="#7f1d1d"/>
+  <g font-size="8" fill="#991b1b"><text x="180" y="104">• striated</text><text x="180" y="120">• 1–2 nuclei, CENTRAL</text><text x="180" y="136">• involuntary; branched</text><text x="180" y="152">• INTERCALATED DISCS</text><text x="180" y="168">  (desmosome + gap jn)</text><text x="180" y="184">• DYAD (T-tubule + 1 SR)</text><text x="180" y="200">• functional syncytium</text></g>
+  <!-- smooth -->
+  <rect x="322" y="30" width="146" height="200" rx="8" fill="#faf5ff" stroke="#a855f7"/>
+  <text x="395" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">Smooth</text>
+  <g fill="#e9d5ff" stroke="#7c3aed">${[[335,72],[365,66],[395,72],[425,66],[450,72]].map((p)=>`<ellipse cx="${p[0]}" cy="${p[1]}" rx="16" ry="6"/>`).join('')}</g>
+  <g fill="#5b21b6">${[335,365,395,425,450].map(x=>`<circle cx="${x}" cy="70" r="2.5"/>`).join('')}</g>
+  <g font-size="8" fill="#6d28d9"><text x="332" y="104">• NO striations</text><text x="332" y="120">• 1 nucleus, central</text><text x="332" y="136">• involuntary; spindle</text><text x="332" y="152">• dense bodies (no sarcomere)</text><text x="332" y="168">• caveolae; gap junctions</text><text x="332" y="184">• Ca²⁺→calmodulin→MLCK</text><text x="332" y="200">• gut, vessels, uterus</text></g>
+</svg>`;
+
+export const NEURON_STRUCTURE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Neuron structure" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The neuron</text>
+  <!-- dendrites -->
+  <g stroke="#7c3aed" stroke-width="2.5" fill="none"><path d="M60 60 q10 20 30 30"/><path d="M40 90 q20 8 40 12"/><path d="M55 130 q15 -6 35 -8"/></g>
+  <text x="40" y="52" font-size="8" fill="#6d28d9">Dendrites (receive)</text>
+  <!-- soma -->
+  <circle cx="110" cy="110" r="34" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="110" cy="110" r="12" fill="#7c3aed"/><circle cx="110" cy="110" r="4" fill="#4c1d95"/>
+  <g fill="#8b5cf6">${[[92,96],[126,98],[96,126],[124,124]].map(p=>`<rect x="${p[0]}" y="${p[1]}" width="6" height="4" rx="1"/>`).join('')}</g>
+  <text x="110" y="162" text-anchor="middle" font-size="8" font-weight="700" fill="#6d28d9">Soma (perikaryon)</text>
+  <text x="110" y="174" text-anchor="middle" font-size="7.5" fill="#5b21b6">Nissl bodies = RER (basophilic)</text>
+  <!-- axon hillock + axon -->
+  <path d="M144 110 h260" stroke="#2563eb" stroke-width="6" fill="none"/>
+  <text x="158" y="100" font-size="7.5" fill="#1d4ed8">axon hillock</text>
+  <!-- myelin -->
+  <g fill="#fde68a" stroke="#d97706">${[200,250,300,350].map(x=>`<ellipse cx="${x}" cy="110" rx="20" ry="12"/>`).join('')}</g>
+  <text x="270" y="140" text-anchor="middle" font-size="8" fill="#b45309">myelin sheath (Schwann/oligodendrocyte)</text>
+  <text x="326" y="94" font-size="7.5" fill="#334155">node of Ranvier</text>
+  <line x1="325" y1="104" x2="325" y2="110" stroke="#111"/>
+  <!-- terminal -->
+  <g stroke="#16a34a" stroke-width="2.5" fill="none"><path d="M404 110 q14 -8 24 -18"/><path d="M404 110 q14 8 24 18"/><path d="M404 110 h22"/></g>
+  <circle cx="430" cy="90" r="4" fill="#16a34a"/><circle cx="430" cy="130" r="4" fill="#16a34a"/><circle cx="428" cy="110" r="4" fill="#16a34a"/>
+  <text x="430" y="160" text-anchor="middle" font-size="7.5" fill="#15803d">axon terminals</text>
+  <text x="430" y="171" text-anchor="middle" font-size="7.5" fill="#15803d">(synapse)</text>
+  <text x="16" y="198" font-size="8.5" fill="#0369a1">Signal flow: dendrite → soma → axon hillock → axon → terminal. Axon transport: kinesin (anterograde), dynein (retrograde).</text>
+  <text x="16" y="216" font-size="8.5" fill="#475569">Morphology: multipolar (most, e.g. motor), bipolar (retina, olfactory), pseudounipolar (dorsal root sensory).</text>
+  <text x="16" y="232" font-size="8.5" fill="#64748b">Nissl bodies fill soma + dendrites but are ABSENT from the axon hillock &amp; axon.</text>
+</svg>`;
+
+export const NEUROGLIA = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Neuroglia types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Neuroglia — the support cells</text>
+  <text x="16" y="38" font-size="10" font-weight="700" fill="#0369a1">CNS glia</text>
+  <!-- astrocyte -->
+  <g><circle cx="70" cy="76" r="12" fill="#dbeafe" stroke="#2563eb"/><g stroke="#2563eb" stroke-width="1.5">${[0,45,90,135,180,225,270,315].map(a=>`<line x1="70" y1="76" x2="${70+22*Math.cos(a*Math.PI/180)}" y2="${76+22*Math.sin(a*Math.PI/180)}"/>`).join('')}</g></g>
+  <text x="70" y="112" text-anchor="middle" font-size="8" font-weight="700" fill="#1d4ed8">Astrocyte</text>
+  <text x="70" y="123" text-anchor="middle" font-size="7" fill="#1e40af">BBB, support (GFAP+)</text>
+  <!-- oligodendrocyte -->
+  <g><circle cx="190" cy="72" r="11" fill="#dcfce7" stroke="#16a34a"/><g stroke="#16a34a" stroke-width="2">${[150,180,210].map(a=>`<line x1="190" y1="72" x2="${190+26*Math.cos(a*Math.PI/180)}" y2="${72+26*Math.sin(a*Math.PI/180)}"/>`).join('')}</g><rect x="158" y="88" width="14" height="7" rx="3" fill="#86efac"/><rect x="208" y="88" width="14" height="7" rx="3" fill="#86efac"/></g>
+  <text x="190" y="112" text-anchor="middle" font-size="8" font-weight="700" fill="#15803d">Oligodendrocyte</text>
+  <text x="190" y="123" text-anchor="middle" font-size="7" fill="#166534">myelinates MANY CNS axons</text>
+  <!-- microglia -->
+  <g><circle cx="310" cy="74" r="9" fill="#fee2e2" stroke="#dc2626"/><g stroke="#dc2626" stroke-width="1">${[20,70,110,160,200,250,290,340].map(a=>`<line x1="310" y1="74" x2="${310+18*Math.cos(a*Math.PI/180)}" y2="${74+18*Math.sin(a*Math.PI/180)}"/>`).join('')}</g></g>
+  <text x="310" y="112" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">Microglia</text>
+  <text x="310" y="123" text-anchor="middle" font-size="7" fill="#991b1b">immune/phagocyte (mesoderm)</text>
+  <!-- ependymal -->
+  <g fill="#ede9fe" stroke="#7c3aed">${[0,1,2,3].map(i=>`<rect x="${400+i*16}" y="64" width="14" height="24" rx="2"/>`).join('')}</g>
+  <g stroke="#7c3aed" stroke-width="1">${[0,1,2,3].map(i=>`<line x1="${407+i*16}" y1="64" x2="${407+i*16}" y2="56"/>`).join('')}</g>
+  <text x="432" y="112" text-anchor="middle" font-size="8" font-weight="700" fill="#6d28d9">Ependymal</text>
+  <text x="432" y="123" text-anchor="middle" font-size="7" fill="#5b21b6">line ventricles, CSF (cilia)</text>
+  <line x1="16" y1="136" x2="464" y2="136" stroke="#e2e8f0"/>
+  <text x="16" y="156" font-size="10" font-weight="700" fill="#be185d">PNS glia</text>
+  <!-- schwann -->
+  <g><path d="M60 176 h120" stroke="#2563eb" stroke-width="4"/><ellipse cx="90" cy="176" rx="22" ry="13" fill="#fce7f3" stroke="#be185d"/><ellipse cx="150" cy="176" rx="22" ry="13" fill="#fce7f3" stroke="#be185d"/></g>
+  <text x="120" y="206" text-anchor="middle" font-size="8" font-weight="700" fill="#9d174d">Schwann cell</text>
+  <text x="120" y="217" text-anchor="middle" font-size="7" fill="#9d174d">myelinates ONE PNS axon segment</text>
+  <!-- satellite -->
+  <g><circle cx="320" cy="176" r="16" fill="#fde68a" stroke="#b45309"/><circle cx="320" cy="176" r="16" fill="none" stroke="#be185d" stroke-dasharray="3 2"/><g fill="#fca5a5">${[0,60,120,180,240,300].map(a=>`<circle cx="${320+16*Math.cos(a*Math.PI/180)}" cy="${176+16*Math.sin(a*Math.PI/180)}" r="4"/>`).join('')}</g></g>
+  <text x="320" y="206" text-anchor="middle" font-size="8" font-weight="700" fill="#9d174d">Satellite cell</text>
+  <text x="320" y="217" text-anchor="middle" font-size="7" fill="#9d174d">surround ganglion cell bodies</text>
+  <text x="16" y="234" font-size="8" fill="#64748b">Myelin: CNS = oligodendrocyte (one cell, many axons); PNS = Schwann (one cell, one internode). Node of Ranvier = gaps → saltatory conduction.</text>
+</svg>`;
+
+export const ECM_COMPONENTS = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Extracellular matrix components" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Extracellular matrix = fibres + ground substance + adhesives</text>
+  <!-- fibres -->
+  <rect x="14" y="30" width="150" height="196" rx="8" fill="#fef2f2" stroke="#ef4444"/>
+  <text x="89" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Fibres</text>
+  <g stroke="#dc2626" stroke-width="3" fill="none"><path d="M26 66 q30 -6 60 0 q30 6 60 0"/></g>
+  <g font-size="7.5" fill="#991b1b"><text x="24" y="86" font-weight="700">Collagen types:</text><text x="24" y="100">I — bone, tendon, skin (90%)</text><text x="24" y="114">II — cartilage, vitreous</text><text x="24" y="128">III — reticular (mesh, marrow)</text><text x="24" y="142">IV — basement membrane (net)</text><text x="24" y="160" font-weight="700">Elastic:</text><text x="24" y="174">elastin core + fibrillin</text><text x="24" y="188">recoil (aorta, skin, lung)</text></g>
+  <text x="24" y="208" font-size="7" fill="#64748b">"Bone I, cartilage II, reticular III, floor/BM IV"</text>
+  <!-- ground substance -->
+  <rect x="172" y="30" width="150" height="196" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="247" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Ground substance</text>
+  <!-- aggrecan brush -->
+  <line x1="200" y1="70" x2="300" y2="70" stroke="#1d4ed8" stroke-width="2.5"/>
+  <g stroke="#60a5fa" stroke-width="1.5">${Array.from({length:11}).map((_,i)=>`<line x1="${205+i*9}" y1="70" x2="${205+i*9}" y2="56"/><line x1="${205+i*9}" y1="70" x2="${205+i*9}" y2="84"/>`).join('')}</g>
+  <text x="247" y="100" text-anchor="middle" font-size="7" fill="#1e40af">proteoglycan (aggrecan): GAGs</text>
+  <text x="247" y="111" text-anchor="middle" font-size="7" fill="#1e40af">on core protein → "bottlebrush"</text>
+  <g font-size="7.5" fill="#1e40af"><text x="182" y="130" font-weight="700">GAGs (sulfated, −charge):</text><text x="182" y="144">• chondroitin / keratan sulfate</text><text x="182" y="158">• heparan sulfate (BM)</text><text x="182" y="174" font-weight="700">Hyaluronan (non-sulfated)</text><text x="182" y="188">huge, binds water → turgor</text></g>
+  <text x="247" y="208" text-anchor="middle" font-size="7" fill="#64748b">hydrated gel → resists compression</text>
+  <!-- adhesion -->
+  <rect x="330" y="30" width="134" height="196" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="397" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Adhesion</text>
+  <rect x="340" y="150" width="114" height="10" fill="#bbf7d0"/><text x="397" y="146" text-anchor="middle" font-size="7" fill="#166534">cell membrane</text>
+  <rect x="392" y="120" width="10" height="30" fill="#16a34a"/><text x="410" y="136" font-size="7" fill="#15803d">integrin</text>
+  <g font-size="7.5" fill="#166534"><text x="340" y="76" font-weight="700">Glycoproteins:</text><text x="340" y="90">• Fibronectin (CT ↔ cell)</text><text x="340" y="104">• Laminin (basal lamina)</text><text x="340" y="180" font-weight="700">Integrins</text><text x="340" y="194">= transmembrane link:</text><text x="340" y="206">ECM ↔ cytoskeleton</text></g>
+  <text x="340" y="222" font-size="7" fill="#0369a1">signalling + anchorage</text>
+</svg>`;
+
+export const INTERMEDIATE_FILAMENT_TABLE = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Intermediate filament classes and diseases" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Intermediate filaments → cell type → clinical marker</text>
+  <g font-size="8.5" font-weight="700" fill="#475569"><text x="24" y="42">IF protein</text><text x="150" y="42">Cell type</text><text x="285" y="42">Clinical use / disease</text></g>
+  <line x1="16" y1="48" x2="454" y2="48" stroke="#cbd5e1"/>
+  <g font-size="8.5">
+    <text x="24" y="68" font-weight="700" fill="#b91c1c">Keratin</text><text x="150" y="68" fill="#334155">epithelial cells</text><text x="285" y="68" fill="#475569">marks carcinoma; Mallory body (alcoholic liver)</text>
+    <text x="24" y="90" font-weight="700" fill="#2563eb">Vimentin</text><text x="150" y="90" fill="#334155">mesenchyme/CT</text><text x="285" y="90" fill="#475569">marks sarcoma, fibroblasts, endothelium</text>
+    <text x="24" y="112" font-weight="700" fill="#7c3aed">Desmin</text><text x="150" y="112" fill="#334155">muscle</text><text x="285" y="112" fill="#475569">marks myogenic tumours (rhabdomyosarcoma)</text>
+    <text x="24" y="134" font-weight="700" fill="#15803d">GFAP</text><text x="150" y="134" fill="#334155">astrocytes (glia)</text><text x="285" y="134" fill="#475569">marks gliomas (astrocytoma)</text>
+    <text x="24" y="156" font-weight="700" fill="#c2410c">Neurofilament</text><text x="150" y="156" fill="#334155">neurons</text><text x="285" y="156" fill="#475569">neurofibrillary tangles (Alzheimer, with tau)</text>
+    <text x="24" y="178" font-weight="700" fill="#0891b2">Lamin</text><text x="150" y="178" fill="#334155">nuclear envelope</text><text x="285" y="178" fill="#475569">laminopathies (progeria, some dystrophies)</text>
+  </g>
+  <line x1="16" y1="190" x2="454" y2="190" stroke="#e2e8f0"/>
+  <text x="16" y="208" font-size="9" fill="#0369a1" font-weight="700">Why it matters (Clinical Cell Biology):</text>
+  <text x="16" y="224" font-size="8.5" fill="#475569">Immunohistochemistry for these IFs identifies a tumour's tissue of origin (e.g. keratin⁺ = carcinoma vs vimentin⁺ = sarcoma).</text>
+  <text x="16" y="240" font-size="8.5" fill="#64748b">Mnemonic — "Every Mature Man Never Gets Lucky": Epithelium-keratin, Mesenchyme-vimentin, Muscle-desmin, Neuron-NF, Glia-GFAP, (nucleus) Lamin.</text>
+</svg>`;

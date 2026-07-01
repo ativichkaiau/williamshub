@@ -21,7 +21,8 @@ export type SystemId =
   | 'repro'
   | 'immune'
   | 'molecular' // foundational biochemistry / molecular biology (e.g. MBH)
-  | 'research'; // research methods / evidence / ethics (e.g. BMR)
+  | 'research' // research methods / evidence / ethics (e.g. BMR)
+  | 'histology'; // basic histology / cell biology / tissue microanatomy (e.g. BHCB)
 
 export type TagKind =
   | 'system'

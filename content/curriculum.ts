@@ -205,6 +205,18 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // BHCB — Basic Histology and Cell Biology (Year 2)
+  'L1 — Cytology': 'BHCB',
+  'L2 — Cytoskeleton': 'BHCB',
+  'L3 — Epithelium & Cell Adhesion': 'BHCB',
+  'L4 — Glands & Connective Tissue': 'BHCB',
+  'L5 — Membrane & Integument': 'BHCB',
+  'L6 — Cartilage & Bone': 'BHCB',
+  'L7 — Muscle Tissue': 'BHCB',
+  'L8 — Nervous Tissue': 'BHCB',
+  'L9 — Extracellular Matrix': 'BHCB',
+  'L10 — Clinical Cell Biology': 'BHCB',
+
   // BMR — Intro to Biomedical Research (Year 1)
   'L1 — History of Medicine': 'BMR',
   'L2 — Introduction to Research': 'BMR',

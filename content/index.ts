@@ -575,6 +575,35 @@ import publicationTypesImrad from './lectures/publication-types-imrad';
 import peerReviewJournalMetrics from './lectures/peer-review-journal-metrics';
 import academicAuthorship from './lectures/academic-authorship';
 
+// ── BHCB (Basic Histology and Cell Biology) ──
+import histologyMethodsStaining from './lectures/histology-methods-staining';
+import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
+import cytoplasmicOrganelles from './lectures/cytoplasmic-organelles';
+import nucleusChromatinNucleolus from './lectures/nucleus-chromatin-nucleolus';
+import actinMicrofilaments from './lectures/actin-microfilaments';
+import microtubulesMotorsCentrosome from './lectures/microtubules-motors-centrosome';
+import intermediateFilaments from './lectures/intermediate-filaments';
+import epithelialClassification from './lectures/epithelial-classification';
+import epithelialSurfaceBasementMembrane from './lectures/epithelial-surface-basement-membrane';
+import cellJunctions from './lectures/cell-junctions';
+import glandsExocrineEndocrine from './lectures/glands-exocrine-endocrine';
+import connectiveTissueCells from './lectures/connective-tissue-cells';
+import connectiveTissueFibersTypes from './lectures/connective-tissue-fibers-types';
+import membranesAndEpidermis from './lectures/membranes-and-epidermis';
+import dermisSensorySkinAppendages from './lectures/dermis-sensory-skin-appendages';
+import cartilageTypes from './lectures/cartilage-types';
+import boneTissueCellsOsteon from './lectures/bone-tissue-cells-osteon';
+import ossification from './lectures/ossification';
+import skeletalMuscleSarcomere from './lectures/skeletal-muscle-sarcomere';
+import cardiacSmoothMuscle from './lectures/cardiac-smooth-muscle';
+import neuronStructureTypes from './lectures/neuron-structure-types';
+import neurogliaCnsPns from './lectures/neuroglia-cns-pns';
+import nerveFiberMyelinSynapse from './lectures/nerve-fiber-myelin-synapse';
+import ecmFibersGroundSubstance from './lectures/ecm-fibers-ground-substance';
+import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clinical';
+import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
+import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -889,6 +918,28 @@ export const lectures: Lecture[] = [
   publicationTypesImrad, peerReviewJournalMetrics,
   // L9 Academic Authorship
   academicAuthorship,
+
+  // ── BHCB (Basic Histology and Cell Biology) ──
+  // L1 Cytology
+  histologyMethodsStaining, plasmaMembraneTransport, cytoplasmicOrganelles, nucleusChromatinNucleolus,
+  // L2 Cytoskeleton
+  actinMicrofilaments, microtubulesMotorsCentrosome, intermediateFilaments,
+  // L3 Epithelium & Cell Adhesion
+  epithelialClassification, epithelialSurfaceBasementMembrane, cellJunctions,
+  // L4 Glands & Connective Tissue
+  glandsExocrineEndocrine, connectiveTissueCells, connectiveTissueFibersTypes,
+  // L5 Membrane & Integument
+  membranesAndEpidermis, dermisSensorySkinAppendages,
+  // L6 Cartilage & Bone
+  cartilageTypes, boneTissueCellsOsteon, ossification,
+  // L7 Muscle Tissue
+  skeletalMuscleSarcomere, cardiacSmoothMuscle,
+  // L8 Nervous Tissue
+  neuronStructureTypes, neurogliaCnsPns, nerveFiberMyelinSynapse,
+  // L9 Extracellular Matrix
+  ecmFibersGroundSubstance, ecmAdhesionIntegrinsClinical,
+  // L10 Clinical Cell Biology
+  subcellularPathologyAlterations, intermediateFilamentsClinical,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

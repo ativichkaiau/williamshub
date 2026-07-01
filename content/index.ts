@@ -324,6 +324,53 @@ import {
   metabolicJunctionPoints,
 } from './lectures/mfn-integration';
 
+// ── ABM (Applied Biochemistry in Medicine) ──────────────────────────────────
+// Cases 1–3 — liver injury, cholestasis & ammonia
+import {
+  acetaminophenOverdosePattern,
+  napqiGlutathioneNac,
+  cholestaticLabPattern,
+  cholangitisBileVitaminLoss,
+  alcoholAldh2Cirrhosis,
+  hepaticEncephalopathyAmmonia,
+} from './lectures/abm-cases-01-03';
+// Cases 4–6 — carbohydrate redox & inborn errors
+import {
+  g6pdOxidativeHemolysis,
+  hemolysisWorkupTriggers,
+  galactokinaseCataracts,
+  galactosemiaDifferentialDiet,
+  aldolaseBPhosphateTrap,
+  hfiMetabolicComplications,
+} from './lectures/abm-cases-04-06';
+// Cases 7–9 — lipid transport & oxidation disorders
+import {
+  familialChylomicronemiaLpl,
+  fcsPancreatitisMct,
+  homozygousFamilialHypercholesterolemia,
+  ldlRetentionXanthomas,
+  mcadHypoketoticHypoglycemia,
+  mcadDiagnosisPrevention,
+} from './lectures/abm-cases-07-09';
+// Cases 10–12 — insulin resistance & fuel-state adaptation
+import {
+  prediabetesOgtthba1c,
+  obesityInsulinResistance,
+  alcoholicKetoacidosisRedox,
+  thiamineWernickeRecovery,
+  nutritionalKetosisVsKetoacidosis,
+  ketogenicFastingExerciseAdaptation,
+} from './lectures/abm-cases-10-12';
+// Cases 13–15 — molecular oncology
+import {
+  brca1TnbcHomologousRepair,
+  parpSyntheticLethality,
+  egfrMutantLungAdenocarcinoma,
+  osimertinibResistance,
+  colonCancerEpigeneticSilencing,
+  colonMolecularWorkupTherapy,
+} from './lectures/abm-cases-13-15';
+
 // ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
 // L1 — Diseases of Bone
 import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
@@ -671,6 +718,38 @@ export const lectures: Lecture[] = [
   // L6 Integrative Metabolism
   organSpecificFuelMetabolism, fedFastingStarvation,
   exerciseStressFuelIntegration, metabolicJunctionPoints,
+
+  // ── ABM (Applied Biochemistry in Medicine) ──
+  // Case 1 Acetaminophen Hepatotoxicity
+  acetaminophenOverdosePattern, napqiGlutathioneNac,
+  // Case 2 Cholangitis & Obstructive Jaundice
+  cholestaticLabPattern, cholangitisBileVitaminLoss,
+  // Case 3 ALDH2 Deficiency & Hepatic Encephalopathy
+  alcoholAldh2Cirrhosis, hepaticEncephalopathyAmmonia,
+  // Case 4 G6PD Deficiency & Hemolysis
+  g6pdOxidativeHemolysis, hemolysisWorkupTriggers,
+  // Case 5 Galactokinase Deficiency
+  galactokinaseCataracts, galactosemiaDifferentialDiet,
+  // Case 6 Hereditary Fructose Intolerance
+  aldolaseBPhosphateTrap, hfiMetabolicComplications,
+  // Case 7 Familial Chylomicronemia Syndrome
+  familialChylomicronemiaLpl, fcsPancreatitisMct,
+  // Case 8 Familial Hypercholesterolemia
+  homozygousFamilialHypercholesterolemia, ldlRetentionXanthomas,
+  // Case 9 MCAD Deficiency
+  mcadHypoketoticHypoglycemia, mcadDiagnosisPrevention,
+  // Case 10 Obesity & Prediabetes
+  prediabetesOgtthba1c, obesityInsulinResistance,
+  // Case 11 Alcoholic Ketoacidosis
+  alcoholicKetoacidosisRedox, thiamineWernickeRecovery,
+  // Case 12 Ketogenic Diet & Intermittent Fasting
+  nutritionalKetosisVsKetoacidosis, ketogenicFastingExerciseAdaptation,
+  // Case 13 BRCA1-Mutant Triple-Negative Breast Cancer
+  brca1TnbcHomologousRepair, parpSyntheticLethality,
+  // Case 14 EGFR-Mutant Non-Small Cell Lung Cancer
+  egfrMutantLungAdenocarcinoma, osimertinibResistance,
+  // Case 15 Epigenetics & Colon Cancer
+  colonCancerEpigeneticSilencing, colonMolecularWorkupTherapy,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

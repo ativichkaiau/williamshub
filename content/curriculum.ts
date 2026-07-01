@@ -161,6 +161,23 @@ export const subjectOfSource: Record<string, string> = {
   'L5 — Lipid Metabolism': 'MFN',
   'L6 — Integrative Metabolism': 'MFN',
 
+  // ABM — Applied Biochemistry in Medicine (Year 1)
+  'Case 1 — Acetaminophen Hepatotoxicity': 'ABM',
+  'Case 2 — Cholangitis & Obstructive Jaundice': 'ABM',
+  'Case 3 — ALDH2 Deficiency & Hepatic Encephalopathy': 'ABM',
+  'Case 4 — G6PD Deficiency & Hemolysis': 'ABM',
+  'Case 5 — Galactokinase Deficiency': 'ABM',
+  'Case 6 — Hereditary Fructose Intolerance': 'ABM',
+  'Case 7 — Familial Chylomicronemia Syndrome': 'ABM',
+  'Case 8 — Familial Hypercholesterolemia': 'ABM',
+  'Case 9 — MCAD Deficiency': 'ABM',
+  'Case 10 — Obesity & Prediabetes': 'ABM',
+  'Case 11 — Alcoholic Ketoacidosis': 'ABM',
+  'Case 12 — Ketogenic Diet & Intermittent Fasting': 'ABM',
+  'Case 13 — BRCA1-Mutant Triple-Negative Breast Cancer': 'ABM',
+  'Case 14 — EGFR-Mutant Non-Small Cell Lung Cancer': 'ABM',
+  'Case 15 — Epigenetics & Colon Cancer': 'ABM',
+
   // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',

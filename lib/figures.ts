@@ -177,3 +177,132 @@ export const WIGGERS_CYCLE = `<svg viewBox="0 0 460 300" xmlns="http://www.w3.or
   <line x1="100" y1="276" x2="100" y2="292" stroke="#334155" stroke-width="2"/><text x="100" y="290" text-anchor="middle" font-size="9" fill="#334155" dx="-12">S1</text>
   <line x1="184" y1="276" x2="184" y2="292" stroke="#334155" stroke-width="2"/><text x="196" y="290" text-anchor="middle" font-size="9" fill="#334155">S2</text>
 </svg>`;
+
+// ── Neuro / special-senses figures (HNS-2) ───────────────────────────────────
+
+export const VISUAL_FIELD_DEFECTS = `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Visual field defects by lesion site along the visual pathway" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">Lesion site → field defect (LE · RE, black = lost)</text>
+  <g stroke="#64748b" stroke-width="1.4">
+    <!-- rows: cx pairs 330 & 380; helper defect fills = #1e293b -->
+    <!-- 1 optic nerve: monocular -->
+    <circle cx="330" cy="52" r="15" fill="#1e293b"/><circle cx="380" cy="52" r="15" fill="#fff"/>
+    <!-- 2 chiasm: bitemporal -->
+    <circle cx="330" cy="98" r="15" fill="#fff"/><path d="M330,83 A15 15 0 0 0 330,113 Z" fill="#1e293b" stroke="none"/>
+    <circle cx="380" cy="98" r="15" fill="#fff"/><path d="M380,83 A15 15 0 0 1 380,113 Z" fill="#1e293b" stroke="none"/>
+    <!-- 3 optic tract: R homonymous hemianopia -->
+    <circle cx="330" cy="144" r="15" fill="#fff"/><path d="M330,129 A15 15 0 0 1 330,159 Z" fill="#1e293b" stroke="none"/>
+    <circle cx="380" cy="144" r="15" fill="#fff"/><path d="M380,129 A15 15 0 0 1 380,159 Z" fill="#1e293b" stroke="none"/>
+    <!-- 4 temporal radiation: R superior quadrantanopia -->
+    <circle cx="330" cy="190" r="15" fill="#fff"/><path d="M330,190 L330,175 A15 15 0 0 1 345,190 Z" fill="#1e293b" stroke="none"/>
+    <circle cx="380" cy="190" r="15" fill="#fff"/><path d="M380,190 L380,175 A15 15 0 0 1 395,190 Z" fill="#1e293b" stroke="none"/>
+    <!-- 5 occipital: R homonymous hemianopia, macular sparing -->
+    <circle cx="330" cy="236" r="15" fill="#fff"/><path d="M330,221 A15 15 0 0 1 330,251 Z" fill="#1e293b" stroke="none"/><circle cx="330" cy="236" r="4.5" fill="#fff" stroke="none"/>
+    <circle cx="380" cy="236" r="15" fill="#fff"/><path d="M380,221 A15 15 0 0 1 380,251 Z" fill="#1e293b" stroke="none"/><circle cx="380" cy="236" r="4.5" fill="#fff" stroke="none"/>
+  </g>
+  <g font-size="11" fill="#475569">
+    <text x="16" y="56">1 · Optic nerve — monocular loss</text>
+    <text x="16" y="102">2 · Chiasm — bitemporal hemianopia</text>
+    <text x="16" y="148">3 · Optic tract — homonymous hemianopia</text>
+    <text x="16" y="186">4 · Temporal (Meyer) — superior</text>
+    <text x="16" y="199">   quadrantanopia (“pie in the sky”)</text>
+    <text x="16" y="240">5 · Occipital — homon., macular sparing</text>
+  </g>
+</svg>`;
+
+export const EXTRAAXIAL_HEMORRHAGE = `<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Epidural (biconvex) versus subdural (crescent) hematoma on CT" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="210" rx="10" fill="#fbfbff"/>
+  <!-- Epidural, left -->
+  <path d="M40,150 A90 90 0 0 1 210,150 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M58,150 A74 74 0 0 1 192,150 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <path d="M96,70 Q125,86 154,70 Q140,104 96,70 Z" fill="#dc2626"/>
+  <text x="125" y="176" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Epidural</text>
+  <text x="125" y="192" text-anchor="middle" font-size="10.5" fill="#475569">biconvex · MMA · lucid interval</text>
+  <text x="125" y="204" text-anchor="middle" font-size="10.5" fill="#475569">stops at sutures</text>
+  <!-- Subdural, right -->
+  <path d="M250,150 A90 90 0 0 1 420,150 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M268,150 A74 74 0 0 1 402,150 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <path d="M268,150 A74 74 0 0 1 402,150 A82 82 0 0 0 268,150 Z" fill="#dc2626"/>
+  <text x="335" y="176" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Subdural</text>
+  <text x="335" y="192" text-anchor="middle" font-size="10.5" fill="#475569">crescent · bridging veins · elderly</text>
+  <text x="335" y="204" text-anchor="middle" font-size="10.5" fill="#475569">crosses sutures, not midline</text>
+</svg>`;
+
+export const BRAIN_HERNIATION = `<svg viewBox="0 0 420 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Brain herniation types: subfalcine, uncal (transtentorial), tonsillar" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="420" height="250" rx="10" fill="#fbfbff"/>
+  <!-- skull + hemispheres (coronal) -->
+  <path d="M40,150 A170 150 0 0 1 380,150 Z" fill="#eef2ff" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="210" y1="16" x2="210" y2="150" stroke="#cbd5e1" stroke-width="10"/>
+  <text x="150" y="30" font-size="10" fill="#64748b">falx</text>
+  <!-- mass on left pushing across -->
+  <ellipse cx="120" cy="86" rx="34" ry="28" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="120" y="90" text-anchor="middle" font-size="10" fill="#7f1d1d">mass</text>
+  <!-- tentorium + brainstem -->
+  <line x1="150" y1="150" x2="270" y2="150" stroke="#cbd5e1" stroke-width="6"/>
+  <rect x="196" y="150" width="28" height="60" rx="8" fill="#e2e8f0" stroke="#94a3b8"/>
+  <path d="M196,210 q14,26 28,0" fill="#e2e8f0" stroke="#94a3b8"/>
+  <g font-size="11" fill="#b91c1c">
+    <text x="228" y="44">1 Subfalcine (cingulate under falx)</text>
+    <text x="248" y="128">2 Uncal / transtentorial → CN III</text>
+    <text x="150" y="238">3 Tonsillar → foramen magnum (brainstem)</text>
+  </g>
+  <path d="M176,96 h26" stroke="#b91c1c" stroke-width="2" marker-end="url(#ah)"/>
+  <defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#b91c1c"/></marker></defs>
+</svg>`;
+
+export const CORD_CROSS_SECTION = `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Spinal cord cross-section: dorsal columns, corticospinal and spinothalamic tracts" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="240" rx="10" fill="#fbfbff"/>
+  <ellipse cx="200" cy="120" rx="120" ry="96" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <!-- butterfly grey matter -->
+  <path d="M200,60 C168,64 150,96 150,120 C150,150 168,176 200,180 C232,176 250,150 250,120 C250,96 232,64 200,60 Z" fill="#e9d5ff" stroke="#a78bfa" stroke-width="1.2"/>
+  <path d="M200,60 L200,180" stroke="#a78bfa" stroke-width="1.2"/>
+  <!-- dorsal columns (posterior) -->
+  <rect x="182" y="42" width="36" height="20" rx="5" fill="#bae6fd" stroke="#0284c7"/>
+  <text x="200" y="30" text-anchor="middle" font-size="11" fill="#0369a1">Dorsal columns (touch/vibration/proprio, ipsi)</text>
+  <!-- lateral corticospinal (posterolateral) -->
+  <circle cx="286" cy="104" r="15" fill="#fecaca" stroke="#dc2626"/><circle cx="114" cy="104" r="15" fill="#fecaca" stroke="#dc2626"/>
+  <text x="330" y="100" font-size="11" fill="#b91c1c">Lat. corticospinal</text><text x="330" y="114" font-size="11" fill="#b91c1c">(motor, ipsi)</text>
+  <!-- spinothalamic (anterolateral) -->
+  <circle cx="278" cy="158" r="14" fill="#bbf7d0" stroke="#16a34a"/><circle cx="122" cy="158" r="14" fill="#bbf7d0" stroke="#16a34a"/>
+  <text x="12" y="180" font-size="11" fill="#15803d">Spinothalamic</text><text x="12" y="194" font-size="11" fill="#15803d">(pain/temp, contra)</text>
+  <!-- anterior horn -->
+  <text x="200" y="206" text-anchor="middle" font-size="10.5" fill="#7c3aed">Anterior horn = LMN</text>
+</svg>`;
+
+export const CARDINAL_GAZE = `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cardinal positions of gaze and the extraocular muscle tested in each" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="240" rx="10" fill="#fbfbff"/>
+  <text x="220" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Cardinal gaze — muscle tested (Right eye)</text>
+  <g font-size="12" fill="#1e293b" text-anchor="middle">
+    <circle cx="120" cy="70" r="22" fill="#eef2ff" stroke="#94a3b8"/><text x="120" y="74">SR</text>
+    <circle cx="320" cy="70" r="22" fill="#e0f2fe" stroke="#0284c7"/><text x="320" y="74">IO</text>
+    <circle cx="120" cy="130" r="22" fill="#eef2ff" stroke="#94a3b8"/><text x="120" y="134">LR→</text>
+    <circle cx="320" cy="130" r="22" fill="#eef2ff" stroke="#94a3b8"/><text x="320" y="134">MR</text>
+    <circle cx="120" cy="190" r="22" fill="#eef2ff" stroke="#94a3b8"/><text x="120" y="194">IR</text>
+    <circle cx="320" cy="190" r="22" fill="#dbeafe" stroke="#2563eb"/><text x="320" y="194">SO</text>
+  </g>
+  <g font-size="10.5" fill="#475569" text-anchor="middle">
+    <text x="120" y="40">abduct+up</text><text x="320" y="40">adduct+up</text>
+    <text x="220" y="134">← abduct / adduct →</text>
+    <text x="120" y="224">abduct+down</text><text x="320" y="224">adduct+down</text>
+  </g>
+  <text x="220" y="212" text-anchor="middle" font-size="10.5" fill="#0369a1">Obliques &amp; IO/SO tested in ADduction; SR/IR in ABduction</text>
+</svg>`;
+
+export const WEBER_RINNE = `<svg viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Weber and Rinne tuning-fork test interpretation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="190" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <text x="20" y="26" font-weight="700">Tuning-fork tests</text>
+    <line x1="20" y1="36" x2="440" y2="36" stroke="#cbd5e1"/>
+    <text x="160" y="56" font-weight="600" fill="#0369a1">Rinne (AC vs BC)</text>
+    <text x="330" y="56" font-weight="600" fill="#b45309">Weber (lateralize)</text>
+    <text x="20" y="86" font-weight="600" fill="#16a34a">Normal</text>
+    <text x="160" y="86">AC &gt; BC (positive)</text>
+    <text x="330" y="86">central / equal</text>
+    <text x="20" y="116" font-weight="600" fill="#dc2626">Conductive</text>
+    <text x="160" y="116">BC &gt; AC (negative)</text>
+    <text x="330" y="116">→ affected (bad) ear</text>
+    <text x="20" y="146" font-weight="600" fill="#7c3aed">Sensorineural</text>
+    <text x="160" y="146">AC &gt; BC (positive)</text>
+    <text x="330" y="146">→ normal (good) ear</text>
+  </g>
+</svg>`;

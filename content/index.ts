@@ -1,5 +1,5 @@
 import type { Lecture } from '../lib/types';
-import { subjectOfSource } from './curriculum';
+import { subjectOfSource, subjectSlug } from './curriculum';
 // L1 — Cardiac Arrhythmias
 import avBlock from './lectures/av-block';
 import atrialFibrillation from './lectures/atrial-fibrillation';
@@ -94,6 +94,42 @@ import cardiacTamponade from './lectures/cardiac-tamponade';
 import pericarditis from './lectures/pericarditis';
 import constrictiveTuberculousPericarditis from './lectures/constrictive-tuberculous-pericarditis';
 
+// ── HNS-2 (Human Nervous & Special Senses System-2) ──────────────────────────
+// L1 — Clinical Neuroanatomy I
+import neuroLocalizationFramework from './lectures/neuro-localization-framework';
+import spinalCordSyndromes from './lectures/spinal-cord-syndromes';
+import brainstemSyndromes from './lectures/brainstem-syndromes';
+import cortexAndStroke from './lectures/cortex-and-stroke';
+import basalGangliaCerebellum from './lectures/basal-ganglia-cerebellum';
+import limbicHypothalamus from './lectures/limbic-hypothalamus';
+// L2 — Clinical Neuroanatomy II
+import extraocularMuscles from './lectures/extraocular-muscles';
+import gazePathwaysIno from './lectures/gaze-pathways-ino';
+import vestibularSystemReflexes from './lectures/vestibular-system-reflexes';
+import pupillaryReflexesHorner from './lectures/pupillary-reflexes-horner';
+// L3 — Common Ear Disorders
+import hearingBalanceBasics from './lectures/hearing-balance-basics';
+import externalEarDisorders from './lectures/external-ear-disorders';
+import middleEarDisorders from './lectures/middle-ear-disorders';
+import innerEarDisorders from './lectures/inner-ear-disorders';
+// L4 — Common Eye Disorders
+import visualPathwayFields from './lectures/visual-pathway-fields';
+import retinalVascularOcclusions from './lectures/retinal-vascular-occlusions';
+import amdDiabeticRetinopathy from './lectures/amd-diabetic-retinopathy';
+import pediatricInfectiveRetina from './lectures/pediatric-infective-retina';
+import opticNerveDiscEdema from './lectures/optic-nerve-disc-edema';
+// L5 — CNS Trauma & Hemorrhage
+import cnsCellularReactions from './lectures/cns-cellular-reactions';
+import traumaticBrainSpinalInjury from './lectures/traumatic-brain-spinal-injury';
+import raisedIcpHerniation from './lectures/raised-icp-herniation';
+import epiduralSubduralHematoma from './lectures/epidural-subdural-hematoma';
+import sahAneurysmAvmIph from './lectures/sah-aneurysm-avm-iph';
+// L6 — Metabolic & Regulatory Disorders
+import alteredMentalStatusComa from './lectures/altered-mental-status-coma';
+import wernickeKorsakoff from './lectures/wernicke-korsakoff';
+import hepaticUremicEncephalopathy from './lectures/hepatic-uremic-encephalopathy';
+import periodicParalysis from './lectures/periodic-paralysis';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -141,6 +177,20 @@ export const lectures: Lecture[] = [
   cardiacTumorsOverview, cardiacMyxoma, rhabdomyomaAndTumors,
   // L21
   pericardialEffusion, cardiacTamponade, pericarditis, constrictiveTuberculousPericarditis,
+
+  // ── HNS-2 ──
+  // L1 Clinical Neuroanatomy I
+  neuroLocalizationFramework, spinalCordSyndromes, brainstemSyndromes, cortexAndStroke, basalGangliaCerebellum, limbicHypothalamus,
+  // L2 Clinical Neuroanatomy II
+  extraocularMuscles, gazePathwaysIno, vestibularSystemReflexes, pupillaryReflexesHorner,
+  // L3 Common Ear Disorders
+  hearingBalanceBasics, externalEarDisorders, middleEarDisorders, innerEarDisorders,
+  // L4 Common Eye Disorders
+  visualPathwayFields, retinalVascularOcclusions, amdDiabeticRetinopathy, pediatricInfectiveRetina, opticNerveDiscEdema,
+  // L5 CNS Trauma & Hemorrhage
+  cnsCellularReactions, traumaticBrainSpinalInjury, raisedIcpHerniation, epiduralSubduralHematoma, sahAneurysmAvmIph,
+  // L6 Metabolic & Regulatory Disorders
+  alteredMentalStatusComa, wernickeKorsakoff, hepaticUremicEncephalopathy, periodicParalysis,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(
@@ -161,9 +211,13 @@ export const lecturesBySubject = lectures.reduce<Record<string, Lecture[]>>((acc
 }, {});
 
 // Consolidated "whole lecture" sets — every module of one lecture on a single page.
+// Slugs are namespaced by subject so lecture numbers can restart per block
+// (HCVS-2 L1 → `hcvs-2-l1`, HNS-2 L1 → `hns-2-l1`) without colliding.
 export function lectureSetSlug(source: string): string {
   const m = source.match(/^L(\d+)/i);
-  return m ? `l${m[1]}` : source.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const base = m ? `l${m[1]}` : source.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const code = subjectOfSource[source];
+  return code ? `${subjectSlug(code)}-${base}` : base;
 }
 
 export interface LectureSet {

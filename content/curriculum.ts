@@ -95,6 +95,14 @@ export const subjectOfSource: Record<string, string> = {
   'L19 — Vascular Diseases II': 'HCVS-2',
   'L20 — Cardiac Tumors': 'HCVS-2',
   'L21 — Pericardial Disease': 'HCVS-2',
+
+  // HNS-2 — Human Nervous and Special Senses System-2 (Year 3)
+  'L1 — Clinical Neuroanatomy I': 'HNS-2',
+  'L2 — Clinical Neuroanatomy II': 'HNS-2',
+  'L3 — Common Ear Disorders': 'HNS-2',
+  'L4 — Common Eye Disorders': 'HNS-2',
+  'L5 — CNS Trauma & Hemorrhage': 'HNS-2',
+  'L6 — Metabolic & Regulatory Disorders': 'HNS-2',
 };
 
 export function subjectSlug(code: string): string {

@@ -170,6 +170,11 @@ export const subjectOfSource: Record<string, string> = {
   'L12 — Orbit, Eye & Ear': 'HGA',
   'L13 — Nasal Cavity & Paranasal Sinuses': 'HGA',
   'L14 — Pharynx & Larynx': 'HGA',
+  // Part 4: Oral Cavity & Abdomen
+  'L15 — Mouth & Oral Cavity': 'HGA',
+  'L16 — Anterior Abdominal Wall & Stomach': 'HGA',
+  'L17 — Posterior Abdominal Wall & Urinary System': 'HGA',
+  'L18 — Intestines, Liver & Biliary System': 'HGA',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
@@ -207,6 +212,11 @@ export const partOfSource: Record<string, string> = {
   'L12 — Orbit, Eye & Ear': 'Part 3 · Skull & Deep Head Regions',
   'L13 — Nasal Cavity & Paranasal Sinuses': 'Part 3 · Skull & Deep Head Regions',
   'L14 — Pharynx & Larynx': 'Part 3 · Skull & Deep Head Regions',
+  // HGA Part 4 — Oral Cavity & Abdomen
+  'L15 — Mouth & Oral Cavity': 'Part 4 · Oral Cavity & Abdomen',
+  'L16 — Anterior Abdominal Wall & Stomach': 'Part 4 · Oral Cavity & Abdomen',
+  'L17 — Posterior Abdominal Wall & Urinary System': 'Part 4 · Oral Cavity & Abdomen',
+  'L18 — Intestines, Liver & Biliary System': 'Part 4 · Oral Cavity & Abdomen',
 };
 
 export function subjectSlug(code: string): string {

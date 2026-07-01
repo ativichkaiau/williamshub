@@ -1198,3 +1198,106 @@ export const HEAD_PARASYMPATHETIC_GANGLIA = `<svg viewBox="0 0 480 220" xmlns="h
   <text x="16" y="192" font-size="9.5" fill="#0369a1">Parasympathetic fibres "hitch-hike" on trigeminal branches to reach the glands.</text>
   <text x="16" y="208" font-size="9.5" fill="#475569">VII serves two (pterygopalatine + submandibular); IX serves the otic (parotid).</text>
 </svg>`;
+
+export const TONGUE_INNERVATION = `<svg viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Innervation of the tongue by region" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Tongue innervation (anterior 2/3 vs posterior 1/3)</text>
+  <path d="M150,40 q80,-10 90,60 q6,50 -45,80 q-51,-30 -45,-80 q10,-70 0,-60 Z" fill="#fee2e2" stroke="#f87171"/>
+  <line x1="112" y1="118" x2="240" y2="118" stroke="#334155" stroke-dasharray="4 3"/>
+  <text x="245" y="95" font-size="9" fill="#64748b">sulcus terminalis</text>
+  <text x="150" y="80" text-anchor="middle" font-size="10.5" font-weight="700" fill="#be123c">Anterior 2/3</text>
+  <text x="150" y="160" text-anchor="middle" font-size="10.5" font-weight="700" fill="#7c3aed">Posterior 1/3</text>
+  <g font-size="9">
+    <text x="250" y="50" fill="#be123c" font-weight="700">Anterior 2/3</text>
+    <text x="250" y="66" fill="#7f1d1d">• General sensation: lingual n. (V3)</text>
+    <text x="250" y="80" fill="#7f1d1d">• Taste: chorda tympani (VII)</text>
+    <text x="250" y="120" fill="#7c3aed" font-weight="700">Posterior 1/3</text>
+    <text x="250" y="136" fill="#581c87">• Sensation + taste: CN IX</text>
+    <text x="250" y="150" fill="#581c87">• (Vallecula/epiglottis: CN X)</text>
+    <text x="250" y="184" fill="#065f46" font-weight="700">Motor (all muscles)</text>
+    <text x="250" y="198" fill="#065f46">• Hypoglossal (CN XII)</text>
+    <text x="250" y="212" fill="#065f46">• EXCEPT palatoglossus (CN X)</text>
+  </g>
+  <text x="16" y="232" font-size="9.5" fill="#0369a1">CN XII lesion: tongue deviates TOWARD the lesioned side on protrusion (genioglossus).</text>
+</svg>`;
+
+export const INGUINAL_HERNIA = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Direct versus indirect inguinal hernia" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Inguinal hernias &amp; the inferior epigastric artery</text>
+  <line x1="235" y1="60" x2="235" y2="150" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="200" y="52" text-anchor="middle" font-size="8.5" fill="#b91c1c">inferior</text><text x="200" y="62" text-anchor="middle" font-size="8.5" fill="#b91c1c">epigastric a.</text>
+  <g>
+    <rect x="16" y="66" width="200" height="120" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="116" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">Indirect (lateral)</text>
+    <g font-size="9" fill="#7c2d12"><text x="24" y="102">• LATERAL to inferior epigastric a.</text><text x="24" y="118">• Through DEEP inguinal ring</text><text x="24" y="134">• Follows the inguinal canal</text><text x="24" y="150">• Congenital (patent processus)</text><text x="24" y="166">• Can enter the scrotum</text><text x="24" y="180">• Younger patients; commonest</text></g>
+  </g>
+  <g>
+    <rect x="254" y="66" width="200" height="120" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="354" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Direct (medial)</text>
+    <g font-size="9" fill="#1e3a8a"><text x="262" y="102">• MEDIAL to inferior epigastric a.</text><text x="262" y="118">• Through Hesselbach triangle</text><text x="262" y="134">• Pushes through posterior wall</text><text x="262" y="150">• Acquired (wall weakness)</text><text x="262" y="166">• Rarely into the scrotum</text><text x="262" y="180">• Older patients</text></g>
+  </g>
+  <text x="16" y="206" font-size="9.5" fill="#0369a1">"MDs don't LIe": Medial=Direct, Lateral=Indirect (relative to the inferior epigastric artery).</text>
+</svg>`;
+
+export const LUMBAR_PLEXUS = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lumbar plexus nerves and roots" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lumbar plexus (L1–L4)</text>
+  <g font-size="10">
+    <text x="24" y="46" font-weight="700" fill="#be123c">Iliohypogastric (L1)</text><text x="230" y="46" fill="#7f1d1d">→ lower abdominal wall / suprapubic skin</text>
+    <line x1="16" y1="52" x2="454" y2="52" stroke="#eef2f7"/>
+    <text x="24" y="72" font-weight="700" fill="#c2410c">Ilioinguinal (L1)</text><text x="230" y="72" fill="#7c2d12">→ inguinal canal; upper scrotum/labia, medial thigh</text>
+    <line x1="16" y1="78" x2="454" y2="78" stroke="#eef2f7"/>
+    <text x="24" y="98" font-weight="700" fill="#b45309">Genitofemoral (L1–L2)</text><text x="230" y="98" fill="#78350f">→ cremaster (genital) + upper-thigh skin (femoral)</text>
+    <line x1="16" y1="104" x2="454" y2="104" stroke="#eef2f7"/>
+    <text x="24" y="124" font-weight="700" fill="#047857">Lateral femoral cutaneous (L2–L3)</text><text x="270" y="124" fill="#065f46">→ lateral thigh skin (meralgia paresthetica)</text>
+    <line x1="16" y1="130" x2="454" y2="130" stroke="#eef2f7"/>
+    <text x="24" y="150" font-weight="700" fill="#1d4ed8">Femoral (L2–L4)</text><text x="230" y="150" fill="#1e3a8a">→ quadriceps (knee extension) + anterior thigh</text>
+    <line x1="16" y1="156" x2="454" y2="156" stroke="#eef2f7"/>
+    <text x="24" y="176" font-weight="700" fill="#7c3aed">Obturator (L2–L4)</text><text x="230" y="176" fill="#581c87">→ thigh ADductors + medial thigh skin</text>
+  </g>
+  <text x="16" y="204" font-size="9.5" fill="#475569">Femoral emerges LATERAL to psoas major; obturator emerges MEDIAL to it.</text>
+  <text x="16" y="220" font-size="9.5" fill="#0369a1">"I, I Get Leftovers From Obturator": Iliohypogastric, Ilioinguinal, Genitofemoral, LFC, Femoral, Obturator.</text>
+</svg>`;
+
+export const URETER_CONSTRICTIONS = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Three normal constrictions of the ureter where stones lodge" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Ureter: 3 constrictions (stones lodge here)</text>
+  <!-- kidney + ureter path -->
+  <path d="M150,40 q34,-6 40,26 q4,20 -14,30" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M176,96 q-6,60 8,110 q10,34 40,44" fill="none" stroke="#cbd5e1" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="150" cy="60" rx="26" ry="34" fill="#fef9c3" stroke="#fde047"/>
+  <circle cx="176" cy="96" r="7" fill="#f87171"/><text x="196" y="94" font-size="10" font-weight="700" fill="#b91c1c">1. Ureteropelvic junction</text>
+  <circle cx="176" cy="176" r="7" fill="#f87171"/><text x="196" y="174" font-size="10" font-weight="700" fill="#b91c1c">2. Pelvic brim (iliac vessels)</text>
+  <circle cx="224" cy="230" r="7" fill="#f87171"/><text x="240" y="228" font-size="10" font-weight="700" fill="#b91c1c">3. Ureterovesical junction</text>
+  <text x="240" y="242" font-size="9" fill="#7f1d1d">(entry into the bladder — narrowest)</text>
+  <text x="196" y="130" font-size="9.5" fill="#0369a1">Renal colic: severe "loin-to-groin" pain,</text>
+  <text x="196" y="144" font-size="9.5" fill="#0369a1">referred T11–L2 dermatomes.</text>
+</svg>`;
+
+export const GI_BLOOD_SUPPLY = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Foregut, midgut and hindgut blood supply" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Gut blood supply: foregut · midgut · hindgut</text>
+  <line x1="60" y1="34" x2="60" y2="220" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+  <text x="30" y="30" font-size="8.5" fill="#b91c1c">aorta</text>
+  <g>
+    <line x1="60" y1="60" x2="120" y2="60" stroke="#dc2626" stroke-width="3"/>
+    <rect x="120" y="46" width="330" height="52" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="128" y="62" font-size="10.5" font-weight="700" fill="#1d4ed8">Celiac trunk (T12) → FOREGUT</text>
+    <text x="128" y="78" font-size="9" fill="#1e3a8a">esophagus → duodenum (to ampulla), liver, gallbladder,</text>
+    <text x="128" y="90" font-size="9" fill="#1e3a8a">pancreas, spleen · pain: epigastric</text>
+  </g>
+  <g>
+    <line x1="60" y1="130" x2="120" y2="130" stroke="#dc2626" stroke-width="3"/>
+    <rect x="120" y="116" width="330" height="52" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="128" y="132" font-size="10.5" font-weight="700" fill="#c2410c">SMA (L1) → MIDGUT</text>
+    <text x="128" y="148" font-size="9" fill="#7c2d12">duodenum (post-ampulla) → prox. 2/3 transverse colon</text>
+    <text x="128" y="160" font-size="9" fill="#7c2d12">· pain: periumbilical (e.g. early appendicitis)</text>
+  </g>
+  <g>
+    <line x1="60" y1="196" x2="120" y2="196" stroke="#dc2626" stroke-width="3"/>
+    <rect x="120" y="182" width="330" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="128" y="198" font-size="10.5" font-weight="700" fill="#047857">IMA (L3) → HINDGUT</text>
+    <text x="128" y="214" font-size="9" fill="#065f46">distal 1/3 transverse colon → upper rectum</text>
+    <text x="128" y="226" font-size="9" fill="#065f46">· pain: suprapubic · watershed: splenic flexure</text>
+  </g>
+</svg>`;

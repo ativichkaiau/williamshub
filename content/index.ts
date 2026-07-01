@@ -425,6 +425,25 @@ import pharynxConstrictorsTonsils from './lectures/pharynx-constrictors-tonsils'
 import larynxCartilagesCavity from './lectures/larynx-cartilages-cavity';
 import laryngealMusclesNerves from './lectures/laryngeal-muscles-nerves';
 
+// ── HGA Part 4: Oral Cavity & Abdomen ────────────────────────────────────────
+// L15 — Mouth & Oral Cavity
+import oralCavityLipsTeeth from './lectures/oral-cavity-lips-teeth';
+import palateTongue from './lectures/palate-tongue';
+import salivaryGlandsOralClinical from './lectures/salivary-glands-oral-clinical';
+// L16 — Anterior Abdominal Wall & Stomach
+import abdominalWallRectusSheath from './lectures/abdominal-wall-rectus-sheath';
+import inguinalCanalHernias from './lectures/inguinal-canal-hernias';
+import peritoneumStomach from './lectures/peritoneum-stomach';
+// L17 — Posterior Abdominal Wall & Urinary System
+import posteriorAbdominalWallDiaphragm from './lectures/posterior-abdominal-wall-diaphragm';
+import lumbarPlexus from './lectures/lumbar-plexus';
+import kidneyUreterAnatomy from './lectures/kidney-ureter-anatomy';
+import bladderUrethra from './lectures/bladder-urethra';
+// L18 — Intestines, Liver & Biliary System
+import smallLargeIntestine from './lectures/small-large-intestine';
+import liverBiliaryPancreas from './lectures/liver-biliary-pancreas';
+import giBloodSupplyPortalSystem from './lectures/gi-blood-supply-portal-system';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -648,6 +667,16 @@ export const lectures: Lecture[] = [
   nasalCavityWallsMeatuses, nasalBloodSupplyEpistaxis, paranasalSinuses,
   // L14 Pharynx & Larynx
   pharynxConstrictorsTonsils, larynxCartilagesCavity, laryngealMusclesNerves,
+
+  // ── HGA Part 4: Oral Cavity & Abdomen ──
+  // L15 Mouth & Oral Cavity
+  oralCavityLipsTeeth, palateTongue, salivaryGlandsOralClinical,
+  // L16 Anterior Abdominal Wall & Stomach
+  abdominalWallRectusSheath, inguinalCanalHernias, peritoneumStomach,
+  // L17 Posterior Abdominal Wall & Urinary System
+  posteriorAbdominalWallDiaphragm, lumbarPlexus, kidneyUreterAnatomy, bladderUrethra,
+  // L18 Intestines, Liver & Biliary System
+  smallLargeIntestine, liverBiliaryPancreas, giBloodSupplyPortalSystem,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

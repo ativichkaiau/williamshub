@@ -139,6 +139,15 @@ export const subjectOfSource: Record<string, string> = {
   'L11 — DKA & Thyroid Storm': 'HEN-2',
   'L12 — Drugs Used in Diabetes': 'HEN-2',
 
+  // HGD — Human Genetics and Developmental Biology (Year 1)
+  'L1 — Genes & Embryonic Development': 'HGD',
+  'L2 — Pre-embryonic Development': 'HGD',
+  'L3 — Third Week & Germ Layer Derivatives': 'HGD',
+  'L4 — Congenital Anomalies & Teratology': 'HGD',
+  'L5 — Placenta & Extraembryonic Membranes': 'HGD',
+  'L6 — Cell Cycle & Human Chromosomes': 'HGD',
+  'L7 — Chromosome Aberrations': 'HGD',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

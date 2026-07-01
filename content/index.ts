@@ -222,6 +222,39 @@ import glycosidicBondsPolysaccharides from './lectures/glycosidic-bonds-polysacc
 import fattyAcidsMembranes from './lectures/fatty-acids-membranes';
 import cholesterolSteroidsLipoproteins from './lectures/cholesterol-steroids-lipoproteins';
 
+// ── HGD (Human Genetics and Developmental Biology) ───────────────────────────
+// L1 — Genes & Embryonic Development
+import developmentalAnatomyPeriodsTerms from './lectures/developmental-anatomy-periods-terms';
+import developmentalGeneticRegulation from './lectures/developmental-genetic-regulation';
+import gametogenesisFemaleTract from './lectures/gametogenesis-female-tract';
+// L2 — Pre-embryonic Development
+import capacitationFertilization from './lectures/capacitation-fertilization';
+import cleavageBlastocystImplantation from './lectures/cleavage-blastocyst-implantation';
+import bilaminarDiscWeekTwo from './lectures/bilaminar-disc-week-two';
+import preembryonicClinicalApplications from './lectures/preembryonic-clinical-applications';
+// L3 — Third Week & Germ Layer Derivatives
+import gastrulationBodyAxis from './lectures/gastrulation-body-axis';
+import notochordNeurulationNeuralCrest from './lectures/notochord-neurulation-neural-crest';
+import germLayerDerivativesFolding from './lectures/germ-layer-derivatives-folding';
+import gastrulationClinicalStemCells from './lectures/gastrulation-clinical-stem-cells';
+// L4 — Congenital Anomalies & Teratology
+import congenitalAnomalyClassification from './lectures/congenital-anomaly-classification';
+import teratogenesisCriticalPeriods from './lectures/teratogenesis-critical-periods';
+// L5 — Placenta & Extraembryonic Membranes
+import placentaDevelopmentCirculation from './lectures/placenta-development-circulation';
+import extraembryonicMembranesCord from './lectures/extraembryonic-membranes-cord';
+import placentaClinicalAbnormalities from './lectures/placenta-clinical-abnormalities';
+// L6 — Cell Cycle & Human Chromosomes
+import chromosomeStructureChromatin from './lectures/chromosome-structure-chromatin';
+import mitosisCellCycleCheckpoints from './lectures/mitosis-cell-cycle-checkpoints';
+import meiosisRecombination from './lectures/meiosis-recombination';
+import karyotypeChromosomeAnalysis from './lectures/karyotype-chromosome-analysis';
+// L7 — Chromosome Aberrations
+import numericalChromosomeAbnormalities from './lectures/numerical-chromosome-abnormalities';
+import chromosomeCopyStructureAbnormalities from './lectures/chromosome-copy-structure-abnormalities';
+import translocationsInversions from './lectures/translocations-inversions';
+import mosaicismChimerism from './lectures/mosaicism-chimerism';
+
 // ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
 // L1 — Diseases of Bone
 import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
@@ -423,6 +456,26 @@ export const lectures: Lecture[] = [
   carbohydrateStructureIsomerism, glycosidicBondsPolysaccharides,
   // L12 Lipid Chemistry
   fattyAcidsMembranes, cholesterolSteroidsLipoproteins,
+
+  // ── HGD (Human Genetics and Developmental Biology) ──
+  // L1 Genes & Embryonic Development
+  developmentalAnatomyPeriodsTerms, developmentalGeneticRegulation, gametogenesisFemaleTract,
+  // L2 Pre-embryonic Development
+  capacitationFertilization, cleavageBlastocystImplantation,
+  bilaminarDiscWeekTwo, preembryonicClinicalApplications,
+  // L3 Third Week & Germ Layer Derivatives
+  gastrulationBodyAxis, notochordNeurulationNeuralCrest,
+  germLayerDerivativesFolding, gastrulationClinicalStemCells,
+  // L4 Congenital Anomalies & Teratology
+  congenitalAnomalyClassification, teratogenesisCriticalPeriods,
+  // L5 Placenta & Extraembryonic Membranes
+  placentaDevelopmentCirculation, extraembryonicMembranesCord, placentaClinicalAbnormalities,
+  // L6 Cell Cycle & Human Chromosomes
+  chromosomeStructureChromatin, mitosisCellCycleCheckpoints,
+  meiosisRecombination, karyotypeChromosomeAnalysis,
+  // L7 Chromosome Aberrations
+  numericalChromosomeAbnormalities, chromosomeCopyStructureAbnormalities,
+  translocationsInversions, mosaicismChimerism,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

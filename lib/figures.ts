@@ -475,3 +475,35 @@ export const REPLICATION_FORK = `<svg viewBox="0 0 460 220" xmlns="http://www.w3
   <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Replication fork</text>
   <text x="250" y="212" font-size="9.5" fill="#475569">Pol I/RNase H remove primer · ligase seals nicks · proofreading 3′→5′ exo</text>
 </svg>`;
+
+export const DOPAMINE_TRACTS = `<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Four dopamine pathways and the effect of D2 blockade" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">Dopamine tracts & D2 blockade</text>
+  <g font-size="10.5">
+    <line x1="16" y1="34" x2="444" y2="34" stroke="#cbd5e1"/>
+    <text x="20" y="48" font-weight="700" fill="#7c3aed">Pathway</text><text x="180" y="48" font-weight="700" fill="#7c3aed">Function</text><text x="320" y="48" font-weight="700" fill="#7c3aed">D2 block →</text>
+    <text x="20" y="74" fill="#334155">Mesolimbic</text><text x="180" y="74" fill="#475569">reward / positive Sx</text><text x="320" y="74" fill="#16a34a">✓ treats psychosis</text>
+    <text x="20" y="100" fill="#334155">Mesocortical</text><text x="180" y="100" fill="#475569">cognition / negative Sx</text><text x="320" y="100" fill="#dc2626">worsens negative Sx</text>
+    <text x="20" y="126" fill="#334155">Nigrostriatal</text><text x="180" y="126" fill="#475569">movement</text><text x="320" y="126" fill="#dc2626">EPS</text>
+    <text x="20" y="152" fill="#334155">Tuberoinfundib.</text><text x="180" y="152" fill="#475569">inhibits prolactin</text><text x="320" y="152" fill="#dc2626">↑ prolactin</text>
+  </g>
+  <text x="16" y="182" font-size="10.5" fill="#0369a1">Atypicals block 5-HT2A &gt; D2 → fewer EPS & better negative-symptom balance</text>
+  <text x="16" y="199" font-size="10.5" fill="#475569">Schizophrenia: ↑ mesolimbic DA (positive) · ↓ mesocortical DA (negative)</text>
+</svg>`;
+
+export const CSF_PROFILES = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="CSF profiles in bacterial, viral and TB or fungal meningitis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">CSF in meningitis</text>
+  <g font-size="10.5">
+    <line x1="14" y1="30" x2="446" y2="30" stroke="#cbd5e1"/>
+    <text x="18" y="46" font-weight="700" fill="#475569"> </text>
+    <text x="150" y="46" font-weight="700" fill="#dc2626">Bacterial</text>
+    <text x="258" y="46" font-weight="700" fill="#7c3aed">Viral</text>
+    <text x="352" y="46" font-weight="700" fill="#b45309">TB / Fungal</text>
+    <text x="18" y="74" fill="#334155">Cells</text><text x="150" y="74" fill="#475569">↑↑ neutrophils</text><text x="258" y="74" fill="#475569">↑ lymphocytes</text><text x="352" y="74" fill="#475569">↑ lymphocytes</text>
+    <text x="18" y="102" fill="#334155">Protein</text><text x="150" y="102" fill="#475569">↑↑</text><text x="258" y="102" fill="#475569">normal / ↑</text><text x="352" y="102" fill="#475569">↑↑↑</text>
+    <text x="18" y="130" fill="#334155">Glucose</text><text x="150" y="130" fill="#dc2626">↓↓ (low)</text><text x="258" y="130" fill="#16a34a">normal</text><text x="352" y="130" fill="#b45309">↓ (low)</text>
+    <text x="18" y="158" fill="#334155">Opening P.</text><text x="150" y="158" fill="#475569">↑</text><text x="258" y="158" fill="#475569">normal / ↑</text><text x="352" y="158" fill="#475569">↑↑</text>
+  </g>
+  <text x="16" y="186" font-size="10" fill="#0369a1">Low glucose = bacterial or TB/fungal; normal glucose + lymphocytes = viral</text>
+</svg>`;

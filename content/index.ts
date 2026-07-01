@@ -150,6 +150,31 @@ import cnsLymphomaMetastases from './lectures/cns-lymphoma-metastases';
 // L11 — Drugs for Ear Disorders
 import ototopicalDrugs from './lectures/ototopical-drugs';
 import vertigoVestibularDrugs from './lectures/vertigo-vestibular-drugs';
+// L12 — Cognition & Consciousness
+import cognitiveDomainsDementiaWorkup from './lectures/cognitive-domains-dementia-workup';
+import alzheimerAndDementias from './lectures/alzheimer-and-dementias';
+import disordersOfConsciousness from './lectures/disorders-of-consciousness';
+// L13 — Antimigraine Drugs
+import migrainePathophysiologyAcute from './lectures/migraine-pathophysiology-acute';
+import migraineProphylaxis from './lectures/migraine-prophylaxis';
+// L14 — Sedatives & Hypnotics
+import sedativeHypnoticsBenzodiazepines from './lectures/sedative-hypnotics-benzodiazepines';
+import barbituratesAndAnxiolytics from './lectures/barbiturates-and-anxiolytics';
+// L15 — Opioid Analgesics
+import opioidReceptorsMechanism from './lectures/opioid-receptors-mechanism';
+import opioidEffectsToxicity from './lectures/opioid-effects-toxicity';
+// L16 — Antipsychotics
+import antipsychoticsDopamineEps from './lectures/antipsychotics-dopamine-eps';
+import atypicalAntipsychoticAgents from './lectures/atypical-antipsychotic-agents';
+// L17 — Antidepressants
+import antidepressantsSsriSnri from './lectures/antidepressants-ssri-snri';
+import tcaMaoiAtypicalAntidepressants from './lectures/tca-maoi-atypical-antidepressants';
+import moodStabilizersBipolar from './lectures/mood-stabilizers-bipolar';
+// L18 — CNS Infections & Immune Disorders
+import bacterialMeningitis from './lectures/bacterial-meningitis';
+import subacuteChronicMeningitis from './lectures/subacute-chronic-meningitis';
+import encephalitisMyelitis from './lectures/encephalitis-myelitis';
+import neurotoxinsFacialPalsy from './lectures/neurotoxins-facial-palsy';
 
 // ── MBH (Molecular Basis of Human Body) ──────────────────────────────────────
 // L1 — Amino Acids & Proteins
@@ -250,6 +275,20 @@ export const lectures: Lecture[] = [
   astrocytomaGlioblastoma, otherGliomas, pediatricEmbryonalTumors, meningiomaSchwannomaPituitary, cnsLymphomaMetastases,
   // L11 Drugs for Ear Disorders
   ototopicalDrugs, vertigoVestibularDrugs,
+  // L12 Cognition & Consciousness
+  cognitiveDomainsDementiaWorkup, alzheimerAndDementias, disordersOfConsciousness,
+  // L13 Antimigraine Drugs
+  migrainePathophysiologyAcute, migraineProphylaxis,
+  // L14 Sedatives & Hypnotics
+  sedativeHypnoticsBenzodiazepines, barbituratesAndAnxiolytics,
+  // L15 Opioid Analgesics
+  opioidReceptorsMechanism, opioidEffectsToxicity,
+  // L16 Antipsychotics
+  antipsychoticsDopamineEps, atypicalAntipsychoticAgents,
+  // L17 Antidepressants
+  antidepressantsSsriSnri, tcaMaoiAtypicalAntidepressants, moodStabilizersBipolar,
+  // L18 CNS Infections & Immune Disorders
+  bacterialMeningitis, subacuteChronicMeningitis, encephalitisMyelitis, neurotoxinsFacialPalsy,
 
   // ── MBH (Molecular Basis of Human Body) ──
   // L1 Amino Acids & Proteins

@@ -107,6 +107,13 @@ export const subjectOfSource: Record<string, string> = {
   'L9 — Antiparkinson Agents': 'HNS-2',
   'L10 — CNS Neoplasms': 'HNS-2',
   'L11 — Drugs for Ear Disorders': 'HNS-2',
+  'L12 — Cognition & Consciousness': 'HNS-2',
+  'L13 — Antimigraine Drugs': 'HNS-2',
+  'L14 — Sedatives & Hypnotics': 'HNS-2',
+  'L15 — Opioid Analgesics': 'HNS-2',
+  'L16 — Antipsychotics': 'HNS-2',
+  'L17 — Antidepressants': 'HNS-2',
+  'L18 — CNS Infections & Immune Disorders': 'HNS-2',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',

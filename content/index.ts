@@ -384,6 +384,25 @@ import upperLimbJoints from './lectures/upper-limb-joints';
 import intrinsicBackMusclesSuboccipital from './lectures/intrinsic-back-muscles-suboccipital';
 import vertebralColumnJointsDiscs from './lectures/vertebral-column-joints-discs';
 
+// ── HGA Part 2: Head, Neck & Thorax ──────────────────────────────────────────
+// L6 — Face, Scalp, Parotid & Temporal Regions
+import faceMusclesInnervation from './lectures/face-muscles-innervation';
+import scalpLayers from './lectures/scalp-layers';
+import parotidTemporalRegions from './lectures/parotid-temporal-regions';
+// L7 — Triangles & Root of the Neck
+import neckTrianglesFascia from './lectures/neck-triangles-fascia';
+import anteriorTriangleCarotid from './lectures/anterior-triangle-carotid';
+import thyroidRootOfNeck from './lectures/thyroid-root-of-neck';
+// L8 — Thorax, Pleura, Trachea & Lungs
+import thoracicWallIntercostalSpace from './lectures/thoracic-wall-intercostal-space';
+import pleuraPleuralCavity from './lectures/pleura-pleural-cavity';
+import tracheaBronchiLungs from './lectures/trachea-bronchi-lungs';
+// L9 — Mediastinum & Heart
+import mediastinumDivisionsContents from './lectures/mediastinum-divisions-contents';
+import greatVesselsMediastinalNerves from './lectures/great-vessels-mediastinal-nerves';
+import heartChambersPericardium from './lectures/heart-chambers-pericardium';
+import heartValvesCoronarySupply from './lectures/heart-valves-coronary-supply';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -584,6 +603,17 @@ export const lectures: Lecture[] = [
   palmIntrinsicMuscles, handNerveLesions, upperLimbJoints,
   // L5 Deep Back & Joints of Vertebral Column
   intrinsicBackMusclesSuboccipital, vertebralColumnJointsDiscs,
+
+  // ── HGA Part 2: Head, Neck & Thorax ──
+  // L6 Face, Scalp, Parotid & Temporal Regions
+  faceMusclesInnervation, scalpLayers, parotidTemporalRegions,
+  // L7 Triangles & Root of the Neck
+  neckTrianglesFascia, anteriorTriangleCarotid, thyroidRootOfNeck,
+  // L8 Thorax, Pleura, Trachea & Lungs
+  thoracicWallIntercostalSpace, pleuraPleuralCavity, tracheaBronchiLungs,
+  // L9 Mediastinum & Heart
+  mediastinumDivisionsContents, greatVesselsMediastinalNerves,
+  heartChambersPericardium, heartValvesCoronarySupply,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

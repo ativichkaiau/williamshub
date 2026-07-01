@@ -999,3 +999,98 @@ export const VERTEBRAL_LIGAMENTS = `<svg viewBox="0 0 460 250" xmlns="http://www
   <text x="16" y="220" font-size="9.5" fill="#475569">Common herniation: L4-L5, L5-S1, C5-C6. Disc herniates postero-laterally (PLL is weak there).</text>
   <text x="16" y="236" font-size="9.5" fill="#0369a1">Atlanto-occipital = "yes" nod (flex/extend); atlanto-axial = "no" rotation (dens + transverse lig).</text>
 </svg>`;
+
+export const SCALP_LAYERS = `<svg viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="The five layers of the scalp (SCALP mnemonic)" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Layers of the scalp — "SCALP"</text>
+  <g>
+    <rect x="40" y="34" width="380" height="26" fill="#fde68a" stroke="#f59e0b"/><text x="48" y="51" font-size="10.5" font-weight="700" fill="#92400e">S — Skin</text>
+    <rect x="40" y="60" width="380" height="30" fill="#fca5a5" stroke="#ef4444"/><text x="48" y="79" font-size="10.5" font-weight="700" fill="#7f1d1d">C — Connective tissue (dense)</text><text x="230" y="79" font-size="9" fill="#7f1d1d">vessels held open → bleeds profusely</text>
+    <rect x="40" y="90" width="380" height="26" fill="#e2e8f0" stroke="#94a3b8"/><text x="48" y="107" font-size="10.5" font-weight="700" fill="#334155">A — Aponeurosis (epicranial/galea)</text>
+    <rect x="40" y="116" width="380" height="30" fill="#fbcfe8" stroke="#ec4899"/><text x="48" y="135" font-size="10.5" font-weight="700" fill="#9d174d">L — Loose areolar tissue</text><text x="250" y="135" font-size="9" fill="#9d174d">"DANGER area" (emissary veins)</text>
+    <rect x="40" y="146" width="380" height="24" fill="#cbd5e1" stroke="#64748b"/><text x="48" y="162" font-size="10.5" font-weight="700" fill="#1e293b">P — Pericranium (periosteum)</text>
+  </g>
+  <text x="16" y="192" font-size="10" fill="#475569">First 3 layers (S-C-A) move as one (scalp proper); deep wounds gape when the aponeurosis is cut.</text>
+  <text x="16" y="208" font-size="10" fill="#9d174d">Loose layer = "danger area": infection spreads here and can reach the cranial venous sinuses.</text>
+  <text x="16" y="224" font-size="10" fill="#0369a1">Emissary veins link scalp veins ↔ dural venous sinuses (route for infection).</text>
+</svg>`;
+
+export const NECK_TRIANGLES = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Anterior and posterior triangles of the neck" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Triangles of the neck (divided by SCM)</text>
+  <g>
+    <rect x="16" y="30" width="216" height="196" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="124" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Anterior triangle</text>
+    <text x="124" y="62" text-anchor="middle" font-size="8.5" fill="#64748b">(SCM · midline · mandible)</text>
+    <g font-size="9" fill="#1e3a8a"><text x="24" y="82">• Carotid: common carotid,</text><text x="30" y="94">IJV, vagus, ansa cervicalis</text><text x="24" y="112">• Submandibular: gland,</text><text x="30" y="124">hypoglossal n. (XII)</text><text x="24" y="142">• Submental: mylohyoid</text><text x="24" y="160">• Muscular: infrahyoid,</text><text x="30" y="172">thyroid gland</text></g>
+    <text x="124" y="204" text-anchor="middle" font-size="9" fill="#1d4ed8">Contains carotid system</text>
+  </g>
+  <g>
+    <rect x="240" y="30" width="214" height="196" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="347" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">Posterior triangle</text>
+    <text x="347" y="62" text-anchor="middle" font-size="8.5" fill="#64748b">(SCM · trapezius · clavicle)</text>
+    <g font-size="9" fill="#7c2d12"><text x="248" y="82">• Accessory nerve (CN XI)</text><text x="248" y="100">• Phrenic nerve (C3–C5)</text><text x="248" y="118">• Brachial plexus roots/trunks</text><text x="248" y="136">• Cervical plexus (nerve point)</text><text x="248" y="154">• External jugular vein</text><text x="248" y="172">• Thyrocervical trunk branches</text></g>
+    <text x="347" y="204" text-anchor="middle" font-size="9" fill="#c2410c">Floor: scalenes, levator scap.</text>
+  </g>
+  <text x="16" y="242" font-size="10" fill="#0369a1">SCM = CN XI (accessory); a posterior-triangle lymph-node biopsy risks the accessory nerve.</text>
+</svg>`;
+
+export const LUNG_LOBES_FISSURES = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lobes and fissures of the right and left lungs" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lungs: lobes &amp; fissures</text>
+  <!-- Right lung: 3 lobes -->
+  <text x="120" y="40" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0369a1">RIGHT (3 lobes)</text>
+  <path d="M70,52 q60,-8 96,10 q10,60 -6,150 q-50,14 -96,0 q-8,-80 6,-160 Z" fill="#dbeafe" stroke="#60a5fa"/>
+  <line x1="74" y1="108" x2="164" y2="96" stroke="#1d4ed8" stroke-width="2"/>
+  <line x1="70" y1="150" x2="164" y2="96" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="110" y="82" font-size="8.5" fill="#1e3a8a">Superior</text>
+  <text x="130" y="120" font-size="8.5" fill="#1e3a8a">Middle</text>
+  <text x="104" y="185" font-size="8.5" fill="#1e3a8a">Inferior</text>
+  <text x="70" y="230" font-size="8" fill="#1d4ed8">Horizontal + oblique fissure · 10 segments</text>
+  <!-- Left lung: 2 lobes + cardiac notch -->
+  <text x="330" y="40" text-anchor="middle" font-size="10.5" font-weight="700" fill="#be123c">LEFT (2 lobes)</text>
+  <path d="M296,52 q60,-8 92,10 q10,60 -6,150 q-46,14 -86,0 q-6,-40 -2,-70 q10,-6 8,-16 q-8,-4 -8,-14 q-4,-30 2,-60 Z" fill="#fee2e2" stroke="#f87171"/>
+  <line x1="300" y1="150" x2="384" y2="96" stroke="#be123c" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="326" y="86" font-size="8.5" fill="#7f1d1d">Superior</text>
+  <text x="330" y="185" font-size="8.5" fill="#7f1d1d">Inferior</text>
+  <text x="288" y="150" font-size="8" fill="#be123c">cardiac</text><text x="288" y="160" font-size="8" fill="#be123c">notch</text>
+  <text x="296" y="230" font-size="8" fill="#be123c">Oblique fissure · lingula · 8 segments</text>
+  <text x="16" y="246" font-size="9.5" fill="#475569">Right main bronchus = wider, shorter, more vertical → foreign bodies lodge here.</text>
+</svg>`;
+
+export const MEDIASTINUM_DIVISIONS = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Divisions of the mediastinum" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Divisions of the mediastinum (sagittal)</text>
+  <!-- superior -->
+  <rect x="120" y="30" width="230" height="40" fill="#ede9fe" stroke="#c4b5fd"/>
+  <text x="235" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#6d28d9">Superior</text>
+  <text x="235" y="62" text-anchor="middle" font-size="8" fill="#5b21b6">arch of aorta, SVC, trachea, esophagus, thymus, thoracic duct</text>
+  <line x1="112" y1="70" x2="358" y2="70" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="60" y="74" font-size="7.5" fill="#64748b">sternal angle (T4–T5)</text>
+  <!-- inferior: anterior / middle / posterior -->
+  <rect x="120" y="72" width="52" height="150" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="146" y="140" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8" transform="rotate(-90 146 140)">Anterior</text>
+  <text x="146" y="212" text-anchor="middle" font-size="7.5" fill="#1e3a8a">thymus</text>
+  <rect x="172" y="72" width="96" height="150" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="220" y="120" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Middle</text>
+  <text x="220" y="138" text-anchor="middle" font-size="8" fill="#7f1d1d">HEART +</text><text x="220" y="150" text-anchor="middle" font-size="8" fill="#7f1d1d">pericardium,</text><text x="220" y="162" text-anchor="middle" font-size="8" fill="#7f1d1d">great vessels,</text><text x="220" y="174" text-anchor="middle" font-size="8" fill="#7f1d1d">phrenic n.</text>
+  <rect x="268" y="72" width="82" height="150" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="309" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#047857">Posterior</text>
+  <text x="309" y="140" text-anchor="middle" font-size="7.5" fill="#065f46">esophagus,</text><text x="309" y="151" text-anchor="middle" font-size="7.5" fill="#065f46">thoracic aorta,</text><text x="309" y="162" text-anchor="middle" font-size="7.5" fill="#065f46">azygos,</text><text x="309" y="173" text-anchor="middle" font-size="7.5" fill="#065f46">sympathetic trunk</text>
+  <text x="16" y="240" font-size="10" fill="#0369a1">Sternal angle marks: rib 2, T4–T5 disc, aortic arch, carina, azygos→SVC, thoracic duct cross.</text>
+</svg>`;
+
+export const HEART_VALVES_AUSCULTATION = `<svg viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cardiac valve auscultation points" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Valve auscultation points — "APT-M"</text>
+  <!-- sternum grid -->
+  <rect x="150" y="34" width="70" height="170" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="185" y="30" text-anchor="middle" font-size="8" fill="#64748b">sternum</text>
+  <g>
+    <circle cx="150" cy="60" r="7" fill="#fca5a5" stroke="#dc2626"/><text x="20" y="56" font-size="10" font-weight="700" fill="#b91c1c">Aortic</text><text x="20" y="68" font-size="8.5" fill="#7f1d1d">2nd R intercostal space</text>
+    <circle cx="220" cy="60" r="7" fill="#93c5fd" stroke="#2563eb"/><text x="300" y="56" font-size="10" font-weight="700" fill="#1d4ed8">Pulmonary</text><text x="300" y="68" font-size="8.5" fill="#1e3a8a">2nd L intercostal space</text>
+    <circle cx="200" cy="150" r="7" fill="#86efac" stroke="#16a34a"/><text x="290" y="146" font-size="10" font-weight="700" fill="#15803d">Tricuspid</text><text x="290" y="158" font-size="8.5" fill="#166534">L lower sternal border</text>
+    <circle cx="270" cy="176" r="7" fill="#f0abfc" stroke="#c026d3"/><text x="300" y="188" font-size="10" font-weight="700" fill="#a21caf">Mitral (apex)</text><text x="300" y="200" font-size="8.5" fill="#86198f">5th L ICS, midclavicular</text>
+  </g>
+  <text x="16" y="224" font-size="10" fill="#0369a1">"All Physicians Take Money": Aortic, Pulmonary, Tricuspid, Mitral — downstream of each valve.</text>
+</svg>`;

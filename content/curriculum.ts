@@ -159,6 +159,11 @@ export const subjectOfSource: Record<string, string> = {
   'L3 — Forearm, Wrist Bones & Dorsum of Hand': 'HGA',
   'L4 — Palm of Hand & Joints of Upper Limb': 'HGA',
   'L5 — Deep Back & Joints of Vertebral Column': 'HGA',
+  // Part 2: Head, Neck & Thorax
+  'L6 — Face, Scalp, Parotid & Temporal Regions': 'HGA',
+  'L7 — Triangles & Root of the Neck': 'HGA',
+  'L8 — Thorax, Pleura, Trachea & Lungs': 'HGA',
+  'L9 — Mediastinum & Heart': 'HGA',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
@@ -185,6 +190,11 @@ export const partOfSource: Record<string, string> = {
   'L3 — Forearm, Wrist Bones & Dorsum of Hand': 'Part 1 · Upper Limb & Back',
   'L4 — Palm of Hand & Joints of Upper Limb': 'Part 1 · Upper Limb & Back',
   'L5 — Deep Back & Joints of Vertebral Column': 'Part 1 · Upper Limb & Back',
+  // HGA Part 2 — Head, Neck & Thorax
+  'L6 — Face, Scalp, Parotid & Temporal Regions': 'Part 2 · Head, Neck & Thorax',
+  'L7 — Triangles & Root of the Neck': 'Part 2 · Head, Neck & Thorax',
+  'L8 — Thorax, Pleura, Trachea & Lungs': 'Part 2 · Head, Neck & Thorax',
+  'L9 — Mediastinum & Heart': 'Part 2 · Head, Neck & Thorax',
 };
 
 export function subjectSlug(code: string): string {

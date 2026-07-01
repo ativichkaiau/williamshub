@@ -365,3 +365,113 @@ export const CNS_TUMOR_LOCATIONS = `<svg viewBox="0 0 460 270" xmlns="http://www
     <circle cx="238" cy="150" r="5" fill="#d97706"/><text x="150" y="120" fill="#b45309">Pituitary (sella)</text>
   </g>
 </svg>`;
+
+// ── Molecular / biochemistry figures (MBH) ───────────────────────────────────
+
+export const MICHAELIS_MENTEN = `<svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Michaelis-Menten curve with Vmax and Km, and inhibitor effects" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="230" rx="10" fill="#fbfbff"/>
+  <line x1="54" y1="20" x2="54" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="54" y1="180" x2="416" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M54,180 C120,80 240,54 410,48" fill="none" stroke="#0d9488" stroke-width="2.5"/>
+  <line x1="54" y1="48" x2="410" y2="48" stroke="#0d9488" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="360" y="42" font-size="11" font-weight="700" fill="#0d9488">Vmax</text>
+  <line x1="54" y1="114" x2="150" y2="114" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="150" y1="114" x2="150" y2="180" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="30" y="118" font-size="10" fill="#475569">½Vmax</text>
+  <text x="146" y="196" font-size="11" font-weight="700" fill="#334155">Km</text>
+  <text x="200" y="214" text-anchor="middle" font-size="12" fill="#475569">[Substrate] →</text>
+  <text x="20" y="100" font-size="12" fill="#475569" transform="rotate(-90 20 100)">Velocity (v) →</text>
+  <text x="150" y="30" font-size="10.5" fill="#dc2626">Competitive: ↑Km, Vmax same</text>
+  <text x="150" y="44" font-size="10.5" fill="#7c3aed">Noncompetitive: ↓Vmax, Km same</text>
+</svg>`;
+
+export const DNA_BASE_PAIRING = `<svg viewBox="0 0 440 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="DNA base pairing: A-T two hydrogen bonds, G-C three hydrogen bonds, antiparallel strands" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="210" rx="10" fill="#fbfbff"/>
+  <text x="70" y="24" font-size="11" font-weight="700" fill="#334155">5′</text>
+  <text x="70" y="196" font-size="11" font-weight="700" fill="#334155">3′</text>
+  <text x="360" y="24" font-size="11" font-weight="700" fill="#334155">3′</text>
+  <text x="360" y="196" font-size="11" font-weight="700" fill="#334155">5′</text>
+  <line x1="90" y1="28" x2="90" y2="188" stroke="#94a3b8" stroke-width="6"/>
+  <line x1="350" y1="28" x2="350" y2="188" stroke="#94a3b8" stroke-width="6"/>
+  <text x="20" y="112" font-size="10.5" fill="#64748b" transform="rotate(-90 20 112)">antiparallel</text>
+  <g font-size="12" font-weight="700">
+    <rect x="120" y="48" width="34" height="20" rx="4" fill="#fecaca" stroke="#dc2626"/><text x="137" y="63" text-anchor="middle" fill="#7f1d1d">A</text>
+    <rect x="286" y="48" width="34" height="20" rx="4" fill="#bfdbfe" stroke="#2563eb"/><text x="303" y="63" text-anchor="middle" fill="#1e3a8a">T</text>
+    <line x1="156" y1="55" x2="284" y2="55" stroke="#64748b"/><line x1="156" y1="61" x2="284" y2="61" stroke="#64748b"/>
+    <text x="220" y="44" text-anchor="middle" font-size="9.5" font-weight="400" fill="#475569">2 H-bonds</text>
+    <rect x="120" y="120" width="34" height="20" rx="4" fill="#bbf7d0" stroke="#16a34a"/><text x="137" y="135" text-anchor="middle" fill="#14532d">G</text>
+    <rect x="286" y="120" width="34" height="20" rx="4" fill="#fde68a" stroke="#d97706"/><text x="303" y="135" text-anchor="middle" fill="#78350f">C</text>
+    <line x1="156" y1="124" x2="284" y2="124" stroke="#64748b"/><line x1="156" y1="130" x2="284" y2="130" stroke="#64748b"/><line x1="156" y1="136" x2="284" y2="136" stroke="#64748b"/>
+    <text x="220" y="116" text-anchor="middle" font-size="9.5" font-weight="400" fill="#475569">3 H-bonds (stronger)</text>
+  </g>
+  <text x="220" y="182" text-anchor="middle" font-size="10.5" fill="#0369a1">More G≡C → higher Tm (melting temperature)</text>
+</svg>`;
+
+export const CHROMATIN_PACKAGING = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="DNA packaging levels from double helix to chromosome" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">DNA packaging levels</text>
+  <!-- 1 double helix -->
+  <path d="M30,70 q10,-16 20,0 q10,16 20,0" fill="none" stroke="#0d9488" stroke-width="2"/>
+  <text x="50" y="100" text-anchor="middle" font-size="10" fill="#475569">1. Double</text><text x="50" y="112" text-anchor="middle" font-size="10" fill="#475569">helix</text>
+  <text x="82" y="72" font-size="14" fill="#94a3b8">→</text>
+  <!-- 2 nucleosome beads -->
+  <line x1="102" y1="64" x2="168" y2="64" stroke="#cbd5e1" stroke-width="2"/>
+  <circle cx="115" cy="64" r="9" fill="#a78bfa"/><circle cx="135" cy="64" r="9" fill="#a78bfa"/><circle cx="155" cy="64" r="9" fill="#a78bfa"/>
+  <text x="135" y="100" text-anchor="middle" font-size="10" fill="#475569">2. Nucleosome</text><text x="135" y="112" text-anchor="middle" font-size="10" fill="#475569">(histone octamer)</text>
+  <text x="176" y="72" font-size="14" fill="#94a3b8">→</text>
+  <!-- 3 solenoid -->
+  <rect x="196" y="52" width="44" height="26" rx="10" fill="#c4b5fd" stroke="#7c3aed"/>
+  <text x="218" y="100" text-anchor="middle" font-size="10" fill="#475569">3. 30-nm fiber</text><text x="218" y="112" text-anchor="middle" font-size="10" fill="#475569">(solenoid)</text>
+  <text x="248" y="72" font-size="14" fill="#94a3b8">→</text>
+  <!-- 4 loops -->
+  <path d="M270,64 q12,-20 24,0 q12,20 24,0" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="294" y="100" text-anchor="middle" font-size="10" fill="#475569">4. Looped</text><text x="294" y="112" text-anchor="middle" font-size="10" fill="#475569">domains</text>
+  <text x="326" y="72" font-size="14" fill="#94a3b8">→</text>
+  <!-- 5 chromosome -->
+  <path d="M356,44 q-10,20 0,40 M356,44 q10,20 0,40 M376,44 q-10,20 0,40 M376,44 q10,20 0,40" fill="none" stroke="#6d28d9" stroke-width="4"/>
+  <text x="366" y="100" text-anchor="middle" font-size="10" fill="#475569">5. Chromosome</text>
+  <text x="16" y="150" font-size="10.5" fill="#0369a1">Euchromatin = open, transcriptionally active · Heterochromatin = condensed, silenced</text>
+  <text x="16" y="170" font-size="10.5" fill="#475569">Core histones H2A/H2B/H3/H4 (octamer) + H1 linker; ~200 bp per nucleosome</text>
+</svg>`;
+
+export const URIC_ACID_PATHWAY = `<svg viewBox="0 0 460 170" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Purine degradation to uric acid with allopurinol block point" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="170" rx="10" fill="#fbfbff"/>
+  <g font-size="11.5" fill="#334155">
+    <rect x="14" y="30" width="86" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="57" y="47" text-anchor="middle">Adenosine</text>
+    <text x="104" y="47" font-size="11" fill="#94a3b8">→</text><text x="104" y="24" font-size="9.5" fill="#475569">ADA</text>
+    <rect x="118" y="30" width="80" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="158" y="47" text-anchor="middle">Hypoxanth.</text>
+    <text x="202" y="47" font-size="11" fill="#94a3b8">→</text>
+    <rect x="216" y="30" width="70" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="251" y="47" text-anchor="middle">Xanthine</text>
+    <text x="290" y="47" font-size="11" fill="#94a3b8">→</text>
+    <rect x="304" y="30" width="80" height="26" rx="6" fill="#fef9c3" stroke="#fde047"/><text x="344" y="47" text-anchor="middle">Uric acid</text>
+  </g>
+  <text x="158" y="86" text-anchor="middle" font-size="10" fill="#475569">xanthine oxidase</text>
+  <text x="290" y="86" text-anchor="middle" font-size="10" fill="#475569">xanthine oxidase</text>
+  <path d="M180,74 L200,60 M312,74 L292,60" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="150" y="112" font-size="11" fill="#dc2626">✗ Allopurinol / febuxostat inhibit xanthine oxidase → ↓ uric acid</text>
+  <text x="16" y="138" font-size="10.5" fill="#7c3aed">HGPRT deficiency (Lesch-Nyhan) → ↑ de novo purine synthesis → hyperuricemia</text>
+  <text x="16" y="156" font-size="10.5" fill="#0369a1">Urate crystals in joints = gout; uricosurics (probenecid) ↑ renal excretion</text>
+</svg>`;
+
+export const REPLICATION_FORK = `<svg viewBox="0 0 460 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="DNA replication fork: leading and lagging strand synthesis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="220" rx="10" fill="#fbfbff"/>
+  <!-- parental duplex opening into a fork -->
+  <path d="M40,110 L210,110" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M210,110 L410,44" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M210,110 L410,176" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="210" cy="110" r="12" fill="#fca5a5" stroke="#dc2626"/><text x="210" y="140" text-anchor="middle" font-size="10" fill="#b91c1c">helicase</text>
+  <!-- leading strand continuous -->
+  <path d="M230,64 L400,64" stroke="#0d9488" stroke-width="3" marker-end="url(#fa)"/>
+  <text x="300" y="56" text-anchor="middle" font-size="10.5" fill="#0f766e">Leading — continuous (5′→3′)</text>
+  <!-- lagging strand Okazaki -->
+  <path d="M300,156 L232,156" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M400,178 L332,178" stroke="#7c3aed" stroke-width="3"/>
+  <text x="330" y="200" text-anchor="middle" font-size="10.5" fill="#6d28d9">Lagging — Okazaki fragments (discontinuous)</text>
+  <defs><marker id="fa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#0d9488"/></marker></defs>
+  <g font-size="9.5" fill="#475569">
+    <text x="250" y="80">primase (RNA primer)</text>
+    <text x="16" y="120">SSB coats ssDNA;</text><text x="16" y="132">topoisomerase relieves</text><text x="16" y="144">supercoiling ahead</text>
+  </g>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Replication fork</text>
+  <text x="250" y="212" font-size="9.5" fill="#475569">Pol I/RNase H remove primer · ligase seals nicks · proofreading 3′→5′ exo</text>
+</svg>`;

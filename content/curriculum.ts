@@ -17,7 +17,6 @@ export const curriculum: CurriculumYear[] = [
   {
     year: 1,
     label: 'Year 1',
-    note: 'Not yet',
     subjects: [
       { code: 'MBH', name: 'Molecular Basis of Human Body' },
       { code: 'HGD', name: 'Human Genetics and Developmental Biology' },
@@ -108,6 +107,14 @@ export const subjectOfSource: Record<string, string> = {
   'L9 — Antiparkinson Agents': 'HNS-2',
   'L10 — CNS Neoplasms': 'HNS-2',
   'L11 — Drugs for Ear Disorders': 'HNS-2',
+
+  // MBH — Molecular Basis of Human Body (Year 1)
+  'L1 — Amino Acids & Proteins': 'MBH',
+  'L2 — Enzymes & Cofactors': 'MBH',
+  'L3 — Nucleic Acids': 'MBH',
+  'L4 — Nucleotide Metabolism': 'MBH',
+  'L5 — DNA Replication': 'MBH',
+  'L6 — DNA Repair & Human Genome': 'MBH',
 };
 
 export function subjectSlug(code: string): string {

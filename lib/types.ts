@@ -19,7 +19,8 @@ export type SystemId =
   | 'heme'
   | 'msk'
   | 'repro'
-  | 'immune';
+  | 'immune'
+  | 'molecular'; // foundational biochemistry / molecular biology (e.g. MBH)
 
 export type TagKind =
   | 'system'

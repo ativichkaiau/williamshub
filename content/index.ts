@@ -151,6 +151,34 @@ import cnsLymphomaMetastases from './lectures/cns-lymphoma-metastases';
 import ototopicalDrugs from './lectures/ototopical-drugs';
 import vertigoVestibularDrugs from './lectures/vertigo-vestibular-drugs';
 
+// ── MBH (Molecular Basis of Human Body) ──────────────────────────────────────
+// L1 — Amino Acids & Proteins
+import aminoAcidsProteinsStructure from './lectures/amino-acids-proteins-structure';
+import collagenElastin from './lectures/collagen-elastin';
+import hemoglobinMyoglobin from './lectures/hemoglobin-myoglobin';
+import proteinMisfoldingAmyloid from './lectures/protein-misfolding-amyloid';
+// L2 — Enzymes & Cofactors
+import enzymeCatalysisClassification from './lectures/enzyme-catalysis-classification';
+import enzymeKinetics from './lectures/enzyme-kinetics';
+import enzymeInhibitionRegulation from './lectures/enzyme-inhibition-regulation';
+import coenzymesCofactors from './lectures/coenzymes-cofactors';
+// L3 — Nucleic Acids
+import nucleotidesStructureRoles from './lectures/nucleotides-structure-roles';
+import dnaStructureForms from './lectures/dna-structure-forms';
+import chromatinPackaging from './lectures/chromatin-packaging';
+import rnaTypes from './lectures/rna-types';
+// L4 — Nucleotide Metabolism
+import purinePyrimidineSynthesis from './lectures/purine-pyrimidine-synthesis';
+import nucleotideDegradationGout from './lectures/nucleotide-degradation-gout';
+import nucleotideDrugsDisorders from './lectures/nucleotide-drugs-disorders';
+// L5 — DNA Replication
+import dnaReplicationMachinery from './lectures/dna-replication-machinery';
+import eukaryoticReplicationTelomeres from './lectures/eukaryotic-replication-telomeres';
+// L6 — DNA Repair & Human Genome
+import mutationsDnaDamage from './lectures/mutations-dna-damage';
+import dnaRepairMechanisms from './lectures/dna-repair-mechanisms';
+import humanGenomeOrganization from './lectures/human-genome-organization';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -222,6 +250,20 @@ export const lectures: Lecture[] = [
   astrocytomaGlioblastoma, otherGliomas, pediatricEmbryonalTumors, meningiomaSchwannomaPituitary, cnsLymphomaMetastases,
   // L11 Drugs for Ear Disorders
   ototopicalDrugs, vertigoVestibularDrugs,
+
+  // ── MBH (Molecular Basis of Human Body) ──
+  // L1 Amino Acids & Proteins
+  aminoAcidsProteinsStructure, collagenElastin, hemoglobinMyoglobin, proteinMisfoldingAmyloid,
+  // L2 Enzymes & Cofactors
+  enzymeCatalysisClassification, enzymeKinetics, enzymeInhibitionRegulation, coenzymesCofactors,
+  // L3 Nucleic Acids
+  nucleotidesStructureRoles, dnaStructureForms, chromatinPackaging, rnaTypes,
+  // L4 Nucleotide Metabolism
+  purinePyrimidineSynthesis, nucleotideDegradationGout, nucleotideDrugsDisorders,
+  // L5 DNA Replication
+  dnaReplicationMachinery, eukaryoticReplicationTelomeres,
+  // L6 DNA Repair & Human Genome
+  mutationsDnaDamage, dnaRepairMechanisms, humanGenomeOrganization,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

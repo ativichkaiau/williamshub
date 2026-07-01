@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug } from '../content';
-import CurriculumBrowser, { type YearData } from '../components/CurriculumBrowser';
+import { type YearData } from '../components/CurriculumBrowser';
+import BlockBrowser from '../components/BlockBrowser';
+import { onePagerGroups } from '../content/onepagers';
 
 export default function Home() {
   const years: YearData[] = curriculum.map((y) => {
@@ -24,6 +26,16 @@ export default function Home() {
     };
   });
   const defaultYear = years.find((y) => y.hasContent)?.year ?? years[0].year;
+
+  // Subject codes that actually have WilliamsHub content (for OnePager cross-links).
+  const contentCodes = Object.entries(lecturesBySubject)
+    .filter(([, mods]) => mods.length > 0)
+    .map(([code]) => code);
+  // OnePager view opens on the first year that has content, else its first year.
+  const onePagerYearsWithContent = onePagerGroups
+    .filter((g) => g.subjects.some((s) => contentCodes.includes(s.code)))
+    .map((g) => g.year);
+  const onePagerDefaultYear = onePagerYearsWithContent[0] ?? onePagerGroups[0].year;
 
   const first = lectures[0];
   const featured = lectureById['tetralogy-of-fallot'] ?? lectures[0];
@@ -138,15 +150,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Curriculum browser */}
+      {/* Block browser: WilliamsHub lectures ↔ OnePager library */}
       <section id="browse" className="scroll-mt-20">
         <h2 className="mb-1 text-xl font-black tracking-tight text-slate-900 dark:text-white">
           Choose your block
         </h2>
         <p className="mb-5 text-sm text-slate-500 dark:text-slate-400">
-          Pick a year, then a subject block. Blocks with a green dot have lectures ready.
+          Toggle between interactive <span className="font-bold text-emerald-600 dark:text-emerald-400">WilliamsHub</span> lectures and your own <span className="font-bold text-sky-600 dark:text-sky-400">OnePagers</span>. Pick a year, then a block.
         </p>
-        <CurriculumBrowser years={years} defaultYear={defaultYear} />
+        <BlockBrowser
+          years={years}
+          defaultYear={defaultYear}
+          onePagerDefaultYear={onePagerDefaultYear}
+          contentCodes={contentCodes}
+        />
       </section>
 
       <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">

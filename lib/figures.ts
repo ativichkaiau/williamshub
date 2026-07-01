@@ -1094,3 +1094,107 @@ export const HEART_VALVES_AUSCULTATION = `<svg viewBox="0 0 460 240" xmlns="http
   </g>
   <text x="16" y="224" font-size="10" fill="#0369a1">"All Physicians Take Money": Aortic, Pulmonary, Tricuspid, Mitral — downstream of each valve.</text>
 </svg>`;
+
+export const CRANIAL_FOSSAE_FORAMINA = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cranial fossae and their foramina with cranial nerves" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cranial fossae &amp; foramina (what passes through)</text>
+  <g>
+    <rect x="16" y="30" width="438" height="62" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="24" y="47" font-size="10.5" font-weight="700" fill="#1d4ed8">Anterior fossa</text>
+    <g font-size="9" fill="#1e3a8a"><text x="120" y="47">Cribriform plate → CN I (olfactory)</text><text x="120" y="63">Optic canal → CN II + ophthalmic artery</text><text x="24" y="80">(frontal + ethmoid + lesser wing of sphenoid)</text><text x="300" y="80">→ into middle fossa</text></g>
+  </g>
+  <g>
+    <rect x="16" y="96" width="438" height="76" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="24" y="113" font-size="10.5" font-weight="700" fill="#c2410c">Middle fossa</text>
+    <g font-size="9" fill="#7c2d12"><text x="120" y="113">Superior orbital fissure → III, IV, V1, VI + ophthalmic v.</text><text x="120" y="129">Foramen rotundum → V2 (maxillary)</text><text x="120" y="145">Foramen ovale → V3 (mandibular)</text><text x="120" y="161">Foramen spinosum → middle meningeal artery</text><text x="24" y="161">(sphenoid + temporal)</text></g>
+  </g>
+  <g>
+    <rect x="16" y="176" width="438" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="24" y="193" font-size="10.5" font-weight="700" fill="#047857">Posterior fossa</text>
+    <g font-size="9" fill="#065f46"><text x="120" y="193">Internal acoustic meatus → VII, VIII</text><text x="300" y="193">Jugular foramen → IX, X, XI</text><text x="120" y="209">Hypoglossal canal → XII</text><text x="300" y="209">Foramen magnum → medulla, XI, vertebral aa.</text></g>
+  </g>
+  <text x="16" y="244" font-size="9.5" fill="#0369a1">Pterion (thin) overlies the middle meningeal artery (foramen spinosum) → epidural hematoma.</text>
+</svg>`;
+
+export const EAR_ANATOMY = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="External, middle and internal ear" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Ear: external · middle · internal</text>
+  <g>
+    <rect x="14" y="30" width="146" height="170" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="87" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">External</text>
+    <g font-size="9" fill="#1e3a8a"><text x="20" y="66">Auricle (pinna)</text><text x="20" y="82">External acoustic</text><text x="20" y="94">meatus (S-shaped)</text><text x="20" y="110">→ cerumen</text><text x="20" y="130">Tympanic membrane</text><text x="20" y="142">(umbo)</text></g>
+    <text x="87" y="180" text-anchor="middle" font-size="8.5" fill="#1d4ed8">Sensory: V3 +</text><text x="87" y="192" text-anchor="middle" font-size="8.5" fill="#1d4ed8">great auricular</text>
+  </g>
+  <g>
+    <rect x="164" y="30" width="146" height="170" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="237" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Middle</text>
+    <g font-size="9" fill="#7c2d12"><text x="170" y="66">Ossicles:</text><text x="170" y="80">Malleus → Incus</text><text x="170" y="94">→ Stapes (oval window)</text><text x="170" y="112">Amplify ~×15–20</text><text x="170" y="130">Eustachian tube</text><text x="170" y="142">→ nasopharynx</text><text x="170" y="160">Chorda tympani (VII)</text></g>
+    <text x="237" y="184" text-anchor="middle" font-size="8.5" fill="#c2410c">Otitis media;</text><text x="237" y="194" text-anchor="middle" font-size="8.5" fill="#c2410c">stapedius (VII)/t.tympani(V3)</text>
+  </g>
+  <g>
+    <rect x="314" y="30" width="142" height="170" rx="8" fill="#fdf4ff" stroke="#e9a8f0"/>
+    <text x="385" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#a21caf">Internal</text>
+    <g font-size="9" fill="#701a75"><text x="320" y="66">Bony labyrinth</text><text x="320" y="80">(perilymph)</text><text x="320" y="96">Membranous</text><text x="320" y="110">labyrinth (endolymph)</text><text x="320" y="130">Cochlea → hearing</text><text x="320" y="146">Vestibule + SCCs</text><text x="320" y="158">→ balance</text></g>
+    <text x="385" y="186" text-anchor="middle" font-size="8.5" fill="#a21caf">CN VIII</text>
+  </g>
+  <text x="16" y="228" font-size="9.5" fill="#0369a1">Sound: air → TM → ossicles → oval window → cochlea; Eustachian tube equalizes pressure.</text>
+</svg>`;
+
+export const NASAL_MEATUS_DRAINAGE = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Nasal lateral wall conchae and what drains into each meatus" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lateral nasal wall: meatal drainage</text>
+  <g>
+    <path d="M70,40 q40,-4 60,10 q-30,10 -40,26 q30,-2 44,10 q-30,10 -40,26 q28,-2 42,10 q-40,14 -66,14 l0,-146 Z" fill="#fef9c3" stroke="#fde047"/>
+    <text x="150" y="58" font-size="9.5" font-weight="700" fill="#a16207">Superior concha</text>
+    <text x="150" y="94" font-size="9.5" font-weight="700" fill="#c2410c">Middle concha</text>
+    <text x="150" y="130" font-size="9.5" font-weight="700" fill="#1d4ed8">Inferior concha</text>
+  </g>
+  <g font-size="9">
+    <text x="230" y="52" fill="#065f46" font-weight="700">Sphenoethmoidal recess →</text><text x="230" y="64" fill="#065f46">sphenoid sinus</text>
+    <text x="230" y="82" fill="#7c2d12" font-weight="700">Superior meatus →</text><text x="230" y="94" fill="#7c2d12">posterior ethmoidal cells</text>
+    <text x="230" y="118" fill="#c2410c" font-weight="700">Middle meatus →</text><text x="230" y="130" fill="#c2410c">frontal, maxillary,</text><text x="230" y="142" fill="#c2410c">anterior/middle ethmoidal</text><text x="230" y="154" fill="#c2410c">(hiatus semilunaris)</text>
+    <text x="230" y="178" fill="#1d4ed8" font-weight="700">Inferior meatus →</text><text x="230" y="190" fill="#1d4ed8">nasolacrimal duct</text>
+  </g>
+  <text x="16" y="222" font-size="9.5" fill="#0369a1">Most sinuses drain into the MIDDLE meatus; the nasolacrimal duct → inferior meatus.</text>
+  <text x="16" y="238" font-size="9.5" fill="#475569">Maxillary sinus ostium sits high → poor gravity drainage → prone to sinusitis.</text>
+</svg>`;
+
+export const LARYNGEAL_NERVES = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Laryngeal nerves and muscle actions" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Larynx: nerves &amp; the one abductor</text>
+  <g>
+    <rect x="16" y="30" width="216" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="24" y="47" font-size="10.5" font-weight="700" fill="#1d4ed8">Superior laryngeal n. (vagus)</text>
+    <g font-size="9" fill="#1e3a8a"><text x="24" y="65">• Internal branch = SENSORY</text><text x="34" y="77">above the vocal folds</text><text x="24" y="93">• External branch = MOTOR to</text><text x="34" y="105">cricothyroid (tenses/pitch)</text></g>
+  </g>
+  <g>
+    <rect x="238" y="30" width="216" height="90" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="246" y="47" font-size="10.5" font-weight="700" fill="#c2410c">Recurrent laryngeal n. (vagus)</text>
+    <g font-size="9" fill="#7c2d12"><text x="246" y="65">• MOTOR to ALL intrinsic muscles</text><text x="256" y="77">EXCEPT cricothyroid</text><text x="246" y="93">• SENSORY below the vocal folds</text><text x="246" y="105">Injury → hoarse / bilateral stridor</text></g>
+  </g>
+  <g>
+    <rect x="16" y="128" width="438" height="60" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="24" y="146" font-size="10.5" font-weight="700" fill="#047857">Vocal fold movers</text>
+    <g font-size="9" fill="#065f46"><text x="24" y="164">POSTERIOR cricoarytenoid = the ONLY ABDUCTOR (opens the airway)</text><text x="24" y="180">Lateral cricoarytenoid + transverse arytenoid = adductors (close)</text></g>
+  </g>
+  <text x="16" y="206" font-size="9.5" fill="#0369a1">"Posterior cricoarytenoid = Pull Cords Apart" — the sole abductor; its loss risks airway closure.</text>
+  <text x="16" y="222" font-size="9.5" fill="#475569">Cricothyrotomy: through the cricothyroid membrane in an emergency airway.</text>
+</svg>`;
+
+export const HEAD_PARASYMPATHETIC_GANGLIA = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Four parasympathetic ganglia of the head" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Four parasympathetic ganglia of the head</text>
+  <g font-size="9" font-weight="700" fill="#64748b"><text x="24" y="42">Ganglion</text><text x="150" y="42">CN source</text><text x="270" y="42">Rides on</text><text x="380" y="42">Target</text></g>
+  <line x1="16" y1="48" x2="464" y2="48" stroke="#cbd5e1"/>
+  <g font-size="9.5">
+    <text x="24" y="70" font-weight="700" fill="#1d4ed8">Ciliary</text><text x="150" y="70" fill="#1e3a8a">CN III</text><text x="270" y="70" fill="#1e3a8a">short ciliary n.</text><text x="380" y="70" fill="#1e3a8a">sphincter pupillae, ciliary m.</text>
+    <line x1="16" y1="80" x2="464" y2="80" stroke="#eef2f7"/>
+    <text x="24" y="100" font-weight="700" fill="#c2410c">Pterygopalatine</text><text x="150" y="100" fill="#7c2d12">CN VII (greater petrosal)</text><text x="270" y="100" fill="#7c2d12">V2 branches</text><text x="380" y="100" fill="#7c2d12">lacrimal + nasal glands</text>
+    <line x1="16" y1="110" x2="464" y2="110" stroke="#eef2f7"/>
+    <text x="24" y="130" font-weight="700" fill="#047857">Submandibular</text><text x="150" y="130" fill="#065f46">CN VII (chorda tympani)</text><text x="270" y="130" fill="#065f46">lingual n. (V3)</text><text x="380" y="130" fill="#065f46">submandibular + sublingual glands</text>
+    <line x1="16" y1="140" x2="464" y2="140" stroke="#eef2f7"/>
+    <text x="24" y="160" font-weight="700" fill="#a21caf">Otic</text><text x="150" y="160" fill="#701a75">CN IX (lesser petrosal)</text><text x="270" y="160" fill="#701a75">auriculotemporal (V3)</text><text x="380" y="160" fill="#701a75">parotid gland</text>
+  </g>
+  <text x="16" y="192" font-size="9.5" fill="#0369a1">Parasympathetic fibres "hitch-hike" on trigeminal branches to reach the glands.</text>
+  <text x="16" y="208" font-size="9.5" fill="#475569">VII serves two (pterygopalatine + submandibular); IX serves the otic (parotid).</text>
+</svg>`;

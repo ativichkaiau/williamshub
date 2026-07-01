@@ -403,6 +403,28 @@ import greatVesselsMediastinalNerves from './lectures/great-vessels-mediastinal-
 import heartChambersPericardium from './lectures/heart-chambers-pericardium';
 import heartValvesCoronarySupply from './lectures/heart-valves-coronary-supply';
 
+// ── HGA Part 3: Skull & Deep Head Regions ────────────────────────────────────
+// L10 — Infratemporal & Pterygopalatine Fossae
+import tmjMusclesMastication from './lectures/tmj-muscles-mastication';
+import infratemporalFossaNervesVessels from './lectures/infratemporal-fossa-nerves-vessels';
+import pterygopalatineFossa from './lectures/pterygopalatine-fossa';
+// L11 — Skull & Cranial Fossae
+import skullBonesSutures from './lectures/skull-bones-sutures';
+import cranialFossaeForamina from './lectures/cranial-fossae-foramina';
+import meningesDuralSinuses from './lectures/meninges-dural-sinuses';
+// L12 — Orbit, Eye & Ear
+import orbitLacrimalApparatus from './lectures/orbit-lacrimal-apparatus';
+import extraocularMusclesOrbitalNerves from './lectures/extraocular-muscles-orbital-nerves';
+import earExternalMiddleInternal from './lectures/ear-external-middle-internal';
+// L13 — Nasal Cavity & Paranasal Sinuses
+import nasalCavityWallsMeatuses from './lectures/nasal-cavity-walls-meatuses';
+import nasalBloodSupplyEpistaxis from './lectures/nasal-blood-supply-epistaxis';
+import paranasalSinuses from './lectures/paranasal-sinuses';
+// L14 — Pharynx & Larynx
+import pharynxConstrictorsTonsils from './lectures/pharynx-constrictors-tonsils';
+import larynxCartilagesCavity from './lectures/larynx-cartilages-cavity';
+import laryngealMusclesNerves from './lectures/laryngeal-muscles-nerves';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -614,6 +636,18 @@ export const lectures: Lecture[] = [
   // L9 Mediastinum & Heart
   mediastinumDivisionsContents, greatVesselsMediastinalNerves,
   heartChambersPericardium, heartValvesCoronarySupply,
+
+  // ── HGA Part 3: Skull & Deep Head Regions ──
+  // L10 Infratemporal & Pterygopalatine Fossae
+  tmjMusclesMastication, infratemporalFossaNervesVessels, pterygopalatineFossa,
+  // L11 Skull & Cranial Fossae
+  skullBonesSutures, cranialFossaeForamina, meningesDuralSinuses,
+  // L12 Orbit, Eye & Ear
+  orbitLacrimalApparatus, extraocularMusclesOrbitalNerves, earExternalMiddleInternal,
+  // L13 Nasal Cavity & Paranasal Sinuses
+  nasalCavityWallsMeatuses, nasalBloodSupplyEpistaxis, paranasalSinuses,
+  // L14 Pharynx & Larynx
+  pharynxConstrictorsTonsils, larynxCartilagesCavity, laryngealMusclesNerves,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

@@ -164,6 +164,12 @@ export const subjectOfSource: Record<string, string> = {
   'L7 — Triangles & Root of the Neck': 'HGA',
   'L8 — Thorax, Pleura, Trachea & Lungs': 'HGA',
   'L9 — Mediastinum & Heart': 'HGA',
+  // Part 3: Skull & Deep Head Regions
+  'L10 — Infratemporal & Pterygopalatine Fossae': 'HGA',
+  'L11 — Skull & Cranial Fossae': 'HGA',
+  'L12 — Orbit, Eye & Ear': 'HGA',
+  'L13 — Nasal Cavity & Paranasal Sinuses': 'HGA',
+  'L14 — Pharynx & Larynx': 'HGA',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
@@ -195,6 +201,12 @@ export const partOfSource: Record<string, string> = {
   'L7 — Triangles & Root of the Neck': 'Part 2 · Head, Neck & Thorax',
   'L8 — Thorax, Pleura, Trachea & Lungs': 'Part 2 · Head, Neck & Thorax',
   'L9 — Mediastinum & Heart': 'Part 2 · Head, Neck & Thorax',
+  // HGA Part 3 — Skull & Deep Head Regions
+  'L10 — Infratemporal & Pterygopalatine Fossae': 'Part 3 · Skull & Deep Head Regions',
+  'L11 — Skull & Cranial Fossae': 'Part 3 · Skull & Deep Head Regions',
+  'L12 — Orbit, Eye & Ear': 'Part 3 · Skull & Deep Head Regions',
+  'L13 — Nasal Cavity & Paranasal Sinuses': 'Part 3 · Skull & Deep Head Regions',
+  'L14 — Pharynx & Larynx': 'Part 3 · Skull & Deep Head Regions',
 };
 
 export function subjectSlug(code: string): string {

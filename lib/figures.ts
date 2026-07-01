@@ -1400,3 +1400,137 @@ export const FOOT_ARCHES = `<svg viewBox="0 0 460 220" xmlns="http://www.w3.org/
   <text x="16" y="196" font-size="9.5" fill="#0369a1">Tripod: heel + 1st &amp; 5th metatarsal heads. Pes planus (flat, PTTD) vs pes cavus (high, e.g. CMT).</text>
   <text x="16" y="212" font-size="9.5" fill="#475569">Plantar fasciitis = heel pain from plantar aponeurosis; hallux valgus = big-toe deviation (bunion).</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// BMR — Intro to Biomedical Research (research methods figures)
+// ---------------------------------------------------------------------------
+
+export const PICO_FRAMEWORK = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="FINER criteria and PICO framework" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">From good idea → answerable question</text>
+  <text x="16" y="42" font-size="10.5" font-weight="700" fill="#7c3aed">FINER — is the question worth asking?</text>
+  <g font-size="9.5" fill="#475569">
+    <text x="20" y="60"><tspan font-weight="700" fill="#6d28d9">F</tspan>easible · adequate subjects, expertise, time, money, scope</text>
+    <text x="20" y="76"><tspan font-weight="700" fill="#6d28d9">I</tspan>nteresting · to investigators &amp; the field</text>
+    <text x="20" y="92"><tspan font-weight="700" fill="#6d28d9">N</tspan>ovel · confirms/refutes/extends prior work</text>
+    <text x="20" y="108"><tspan font-weight="700" fill="#6d28d9">E</tspan>thical · acceptable to an ethics board</text>
+    <text x="20" y="124"><tspan font-weight="700" fill="#6d28d9">R</tspan>elevant · to science, policy, future research</text>
+  </g>
+  <line x1="16" y1="138" x2="464" y2="138" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="16" y="158" font-size="10.5" font-weight="700" fill="#0369a1">PICO(T) — structure the question</text>
+  <g>
+    <rect x="18" y="168" width="106" height="72" rx="7" fill="#e0f2fe"/><text x="71" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#0369a1">P</text><text x="71" y="202" text-anchor="middle" font-size="8.5" fill="#075985">Population /</text><text x="71" y="214" text-anchor="middle" font-size="8.5" fill="#075985">Patient</text><text x="71" y="230" text-anchor="middle" font-size="8" fill="#0891b2">"who?"</text>
+    <rect x="130" y="168" width="106" height="72" rx="7" fill="#dcfce7"/><text x="183" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">I</text><text x="183" y="202" text-anchor="middle" font-size="8.5" fill="#166534">Intervention /</text><text x="183" y="214" text-anchor="middle" font-size="8.5" fill="#166534">Exposure</text><text x="183" y="230" text-anchor="middle" font-size="8" fill="#16a34a">"what?"</text>
+    <rect x="242" y="168" width="106" height="72" rx="7" fill="#fef9c3"/><text x="295" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#a16207">C</text><text x="295" y="202" text-anchor="middle" font-size="8.5" fill="#854d0e">Comparison</text><text x="295" y="214" text-anchor="middle" font-size="8.5" fill="#854d0e">(control)</text><text x="295" y="230" text-anchor="middle" font-size="8" fill="#ca8a04">"vs?"</text>
+    <rect x="354" y="168" width="108" height="72" rx="7" fill="#fee2e2"/><text x="408" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">O</text><text x="408" y="202" text-anchor="middle" font-size="8.5" fill="#991b1b">Outcome</text><text x="408" y="214" text-anchor="middle" font-size="8.5" fill="#991b1b">(measured)</text><text x="408" y="230" text-anchor="middle" font-size="8" fill="#dc2626">"result?"</text>
+  </g>
+  <text x="16" y="254" font-size="8.5" fill="#64748b">+ T = Time frame. PICO drives the search terms, design, and statistics.</text>
+</svg>`;
+
+export const STUDY_DESIGNS = `<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Classification of study designs" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="500" height="300" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Study designs</text>
+  <rect x="200" y="30" width="100" height="26" rx="6" fill="#334155"/><text x="250" y="47" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Research design</text>
+  <line x1="250" y1="56" x2="130" y2="74" stroke="#94a3b8" stroke-width="1.5"/><line x1="250" y1="56" x2="400" y2="74" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="70" y="74" width="120" height="24" rx="6" fill="#e0e7ff"/><text x="130" y="90" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4338ca">Observational</text>
+  <rect x="330" y="74" width="140" height="24" rx="6" fill="#fce7f3"/><text x="400" y="90" text-anchor="middle" font-size="9.5" font-weight="700" fill="#be185d">Experimental (RCT)</text>
+  <text x="400" y="118" text-anchor="middle" font-size="8.5" fill="#9d174d">Investigator assigns exposure</text>
+  <text x="400" y="130" text-anchor="middle" font-size="8.5" fill="#9d174d">+ randomises → best causal proof</text>
+  <line x1="130" y1="98" x2="70" y2="116" stroke="#94a3b8" stroke-width="1.5"/><line x1="130" y1="98" x2="190" y2="116" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="18" y="116" width="104" height="22" rx="6" fill="#eef2ff"/><text x="70" y="131" text-anchor="middle" font-size="9" font-weight="700" fill="#4f46e5">Descriptive</text>
+  <rect x="140" y="116" width="104" height="22" rx="6" fill="#eef2ff"/><text x="192" y="131" text-anchor="middle" font-size="9" font-weight="700" fill="#4f46e5">Analytical</text>
+  <g font-size="8" fill="#4338ca"><text x="22" y="152">• case report / series</text><text x="22" y="164">• cross-sectional</text><text x="22" y="176">• ecological</text></g>
+  <g>
+    <rect x="132" y="146" width="118" height="52" rx="6" fill="#dbeafe"/><text x="191" y="162" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Cohort</text><text x="191" y="176" text-anchor="middle" font-size="7.5" fill="#1e40af">exposure → outcome</text><text x="191" y="187" text-anchor="middle" font-size="7.5" fill="#1e40af">RR · rare exposure</text>
+    <rect x="256" y="146" width="118" height="52" rx="6" fill="#dbeafe"/><text x="315" y="162" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Case-control</text><text x="315" y="176" text-anchor="middle" font-size="7.5" fill="#1e40af">outcome → exposure</text><text x="315" y="187" text-anchor="middle" font-size="7.5" fill="#1e40af">OR · rare disease · recall bias</text>
+    <rect x="380" y="146" width="104" height="52" rx="6" fill="#dbeafe"/><text x="432" y="162" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Cross-sectional</text><text x="432" y="176" text-anchor="middle" font-size="7.5" fill="#1e40af">"snapshot"</text><text x="432" y="187" text-anchor="middle" font-size="7.5" fill="#1e40af">prevalence · OR</text>
+  </g>
+  <line x1="16" y1="214" x2="484" y2="214" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="16" y="232" font-size="9.5" font-weight="700" fill="#0369a1">Direction of enquiry</text>
+  <text x="16" y="248" font-size="9" fill="#475569">Cohort = <tspan font-weight="700" fill="#1d4ed8">forward</tspan> (usually prospective). Case-control = <tspan font-weight="700" fill="#1d4ed8">backward</tspan> (retrospective).</text>
+  <text x="16" y="264" font-size="9" fill="#475569">Cross-sectional measures exposure &amp; outcome at the <tspan font-weight="700">same time</tspan> → cannot prove temporality.</text>
+  <text x="16" y="282" font-size="9" fill="#64748b">Only randomisation (RCT) balances <tspan font-style="italic">unknown</tspan> confounders.</text>
+</svg>`;
+
+export const EVIDENCE_PYRAMID = `<svg viewBox="0 0 440 280" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Hierarchy of evidence pyramid" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="280" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Hierarchy of evidence</text>
+  <polygon points="220,32 250,72 190,72" fill="#065f46"/><text x="220" y="60" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff">SR /</text><text x="220" y="70" text-anchor="middle" font-size="7.5" fill="#fff">meta-analysis</text>
+  <polygon points="188,74 252,74 268,110 172,110" fill="#059669"/><text x="220" y="97" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">RCT</text>
+  <polygon points="170,112 270,112 286,148 154,148" fill="#10b981"/><text x="220" y="135" text-anchor="middle" font-size="9" font-weight="700" fill="#064e3b">Cohort</text>
+  <polygon points="152,150 288,150 304,186 136,186" fill="#34d399"/><text x="220" y="173" text-anchor="middle" font-size="9" font-weight="700" fill="#064e3b">Case-control</text>
+  <polygon points="134,188 306,188 322,224 118,224" fill="#6ee7b7"/><text x="220" y="211" text-anchor="middle" font-size="9" font-weight="700" fill="#064e3b">Cross-sectional / case series</text>
+  <polygon points="116,226 324,226 344,266 96,266" fill="#a7f3d0"/><text x="220" y="248" text-anchor="middle" font-size="9" font-weight="700" fill="#065f46">Expert opinion / background</text>
+  <text x="220" y="262" text-anchor="middle" font-size="7.5" fill="#065f46">(lowest — anecdote, editorial)</text>
+  <text x="360" y="60" font-size="8.5" fill="#065f46">↑ higher</text><text x="360" y="72" font-size="8.5" fill="#065f46">quality,</text><text x="360" y="84" font-size="8.5" fill="#065f46">less bias</text>
+  <text x="360" y="238" font-size="8.5" fill="#059669">↓ more</text><text x="360" y="250" font-size="8.5" fill="#059669">bias</text>
+</svg>`;
+
+export const HYPOTHESIS_ERRORS = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Type I and Type II error table" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Hypothesis testing: the 2×2 of truth vs decision</text>
+  <text x="150" y="44" text-anchor="middle" font-size="9" font-weight="700" fill="#475569">Reality (unknown truth)</text>
+  <text x="240" y="60" text-anchor="middle" font-size="8.5" fill="#334155">H₀ true (no effect)</text>
+  <text x="360" y="60" text-anchor="middle" font-size="8.5" fill="#334155">H₀ false (real effect)</text>
+  <text x="34" y="110" font-size="8.5" fill="#334155" transform="rotate(-90 34 110)" text-anchor="middle">Reject H₀</text>
+  <text x="34" y="188" font-size="8.5" fill="#334155" transform="rotate(-90 34 188)" text-anchor="middle">Keep H₀</text>
+  <rect x="180" y="70" width="120" height="72" rx="6" fill="#fee2e2"/><text x="240" y="98" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Type I error (α)</text><text x="240" y="114" text-anchor="middle" font-size="8" fill="#991b1b">false positive</text><text x="240" y="128" text-anchor="middle" font-size="8" fill="#991b1b">"cry wolf"</text>
+  <rect x="304" y="70" width="120" height="72" rx="6" fill="#dcfce7"/><text x="364" y="98" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Power (1−β)</text><text x="364" y="114" text-anchor="middle" font-size="8" fill="#166534">true positive ✓</text><text x="364" y="128" text-anchor="middle" font-size="8" fill="#166534">detect real effect</text>
+  <rect x="180" y="146" width="120" height="72" rx="6" fill="#dcfce7"/><text x="240" y="174" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Correct ✓</text><text x="240" y="190" text-anchor="middle" font-size="8" fill="#166534">true negative</text>
+  <rect x="304" y="146" width="120" height="72" rx="6" fill="#fef9c3"/><text x="364" y="174" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a16207">Type II error (β)</text><text x="364" y="190" text-anchor="middle" font-size="8" fill="#854d0e">false negative</text><text x="364" y="204" text-anchor="middle" font-size="8" fill="#854d0e">"miss it"</text>
+  <text x="16" y="238" font-size="8.5" fill="#0369a1">p &lt; α (usually 0.05) → reject H₀. p = P(data this extreme | H₀ true), NOT P(H₀ true). 95% CI excludes null ⇔ p&lt;0.05.</text>
+</svg>`;
+
+export const BELMONT_PRINCIPLES = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Belmont Report principles and applications" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Belmont Report (1979) — 3 principles → 3 applications</text>
+  <g>
+    <rect x="16" y="34" width="146" height="60" rx="8" fill="#e0f2fe"/><text x="89" y="56" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0369a1">Respect for persons</text><text x="89" y="74" text-anchor="middle" font-size="8" fill="#075985">autonomy; protect those</text><text x="89" y="86" text-anchor="middle" font-size="8" fill="#075985">with reduced autonomy</text>
+    <rect x="167" y="34" width="146" height="60" rx="8" fill="#dcfce7"/><text x="240" y="56" text-anchor="middle" font-size="10.5" font-weight="700" fill="#15803d">Beneficence</text><text x="240" y="74" text-anchor="middle" font-size="8" fill="#166534">maximise benefit,</text><text x="240" y="86" text-anchor="middle" font-size="8" fill="#166534">minimise harm</text>
+    <rect x="318" y="34" width="146" height="60" rx="8" fill="#fef9c3"/><text x="391" y="56" text-anchor="middle" font-size="10.5" font-weight="700" fill="#a16207">Justice</text><text x="391" y="74" text-anchor="middle" font-size="8" fill="#854d0e">fair distribution of</text><text x="391" y="86" text-anchor="middle" font-size="8" fill="#854d0e">burdens &amp; benefits</text>
+  </g>
+  <line x1="89" y1="96" x2="89" y2="116" stroke="#38bdf8" stroke-width="2"/><line x1="240" y1="96" x2="240" y2="116" stroke="#4ade80" stroke-width="2"/><line x1="391" y1="96" x2="391" y2="116" stroke="#facc15" stroke-width="2"/>
+  <g>
+    <rect x="16" y="118" width="146" height="58" rx="8" fill="#f0f9ff"/><text x="89" y="140" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0369a1">Informed consent</text><text x="89" y="157" text-anchor="middle" font-size="8" fill="#075985">information · comprehension</text><text x="89" y="169" text-anchor="middle" font-size="8" fill="#075985">· voluntariness</text>
+    <rect x="167" y="118" width="146" height="58" rx="8" fill="#f0fdf4"/><text x="240" y="140" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Risk / benefit</text><text x="240" y="157" text-anchor="middle" font-size="8" fill="#166534">assessment — risks</text><text x="240" y="169" text-anchor="middle" font-size="8" fill="#166534">minimised &amp; justified</text>
+    <rect x="318" y="118" width="146" height="58" rx="8" fill="#fefce8"/><text x="391" y="140" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a16207">Fair selection</text><text x="391" y="157" text-anchor="middle" font-size="8" fill="#854d0e">of participants —</text><text x="391" y="169" text-anchor="middle" font-size="8" fill="#854d0e">no exploiting the vulnerable</text>
+  </g>
+  <text x="16" y="198" font-size="8.5" fill="#64748b">Lineage: Nuremberg Code (1947) → Declaration of Helsinki (1964) → Belmont (1979) → 45 CFR 46 "Common Rule".</text>
+  <text x="16" y="216" font-size="8.5" fill="#64748b">Driven by abuses: Nazi experiments, Tuskegee syphilis study (1932–72). Enforced by the IRB / REC.</text>
+</svg>`;
+
+export const EPIDEMIC_CURVE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Epidemic curve: point-source vs propagated" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Epidemic curve = shape tells the source</text>
+  <text x="120" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Point-source</text>
+  <line x1="30" y1="150" x2="230" y2="150" stroke="#94a3b8" stroke-width="1.5"/><line x1="30" y1="60" x2="30" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+  <g fill="#f87171">
+    <rect x="46" y="138" width="12" height="12"/><rect x="62" y="120" width="12" height="30"/><rect x="78" y="92" width="12" height="58"/><rect x="94" y="78" width="12" height="72"/><rect x="110" y="100" width="12" height="50"/><rect x="126" y="122" width="12" height="28"/><rect x="142" y="134" width="12" height="16"/><rect x="158" y="142" width="12" height="8"/>
+  </g>
+  <text x="130" y="166" text-anchor="middle" font-size="8" fill="#64748b">time →</text>
+  <text x="120" y="184" text-anchor="middle" font-size="8" fill="#991b1b">single sharp peak within 1 incubation period</text>
+  <text x="120" y="197" text-anchor="middle" font-size="8" fill="#991b1b">→ common exposure (e.g. one meal, one water source)</text>
+  <text x="360" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Propagated</text>
+  <line x1="266" y1="150" x2="466" y2="150" stroke="#94a3b8" stroke-width="1.5"/><line x1="266" y1="60" x2="266" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+  <g fill="#60a5fa">
+    <rect x="280" y="132" width="10" height="18"/><rect x="294" y="126" width="10" height="24"/><rect x="316" y="112" width="10" height="38"/><rect x="330" y="104" width="10" height="46"/><rect x="352" y="90" width="10" height="60"/><rect x="366" y="98" width="10" height="52"/><rect x="388" y="82" width="10" height="68"/><rect x="402" y="94" width="10" height="56"/><rect x="424" y="104" width="10" height="46"/><rect x="438" y="118" width="10" height="32"/>
+  </g>
+  <text x="366" y="166" text-anchor="middle" font-size="8" fill="#64748b">time →</text>
+  <text x="366" y="184" text-anchor="middle" font-size="8" fill="#1e40af">successively taller waves ~1 incubation apart</text>
+  <text x="366" y="197" text-anchor="middle" font-size="8" fill="#1e40af">→ person-to-person spread</text>
+  <text x="16" y="222" font-size="8.5" fill="#0369a1">Steps: verify diagnosis · confirm outbreak · case definition · describe by person/place/time · hypothesis · analytic study · control · communicate.</text>
+  <text x="16" y="236" font-size="8.5" fill="#64748b">Attack rate = cases ÷ population at risk. Incubation from curve = exposure time back-calculated.</text>
+</svg>`;
+
+export const IMRAD_STRUCTURE = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="IMRaD paper structure hourglass" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">IMRaD — the hourglass of a paper</text>
+  <polygon points="120,36 320,36 250,96 190,96" fill="#dbeafe"/><text x="220" y="58" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Introduction</text><text x="220" y="74" text-anchor="middle" font-size="8" fill="#1e40af">broad → the gap / research question</text><text x="220" y="88" text-anchor="middle" font-size="8" fill="#1e40af">(why the study matters)</text>
+  <rect x="190" y="98" width="60" height="40" fill="#e0e7ff"/><text x="220" y="118" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4338ca">Methods</text><text x="220" y="131" text-anchor="middle" font-size="7.5" fill="#4338ca">design·sample·analysis</text>
+  <rect x="190" y="140" width="60" height="34" fill="#c7d2fe"/><text x="220" y="160" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4338ca">Results</text><text x="220" y="171" text-anchor="middle" font-size="7.5" fill="#4338ca">findings only</text>
+  <polygon points="190,176 250,176 320,236 120,236" fill="#dbeafe"/><text x="220" y="198" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Discussion</text><text x="220" y="214" text-anchor="middle" font-size="8" fill="#1e40af">interpret → implications → limits</text><text x="220" y="228" text-anchor="middle" font-size="8" fill="#1e40af">(narrow finding → broad again)</text>
+  <text x="332" y="66" font-size="8" fill="#64748b">general</text>
+  <text x="332" y="130" font-size="8" fill="#64748b">specific</text>
+  <text x="332" y="210" font-size="8" fill="#64748b">general</text>
+  <text x="16" y="248" font-size="8.5" fill="#64748b">Title + structured Abstract sit on top; References + funding/COI below. Read Methods before believing Results.</text>
+</svg>`;

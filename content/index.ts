@@ -556,6 +556,25 @@ import legCompartments from './lectures/leg-compartments';
 import ankleFootBonesArches from './lectures/ankle-foot-bones-arches';
 import soleOfFoot from './lectures/sole-of-foot';
 
+// ── BMR (Intro to Biomedical Research) ──
+import historyAncientToRenaissance from './lectures/history-ancient-to-renaissance';
+import historyGermTheoryModernMedicine from './lectures/history-germ-theory-modern-medicine';
+import researchQuestionFinerPico from './lectures/research-question-finer-pico';
+import hypothesisObjectives from './lectures/hypothesis-objectives';
+import literatureReviewPurposeSearch from './lectures/literature-review-purpose-search';
+import citationSynthesisConceptualFramework from './lectures/citation-synthesis-conceptual-framework';
+import studyDesignsHierarchy from './lectures/study-designs-hierarchy';
+import samplingMethods from './lectures/sampling-methods';
+import variablesConfoundingBias from './lectures/variables-confounding-bias';
+import outbreakInvestigation from './lectures/outbreak-investigation';
+import dataTypesDescriptiveStats from './lectures/data-types-descriptive-stats';
+import inferentialStatsPValue from './lectures/inferential-stats-p-value';
+import researchEthicsHistoryBelmont from './lectures/research-ethics-history-belmont';
+import informedConsentIrb from './lectures/informed-consent-irb';
+import publicationTypesImrad from './lectures/publication-types-imrad';
+import peerReviewJournalMetrics from './lectures/peer-review-journal-metrics';
+import academicAuthorship from './lectures/academic-authorship';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -850,6 +869,26 @@ export const lectures: Lecture[] = [
   glutealRegionNerves, posteriorThighSciatic, poplitealFossa,
   // L21 Leg & Foot
   legCompartments, ankleFootBonesArches, soleOfFoot,
+
+  // ── BMR (Intro to Biomedical Research) ──
+  // L1 History of Medicine
+  historyAncientToRenaissance, historyGermTheoryModernMedicine,
+  // L2 Introduction to Research
+  researchQuestionFinerPico, hypothesisObjectives,
+  // L3 Literature Review
+  literatureReviewPurposeSearch, citationSynthesisConceptualFramework,
+  // L4 Research Methodology
+  studyDesignsHierarchy, samplingMethods, variablesConfoundingBias,
+  // L5 Outbreak Investigation
+  outbreakInvestigation,
+  // L6 Basic Statistics
+  dataTypesDescriptiveStats, inferentialStatsPValue,
+  // L7 Human Research Ethics
+  researchEthicsHistoryBelmont, informedConsentIrb,
+  // L8 Types of Research Publication
+  publicationTypesImrad, peerReviewJournalMetrics,
+  // L9 Academic Authorship
+  academicAuthorship,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

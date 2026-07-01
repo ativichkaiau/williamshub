@@ -205,6 +205,17 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // BMR — Intro to Biomedical Research (Year 1)
+  'L1 — History of Medicine': 'BMR',
+  'L2 — Introduction to Research': 'BMR',
+  'L3 — Literature Review': 'BMR',
+  'L4 — Research Methodology': 'BMR',
+  'L5 — Outbreak Investigation': 'BMR',
+  'L6 — Basic Statistics': 'BMR',
+  'L7 — Human Research Ethics': 'BMR',
+  'L8 — Types of Research Publication': 'BMR',
+  'L9 — Academic Authorship': 'BMR',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

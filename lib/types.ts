@@ -20,7 +20,8 @@ export type SystemId =
   | 'msk'
   | 'repro'
   | 'immune'
-  | 'molecular'; // foundational biochemistry / molecular biology (e.g. MBH)
+  | 'molecular' // foundational biochemistry / molecular biology (e.g. MBH)
+  | 'research'; // research methods / evidence / ethics (e.g. BMR)
 
 export type TagKind =
   | 'system'

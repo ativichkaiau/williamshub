@@ -795,3 +795,125 @@ export const THYROID_MALIGNANCY = `<svg viewBox="0 0 480 240" xmlns="http://www.
   </g>
   <text x="16" y="228" font-size="10" fill="#0369a1">Papillary = commonest &amp; nuclear features; follicular = invasion; medullary = calcitonin/amyloid; anaplastic = lethal.</text>
 </svg>`;
+
+export const KARYOTYPE_NOTATION = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Reading an ISCN karyotype string" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">Reading a karyotype (ISCN)</text>
+  <text x="235" y="66" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a" font-family="ui-monospace, monospace">46,XY,del(5)(p15)</text>
+  <g font-size="10" fill="#475569">
+    <line x1="70" y1="76" x2="70" y2="96" stroke="#94a3b8"/><text x="70" y="112" text-anchor="middle" font-weight="700" fill="#0369a1">chromosome #</text>
+    <line x1="130" y1="76" x2="130" y2="126" stroke="#94a3b8"/><text x="130" y="142" text-anchor="middle" font-weight="700" fill="#7c3aed">sex chromosomes</text>
+    <line x1="205" y1="76" x2="205" y2="96" stroke="#94a3b8"/><text x="205" y="112" text-anchor="middle" font-weight="700" fill="#c2410c">abnormality</text>
+    <line x1="258" y1="76" x2="258" y2="126" stroke="#94a3b8"/><text x="258" y="142" text-anchor="middle" font-weight="700" fill="#0891b2">chromosome</text>
+    <line x1="300" y1="76" x2="300" y2="96" stroke="#94a3b8"/><text x="320" y="112" text-anchor="middle" font-weight="700" fill="#be123c">band (p=short arm)</text>
+  </g>
+  <text x="16" y="172" font-size="10" fill="#475569">Order: total number, sex chromosomes, then abnormalities (X before Y before autosomes, ascending).</text>
+  <text x="16" y="188" font-size="10" fill="#0369a1">+/− = whole-chromosome gain/loss (47,XY,+21); del/dup/t/inv/r/i = structural; [n] = cell count.</text>
+</svg>`;
+
+export const AUTOSOMAL_TRISOMIES = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Autosomal trisomies 21, 18, 13 compared" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Viable autosomal trisomies</text>
+  <g>
+    <rect x="14" y="30" width="146" height="160" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="87" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#047857">Trisomy 21 — Down</text>
+    <g font-size="9" fill="#065f46"><text x="20" y="66">Commonest; 1/850</text><text x="20" y="80">Hypotonia, flat face</text><text x="20" y="94">Epicanthus, ↑palpebral</text><text x="20" y="108">Brushfield spots</text><text x="20" y="122">Simian crease</text><text x="20" y="136">AV septal / duodenal</text><text x="20" y="150">atresia; ↑leukemia</text><text x="20" y="164">Early Alzheimer</text></g>
+    <text x="87" y="182" text-anchor="middle" font-size="8.5" fill="#047857">95% nondisjunction (mat.)</text>
+  </g>
+  <g>
+    <rect x="164" y="30" width="146" height="160" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="237" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">Trisomy 18 — Edwards</text>
+    <g font-size="9" fill="#7c2d12"><text x="170" y="66">1/7500; die &lt;1 y</text><text x="170" y="80">Prominent occiput</text><text x="170" y="94">Micrognathia</text><text x="170" y="108">Low-set ears</text><text x="170" y="122">Clenched fists w/</text><text x="170" y="136">overlapping fingers</text><text x="170" y="150">Rocker-bottom feet</text><text x="170" y="164">Heart defects</text></g>
+    <text x="237" y="182" text-anchor="middle" font-size="8.5" fill="#c2410c">"Election age 18"</text>
+  </g>
+  <g>
+    <rect x="314" y="30" width="142" height="160" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+    <text x="385" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Trisomy 13 — Patau</text>
+    <g font-size="9" fill="#7f1d1d"><text x="320" y="66">1/15–25k; die &lt;1 mo</text><text x="320" y="80">Microcephaly</text><text x="320" y="94">Holoprosencephaly</text><text x="320" y="108">Cleft lip/palate</text><text x="320" y="122">Microphthalmia,</text><text x="320" y="136">iris coloboma</text><text x="320" y="150">Polydactyly</text><text x="320" y="164">Rocker-bottom feet</text></g>
+    <text x="385" y="182" text-anchor="middle" font-size="8.5" fill="#b91c1c">"Puberty 13"</text>
+  </g>
+  <text x="16" y="210" font-size="10" fill="#0369a1">All ↑ with maternal age; ~4% of Down is Robertsonian t(14;21) — recurrence risk matters.</text>
+</svg>`;
+
+export const SEX_CHROMOSOME_ANEUPLOIDIES = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Sex chromosome aneuploidies compared" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Sex chromosome aneuploidies · Barr bodies = (X count − 1)</text>
+  <g>
+    <rect x="14" y="30" width="110" height="150" rx="8" fill="#fff1f2" stroke="#fda4af"/>
+    <text x="69" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#be123c">Turner</text>
+    <text x="69" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#9f1239">45,X</text>
+    <g font-size="8.6" fill="#7f1d1d"><text x="20" y="80">Female, short</text><text x="20" y="93">Webbed neck</text><text x="20" y="106">Cystic hygroma</text><text x="20" y="119">Coarctation aorta</text><text x="20" y="132">Ovarian dysgenesis</text><text x="20" y="145">1° amenorrhea</text><text x="20" y="158">0 Barr bodies</text></g>
+  </g>
+  <g>
+    <rect x="128" y="30" width="110" height="150" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="183" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Klinefelter</text>
+    <text x="183" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#1e40af">47,XXY</text>
+    <g font-size="8.6" fill="#1e3a8a"><text x="134" y="80">Male, tall</text><text x="134" y="93">Small firm testes</text><text x="134" y="106">Gynecomastia</text><text x="134" y="119">Hypogonadism</text><text x="134" y="132">Azoospermia</text><text x="134" y="145">↑ FSH/LH</text><text x="134" y="158">1 Barr body</text></g>
+  </g>
+  <g>
+    <rect x="242" y="30" width="104" height="150" rx="8" fill="#fdf4ff" stroke="#e9a8f0"/>
+    <text x="294" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#a21caf">Triple X</text>
+    <text x="294" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#86198f">47,XXX</text>
+    <g font-size="8.6" fill="#701a75"><text x="248" y="80">Female</text><text x="248" y="93">Usually normal</text><text x="248" y="106">Tall</text><text x="248" y="119">Mild learning</text><text x="248" y="132">Mostly fertile</text><text x="248" y="145">2 Barr bodies</text></g>
+  </g>
+  <g>
+    <rect x="350" y="30" width="106" height="150" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+    <text x="403" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">Jacobs (XYY)</text>
+    <text x="403" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">47,XYY</text>
+    <g font-size="8.6" fill="#14532d"><text x="356" y="80">Male, tall</text><text x="356" y="93">Normal fertility</text><text x="356" y="106">Normal / mild ↓IQ</text><text x="356" y="119">Behavioral</text><text x="356" y="132">0 Barr bodies</text></g>
+  </g>
+  <text x="16" y="200" font-size="10" fill="#0369a1">Short stature (Turner) &amp; tall stature (extra X/Y) both trace to SHOX-gene dosage (PAR1).</text>
+  <text x="16" y="214" font-size="9.5" fill="#475569">Turner: loss usually paternal; Klinefelter tall + SHOX; XIST coats the inactive X.</text>
+</svg>`;
+
+export const INHERITANCE_PATTERNS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Mendelian inheritance patterns quick reference" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Recognizing the inheritance pattern</text>
+  <g>
+    <rect x="14" y="30" width="220" height="82" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="24" y="48" font-size="10.5" font-weight="700" fill="#1d4ed8">Autosomal dominant</text>
+    <g font-size="9" fill="#1e3a8a"><text x="24" y="64">Every generation (vertical)</text><text x="24" y="78">M = F affected; 50% to offspring</text><text x="24" y="92">Delayed onset, variable expression</text><text x="24" y="104">e.g. Huntington, Marfan</text></g>
+  </g>
+  <g>
+    <rect x="238" y="30" width="218" height="82" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="248" y="48" font-size="10.5" font-weight="700" fill="#047857">Autosomal recessive</text>
+    <g font-size="9" fill="#065f46"><text x="248" y="64">Skips generations (horizontal)</text><text x="248" y="78">Carrier parents; 25% risk</text><text x="248" y="92">↑ with consanguinity</text><text x="248" y="104">e.g. cystic fibrosis, thalassemia</text></g>
+  </g>
+  <g>
+    <rect x="14" y="118" width="220" height="82" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="24" y="136" font-size="10.5" font-weight="700" fill="#c2410c">X-linked recessive</text>
+    <g font-size="9" fill="#7c2d12"><text x="24" y="152">Mainly males; carrier mothers</text><text x="24" y="166">NO male-to-male transmission</text><text x="24" y="180">e.g. hemophilia, G6PD, colour-blind</text></g>
+  </g>
+  <g>
+    <rect x="238" y="118" width="218" height="82" rx="8" fill="#fdf4ff" stroke="#e9a8f0"/>
+    <text x="248" y="136" font-size="10.5" font-weight="700" fill="#a21caf">Mitochondrial</text>
+    <g font-size="9" fill="#701a75"><text x="248" y="152">Maternal only; all offspring</text><text x="248" y="166">Affected males don't transmit</text><text x="248" y="180">Heteroplasmy → variable</text></g>
+  </g>
+</svg>`;
+
+export const THALASSEMIA_SCREENING = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Thalassemia carrier screening algorithm" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Thalassemia carrier screening (couple)</text>
+  <g font-size="9.5">
+    <rect x="150" y="30" width="170" height="30" rx="6" fill="#eef2f7" stroke="#cbd5e1"/>
+    <text x="235" y="49" text-anchor="middle" font-weight="700" fill="#334155">MCV &amp; DCIP (OF) screen</text>
+    <line x1="235" y1="60" x2="235" y2="74" stroke="#94a3b8"/>
+    <!-- MCV branch -->
+    <rect x="30" y="74" width="180" height="28" rx="6" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="120" y="92" text-anchor="middle" fill="#1d4ed8">MCV &lt; 80 fL → PCR for α-thal-1</text>
+    <line x1="120" y1="102" x2="120" y2="116" stroke="#94a3b8"/>
+    <rect x="30" y="116" width="180" height="26" rx="6" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="120" y="133" text-anchor="middle" fill="#1e3a8a">+ → α-thal-1 trait (SEA deletion)</text>
+    <!-- DCIP / HbA2 branch -->
+    <rect x="258" y="74" width="184" height="28" rx="6" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="350" y="92" text-anchor="middle" fill="#c2410c">DCIP + / HbA2 → Hb typing</text>
+    <line x1="350" y1="102" x2="350" y2="116" stroke="#94a3b8"/>
+    <rect x="258" y="116" width="184" height="26" rx="6" fill="#fed7aa" stroke="#fdba74"/>
+    <text x="350" y="133" text-anchor="middle" fill="#7c2d12">HbA2&gt;4% = β-trait; HbE band = HbE</text>
+  </g>
+  <line x1="120" y1="142" x2="235" y2="160" stroke="#94a3b8"/><line x1="350" y1="142" x2="235" y2="160" stroke="#94a3b8"/>
+  <rect x="120" y="160" width="230" height="30" rx="6" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="235" y="179" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Both partners carriers → prenatal diagnosis</text>
+  <text x="16" y="210" font-size="9.5" fill="#475569">At-risk severe disease: Hb Bart's hydrops (α-thal-1 × α-thal-1), homozygous β-thal, β-thal/HbE.</text>
+  <text x="16" y="226" font-size="9.5" fill="#0369a1">Prenatal Dx: CVS (10–13 wk), amniocentesis (15–20 wk), cordocentesis, or PGT before implantation.</text>
+</svg>`;

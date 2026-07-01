@@ -147,6 +147,11 @@ export const subjectOfSource: Record<string, string> = {
   'L5 — Placenta & Extraembryonic Membranes': 'HGD',
   'L6 — Cell Cycle & Human Chromosomes': 'HGD',
   'L7 — Chromosome Aberrations': 'HGD',
+  'L8 — Cytogenetic Nomenclature': 'HGD',
+  'L9 — Autosomal Chromosome Syndromes': 'HGD',
+  'L10 — Sex Chromosome Abnormalities': 'HGD',
+  'L11 — Mendelian, Multifactorial & Population Genetics': 'HGD',
+  'L12 — Prenatal Diagnosis': 'HGD',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',

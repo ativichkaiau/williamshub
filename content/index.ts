@@ -252,6 +252,24 @@ import karyotypeChromosomeAnalysis from './lectures/karyotype-chromosome-analysi
 // L7 — Chromosome Aberrations
 import numericalChromosomeAbnormalities from './lectures/numerical-chromosome-abnormalities';
 import chromosomeCopyStructureAbnormalities from './lectures/chromosome-copy-structure-abnormalities';
+// L8 — Cytogenetic Nomenclature
+import cytogeneticNomenclatureBasics from './lectures/cytogenetic-nomenclature-basics';
+import structuralRearrangementNomenclature from './lectures/structural-rearrangement-nomenclature';
+// L9 — Autosomal Chromosome Syndromes
+import autosomalTrisomies from './lectures/autosomal-trisomies';
+import autosomalDeletionSyndromes from './lectures/autosomal-deletion-syndromes';
+import microdeletionImprintingSyndromes from './lectures/microdeletion-imprinting-syndromes';
+// L10 — Sex Chromosome Abnormalities
+import xInactivationSexDetermination from './lectures/x-inactivation-sex-determination';
+import sexChromosomeAneuploidies from './lectures/sex-chromosome-aneuploidies';
+import dsdFragileX from './lectures/dsd-fragile-x';
+// L11 — Mendelian, Multifactorial & Population Genetics
+import mendelianInheritancePatterns from './lectures/mendelian-inheritance-patterns';
+import inheritanceModifiers from './lectures/inheritance-modifiers';
+import multifactorialPopulationGenetics from './lectures/multifactorial-population-genetics';
+// L12 — Prenatal Diagnosis
+import prenatalScreeningDiagnosis from './lectures/prenatal-screening-diagnosis';
+import thalassemiaPreventionScreening from './lectures/thalassemia-prevention-screening';
 import translocationsInversions from './lectures/translocations-inversions';
 import mosaicismChimerism from './lectures/mosaicism-chimerism';
 
@@ -476,6 +494,16 @@ export const lectures: Lecture[] = [
   // L7 Chromosome Aberrations
   numericalChromosomeAbnormalities, chromosomeCopyStructureAbnormalities,
   translocationsInversions, mosaicismChimerism,
+  // L8 Cytogenetic Nomenclature
+  cytogeneticNomenclatureBasics, structuralRearrangementNomenclature,
+  // L9 Autosomal Chromosome Syndromes
+  autosomalTrisomies, autosomalDeletionSyndromes, microdeletionImprintingSyndromes,
+  // L10 Sex Chromosome Abnormalities
+  xInactivationSexDetermination, sexChromosomeAneuploidies, dsdFragileX,
+  // L11 Mendelian, Multifactorial & Population Genetics
+  mendelianInheritancePatterns, inheritanceModifiers, multifactorialPopulationGenetics,
+  // L12 Prenatal Diagnosis
+  prenatalScreeningDiagnosis, thalassemiaPreventionScreening,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

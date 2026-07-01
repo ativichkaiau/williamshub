@@ -153,6 +153,14 @@ export const subjectOfSource: Record<string, string> = {
   'L11 — Mendelian, Multifactorial & Population Genetics': 'HGD',
   'L12 — Prenatal Diagnosis': 'HGD',
 
+  // MFN — Metabolism of Fuel Nutrients in Human (Year 1)
+  'L1 — Nutrients, Digestion & Absorption': 'MFN',
+  'L2 — Bioenergetics': 'MFN',
+  'L3 — Carbohydrate Metabolism': 'MFN',
+  'L4 — Amino Acid Metabolism': 'MFN',
+  'L5 — Lipid Metabolism': 'MFN',
+  'L6 — Integrative Metabolism': 'MFN',
+
   // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',

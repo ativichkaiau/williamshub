@@ -273,6 +273,57 @@ import thalassemiaPreventionScreening from './lectures/thalassemia-prevention-sc
 import translocationsInversions from './lectures/translocations-inversions';
 import mosaicismChimerism from './lectures/mosaicism-chimerism';
 
+// ── MFN (Metabolism of Fuel Nutrients in Human) ─────────────────────────────
+// L1 — Nutrients, Digestion & Absorption
+import {
+  fuelNutrientsEnergyBalance,
+  carbohydrateDigestionAbsorption,
+  proteinDigestionAminoAcidAbsorption,
+  lipidDigestionChylomicrons,
+  malabsorptionPatterns,
+} from './lectures/mfn-nutrients-digestion';
+// L2 — Bioenergetics
+import {
+  freeEnergyAtpCoupling,
+  pdhTcaCycle,
+  electronTransportOxphos,
+  etcInhibitorsUncouplingShuttles,
+  tcaAmphibolicAnaplerosis,
+} from './lectures/mfn-bioenergetics';
+// L3 — Carbohydrate Metabolism
+import {
+  glucoseTransportGlycolysis,
+  pentoseFructoseGalactose,
+  glycogenSynthesisBreakdown,
+  gluconeogenesisCoriAlanine,
+  bloodGlucoseHomeostasis,
+} from './lectures/mfn-carbohydrates';
+// L4 — Amino Acid Metabolism (including one-carbon-carrier SDL)
+import {
+  aminoNitrogenHandling,
+  ureaCycleHyperammonemia,
+  aminoCarbonSkeletonDisorders,
+  oneCarbonCarriers,
+  aminoAcidDerivedProducts,
+} from './lectures/mfn-amino-acids';
+// L5 — Lipid Metabolism (including cholesterol and lipoprotein SDLs)
+import {
+  tagStorageMobilization,
+  fattyAcidSynthesisEicosanoids,
+  betaOxidationCarnitine,
+  ketoneBodyMetabolism,
+  cholesterolBileSteroids,
+  lipoproteinsAtherogenesis,
+  alternativeFattyAcidOxidation,
+} from './lectures/mfn-lipids';
+// L6 — Integrative Metabolism
+import {
+  organSpecificFuelMetabolism,
+  fedFastingStarvation,
+  exerciseStressFuelIntegration,
+  metabolicJunctionPoints,
+} from './lectures/mfn-integration';
+
 // ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
 // L1 — Diseases of Bone
 import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
@@ -599,6 +650,27 @@ export const lectures: Lecture[] = [
   mendelianInheritancePatterns, inheritanceModifiers, multifactorialPopulationGenetics,
   // L12 Prenatal Diagnosis
   prenatalScreeningDiagnosis, thalassemiaPreventionScreening,
+
+  // ── MFN (Metabolism of Fuel Nutrients in Human) ──
+  // L1 Nutrients, Digestion & Absorption
+  fuelNutrientsEnergyBalance, carbohydrateDigestionAbsorption,
+  proteinDigestionAminoAcidAbsorption, lipidDigestionChylomicrons, malabsorptionPatterns,
+  // L2 Bioenergetics
+  freeEnergyAtpCoupling, pdhTcaCycle, electronTransportOxphos,
+  etcInhibitorsUncouplingShuttles, tcaAmphibolicAnaplerosis,
+  // L3 Carbohydrate Metabolism
+  glucoseTransportGlycolysis, pentoseFructoseGalactose,
+  glycogenSynthesisBreakdown, gluconeogenesisCoriAlanine, bloodGlucoseHomeostasis,
+  // L4 Amino Acid Metabolism
+  aminoNitrogenHandling, ureaCycleHyperammonemia,
+  aminoCarbonSkeletonDisorders, oneCarbonCarriers, aminoAcidDerivedProducts,
+  // L5 Lipid Metabolism
+  tagStorageMobilization, fattyAcidSynthesisEicosanoids,
+  betaOxidationCarnitine, ketoneBodyMetabolism,
+  cholesterolBileSteroids, lipoproteinsAtherogenesis, alternativeFattyAcidOxidation,
+  // L6 Integrative Metabolism
+  organSpecificFuelMetabolism, fedFastingStarvation,
+  exerciseStressFuelIntegration, metabolicJunctionPoints,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

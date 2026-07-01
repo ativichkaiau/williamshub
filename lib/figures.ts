@@ -2358,3 +2358,211 @@ export const IMMUNODEFICIENCY_MAP = `<svg viewBox="0 0 480 260" xmlns="http://ww
   <text x="16" y="232" font-size="8.5" fill="#0369a1" font-weight="700">Primary = genetic (often present in infancy). Secondary = acquired (commoner): HIV, drugs, malnutrition, malignancy.</text>
   <text x="16" y="248" font-size="8.5" fill="#475569">HIV kills CD4⁺ T cells → opportunistic infections (PCP, CMV, TB) once CD4 falls. Spleen loss ≈ antibody defect (encapsulated).</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HIM L9–L17 figures (humoral, microbes, mucosa, autoimmunity, hypersensitivity,
+// assays, transplant, tumour, immunotherapy)
+// ---------------------------------------------------------------------------
+
+export const HUMORAL_RESPONSE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="T-dependent vs T-independent B-cell activation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">B-cell activation: T-dependent vs T-independent</text>
+  <rect x="14" y="30" width="226" height="196" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">T-DEPENDENT (protein antigen)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="68">• B cell binds antigen via BCR, internalises,</text><text x="34" y="80">presents peptide on MHC II</text><text x="24" y="96">• Tfh cell (CD40L–CD40 + cytokines) helps</text><text x="24" y="112">• Germinal centre reaction →</text><text x="34" y="124">class switching + somatic hypermutation</text><text x="34" y="136">(affinity maturation)</text><text x="24" y="152">• High-affinity IgG/A/E + MEMORY</text><text x="24" y="168">• Robust, long-lived</text></g>
+  <text x="24" y="192" font-size="8.5" font-weight="700" fill="#1d4ed8">Two signals: antigen + T-cell help (CD40L)</text>
+  <text x="24" y="212" font-size="7.5" fill="#64748b">Requires linked recognition of the same antigen.</text>
+  <rect x="246" y="30" width="220" height="196" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="356" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#c2410c">T-INDEPENDENT</text>
+  <g font-size="8.5" fill="#9a3412"><text x="254" y="68">• Antigen = repetitive (polysaccharide,</text><text x="264" y="80">LPS) → cross-links many BCRs</text><text x="254" y="96">• No T-cell help needed</text><text x="254" y="112">• Mainly IgM; little/no class switch</text><text x="254" y="128">• Low affinity, SHORT-lived,</text><text x="264" y="140">weak/no memory</text><text x="254" y="156">• Encapsulated-bacteria capsules</text></g>
+  <text x="254" y="190" font-size="8.5" font-weight="700" fill="#c2410c">Why polysaccharide vaccines fail in infants</text>
+  <text x="254" y="208" font-size="7.5" fill="#64748b">→ conjugate to protein → makes it T-dependent</text>
+  <text x="16" y="244" font-size="8.5" fill="#0369a1">Effector antibody functions: neutralise · opsonise · activate complement · ADCC.</text>
+</svg>`;
+
+export const PRIMARY_SECONDARY_RESPONSE = `<svg viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Primary vs secondary antibody response" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Primary vs secondary antibody response</text>
+  <line x1="46" y1="185" x2="440" y2="185" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="46" y1="40" x2="46" y2="185" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="30" y="110" font-size="8" fill="#64748b" transform="rotate(-90 30 110)" text-anchor="middle">antibody titre (log)</text>
+  <line x1="150" y1="40" x2="150" y2="190" stroke="#cbd5e1" stroke-dasharray="3 3"/>
+  <text x="100" y="205" text-anchor="middle" font-size="8" fill="#334155">1st exposure</text>
+  <text x="300" y="205" text-anchor="middle" font-size="8" fill="#334155">2nd exposure (same antigen)</text>
+  <!-- primary IgM -->
+  <path d="M150 185 q20 -6 34 -26 q14 -14 20 6 q10 18 24 40" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <text x="196" y="128" font-size="8" font-weight="700" fill="#b45309">IgM (1°)</text>
+  <!-- secondary IgG -->
+  <path d="M300 185 q10 -70 40 -110 q20 -22 40 -8" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="360" y="60" font-size="8" font-weight="700" fill="#1d4ed8">IgG (2°)</text>
+  <!-- primary IgG small -->
+  <path d="M175 180 q25 -8 45 -20" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-dasharray="2 2"/>
+  <g font-size="8" fill="#334155"><text x="150" y="228">Primary: lag, low, IgM-dominant</text><text x="300" y="228" fill="#1d4ed8" font-weight="700">Secondary: faster, higher, IgG, high-affinity</text></g>
+  <text x="16" y="40" font-size="8.5" fill="#0369a1">Memory B cells → the rapid, larger, class-switched, higher-affinity secondary response (basis of vaccination).</text>
+</svg>`;
+
+export const IMMUNITY_TO_MICROBES = `<svg viewBox="0 0 490 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Immunity to different microbes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Immunity tailored to the microbe</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Microbe</text><text x="150" y="40">Key defence</text><text x="330" y="40">Evasion example</text></g>
+  <line x1="16" y1="45" x2="474" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="64" font-weight="700" fill="#c2410c">Extracellular bacteria</text><text x="150" y="64" fill="#475569">Antibody (opsonise/neutralise),</text><text x="150" y="75" fill="#475569">complement, neutrophils, Th17</text><text x="330" y="64" fill="#475569">capsule (anti-phagocytic),</text><text x="330" y="75" fill="#475569">antigenic variation</text>
+    <text x="18" y="96" font-weight="700" fill="#b91c1c">Intracellular bacteria</text><text x="150" y="96" fill="#475569">Th1 → macrophage activation</text><text x="150" y="107" fill="#475569">(IFN-γ); granuloma; CTL</text><text x="330" y="96" fill="#475569">block phagolysosome (TB),</text><text x="330" y="107" fill="#475569">escape to cytosol</text>
+    <text x="18" y="128" font-weight="700" fill="#1d4ed8">Viruses</text><text x="150" y="128" fill="#475569">Type I IFN, NK, CTL (MHC I),</text><text x="150" y="139" fill="#475569">neutralising antibody</text><text x="330" y="128" fill="#475569">↓MHC I, antigenic drift/shift,</text><text x="330" y="139" fill="#475569">latency</text>
+    <text x="18" y="160" font-weight="700" fill="#15803d">Fungi</text><text x="150" y="160" fill="#475569">Neutrophils, Th17/Th1,</text><text x="150" y="171" fill="#475569">macrophages</text><text x="330" y="160" fill="#475569">capsule (Cryptococcus),</text><text x="330" y="171" fill="#475569">thermal dimorphism</text>
+    <text x="18" y="192" font-weight="700" fill="#7c3aed">Parasites (helminths)</text><text x="150" y="192" fill="#475569">Th2 → IgE + eosinophils +</text><text x="150" y="203" fill="#475569">mast cells; AAM around eggs</text><text x="330" y="192" fill="#475569">antigenic variation, life-cycle</text><text x="330" y="203" fill="#475569">stages, immunosuppression</text>
+  </g>
+  <line x1="16" y1="214" x2="474" y2="214" stroke="#e2e8f0"/>
+  <text x="16" y="232" font-size="8.5" fill="#0369a1">Extracellular → humoral/neutrophils; intracellular → cell-mediated (Th1/CTL); helminths → Th2/IgE/eosinophil.</text>
+  <text x="16" y="246" font-size="8" fill="#64748b">Neutralising antibody blocks a virus from entering cells; ADE (e.g. dengue) is antibody that paradoxically enhances entry.</text>
+</svg>`;
+
+export const MUCOSAL_IMMUNITY = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Mucosal immunity" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Mucosal immunity (gut): sample, tolerate, secrete IgA</text>
+  <!-- lumen -->
+  <rect x="16" y="30" width="438" height="24" fill="#fef3c7"/><text x="235" y="46" text-anchor="middle" font-size="8.5" fill="#92400e">LUMEN — microbiota + antigens</text>
+  <!-- epithelium -->
+  <g fill="#dbeafe" stroke="#2563eb">${[0,1,2,3,4,5,6,7].map(i=>`<rect x="${20+i*54}" y="56" width="48" height="40" rx="3"/>`).join('')}</g>
+  <!-- M cell -->
+  <rect x="182" y="56" width="48" height="40" rx="3" fill="#fca5a5" stroke="#b91c1c"/><text x="206" y="80" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7f1d1d">M cell</text>
+  <text x="206" y="112" text-anchor="middle" font-size="7" fill="#b91c1c">samples antigen →</text>
+  <!-- Peyer's patch -->
+  <ellipse cx="206" cy="150" rx="60" ry="34" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="206" y="146" text-anchor="middle" font-size="8.5" font-weight="700" fill="#6d28d9">Peyer's patch (GALT)</text>
+  <text x="206" y="160" text-anchor="middle" font-size="7.5" fill="#5b21b6">DC + B/T → IgA class switch</text>
+  <text x="206" y="172" text-anchor="middle" font-size="7.5" fill="#5b21b6">(APRIL/BAFF, TGF-β)</text>
+  <!-- sIgA transcytosis -->
+  <g stroke="#16a34a" stroke-width="2"><path d="M330 96 l0 -30" marker-end="url(#mu)"/></g>
+  <defs><marker id="mu" markerWidth="7" markerHeight="7" refX="3" refY="1" orient="auto"><path d="M0 6 L3 0 L6 6 Z" fill="#16a34a"/></marker></defs>
+  <circle cx="330" cy="120" r="10" fill="#dcfce7" stroke="#16a34a"/><text x="330" y="123" text-anchor="middle" font-size="7" fill="#15803d">IgA</text>
+  <text x="345" y="120" font-size="8" fill="#15803d">plasma cell → dimeric IgA →</text>
+  <text x="345" y="132" font-size="8" fill="#15803d">transcytosis (pIgR) → secretory IgA</text>
+  <text x="345" y="144" font-size="8" fill="#15803d">in lumen (immune exclusion)</text>
+  <text x="16" y="206" font-size="8.5" fill="#0369a1" font-weight="700">Balance: commensal microbiota + Treg/IgA = tolerance; dysbiosis + Th17 = inflammation.</text>
+  <text x="16" y="222" font-size="8.5" fill="#475569">Oral tolerance = active non-response to harmless food/commensal antigens (Tregs).</text>
+  <text x="16" y="238" font-size="8" fill="#64748b">Secretory IgA is the most abundantly produced antibody in the body; the secretory component resists gut proteases.</text>
+</svg>`;
+
+export const HYPERSENSITIVITY_TYPES = `<svg viewBox="0 0 490 280" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Four types of hypersensitivity" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="280" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Hypersensitivity — the 4 types ("ACID")</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Type</text><text x="120" y="40">Mediator</text><text x="235" y="40">Mechanism</text><text x="360" y="40">Examples</text></g>
+  <line x1="16" y1="45" x2="474" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="66" font-weight="700" fill="#b91c1c">I — Allergic</text><text x="120" y="66" fill="#334155">IgE (+ mast cells)</text><text x="235" y="66" fill="#475569">allergen cross-links IgE →</text><text x="235" y="77" fill="#475569">histamine (immediate, mins)</text><text x="360" y="66" fill="#475569">anaphylaxis, asthma,</text><text x="360" y="77" fill="#475569">hay fever, urticaria</text>
+    <text x="18" y="98" font-weight="700" fill="#2563eb">II — Cytotoxic</text><text x="120" y="98" fill="#334155">IgG/IgM vs cell Ag</text><text x="235" y="98" fill="#475569">antibody binds cell/tissue →</text><text x="235" y="109" fill="#475569">complement/ADCC/phagocytosis</text><text x="360" y="98" fill="#475569">AIHA, ITP, Goodpasture,</text><text x="360" y="109" fill="#475569">Graves, myasthenia, Rh</text>
+    <text x="18" y="130" font-weight="700" fill="#ea580c">III — Immune complex</text><text x="120" y="130" fill="#334155">IgG + soluble Ag</text><text x="235" y="130" fill="#475569">complexes deposit in tissue →</text><text x="235" y="141" fill="#475569">complement/neutrophils</text><text x="360" y="130" fill="#475569">SLE, PSGN, serum</text><text x="360" y="141" fill="#475569">sickness, Arthus</text>
+    <text x="18" y="162" font-weight="700" fill="#7c3aed">IV — Delayed (T-cell)</text><text x="120" y="162" fill="#334155">T cells (NO antibody)</text><text x="235" y="162" fill="#475569">Th1/CTL → macrophage,</text><text x="235" y="173" fill="#475569">cytokines (delayed 48–72 h)</text><text x="360" y="162" fill="#475569">TB skin test, contact</text><text x="360" y="173" fill="#475569">dermatitis, T1DM, MS</text>
+  </g>
+  <line x1="16" y1="184" x2="474" y2="184" stroke="#e2e8f0"/>
+  <text x="16" y="204" font-size="9" font-weight="700" fill="#0369a1">"ACID": type I Anaphylactic/Allergic, II Cytotoxic, III Immune-Complex, IV Delayed.</text>
+  <text x="16" y="222" font-size="8.5" fill="#475569">Types I–III are ANTIBODY-mediated (immediate–hours); type IV is T-CELL-mediated (delayed, no antibody).</text>
+  <text x="16" y="240" font-size="8.5" fill="#475569">II vs III: type II antibody targets a FIXED cell/tissue antigen; type III involves SOLUBLE antigen–antibody complexes that deposit.</text>
+  <text x="16" y="260" font-size="8" fill="#64748b">Many diseases overlap types. Type II can also be receptor-blocking/activating (Graves = stimulating, MG = blocking).</text>
+</svg>`;
+
+export const IMMUNOASSAY = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Antigen-antibody laboratory assays" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Antigen–antibody assays</text>
+  <!-- ELISA sandwich -->
+  <rect x="14" y="30" width="230" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="129" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">ELISA (sandwich)</text>
+  <rect x="30" y="120" width="198" height="10" fill="#93c5fd"/><text x="129" y="145" text-anchor="middle" font-size="7" fill="#1e40af">plate-bound capture Ab</text>
+  <g stroke="#1d4ed8" stroke-width="2"><path d="M70 120 l0 -12"/><path d="M70 108 l-5 -6 M70 108 l5 -6"/></g>
+  <circle cx="70" cy="96" r="6" fill="#f59e0b"/><text x="86" y="98" font-size="7" fill="#334155">antigen</text>
+  <g stroke="#dc2626" stroke-width="2"><path d="M70 90 l0 -10"/><path d="M70 80 l-5 -6 M70 80 l5 -6"/></g>
+  <rect x="60" y="66" width="20" height="8" rx="2" fill="#dc2626"/><text x="130" y="76" font-size="7" fill="#b91c1c">enzyme-linked detection Ab → colour</text>
+  <text x="24" y="164" font-size="7.5" fill="#475569">Quantifies antigen or antibody; colour ∝ amount.</text>
+  <!-- other techniques -->
+  <rect x="250" y="30" width="216" height="120" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="358" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Other techniques</text>
+  <g font-size="8" fill="#166534"><text x="258" y="66">• Agglutination — Ab clumps particulate Ag</text><text x="270" y="77">(blood typing, latex; haemagglutination)</text><text x="258" y="92">• Precipitation — Ab + soluble Ag lattice</text><text x="258" y="107">• Immunofluorescence — fluorochrome Ab</text><text x="258" y="122">• Western blot — HIV confirmatory</text><text x="258" y="137">• Flow cytometry — count/sort cells (CD)</text></g>
+  <text x="16" y="176" font-size="9" font-weight="700" fill="#0369a1">Affinity vs avidity</text>
+  <text x="16" y="192" font-size="8.5" fill="#475569">Affinity = strength of ONE binding site–epitope bond. Avidity = TOTAL strength of all bonds (IgM avidity high despite low affinity).</text>
+  <text x="16" y="210" font-size="8.5" fill="#475569">Titre = highest dilution still giving a positive reaction (semi-quantitative).</text>
+  <text x="16" y="232" font-size="8.5" fill="#64748b">Sensitive screen (ELISA) → specific confirmation (Western blot), e.g. the classic HIV testing algorithm.</text>
+</svg>`;
+
+export const TRANSPLANT_REJECTION = `<svg viewBox="0 0 490 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Transplant rejection types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Graft rejection — timing tells the mechanism</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Type</text><text x="120" y="40">Timing</text><text x="215" y="40">Mechanism</text><text x="370" y="40">Feature</text></g>
+  <line x1="16" y1="45" x2="474" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="64" font-weight="700" fill="#b91c1c">Hyperacute</text><text x="120" y="64" fill="#475569">minutes–hours</text><text x="215" y="64" fill="#475569">PRE-EXISTING recipient antibody</text><text x="215" y="75" fill="#475569">(ABO/HLA) → thrombosis</text><text x="370" y="64" fill="#475569">prevented by</text><text x="370" y="75" fill="#475569">crossmatch</text>
+    <text x="18" y="96" font-weight="700" fill="#ea580c">Acute</text><text x="120" y="96" fill="#475569">days–weeks</text><text x="215" y="96" fill="#475569">alloreactive T cells (cellular)</text><text x="215" y="107" fill="#475569">± donor-specific antibody</text><text x="370" y="96" fill="#475569">responds to</text><text x="370" y="107" fill="#475569">immunosuppression</text>
+    <text x="18" y="128" font-weight="700" fill="#7c3aed">Chronic</text><text x="120" y="128" fill="#475569">months–years</text><text x="215" y="128" fill="#475569">vascular fibrosis / intimal</text><text x="215" y="139" fill="#475569">thickening (T cell + Ab)</text><text x="370" y="128" fill="#475569">irreversible</text>
+    <text x="18" y="160" font-weight="700" fill="#0891b2">GVHD</text><text x="120" y="160" fill="#475569">acute &lt;3mo / chronic &gt;3mo</text><text x="215" y="160" fill="#475569">DONOR T cells attack host</text><text x="215" y="171" fill="#475569">(marrow/HSCT)</text><text x="370" y="160" fill="#475569">skin, gut, liver</text>
+  </g>
+  <line x1="16" y1="182" x2="474" y2="182" stroke="#e2e8f0"/>
+  <text x="16" y="200" font-size="9" font-weight="700" fill="#0369a1">Allorecognition</text>
+  <text x="16" y="216" font-size="8.5" fill="#475569">DIRECT = recipient T cells see donor MHC on donor APCs (drives acute rejection). INDIRECT = recipient APCs present donor peptides on self-MHC.</text>
+  <text x="16" y="234" font-size="8.5" fill="#475569">Graft types: autograft (self) → no rejection; allograft (same species); xenograft (different species). HLA matching improves survival.</text>
+  <text x="16" y="252" font-size="8" fill="#64748b">Immunosuppression: calcineurin inhibitors (ciclosporin/tacrolimus), steroids, mTOR/antiproliferatives, anti-lymphocyte antibodies.</text>
+</svg>`;
+
+export const TUMOR_IMMUNOEDITING = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cancer immunoediting" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cancer immunoediting — the 3 E's</text>
+  <rect x="16" y="34" width="146" height="86" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="89" y="54" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">Elimination</text>
+  <text x="89" y="72" text-anchor="middle" font-size="8" fill="#166534">immunosurveillance:</text><text x="89" y="84" text-anchor="middle" font-size="8" fill="#166534">CTL/NK/Th1 kill</text><text x="89" y="96" text-anchor="middle" font-size="8" fill="#166534">nascent tumour cells</text><text x="89" y="112" text-anchor="middle" font-size="7.5" fill="#15803d">(tumour antigens: TSA/TAA)</text>
+  <rect x="168" y="34" width="146" height="86" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="241" y="54" text-anchor="middle" font-size="10" font-weight="700" fill="#a16207">Equilibrium</text>
+  <text x="241" y="72" text-anchor="middle" font-size="8" fill="#854d0e">immune system holds</text><text x="241" y="84" text-anchor="middle" font-size="8" fill="#854d0e">tumour in check;</text><text x="241" y="96" text-anchor="middle" font-size="8" fill="#854d0e">variants are selected</text><text x="241" y="112" text-anchor="middle" font-size="7.5" fill="#a16207">(Darwinian editing)</text>
+  <rect x="320" y="34" width="146" height="86" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="393" y="54" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Escape</text>
+  <text x="393" y="72" text-anchor="middle" font-size="8" fill="#991b1b">edited tumour evades →</text><text x="393" y="84" text-anchor="middle" font-size="8" fill="#991b1b">clinical cancer</text><text x="393" y="100" text-anchor="middle" font-size="7.5" fill="#b91c1c">↓MHC I, checkpoints,</text><text x="393" y="111" text-anchor="middle" font-size="7.5" fill="#b91c1c">Treg/immunosuppression</text>
+  <line x1="162" y1="77" x2="168" y2="77" stroke="#94a3b8"/><line x1="314" y1="77" x2="320" y2="77" stroke="#94a3b8"/>
+  <text x="16" y="146" font-size="9" font-weight="700" fill="#0369a1">Evasion mechanisms → therapeutic targets</text>
+  <text x="16" y="163" font-size="8.5" fill="#475569">• Down-regulate MHC I (→ but becomes NK target) • express PD-L1 / recruit Tregs / secrete TGF-β</text>
+  <text x="16" y="181" font-size="8.5" fill="#475569">• Checkpoint inhibitors (anti-PD-1 pembrolizumab, anti-CTLA-4) release the brake on T cells</text>
+  <text x="16" y="199" font-size="8.5" fill="#475569">• CAR-T cells (engineered TCR/receptor), tumour-antigen monoclonal antibodies, cancer/dendritic-cell vaccines</text>
+  <text x="16" y="220" font-size="8" fill="#64748b">Virus-induced tumour antigens: EBV, HPV, HBV — targets for prophylactic vaccines.</text>
+  <text x="16" y="234" font-size="8" fill="#64748b">TSA = tumour-specific (mutated/neoantigen); TAA = tumour-associated (over-expressed self).</text>
+</svg>`;
+
+export const VACCINE_TYPES = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Vaccine types and immunisation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Manipulating immunity — active vs passive</text>
+  <rect x="14" y="30" width="226" height="70" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="127" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">ACTIVE immunisation</text>
+  <text x="24" y="66" font-size="8" fill="#166534">Give antigen → host makes its own response</text>
+  <text x="24" y="79" font-size="8" fill="#166534">+ MEMORY. Slow onset, long-lasting.</text>
+  <text x="24" y="92" font-size="8" fill="#166534">e.g. vaccines.</text>
+  <rect x="246" y="30" width="220" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="356" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0369a1">PASSIVE immunisation</text>
+  <text x="254" y="66" font-size="8" fill="#075985">Give preformed antibody → immediate,</text>
+  <text x="254" y="79" font-size="8" fill="#075985">NO memory, short-lived.</text>
+  <text x="254" y="92" font-size="8" fill="#075985">e.g. maternal IgG, antitoxin, Ig, mAbs.</text>
+  <text x="16" y="120" font-size="9.5" font-weight="700" fill="#0369a1">Vaccine platforms</text>
+  <g font-size="8" fill="#475569">
+    <text x="18" y="138">• Live-attenuated — weakened microbe; strong, lasting; risk in immunocompromised (MMR, BCG, OPV)</text>
+    <text x="18" y="154">• Inactivated (killed) — safe, weaker, needs boosters (rabies, hep A, IPV)</text>
+    <text x="18" y="170">• Subunit / toxoid — protein/polysaccharide/toxoid (HBV, tetanus, acellular pertussis)</text>
+    <text x="18" y="186">• Conjugate — polysaccharide + protein carrier → T-dependent (Hib, pneumococcus, meningococcus)</text>
+    <text x="18" y="202">• mRNA / viral-vector / DNA — deliver antigen gene (COVID-19)</text>
+  </g>
+  <text x="16" y="224" font-size="8.5" fill="#334155" font-weight="700">Adjuvants boost innate/dendritic activation → stronger adaptive response.</text>
+  <text x="16" y="242" font-size="8.5" fill="#64748b">Also: immunosuppressants (transplant/autoimmunity), immunostimulants, and therapeutic monoclonal antibodies / checkpoint blockade.</text>
+  <text x="16" y="256" font-size="8" fill="#64748b">Herd immunity: high coverage protects the unvaccinated.</text>
+</svg>`;
+
+export const AUTOIMMUNITY_MECHANISMS = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Mechanisms of autoimmunity" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Autoimmunity = loss of self-tolerance</text>
+  <text x="16" y="40" font-size="9.5" font-weight="700" fill="#0369a1">Tolerance that fails</text>
+  <text x="24" y="56" font-size="8.5" fill="#475569">Central (thymus/marrow: AIRE deletion) + Peripheral (anergy, Treg/FoxP3, checkpoints CTLA-4/PD-1)</text>
+  <text x="16" y="78" font-size="9.5" font-weight="700" fill="#0369a1">Triggers</text>
+  <g font-size="8.5" fill="#475569"><text x="24" y="94">• Genetic: HLA associations (e.g. B27, DR3/4), AIRE, FoxP3, CTLA-4 polymorphisms</text><text x="24" y="110">• Molecular mimicry — microbe resembles self (rheumatic fever: strep → heart; GBS: Campylobacter)</text><text x="24" y="126">• Epitope spreading, bystander activation, cryptic-antigen release</text><text x="24" y="142">• Failure of Treg/checkpoint regulation; sex hormones (female predominance)</text></g>
+  <line x1="16" y1="152" x2="464" y2="152" stroke="#e2e8f0"/>
+  <text x="18" y="170" font-size="9" font-weight="700" fill="#b91c1c">Organ-specific</text>
+  <text x="18" y="185" font-size="8" fill="#991b1b">Hashimoto (anti-TPO), Graves (TSH-R),</text>
+  <text x="18" y="197" font-size="8" fill="#991b1b">T1DM, myasthenia gravis (AChR), MS, pernicious anaemia</text>
+  <text x="250" y="170" font-size="9" font-weight="700" fill="#7c3aed">Systemic</text>
+  <text x="250" y="185" font-size="8" fill="#5b21b6">SLE (ANA, anti-dsDNA), rheumatoid</text>
+  <text x="250" y="197" font-size="8" fill="#5b21b6">arthritis (RF, anti-CCP), systemic sclerosis</text>
+  <text x="16" y="220" font-size="8" fill="#64748b">Mediated via hypersensitivity types II (e.g. Graves, MG), III (SLE), and IV (T1DM, MS).</text>
+</svg>`;

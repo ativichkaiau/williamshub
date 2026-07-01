@@ -214,6 +214,15 @@ export const subjectOfSource: Record<string, string> = {
   'L6 — MHC & Antigen Presentation': 'HIM',
   'L7 — Lymphocyte Development': 'HIM',
   'L8 — Immunodeficiency': 'HIM',
+  'L9 — Humoral Immune Response': 'HIM',
+  'L10 — Immunity to Microbes': 'HIM',
+  'L11 — Mucosal Immunology & Microbiota': 'HIM',
+  'L12 — Autoimmunity': 'HIM',
+  'L13 — Hypersensitivity': 'HIM',
+  'L14 — Antigen-Antibody Reactions': 'HIM',
+  'L15 — Transplantation Immunology': 'HIM',
+  'L16 — Tumor Immunology': 'HIM',
+  'L17 — Manipulating the Immune System': 'HIM',
 
   // BHCB — Basic Histology and Cell Biology (Year 2)
   'L1 — Cytology': 'BHCB',

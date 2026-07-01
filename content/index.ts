@@ -594,6 +594,25 @@ import tCellDevelopmentThymicSelection from './lectures/t-cell-development-thymi
 import primaryImmunodeficiencyAntibodyT from './lectures/primary-immunodeficiency-antibody-t';
 import primaryImmunodeficiencyPhagocyteComplement from './lectures/primary-immunodeficiency-phagocyte-complement';
 import secondaryImmunodeficiencyHiv from './lectures/secondary-immunodeficiency-hiv';
+// HIM L9–L17
+import humoralResponseBActivation from './lectures/humoral-response-b-activation';
+import germinalCenterAntibodyResponse from './lectures/germinal-center-antibody-response';
+import immunityBacteriaExtracellularIntracellular from './lectures/immunity-bacteria-extracellular-intracellular';
+import immunityVirusesFungiParasites from './lectures/immunity-viruses-fungi-parasites';
+import mucosalImmuneSystem from './lectures/mucosal-immune-system';
+import oralToleranceMicrobiota from './lectures/oral-tolerance-microbiota';
+import toleranceAutoimmunityMechanisms from './lectures/tolerance-autoimmunity-mechanisms';
+import autoimmuneDiseaseExamples from './lectures/autoimmune-disease-examples';
+import hypersensitivityType12 from './lectures/hypersensitivity-type-1-2';
+import hypersensitivityType34 from './lectures/hypersensitivity-type-3-4';
+import antigenAntibodyPrinciples from './lectures/antigen-antibody-principles';
+import immunoassaysTechniques from './lectures/immunoassays-techniques';
+import transplantAllorecognitionRejection from './lectures/transplant-allorecognition-rejection';
+import transplantMatchingImmunosuppression from './lectures/transplant-matching-immunosuppression';
+import tumorAntigensImmunosurveillance from './lectures/tumor-antigens-immunosurveillance';
+import tumorEvasionImmunotherapy from './lectures/tumor-evasion-immunotherapy';
+import vaccinesImmunization from './lectures/vaccines-immunization';
+import immunotherapyModulation from './lectures/immunotherapy-modulation';
 
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
@@ -956,6 +975,24 @@ export const lectures: Lecture[] = [
   bCellDevelopmentTolerance, tCellDevelopmentThymicSelection,
   // L8 Immunodeficiency
   primaryImmunodeficiencyAntibodyT, primaryImmunodeficiencyPhagocyteComplement, secondaryImmunodeficiencyHiv,
+  // L9 Humoral Immune Response
+  humoralResponseBActivation, germinalCenterAntibodyResponse,
+  // L10 Immunity to Microbes
+  immunityBacteriaExtracellularIntracellular, immunityVirusesFungiParasites,
+  // L11 Mucosal Immunology & Microbiota
+  mucosalImmuneSystem, oralToleranceMicrobiota,
+  // L12 Autoimmunity
+  toleranceAutoimmunityMechanisms, autoimmuneDiseaseExamples,
+  // L13 Hypersensitivity
+  hypersensitivityType12, hypersensitivityType34,
+  // L14 Antigen-Antibody Reactions
+  antigenAntibodyPrinciples, immunoassaysTechniques,
+  // L15 Transplantation Immunology
+  transplantAllorecognitionRejection, transplantMatchingImmunosuppression,
+  // L16 Tumor Immunology
+  tumorAntigensImmunosurveillance, tumorEvasionImmunotherapy,
+  // L17 Manipulating the Immune System
+  vaccinesImmunization, immunotherapyModulation,
 
   // ── BHCB (Basic Histology and Cell Biology) ──
   // L1 Cytology

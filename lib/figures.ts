@@ -1301,3 +1301,102 @@ export const GI_BLOOD_SUPPLY = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.
     <text x="128" y="226" font-size="9" fill="#065f46">· pain: suprapubic · watershed: splenic flexure</text>
   </g>
 </svg>`;
+
+export const FEMORAL_TRIANGLE = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Femoral triangle borders and contents" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Femoral triangle: contents (lateral → medial)</text>
+  <polygon points="60,44 300,44 180,180" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="180" y="38" text-anchor="middle" font-size="8.5" fill="#64748b">inguinal ligament (base)</text>
+  <text x="96" y="120" font-size="8" fill="#64748b" transform="rotate(58 96 120)">sartorius</text>
+  <text x="248" y="120" font-size="8" fill="#64748b" transform="rotate(-58 248 120)">adductor longus</text>
+  <g font-size="9.5">
+    <circle cx="95" cy="70" r="5" fill="#f59e0b"/><text x="86" y="90" fill="#b45309" font-weight="700">N</text>
+    <circle cx="130" cy="70" r="5" fill="#dc2626"/><text x="122" y="90" fill="#b91c1c" font-weight="700">A</text>
+    <circle cx="165" cy="70" r="5" fill="#2563eb"/><text x="158" y="90" fill="#1d4ed8" font-weight="700">V</text>
+    <circle cx="200" cy="70" r="5" fill="#94a3b8"/><text x="194" y="90" fill="#475569" font-weight="700">E</text>
+    <circle cx="235" cy="70" r="5" fill="#16a34a"/><text x="228" y="90" fill="#15803d" font-weight="700">L</text>
+  </g>
+  <g font-size="9.5">
+    <text x="310" y="60" fill="#b45309" font-weight="700">N — Femoral Nerve</text>
+    <text x="310" y="78" fill="#b91c1c" font-weight="700">A — Femoral Artery</text>
+    <text x="310" y="96" fill="#1d4ed8" font-weight="700">V — Femoral Vein</text>
+    <text x="310" y="114" fill="#475569" font-weight="700">E — Empty space / canal</text>
+    <text x="310" y="132" fill="#15803d" font-weight="700">L — Lymphatics</text>
+  </g>
+  <text x="16" y="204" font-size="9.5" fill="#0369a1">"NAVEL" lateral→medial. Femoral canal (medial) = site of a femoral hernia (below inguinal lig.).</text>
+  <text x="16" y="220" font-size="9.5" fill="#475569">Femoral sheath wraps A-V-canal (NOT the nerve); pulse felt at the mid-inguinal point.</text>
+</svg>`;
+
+export const GLUTEAL_FORAMINA = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Greater and lesser sciatic foramina contents relative to piriformis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Sciatic foramina &amp; piriformis</text>
+  <g>
+    <rect x="14" y="30" width="220" height="66" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="24" y="48" font-size="10.5" font-weight="700" fill="#047857">SUPRApiriform foramen</text>
+    <text x="24" y="66" font-size="9" fill="#065f46">Superior gluteal nerve + vessels</text>
+    <text x="24" y="84" font-size="8.5" fill="#065f46">(gluteus medius/minimus, TFL)</text>
+  </g>
+  <g>
+    <rect x="14" y="102" width="440" height="88" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="24" y="120" font-size="10.5" font-weight="700" fill="#c2410c">INFRApiriform foramen (below piriformis)</text>
+    <g font-size="9" fill="#7c2d12"><text x="24" y="138">• Sciatic nerve</text><text x="200" y="138">• Inferior gluteal n. + vessels</text><text x="24" y="154">• Pudendal nerve + internal pudendal a.</text><text x="24" y="170">• Posterior femoral cutaneous n.</text><text x="200" y="170">• N. to obturator internus / quadratus femoris</text></g>
+  </g>
+  <g>
+    <rect x="242" y="30" width="212" height="66" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="252" y="48" font-size="10.5" font-weight="700" fill="#1d4ed8">LESSER sciatic foramen</text>
+    <text x="252" y="66" font-size="9" fill="#1e3a8a">Pudendal n. + internal pudendal a.</text>
+    <text x="252" y="82" font-size="9" fill="#1e3a8a">(re-enter perineum), obturator internus tendon</text>
+  </g>
+  <text x="16" y="212" font-size="9.5" fill="#0369a1">Superior gluteal nerve injury → hip abductor palsy → Trendelenburg sign / waddling gait.</text>
+  <text x="16" y="228" font-size="9.5" fill="#475569">Intragluteal injection: superolateral quadrant, to avoid the sciatic nerve.</text>
+</svg>`;
+
+export const LEG_COMPARTMENTS = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Three compartments of the leg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Compartments of the leg</text>
+  <g>
+    <rect x="14" y="30" width="146" height="168" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="87" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Anterior</text>
+    <text x="87" y="62" text-anchor="middle" font-size="8.5" fill="#64748b">= DORSIFLEXION</text>
+    <g font-size="9" fill="#1e3a8a"><text x="20" y="82">Tibialis anterior</text><text x="20" y="96">EHL, EDL,</text><text x="20" y="110">peroneus tertius</text></g>
+    <text x="87" y="150" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Deep peroneal n.</text>
+    <text x="87" y="166" text-anchor="middle" font-size="8.5" fill="#1e3a8a">Anterior tibial a.</text>
+    <text x="87" y="184" text-anchor="middle" font-size="8" fill="#b91c1c">injury → FOOT DROP</text>
+  </g>
+  <g>
+    <rect x="164" y="30" width="130" height="168" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="229" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Lateral</text>
+    <text x="229" y="62" text-anchor="middle" font-size="8.5" fill="#64748b">= EVERSION</text>
+    <g font-size="9" fill="#7c2d12"><text x="170" y="82">Peroneus (fibularis)</text><text x="170" y="96">longus + brevis</text></g>
+    <text x="229" y="150" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Superficial peroneal n.</text>
+    <text x="229" y="166" text-anchor="middle" font-size="8.5" fill="#7c2d12">Fibular (peroneal) a.</text>
+  </g>
+  <g>
+    <rect x="298" y="30" width="156" height="168" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="376" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#047857">Posterior</text>
+    <text x="376" y="62" text-anchor="middle" font-size="8.5" fill="#64748b">= PLANTARFLEXION</text>
+    <g font-size="9" fill="#065f46"><text x="304" y="82">Superficial: gastrocnemius,</text><text x="304" y="96">soleus → Achilles</text><text x="304" y="112">Deep: FDL, FHL,</text><text x="304" y="126">tibialis posterior, popliteus</text></g>
+    <text x="376" y="164" text-anchor="middle" font-size="9" font-weight="700" fill="#047857">Tibial n.</text>
+    <text x="376" y="180" text-anchor="middle" font-size="8.5" fill="#065f46">Posterior tibial a.</text>
+  </g>
+  <text x="16" y="222" font-size="9.5" fill="#0369a1">Compartment syndrome = 6 P's (Pain out of proportion, Paresthesia, Pallor, Pulselessness, Poikilothermia, Paralysis) → fasciotomy.</text>
+</svg>`;
+
+export const FOOT_ARCHES = `<svg viewBox="0 0 460 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Arches of the foot" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Arches of the foot (shock absorption + tripod)</text>
+  <path d="M40,150 q40,-70 130,-72 q120,-2 220,72" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="40" cy="150" r="6" fill="#dc2626"/><text x="20" y="172" font-size="8.5" fill="#b91c1c">calcaneus</text>
+  <circle cx="390" cy="150" r="6" fill="#dc2626"/><text x="360" y="172" font-size="8.5" fill="#b91c1c">1st MT head</text>
+  <circle cx="170" cy="80" r="7" fill="#f59e0b"/><text x="150" y="72" font-size="9" font-weight="700" fill="#b45309">talus = keystone</text>
+  <text x="60" y="120" font-size="9.5" fill="#1d4ed8" font-weight="700">Medial longitudinal arch</text>
+  <text x="60" y="134" font-size="8.5" fill="#1e3a8a">(highest; spring ligament + tibialis posterior)</text>
+  <g font-size="9.5">
+    <text x="240" y="96" fill="#334155" font-weight="700">Supports:</text>
+    <text x="240" y="112" fill="#475569">• Spring (plantar calcaneonavicular) ligament</text>
+    <text x="240" y="126" fill="#475569">• Plantar aponeurosis (tie beam)</text>
+    <text x="240" y="140" fill="#475569">• Tibialis posterior + peroneus longus (slings)</text>
+  </g>
+  <text x="16" y="196" font-size="9.5" fill="#0369a1">Tripod: heel + 1st &amp; 5th metatarsal heads. Pes planus (flat, PTTD) vs pes cavus (high, e.g. CMT).</text>
+  <text x="16" y="212" font-size="9.5" fill="#475569">Plantar fasciitis = heel pain from plantar aponeurosis; hallux valgus = big-toe deviation (bunion).</text>
+</svg>`;

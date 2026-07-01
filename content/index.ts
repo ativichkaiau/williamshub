@@ -444,6 +444,20 @@ import smallLargeIntestine from './lectures/small-large-intestine';
 import liverBiliaryPancreas from './lectures/liver-biliary-pancreas';
 import giBloodSupplyPortalSystem from './lectures/gi-blood-supply-portal-system';
 
+// ── HGA Part 5: Lower Limb ────────────────────────────────────────────────────
+// L19 — Lower Limb Bones & Anterior/Medial Thigh
+import lowerLimbBonesHipJoint from './lectures/lower-limb-bones-hip-joint';
+import femoralTriangleAnteriorThigh from './lectures/femoral-triangle-anterior-thigh';
+import medialThighAdductors from './lectures/medial-thigh-adductors';
+// L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa
+import glutealRegionNerves from './lectures/gluteal-region-nerves';
+import posteriorThighSciatic from './lectures/posterior-thigh-sciatic';
+import poplitealFossa from './lectures/popliteal-fossa';
+// L21 — Leg & Foot
+import legCompartments from './lectures/leg-compartments';
+import ankleFootBonesArches from './lectures/ankle-foot-bones-arches';
+import soleOfFoot from './lectures/sole-of-foot';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -677,6 +691,14 @@ export const lectures: Lecture[] = [
   posteriorAbdominalWallDiaphragm, lumbarPlexus, kidneyUreterAnatomy, bladderUrethra,
   // L18 Intestines, Liver & Biliary System
   smallLargeIntestine, liverBiliaryPancreas, giBloodSupplyPortalSystem,
+
+  // ── HGA Part 5: Lower Limb ──
+  // L19 Lower Limb Bones & Anterior/Medial Thigh
+  lowerLimbBonesHipJoint, femoralTriangleAnteriorThigh, medialThighAdductors,
+  // L20 Gluteal Region, Posterior Thigh & Popliteal Fossa
+  glutealRegionNerves, posteriorThighSciatic, poplitealFossa,
+  // L21 Leg & Foot
+  legCompartments, ankleFootBonesArches, soleOfFoot,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

@@ -175,6 +175,10 @@ export const subjectOfSource: Record<string, string> = {
   'L16 — Anterior Abdominal Wall & Stomach': 'HGA',
   'L17 — Posterior Abdominal Wall & Urinary System': 'HGA',
   'L18 — Intestines, Liver & Biliary System': 'HGA',
+  // Part 5: Lower Limb
+  'L19 — Lower Limb Bones & Anterior/Medial Thigh': 'HGA',
+  'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
+  'L21 — Leg & Foot': 'HGA',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
@@ -217,6 +221,10 @@ export const partOfSource: Record<string, string> = {
   'L16 — Anterior Abdominal Wall & Stomach': 'Part 4 · Oral Cavity & Abdomen',
   'L17 — Posterior Abdominal Wall & Urinary System': 'Part 4 · Oral Cavity & Abdomen',
   'L18 — Intestines, Liver & Biliary System': 'Part 4 · Oral Cavity & Abdomen',
+  // HGA Part 5 — Lower Limb
+  'L19 — Lower Limb Bones & Anterior/Medial Thigh': 'Part 5 · Lower Limb',
+  'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'Part 5 · Lower Limb',
+  'L21 — Leg & Foot': 'Part 5 · Lower Limb',
 };
 
 export function subjectSlug(code: string): string {

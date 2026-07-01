@@ -122,6 +122,12 @@ export const subjectOfSource: Record<string, string> = {
   'L4 — Nucleotide Metabolism': 'MBH',
   'L5 — DNA Replication': 'MBH',
   'L6 — DNA Repair & Human Genome': 'MBH',
+  'L7 — Transcription & RNA Processing': 'MBH',
+  'L8 — Translation & Protein Processing': 'MBH',
+  'L9 — Control of Gene Expression': 'MBH',
+  'L10 — Molecular Techniques': 'MBH',
+  'L11 — Carbohydrate Chemistry': 'MBH',
+  'L12 — Lipid Chemistry': 'MBH',
 };
 
 export function subjectSlug(code: string): string {

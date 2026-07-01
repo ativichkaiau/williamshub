@@ -203,6 +203,24 @@ import eukaryoticReplicationTelomeres from './lectures/eukaryotic-replication-te
 import mutationsDnaDamage from './lectures/mutations-dna-damage';
 import dnaRepairMechanisms from './lectures/dna-repair-mechanisms';
 import humanGenomeOrganization from './lectures/human-genome-organization';
+// L7 — Transcription & RNA Processing
+import transcriptionMechanism from './lectures/transcription-mechanism';
+import rnaProcessing from './lectures/rna-processing';
+// L8 — Translation & Protein Processing
+import geneticCodeTranslation from './lectures/genetic-code-translation';
+import proteinTargetingPtm from './lectures/protein-targeting-ptm';
+// L9 — Control of Gene Expression
+import epigeneticsTranscriptionalControl from './lectures/epigenetics-transcriptional-control';
+import postTranscriptionalTranslationalControl from './lectures/post-transcriptional-translational-control';
+// L10 — Molecular Techniques
+import cloningPcrSequencing from './lectures/cloning-pcr-sequencing';
+import geneTherapyCrispr from './lectures/gene-therapy-crispr';
+// L11 — Carbohydrate Chemistry
+import carbohydrateStructureIsomerism from './lectures/carbohydrate-structure-isomerism';
+import glycosidicBondsPolysaccharides from './lectures/glycosidic-bonds-polysaccharides';
+// L12 — Lipid Chemistry
+import fattyAcidsMembranes from './lectures/fatty-acids-membranes';
+import cholesterolSteroidsLipoproteins from './lectures/cholesterol-steroids-lipoproteins';
 
 export * from './curriculum';
 
@@ -303,6 +321,18 @@ export const lectures: Lecture[] = [
   dnaReplicationMachinery, eukaryoticReplicationTelomeres,
   // L6 DNA Repair & Human Genome
   mutationsDnaDamage, dnaRepairMechanisms, humanGenomeOrganization,
+  // L7 Transcription & RNA Processing
+  transcriptionMechanism, rnaProcessing,
+  // L8 Translation & Protein Processing
+  geneticCodeTranslation, proteinTargetingPtm,
+  // L9 Control of Gene Expression
+  epigeneticsTranscriptionalControl, postTranscriptionalTranslationalControl,
+  // L10 Molecular Techniques
+  cloningPcrSequencing, geneTherapyCrispr,
+  // L11 Carbohydrate Chemistry
+  carbohydrateStructureIsomerism, glycosidicBondsPolysaccharides,
+  // L12 Lipid Chemistry
+  fattyAcidsMembranes, cholesterolSteroidsLipoproteins,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

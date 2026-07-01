@@ -507,3 +507,54 @@ export const CSF_PROFILES = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org
   </g>
   <text x="16" y="186" font-size="10" fill="#0369a1">Low glucose = bacterial or TB/fungal; normal glucose + lymphocytes = viral</text>
 </svg>`;
+
+export const GENE_EXPRESSION_FLOW = `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Gene expression flow: DNA to RNA processing to protein" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="440" height="250" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <rect x="150" y="14" width="140" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="220" y="31" text-anchor="middle">DNA (gene)</text>
+    <line x1="220" y1="40" x2="220" y2="58" stroke="#94a3b8"/><text x="228" y="53" font-size="11" fill="#dc2626">Transcription (RNA pol II)</text>
+    <rect x="150" y="58" width="140" height="26" rx="6" fill="#f5f3ff" stroke="#ddd6fe"/><text x="220" y="75" text-anchor="middle">pre-mRNA (hnRNA)</text>
+    <line x1="220" y1="84" x2="220" y2="102" stroke="#94a3b8"/><text x="228" y="97" font-size="11" fill="#7c3aed">5′ cap · splicing · poly-A</text>
+    <rect x="150" y="102" width="140" height="26" rx="6" fill="#eff6ff" stroke="#bfdbfe"/><text x="220" y="119" text-anchor="middle">mature mRNA</text>
+    <line x1="220" y1="128" x2="220" y2="146" stroke="#94a3b8"/><text x="228" y="141" font-size="11" fill="#0369a1">Translation (ribosome)</text>
+    <rect x="150" y="146" width="140" height="26" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/><text x="220" y="163" text-anchor="middle">polypeptide</text>
+    <line x1="220" y1="172" x2="220" y2="190" stroke="#94a3b8"/><text x="228" y="185" font-size="11" fill="#16a34a">Post-translational modification</text>
+    <rect x="150" y="190" width="140" height="26" rx="6" fill="#fef9c3" stroke="#fde047"/><text x="220" y="207" text-anchor="middle">functional protein</text>
+  </g>
+  <text x="16" y="236" font-size="10.5" fill="#475569">Prokaryotes: no cap/splicing/poly-A; transcription & translation coupled</text>
+</svg>`;
+
+export const FATTY_ACID_TYPES = `<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Saturated, cis-unsaturated and trans-unsaturated fatty acids" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">Fatty-acid types</text>
+  <!-- saturated: straight zigzag -->
+  <circle cx="30" cy="60" r="7" fill="#fca5a5" stroke="#dc2626"/>
+  <polyline points="37,60 55,52 73,60 91,52 109,60 127,52 145,60" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="180" y="56" font-size="11" fill="#334155">Saturated — straight, packs tightly,</text>
+  <text x="180" y="70" font-size="11" fill="#475569">solid at RT (higher melting point)</text>
+  <!-- cis-unsaturated: kinked -->
+  <circle cx="30" cy="118" r="7" fill="#fca5a5" stroke="#dc2626"/>
+  <polyline points="37,118 55,110 73,118 88,104 78,90 96,86 114,94 132,86 150,94" fill="none" stroke="#16a34a" stroke-width="2"/>
+  <text x="180" y="110" font-size="11" fill="#334155">Cis-unsaturated — kinked, fluid,</text>
+  <text x="180" y="124" font-size="11" fill="#475569">liquid at RT (lower melting point)</text>
+  <!-- trans-unsaturated: straight-ish -->
+  <circle cx="30" cy="170" r="7" fill="#fca5a5" stroke="#dc2626"/>
+  <polyline points="37,170 55,162 73,170 91,162 105,170 123,162 141,170" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="180" y="166" font-size="11" fill="#334155">Trans-unsaturated — straight (artificial),</text>
+  <text x="180" y="180" font-size="11" fill="#475569">raises cardiovascular risk</text>
+  <text x="16" y="200" font-size="10" fill="#0369a1">ω-number counts double bond from the methyl (ω) end: ω-3, ω-6 essential FAs</text>
+</svg>`;
+
+export const LIPOPROTEIN_CLASSES = `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lipoprotein classes and their roles" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lipoproteins (↑ protein = ↑ density)</text>
+  <g font-size="10.5">
+    <line x1="14" y1="30" x2="446" y2="30" stroke="#cbd5e1"/>
+    <text x="18" y="46" font-weight="700" fill="#7c3aed">Class</text><text x="150" y="46" font-weight="700" fill="#7c3aed">Main lipid</text><text x="290" y="46" font-weight="700" fill="#7c3aed">Role</text>
+    <text x="18" y="72" fill="#334155">Chylomicron</text><text x="150" y="72" fill="#475569">triglyceride (diet)</text><text x="290" y="72" fill="#475569">dietary fat → tissues</text>
+    <text x="18" y="98" fill="#334155">VLDL</text><text x="150" y="98" fill="#475569">triglyceride (liver)</text><text x="290" y="98" fill="#475569">liver TG → tissues</text>
+    <text x="18" y="124" fill="#334155">LDL</text><text x="150" y="124" fill="#475569">cholesterol</text><text x="290" y="124" fill="#dc2626">delivers chol (“bad”)</text>
+    <text x="18" y="150" fill="#334155">HDL</text><text x="150" y="150" fill="#475569">cholesterol/protein</text><text x="290" y="150" fill="#16a34a">reverse transport (“good”)</text>
+  </g>
+  <text x="16" y="182" font-size="10.5" fill="#0369a1">Chylomicron = most TG / lowest density; HDL = most protein / highest density</text>
+</svg>`;

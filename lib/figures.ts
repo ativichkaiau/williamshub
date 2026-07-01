@@ -737,3 +737,61 @@ export const CUSHING_WORKUP = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.o
     <text x="410" y="234" text-anchor="middle" font-weight="700" fill="#15803d">SUPPRESSED</text>
   </g>
 </svg>`;
+
+export const RAIU_PATTERNS = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Radioactive iodine uptake patterns in hyperthyroidism" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Radioactive iodine uptake (RAIU) in thyrotoxicosis</text>
+  <!-- Graves: diffuse -->
+  <g>
+    <rect x="16" y="34" width="140" height="120" rx="8" fill="#fff1f2" stroke="#fda4af"/>
+    <text x="86" y="52" text-anchor="middle" font-size="10.5" font-weight="700" fill="#be123c">Diffuse ↑ uptake</text>
+    <ellipse cx="66" cy="100" rx="16" ry="26" fill="#fb7185"/><ellipse cx="106" cy="100" rx="16" ry="26" fill="#fb7185"/><rect x="80" y="92" width="12" height="16" fill="#fb7185"/>
+    <text x="86" y="140" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9f1239">Graves disease</text>
+  </g>
+  <!-- Toxic adenoma: focal -->
+  <g>
+    <rect x="166" y="34" width="140" height="120" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="236" y="52" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Focal ("hot") nodule</text>
+    <ellipse cx="216" cy="100" rx="16" ry="26" fill="#fed7aa"/><ellipse cx="256" cy="100" rx="16" ry="26" fill="#fed7aa"/><circle cx="216" cy="100" r="11" fill="#ea580c"/>
+    <text x="236" y="140" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Toxic adenoma</text>
+  </g>
+  <!-- Thyroiditis: decreased -->
+  <g>
+    <rect x="316" y="34" width="138" height="120" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="385" y="52" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">↓ uptake</text>
+    <ellipse cx="365" cy="100" rx="16" ry="26" fill="#dbeafe" stroke="#93c5fd"/><ellipse cx="405" cy="100" rx="16" ry="26" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="385" y="140" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Thyroiditis</text>
+  </g>
+  <text x="16" y="180" font-size="10" fill="#475569">Thyroiditis (or exogenous T4) releases preformed hormone → gland uptake is LOW.</text>
+  <text x="16" y="196" font-size="10" fill="#0369a1">High T4/T3 with LOW TSH confirms thyrotoxicosis; RAIU pattern gives the cause.</text>
+</svg>`;
+
+export const THYROID_MALIGNANCY = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Thyroid carcinoma types compared" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Thyroid carcinomas</text>
+  <g>
+    <rect x="14" y="30" width="112" height="176" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="70" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#047857">Papillary (85%)</text>
+    <g font-size="8.6" fill="#065f46"><text x="20" y="66">Follicular cell</text><text x="20" y="80">Orphan-Annie</text><text x="20" y="92">nuclei, grooves</text><text x="20" y="106">Psammoma bodies</text><text x="20" y="120">Lymphatic spread</text><text x="20" y="134">Radiation, Hashimoto</text><text x="20" y="148">Cold nodule / FNA</text></g>
+    <text x="70" y="196" text-anchor="middle" font-size="9.5" font-weight="700" fill="#047857">BEST prognosis</text>
+  </g>
+  <g>
+    <rect x="130" y="30" width="112" height="176" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="186" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Follicular (5-15%)</text>
+    <g font-size="8.6" fill="#1e3a8a"><text x="136" y="66">Follicular cell</text><text x="136" y="80">Capsular +</text><text x="136" y="92">vascular invasion</text><text x="136" y="106">Hematogenous</text><text x="136" y="120">(bone, lung)</text><text x="136" y="134">FNA can't diagnose</text><text x="136" y="148">(needs capsule)</text></g>
+    <text x="186" y="196" text-anchor="middle" font-size="9.5" fill="#1d4ed8">Good prognosis</text>
+  </g>
+  <g>
+    <rect x="246" y="30" width="112" height="176" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+    <text x="302" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Medullary (5%)</text>
+    <g font-size="8.6" fill="#7c2d12"><text x="252" y="66">Parafollicular</text><text x="252" y="80">C cells</text><text x="252" y="94">↑ Calcitonin</text><text x="252" y="108">Amyloid stroma</text><text x="252" y="122">MEN 2 / RET</text><text x="252" y="136">(sporadic too)</text></g>
+    <text x="302" y="196" text-anchor="middle" font-size="9.5" fill="#c2410c">Screen RET</text>
+  </g>
+  <g>
+    <rect x="362" y="30" width="104" height="176" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+    <text x="414" y="48" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b91c1c">Anaplastic (&lt;5%)</text>
+    <g font-size="8.6" fill="#7f1d1d"><text x="368" y="66">Elderly (&gt;60)</text><text x="368" y="80">Giant &amp; spindle</text><text x="368" y="94">cells</text><text x="368" y="108">Rapid invasion</text><text x="368" y="122">+ metastasis</text></g>
+    <text x="414" y="196" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">WORST prognosis</text>
+  </g>
+  <text x="16" y="228" font-size="10" fill="#0369a1">Papillary = commonest &amp; nuclear features; follicular = invasion; medullary = calcitonin/amyloid; anaplastic = lethal.</text>
+</svg>`;

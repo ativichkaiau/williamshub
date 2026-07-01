@@ -274,6 +274,16 @@ import multipleEndocrineNeoplasia from './lectures/multiple-endocrine-neoplasia'
 // L4 — Cushing Syndrome
 import cushingDiagnosisWorkup from './lectures/cushing-diagnosis-workup';
 import cushingManagementSteroidWithdrawal from './lectures/cushing-management-steroid-withdrawal';
+// L5 — Corticosteroids & Antagonists
+import corticosteroidPharmacology from './lectures/corticosteroid-pharmacology';
+import corticosteroidAntagonists from './lectures/corticosteroid-antagonists';
+// L6 — Thyroid & Parathyroid Pathology
+import hyperthyroidismGraves from './lectures/hyperthyroidism-graves';
+import hypothyroidismGoiter from './lectures/hypothyroidism-goiter';
+import thyroiditis from './lectures/thyroiditis';
+import thyroidNeoplasms from './lectures/thyroid-neoplasms';
+import hyperparathyroidism from './lectures/hyperparathyroidism';
+import hypoparathyroidism from './lectures/hypoparathyroidism';
 
 export * from './curriculum';
 
@@ -415,6 +425,11 @@ export const lectures: Lecture[] = [
   pheochromocytomaParaganglioma, neuroblastoma, multipleEndocrineNeoplasia,
   // L4 Cushing Syndrome
   cushingDiagnosisWorkup, cushingManagementSteroidWithdrawal,
+  // L5 Corticosteroids & Antagonists
+  corticosteroidPharmacology, corticosteroidAntagonists,
+  // L6 Thyroid & Parathyroid Pathology
+  hyperthyroidismGraves, hypothyroidismGoiter, thyroiditis, thyroidNeoplasms,
+  hyperparathyroidism, hypoparathyroidism,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

@@ -130,6 +130,8 @@ export const subjectOfSource: Record<string, string> = {
   'L2 — Pituitary & Hypothalamic Drugs': 'HEN-2',
   'L3 — Adrenal Pathology & MEN': 'HEN-2',
   'L4 — Cushing Syndrome': 'HEN-2',
+  'L5 — Corticosteroids & Antagonists': 'HEN-2',
+  'L6 — Thyroid & Parathyroid Pathology': 'HEN-2',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',

@@ -132,6 +132,12 @@ export const subjectOfSource: Record<string, string> = {
   'L4 — Cushing Syndrome': 'HEN-2',
   'L5 — Corticosteroids & Antagonists': 'HEN-2',
   'L6 — Thyroid & Parathyroid Pathology': 'HEN-2',
+  'L7 — Clinical Pathology in Diabetes Mellitus': 'HEN-2',
+  'L8 — Drugs Used in Thyroid Diseases': 'HEN-2',
+  'L9 — Drugs Used in Parathyroid Diseases': 'HEN-2',
+  'L10 — Investigations in Diabetes Mellitus': 'HEN-2',
+  'L11 — DKA & Thyroid Storm': 'HEN-2',
+  'L12 — Drugs Used in Diabetes': 'HEN-2',
 
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',

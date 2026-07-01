@@ -284,6 +284,33 @@ import thyroiditis from './lectures/thyroiditis';
 import thyroidNeoplasms from './lectures/thyroid-neoplasms';
 import hyperparathyroidism from './lectures/hyperparathyroidism';
 import hypoparathyroidism from './lectures/hypoparathyroidism';
+// L7 — Clinical Pathology in Diabetes Mellitus
+import type1DiabetesPathogenesis from './lectures/type1-diabetes-pathogenesis';
+import insulinResistanceType2Diabetes from './lectures/insulin-resistance-type2-diabetes';
+import diabetesComplicationsOverview from './lectures/diabetes-complications-overview';
+// L8 — Drugs Used in Thyroid Diseases
+import thyroidHormoneReplacement from './lectures/thyroid-hormone-replacement';
+import thioamidesAntithyroidDrugs from './lectures/thioamides-antithyroid-drugs';
+import iodideRadioiodineThyrotoxicosis from './lectures/iodide-radioiodine-thyrotoxicosis';
+// L9 — Drugs Used in Parathyroid Diseases
+import severeHypercalcemiaTherapy from './lectures/severe-hypercalcemia-therapy';
+import secondaryHyperparathyroidismCkd from './lectures/secondary-hyperparathyroidism-ckd';
+import hypoparathyroidismTreatment from './lectures/hypoparathyroidism-treatment';
+// L10 — Investigations in Diabetes Mellitus
+import diabetesDiagnosticCriteriaGdm from './lectures/diabetes-diagnostic-criteria-gdm';
+import glucoseSpecimensMonitoring from './lectures/glucose-specimens-monitoring';
+import hba1cFructosamine from './lectures/hba1c-fructosamine';
+import diabetesKetoneAlbuminuriaTests from './lectures/diabetes-ketone-albuminuria-tests';
+// L11 — DKA & Thyroid Storm
+import dkaHhsRecognition from './lectures/dka-hhs-recognition';
+import dkaHhsManagement from './lectures/dka-hhs-management';
+import thyroidStormRecognitionManagement from './lectures/thyroid-storm-recognition-management';
+// L12 — Drugs Used in Diabetes
+import insulinTherapyRegimens from './lectures/insulin-therapy-regimens';
+import insulinSecretagogues from './lectures/insulin-secretagogues';
+import incretinBasedTherapy from './lectures/incretin-based-therapy';
+import metforminThiazolidinediones from './lectures/metformin-thiazolidinediones';
+import sglt2AlphaGlucosidaseSelection from './lectures/sglt2-alpha-glucosidase-selection';
 
 export * from './curriculum';
 
@@ -430,6 +457,19 @@ export const lectures: Lecture[] = [
   // L6 Thyroid & Parathyroid Pathology
   hyperthyroidismGraves, hypothyroidismGoiter, thyroiditis, thyroidNeoplasms,
   hyperparathyroidism, hypoparathyroidism,
+  // L7 Clinical Pathology in Diabetes Mellitus
+  type1DiabetesPathogenesis, insulinResistanceType2Diabetes, diabetesComplicationsOverview,
+  // L8 Drugs Used in Thyroid Diseases
+  thyroidHormoneReplacement, thioamidesAntithyroidDrugs, iodideRadioiodineThyrotoxicosis,
+  // L9 Drugs Used in Parathyroid Diseases
+  severeHypercalcemiaTherapy, secondaryHyperparathyroidismCkd, hypoparathyroidismTreatment,
+  // L10 Investigations in Diabetes Mellitus
+  diabetesDiagnosticCriteriaGdm, glucoseSpecimensMonitoring, hba1cFructosamine, diabetesKetoneAlbuminuriaTests,
+  // L11 DKA & Thyroid Storm
+  dkaHhsRecognition, dkaHhsManagement, thyroidStormRecognitionManagement,
+  // L12 Drugs Used in Diabetes
+  insulinTherapyRegimens, insulinSecretagogues, incretinBasedTherapy,
+  metforminThiazolidinediones, sglt2AlphaGlucosidaseSelection,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

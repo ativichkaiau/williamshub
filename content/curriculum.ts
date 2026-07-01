@@ -103,6 +103,11 @@ export const subjectOfSource: Record<string, string> = {
   'L4 — Common Eye Disorders': 'HNS-2',
   'L5 — CNS Trauma & Hemorrhage': 'HNS-2',
   'L6 — Metabolic & Regulatory Disorders': 'HNS-2',
+  'L7 — CNS Pharmacology & Stimulants': 'HNS-2',
+  'L8 — Antiepileptic Drugs': 'HNS-2',
+  'L9 — Antiparkinson Agents': 'HNS-2',
+  'L10 — CNS Neoplasms': 'HNS-2',
+  'L11 — Drugs for Ear Disorders': 'HNS-2',
 };
 
 export function subjectSlug(code: string): string {

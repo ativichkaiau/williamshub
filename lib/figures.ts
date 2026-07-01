@@ -306,3 +306,62 @@ export const WEBER_RINNE = `<svg viewBox="0 0 460 190" xmlns="http://www.w3.org/
     <text x="330" y="146">→ normal (good) ear</text>
   </g>
 </svg>`;
+
+export const DOPAMINE_PATHWAY = `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Dopamine synthesis and metabolism with antiparkinson drug block points" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="260" rx="10" fill="#fbfbff"/>
+  <g font-size="12" fill="#334155">
+    <rect x="160" y="12" width="140" height="26" rx="6" fill="#eef2ff" stroke="#c7d2fe"/><text x="230" y="29" text-anchor="middle">Tyrosine</text>
+    <line x1="230" y1="38" x2="230" y2="58" stroke="#94a3b8"/><text x="238" y="52" font-size="11" fill="#475569">tyrosine hydroxylase</text>
+    <rect x="150" y="58" width="160" height="26" rx="6" fill="#dcfce7" stroke="#86efac"/><text x="230" y="75" text-anchor="middle">L-DOPA  (given as drug)</text>
+    <line x1="230" y1="84" x2="230" y2="104" stroke="#94a3b8"/>
+    <text x="238" y="98" font-size="11" fill="#475569">DOPA decarboxylase</text>
+    <text x="238" y="112" font-size="11" fill="#dc2626">✗ Carbidopa / benserazide (periphery)</text>
+    <rect x="165" y="120" width="130" height="26" rx="6" fill="#fef9c3" stroke="#fde047"/><text x="230" y="137" text-anchor="middle">Dopamine → D-receptors</text>
+    <line x1="230" y1="146" x2="230" y2="176" stroke="#94a3b8"/>
+    <text x="238" y="164" font-size="11" fill="#475569">MAO-B  · COMT</text>
+    <text x="238" y="178" font-size="11" fill="#dc2626">✗ Selegiline/rasagiline · ✗ Entacapone/tolcapone</text>
+    <rect x="150" y="186" width="160" height="26" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/><text x="230" y="203" text-anchor="middle">Inactive metabolites</text>
+  </g>
+  <text x="16" y="238" font-size="11" fill="#7c3aed">Dopamine agonists (pramipexole, ropinirole, apomorphine) act directly at D-receptors →</text>
+</svg>`;
+
+export const AED_TARGETS = `<svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Antiepileptic drug targets at the synapse" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="22" font-size="12" font-weight="700" fill="#334155">AED targets: ↓ excitation, ↑ inhibition</text>
+  <!-- presynaptic terminal -->
+  <path d="M30,40 q120,-8 200,20 q10,50 -40,70 q-90,20 -160,-10 Z" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="70" y="70" font-size="11" fill="#1e3a8a">Presynaptic</text>
+  <circle cx="150" cy="86" r="9" fill="#bfdbfe" stroke="#3b82f6"/><text x="150" y="90" font-size="9" text-anchor="middle" fill="#1e3a8a">SV2A</text>
+  <g font-size="10.5" fill="#b91c1c">
+    <text x="250" y="52">Na⁺ channel ✗ — phenytoin, carbamazepine,</text>
+    <text x="262" y="65">lamotrigine, lacosamide, valproate</text>
+    <text x="250" y="88">Ca²⁺ channel ✗ — ethosuximide (T-type),</text>
+    <text x="262" y="101">gabapentin/pregabalin (α2δ)</text>
+    <text x="250" y="124">SV2A vesicle ✗ — levetiracetam</text>
+    <text x="250" y="147">AMPA/glutamate ✗ — perampanel, felbamate</text>
+  </g>
+  <!-- postsynaptic -->
+  <rect x="30" y="150" width="400" height="70" rx="10" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="45" y="172" font-size="11" fill="#166534">Postsynaptic</text>
+  <rect x="150" y="160" width="40" height="18" rx="4" fill="#bbf7d0" stroke="#16a34a"/><text x="170" y="173" font-size="9" text-anchor="middle" fill="#166534">GABA-A</text>
+  <text x="205" y="173" font-size="10.5" fill="#166534">Cl⁻ ↑ (inhibition) — benzodiazepines, phenobarbital</text>
+  <text x="45" y="205" font-size="10.5" fill="#166534">Broad-spectrum: valproate, topiramate, lamotrigine act at multiple targets</text>
+</svg>`;
+
+export const CNS_TUMOR_LOCATIONS = `<svg viewBox="0 0 460 270" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Common CNS tumor locations on a sagittal brain" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="460" height="270" rx="10" fill="#fbfbff"/>
+  <!-- cerebrum -->
+  <path d="M60,150 C55,70 150,30 230,40 C300,48 340,90 335,140 C335,155 320,165 300,165 L120,165 C90,165 62,165 60,150 Z" fill="#eef2ff" stroke="#94a3b8" stroke-width="1.6"/>
+  <!-- brainstem -->
+  <path d="M250,165 q10,45 -6,70 q-18,4 -20,-4 q6,-35 4,-66 Z" fill="#e2e8f0" stroke="#94a3b8"/>
+  <!-- cerebellum -->
+  <path d="M300,165 q60,4 66,44 q2,32 -40,36 q-40,2 -44,-30 q-2,-40 18,-50 Z" fill="#e0e7ff" stroke="#94a3b8"/>
+  <!-- markers -->
+  <g font-size="10.5">
+    <circle cx="160" cy="95" r="5" fill="#dc2626"/><text x="14" y="70" fill="#b91c1c">Glioblastoma / astrocytoma</text><text x="14" y="83" fill="#b91c1c">(hemisphere; adults) · mets</text>
+    <circle cx="120" cy="52" r="5" fill="#7c3aed"/><text x="70" y="30" fill="#6d28d9">Meningioma (dura-based)</text>
+    <circle cx="335" cy="205" r="5" fill="#0891b2"/><text x="300" y="255" fill="#0e7490">Medulloblastoma &amp;</text><text x="300" y="267" fill="#0e7490">pilocytic (cerebellum, kids)</text>
+    <circle cx="262" cy="188" r="5" fill="#16a34a"/><text x="200" y="150" fill="#15803d">Ependymoma (4th ventricle)</text>
+    <circle cx="238" cy="150" r="5" fill="#d97706"/><text x="150" y="120" fill="#b45309">Pituitary (sella)</text>
+  </g>
+</svg>`;

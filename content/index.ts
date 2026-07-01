@@ -129,6 +129,27 @@ import alteredMentalStatusComa from './lectures/altered-mental-status-coma';
 import wernickeKorsakoff from './lectures/wernicke-korsakoff';
 import hepaticUremicEncephalopathy from './lectures/hepatic-uremic-encephalopathy';
 import periodicParalysis from './lectures/periodic-paralysis';
+// L7 — CNS Pharmacology & Stimulants
+import cnsPharmacologyFoundations from './lectures/cns-pharmacology-foundations';
+import cnsNeurotransmitters from './lectures/cns-neurotransmitters';
+import cnsStimulants from './lectures/cns-stimulants';
+// L8 — Antiepileptic Drugs
+import aedsPrinciplesTargets from './lectures/aeds-principles-targets';
+import aedsSodiumChannelBlockers from './lectures/aeds-sodium-channel-blockers';
+import aedsGabaAndAbsence from './lectures/aeds-gaba-and-absence';
+import aedsBroadSpectrum from './lectures/aeds-broad-spectrum';
+// L9 — Antiparkinson Agents
+import levodopaAndAdjuncts from './lectures/levodopa-and-adjuncts';
+import dopamineAgonistsAntimuscarinics from './lectures/dopamine-agonists-antimuscarinics';
+// L10 — CNS Neoplasms
+import astrocytomaGlioblastoma from './lectures/astrocytoma-glioblastoma';
+import otherGliomas from './lectures/other-gliomas';
+import pediatricEmbryonalTumors from './lectures/pediatric-embryonal-tumors';
+import meningiomaSchwannomaPituitary from './lectures/meningioma-schwannoma-pituitary';
+import cnsLymphomaMetastases from './lectures/cns-lymphoma-metastases';
+// L11 — Drugs for Ear Disorders
+import ototopicalDrugs from './lectures/ototopical-drugs';
+import vertigoVestibularDrugs from './lectures/vertigo-vestibular-drugs';
 
 export * from './curriculum';
 
@@ -191,6 +212,16 @@ export const lectures: Lecture[] = [
   cnsCellularReactions, traumaticBrainSpinalInjury, raisedIcpHerniation, epiduralSubduralHematoma, sahAneurysmAvmIph,
   // L6 Metabolic & Regulatory Disorders
   alteredMentalStatusComa, wernickeKorsakoff, hepaticUremicEncephalopathy, periodicParalysis,
+  // L7 CNS Pharmacology & Stimulants
+  cnsPharmacologyFoundations, cnsNeurotransmitters, cnsStimulants,
+  // L8 Antiepileptic Drugs
+  aedsPrinciplesTargets, aedsSodiumChannelBlockers, aedsGabaAndAbsence, aedsBroadSpectrum,
+  // L9 Antiparkinson Agents
+  levodopaAndAdjuncts, dopamineAgonistsAntimuscarinics,
+  // L10 CNS Neoplasms
+  astrocytomaGlioblastoma, otherGliomas, pediatricEmbryonalTumors, meningiomaSchwannomaPituitary, cnsLymphomaMetastases,
+  // L11 Drugs for Ear Disorders
+  ototopicalDrugs, vertigoVestibularDrugs,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

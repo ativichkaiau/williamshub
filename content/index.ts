@@ -84,10 +84,19 @@ import htnCcbSympatholytics from './lectures/htn-ccb-sympatholytics';
 import vasculitisOverview from './lectures/vasculitis-overview';
 import largeMediumVasculitis from './lectures/large-medium-vasculitis';
 import smallVesselAndVenous from './lectures/small-vessel-and-venous';
+// L20 — Cardiac Tumors
+import cardiacTumorsOverview from './lectures/cardiac-tumors-overview';
+import cardiacMyxoma from './lectures/cardiac-myxoma';
+import rhabdomyomaAndTumors from './lectures/rhabdomyoma-and-tumors';
+// L21 — Pericardial Disease
+import pericardialEffusion from './lectures/pericardial-effusion';
+import cardiacTamponade from './lectures/cardiac-tamponade';
+import pericarditis from './lectures/pericarditis';
+import constrictiveTuberculousPericarditis from './lectures/constrictive-tuberculous-pericarditis';
 
 export * from './curriculum';
 
-// Registry of all lecture modules, ordered chronologically by lecture (L1 → L19).
+// Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
 // Each module belongs to exactly ONE lecture (its `source`). Add new modules here.
 export const lectures: Lecture[] = [
   // L1
@@ -128,6 +137,10 @@ export const lectures: Lecture[] = [
   antihypertensiveOverview, htnDiureticsRaas, htnCcbSympatholytics,
   // L19
   vasculitisOverview, largeMediumVasculitis, smallVesselAndVenous,
+  // L20
+  cardiacTumorsOverview, cardiacMyxoma, rhabdomyomaAndTumors,
+  // L21
+  pericardialEffusion, cardiacTamponade, pericarditis, constrictiveTuberculousPericarditis,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

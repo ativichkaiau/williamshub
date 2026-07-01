@@ -93,6 +93,8 @@ export const subjectOfSource: Record<string, string> = {
   'L17 — Shock': 'HCVS-2',
   'L18 — Antihypertensive Drugs': 'HCVS-2',
   'L19 — Vascular Diseases II': 'HCVS-2',
+  'L20 — Cardiac Tumors': 'HCVS-2',
+  'L21 — Pericardial Disease': 'HCVS-2',
 };
 
 export function subjectSlug(code: string): string {

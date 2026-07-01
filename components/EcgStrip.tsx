@@ -15,7 +15,8 @@ type Rhythm =
   | 'flutter'
   | 'vt'
   | 'vf'
-  | 'stemi';
+  | 'stemi'
+  | 'electrical-alternans';
 
 type Pt = [number, number];
 const BASE = 80;
@@ -124,6 +125,17 @@ function build(rhythm: Rhythm): Pt[] {
       return p;
     case 'stemi':
       for (let i = 0; i < 3; i++) x = flat(p, sinusBeat(p, x, { st: 15 }), 26);
+      return p;
+    case 'electrical-alternans':
+      for (const amp of [42, 22, 42, 22, 42, 22]) {
+        x = pWave(p, x);
+        x = flat(p, x, 14);
+        p.push([x, BASE], [x + 2, BASE + 6], [x + 6, BASE - amp], [x + 11, BASE + 10], [x + 14, BASE]);
+        x += 14;
+        x = flat(p, x, 8);
+        x = tWave(p, x);
+        x = flat(p, x, 24);
+      }
       return p;
     default:
       return p;

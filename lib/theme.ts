@@ -28,6 +28,8 @@ export const lectureThemes: Record<string, LectureTheme> = {
   l17: { dot: 'bg-yellow-500', text: 'text-yellow-600 dark:text-yellow-400', chipBg: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-200', grad: 'from-yellow-400 to-amber-500' },
   l18: { dot: 'bg-sky-500', text: 'text-sky-600 dark:text-sky-400', chipBg: 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200', grad: 'from-sky-400 to-blue-500' },
   l19: { dot: 'bg-stone-500', text: 'text-stone-600 dark:text-stone-400', chipBg: 'bg-stone-100 text-stone-700 dark:bg-stone-900/40 dark:text-stone-200', grad: 'from-stone-400 to-amber-500' },
+  l20: { dot: 'bg-zinc-500', text: 'text-zinc-600 dark:text-zinc-400', chipBg: 'bg-zinc-100 text-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-200', grad: 'from-zinc-400 to-slate-500' },
+  l21: { dot: 'bg-red-500', text: 'text-red-600 dark:text-red-400', chipBg: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-200', grad: 'from-red-400 to-orange-500' },
 };
 
 // Accepts a slug ('l5') or a source string ('L5 — Vascular Disorders').

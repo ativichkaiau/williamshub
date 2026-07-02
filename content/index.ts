@@ -1114,6 +1114,44 @@ import retrovirusesHiv from './lectures/retroviruses-hiv';
 import arbovirusesMosquitoBorne from './lectures/arboviruses-mosquito-borne';
 import dnaVirusesHerpesviruses from './lectures/dna-viruses-herpesviruses';
 import dnaVirusesOther from './lectures/dna-viruses-other';
+// MHI bacteriology block (L8–L19, 2026-07-02)
+import bacterialStructureCellWall from './lectures/bacterial-structure-cell-wall';
+import bacterialPhysiologyGrowthIdentification from './lectures/bacterial-physiology-growth-identification';
+import bacterialGeneTransfer from './lectures/bacterial-gene-transfer';
+import antibioticResistanceMechanisms from './lectures/antibiotic-resistance-mechanisms';
+import staphylococcusAureus from './lectures/staphylococcus-aureus';
+import coagulaseNegativeStaphylococci from './lectures/coagulase-negative-staphylococci';
+import streptococcusPyogenesAgalactiae from './lectures/streptococcus-pyogenes-agalactiae';
+import streptococcusPneumoniaeEnterococci from './lectures/streptococcus-pneumoniae-enterococci';
+import bacillusAnthracisCereus from './lectures/bacillus-anthracis-cereus';
+import corynebacteriumListeria from './lectures/corynebacterium-listeria';
+import enterobacteralesEcoliKlebsiella from './lectures/enterobacterales-ecoli-klebsiella';
+import salmonellaShigellaYersinia from './lectures/salmonella-shigella-yersinia';
+import vibrioCampylobacterHelicobacter from './lectures/vibrio-campylobacter-helicobacter';
+import pseudomonasBurkholderiaNonfermenters from './lectures/pseudomonas-burkholderia-nonfermenters';
+import neisseriaMeningitidisGonorrhoeae from './lectures/neisseria-meningitidis-gonorrhoeae';
+import haemophilusBordetellaSmallGramNegativeRods from './lectures/haemophilus-bordetella-small-gram-negative-rods';
+import clostridiaAnaerobicPathogens from './lectures/clostridia-anaerobic-pathogens';
+import bacteroidesGramNegativeAnaerobes from './lectures/bacteroides-gram-negative-anaerobes';
+import rickettsiaOrientiaCoxiella from './lectures/rickettsia-orientia-coxiella';
+import chlamydiaSpecies from './lectures/chlamydia-species';
+import mycobacteriumTuberculosisLeprae from './lectures/mycobacterium-tuberculosis-leprae';
+import nocardiaActinomyces from './lectures/nocardia-actinomyces';
+import spirochetesTreponemaBorreliaLeptospira from './lectures/spirochetes-treponema-borrelia-leptospira';
+import mycoplasmaUreaplasma from './lectures/mycoplasma-ureaplasma';
+// MHI mycology block (L20–L25, 2026-07-02)
+import fungalBiologyClassification from './lectures/fungal-biology-classification';
+import antifungalAgentsLabDiagnosis from './lectures/antifungal-agents-lab-diagnosis';
+import mycotoxinsAflatoxin from './lectures/mycotoxins-aflatoxin';
+import mushroomPoisoningSyndromes from './lectures/mushroom-poisoning-syndromes';
+import candidaCandidiasis from './lectures/candida-candidiasis';
+import cryptococcusMalassezia from './lectures/cryptococcus-malassezia';
+import systemicDimorphicFungi from './lectures/systemic-dimorphic-fungi';
+import talaromycesSporothrix from './lectures/talaromyces-sporothrix';
+import dermatophytesTinea from './lectures/dermatophytes-tinea';
+import opportunisticMoldsAspergillusMucorales from './lectures/opportunistic-molds-aspergillus-mucorales';
+import mycetomaEumycetoma from './lectures/mycetoma-eumycetoma';
+import chromoblastomycosisSubcutaneousMycoses from './lectures/chromoblastomycosis-subcutaneous-mycoses';
 
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
@@ -1982,6 +2020,26 @@ export const lectures: Lecture[] = [
   dnaVirusesHerpesviruses,
   // L7 DNA viruses II
   dnaVirusesOther,
+  // MHI bacteriology block (L8–L19, 2026-07-02): 2 modules/lecture
+  bacterialStructureCellWall, bacterialPhysiologyGrowthIdentification,
+  bacterialGeneTransfer, antibioticResistanceMechanisms,
+  staphylococcusAureus, coagulaseNegativeStaphylococci,
+  streptococcusPyogenesAgalactiae, streptococcusPneumoniaeEnterococci,
+  bacillusAnthracisCereus, corynebacteriumListeria,
+  enterobacteralesEcoliKlebsiella, salmonellaShigellaYersinia,
+  vibrioCampylobacterHelicobacter, pseudomonasBurkholderiaNonfermenters,
+  neisseriaMeningitidisGonorrhoeae, haemophilusBordetellaSmallGramNegativeRods,
+  clostridiaAnaerobicPathogens, bacteroidesGramNegativeAnaerobes,
+  rickettsiaOrientiaCoxiella, chlamydiaSpecies,
+  mycobacteriumTuberculosisLeprae, nocardiaActinomyces,
+  spirochetesTreponemaBorreliaLeptospira, mycoplasmaUreaplasma,
+  // MHI mycology block (L20–L25, 2026-07-02): 2 modules/lecture
+  fungalBiologyClassification, antifungalAgentsLabDiagnosis,
+  mycotoxinsAflatoxin, mushroomPoisoningSyndromes,
+  candidaCandidiasis, cryptococcusMalassezia,
+  systemicDimorphicFungi, talaromycesSporothrix,
+  dermatophytesTinea, opportunisticMoldsAspergillusMucorales,
+  mycetomaEumycetoma, chromoblastomycosisSubcutaneousMycoses,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

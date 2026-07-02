@@ -1077,6 +1077,33 @@ import fluidElectrolyteDisorders from './lectures/fluid-electrolyte-disorders';
 import urinaryIncontinenceDrugs from './lectures/urinary-incontinence-drugs';
 import acidBaseDisorders from './lectures/acid-base-disorders';
 import bloodGasAnionGap from './lectures/blood-gas-anion-gap';
+// HRU-2 expansion (2026-07-02): sub-topic deep-dives (to 2.5:1)
+import urinaryTractHostDefenses from './lectures/urinary-tract-host-defenses';
+import uropathogenicEcoliVirulence from './lectures/uropathogenic-ecoli-virulence';
+import catheterAssociatedUti from './lectures/catheter-associated-uti';
+import urineMicroscopyCastsCrystals from './lectures/urine-microscopy-casts-crystals';
+import urineDipstickChemistry from './lectures/urine-dipstick-chemistry';
+import nephrolithiasisUrolithiasis from './lectures/nephrolithiasis-urolithiasis';
+import acutePyelonephritisClinical from './lectures/acute-pyelonephritis-clinical';
+import minimalChangeFsgs from './lectures/minimal-change-fsgs';
+import membranousMembranoproliferativeGn from './lectures/membranous-membranoproliferative-gn';
+import igaNephropathyPostinfectiousGn from './lectures/iga-nephropathy-postinfectious-gn';
+import obstructiveUropathyHydronephrosis from './lectures/obstructive-uropathy-hydronephrosis';
+import acuteInterstitialNephritis from './lectures/acute-interstitial-nephritis';
+import polycysticKidneyDisease from './lectures/polycystic-kidney-disease';
+import renalCellCarcinoma from './lectures/renal-cell-carcinoma';
+import bladderUrothelialCarcinoma from './lectures/bladder-urothelial-carcinoma';
+import renalArteryStenosis from './lectures/renal-artery-stenosis';
+import akiPrerenalIntrinsicPostrenal from './lectures/aki-prerenal-intrinsic-postrenal';
+import ckdMineralBoneDisorder from './lectures/ckd-mineral-bone-disorder';
+import renalReplacementTherapy from './lectures/renal-replacement-therapy';
+import loopThiazideDiuretics from './lectures/loop-thiazide-diuretics';
+import potassiumSparingOsmoticDiuretics from './lectures/potassium-sparing-osmotic-diuretics';
+import nephrotoxicDrugs from './lectures/nephrotoxic-drugs';
+import glomerularDiseaseImmuneMechanisms from './lectures/glomerular-disease-immune-mechanisms';
+import sodiumWaterDisorders from './lectures/sodium-water-disorders';
+import potassiumDisorders from './lectures/potassium-disorders';
+import highAnionGapMetabolicAcidosis from './lectures/high-anion-gap-metabolic-acidosis';
 
 // ── MHI (Microbiology of Human Infectious Diseases) — virology block ──
 import virologyPrinciplesClassification from './lectures/virology-principles-classification';
@@ -1929,6 +1956,16 @@ export const lectures: Lecture[] = [
   acidBaseDisorders,
   // L18 Blood gas & anion gap
   bloodGasAnionGap,
+  // HRU-2 expansion (2026-07-02): sub-topic deep-dives (to 2.5:1)
+  urinaryTractHostDefenses, uropathogenicEcoliVirulence, catheterAssociatedUti,
+  urineMicroscopyCastsCrystals, urineDipstickChemistry, nephrolithiasisUrolithiasis,
+  acutePyelonephritisClinical, minimalChangeFsgs, membranousMembranoproliferativeGn,
+  igaNephropathyPostinfectiousGn, obstructiveUropathyHydronephrosis, acuteInterstitialNephritis,
+  polycysticKidneyDisease, renalCellCarcinoma, bladderUrothelialCarcinoma,
+  renalArteryStenosis, akiPrerenalIntrinsicPostrenal, ckdMineralBoneDisorder,
+  renalReplacementTherapy, loopThiazideDiuretics, potassiumSparingOsmoticDiuretics,
+  nephrotoxicDrugs, glomerularDiseaseImmuneMechanisms, sodiumWaterDisorders,
+  potassiumDisorders, highAnionGapMetabolicAcidosis,
 
   // ── MHI (Microbiology of Human Infectious Diseases) — virology block ──
   // L1 Introduction to medical virology

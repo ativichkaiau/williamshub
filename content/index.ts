@@ -982,6 +982,28 @@ import immunomodulatingAgents from './lectures/immunomodulating-agents';
 import pharmacogenomics from './lectures/pharmacogenomics';
 import adverseDrugReactionsAllergy from './lectures/adverse-drug-reactions-allergy';
 
+// ── HSC (Human Skin and Connective Tissue System) ──
+import dermatologicDiagnosisMorphology from './lectures/dermatologic-diagnosis-morphology';
+import skinAnatomyHistology from './lectures/skin-anatomy-histology';
+import skinAging from './lectures/skin-aging';
+import cutaneousImmunologyHypersensitivity from './lectures/cutaneous-immunology-hypersensitivity';
+import skinPhysiologyThermoregulation from './lectures/skin-physiology-thermoregulation';
+import woundHealing from './lectures/wound-healing';
+import skinInfectionsBacterialFungalViral from './lectures/skin-infections-bacterial-fungal-viral';
+import infestationsHelminthicSkin from './lectures/infestations-helminthic-skin';
+import papulosquamousDiseases from './lectures/papulosquamous-diseases';
+import vesiculobullousDiseases from './lectures/vesiculobullous-diseases';
+import panniculitisVasculitisSkin from './lectures/panniculitis-vasculitis-skin';
+import cutaneousConnectiveTissueDiseases from './lectures/cutaneous-connective-tissue-diseases';
+import cutaneousDrugReactions from './lectures/cutaneous-drug-reactions';
+import pediatricSkinDiseases from './lectures/pediatric-skin-diseases';
+import hairDiseases from './lectures/hair-diseases';
+import pigmentaryDisorders from './lectures/pigmentary-disorders';
+import eczemaDermatitis from './lectures/eczema-dermatitis';
+import acneVulgaris from './lectures/acne-vulgaris';
+import skinNeoplasms from './lectures/skin-neoplasms';
+import dermatologicTherapy from './lectures/dermatologic-therapy';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1721,6 +1743,46 @@ export const lectures: Lecture[] = [
   pharmacogenomics,
   // L15 Drug allergy & ADR
   adverseDrugReactionsAllergy,
+
+  // ── HSC (Human Skin and Connective Tissue System) ──
+  // L1 Dermatologic diagnosis
+  dermatologicDiagnosisMorphology,
+  // L2 Skin anatomy & histology
+  skinAnatomyHistology,
+  // L3 Skin aging
+  skinAging,
+  // L4 Cutaneous immunology
+  cutaneousImmunologyHypersensitivity,
+  // L5 Skin physiology & thermoregulation
+  skinPhysiologyThermoregulation,
+  // L6 Wound healing
+  woundHealing,
+  // L7 Skin infections
+  skinInfectionsBacterialFungalViral,
+  // L8 Infestations & helminths
+  infestationsHelminthicSkin,
+  // L9 Papulosquamous & vesiculobullous
+  papulosquamousDiseases, vesiculobullousDiseases,
+  // L10 Panniculitis & vasculitis
+  panniculitisVasculitisSkin,
+  // L11 Connective tissue diseases
+  cutaneousConnectiveTissueDiseases,
+  // L12 Cutaneous drug reactions
+  cutaneousDrugReactions,
+  // L13 Pediatric skin
+  pediatricSkinDiseases,
+  // L14 Hair diseases
+  hairDiseases,
+  // L15 Pigmentary disorders
+  pigmentaryDisorders,
+  // L16 Eczema & dermatitis
+  eczemaDermatitis,
+  // L17 Acne
+  acneVulgaris,
+  // L18 Skin neoplasms
+  skinNeoplasms,
+  // L19 Dermatologic therapy
+  dermatologicTherapy,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

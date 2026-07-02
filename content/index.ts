@@ -371,6 +371,16 @@ import {
   colonMolecularWorkupTherapy,
 } from './lectures/abm-cases-13-15';
 
+// ── HEN-1 (Human Endocrine System-1) ─────────────────────────────────────────
+// L1–L3 — endocrine foundations and hypothalamic–pituitary system
+import { hen1FoundationsPituitary } from './lectures/hen1-foundations-pituitary';
+// L4–L6 — thyroid, parathyroid and mineral physiology
+import { hen1ThyroidParathyroid } from './lectures/hen1-thyroid-parathyroid';
+// L7–L8 — diabetes diagnosis, endocrine pancreas and adipose tissue
+import { hen1PancreasDiabetes } from './lectures/hen1-pancreas-diabetes';
+// L9–L10 — adrenal development, anatomy and physiology
+import { hen1Adrenal } from './lectures/hen1-adrenal';
+
 // ── HGB-1 (Human Gastrointestinal and Biliary Tract System-1) ────────────────
 // L1–L2 — digestive and accessory-organ histology
 import {
@@ -961,6 +971,16 @@ export const lectures: Lecture[] = [
   egfrMutantLungAdenocarcinoma, osimertinibResistance,
   // Case 15 Epigenetics & Colon Cancer
   colonCancerEpigeneticSilencing, colonMolecularWorkupTherapy,
+
+  // ── HEN-1 (Human Endocrine System-1) ──
+  // L1–L3 Endocrine foundations and hypothalamic–pituitary system
+  ...hen1FoundationsPituitary,
+  // L4–L6 Thyroid, parathyroid and mineral physiology
+  ...hen1ThyroidParathyroid,
+  // L7–L8 Diabetes diagnosis, endocrine pancreas and adipose tissue
+  ...hen1PancreasDiabetes,
+  // L9–L10 Adrenal development, anatomy and physiology
+  ...hen1Adrenal,
 
   // ── HGB-1 (Human Gastrointestinal and Biliary Tract System-1) ──
   // L1 Histology of the Digestive Tract

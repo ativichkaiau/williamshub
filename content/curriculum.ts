@@ -95,6 +95,18 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Cardiac Tumors': 'HCVS-2',
   'L21 — Pericardial Disease': 'HCVS-2',
 
+  // HEN-1 — Human Endocrine System-1 (Year 2)
+  'L1 — Introduction to Endocrinology': 'HEN-1',
+  'L2 — Development & Anatomy of Pituitary Gland & Hypothalamus': 'HEN-1',
+  'L3 — Function & Metabolism of Pituitary Gland & Hypothalamus': 'HEN-1',
+  'L4 — Development & Anatomy of Thyroid, Parathyroid Glands & Pancreatic Islets': 'HEN-1',
+  'L5 — Metabolism & Function of Thyroid Gland': 'HEN-1',
+  'L6 — Calcium, Phosphate & Vitamin D Metabolism': 'HEN-1',
+  'L7 — Diagnosis of Diabetes Mellitus': 'HEN-1',
+  'L8 — Function of Endocrine Pancreas & Adipose Tissue': 'HEN-1',
+  'L9 — Development & Anatomy of Adrenal Gland': 'HEN-1',
+  'L10 — Metabolism & Function of Adrenal Gland': 'HEN-1',
+
   // HNS-2 — Human Nervous and Special Senses System-2 (Year 3)
   'L1 — Clinical Neuroanatomy I': 'HNS-2',
   'L2 — Clinical Neuroanatomy II': 'HNS-2',

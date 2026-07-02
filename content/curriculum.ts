@@ -178,6 +178,17 @@ export const subjectOfSource: Record<string, string> = {
   'Case 14 — EGFR-Mutant Non-Small Cell Lung Cancer': 'ABM',
   'Case 15 — Epigenetics & Colon Cancer': 'ABM',
 
+  // HGB-1 — Human Gastrointestinal and Biliary Tract System-1 (Year 2)
+  'L1 — Histology of the Digestive Tract': 'HGB-1',
+  'L2 — Histology of Accessory Digestive Organs': 'HGB-1',
+  'L3 — Development of the Digestive System': 'HGB-1',
+  'L4 — Chewing & Swallowing': 'HGB-1',
+  'L5 — General & Integrative GI Physiology': 'HGB-1',
+  'L6 — Gastric & Intestinal Motility': 'HGB-1',
+  'L7 — GI Secretion': 'HGB-1',
+  'L8 — Digestion & Absorption': 'HGB-1',
+  'L9 — Bile Secretion': 'HGB-1',
+
   // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',

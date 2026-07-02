@@ -371,6 +371,57 @@ import {
   colonMolecularWorkupTherapy,
 } from './lectures/abm-cases-13-15';
 
+// ── HGB-1 (Human Gastrointestinal and Biliary Tract System-1) ────────────────
+// L1–L2 — digestive and accessory-organ histology
+import {
+  oralMucosaTongueTaste,
+  giWallEsophagusHistology,
+  stomachGlandsHistology,
+  intestinalAnalHistology,
+  salivaryGlandHistology,
+  liverLobuleSinusoid,
+  liverAcinusGallbladder,
+  pancreasHistology,
+} from './lectures/hgb1-histology';
+// L3–L4 — development, chewing and swallowing
+import {
+  foregutAccessoryDevelopment,
+  midgutRotationFixation,
+  hindgutAnorectalDevelopment,
+  masticationMechanicsReflex,
+  swallowingPhasesReflex,
+  esophagealPeristalsisSphincters,
+} from './lectures/hgb1-development-swallowing';
+// L5–L6 — general, integrative and motor physiology
+import {
+  giSmoothMuscleElectricalActivity,
+  entericAutonomicReflexControl,
+  giHormonesParacrinesNeurocrines,
+  integratedMealResponse,
+  gastricAccommodationMixing,
+  gastricEmptyingFeedback,
+  smallIntestinalMotility,
+  colonicMotilityDefecation,
+} from './lectures/hgb1-general-motility';
+// L7–L8 — secretion, digestion and absorption
+import {
+  salivaryEsophagealMucusSecretion,
+  gastricAcidMechanismControl,
+  gastricEnzymesIntrinsicBarrier,
+  intestinalFluidSecretion,
+  proteinNucleicAcidDigestion,
+  carbohydrateDigestionAbsorptionHgb,
+  lipidDigestionAbsorptionHgb,
+  vitaminAbsorption,
+  mineralWaterAbsorption,
+} from './lectures/hgb1-secretion-digestion';
+// L9 — bile secretion
+import {
+  bileCompositionAcidSynthesis,
+  enterohepaticBileCirculation,
+  bileFormationGallbladderEmptying,
+} from './lectures/hgb1-bile';
+
 // ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
 // L1 — Diseases of Bone
 import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
@@ -910,6 +961,29 @@ export const lectures: Lecture[] = [
   egfrMutantLungAdenocarcinoma, osimertinibResistance,
   // Case 15 Epigenetics & Colon Cancer
   colonCancerEpigeneticSilencing, colonMolecularWorkupTherapy,
+
+  // ── HGB-1 (Human Gastrointestinal and Biliary Tract System-1) ──
+  // L1 Histology of the Digestive Tract
+  oralMucosaTongueTaste, giWallEsophagusHistology, stomachGlandsHistology, intestinalAnalHistology,
+  // L2 Histology of Accessory Digestive Organs
+  salivaryGlandHistology, liverLobuleSinusoid, liverAcinusGallbladder, pancreasHistology,
+  // L3 Development of the Digestive System
+  foregutAccessoryDevelopment, midgutRotationFixation, hindgutAnorectalDevelopment,
+  // L4 Chewing & Swallowing
+  masticationMechanicsReflex, swallowingPhasesReflex, esophagealPeristalsisSphincters,
+  // L5 General & Integrative GI Physiology
+  giSmoothMuscleElectricalActivity, entericAutonomicReflexControl,
+  giHormonesParacrinesNeurocrines, integratedMealResponse,
+  // L6 Gastric & Intestinal Motility
+  gastricAccommodationMixing, gastricEmptyingFeedback, smallIntestinalMotility, colonicMotilityDefecation,
+  // L7 GI Secretion
+  salivaryEsophagealMucusSecretion, gastricAcidMechanismControl,
+  gastricEnzymesIntrinsicBarrier, intestinalFluidSecretion,
+  // L8 Digestion & Absorption
+  proteinNucleicAcidDigestion, carbohydrateDigestionAbsorptionHgb,
+  lipidDigestionAbsorptionHgb, vitaminAbsorption, mineralWaterAbsorption,
+  // L9 Bile Secretion
+  bileCompositionAcidSynthesis, enterohepaticBileCirculation, bileFormationGallbladderEmptying,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

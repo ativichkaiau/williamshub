@@ -981,6 +981,29 @@ import antidotesPrinciples from './lectures/antidotes-principles';
 import immunomodulatingAgents from './lectures/immunomodulating-agents';
 import pharmacogenomics from './lectures/pharmacogenomics';
 import adverseDrugReactionsAllergy from './lectures/adverse-drug-reactions-allergy';
+// BCP expansion (2026-07-02)
+import preclinicalDrugDiscovery from './lectures/preclinical-drug-discovery';
+import drugAbsorptionRoutes from './lectures/drug-absorption-routes';
+import drugMetabolismCyp450 from './lectures/drug-metabolism-cyp450';
+import agonistsAntagonistsPharmacology from './lectures/agonists-antagonists-pharmacology';
+import drugReceptorSignalTransduction from './lectures/drug-receptor-signal-transduction';
+import superficialAntifungalsClinical from './lectures/superficial-antifungals-clinical';
+import anthelminticDrugClasses from './lectures/anthelmintic-drug-classes';
+import herpesvirusCmvAntivirals from './lectures/herpesvirus-cmv-antivirals';
+import hivAntiretroviralTherapy from './lectures/hiv-antiretroviral-therapy';
+import antibacterialResistanceMechanisms from './lectures/antibacterial-resistance-mechanisms';
+import antimycobacterialDrugs from './lectures/antimycobacterial-drugs';
+import antimuscarinicAnticholinergicDrugs from './lectures/antimuscarinic-anticholinergic-drugs';
+import adrenergicAntagonistsBlockers from './lectures/adrenergic-antagonists-blockers';
+import cytotoxicChemotherapyAgents from './lectures/cytotoxic-chemotherapy-agents';
+import targetedCancerTherapy from './lectures/targeted-cancer-therapy';
+import pharmacodynamicDrugInteractions from './lectures/pharmacodynamic-drug-interactions';
+import toxidromesPoisoningApproach from './lectures/toxidromes-poisoning-approach';
+import immunosuppressantDrugs from './lectures/immunosuppressant-drugs';
+import immunostimulantsBiologics from './lectures/immunostimulants-biologics';
+import pharmacogenomicsClinicalImplementation from './lectures/pharmacogenomics-clinical-implementation';
+import adrClassificationMechanisms from './lectures/adr-classification-mechanisms';
+import drugHypersensitivityScars from './lectures/drug-hypersensitivity-scars';
 
 // ── HSC (Human Skin and Connective Tissue System) ──
 import dermatologicDiagnosisMorphology from './lectures/dermatologic-diagnosis-morphology';
@@ -1765,6 +1788,18 @@ export const lectures: Lecture[] = [
   pharmacogenomics,
   // L15 Drug allergy & ADR
   adverseDrugReactionsAllergy,
+  // BCP expansion (2026-07-02): sub-topic deep-dives per lecture
+  preclinicalDrugDiscovery, drugAbsorptionRoutes, drugMetabolismCyp450,
+  agonistsAntagonistsPharmacology, drugReceptorSignalTransduction,
+  superficialAntifungalsClinical, anthelminticDrugClasses,
+  herpesvirusCmvAntivirals, hivAntiretroviralTherapy,
+  antibacterialResistanceMechanisms, antimycobacterialDrugs,
+  antimuscarinicAnticholinergicDrugs, adrenergicAntagonistsBlockers,
+  cytotoxicChemotherapyAgents, targetedCancerTherapy,
+  pharmacodynamicDrugInteractions, toxidromesPoisoningApproach,
+  immunosuppressantDrugs, immunostimulantsBiologics,
+  pharmacogenomicsClinicalImplementation, adrClassificationMechanisms,
+  drugHypersensitivityScars,
 
   // ── HSC (Human Skin and Connective Tissue System) ──
   // L1 Dermatologic diagnosis

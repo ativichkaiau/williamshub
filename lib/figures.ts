@@ -4252,3 +4252,84 @@ export const RESPIRATORY_FAILURE = `<svg viewBox="0 0 470 210" xmlns="http://www
   <text x="16" y="186" font-size="8" fill="#475569">In chronic type 2 (COPD), give CONTROLLED oxygen (target ~88–92%) — high FiO₂ can worsen hypercapnia.</text>
   <text x="16" y="203" font-size="7.5" fill="#64748b">NIV (BiPAP) supports ventilation in type 2; CPAP/high-flow O₂ for type 1 and pulmonary oedema.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HGB-2 expansion figures
+// ---------------------------------------------------------------------------
+
+export const BILIARY_DISEASE = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Gallstone disease" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Gallstones &amp; their complications — where the stone lodges</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Stones: CHOLESTEROL (fat, female, forty, fertile) or PIGMENT (haemolysis, infection). Most are asymptomatic.</text>
+  <g font-size="8">
+    <rect x="14" y="50" width="146" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="87" y="66" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">In the gallbladder</text>
+    <text x="22" y="84" fill="#1e40af" font-weight="700">Biliary colic</text>
+    <text x="22" y="97" fill="#1e40af">RUQ pain after fatty</text>
+    <text x="22" y="109" fill="#1e40af">meal; NO fever, transient</text>
+    <text x="22" y="129" fill="#1e40af" font-weight="700">Cholecystitis</text>
+    <text x="22" y="142" fill="#1e40af">cystic-duct obstruction +</text>
+    <text x="22" y="154" fill="#1e40af">inflammation; fever,</text>
+    <text x="22" y="166" fill="#1e40af">Murphy sign +</text>
+    <rect x="166" y="50" width="146" height="120" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="239" y="66" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">In the bile duct (CBD)</text>
+    <text x="174" y="84" fill="#92400e" font-weight="700">Choledocholithiasis</text>
+    <text x="174" y="97" fill="#92400e">CBD stone → obstructive</text>
+    <text x="174" y="109" fill="#92400e">jaundice (conjugated)</text>
+    <text x="174" y="129" fill="#92400e" font-weight="700">Ascending cholangitis</text>
+    <text x="174" y="142" fill="#92400e">infected obstructed duct</text>
+    <text x="174" y="154" fill="#92400e">CHARCOT TRIAD: fever +</text>
+    <text x="174" y="166" fill="#92400e">jaundice + RUQ pain</text>
+    <rect x="318" y="50" width="138" height="120" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="387" y="66" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Pancreatic duct</text>
+    <text x="326" y="84" fill="#7f1d1d" font-weight="700">Gallstone pancreatitis</text>
+    <text x="326" y="97" fill="#7f1d1d">stone at the ampulla →</text>
+    <text x="326" y="109" fill="#7f1d1d">acute pancreatitis</text>
+    <text x="326" y="129" fill="#7f1d1d">Also: gallbladder</text>
+    <text x="326" y="142" fill="#7f1d1d">carcinoma (porcelain GB),</text>
+    <text x="326" y="154" fill="#7f1d1d">gallstone ileus, empyema</text>
+  </g>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1" font-weight="700">Reynolds pentad (cholangitis) = Charcot triad + hypotension + confusion (septic, emergency → drain the duct).</text>
+  <text x="16" y="204" font-size="8" fill="#64748b">Dx: ultrasound (stones, wall, duct); treat cholecystitis with cholecystectomy; cholangitis needs antibiotics + ERCP drainage.</text>
+</svg>`;
+
+export const BILIRUBIN_METABOLISM = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Bilirubin metabolism and jaundice" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Bilirubin metabolism &amp; the three jaundices</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="38">Haem (old RBCs) → <tspan font-weight="700">UNCONJUGATED</tspan> bilirubin (fat-soluble, albumin-bound, NOT in urine)</text>
+    <text x="16" y="52">→ liver UGT conjugation → <tspan font-weight="700">CONJUGATED</tspan> (water-soluble) → bile → gut →</text>
+    <text x="16" y="66">urobilinogen → stercobilin (stool colour); some reabsorbed → urine</text>
+  </g>
+  <line x1="16" y1="74" x2="454" y2="74" stroke="#e2e8f0"/>
+  <rect x="14" y="82" width="146" height="96" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="87" y="98" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Pre-hepatic</text>
+  <g font-size="7.5" fill="#7f1d1d"><text x="22" y="114">↑UNCONJUGATED</text><text x="22" y="127">Haemolysis; Gilbert</text><text x="22" y="140">(↓UGT)</text><text x="22" y="156">No bilirubin in urine</text><text x="22" y="169">(acholuric); dark stool</text></g>
+  <rect x="166" y="82" width="146" height="96" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="239" y="98" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Hepatic</text>
+  <g font-size="7.5" fill="#92400e"><text x="174" y="114">Mixed (both rise)</text><text x="174" y="127">Hepatitis, cirrhosis</text><text x="174" y="140">↑AST/ALT</text><text x="174" y="156">Dubin-Johnson/Rotor =</text><text x="174" y="169">isolated conjugated</text></g>
+  <rect x="318" y="82" width="138" height="96" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="387" y="98" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Post-hepatic</text>
+  <g font-size="7.5" fill="#1e40af"><text x="326" y="114">↑CONJUGATED</text><text x="326" y="127">Obstruction (stone,</text><text x="326" y="140">tumour)</text><text x="326" y="156">DARK urine + PALE stool</text><text x="326" y="169">+ pruritus; ↑ALP/GGT</text></g>
+  <text x="16" y="196" font-size="8.5" fill="#0369a1" font-weight="700">Conjugated = water-soluble → appears in urine (dark). Obstruction = pale stool (no stercobilin) + pruritus.</text>
+  <text x="16" y="212" font-size="7.5" fill="#64748b">Gilbert (mild ↓UGT) is benign — unconjugated hyperbilirubinaemia on fasting/illness. Neonatal: physiological or kernicterus risk.</text>
+</svg>`;
+
+export const GUT_HORMONES = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Gut hormones and appetite" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Gut hormones — digestion &amp; appetite</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Hormone</text><text x="120" y="40">Source</text><text x="210" y="40">Action</text></g>
+  <line x1="16" y1="45" x2="454" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#334155">Gastrin</text><text x="120" y="61" fill="#475569">G cells (antrum)</text><text x="210" y="61" fill="#475569">↑gastric acid (parietal cells)</text>
+    <text x="18" y="77" font-weight="700" fill="#334155">Secretin</text><text x="120" y="77" fill="#475569">S cells (duodenum)</text><text x="210" y="77" fill="#475569">↑pancreatic HCO₃⁻; ↓acid</text>
+    <text x="18" y="93" font-weight="700" fill="#334155">CCK</text><text x="120" y="93" fill="#475569">I cells (duodenum)</text><text x="210" y="93" fill="#475569">gallbladder contraction + enzymes; SATIETY</text>
+    <text x="18" y="109" font-weight="700" fill="#334155">GIP</text><text x="120" y="109" fill="#475569">K cells</text><text x="210" y="109" fill="#475569">incretin (↑insulin)</text>
+    <text x="18" y="125" font-weight="700" fill="#15803d">GLP-1</text><text x="120" y="125" fill="#475569">L cells (ileum)</text><text x="210" y="125" fill="#475569">incretin; SATIETY, slows emptying (drug target)</text>
+    <text x="18" y="141" font-weight="700" fill="#15803d">PYY</text><text x="120" y="141" fill="#475569">L cells</text><text x="210" y="141" fill="#475569">SATIETY (reduces appetite)</text>
+    <text x="18" y="157" font-weight="700" fill="#b91c1c">Ghrelin</text><text x="120" y="157" fill="#475569">stomach (fasting)</text><text x="210" y="157" fill="#475569">HUNGER (the only orexigenic gut hormone)</text>
+  </g>
+  <line x1="16" y1="164" x2="454" y2="164" stroke="#e2e8f0"/>
+  <text x="16" y="182" font-size="8.5" fill="#0369a1" font-weight="700">Ghrelin = hunger ("growl"); GLP-1, PYY, CCK, leptin/insulin = satiety. Hypothalamus integrates them.</text>
+  <text x="16" y="198" font-size="8" fill="#64748b">GLP-1 analogues (semaglutide) exploit the satiety + slowed-emptying effect for weight loss and diabetes.</text>
+</svg>`;

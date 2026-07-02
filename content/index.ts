@@ -885,6 +885,17 @@ import intestinalFlukesTapeworms from './lectures/intestinal-flukes-tapeworms';
 import fatSolubleVitamins from './lectures/fat-soluble-vitamins';
 import waterSolubleVitaminsTraceElements from './lectures/water-soluble-vitamins-trace-elements';
 import eatingDisorders from './lectures/eating-disorders';
+// HGB-2 expansion
+import gallstonesCholecystitisCholangitis from './lectures/gallstones-cholecystitis-cholangitis';
+import bilirubinMetabolismJaundice from './lectures/bilirubin-metabolism-jaundice';
+import liverFunctionTestsInterpretation from './lectures/liver-function-tests-interpretation';
+import autoimmuneMetabolicLiverDisease from './lectures/autoimmune-metabolic-liver-disease';
+import gastrointestinalBleedingApproach from './lectures/gastrointestinal-bleeding-approach';
+import ibsFunctionalGiDisorders from './lectures/ibs-functional-gi-disorders';
+import nutritionalAssessmentSupport from './lectures/nutritional-assessment-support';
+import obesityManagementBariatricSurgery from './lectures/obesity-management-bariatric-surgery';
+import gutHormonesAppetiteRegulation from './lectures/gut-hormones-appetite-regulation';
+import viralHepatitisPreventionImmunization from './lectures/viral-hepatitis-prevention-immunization';
 
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
@@ -1480,27 +1491,27 @@ export const lectures: Lecture[] = [
 
   // ── HGB-2 (Human Gastrointestinal and Biliary Tract System-2) ──
   // L1 Pathology of the Upper GI Tract
-  esophagealDisordersPathology, gastritisAndGastropathy, gastricCarcinomaLymphoma,
+  esophagealDisordersPathology, gastritisAndGastropathy, gastricCarcinomaLymphoma, gastrointestinalBleedingApproach,
   // L2 Pathology of the Lower GI Tract
   inflammatoryBowelDisease, colorectalPolypsCarcinoma, appendicitisDiverticularIschemicBowel,
   // L3 Pathology of the Liver
-  hepatitisLiverInjuryPatterns, cirrhosisFattyLiverPortalHypertension, hepatocellularCarcinomaLiverTumors,
+  hepatitisLiverInjuryPatterns, cirrhosisFattyLiverPortalHypertension, hepatocellularCarcinomaLiverTumors, gallstonesCholecystitisCholangitis, bilirubinMetabolismJaundice, liverFunctionTestsInterpretation, autoimmuneMetabolicLiverDisease,
   // L4 Pathology of the Exocrine Pancreas
   acuteChronicPancreatitis, pancreaticCarcinoma,
   // L5 Drugs in GI Disorders & ORS
-  antiemeticsProkinetics, laxativesAntidiarrhealsOrs,
+  antiemeticsProkinetics, laxativesAntidiarrhealsOrs, ibsFunctionalGiDisorders,
   // L6 Peptic Ulcer Disease
   pepticUlcerDisease, acidSuppressionHPyloriTherapy,
   // L7 Nutrition & Malnutrition
-  nutritionEnergyProteinMalnutrition,
+  nutritionEnergyProteinMalnutrition, nutritionalAssessmentSupport,
   // L8 Obesity
-  obesityPathophysiology,
+  obesityPathophysiology, obesityManagementBariatricSurgery, gutHormonesAppetiteRegulation,
   // L9 Drugs in Obesity
   obesityPharmacotherapy,
   // L10 Pharmacology in Liver Disease
   pharmacologyInLiverDisease,
   // L11 Viral Hepatitis
-  hepatitisAeAcute, hepatitisBcdChronic,
+  hepatitisAeAcute, hepatitisBcdChronic, viralHepatitisPreventionImmunization,
   // L12 Viral Gastroenteritis
   viralGastroenteritis,
   // L13 Bacterial GI Infection I

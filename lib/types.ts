@@ -23,7 +23,8 @@ export type SystemId =
   | 'molecular' // foundational biochemistry / molecular biology (e.g. MBH)
   | 'research' // research methods / evidence / ethics (e.g. BMR)
   | 'histology' // basic histology / cell biology / tissue microanatomy (e.g. BHCB)
-  | 'physiology'; // general/cell/neuro physiology (e.g. EHP)
+  | 'physiology' // general/cell/neuro physiology (e.g. EHP)
+  | 'parasitology'; // parasitology, helminthology & medical entomology (e.g. PHI)
 
 export type TagKind =
   | 'system'

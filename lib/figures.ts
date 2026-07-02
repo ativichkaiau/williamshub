@@ -4333,3 +4333,194 @@ export const GUT_HORMONES = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org
   <text x="16" y="182" font-size="8.5" fill="#0369a1" font-weight="700">Ghrelin = hunger ("growl"); GLP-1, PYY, CCK, leptin/insulin = satiety. Hypothalamus integrates them.</text>
   <text x="16" y="198" font-size="8" fill="#64748b">GLP-1 analogues (semaglutide) exploit the satiety + slowed-emptying effect for weight loss and diabetes.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// PHI — Parasitology of Human Infectious Diseases figures
+// ---------------------------------------------------------------------------
+
+export const PARASITE_HOST_TYPES = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Host types in parasitology" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Host types &amp; parasite relationships</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="40" font-weight="700" fill="#b91c1c">Definitive host</text><text x="130" y="40">harbours the ADULT / SEXUAL stage</text>
+    <text x="16" y="56" font-weight="700" fill="#0e7490">Intermediate host</text><text x="130" y="56">harbours LARVAL / ASEXUAL stage(s)</text>
+    <text x="16" y="72" font-weight="700" fill="#7c3aed">Paratenic host</text><text x="130" y="72">transport host — no development, bridges the gap</text>
+    <text x="16" y="88" font-weight="700" fill="#b45309">Reservoir host</text><text x="130" y="88">animal maintaining the parasite (source of human zoonosis)</text>
+    <text x="16" y="104" font-weight="700" fill="#15803d">Vector</text><text x="130" y="104">arthropod transmitting the parasite (mechanical or biological)</text>
+  </g>
+  <line x1="16" y1="114" x2="454" y2="114" stroke="#e2e8f0"/>
+  <text x="16" y="132" font-size="8.5" fill="#0369a1" font-weight="700">Malaria example: mosquito = definitive host (sexual cycle) + vector; human = intermediate host.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="150" font-weight="700">Parasite types:</text>
+    <text x="24" y="164">• Ectoparasite (on surface — lice, mites) vs Endoparasite (inside — worms, protozoa)</text>
+    <text x="24" y="178">• Obligate (must parasitise) vs Facultative (can live free); accidental/zoonotic</text>
+    <text x="24" y="192">• Symbiosis: mutualism / commensalism / parasitism (host harmed)</text>
+  </g>
+  <text x="16" y="210" font-size="7.5" fill="#64748b">Zoonosis = animal parasite infecting humans. Carrier = harbours + sheds parasite without symptoms.</text>
+</svg>`;
+
+export const PROTOZOA_GROUPS = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Protozoa classification" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The four medical protozoa groups (by locomotion)</text>
+  <g font-size="8">
+    <rect x="14" y="30" width="220" height="76" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="124" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Amoebae (pseudopods)</text>
+    <text x="22" y="62" fill="#7f1d1d">Entamoeba histolytica, free-living</text>
+    <text x="22" y="76" fill="#7f1d1d">Naegleria, Acanthamoeba</text>
+    <text x="22" y="94" fill="#7f1d1d">Trophozoite + cyst; move by flowing</text>
+    <rect x="240" y="30" width="216" height="76" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="348" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Flagellates (flagella)</text>
+    <text x="248" y="62" fill="#1e40af">Giardia, Trichomonas, Dientamoeba;</text>
+    <text x="248" y="76" fill="#1e40af">blood/tissue: Leishmania, Trypanosoma</text>
+    <text x="248" y="94" fill="#1e40af">Whip-like flagella for motility</text>
+    <rect x="14" y="112" width="220" height="76" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="124" y="128" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Ciliates (cilia)</text>
+    <text x="22" y="144" fill="#92400e">Balantidium coli</text>
+    <text x="22" y="158" fill="#92400e">The largest human protozoan;</text>
+    <text x="22" y="176" fill="#92400e">only pathogenic ciliate (from pigs)</text>
+    <rect x="240" y="112" width="216" height="76" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="348" y="128" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">Apicomplexa (no locomotory organelle)</text>
+    <text x="248" y="144" fill="#166534">Plasmodium, Toxoplasma,</text>
+    <text x="248" y="158" fill="#166534">Cryptosporidium, Cyclospora</text>
+    <text x="248" y="176" fill="#166534">Apical complex; sexual + asexual cycles</text>
+  </g>
+  <text x="16" y="204" font-size="7.5" fill="#64748b">Trophozoite = active/feeding/motile stage; Cyst/oocyst = resistant, infective transmission stage.</text>
+</svg>`;
+
+export const ENTAMOEBA_AMOEBIASIS = `<svg viewBox="0 0 470 215" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Amoebiasis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="215" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Entamoeba histolytica — amoebiasis</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Faecal–oral: ingest the 4-nucleate CYST → excysts → TROPHOZOITES colonise the colon.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="60" font-weight="700" fill="#b91c1c">Intestinal amoebiasis</text>
+    <text x="24" y="74">trophozoites invade the mucosa → "FLASK-SHAPED" ulcers →</text>
+    <text x="24" y="86">amoebic dysentery (bloody diarrhoea); trophozoites contain INGESTED RBCs</text>
+    <text x="16" y="104" font-weight="700" fill="#b45309">Amoebic liver abscess</text>
+    <text x="24" y="118">trophozoites spread via portal vein → RUQ pain, fever,</text>
+    <text x="24" y="130">"ANCHOVY-PASTE" abscess (usually right lobe); may rupture</text>
+  </g>
+  <text x="16" y="150" font-size="8.5" fill="#0369a1" font-weight="700">Cysts transmit; trophozoites invade. Only E. histolytica is invasive (E. dispar is identical but harmless).</text>
+  <text x="16" y="168" font-size="8" fill="#475569">Dx: stool (cysts/trophozoites with RBCs), antigen/PCR, serology + imaging for abscess.</text>
+  <text x="16" y="184" font-size="8" fill="#475569">Treat: metronidazole (invasive disease) + a luminal agent (paromomycin) to clear cysts.</text>
+  <text x="16" y="202" font-size="7.5" fill="#64748b">Non-pathogenic look-alikes: E. coli, Endolimax nana, Iodamoeba bütschlii — distinguish by cyst nuclei/size (no RBC ingestion).</text>
+</svg>`;
+
+export const FREE_LIVING_AMOEBAE = `<svg viewBox="0 0 470 200" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Free-living amoebae" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="200" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Free-living (pathogenic) amoebae</text>
+  <rect x="14" y="30" width="220" height="120" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="124" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Naegleria fowleri</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="22" y="62">"brain-eating amoeba"</text>
+    <text x="22" y="76">WARM FRESH water → up the nose</text>
+    <text x="22" y="90">→ cribriform plate → brain</text>
+    <text x="22" y="106" font-weight="700">Primary amoebic meningo-</text>
+    <text x="22" y="118">encephalitis (PAM) — acute, fatal</text>
+    <text x="22" y="134">Young, healthy swimmers</text>
+  </g>
+  <rect x="240" y="30" width="216" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="348" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Acanthamoeba / Balamuthia</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="248" y="62">Acanthamoeba KERATITIS —</text>
+    <text x="248" y="76">contact-lens wearers (eye)</text>
+    <text x="248" y="90">Granulomatous amoebic</text>
+    <text x="248" y="102">encephalitis (GAE) — chronic,</text>
+    <text x="248" y="116">in the immunocompromised</text>
+    <text x="248" y="134" font-weight="700">Balamuthia: GAE too</text>
+  </g>
+  <text x="16" y="170" font-size="8.5" fill="#0369a1" font-weight="700">Naegleria = acute PAM (warm freshwater, healthy); Acanthamoeba = keratitis + chronic GAE (immunocompromised).</text>
+  <text x="16" y="188" font-size="7.5" fill="#64748b">These are environmental amoebae — not faecal–oral. High mortality; diagnosis often late.</text>
+</svg>`;
+
+export const HELMINTH_GROUPS = `<svg viewBox="0 0 470 205" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Helminth classification" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="205" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Helminths — the three worm groups</text>
+  <g font-size="8">
+    <rect x="14" y="30" width="146" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="87" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Nematodes</text>
+    <text x="87" y="58" text-anchor="middle" font-size="7.5" fill="#1e40af">(roundworms)</text>
+    <text x="22" y="74" fill="#1e40af" font-size="7.5">Round, unsegmented,</text>
+    <text x="22" y="86" fill="#1e40af" font-size="7.5">separate sexes</text>
+    <text x="22" y="102" fill="#1e40af" font-size="7.5">Ascaris, hookworm,</text>
+    <text x="22" y="114" fill="#1e40af" font-size="7.5">Strongyloides, Enterobius,</text>
+    <text x="22" y="126" fill="#1e40af" font-size="7.5">Trichuris, filariae,</text>
+    <text x="22" y="138" fill="#1e40af" font-size="7.5">Gnathostoma, Angiostrongylus</text>
+    <rect x="164" y="30" width="146" height="120" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="237" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Trematodes</text>
+    <text x="237" y="58" text-anchor="middle" font-size="7.5" fill="#92400e">(flukes)</text>
+    <text x="172" y="74" fill="#92400e" font-size="7.5">Flat, leaf-like,</text>
+    <text x="172" y="86" fill="#92400e" font-size="7.5">hermaphrodite (except</text>
+    <text x="172" y="98" fill="#92400e" font-size="7.5">Schistosoma)</text>
+    <text x="172" y="114" fill="#92400e" font-size="7.5">Opisthorchis, Fasciola,</text>
+    <text x="172" y="126" fill="#92400e" font-size="7.5">Paragonimus, Fasciolopsis,</text>
+    <text x="172" y="138" fill="#92400e" font-size="7.5">Schistosoma; snail host</text>
+    <rect x="314" y="30" width="142" height="120" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="385" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">Cestodes</text>
+    <text x="385" y="58" text-anchor="middle" font-size="7.5" fill="#166534">(tapeworms)</text>
+    <text x="322" y="74" fill="#166534" font-size="7.5">Flat, SEGMENTED</text>
+    <text x="322" y="86" fill="#166534" font-size="7.5">(proglottids), scolex,</text>
+    <text x="322" y="98" fill="#166534" font-size="7.5">no gut</text>
+    <text x="322" y="114" fill="#166534" font-size="7.5">Taenia, Diphyllobothrium,</text>
+    <text x="322" y="126" fill="#166534" font-size="7.5">Hymenolepis, Echinococcus,</text>
+    <text x="322" y="138" fill="#166534" font-size="7.5">Spirometra (sparganum)</text>
+  </g>
+  <text x="16" y="170" font-size="8.5" fill="#0369a1" font-weight="700">Nematodes = round (separate sexes); Trematodes = flat leaf (hermaphrodite, snail); Cestodes = segmented tape.</text>
+  <text x="16" y="188" font-size="7.5" fill="#64748b">Soil-transmitted helminths (STH): Ascaris, hookworm, Trichuris, Strongyloides. Diagnosis often by stool eggs (O&amp;P).</text>
+</svg>`;
+
+export const LARVA_MIGRANS = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Larva migrans syndromes" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Larva migrans — larvae wandering in the wrong host</text>
+  <text x="16" y="38" font-size="8.5" fill="#475569">Humans are ACCIDENTAL/dead-end hosts; the larva cannot mature, so it migrates → tissue damage + EOSINOPHILIA.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="58" font-weight="700" fill="#b91c1c">Visceral / ocular larva migrans</text>
+    <text x="24" y="72">Toxocara canis/cati (dog/cat roundworm eggs) → liver/lung/eye;</text>
+    <text x="24" y="84">ocular LM can mimic retinoblastoma</text>
+    <text x="16" y="102" font-weight="700" fill="#0e7490">Cutaneous larva migrans</text>
+    <text x="24" y="116">animal HOOKWORM larvae (Ancylostoma braziliense) → serpiginous, itchy skin track</text>
+    <text x="16" y="134" font-weight="700" fill="#7c3aed">Gnathostomiasis</text>
+    <text x="24" y="148">Gnathostoma (raw freshwater fish) → migratory SUBCUTANEOUS swellings; can reach CNS</text>
+    <text x="16" y="166" font-weight="700" fill="#b45309">Angiostrongyliasis</text>
+    <text x="24" y="180">Angiostrongylus cantonensis (snails/slugs) → EOSINOPHILIC MENINGITIS</text>
+  </g>
+  <text x="16" y="200" font-size="7.5" fill="#64748b">Common thread: zoonotic larvae + humans as dead-end host → eosinophilia; Gnathostoma &amp; Angiostrongylus are endemic in SE Asia (raw food).</text>
+</svg>`;
+
+export const APICOMPLEXA_FIG = `<svg viewBox="0 0 470 215" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Apicomplexa" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="215" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Apicomplexa — coccidia, Toxoplasma &amp; blood parasites</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="40" font-weight="700" fill="#0e7490">Intestinal coccidia (watery diarrhoea, acid-fast OOCYSTS in stool)</text>
+    <text x="24" y="54">Cryptosporidium — chronic diarrhoea in HIV/AIDS; resists chlorine (water outbreaks)</text>
+    <text x="24" y="66">Cyclospora — imported produce/berries; Cystoisospora (Isospora) — HIV</text>
+    <text x="16" y="86" font-weight="700" fill="#b45309">Toxoplasma gondii</text>
+    <text x="24" y="100">CAT = definitive host; humans via oocysts (cat faeces) or tissue cysts (undercooked meat)</text>
+    <text x="24" y="112">CONGENITAL (chorioretinitis, hydrocephalus, calcification); reactivation → encephalitis in HIV</text>
+    <text x="16" y="132" font-weight="700" fill="#b91c1c">Blood apicomplexa</text>
+    <text x="24" y="146">Plasmodium (malaria) — Anopheles mosquito; falciparum = severe (cerebral, blackwater);</text>
+    <text x="24" y="158">RBC cycle → cyclical fever; vivax/ovale hypnozoites relapse. Babesia — ticks, "Maltese cross"</text>
+  </g>
+  <text x="16" y="178" font-size="8.5" fill="#0369a1" font-weight="700">Apical complex to invade cells; alternate asexual (human) &amp; sexual (mosquito/cat) cycles.</text>
+  <text x="16" y="194" font-size="8" fill="#475569">Toxoplasma: avoid cat litter + raw meat in pregnancy. Cryptosporidium: think AIDS + water.</text>
+  <text x="16" y="209" font-size="7.5" fill="#64748b">Oocyst = environmentally resistant transmission stage; tachyzoite (acute) vs bradyzoite/tissue cyst (latent) in Toxoplasma.</text>
+</svg>`;
+
+export const ARTHROPOD_VECTORS = `<svg viewBox="0 0 470 225" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Arthropod vectors and disease" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="225" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Medical entomology — vectors &amp; the diseases they carry</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Vector</text><text x="150" y="40">Transmits</text></g>
+  <line x1="16" y1="45" x2="454" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#b91c1c">Anopheles mosquito</text><text x="150" y="61" fill="#475569">MALARIA (Plasmodium); lymphatic filariasis</text>
+    <text x="18" y="77" font-weight="700" fill="#b91c1c">Aedes mosquito</text><text x="150" y="77" fill="#475569">DENGUE, Zika, chikungunya, yellow fever (day-biting)</text>
+    <text x="18" y="93" font-weight="700" fill="#b91c1c">Culex mosquito</text><text x="150" y="93" fill="#475569">lymphatic filariasis (Wuchereria), Japanese encephalitis</text>
+    <text x="18" y="109" font-weight="700" fill="#0e7490">Sandfly (Phlebotomus)</text><text x="150" y="109" fill="#475569">LEISHMANIASIS</text>
+    <text x="18" y="125" font-weight="700" fill="#0e7490">Tsetse fly (Glossina)</text><text x="150" y="125" fill="#475569">African trypanosomiasis (sleeping sickness)</text>
+    <text x="18" y="141" font-weight="700" fill="#0e7490">Blackfly (Simulium)</text><text x="150" y="141" fill="#475569">onchocerciasis (river blindness)</text>
+    <text x="18" y="157" font-weight="700" fill="#b45309">Tick</text><text x="150" y="157" fill="#475569">Lyme, rickettsiae, Babesia, tick paralysis</text>
+    <text x="18" y="173" font-weight="700" fill="#b45309">Trombiculid mite (chigger)</text><text x="150" y="173" fill="#475569">SCRUB TYPHUS (Orientia)</text>
+    <text x="18" y="189" font-weight="700" fill="#15803d">Housefly (Musca)</text><text x="150" y="189" fill="#475569">MECHANICAL vector (enteric pathogens); myiasis (larvae)</text>
+  </g>
+  <text x="16" y="209" font-size="8" fill="#0369a1" font-weight="700">Biological vector = parasite develops in it; Mechanical vector = just carries it on the body (houseflies).</text>
+  <text x="16" y="221" font-size="7.5" fill="#64748b">Aedes = day-biter (dengue); Anopheles = malaria; Culex = filariasis/JE. Myiasis = fly-larva infestation of tissue.</text>
+</svg>`;

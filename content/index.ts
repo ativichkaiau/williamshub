@@ -897,6 +897,33 @@ import obesityManagementBariatricSurgery from './lectures/obesity-management-bar
 import gutHormonesAppetiteRegulation from './lectures/gut-hormones-appetite-regulation';
 import viralHepatitisPreventionImmunization from './lectures/viral-hepatitis-prevention-immunization';
 
+// ── PHI (Parasitology of Human Infectious Diseases) ──
+import parasitologyHostRelationships from './lectures/parasitology-host-relationships';
+import parasiteTransmissionDiagnosis from './lectures/parasite-transmission-diagnosis';
+import protozoaClassificationBiology from './lectures/protozoa-classification-biology';
+import entamoebaHistolyticaAmoebiasis from './lectures/entamoeba-histolytica-amoebiasis';
+import freeLivingNonpathogenicAmoebae from './lectures/free-living-nonpathogenic-amoebae';
+import giardiaIntestinalFlagellates from './lectures/giardia-intestinal-flagellates';
+import trichomonasBalantidium from './lectures/trichomonas-balantidium';
+import helminthClassificationOverview from './lectures/helminth-classification-overview';
+import ascariasisLargeRoundworm from './lectures/ascariasis-large-roundworm';
+import toxocariasisLarvaMigrans from './lectures/toxocariasis-larva-migrans';
+import anisakiasis from './lectures/anisakiasis';
+import gnathostomiasis from './lectures/gnathostomiasis';
+import angiostrongyliasisEosinophilicMeningitis from './lectures/angiostrongyliasis-eosinophilic-meningitis';
+import trematodesFlukesOverview from './lectures/trematodes-flukes-overview';
+import cestodesTapewormsOverview from './lectures/cestodes-tapeworms-overview';
+import intestinalCoccidiaCryptosporidium from './lectures/intestinal-coccidia-cryptosporidium';
+import toxoplasmosis from './lectures/toxoplasmosis';
+import bloodApicomplexaMalariaBabesia from './lectures/blood-apicomplexa-malaria-babesia';
+import medicalMitesAcarology from './lectures/medical-mites-acarology';
+import sparganosisSpirometra from './lectures/sparganosis-spirometra';
+import echinococcosisHydatid from './lectures/echinococcosis-hydatid';
+import medicalEntomologyVectors from './lectures/medical-entomology-vectors';
+import mosquitoBorneDiseases from './lectures/mosquito-borne-diseases';
+import myiasisAndFlyVectors from './lectures/myiasis-and-fly-vectors';
+import bloodsuckingFlyVectors from './lectures/bloodsucking-fly-vectors';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1528,6 +1555,34 @@ export const lectures: Lecture[] = [
   fatSolubleVitamins, waterSolubleVitaminsTraceElements,
   // L19 Eating Disorders
   eatingDisorders,
+
+  // ── PHI (Parasitology of Human Infectious Diseases) ──
+  // L1 Introduction to Parasitology
+  parasitologyHostRelationships, parasiteTransmissionDiagnosis,
+  // L2 Introduction to Protozoology
+  protozoaClassificationBiology,
+  // L3 Amoebae & Free-Living Amoebae
+  entamoebaHistolyticaAmoebiasis, freeLivingNonpathogenicAmoebae,
+  // L4 Flagellates & Ciliates
+  giardiaIntestinalFlagellates, trichomonasBalantidium,
+  // L5 Introduction to Helminths & Ascariasis
+  helminthClassificationOverview, ascariasisLargeRoundworm,
+  // L6 Toxocariasis & Anisakiasis
+  toxocariasisLarvaMigrans, anisakiasis,
+  // L7 Gnathostomiasis & Angiostrongyliasis
+  gnathostomiasis, angiostrongyliasisEosinophilicMeningitis,
+  // L8 Trematodes & Cestodes
+  trematodesFlukesOverview, cestodesTapewormsOverview,
+  // L9 Apicomplexa
+  intestinalCoccidiaCryptosporidium, toxoplasmosis, bloodApicomplexaMalariaBabesia,
+  // L10 Medical Acarology (Mites)
+  medicalMitesAcarology,
+  // L11 Sparganosis & Echinococcosis
+  sparganosisSpirometra, echinococcosisHydatid,
+  // L12 Medical Entomology & Mosquito Vectors
+  medicalEntomologyVectors, mosquitoBorneDiseases,
+  // L13 Medical Flies
+  myiasisAndFlyVectors, bloodsuckingFlyVectors,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

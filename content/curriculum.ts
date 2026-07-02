@@ -73,6 +73,21 @@ export const curriculum: CurriculumYear[] = [
 // Map each lecture `source` (L1–L4) to its subject. Add new lecture sources here
 // as content for other subjects is authored.
 export const subjectOfSource: Record<string, string> = {
+  // PHI — Parasitology of Human Infectious Diseases (Year 2)
+  'L1 — Introduction to Parasitology': 'PHI',
+  'L2 — Introduction to Protozoology': 'PHI',
+  'L3 — Amoebae & Free-Living Amoebae': 'PHI',
+  'L4 — Flagellates & Ciliates': 'PHI',
+  'L5 — Introduction to Helminths & Ascariasis': 'PHI',
+  'L6 — Toxocariasis & Anisakiasis': 'PHI',
+  'L7 — Gnathostomiasis & Angiostrongyliasis': 'PHI',
+  'L8 — Trematodes & Cestodes': 'PHI',
+  'L9 — Apicomplexa': 'PHI',
+  'L10 — Medical Acarology (Mites)': 'PHI',
+  'L11 — Sparganosis & Echinococcosis': 'PHI',
+  'L12 — Medical Entomology & Mosquito Vectors': 'PHI',
+  'L13 — Medical Flies': 'PHI',
+
   // HGB-2 — Human Gastrointestinal and Biliary Tract System-2 (Year 3)
   'L1 — Pathology of the Upper GI Tract': 'HGB-2',
   'L2 — Pathology of the Lower GI Tract': 'HGB-2',

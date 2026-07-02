@@ -16,7 +16,7 @@ export const hen1ThyroidParathyroid = [
     highYield: [
       'The thyroid has two lateral lobes joined by an isthmus, usually over the second to fourth tracheal rings; a pyramidal lobe may extend superiorly.',
       'Superior thyroid arteries arise from external carotids; inferior thyroid arteries usually arise from thyrocervical trunks. A thyroid ima artery is an important midline variant.',
-      'The recurrent laryngeal nerve runs near the inferior thyroid artery and posteromedial gland; the external branch of the superior laryngeal nerve lies near superior-pole vessels.',
+      'The **recurrent laryngeal nerve** runs near the inferior thyroid artery and posteromedial gland; the external branch of the superior laryngeal nerve lies near superior-pole vessels.',
       'Dense venous and lymphatic networks reflect the gland’s high blood flow and matter during surgery.',
     ],
     chainTitle: 'Surgical risk follows the vessels and nerves at each thyroid pole',
@@ -62,7 +62,7 @@ export const hen1ThyroidParathyroid = [
     ],
     highYield: [
       'Thyroid follicular epithelium begins as a median endodermal diverticulum at the foramen cecum and descends anterior to the hyoid and laryngeal cartilages.',
-      'The thyroglossal duct normally involutes; a pyramidal lobe, thyroglossal duct cyst, fistula, or ectopic thyroid can reflect persistence or abnormal migration.',
+      'The **thyroglossal duct** normally involutes; a pyramidal lobe, thyroglossal duct cyst, fistula, or ectopic thyroid can reflect persistence or abnormal migration.',
       'C cells derive from neural-crest-associated cells entering through the ultimobranchial body of the fourth pharyngeal pouch.',
       'A lingual thyroid may be the patient’s only functioning thyroid tissue and should be evaluated before excision.',
     ],
@@ -108,7 +108,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: 'Follicular activity and scalloping' },
     ],
     highYield: [
-      'Thyroid follicles are spherical units lined by simple epithelium and filled with thyroglobulin-rich colloid, the extracellular storage site for thyroid hormone precursor.',
+      'Thyroid follicles are spherical units lined by simple epithelium and filled with **thyroglobulin-rich colloid**, the extracellular storage site for thyroid hormone precursor.',
       'Follicular cells flatten when inactive and become cuboidal/columnar with increased activity; apical resorption vacuoles can scallop colloid.',
       'Parafollicular C cells lie within the basal follicular epithelium or interfollicular clusters, do not contact colloid, and secrete calcitonin.',
       'A delicate reticular network and fenestrated capillaries support rapid exchange around follicles.',
@@ -155,7 +155,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: 'Chief and oxyphil cells' },
     ],
     highYield: [
-      'Superior parathyroids derive from dorsal fourth pouch and migrate a short distance; inferior glands derive from dorsal third pouch and descend with thymus, so their location is more variable.',
+      '**Superior parathyroids derive from dorsal fourth pouch** and migrate a short distance; **inferior glands derive from dorsal third pouch** and descend with thymus, so their location is more variable.',
       'Most people have four small glands on the posterior thyroid, but ectopic inferior glands may lie along the thymic descent path into mediastinum.',
       'Chief cells secrete PTH and are the dominant functional cells; larger eosinophilic oxyphil cells increase with age and contain many mitochondria.',
       'Adipose tissue increases in normal adult parathyroid, helping distinguish it from thyroid and some hypercellular lesions.',
@@ -203,7 +203,7 @@ export const hen1ThyroidParathyroid = [
     ],
     highYield: [
       'Pancreatic parenchyma derives from dorsal and ventral endodermal buds; duodenal rotation brings the ventral bud posteriorly to fuse with the dorsal bud.',
-      'The ventral bud contributes uncinate process and inferior head; the dorsal bud contributes the remaining head, body, and tail.',
+      'The **ventral bud** contributes uncinate process and inferior head; the **dorsal bud** contributes the remaining head, body, and tail.',
       'Pale, richly vascular islets are scattered within darker exocrine acini. Beta cells secrete insulin, alpha glucagon, delta somatostatin, and PP cells pancreatic polypeptide.',
       'Endocrine products enter fenestrated capillaries, while exocrine secretions flow through ducts.',
     ],
@@ -249,7 +249,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: 'NIS, TPO and thyroglobulin' },
     ],
     highYield: [
-      'Basolateral Na⁺/I⁻ symporter (NIS) traps iodide; apical transport moves it into colloid, where thyroid peroxidase (TPO) oxidizes iodide and organifies thyroglobulin tyrosines.',
+      'Basolateral **Na⁺/I⁻ symporter (NIS)** traps iodide; apical transport moves it into colloid, where **thyroid peroxidase (TPO)** oxidizes iodide and organifies thyroglobulin tyrosines.',
       'Iodination forms MIT and DIT; TPO couples DIT+DIT → T4 and MIT+DIT → T3 within thyroglobulin.',
       'TSH stimulates nearly every step. Colloid is endocytosed and lysosomally proteolyzed, releasing T4/T3 while MIT/DIT are deiodinated and recycled.',
       'T4 is the major secreted product; peripheral tissues convert it to active T3 or inactive reverse T3.',
@@ -296,7 +296,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: 'TBG and deiodinases' },
     ],
     highYield: [
-      'Most T4/T3 circulates protein-bound, chiefly to thyroxine-binding globulin; only free hormone is immediately bioactive and available for feedback.',
+      'Most T4/T3 circulates protein-bound, chiefly to thyroxine-binding globulin; **only free hormone** is immediately bioactive and available for feedback.',
       'T4 has a longer half-life and serves largely as a prohormone. D1/D2 generate T3; D3 generates inactive reverse T3 and inactivates T3.',
       'T3 binds nuclear thyroid-hormone receptors that heterodimerize with RXR and regulate thyroid-response elements.',
       'Changes in TBG alter total hormone but not sustained free hormone in an intact axis; pregnancy/estrogen usually increases TBG and total T4.',
@@ -344,7 +344,7 @@ export const hen1ThyroidParathyroid = [
     ],
     highYield: [
       'Thyroid hormone raises basal metabolic rate, oxygen consumption, heat production, carbohydrate turnover, lipolysis, and LDL clearance.',
-      'It increases β-adrenergic receptor expression and cardiac output, producing increased heart rate, contractility, and pulse pressure when excessive.',
+      'It increases **β-adrenergic receptor expression** and cardiac output, producing increased heart rate, contractility, and pulse pressure when excessive.',
       'Normal hormone is essential for skeletal growth and CNS development; early severe deficiency can cause irreversible neurodevelopmental injury.',
       'Excess increases protein and bone turnover, while deficiency slows GI, neuromuscular, cardiovascular, and cognitive function.',
     ],
@@ -391,7 +391,7 @@ export const hen1ThyroidParathyroid = [
     ],
     highYield: [
       'TRH stimulates TSH; TSH activates a Gs/cAMP receptor on follicular cells and supports synthesis, secretion, growth, and vascularity.',
-      'Free T3/T4 suppress TSH and TRH. Primary hypothyroidism causes low free T4 with high TSH; central hypothyroidism causes low free T4 with low/inappropriately normal TSH.',
+      'Free T3/T4 suppress TSH and TRH. **Primary hypothyroidism causes low free T4 with high TSH**; central hypothyroidism causes low free T4 with low/inappropriately normal TSH.',
       'Primary hyperthyroidism usually causes high T4/T3 with suppressed TSH. A TSH-secreting pituitary process causes high hormone with nonsuppressed TSH.',
       'Graves disease stimulates the TSH receptor; Hashimoto disease progressively destroys follicles and commonly produces primary hypothyroidism.',
     ],
@@ -437,7 +437,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: 'Albumin and pH effects' },
     ],
     highYield: [
-      'Plasma calcium is ionized (bioactive), albumin-bound, or complexed with anions; only ionized Ca²⁺ is directly sensed and tightly regulated.',
+      'Plasma calcium is ionized (bioactive), albumin-bound, or complexed with anions; only **ionized Ca²⁺** is directly sensed and tightly regulated.',
       'Alkalosis increases albumin binding and lowers ionized calcium without necessarily changing total calcium, provoking paresthesias or tetany.',
       'Bone is the dominant calcium/phosphate reservoir and undergoes continuous osteoblast–osteoclast remodeling.',
       'Hypocalcemia increases neuromuscular excitability and prolongs QT; hypercalcemia causes weakness, sluggish reflexes, and shortens QT.',
@@ -531,7 +531,7 @@ export const hen1ThyroidParathyroid = [
       { kind: 'exam', label: '25-OH vs 1,25-(OH)₂ vitamin D' },
     ],
     highYield: [
-      'UVB converts skin 7-dehydrocholesterol to vitamin D3; diet supplies D2/D3. Liver 25-hydroxylation forms 25-OH vitamin D, the main circulating storage marker.',
+      'UVB converts skin 7-dehydrocholesterol to vitamin D3; diet supplies D2/D3. Liver 25-hydroxylation forms **25-OH vitamin D**, the main circulating storage marker.',
       'Renal 1α-hydroxylase forms active 1,25-(OH)₂ vitamin D (calcitriol); PTH and low phosphate stimulate it, while FGF23 and calcitriol inhibit it.',
       'Calcitriol binds a nuclear receptor and increases intestinal calcium and phosphate absorption; it also coordinates renal and bone mineral handling.',
       'Deficiency impairs mineralization, causing rickets in children and osteomalacia in adults with secondary hyperparathyroidism.',
@@ -579,7 +579,7 @@ export const hen1ThyroidParathyroid = [
     ],
     highYield: [
       'Thyroid C cells secrete calcitonin when extracellular calcium rises; it inhibits osteoclast activity and can increase renal calcium excretion.',
-      'Calcitonin has a modest day-to-day role in adult calcium balance compared with PTH and vitamin D; thyroid removal does not usually cause major chronic calcium dysregulation from calcitonin loss.',
+      'Calcitonin has a **modest day-to-day role** in adult calcium balance compared with PTH and vitamin D; thyroid removal does not usually cause major chronic calcium dysregulation from calcitonin loss.',
       'PTH is the rapid defender against low calcium, calcitriol improves intestinal mineral supply, and FGF23 promotes phosphate excretion while lowering calcitriol.',
       'Calcitonin is clinically valuable as a marker of medullary thyroid C-cell disease and as a short-term antiresorptive drug in selected settings.',
     ],

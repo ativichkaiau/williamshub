@@ -15,7 +15,7 @@ export const hen1Adrenal = [
     highYield: [
       'Adrenal glands are retroperitoneal within renal fascia at the superior renal poles; the right is pyramidal and closely related to IVC/liver, while the left is semilunar near stomach, pancreas, and spleen.',
       'Three arterial sources supply each gland: superior suprarenal arteries from inferior phrenic, middle from aorta, and inferior from renal artery.',
-      'Each gland has one central vein: short right suprarenal vein drains directly to IVC; longer left vein drains to left renal vein, often with inferior phrenic vein.',
+      'Each gland has **one central vein**: short right suprarenal vein drains directly to IVC; longer left vein drains to left renal vein, often with inferior phrenic vein.',
       'A subcapsular arterial plexus supplies cortical sinusoids and medullary vessels, exposing medulla to cortisol-rich cortical blood.',
     ],
     chainTitle: 'Rich arterial inflow converges on one clinically asymmetric central vein',
@@ -60,7 +60,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'GFR: salt, sugar, sex' },
     ],
     highYield: [
-      'The adrenal cortex forms 80–90% of the gland and has three zones: glomerulosa, fasciculata, and reticularis.',
+      'The adrenal cortex forms 80–90% of the gland and has three zones: **glomerulosa, fasciculata, and reticularis**.',
       'Zona glomerulosa forms rounded clusters beneath capsule and makes aldosterone; it lacks CYP17 activity.',
       'Zona fasciculata is the broadest zone, with lipid-rich spongiocytes in straight cords, and makes cortisol.',
       'Zona reticularis forms an anastomosing network of smaller eosinophilic cells, often with lipofuscin, and makes adrenal androgens.',
@@ -107,7 +107,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Preganglionic cholinergic control' },
     ],
     highYield: [
-      'The medulla contains neural-crest-derived chromaffin cells, functionally modified postganglionic sympathetic neurons without axons.',
+      'The medulla contains neural-crest-derived chromaffin cells, functionally **modified postganglionic sympathetic neurons** without axons.',
       'Preganglionic sympathetic fibers pass through paravertebral/prevertebral ganglia and release acetylcholine onto nicotinic receptors of chromaffin cells.',
       'Cortisol-rich cortical blood induces PNMT, favoring conversion of norepinephrine to epinephrine in the medulla.',
       'Catecholamines enter the central vein for a rapid systemic fight-or-flight response.',
@@ -154,7 +154,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Dual embryologic origin' },
     ],
     highYield: [
-      'Adrenal cortex derives from coelomic mesothelium/mesoderm, while medullary chromaffin cells derive from migrating neural crest.',
+      'Adrenal **cortex derives from coelomic mesothelium/mesoderm**, while medullary chromaffin cells derive from migrating **neural crest**.',
       'Fetal cortex develops a large fetal zone that produces androgen precursors used by placenta for estrogen synthesis.',
       'A definitive cortical zone surrounds the fetal zone and later differentiates into adult cortical layers.',
       'After birth the fetal zone rapidly involutes; adult zona glomerulosa and fasciculata mature first, with reticularis developing later.',
@@ -201,7 +201,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Angiotensin II and potassium control' },
     ],
     highYield: [
-      'Zona glomerulosa produces aldosterone via aldosterone synthase. Angiotensin II and high plasma K⁺ are the major stimulators; ACTH has only a minor transient role.',
+      'Zona glomerulosa produces aldosterone via aldosterone synthase. **Angiotensin II and high plasma K⁺ are the major stimulators**; ACTH has only a minor transient role.',
       'Aldosterone binds intracellular mineralocorticoid receptors in distal nephron, increasing ENaC, Na⁺/K⁺-ATPase, K⁺ secretion, and H⁺ secretion.',
       '11β-HSD2 protects the renal receptor by converting cortisol to cortisone; licorice-like inhibition permits cortisol-mediated mineralocorticoid effects.',
       'Net effect is sodium retention, extracellular-volume support, and increased K⁺/H⁺ loss; water follows only when ADH and nephron conditions permit.',
@@ -248,7 +248,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Circadian rhythm and steroid suppression' },
     ],
     highYield: [
-      'Zona fasciculata converts cholesterol to cortisol. ACTH stimulates acute cholesterol delivery through StAR and supports chronic steroidogenic enzyme expression.',
+      'Zona fasciculata converts cholesterol to cortisol. ACTH stimulates acute cholesterol delivery through **StAR** and supports chronic steroidogenic enzyme expression.',
       'CRH→ACTH→cortisol follows circadian and pulsatile rhythms, typically peaking near waking and reaching a nadir near midnight; stress increases output.',
       'Most cortisol circulates bound to corticosteroid-binding globulin and albumin; hepatic metabolism/conjugation supports urinary excretion.',
       'Cortisol negatively feeds back on pituitary and hypothalamus. Chronic exogenous glucocorticoids suppress CRH/ACTH and cause fasciculata/reticularis atrophy.',
@@ -295,7 +295,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Cushing physiology' },
     ],
     highYield: [
-      'Cortisol binds intracellular glucocorticoid receptors and changes gene expression; permissive actions maintain vascular responsiveness to catecholamines during stress.',
+      'Cortisol binds **intracellular glucocorticoid receptors** and changes gene expression; permissive actions maintain vascular responsiveness to catecholamines during stress.',
       'It raises glucose through hepatic gluconeogenesis and insulin resistance, mobilizes amino acids and lipids, and redistributes fuel toward vital organs.',
       'It suppresses inflammatory transcription, cytokines, leukocyte trafficking, fibroblasts, and immune responses.',
       'Chronic excess causes muscle wasting, thin skin, bruising, osteoporosis, hyperglycemia, hypertension, infection risk, mood change, and reproductive suppression.',
@@ -342,7 +342,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Adrenarche and virilization' },
     ],
     highYield: [
-      'Zona reticularis produces DHEA, DHEAS, and androstenedione under ACTH influence; DHEAS is abundant, protein-bound, and longer-lived.',
+      'Zona reticularis produces **DHEA, DHEAS, and androstenedione** under ACTH influence; DHEAS is abundant, protein-bound, and longer-lived.',
       'These are weak androgens but serve as peripheral precursors for testosterone and estrogens.',
       'Adrenal androgens contribute to pubic/axillary hair and libido, particularly in females; their role is smaller in adult males with testicular testosterone.',
       'Marked androgen excess in a female or child suggests congenital adrenal hyperplasia or an androgen-secreting adrenal lesion.',
@@ -389,7 +389,7 @@ export const hen1Adrenal = [
       { kind: 'exam', label: 'Adrenergic receptor physiology' },
     ],
     highYield: [
-      'Catecholamine synthesis proceeds tyrosine → DOPA → dopamine → norepinephrine → epinephrine; tyrosine hydroxylase is rate-limiting and PNMT forms epinephrine.',
+      'Catecholamine synthesis proceeds tyrosine → DOPA → dopamine → norepinephrine → epinephrine; **tyrosine hydroxylase is rate-limiting** and PNMT forms epinephrine.',
       'Stress-triggered preganglionic ACh causes granule exocytosis. Epinephrine predominates in normal adrenal output because cortical cortisol induces PNMT.',
       'Alpha-1 receptors vasoconstrict, beta-1 increases cardiac rate/force, beta-2 bronchodilates and vasodilates selected beds, and beta receptors support fuel mobilization.',
       'COMT and MAO metabolize catecholamines to metanephrines and final products such as VMA; metanephrines provide stable diagnostic markers.',

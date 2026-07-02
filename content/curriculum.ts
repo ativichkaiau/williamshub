@@ -73,6 +73,33 @@ export const curriculum: CurriculumYear[] = [
 // Map each lecture `source` (L1–L4) to its subject. Add new lecture sources here
 // as content for other subjects is authored.
 export const subjectOfSource: Record<string, string> = {
+  // HNS-1 — Human Nervous and Special Senses System-1 (Year 2)
+  'L1 — Reticular Activating System, Sleep & Circadian Rhythms': 'HNS-1',
+  'L2 — Auditory, Gustatory & Olfactory Pathways': 'HNS-1',
+  'L3 — Cerebellum': 'HNS-1',
+  'L4 — Basal Ganglia': 'HNS-1',
+  'L5 — Brainstem Motor Centers': 'HNS-1',
+  'L6 — Motor System': 'HNS-1',
+  'L7 — Neurotransmission': 'HNS-1',
+  'L8 — Development of the Nervous System': 'HNS-1',
+  'L9 — Sensory Receptors': 'HNS-1',
+  'L10 — Ascending Sensory Pathways': 'HNS-1',
+  'L11 — Blood Supply of the Brain': 'HNS-1',
+  'L11 — Ventricular System & CSF': 'HNS-1',
+  'L12 — Cerebral Cortex': 'HNS-1',
+  'L13 — Forebrain: Cerebrum': 'HNS-1',
+  'L13 — Forebrain: Diencephalon': 'HNS-1',
+  'L14 — Brainstem': 'HNS-1',
+  'L15 — Spinal Cord': 'HNS-1',
+  'L16 — Integrative Functions of the Brain': 'HNS-1',
+  'L17 — Vestibular System': 'HNS-1',
+  'L18 — Limbic System': 'HNS-1',
+  'L19 — Brain Metabolism': 'HNS-1',
+  'L20 — Physiology of Hearing': 'HNS-1',
+  'L21 — Histology of the Ear': 'HNS-1',
+  'L21 — Histology of Chemical Senses': 'HNS-1',
+  'L22 — Phototransduction': 'HNS-1',
+
   // PHI — Parasitology of Human Infectious Diseases (Year 2)
   'L1 — Introduction to Parasitology': 'PHI',
   'L2 — Introduction to Protozoology': 'PHI',

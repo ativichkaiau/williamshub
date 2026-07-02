@@ -924,6 +924,39 @@ import mosquitoBorneDiseases from './lectures/mosquito-borne-diseases';
 import myiasisAndFlyVectors from './lectures/myiasis-and-fly-vectors';
 import bloodsuckingFlyVectors from './lectures/bloodsucking-fly-vectors';
 
+// ── HNS-1 (Human Nervous and Special Senses System-1) ──
+import reticularActivatingSystemConsciousness from './lectures/reticular-activating-system-consciousness';
+import sleepCircadianRhythms from './lectures/sleep-circadian-rhythms';
+import auditoryPathwayAnatomy from './lectures/auditory-pathway-anatomy';
+import gustatoryOlfactoryPathways from './lectures/gustatory-olfactory-pathways';
+import cerebellumAnatomyFunction from './lectures/cerebellum-anatomy-function';
+import basalGangliaCircuitry from './lectures/basal-ganglia-circuitry';
+import brainstemDescendingMotorTracts from './lectures/brainstem-descending-motor-tracts';
+import motorSystemCorticospinalControl from './lectures/motor-system-corticospinal-control';
+import cnsNeurotransmissionSystems from './lectures/cns-neurotransmission-systems';
+import neuralTubeDevelopmentDefects from './lectures/neural-tube-development-defects';
+import brainVesiclesNeuralCrest from './lectures/brain-vesicles-neural-crest';
+import sensoryReceptorsTransduction from './lectures/sensory-receptors-transduction';
+import somatosensoryAscendingPathways from './lectures/somatosensory-ascending-pathways';
+import painNociceptionModulation from './lectures/pain-nociception-modulation';
+import cerebralBloodSupply from './lectures/cerebral-blood-supply';
+import ventriclesCsfCirculation from './lectures/ventricles-csf-circulation';
+import cerebralCortexOrganization from './lectures/cerebral-cortex-organization';
+import corticalAreasLanguage from './lectures/cortical-areas-language';
+import cerebrumLobesWhiteMatter from './lectures/cerebrum-lobes-white-matter';
+import diencephalonThalamusHypothalamus from './lectures/diencephalon-thalamus-hypothalamus';
+import brainstemAnatomyOrganization from './lectures/brainstem-anatomy-organization';
+import spinalCordAnatomyOrganization from './lectures/spinal-cord-anatomy-organization';
+import higherCorticalFunctions from './lectures/higher-cortical-functions';
+import consciousnessAttention from './lectures/consciousness-attention';
+import vestibularSystemPhysiology from './lectures/vestibular-system-physiology';
+import limbicSystemEmotionMemory from './lectures/limbic-system-emotion-memory';
+import brainEnergyMetabolism from './lectures/brain-energy-metabolism';
+import auditoryPhysiologyHearing from './lectures/auditory-physiology-hearing';
+import innerEarHairCellHistology from './lectures/inner-ear-hair-cell-histology';
+import tasteOlfactionReceptors from './lectures/taste-olfaction-receptors';
+import visualPhototransduction from './lectures/visual-phototransduction';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1583,6 +1616,52 @@ export const lectures: Lecture[] = [
   medicalEntomologyVectors, mosquitoBorneDiseases,
   // L13 Medical Flies
   myiasisAndFlyVectors, bloodsuckingFlyVectors,
+
+  // ── HNS-1 (Human Nervous and Special Senses System-1) ──
+  // L1 Reticular Activating System, Sleep & Circadian Rhythms
+  reticularActivatingSystemConsciousness, sleepCircadianRhythms,
+  // L2 Auditory & Chemical Special-Sense Pathways
+  auditoryPathwayAnatomy, gustatoryOlfactoryPathways,
+  // L3 Cerebellum
+  cerebellumAnatomyFunction,
+  // L4 Basal Ganglia
+  basalGangliaCircuitry,
+  // L5 Brainstem Motor Centers
+  brainstemDescendingMotorTracts,
+  // L6 Motor System
+  motorSystemCorticospinalControl,
+  // L7 Neurotransmission
+  cnsNeurotransmissionSystems,
+  // L8 Development of the Nervous System
+  neuralTubeDevelopmentDefects, brainVesiclesNeuralCrest,
+  // L9 Sensory Receptors
+  sensoryReceptorsTransduction,
+  // L10 Ascending Sensory Pathways & Pain
+  somatosensoryAscendingPathways, painNociceptionModulation,
+  // L11 Blood Supply, Ventricles & CSF
+  cerebralBloodSupply, ventriclesCsfCirculation,
+  // L12 Cerebral Cortex
+  cerebralCortexOrganization, corticalAreasLanguage,
+  // L13 Forebrain: Cerebrum & Diencephalon
+  cerebrumLobesWhiteMatter, diencephalonThalamusHypothalamus,
+  // L14 Brainstem
+  brainstemAnatomyOrganization,
+  // L15 Spinal Cord
+  spinalCordAnatomyOrganization,
+  // L16 Integrative Functions of the Brain
+  higherCorticalFunctions, consciousnessAttention,
+  // L17 Vestibular System
+  vestibularSystemPhysiology,
+  // L18 Limbic System
+  limbicSystemEmotionMemory,
+  // L19 Brain Metabolism
+  brainEnergyMetabolism,
+  // L20 Physiology of Hearing
+  auditoryPhysiologyHearing,
+  // L21 Histology of the Ear & Chemical Senses
+  innerEarHairCellHistology, tasteOlfactionReceptors,
+  // L22 Phototransduction
+  visualPhototransduction,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

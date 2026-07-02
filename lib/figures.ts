@@ -4524,3 +4524,235 @@ export const ARTHROPOD_VECTORS = `<svg viewBox="0 0 470 225" xmlns="http://www.w
   <text x="16" y="209" font-size="8" fill="#0369a1" font-weight="700">Biological vector = parasite develops in it; Mechanical vector = just carries it on the body (houseflies).</text>
   <text x="16" y="221" font-size="7.5" fill="#64748b">Aedes = day-biter (dengue); Anopheles = malaria; Culex = filariasis/JE. Myiasis = fly-larva infestation of tissue.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HNS-1 — Human Nervous & Special Senses System-1 figures
+// ---------------------------------------------------------------------------
+
+export const ASCENDING_SENSORY_PATHWAYS = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Ascending sensory pathways" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Two somatosensory pathways — where they cross is the key</text>
+  <rect x="14" y="30" width="222" height="150" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="125" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">DCML (dorsal column)</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="22" y="62">Fine touch, VIBRATION, PROPRIOCEPTION</text>
+    <text x="22" y="78">1st neuron → ascends IPSILATERAL dorsal</text>
+    <text x="32" y="90">column → nucleus gracilis/cuneatus (medulla)</text>
+    <text x="22" y="106">2nd neuron DECUSSATES in the MEDULLA</text>
+    <text x="32" y="118">(internal arcuate → medial lemniscus)</text>
+    <text x="22" y="134">3rd neuron: VPL thalamus → cortex</text>
+    <text x="22" y="156" font-weight="700">Crosses HIGH (in the medulla)</text>
+  </g>
+  <rect x="242" y="30" width="214" height="150" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="349" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Anterolateral (spinothalamic)</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="250" y="62">PAIN, TEMPERATURE, crude touch</text>
+    <text x="250" y="78">1st neuron → enters cord</text>
+    <text x="250" y="90">2nd neuron DECUSSATES in the SPINAL</text>
+    <text x="260" y="102">CORD (within 1–2 segments, ant. commissure)</text>
+    <text x="250" y="118">→ ascends contralateral anterolateral</text>
+    <text x="250" y="134">3rd neuron: VPL thalamus → cortex</text>
+    <text x="250" y="156" font-weight="700">Crosses LOW (at cord entry)</text>
+  </g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">DCML decussates in the MEDULLA; spinothalamic decussates in the SPINAL CORD — this explains crossed sensory findings.</text>
+  <text x="16" y="216" font-size="8" fill="#64748b">Both relay in the VPL of the thalamus → primary somatosensory cortex (postcentral gyrus). Body map = sensory homunculus.</text>
+</svg>`;
+
+export const MOTOR_PATHWAYS = `<svg viewBox="0 0 470 225" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Motor pathways" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="225" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Descending motor control</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Corticospinal tract = the main VOLUNTARY pathway (fine, skilled movement of the limbs).</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="58" font-weight="700" fill="#b91c1c">Corticospinal (pyramidal)</text>
+    <text x="24" y="72">motor cortex → internal capsule → brainstem →</text>
+    <text x="24" y="84">~85% DECUSSATE at the medullary PYRAMIDS →</text>
+    <text x="24" y="96">LATERAL corticospinal tract → ventral horn (LMN)</text>
+    <text x="16" y="114" font-weight="700" fill="#0e7490">Brainstem (extrapyramidal) tracts — posture/tone</text>
+    <text x="24" y="128">Vestibulospinal (balance/extensors), Reticulospinal</text>
+    <text x="24" y="140">(posture/locomotion), Rubrospinal, Tectospinal</text>
+  </g>
+  <text x="16" y="160" font-size="8.5" fill="#0369a1" font-weight="700">UMN (cortex→cord) vs LMN (cord→muscle) — the two-neuron motor chain.</text>
+  <g font-size="8" fill="#475569">
+    <text x="24" y="176"><tspan font-weight="700" fill="#b91c1c">UMN lesion:</tspan> spastic, hyper-reflexia, up-going plantar (Babinski), no wasting</text>
+    <text x="24" y="190"><tspan font-weight="700" fill="#0e7490">LMN lesion:</tspan> flaccid, areflexia, wasting, fasciculations</text>
+  </g>
+  <text x="16" y="210" font-size="8" fill="#64748b">Modulated by the basal ganglia (initiation/scaling) and cerebellum (coordination/timing). Motor homunculus on the precentral gyrus.</text>
+</svg>`;
+
+export const BASAL_GANGLIA_CIRCUIT = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Basal ganglia circuit" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Basal ganglia — direct vs indirect pathway</text>
+  <text x="16" y="38" font-size="8" fill="#475569">Components: caudate + putamen (= striatum), globus pallidus (GPe/GPi), subthalamic nucleus, substantia nigra.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="58" font-weight="700" fill="#16a34a">DIRECT pathway = "GO"</text>
+    <text x="24" y="72">cortex → striatum → (inhibit) GPi → LESS inhibition</text>
+    <text x="24" y="84">of thalamus → thalamus excites cortex → MORE movement</text>
+    <text x="16" y="102" font-weight="700" fill="#b91c1c">INDIRECT pathway = "STOP"</text>
+    <text x="24" y="116">cortex → striatum → GPe → STN → GPi → MORE inhibition</text>
+    <text x="24" y="128">of thalamus → LESS movement</text>
+    <text x="16" y="146" font-weight="700" fill="#7c3aed">Dopamine (SNc) tunes the balance</text>
+    <text x="24" y="160">D1 excites the direct (go), D2 inhibits the indirect (stop) → net MORE movement</text>
+  </g>
+  <text x="16" y="182" font-size="8.5" fill="#0369a1" font-weight="700">Parkinson (↓dopamine) → hypokinetic (rigid, slow); Huntington/hemiballismus → hyperkinetic.</text>
+  <text x="16" y="200" font-size="8" fill="#64748b">The basal ganglia scale and select movements; they do not directly drive muscles (that is the corticospinal tract).</text>
+  <text x="16" y="214" font-size="7.5" fill="#64748b">Output (GPi/SNr) is tonically INHIBITORY on the thalamus; the pathways modulate that brake.</text>
+</svg>`;
+
+export const CEREBELLUM_ZONES = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cerebellum functional zones" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cerebellum — three functional zones</text>
+  <g font-size="8">
+    <rect x="14" y="30" width="146" height="96" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="87" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Vestibulocerebellum</text>
+    <text x="22" y="62" fill="#1e40af">(flocculonodular lobe)</text>
+    <text x="22" y="76" fill="#1e40af">Balance, eye movements,</text>
+    <text x="22" y="90" fill="#1e40af">posture (axial)</text>
+    <text x="22" y="108" fill="#1e40af" font-weight="700">Lesion: truncal ataxia,</text>
+    <text x="22" y="120" fill="#1e40af">nystagmus</text>
+    <rect x="164" y="30" width="146" height="96" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="237" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Spinocerebellum</text>
+    <text x="172" y="62" fill="#92400e">(vermis + paravermis)</text>
+    <text x="172" y="76" fill="#92400e">Posture + gait,</text>
+    <text x="172" y="90" fill="#92400e">muscle tone (trunk/legs)</text>
+    <text x="172" y="108" fill="#92400e" font-weight="700">Lesion: gait ataxia</text>
+    <rect x="314" y="30" width="142" height="96" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="385" y="46" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">Cerebrocerebellum</text>
+    <text x="322" y="62" fill="#166534">(lateral hemispheres)</text>
+    <text x="322" y="76" fill="#166534">Planning + coordination</text>
+    <text x="322" y="90" fill="#166534">of skilled limb movement</text>
+    <text x="322" y="108" fill="#166534" font-weight="700">Lesion: limb ataxia,</text>
+    <text x="322" y="120" fill="#166534">dysmetria, intention tremor</text>
+  </g>
+  <text x="16" y="146" font-size="8.5" fill="#0369a1" font-weight="700">Cerebellar signs "DANISH": Dysdiadochokinesia, Ataxia, Nystagmus, Intention tremor, Slurred/scanning Speech, Hypotonia.</text>
+  <text x="16" y="164" font-size="8" fill="#475569">The cerebellum coordinates and times movement (compares intended vs actual) — it does not initiate it.</text>
+  <text x="16" y="182" font-size="8.5" fill="#b91c1c" font-weight="700">Cerebellar signs are IPSILATERAL (the tracts cross twice).</text>
+  <text x="16" y="200" font-size="7.5" fill="#64748b">Input via inferior/middle peduncles; output via the superior peduncle (dentate → thalamus → cortex).</text>
+</svg>`;
+
+export const CIRCLE_OF_WILLIS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cerebral blood supply" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cerebral blood supply &amp; the circle of Willis</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Two systems join at the circle of Willis: ANTERIOR (carotid) + POSTERIOR (vertebrobasilar).</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="60" font-weight="700" fill="#b91c1c">Anterior circulation (internal carotid):</text>
+    <text x="24" y="74">ACA — medial frontal/parietal (LEG &gt; arm motor/sensory)</text>
+    <text x="24" y="88">MCA — lateral hemisphere (FACE + ARM, language areas)</text>
+    <text x="16" y="106" font-weight="700" fill="#1d4ed8">Posterior circulation (vertebral → basilar):</text>
+    <text x="24" y="120">PCA — occipital lobe (VISUAL cortex), thalamus</text>
+    <text x="24" y="134">basilar/vertebral — brainstem + cerebellum (PICA etc.)</text>
+  </g>
+  <text x="16" y="154" font-size="8.5" fill="#0369a1" font-weight="700">MCA stroke = face/arm weakness + aphasia (dominant); ACA = leg; PCA = homonymous hemianopia.</text>
+  <text x="16" y="172" font-size="8" fill="#475569">The circle of Willis (via anterior + posterior communicating arteries) is a collateral safety ring.</text>
+  <text x="16" y="188" font-size="8" fill="#475569">"Watershed" zones between territories are vulnerable to global hypoperfusion (border-zone infarcts).</text>
+  <text x="16" y="206" font-size="7.5" fill="#64748b">Berry (saccular) aneurysms form at circle-of-Willis branch points (esp. ACom) → subarachnoid haemorrhage if they rupture.</text>
+</svg>`;
+
+export const VENTRICLES_CSF = `<svg viewBox="0 0 470 215" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Ventricles and CSF" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="215" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Ventricles &amp; CSF circulation</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">CSF is made by the CHOROID PLEXUS (~500 mL/day; ~150 mL circulating). Flow follows the ventricular system:</text>
+  <text x="16" y="60" font-size="8.5" fill="#0369a1" font-weight="700">Lateral ventricles → (foramen of Monro) → 3rd → (cerebral aqueduct) → 4th →</text>
+  <text x="16" y="76" font-size="8.5" fill="#0369a1" font-weight="700">(foramina of Luschka &amp; Magendie) → subarachnoid space → arachnoid granulations → venous blood.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="98" font-weight="700">Hydrocephalus (↑CSF/pressure):</text>
+    <text x="24" y="112"><tspan font-weight="700" fill="#b91c1c">Non-communicating (obstructive):</tspan> block WITHIN the system</text>
+    <text x="34" y="124">(e.g. aqueductal stenosis) — ventricles upstream dilate</text>
+    <text x="24" y="138"><tspan font-weight="700" fill="#0e7490">Communicating:</tspan> impaired absorption at arachnoid granulations</text>
+    <text x="34" y="150">(e.g. after subarachnoid haemorrhage/meningitis)</text>
+  </g>
+  <text x="16" y="170" font-size="8.5" fill="#475569">CSF cushions and supports the brain (buoyancy), removes waste, and maintains a stable environment.</text>
+  <text x="16" y="188" font-size="8" fill="#475569">Sampled by lumbar puncture (below the cord, ~L3–L4) — cell count/protein/glucose diagnose meningitis, SAH, etc.</text>
+  <text x="16" y="206" font-size="7.5" fill="#64748b">Normal pressure hydrocephalus triad: gait apraxia, urinary incontinence, dementia ("wet, wobbly, wacky").</text>
+</svg>`;
+
+export const CORTEX_AREAS = `<svg viewBox="0 0 470 225" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cerebral cortex functional areas" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="225" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cerebral cortex — functional areas</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="40" font-weight="700" fill="#334155">Primary areas (Brodmann):</text>
+    <text x="24" y="54">• Primary MOTOR — precentral gyrus (BA 4); motor homunculus</text>
+    <text x="24" y="68">• Primary SOMATOSENSORY — postcentral gyrus (BA 3,1,2)</text>
+    <text x="24" y="82">• Primary VISUAL — occipital, calcarine (BA 17)</text>
+    <text x="24" y="96">• Primary AUDITORY — superior temporal (BA 41,42)</text>
+    <text x="16" y="114" font-weight="700" fill="#b91c1c">Language (dominant, usually LEFT hemisphere):</text>
+    <text x="24" y="128">• BROCA (inferior frontal, BA 44/45) — speech PRODUCTION</text>
+    <text x="34" y="140">lesion → non-fluent, effortful; comprehension intact</text>
+    <text x="24" y="154">• WERNICKE (superior temporal, BA 22) — COMPREHENSION</text>
+    <text x="34" y="166">lesion → fluent but nonsensical; poor comprehension</text>
+    <text x="24" y="180">• Arcuate fasciculus connects them (lesion → conduction aphasia)</text>
+  </g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">Broca = "Broken speech" (production); Wernicke = "Word salad" (comprehension).</text>
+  <text x="16" y="216" font-size="7.5" fill="#64748b">Association cortex integrates (prefrontal = executive/personality; parietal = spatial/neglect if right-sided).</text>
+</svg>`;
+
+export const NEURAL_DEVELOPMENT = `<svg viewBox="0 0 470 215" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Nervous system development" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="215" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Development of the nervous system</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">NEURULATION: notochord induces ectoderm → neural plate → neural folds → NEURAL TUBE (closes ~week 4).</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="60" font-weight="700" fill="#b91c1c">Neural tube → CNS (brain + spinal cord)</text>
+    <text x="16" y="76" font-weight="700" fill="#0e7490">NEURAL CREST → PNS: sensory &amp; autonomic ganglia, Schwann cells,</text>
+    <text x="24" y="88" fill="#0e7490">adrenal medulla, melanocytes, enteric neurons, some skull/face</text>
+  </g>
+  <text x="16" y="106" font-size="8.5" fill="#0369a1" font-weight="700">Three primary vesicles → five:</text>
+  <text x="16" y="122" font-size="8" fill="#475569">Prosencephalon → telencephalon (cerebrum) + diencephalon (thalamus/hypothalamus)</text>
+  <text x="16" y="134" font-size="8" fill="#475569">Mesencephalon → midbrain; Rhombencephalon → metencephalon (pons + cerebellum) + myelencephalon (medulla)</text>
+  <text x="16" y="152" font-size="8.5" fill="#b91c1c" font-weight="700">Neural tube defects (failure to close):</text>
+  <text x="24" y="166" font-size="8" fill="#475569">Anterior fails → ANENCEPHALY; posterior fails → SPINA BIFIDA (occulta / meningocele / myelomeningocele)</text>
+  <text x="24" y="180" font-size="8" fill="#475569">FOLATE deficiency raises the risk; ↑maternal serum &amp; amniotic AFP is a marker (open defects)</text>
+  <text x="16" y="200" font-size="8" fill="#64748b">Grey matter (alar plate = sensory/dorsal; basal plate = motor/ventral) — the dorsal-sensory / ventral-motor rule.</text>
+</svg>`;
+
+export const AUDITORY_PATHWAY = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Hearing and the auditory pathway" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Hearing — from sound to cortex</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Outer ear → tympanic membrane → OSSICLES (malleus-incus-stapes, amplify) → oval window → cochlea.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="60" font-weight="700" fill="#0369a1">Cochlear transduction (organ of Corti)</text>
+    <text x="24" y="74">travelling wave on the basilar membrane → HAIR CELLS bend →</text>
+    <text x="24" y="86">mechanically-gated channels open → depolarise → auditory nerve (CN VIII)</text>
+    <text x="24" y="100" font-weight="700">TONOTOPY: base = high frequency; apex = low frequency</text>
+  </g>
+  <text x="16" y="120" font-size="8.5" fill="#0369a1" font-weight="700">Pathway: cochlear nuclei → (bilateral) superior olive → lateral lemniscus →</text>
+  <text x="16" y="134" font-size="8.5" fill="#0369a1" font-weight="700">inferior colliculus → medial geniculate (thalamus) → auditory cortex (temporal).</text>
+  <text x="16" y="154" font-size="8" fill="#475569">Bilateral representation → a unilateral central lesion does NOT cause deafness in one ear.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="172" font-weight="700">Conductive vs sensorineural loss:</text>
+    <text x="24" y="186">Rinne/Weber tests localise; conductive = outer/middle ear; sensorineural = cochlea/nerve</text>
+  </g>
+  <text x="16" y="204" font-size="7.5" fill="#64748b">Outer hair cells amplify (cochlear amplifier); inner hair cells are the true sensory receptors.</text>
+</svg>`;
+
+export const PHOTOTRANSDUCTION_FIG = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Phototransduction" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Phototransduction — the retina turns light into signal</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Photoreceptors: RODS (dim light, peripheral, no colour) vs CONES (bright light, central/fovea, colour).</text>
+  <text x="16" y="58" font-size="8.5" fill="#0369a1" font-weight="700">The counter-intuitive rule: light HYPERPOLARISES the photoreceptor (it is depolarised in the DARK).</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="76" font-weight="700">In the DARK:</text><text x="90" y="76">high cGMP keeps Na⁺ channels OPEN → "dark current" → depolarised → releases glutamate</text>
+    <text x="16" y="92" font-weight="700">In LIGHT:</text><text x="90" y="92">photon → rhodopsin → transducin (G-protein) → PDE → ↓cGMP →</text>
+    <text x="90" y="104">Na⁺ channels CLOSE → HYPERPOLARISE → less glutamate release</text>
+  </g>
+  <text x="16" y="126" font-size="8.5" fill="#475569">Signal: photoreceptor → bipolar cell → ganglion cell → optic nerve. (Horizontal/amacrine cells modulate.)</text>
+  <text x="16" y="146" font-size="8.5" fill="#0369a1" font-weight="700">Rhodopsin = opsin + retinal (vitamin A derivative) — vitamin A deficiency → night blindness.</text>
+  <text x="16" y="164" font-size="8" fill="#475569">Visual pathway: retina → optic nerve → CHIASM (nasal fibres cross) → optic tract → LGN → optic radiation → visual cortex.</text>
+  <text x="16" y="182" font-size="8" fill="#475569">Fovea = cones only, highest acuity; optic disc = blind spot (no receptors).</text>
+  <text x="16" y="200" font-size="7.5" fill="#64748b">Dark adaptation regenerates rhodopsin; three cone types (S/M/L) underlie colour vision.</text>
+</svg>`;
+
+export const SLEEP_STAGES = `<svg viewBox="0 0 470 205" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Sleep and the reticular activating system" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="205" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Arousal, sleep &amp; circadian rhythm</text>
+  <text x="16" y="40" font-size="8.5" fill="#0369a1" font-weight="700">The reticular activating system (RAS) = ascending arousal system maintaining CONSCIOUSNESS/wakefulness.</text>
+  <text x="16" y="56" font-size="8" fill="#475569">Brainstem reticular formation → thalamus/cortex; damage (or bilateral thalamic/brainstem lesions) → coma.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="76" font-weight="700">Sleep stages (EEG):</text>
+    <text x="24" y="90">NREM: N1 (theta, light) → N2 (spindles, K-complexes) → N3 (delta, deep/slow-wave)</text>
+    <text x="24" y="104">REM: low-voltage fast EEG (like awake), DREAMING, rapid eye movements, muscle ATONIA</text>
+    <text x="24" y="118">Cycle ~90 min; REM increases toward morning</text>
+  </g>
+  <text x="16" y="138" font-size="8.5" fill="#0369a1" font-weight="700">Circadian rhythm (~24 h) is set by the SUPRACHIASMATIC NUCLEUS (hypothalamus), entrained by LIGHT;</text>
+  <text x="16" y="154" font-size="8.5" fill="#0369a1" font-weight="700">melatonin (pineal) rises in darkness to promote sleep.</text>
+  <text x="16" y="172" font-size="8" fill="#475569">Ascending arousal transmitters: acetylcholine, noradrenaline, serotonin, histamine, orexin (loss of orexin → narcolepsy).</text>
+  <text x="16" y="190" font-size="7.5" fill="#64748b">N3 (slow-wave) is deepest/restorative; REM consolidates memory. Antihistamines cause drowsiness by blocking arousal histamine.</text>
+</svg>`;

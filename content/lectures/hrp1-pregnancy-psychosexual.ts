@@ -15,7 +15,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Presumptive, probable and positive signs' },
     ],
     highYield: [
-      'Pregnancy evidence progresses from presumptive symptoms to probable findings and positive confirmation by fetal cardiac activity or ultrasound.',
+      'Pregnancy evidence progresses from presumptive symptoms to probable findings and **positive confirmation by fetal cardiac activity or ultrasound**.',
       'Early prenatal care establishes gestational age, maternal conditions, medications/exposures, infection and genetic risks, blood group, and baseline health.',
       'Screening estimates risk; diagnostic testing confirms a condition. Informed consent should explain timing, limitations, false results, and options.',
       'Programs commonly screen for aneuploidy, hemoglobinopathy, infection, preeclampsia and gestational diabetes according to local guidance and individual risk.',
@@ -62,7 +62,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Normal changes vs pathology' },
     ],
     highYield: [
-      'Plasma volume and cardiac output rise; systemic vascular resistance falls, producing physiologic hemodilution and often a midpregnancy blood-pressure nadir.',
+      '**Plasma volume and cardiac output rise; systemic vascular resistance falls**, producing physiologic hemodilution and often a midpregnancy blood-pressure nadir.',
       'Ventilation rises through increased tidal volume, causing compensated mild respiratory alkalosis; diaphragm elevates as uterus enlarges.',
       'GFR rises, urinary collecting systems dilate, and pregnancy is hypercoagulable; venous stasis increases thromboembolic risk.',
       'Insulin resistance, lipid use, weight gain, uterine/breast growth, ligament laxity, and GI slowing support fetal growth but can mimic disease.',
@@ -109,7 +109,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'True labor and fetal position' },
     ],
     highYield: [
-      'True labor consists of regular painful contractions producing progressive cervical change; false labor lacks sustained progression.',
+      'True labor consists of regular painful contractions producing **progressive cervical change**; false labor lacks sustained progression.',
       'First stage runs to full dilation, second to fetal delivery, third to placental delivery, and fourth is immediate recovery/observation.',
       'Progress depends on powers (contractions/pushing), passenger (fetus), and passage (pelvis/soft tissues), with position and support also important.',
       'Cardinal movements in vertex birth include engagement, descent, flexion, internal rotation, extension, restitution/external rotation, and expulsion.',
@@ -156,7 +156,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Hemorrhage and infection red flags' },
     ],
     highYield: [
-      'Puerperium includes uterine involution, placental-site healing, lochia progression, lactation, fluid shifts, and recovery of pelvic/abdominal tissues.',
+      'Puerperium includes **uterine involution, placental-site healing, lochia progression**, lactation, fluid shifts, and recovery of pelvic/abdominal tissues.',
       'Lochia typically changes rubra → serosa → alba; foul odor, heavy bleeding, persistent fever, or worsening pain are abnormal.',
       'Uterine atony is a major postpartum-hemorrhage cause; retained tissue, trauma, and coagulopathy are other core categories.',
       'Postpartum care addresses bleeding, infection, blood pressure, bladder/bowel function, thrombosis, breastfeeding, mood, contraception, safety, and follow-up.',
@@ -203,7 +203,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'History–injury mismatch' },
     ],
     highYield: [
-      'Child maltreatment includes physical, sexual, and emotional abuse; neglect; exploitation; and harmful acts or omissions within a relationship of responsibility, trust, or power.',
+      'Child maltreatment includes **physical, sexual, and emotional abuse; neglect; exploitation; and harmful acts or omissions** within a relationship of responsibility, trust, or power.',
       'Risk factors may occur in child, caregiver, relationship, community, and societal domains; risk is not proof and should not replace careful assessment.',
       'Red flags include inconsistent/changing history, delay in care, injury incompatible with development, patterned/multiple-age injuries, poor growth, or concerning behavior.',
       'Most findings are nonspecific; listen, examine gently, document objectively, and involve trained multidisciplinary safeguarding teams.',
@@ -250,7 +250,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Non-leading history and gentle examination' },
     ],
     highYield: [
-      'Sexual abuse includes contact and noncontact acts, exploitation, grooming, and exposure; a normal physical examination does not exclude abuse.',
+      'Sexual abuse includes contact and noncontact acts, exploitation, grooming, and exposure; **a normal physical examination does not exclude abuse**.',
       'Use calm, nonjudgmental, developmentally appropriate, open-ended prompts; avoid repeated or leading questioning.',
       'Assess urgent injury, pregnancy/STI risk, forensic timing, mental health, suicidality, and safe disposition using trained services.',
       'Reassure the child they did the right thing by telling, that it is not their fault, and that adults will work to keep them safe—without promising absolute confidentiality.',
@@ -297,7 +297,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Failure to meet health and developmental needs' },
     ],
     highYield: [
-      'Neglect is persistent failure to meet basic physical, medical, educational, emotional, or safety needs when caregivers can reasonably do so.',
+      'Neglect is **persistent failure to meet basic physical, medical, educational, emotional, or safety needs** when caregivers can reasonably do so.',
       'Emotional abuse includes persistent rejection, humiliation, threats, isolation, exploitation, or developmentally harmful expectations.',
       'Signs may include poor growth, incomplete care, unsafe supervision, developmental/attachment problems, withdrawal, aggression, anxiety, or school difficulties.',
       'Poverty is not itself neglect; assess resources, access, caregiver capacity, and intent while mobilizing support and protecting the child.',
@@ -344,7 +344,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Duration and functional impairment' },
     ],
     highYield: [
-      'Trauma responses can include intrusion, avoidance, negative mood/cognition, hyperarousal, dissociation, sleep problems, regression, and somatic symptoms.',
+      'Trauma responses can include **intrusion, avoidance, negative mood/cognition, hyperarousal, dissociation, sleep problems, regression, and somatic symptoms**.',
       'Acute stress disorder occurs in the early post-trauma period; PTSD requires persistent symptoms and impairment beyond one month.',
       'Children express trauma differently by developmental stage; play, behavior, school, attachment, and caregiver regulation are important.',
       'Psychological first aid emphasizes safety, calming, practical needs, connection, information, and linkage—not forced debriefing.',
@@ -391,7 +391,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'EPOR and biopsychosocial models' },
     ],
     highYield: [
-      'Masters–Johnson describes excitement, plateau, orgasm, and resolution; Kaplan emphasizes desire, arousal, and orgasm.',
+      '**Masters–Johnson describes excitement, plateau, orgasm, and resolution; Kaplan emphasizes desire, arousal, and orgasm**.',
       'Responses vary widely by person, context, relationship, age, health, medication, and culture; phases need not be linear or all present.',
       'Arousal combines central attention/emotion with genital vasocongestion and lubrication/erection; orgasm includes rhythmic pelvic contractions and subjective release.',
       'Sexual health is biopsychosocial and requires consent, safety, respect, and freedom from coercion or discrimination.',
@@ -438,7 +438,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Vascular risk and focused sexual history' },
     ],
     highYield: [
-      'Sexual stimulation activates parasympathetic NO, guanylyl cyclase, cGMP, smooth-muscle relaxation, arterial inflow, and venous outflow compression.',
+      'Sexual stimulation activates **parasympathetic NO, guanylyl cyclase, cGMP, smooth-muscle relaxation**, arterial inflow, and venous outflow compression.',
       'Detumescence follows sympathetic tone and phosphodiesterase-5 degradation of cGMP.',
       'Erectile dysfunction may be vascular, neurogenic, endocrine, medication-related, structural, psychogenic, relational, or mixed.',
       'ED can be an early marker of cardiovascular disease; assess blood pressure, metabolic risk, smoking, medications, and exercise tolerance.',
@@ -485,7 +485,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Nitrate contraindication' },
     ],
     highYield: [
-      'PDE5 inhibitors reduce cGMP breakdown and amplify the natural NO response; sexual stimulation is still required.',
+      '**PDE5 inhibitors reduce cGMP breakdown** and amplify the natural NO response; sexual stimulation is still required.',
       'Concurrent nitrates are contraindicated because combined vasodilation can cause profound hypotension; cardiovascular fitness and interacting drugs matter.',
       'Headache, flushing, dyspepsia, nasal symptoms, and visual effects vary by agent.',
       'Vacuum devices, intracavernosal/intraurethral therapy, counseling, and penile prosthesis are options when oral treatment is unsuitable or ineffective.',
@@ -532,7 +532,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Lifelong vs acquired patterns' },
     ],
     highYield: [
-      'Premature ejaculation involves persistently short latency, reduced perceived control, and distress/interpersonal difficulty; stopwatch time alone is insufficient.',
+      'Premature ejaculation involves **persistently short latency, reduced perceived control, and distress/interpersonal difficulty**; stopwatch time alone is insufficient.',
       'Lifelong and acquired forms differ; variable or subjective patterns may not meet disorder criteria.',
       'Acquired PE prompts evaluation for erectile difficulty, prostatitis/urogenital symptoms, thyroid disease, medication/substance effects, anxiety, and relationship factors.',
       'Education, behavioral/psychosexual strategies, topical anesthetics, and selected serotonergic medications can help through shared decision-making.',
@@ -579,7 +579,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Symptoms plus repeated morning testosterone' },
     ],
     highYield: [
-      'Hypogonadism requires compatible symptoms/signs plus consistently low testosterone—not one isolated result.',
+      'Hypogonadism requires **compatible symptoms/signs plus consistently low testosterone**—not one isolated result.',
       'Measure morning testosterone on separate occasions; interpret SHBG/free testosterone when binding abnormalities are likely.',
       'High LH/FSH suggests primary testicular failure; low/inappropriately normal levels suggest hypothalamic–pituitary disease or functional suppression.',
       'Testosterone therapy may improve selected symptoms but suppresses spermatogenesis; fertility goals, prostate/breast health, hematocrit, sleep apnea, and cardiovascular context matter.',
@@ -626,7 +626,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Respectful terminology' },
     ],
     highYield: [
-      'Sex traits, sex assigned at birth, gender identity, gender expression, and sexual orientation are related but distinct dimensions.',
+      'Sex traits, sex assigned at birth, gender identity, gender expression, and sexual orientation are **related but distinct dimensions**.',
       'Cisgender describes identity congruent with assigned sex; transgender describes identity differing from assigned sex; nonbinary identities do not fit solely male/female categories.',
       'Sexual orientation concerns patterns of romantic/sexual attraction and is not determined by gender identity.',
       'Names, pronouns, anatomy, relationships, and healthcare needs should be asked respectfully rather than assumed.',
@@ -673,7 +673,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Identity is not pathology' },
     ],
     highYield: [
-      'Gender diversity itself is not a mental disorder; gender dysphoria refers to clinically significant distress or impairment related to incongruence.',
+      '**Gender diversity itself is not a mental disorder**; gender dysphoria refers to clinically significant distress or impairment related to incongruence.',
       'Assessment explores duration, developmental context, body-related distress, social environment, safety, mental health, family/support, and personal goals.',
       'Care may include social support, psychotherapy for coping/comorbidity, puberty-related or gender-affirming medical care, and/or surgery—never a mandatory single pathway.',
       'Coexisting depression, anxiety, trauma, neurodiversity, or psychosis should be treated without using them automatically to invalidate identity.',
@@ -720,7 +720,7 @@ export const hrp1PregnancyPsychosexual = [
       { kind: 'exam', label: 'Confidentiality and listening' },
     ],
     highYield: [
-      'Create a safe clinical space with neutral language, private time when appropriate, clear confidentiality limits, and open questions.',
+      'Create a **safe clinical space** with neutral language, private time when appropriate, clear confidentiality limits, and open questions.',
       'Comprehensive sexual education covers consent, relationships, anatomy, contraception, STI prevention, digital safety, diversity, pleasure, and help-seeking.',
       'Coming out is personal and may occur differently across settings; never disclose identity without permission.',
       'Listen first, avoid assumptions, correct mistakes briefly, and connect people with supportive services when desired.',

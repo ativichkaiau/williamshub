@@ -17,7 +17,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Somatic vs autonomic supply' },
     ],
     highYield: [
-      'The true pelvis lies below the pelvic inlet and contains pelvic viscera; pelvic fascia and condensations support organs while creating potential spaces.',
+      'The **true pelvis lies below the pelvic inlet** and contains pelvic viscera; pelvic fascia and condensations support organs while creating potential spaces.',
       'Sympathetic fibers reach pelvis through hypogastric pathways; pelvic splanchnic nerves S2–S4 carry parasympathetic fibers; pudendal nerve S2–S4 supplies somatic perineal sensation and muscle.',
       'Internal iliac branches supply most pelvic organs; ovarian arteries arise directly from abdominal aorta.',
       'Pelvic autonomics regulate visceral smooth muscle and erectile tissue, while somatic pathways control voluntary sphincters and perineal muscles.',
@@ -64,7 +64,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Uterine artery–ureter relation' },
     ],
     highYield: [
-      'Uterus has fundus, body, isthmus, and cervix; it is commonly anteverted relative to vagina and anteflexed at the cervix–body junction.',
+      'Uterus has fundus, body, isthmus, and cervix; it is commonly **anteverted relative to vagina and anteflexed** at the cervix–body junction.',
       'Cardinal and uterosacral fascial supports plus levator ani are major supports; round ligament helps maintain anteversion.',
       'Uterine artery crosses superior to the ureter near the cervix—“water under the bridge”—and anastomoses with ovarian supply.',
       'Vaginal fornices surround the cervix; posterior fornix lies near rectouterine pouch, the lowest intraperitoneal recess in an upright female.',
@@ -111,7 +111,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Ectopic pregnancy and ovarian lymph' },
     ],
     highYield: [
-      'Uterine tube segments are infundibulum with fimbriae, ampulla, isthmus, and intramural part; fertilization most often occurs in ampulla.',
+      'Uterine tube segments are infundibulum with fimbriae, ampulla, isthmus, and intramural part; **fertilization most often occurs in ampulla**.',
       'Ovary attaches to uterus by ovarian ligament and to lateral pelvic wall by suspensory ligament carrying ovarian vessels.',
       'Ovarian arteries arise from aorta; ovarian lymph follows gonadal vessels to para-aortic nodes, not primarily superficial inguinal nodes.',
       'Tubal implantation can rupture and bleed intraperitoneally; ovarian torsion twists the suspensory vascular pedicle.',
@@ -158,7 +158,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Granulosa, theca and zona pellucida' },
     ],
     highYield: [
-      'Ovarian cortex contains follicles beneath surface epithelium/tunica albuginea; medulla contains loose connective tissue, vessels, and nerves.',
+      '**Ovarian cortex contains follicles** beneath surface epithelium/tunica albuginea; medulla contains loose connective tissue, vessels, and nerves.',
       'Primordial follicle has primary oocyte with flattened cells; primary follicles gain cuboidal granulosa layers and zona pellucida.',
       'Secondary/antral follicles develop fluid spaces, theca interna steroidogenic cells, and fibrous theca externa.',
       'Mature follicle has a large antrum, cumulus oophorus, and corona radiata around the oocyte.',
@@ -205,7 +205,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Granulosa vs theca lutein cells' },
     ],
     highYield: [
-      'LH surge promotes follicular rupture, oocyte release, and luteinization of granulosa/theca cells.',
+      '**LH surge** promotes follicular rupture, oocyte release, and luteinization of granulosa/theca cells.',
       'Granulosa lutein cells are large and pale, producing progesterone and estrogen; theca lutein cells are smaller and peripheral.',
       'Without pregnancy, luteal support wanes and corpus luteum becomes fibrous corpus albicans; hCG rescues it in early pregnancy.',
       'Atresia can occur at any follicular stage and is the fate of nearly all follicles.',
@@ -252,7 +252,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Proliferative vs secretory glands' },
     ],
     highYield: [
-      'Oviduct has branching mucosal folds lined by ciliated and secretory simple columnar cells; folds are most elaborate in ampulla.',
+      'Oviduct has branching mucosal folds lined by **ciliated and secretory simple columnar cells**; folds are most elaborate in ampulla.',
       'Endometrium has basal layer that regenerates and functional layer that proliferates, secretes, and sheds.',
       'Estrogen produces straight proliferative glands and mitoses; progesterone produces tortuous saw-tooth glands, secretion, stromal edema, and predecidual change.',
       'Myometrium is interlacing smooth muscle that hypertrophies in pregnancy and contracts during labor.',
@@ -299,7 +299,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Transformation zone and glycogen' },
     ],
     highYield: [
-      'Endocervix has mucus-secreting simple columnar epithelium and glands; ectocervix has nonkeratinized stratified squamous epithelium.',
+      'Endocervix has **mucus-secreting simple columnar epithelium** and glands; ectocervix has **nonkeratinized stratified squamous epithelium**.',
       'The transformation zone around the squamocolumnar junction undergoes metaplasia and is the key site for HPV-related dysplasia screening.',
       'Vagina has glycogen-rich nonkeratinized stratified squamous mucosa, no glands, a smooth-muscle wall, and elastic adventitia.',
       'Lactobacilli metabolize epithelial glycogen to lactic acid, supporting acidic vaginal pH during reproductive years.',
@@ -346,7 +346,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Breast cancer spread' },
     ],
     highYield: [
-      'Breast lies in superficial fascia, usually from ribs 2–6 and sternum toward midaxillary line, with an axillary tail.',
+      'Breast lies in superficial fascia, usually **from ribs 2–6 and sternum toward midaxillary line**, with an axillary tail.',
       '15–20 lobes drain through lactiferous ducts to nipple; Cooper suspensory ligaments connect dermis to deep fascia.',
       'Most lymph drains to axillary nodes, especially pectoral/anterior group; medial quadrants also drain parasternal nodes and can cross midline.',
       'Long thoracic nerve injury during axillary surgery causes serratus anterior weakness and winged scapula.',
@@ -393,7 +393,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Inactive vs pregnant vs lactating breast' },
     ],
     highYield: [
-      'Mammary gland is a modified tubuloalveolar gland; inactive breast contains abundant fibroadipose stroma and ducts with few developed alveoli.',
+      'Mammary gland is a **modified tubuloalveolar gland**; inactive breast contains abundant fibroadipose stroma and ducts with few developed alveoli.',
       'Pregnancy produces ductal branching and lobuloalveolar proliferation under estrogen, progesterone, prolactin, and other hormones.',
       'Lactating alveolar cells secrete protein by merocrine exocytosis and lipid by apocrine-like budding; myoepithelial cells contract with oxytocin.',
       'After weaning, involution removes many secretory alveoli and restores a more inactive pattern.',
@@ -440,7 +440,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Tertiary villi and placental barrier' },
     ],
     highYield: [
-      'Primary villi contain trophoblast; secondary villi acquire extraembryonic mesoderm; tertiary villi develop fetal capillaries.',
+      '**Primary villi contain trophoblast; secondary villi acquire extraembryonic mesoderm; tertiary villi develop fetal capillaries**.',
       'Syncytiotrophoblast contacts maternal blood in intervillous space; cytotrophoblast becomes less continuous as pregnancy advances.',
       'Maternal spiral arteries deliver blood around villi while fetal blood remains within villous capillaries connected to umbilical vessels.',
       'The placental barrier thins with gestation, improving diffusion while normally preventing direct mixing of maternal and fetal blood.',
@@ -487,7 +487,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Torsion and varicocele' },
     ],
     highYield: [
-      'Testis is covered by tunica vaginalis and dense tunica albuginea; septa divide it into lobules draining rete testis → efferent ductules → epididymis.',
+      'Testis is covered by tunica vaginalis and dense tunica albuginea; septa divide it into lobules draining **rete testis → efferent ductules → epididymis**.',
       'Epididymis head receives efferent ductules, body supports maturation, and tail stores sperm before vas deferens.',
       'Spermatic cord contains vas deferens, testicular vessels/pampiniform plexus, nerves, lymphatics, and fascial coverings.',
       'Testicular artery arises from aorta; lymph drains para-aortic nodes, while scrotal skin drains superficial inguinal nodes.',
@@ -534,7 +534,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Prostatic zones and urethral relations' },
     ],
     highYield: [
-      'Seminal vesicle lies posterior to bladder and joins ampulla of vas to form ejaculatory duct; it contributes fructose-rich alkaline fluid.',
+      'Seminal vesicle lies posterior to bladder and joins ampulla of vas to form ejaculatory duct; it contributes **fructose-rich alkaline fluid**.',
       'Ejaculatory ducts traverse prostate and empty into prostatic urethra.',
       'Prostate surrounds proximal urethra below bladder; peripheral zone is a common carcinoma site, transition zone commonly enlarges in BPH.',
       'Bulbourethral glands lie in deep perineal pouch and drain into proximal spongy urethra, adding mucus-rich pre-ejaculate.',
@@ -581,7 +581,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Pudendal canal and block' },
     ],
     highYield: [
-      'Perineum is diamond-shaped below pelvic diaphragm and divided into urogenital and anal triangles.',
+      'Perineum is diamond-shaped below pelvic diaphragm and divided into **urogenital and anal triangles**.',
       'Pudendal nerve and internal pudendal vessels exit greater sciatic foramen, hook around ischial spine/sacrospinous ligament, and enter lesser sciatic foramen into Alcock canal.',
       'Superficial perineal pouch contains erectile roots and associated muscles; deep pouch contains external urethral sphincter and proximal urethral structures.',
       'Ischial spine is a key landmark for pudendal nerve block.',
@@ -628,7 +628,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Meiosis and spermiogenesis' },
     ],
     highYield: [
-      'Seminiferous tubules contain Sertoli cells and germ cells arranged from basal spermatogonia to luminal spermatids/spermatozoa.',
+      'Seminiferous tubules contain Sertoli cells and germ cells arranged **from basal spermatogonia to luminal spermatids/spermatozoa**.',
       'Primary spermatocytes undergo meiosis I; secondary spermatocytes are brief; spermatids undergo spermiogenesis without further division.',
       'Spermiogenesis forms acrosome, condenses nucleus, builds flagellum, and sheds residual cytoplasm.',
       'Spermiation releases immature sperm into lumen; epididymal transit supplies motility and fertilizing competence.',
@@ -675,7 +675,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'FSH vs LH targets' },
     ],
     highYield: [
-      'Sertoli cells span seminiferous epithelium, support germ cells, phagocytose residual bodies, secrete inhibin B/ABP/fluid, and respond to FSH plus testosterone.',
+      '**Sertoli cells** span seminiferous epithelium, support germ cells, phagocytose residual bodies, secrete inhibin B/ABP/fluid, and respond to FSH plus testosterone.',
       'Tight junctions between Sertoli cells form blood–testis barrier separating basal from adluminal compartments and limiting immune exposure to meiotic antigens.',
       'Leydig cells lie in interstitium, have steroidogenic organelles/lipid, respond to LH, and synthesize testosterone.',
       'Peritubular myoid cells help propel luminal fluid and contribute to the tubular wall.',
@@ -722,7 +722,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Epididymis vs vas deferens' },
     ],
     highYield: [
-      'Efferent ductules have alternating ciliated/nonciliated cells and scalloped lumen; epididymis has pseudostratified epithelium with stereocilia and smooth muscle.',
+      'Efferent ductules have **alternating ciliated/nonciliated cells and scalloped lumen**; epididymis has pseudostratified epithelium with stereocilia and smooth muscle.',
       'Vas deferens has narrow folded lumen and exceptionally thick three-layer muscular wall for emission.',
       'Seminal vesicle has highly folded mucosa; prostate has tubuloalveolar glands in fibromuscular stroma and may contain corpora amylacea.',
       'Penis contains paired corpora cavernosa and corpus spongiosum surrounding urethra, all enclosed by connective tissue/tunica albuginea.',
@@ -769,7 +769,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Puborectalis and continence' },
     ],
     highYield: [
-      'Pelvic diaphragm is formed mainly by levator ani (puborectalis, pubococcygeus, iliococcygeus) plus coccygeus.',
+      'Pelvic diaphragm is formed mainly by **levator ani (puborectalis, pubococcygeus, iliococcygeus) plus coccygeus**.',
       'Puborectalis sling around anorectal junction maintains anorectal angle and contributes to fecal continence.',
       'Levator ani supports viscera, resists rises in intra-abdominal pressure, and relaxes/expands during defecation and childbirth.',
       'Damage or denervation can contribute to prolapse, incontinence, and pelvic-floor dysfunction.',
@@ -816,7 +816,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Urine extravasation pathways' },
     ],
     highYield: [
-      'Perineum is divided by line between ischial tuberosities into anterior urogenital and posterior anal triangles.',
+      'Perineum is divided by line between ischial tuberosities into **anterior urogenital and posterior anal triangles**.',
       'Perineal membrane forms key boundary; superficial pouch lies between Colles fascia and membrane, deep pouch lies above membrane.',
       'Superficial pouch contains erectile roots and ischiocavernosus/bulbospongiosus; deep pouch contains external urethral sphincter complex.',
       'Fascial attachments determine spread of urine or blood after urethral/perineal injury.',
@@ -863,7 +863,7 @@ export const hrp1AnatomyHistology = [
       { kind: 'exam', label: 'Pudendal branches and erectile bodies' },
     ],
     highYield: [
-      'Pudendal nerve branches into inferior rectal, perineal, and dorsal nerve of penis/clitoris; internal pudendal artery gives corresponding branches.',
+      'Pudendal nerve branches into **inferior rectal, perineal, and dorsal nerve of penis/clitoris**; internal pudendal artery gives corresponding branches.',
       'Paired corpora cavernosa form crura; corpus spongiosum/bulbs surround urethral or vestibular structures and reduce urethral compression during erection.',
       'Female external genitalia include mons, labia majora/minora, vestibule, bulbs, clitoris, and greater vestibular glands.',
       'Parasympathetic cavernous nerves initiate erection through NO-mediated vasodilation; sympathetic/somatic pathways coordinate emission and ejaculation.',

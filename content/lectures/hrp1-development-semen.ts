@@ -13,7 +13,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'SRY, AMH and testosterone' },
     ],
     highYield: [
-      'The gonadal ridge begins as an indifferent gonad populated by primordial germ cells; supporting and steroidogenic cell lineages then differentiate.',
+      'The gonadal ridge begins as an **indifferent gonad populated by primordial germ cells**; supporting and steroidogenic cell lineages then differentiate.',
       'SRY-driven SOX9 signaling promotes testis differentiation: Sertoli cells organize testis cords and produce AMH, while Leydig cells produce testosterone.',
       'In the absence of the testis-determining pathway, pro-ovarian signals such as WNT4/RSPO1 favor ovarian differentiation and cortical follicle development.',
       'Chromosomal, gonadal, internal-duct and external-genital development are related but separable processes, which explains diverse differences of sex development.',
@@ -60,7 +60,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Internal genital derivatives' },
     ],
     highYield: [
-      'Both mesonephric (Wolffian) and paramesonephric (Müllerian) ducts are initially present.',
+      'Both **mesonephric (Wolffian) and paramesonephric (Müllerian) ducts** are initially present.',
       'Testosterone stabilizes mesonephric ducts, which form the epididymis, ductus deferens, seminal vesicle and ejaculatory duct.',
       'AMH from fetal Sertoli cells causes paramesonephric duct regression during typical male differentiation.',
       'Without AMH and high local testosterone, paramesonephric ducts form uterine tubes, uterus and upper vagina, while mesonephric ducts regress.',
@@ -107,7 +107,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Genital tubercle, folds and swellings' },
     ],
     highYield: [
-      'The genital tubercle, urethral folds and labioscrotal swellings are common indifferent primordia.',
+      'The **genital tubercle, urethral folds and labioscrotal swellings** are common indifferent primordia.',
       'DHT promotes elongation of the genital tubercle, fusion of urethral folds and fusion of labioscrotal swellings during typical male development.',
       'Without strong androgen action, the same primordia form the clitoris, labia minora and labia majora; the urogenital groove remains open as the vestibule.',
       'Homologous structures share an embryonic origin: penis–clitoris, scrotum–labia majora, and bulbourethral–greater vestibular glands.',
@@ -154,7 +154,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Cryptorchidism and hydrocele' },
     ],
     highYield: [
-      'Testes descend from the posterior abdominal wall toward the deep ring, through the inguinal canal and into the scrotum under hormonal and mechanical influences.',
+      '**Testes descend from the posterior abdominal wall toward the deep ring, through the inguinal canal and into the scrotum** under hormonal and mechanical influences.',
       'The gubernaculum guides descent; the processus vaginalis precedes the testis and normally closes, leaving the tunica vaginalis.',
       'Failure of processus vaginalis closure permits an indirect inguinal hernia or communicating hydrocele.',
       'Ovarian descent stops in the pelvis; the gubernaculum becomes the ovarian ligament and round ligament of the uterus after attachment to the uterus.',
@@ -201,7 +201,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'AIS, Müllerian anomalies and urethral defects' },
     ],
     highYield: [
-      'Differences of sex development (DSD) arise when chromosomal, gonadal, hormonal, receptor or anatomic pathways differ from typical development.',
+      '**Differences of sex development (DSD)** arise when chromosomal, gonadal, hormonal, receptor or anatomic pathways differ from typical development.',
       'Complete androgen insensitivity usually produces testes, AMH-mediated absence of Müllerian structures, and typical female external anatomy because tissues cannot respond to androgens.',
       'Müllerian fusion or canalization differences may produce uterine anomalies; urinary tract anomalies can coexist because the systems develop closely.',
       'Hypospadias, epispadias, cryptorchidism and congenital adrenal hyperplasia have distinct mechanisms and must not be collapsed into one diagnosis.',
@@ -248,7 +248,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'mechanism', label: 'Accessory gland contributions' },
     ],
     highYield: [
-      'Semen combines sperm-rich testicular/epididymal fluid with secretions from seminal vesicles, prostate and bulbourethral glands.',
+      'Semen combines **sperm-rich testicular/epididymal fluid with secretions from seminal vesicles, prostate and bulbourethral glands**.',
       'Seminal vesicles contribute much of the volume and fructose-rich alkaline fluid; prostate contributes enzymes, citrate and zinc.',
       'A semen analysis is highly pre-analytic: follow the laboratory’s abstinence interval, collect the complete specimen, record timing and losses, and keep transport conditions controlled.',
       'A single result varies within an individual and cannot by itself prove fertility or infertility.',
@@ -295,7 +295,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Fructose and gland function' },
     ],
     highYield: [
-      'Initial examination records appearance, volume, liquefaction and viscosity before microscopy.',
+      'Initial examination records **appearance, volume, liquefaction and viscosity** before microscopy.',
       'Coagulation after ejaculation is followed by prostatic enzyme-mediated liquefaction; persistent hyperviscosity can impair reliable analysis and sperm movement.',
       'Seminal-vesicle alkaline secretion usually predominates in pH, while prostatic fluid is relatively acidic.',
       'Volume, pH and fructose patterns can suggest gland or duct dysfunction, but findings require clinical correlation.',
@@ -342,7 +342,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Count, motility and vitality' },
     ],
     highYield: [
-      'Concentration is sperm per unit volume; total sperm number is concentration multiplied by ejaculate volume.',
+      'Concentration is sperm per unit volume; **total sperm number is concentration multiplied by ejaculate volume**.',
       'A validated counting chamber and proper dilution/mixing are essential because sampling error is magnified in heterogeneous specimens.',
       'Motility is categorized by movement pattern; vitality tests membrane integrity and is especially useful when many sperm are immotile.',
       'WHO lower reference limits describe a fertile reference population; they are not sharp diagnostic boundaries between fertile and infertile.',
@@ -389,7 +389,7 @@ export const hrp1DevelopmentSemen = [
       { kind: 'exam', label: 'Integrated fertility interpretation' },
     ],
     highYield: [
-      'Morphology evaluates head, midpiece and tail using standardized strict criteria and quality-controlled staining.',
+      'Morphology evaluates **head, midpiece and tail** using standardized strict criteria and quality-controlled staining.',
       'Agglutination can suggest antisperm antibodies but is not diagnostic; round cells require differentiation because leukocytes and immature germ cells have different meanings.',
       'Interpret volume, count, motility, vitality and morphology together, considering collection quality, illness, exposures, examination and partner factors.',
       'No routine semen parameter alone divides people cleanly into fertile and infertile groups; repeated abnormalities guide a targeted evaluation.',

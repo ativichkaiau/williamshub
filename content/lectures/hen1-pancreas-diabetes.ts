@@ -109,7 +109,7 @@ export const hen1PancreasDiabetes = [
     highYield: [
       'Gestational diabetes is diabetes first diagnosed in the second or third trimester that was not clearly overt diabetes before pregnancy.',
       'At 24–28 weeks, the one-step 75-g OGTT diagnoses GDM if **any** value is met: fasting 92, 1-hour 180, or 2-hour 153 mg/dL.',
-      'The two-step strategy uses a nonfasting 50-g screen, followed when positive by a fasting 100-g OGTT; Carpenter–Coustan thresholds are 95/180/155/140 mg/dL at 0/1/2/3 hours.',
+      'The **two-step strategy uses a nonfasting 50-g screen, followed when positive by a fasting 100-g OGTT**; Carpenter–Coustan thresholds are 95/180/155/140 mg/dL at 0/1/2/3 hours.',
       'Postpartum testing is essential because GDM predicts future type 2 diabetes; a 75-g OGTT at 4–12 weeks is preferred.',
     ],
     chainTitle: 'Pregnancy insulin resistance is tested with pregnancy-specific glucose loads',
@@ -156,7 +156,7 @@ export const hen1PancreasDiabetes = [
     highYield: [
       '**A1C reflects weighted glycemia over roughly 2–3 months** and needs no fasting, but altered red-cell turnover, hemoglobin variants, pregnancy, kidney disease, or transfusion can distort it.',
       'Fructosamine mainly reflects glycated albumin over about 2–3 weeks; low/abnormal albumin turnover limits interpretation.',
-      'Islet autoantibodies aid type 1 classification. Serum beta-hydroxybutyrate is preferred for detecting significant ketoacidosis over nitroprusside urine tests.',
+      'Islet autoantibodies aid type 1 classification. **Serum beta-hydroxybutyrate is preferred for detecting significant ketoacidosis** over nitroprusside urine tests.',
       'DKA features ketonemia and metabolic acidosis; HHS has more extreme hyperglycemia/hyperosmolality with little or no major ketoacidosis, though overlap occurs.',
     ],
     chainTitle: 'Choose a biomarker whose time window and assumptions match the question',
@@ -202,7 +202,7 @@ export const hen1PancreasDiabetes = [
     ],
     highYield: [
       'Islets occupy a small fraction of pancreatic mass but are richly vascular: **beta cells secrete insulin, alpha glucagon, delta somatostatin**, and PP/gamma cells pancreatic polypeptide.',
-      'Insulin suppresses glucagon locally; glucagon can stimulate insulin and somatostatin; somatostatin inhibits both insulin and glucagon.',
+      '**Insulin suppresses glucagon locally; glucagon can stimulate insulin and somatostatin; somatostatin inhibits both insulin and glucagon**.',
       'This paracrine network coordinates the insulin-to-glucagon ratio before hormones enter systemic circulation.',
       'Islet hormones are peptides synthesized as precursors, stored in granules, and released by regulated exocytosis.',
     ],
@@ -251,7 +251,7 @@ export const hen1PancreasDiabetes = [
       'Low glucose, amino acids, autonomic input, and stress can stimulate alpha-cell glucagon; glucose, insulin, somatostatin, and incretin signals suppress it.',
       'The hepatic glucagon receptor is **Gs-coupled**: cAMP–PKA phosphorylation promotes glycogenolysis and inhibits glycogen synthesis.',
       'Glucagon increases gluconeogenesis, fatty-acid oxidation, and ketogenesis while suppressing hepatic glycolysis and lipogenesis.',
-      'The low insulin-to-glucagon ratio—not glucagon alone—organizes the fasting shift from storage to fuel mobilization.',
+      'The **low insulin-to-glucagon ratio—not glucagon alone—organizes the fasting shift** from storage to fuel mobilization.',
     ],
     chainTitle: 'Low insulin-to-glucagon ratio switches liver from storage to output',
     steps: [
@@ -296,7 +296,7 @@ export const hen1PancreasDiabetes = [
     ],
     highYield: [
       'Preproinsulin is processed to proinsulin, then cleaved into **insulin plus C-peptide** in secretory granules; endogenous release produces them in equimolar amounts.',
-      'Glucose metabolism raises the beta-cell ATP/ADP ratio, closes KATP channels, depolarizes the membrane, opens voltage-gated Ca²⁺ channels, and triggers exocytosis.',
+      'Glucose metabolism raises the beta-cell ATP/ADP ratio, **closes KATP channels, depolarizes the membrane, opens voltage-gated Ca²⁺ channels, and triggers exocytosis**.',
       'Oral glucose produces a larger insulin response than IV glucose because GLP-1 and GIP amplify glucose-dependent secretion (the incretin effect).',
       'Sulfonylureas close KATP channels; GLP-1 receptor agonists and DPP-4 inhibitors enhance incretin signaling.',
     ],
@@ -343,7 +343,7 @@ export const hen1PancreasDiabetes = [
     ],
     highYield: [
       'The insulin receptor is a **receptor tyrosine kinase**; IRS–PI3K–Akt signaling mediates many metabolic effects.',
-      'Insulin recruits GLUT4 to skeletal-muscle and adipose membranes, increasing glucose uptake; liver uses GLUT2 and is regulated mainly through enzyme activity and gene expression.',
+      'Insulin recruits **GLUT4 to skeletal-muscle and adipose membranes**, increasing glucose uptake; liver uses GLUT2 and is regulated mainly through enzyme activity and gene expression.',
       'Insulin promotes glycogen, fatty-acid, triacylglycerol, and protein synthesis while suppressing gluconeogenesis, glycogenolysis, lipolysis, and ketogenesis.',
       'Akt-dependent phosphatase effects favor dephosphorylated fed-state enzymes, while malonyl-CoA inhibits fatty-acid entry into mitochondria.',
     ],
@@ -391,7 +391,7 @@ export const hen1PancreasDiabetes = [
     highYield: [
       'White adipose tissue stores energy and secretes adipokines; brown/beige adipocytes dissipate energy through UCP1-mediated uncoupling.',
       'Leptin rises with fat mass and signals energy sufficiency to hypothalamus, reducing appetite and supporting energy expenditure; common obesity features **leptin resistance**.',
-      'Adiponectin generally improves insulin sensitivity, fatty-acid oxidation, and anti-inflammatory signaling; levels often fall with visceral obesity.',
+      '**Adiponectin generally improves insulin sensitivity, fatty-acid oxidation, and anti-inflammatory signaling**; levels often fall with visceral obesity.',
       'Adipocyte hypertrophy, hypoxia, macrophage recruitment, inflammatory cytokines, and ectopic lipid impair insulin signaling in obesity.',
     ],
     chainTitle: 'Expanded stressed adipose tissue changes endocrine signals and promotes insulin resistance',

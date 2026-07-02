@@ -15,7 +15,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       '**Syncytiotrophoblast is the major placental endocrine tissue**, secreting hCG, progesterone, estrogens, hPL, placental GH, and CRH-related signals.',
-      'hCG is a glycoprotein sharing an alpha subunit with LH/FSH/TSH; its beta subunit provides assay specificity.',
+      'hCG is a glycoprotein sharing an alpha subunit with LH/FSH/TSH; **its beta subunit provides assay specificity**.',
       'hCG binds LH receptors to rescue corpus luteum and maintain early progesterone until placental production is sufficient.',
       'hCG rises rapidly early, peaks near the end of first trimester, then declines to a plateau; abnormal patterns are interpreted with ultrasound and clinical context.',
     ],
@@ -62,7 +62,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       'Placenta uses **maternal cholesterol to make progesterone** but lacks key enzymes for complete de novo androgen synthesis.',
-      'Placental estrogen production depends on fetal/maternal androgen precursors—especially fetal adrenal DHEA-S—creating a fetal–placental unit.',
+      'Placental estrogen production depends on **fetal/maternal androgen precursors—especially fetal adrenal DHEA-S—creating a fetal–placental unit**.',
       'Progesterone maintains decidua, supports immune tolerance, reduces myometrial excitability, and prepares breast lobuloalveolar tissue.',
       'Estrogens drive uterine growth, blood flow, breast ductal development, and later increase myometrial/oxytocin responsiveness.',
     ],
@@ -109,7 +109,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       'hPL rises with placental mass, supports mammary development, promotes lipolysis, and contributes to **maternal insulin resistance** so glucose remains available to fetus.',
-      'Placental GH progressively replaces maternal pituitary GH and shifts maternal IGF-1/metabolism.',
+      '**Placental GH progressively replaces maternal pituitary GH** and shifts maternal IGF-1/metabolism.',
       'Pregnancy increases beta-cell insulin output to compensate; failure of compensation produces gestational diabetes.',
       'Placental CRH rises toward term and participates in fetal HPA maturation and timing pathways for parturition.',
     ],
@@ -156,7 +156,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       '**Estrogen promotes ductal growth; progesterone promotes lobuloalveolar development**; prolactin, GH, insulin, cortisol, and thyroid hormone support differentiation.',
-      'High estrogen/progesterone during pregnancy permit breast growth but inhibit full milk secretion despite high prolactin.',
+      'High estrogen/progesterone during pregnancy permit breast growth but **inhibit full milk secretion despite high prolactin**.',
       'Placental delivery abruptly lowers estrogen/progesterone, releasing prolactin-driven secretory activation (lactogenesis II).',
       'Frequent milk removal maintains production through prolactin signaling and local feedback.',
     ],
@@ -203,7 +203,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       '**Nipple stimulation reduces hypothalamic dopamine** and produces prolactin pulses for milk synthesis.',
-      'The same afferent input activates oxytocin release, contracting myoepithelial cells and ejecting stored milk.',
+      'The same afferent input **activates oxytocin release, contracting myoepithelial cells and ejecting stored milk**.',
       'Prolactin suppresses GnRH and can cause lactational amenorrhea, but contraceptive reliability depends on strict clinical criteria.',
       'Stress/pain can inhibit oxytocin and milk ejection even when milk synthesis is adequate.',
     ],
@@ -250,7 +250,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       '**Colostrum is lower-volume and rich in immune proteins/cells**; transitional and mature milk change with postpartum time and within each feed.',
-      'Human milk supplies lactose, fat, proteins, micronutrients, oligosaccharides, IgA, lactoferrin, leukocytes, and other antimicrobial factors.',
+      'Human milk supplies **lactose, fat, proteins, micronutrients, oligosaccharides, IgA, lactoferrin, leukocytes, and other antimicrobial factors**.',
       'Milk synthesis requires maternal energy, water, glucose, amino acids, and lipids; lactation shifts maternal metabolism to sustain output.',
       'Breastfeeding supports infant nutrition/immune protection and maternal postpartum benefits, while individual contraindications or feeding difficulties require nonjudgmental support.',
     ],
@@ -297,7 +297,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       'Natural menopause is diagnosed retrospectively after **12 months of amenorrhea without another cause**; perimenopause is the preceding transition.',
-      'Follicle depletion lowers inhibin B and estradiol, causing FSH (then LH) to rise and cycles to become irregular/anovulatory.',
+      '**Follicle depletion lowers inhibin B and estradiol, causing FSH (then LH) to rise** and cycles to become irregular/anovulatory.',
       'Estrone from peripheral aromatization becomes the predominant estrogen after menopause.',
       'Premature or iatrogenic ovarian insufficiency differs from expected age-related menopause and warrants etiologic and long-term risk assessment.',
     ],
@@ -344,7 +344,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       'Vasomotor symptoms reflect **narrowed hypothalamic thermoneutral zone**, producing episodic vasodilation and sweating.',
-      'Genitourinary syndrome of menopause includes dryness, dyspareunia, urinary symptoms, and thin less-acidic epithelium from estrogen deficiency.',
+      '**Genitourinary syndrome of menopause includes dryness, dyspareunia, urinary symptoms, and thin less-acidic epithelium** from estrogen deficiency.',
       'Bone resorption accelerates as estrogen restraint on osteoclast pathways falls; fracture risk depends on age and other factors.',
       'Sleep, mood, cognition, sexual function, and cardiometabolic risk are multifactorial—do not attribute every symptom to menopause automatically.',
     ],
@@ -391,7 +391,7 @@ export const hrp1GestationLactationMenopause = [
     ],
     highYield: [
       '**Systemic menopausal hormone therapy is highly effective for vasomotor symptoms** in appropriately selected patients; risks depend on age, timing, route, dose, and medical history.',
-      'A patient with an intact uterus generally needs progestogen with systemic estrogen to prevent endometrial hyperplasia; estrogen alone is used after hysterectomy when otherwise appropriate.',
+      'A patient with an intact uterus generally needs **progestogen with systemic estrogen to prevent endometrial hyperplasia**; estrogen alone is used after hysterectomy when otherwise appropriate.',
       'Low-dose local vaginal estrogen or other local therapies can target genitourinary symptoms with far less systemic exposure.',
       'Nonhormonal options, lifestyle measures, bone-health prevention, and shared decision-making matter when hormone therapy is unsuitable or undesired.',
     ],

@@ -15,7 +15,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       'Endocrine cells release hormones into extracellular fluid and blood; only cells expressing the **matching receptor** respond.',
-      'Endocrine signals act at a distance, paracrine signals act locally, autocrine signals act on the secreting cell, and neuroendocrine cells release hormones from neurons into blood.',
+      '**Endocrine signals act at a distance, paracrine signals act locally, autocrine signals act on the secreting cell**, and neuroendocrine cells release hormones from neurons into blood.',
       'Major endocrine organs include hypothalamus–pituitary, thyroid, parathyroids, adrenals, pancreatic islets, gonads, and pineal gland; many other tissues also have endocrine functions.',
       'One hormone can affect several organs, while one target cell can integrate several hormonal inputs.',
     ],
@@ -62,7 +62,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       '**Negative feedback** is the dominant endocrine control mode: the final hormone or physiologic response suppresses upstream secretion and stabilizes a regulated variable.',
-      'Axis-driven loops use hypothalamic releasing hormone → anterior pituitary tropic hormone → peripheral-gland hormone, with long-loop feedback to pituitary and hypothalamus.',
+      'Axis-driven loops use **hypothalamic releasing hormone → anterior pituitary tropic hormone → peripheral-gland hormone**, with long-loop feedback to pituitary and hypothalamus.',
       'Physiologic-response loops regulate a variable directly, such as glucose control by insulin/glucagon or effective circulating volume through RAAS.',
       'Positive feedback amplifies a process until an external endpoint terminates it, as in the estrogen-driven LH surge or oxytocin during labor.',
     ],
@@ -109,7 +109,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       'Peptide hormones are synthesized as **preprohormones**, processed through ER/Golgi, stored in granules, and released by regulated exocytosis.',
-      'Peptides circulate mainly free, have short half-lives, and signal through cell-surface receptors because they do not freely cross lipid membranes.',
+      'Peptides circulate mainly free, have short half-lives, and signal through **cell-surface receptors** because they do not freely cross lipid membranes.',
       'Catecholamines derive from tyrosine, are stored in vesicles, released rapidly, circulate largely unbound, and act through membrane adrenergic receptors.',
       'Both classes commonly use second messengers and can generate rapid, amplified responses.',
     ],
@@ -156,7 +156,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       'Steroid hormones derive from cholesterol, are **synthesized on demand**, diffuse across membranes, and circulate largely bound to carrier proteins.',
-      'Steroid and thyroid hormones usually bind intracellular receptors that regulate gene transcription, producing slower-onset but longer-lasting effects.',
+      'Steroid and thyroid hormones usually bind **intracellular receptors that regulate gene transcription**, producing slower-onset but longer-lasting effects.',
       'Thyroid hormone is synthesized from iodinated tyrosines and uniquely stored extracellularly in thyroglobulin-rich colloid before release.',
       'Peripheral conversion can activate or inactivate secreted hormone: T4 → T3 or reverse T3, testosterone → DHT/estradiol, and cortisol ↔ cortisone.',
     ],
@@ -204,7 +204,7 @@ export const hen1FoundationsPituitary = [
     highYield: [
       'The **hypothalamus** forms the inferolateral walls and floor of the third ventricle, extending from lamina terminalis/optic chiasm to mammillary bodies.',
       'It integrates endocrine, autonomic, temperature, appetite, circadian, reproductive, and stress responses.',
-      'Paraventricular and supraoptic magnocellular neurons synthesize oxytocin and ADH for axonal transport to the posterior pituitary.',
+      '**Paraventricular and supraoptic magnocellular neurons synthesize oxytocin and ADH** for axonal transport to the posterior pituitary.',
       'Parvocellular neurons release factors into the median-eminence portal circulation to regulate anterior pituitary cells.',
     ],
     chainTitle: 'Hypothalamic neurons convert neural information into endocrine output',
@@ -251,7 +251,7 @@ export const hen1FoundationsPituitary = [
     highYield: [
       'The pituitary lies in the hypophyseal fossa of the sella turcica, below the optic chiasm and connected to hypothalamus by the infundibulum.',
       'Adenohypophysis derives from oral ectoderm of **Rathke pouch** and forms pars distalis, pars intermedia, and pars tuberalis.',
-      'Neurohypophysis derives from neural ectoderm of the diencephalon and forms pars nervosa plus infundibular structures.',
+      '**Neurohypophysis derives from neural ectoderm of the diencephalon** and forms pars nervosa plus infundibular structures.',
       'Expansion of a sellar mass can compress the optic chiasm superiorly or cavernous-sinus structures laterally.',
     ],
     chainTitle: 'Two ectodermal primordia meet to form one pituitary gland',
@@ -297,7 +297,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       'Superior hypophyseal arteries form a **primary plexus at the median eminence**; portal veins carry hypothalamic factors to a secondary plexus in pars distalis.',
-      'The portal system delivers high concentrations of releasing/inhibiting hormones without dilution in systemic blood.',
+      'The portal system delivers **high concentrations of releasing/inhibiting hormones without dilution** in systemic blood.',
       'Inferior hypophyseal arteries chiefly supply the posterior lobe, where neurosecretory terminals release ADH and oxytocin into systemic circulation.',
       'Interruption of the stalk lowers most anterior-pituitary hormones but can raise prolactin because dopamine inhibition is removed.',
     ],
@@ -343,7 +343,7 @@ export const hen1FoundationsPituitary = [
       { kind: 'exam', label: 'Acidophils, basophils and Herring bodies' },
     ],
     highYield: [
-      'Pars distalis is highly cellular: acidophils include somatotrophs/lactotrophs; basophils include corticotrophs, thyrotrophs, and gonadotrophs; chromophobes stain weakly.',
+      'Pars distalis is highly cellular: **acidophils include somatotrophs/lactotrophs; basophils include corticotrophs, thyrotrophs, and gonadotrophs**; chromophobes stain weakly.',
       'Pars intermedia may contain colloid-filled remnants of Rathke pouch; pars tuberalis wraps the infundibulum.',
       'Pars nervosa is paler and contains unmyelinated hypothalamic axons, fenestrated capillaries, supporting pituicytes, and dilated **Herring bodies**.',
       'Posterior-lobe hormone cell bodies are in hypothalamus, so pars nervosa is neural tissue rather than a gland of endocrine cell cords.',
@@ -392,7 +392,7 @@ export const hen1FoundationsPituitary = [
     highYield: [
       'Anterior pituitary secretes **ACTH, TSH, LH, FSH, GH, and prolactin**; the first four chiefly regulate peripheral endocrine targets.',
       'CRH→ACTH→cortisol, TRH→TSH→T3/T4, and GnRH→LH/FSH→gonadal hormones are classic three-tier axes.',
-      'GHRH stimulates and somatostatin inhibits GH; dopamine tonically inhibits prolactin.',
+      'GHRH stimulates and somatostatin inhibits GH; **dopamine tonically inhibits prolactin**.',
       'Final hormones exert long-loop negative feedback; pituitary hormones can provide short-loop feedback to hypothalamus.',
     ],
     chainTitle: 'Hypothalamic factors specify anterior-pituitary cell output',
@@ -437,7 +437,7 @@ export const hen1FoundationsPituitary = [
       { kind: 'exam', label: 'Gigantism vs acromegaly' },
     ],
     highYield: [
-      'GH is a peptide from somatotrophs; GHRH, sleep, exercise, stress, and hypoglycemia stimulate it, while somatostatin, hyperglycemia, and IGF-1 suppress it.',
+      'GH is a peptide from somatotrophs; **GHRH, sleep, exercise, stress, and hypoglycemia stimulate it, while somatostatin, hyperglycemia, and IGF-1 suppress it**.',
       'GH receptor activates **JAK2–STAT signaling**. Liver and other tissues produce IGF-1, which mediates much of linear growth and feeds back on the axis.',
       'GH directly promotes lipolysis and antagonizes insulin action, helping preserve glucose during fasting.',
       'GH excess before epiphyseal closure causes gigantism; after closure it causes acromegaly. Childhood deficiency causes proportionate short stature.',
@@ -487,7 +487,7 @@ export const hen1FoundationsPituitary = [
       'Prolactin from lactotrophs promotes mammary development and milk synthesis; estrogen expands lactotroph mass during pregnancy.',
       '**Dopamine is the dominant inhibitor**. Suckling reduces dopaminergic inhibition and increases prolactin pulses.',
       'Prolactin activates a JAK–STAT receptor and supports lactogenesis, while oxytocin separately ejects stored milk.',
-      'High prolactin suppresses GnRH, lowering LH/FSH and causing amenorrhea, infertility, or hypogonadism.',
+      '**High prolactin suppresses GnRH**, lowering LH/FSH and causing amenorrhea, infertility, or hypogonadism.',
     ],
     chainTitle: 'Suckling removes dopamine restraint and stimulates milk synthesis',
     steps: [
@@ -532,7 +532,7 @@ export const hen1FoundationsPituitary = [
     ],
     highYield: [
       'Oxytocin is synthesized in hypothalamic magnocellular neurons, transported with neurophysin, and released from posterior-pituitary terminals.',
-      'Nipple stimulation triggers pulsatile oxytocin that contracts mammary myoepithelial cells and ejects milk.',
+      'Nipple stimulation triggers **pulsatile oxytocin that contracts mammary myoepithelial cells and ejects milk**.',
       'Cervical stretch during labor activates the **Ferguson reflex**: oxytocin strengthens uterine contractions, increasing stretch until delivery ends the loop.',
       'Oxytocin receptors are Gq-coupled and increase intracellular Ca²⁺ in smooth muscle and myoepithelial cells.',
     ],
@@ -581,7 +581,7 @@ export const hen1FoundationsPituitary = [
       'ADH (vasopressin) release is exquisitely sensitive to increased plasma osmolality and also rises with major effective-volume depletion.',
       'Renal **V2 receptors** activate Gs–cAMP–PKA, inserting aquaporin-2 into collecting-duct principal-cell apical membranes and concentrating urine.',
       'V1 receptors are Gq-coupled and mediate vasoconstriction at higher ADH concentrations.',
-      'Central diabetes insipidus reflects deficient ADH; nephrogenic DI reflects renal resistance. Both cause hypotonic polyuria and compensatory thirst.',
+      '**Central diabetes insipidus reflects deficient ADH; nephrogenic DI reflects renal resistance**. Both cause hypotonic polyuria and compensatory thirst.',
     ],
     chainTitle: 'Hyperosmolality triggers ADH-dependent collecting-duct water uptake',
     steps: [

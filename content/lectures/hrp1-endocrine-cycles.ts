@@ -15,7 +15,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       'Sex steroids derive from cholesterol through mitochondrial/cytosolic enzyme pathways and are **synthesized on demand** rather than stored in granules.',
-      'Progesterone has 21 carbons, androgens 19, and estrogens 18; tissue enzyme expression determines the final product.',
+      '**Progesterone has 21 carbons, androgens 19, and estrogens 18**; tissue enzyme expression determines the final product.',
       'Lipophilic steroids circulate largely bound to SHBG/albumin and act mainly through intracellular receptors regulating transcription.',
       'Peripheral conversion creates active signals: testosterone → DHT by 5α-reductase and → estradiol by aromatase.',
     ],
@@ -62,7 +62,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Pulsatile GnRH stimulates LH and FSH; continuous GnRH suppresses gonadotropin secretion** after initial stimulation.',
-      'LH stimulates Leydig testosterone synthesis; FSH plus high intratesticular testosterone supports Sertoli cells and spermatogenesis.',
+      '**LH stimulates Leydig testosterone synthesis; FSH plus high intratesticular testosterone supports Sertoli cells and spermatogenesis**.',
       'Testosterone/estradiol feed back on hypothalamus/pituitary; Sertoli inhibin B selectively suppresses FSH.',
       'Primary testicular failure causes low testosterone with high LH/FSH; central failure causes low testosterone with low/inappropriately normal gonadotropins.',
     ],
@@ -109,7 +109,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Testosterone supports Wolffian derivatives, muscle, bone, libido, erythropoiesis, and spermatogenesis**.',
-      'DHT is essential for external genital/prostate development and contributes to facial/body hair, acne, prostate growth, and scalp hair loss.',
+      '**DHT is essential for external genital/prostate development** and contributes to facial/body hair, acne, prostate growth, and scalp hair loss.',
       'Aromatized estradiol is crucial in males for bone maturation, epiphyseal closure, and aspects of feedback.',
       'Most circulating testosterone is protein-bound; free/bioavailable fraction drives target effects.',
     ],
@@ -156,7 +156,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Estradiol is the dominant reproductive-age estrogen**; it promotes reproductive-tract growth, endometrial proliferation, ductal breast growth, bone maintenance, and secondary sex traits.',
-      'Progesterone converts endometrium to secretory state, reduces myometrial excitability, thickens cervical mucus, and promotes mammary lobuloalveolar development.',
+      '**Progesterone converts endometrium to secretory state, reduces myometrial excitability, thickens cervical mucus, and promotes mammary lobuloalveolar development**.',
       'Estrogen usually provides negative feedback but sustained high preovulatory estradiol creates positive feedback and LH surge.',
       'Progesterone raises basal body temperature after ovulation and provides strong luteal negative feedback.',
     ],
@@ -250,7 +250,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Central precocious puberty is early but normally sequenced HPG-axis activation**, producing gonadal enlargement and sex-steroid effects.',
-      'Girls often have idiopathic disease; boys and children with neurologic signs have higher likelihood of CNS pathology.',
+      'Girls often have idiopathic disease; **boys and children with neurologic signs have higher likelihood of CNS pathology**.',
       'Growth accelerates initially but advanced bone age can shorten final adult height through early epiphyseal closure.',
       'Pubertal basal or GnRH-stimulated LH supports central activation; brain MRI is selected by age, sex, and clinical context.',
     ],
@@ -297,7 +297,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       'Peripheral precocious puberty is sex-steroid production **independent of central GnRH**—adrenal/gonadal disorders, tumors, exogenous exposure, or hCG can cause it.',
-      'Sequence may be discordant or contrasexual; gonads may remain small unless locally enlarged by a tumor/cyst.',
+      '**Sequence may be discordant or contrasexual; gonads may remain small** unless locally enlarged by a tumor/cyst.',
       'LH is generally suppressed and lacks a pubertal stimulation response despite elevated sex steroid.',
       'Workup is directed by phenotype: DHEAS/17-hydroxyprogesterone for adrenal causes, hCG, gonadal imaging, and other targeted tests.',
     ],
@@ -344,7 +344,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       'Delayed puberty may reflect **constitutional delay, chronic illness/energy deficit, central hypogonadism, or primary gonadal failure**.',
-      'Primary gonadal failure causes low sex steroids with high LH/FSH (hypergonadotropic); central causes cause low steroids with low/inappropriately normal LH/FSH.',
+      '**Primary gonadal failure causes low sex steroids with high LH/FSH (hypergonadotropic); central causes cause low steroids with low/inappropriately normal LH/FSH**.',
       'Constitutional delay usually has delayed bone age, family history, preserved growth potential, and spontaneous progression.',
       'Turner and Klinefelter syndromes are classic primary gonadal-failure causes; anosmia suggests congenital GnRH deficiency.',
     ],
@@ -391,7 +391,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**LH stimulates theca interna to synthesize androgen** from cholesterol; theca lacks sufficient aromatase.',
-      'Androgen diffuses into granulosa cells, where FSH stimulates aromatase and estradiol synthesis.',
+      'Androgen diffuses into granulosa cells, where **FSH stimulates aromatase and estradiol synthesis**.',
       'Before ovulation granulosa cells gain LH receptors; after luteinization both granulosa and theca lutein cells produce progesterone/steroids.',
       'Inhibin suppresses FSH; activin promotes FSH-related effects.',
     ],
@@ -438,7 +438,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       'Early follicular loss of luteal steroids permits **FSH rise and follicle recruitment**; estradiol/inhibin then reduce FSH, selecting a dominant follicle.',
-      'Most of cycle, estradiol provides negative feedback. Sustained high estradiol from dominant follicle switches to positive feedback.',
+      'Most of cycle, estradiol provides negative feedback. **Sustained high estradiol from dominant follicle switches to positive feedback**.',
       'LH surge completes oocyte meiosis I, induces follicular rupture, and initiates luteinization; a smaller FSH surge accompanies it.',
       'Luteal progesterone, estradiol, and inhibin suppress gonadotropins until corpus-luteum regression.',
     ],
@@ -485,7 +485,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Follicular phase length varies and is estrogen-dominant; luteal phase is more consistent and progesterone-dominant**.',
-      'LH surge drives proteolysis, prostaglandins, wall weakening, oocyte maturation, and ovulation.',
+      '**LH surge drives proteolysis, prostaglandins, wall weakening, oocyte maturation, and ovulation**.',
       'Corpus luteum secretes progesterone, estradiol, and inhibin A; without hCG it regresses after about two weeks.',
       'hCG from implantation rescues corpus luteum until placental steroidogenesis becomes adequate.',
     ],
@@ -532,7 +532,7 @@ export const hrp1EndocrineCycles = [
     ],
     highYield: [
       '**Estrogen rebuilds proliferative endometrium and makes cervical mucus thin/stretchy; progesterone produces secretory endometrium and thick mucus**.',
-      'Withdrawal of luteal progesterone/estrogen causes spiral-artery instability, tissue breakdown, and menstruation.',
+      '**Withdrawal of luteal progesterone/estrogen causes spiral-artery instability, tissue breakdown, and menstruation**.',
       'Urinary LH predicts ovulation; basal temperature rises after ovulation; cervical mucus becomes spinnbarkeit/ferning near ovulation.',
       'Combined hormonal contraception suppresses FSH/LH and ovulation; progestin also thickens cervical mucus and alters endometrium.',
     ],

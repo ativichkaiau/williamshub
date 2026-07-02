@@ -205,6 +205,21 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // HCVS-1 — Human Cardiovascular System-1 (Year 2)
+  'L1 — Overview of the Cardiovascular System': 'HCVS-1',
+  'L2 — Histology of the Cardiovascular System': 'HCVS-1',
+  'L3 — Development of the Cardiovascular System': 'HCVS-1',
+  'L4 — Cardiac Electrophysiology': 'HCVS-1',
+  'L5 — ECG Formation': 'HCVS-1',
+  'L6 — Electrocardiography': 'HCVS-1',
+  'L7 — Regulation of Blood Pressure': 'HCVS-1',
+  'L8 — ECG in Clinical Practice': 'HCVS-1',
+  'L9 — Echocardiography & Chest X-ray': 'HCVS-1',
+  'L10 — Cardiac Cycle & Hemodynamics': 'HCVS-1',
+  'L11 — Biomarkers in ACS': 'HCVS-1',
+  'L12 — Ambulatory Blood Pressure Monitoring': 'HCVS-1',
+  'L13 — Early Clinical Exposure (CVS)': 'HCVS-1',
+
   // HRS-1 — Human Respiratory System-1 (Year 2)
   'L1 — Development of the Respiratory System': 'HRS-1',
   'L2 — Structure of the Respiratory System': 'HRS-1',

@@ -665,6 +665,28 @@ import co2TransportBlood from './lectures/co2-transport-blood';
 import controlOfBreathing from './lectures/control-of-breathing';
 import abgAcidBaseInterpretation from './lectures/abg-acid-base-interpretation';
 
+// ── HCVS-1 (Human Cardiovascular System-1) ──
+import heartAnatomyChambersValves from './lectures/heart-anatomy-chambers-valves';
+import systemicPulmonaryCirculation from './lectures/systemic-pulmonary-circulation';
+import heartWallCardiacHistology from './lectures/heart-wall-cardiac-histology';
+import bloodVesselHistology from './lectures/blood-vessel-histology';
+import heartTubeLoopingSeptation from './lectures/heart-tube-looping-septation';
+import fetalCirculationShunts from './lectures/fetal-circulation-shunts';
+import cardiacActionPotential from './lectures/cardiac-action-potential';
+import pacemakerConductionSystem from './lectures/pacemaker-conduction-system';
+import ecgFormationWaves from './lectures/ecg-formation-waves';
+import ecgLeadsAxis from './lectures/ecg-leads-axis';
+import bloodPressureBaroreceptorReflex from './lectures/blood-pressure-baroreceptor-reflex';
+import longTermBpRaas from './lectures/long-term-bp-raas';
+import ecgSystematicInterpretation from './lectures/ecg-systematic-interpretation';
+import echocardiographyBasics from './lectures/echocardiography-basics';
+import chestXrayCardiac from './lectures/chest-xray-cardiac';
+import cardiacCycleHeartSounds from './lectures/cardiac-cycle-heart-sounds';
+import hemodynamicsPreloadAfterloadCardiacOutput from './lectures/hemodynamics-preload-afterload-cardiac-output';
+import cardiacBiomarkersAcs from './lectures/cardiac-biomarkers-acs';
+import bloodPressureMeasurementAbpm from './lectures/blood-pressure-measurement-abpm';
+import cardiovascularExamination from './lectures/cardiovascular-examination';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1118,6 +1140,34 @@ export const lectures: Lecture[] = [
   gasExchangeDiffusion, oxygenTransportDissociationCurve, co2TransportBlood,
   // L6 Regulation of Respiration & ABG
   controlOfBreathing, abgAcidBaseInterpretation,
+
+  // ── HCVS-1 (Human Cardiovascular System-1) ──
+  // L1 Overview of the Cardiovascular System
+  heartAnatomyChambersValves, systemicPulmonaryCirculation,
+  // L2 Histology of the Cardiovascular System
+  heartWallCardiacHistology, bloodVesselHistology,
+  // L3 Development of the Cardiovascular System
+  heartTubeLoopingSeptation, fetalCirculationShunts,
+  // L4 Cardiac Electrophysiology
+  cardiacActionPotential, pacemakerConductionSystem,
+  // L5 ECG Formation
+  ecgFormationWaves,
+  // L6 Electrocardiography
+  ecgLeadsAxis,
+  // L7 Regulation of Blood Pressure
+  bloodPressureBaroreceptorReflex, longTermBpRaas,
+  // L8 ECG in Clinical Practice
+  ecgSystematicInterpretation,
+  // L9 Echocardiography & Chest X-ray
+  echocardiographyBasics, chestXrayCardiac,
+  // L10 Cardiac Cycle & Hemodynamics
+  cardiacCycleHeartSounds, hemodynamicsPreloadAfterloadCardiacOutput,
+  // L11 Biomarkers in ACS
+  cardiacBiomarkersAcs,
+  // L12 Ambulatory Blood Pressure Monitoring
+  bloodPressureMeasurementAbpm,
+  // L13 Early Clinical Exposure (CVS)
+  cardiovascularExamination,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

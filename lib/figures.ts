@@ -3147,3 +3147,169 @@ export const ABG_ACIDBASE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org
     <rect x="244" y="178" width="222" height="52" rx="6" fill="#dcfce7"/><text x="355" y="194" text-anchor="middle" font-weight="700" fill="#15803d">Metabolic alkalosis</text><text x="355" y="207" text-anchor="middle" fill="#166534">↑HCO₃⁻ (vomiting, diuretics)</text><text x="355" y="220" text-anchor="middle" fill="#166534">→ hypoventilation compensates</text>
   </g>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HCVS-1 — Human Cardiovascular System-1 figures
+// ---------------------------------------------------------------------------
+
+export const HEART_ANATOMY = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Heart chambers and circulation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Heart chambers, valves &amp; the two circuits</text>
+  <!-- right heart -->
+  <rect x="70" y="40" width="90" height="60" rx="8" fill="#dbeafe" stroke="#2563eb"/><text x="115" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">RA</text><text x="115" y="80" text-anchor="middle" font-size="7" fill="#1e40af">(deoxygenated)</text>
+  <rect x="70" y="108" width="90" height="70" rx="8" fill="#bfdbfe" stroke="#2563eb"/><text x="115" y="146" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">RV</text>
+  <!-- left heart -->
+  <rect x="230" y="40" width="90" height="60" rx="8" fill="#fee2e2" stroke="#dc2626"/><text x="275" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">LA</text><text x="275" y="80" text-anchor="middle" font-size="7" fill="#991b1b">(oxygenated)</text>
+  <rect x="230" y="108" width="90" height="70" rx="8" fill="#fecaca" stroke="#dc2626"/><text x="275" y="146" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">LV (thick)</text>
+  <!-- valves -->
+  <text x="115" y="104" text-anchor="middle" font-size="6.5" fill="#334155">tricuspid</text>
+  <text x="275" y="104" text-anchor="middle" font-size="6.5" fill="#334155">mitral (bicuspid)</text>
+  <text x="115" y="36" text-anchor="middle" font-size="6.5" fill="#334155">↑ pulmonary valve</text>
+  <text x="275" y="36" text-anchor="middle" font-size="6.5" fill="#334155">↑ aortic valve</text>
+  <!-- flow -->
+  <g stroke="#94a3b8" stroke-width="1.5" fill="none" marker-end="url(#ha)"><path d="M160 150 q40 30 70 0"/><path d="M70 130 q-40 -60 0 -90"/></g>
+  <defs><marker id="ha" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#64748b"/></marker></defs>
+  <g font-size="8" fill="#334155"><text x="330" y="60">Pulmonary circuit:</text><text x="336" y="72" fill="#1d4ed8">RV → lungs → LA</text><text x="330" y="92">Systemic circuit:</text><text x="336" y="104" fill="#b91c1c">LV → body → RA</text></g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1"><tspan font-weight="700">2 valve types:</tspan> AV valves (tricuspid R, mitral L — chordae/papillary muscles) + semilunar valves (pulmonary, aortic).</text>
+  <text x="16" y="216" font-size="8.5" fill="#475569">Wall: endocardium (inner) · myocardium (muscle) · epicardium (outer); pericardium surrounds. LV wall thickest (systemic pressure).</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">"Right heart = deoxygenated (blue) to lungs; left heart = oxygenated (red) to body." Right &amp; left pumps are in SERIES.</text>
+</svg>`;
+
+export const BLOOD_VESSEL_WALLS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Blood vessel wall structure" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Blood vessel walls — three tunics</text>
+  <g font-size="8.5" fill="#334155">
+    <text x="16" y="40"><tspan font-weight="700" fill="#dc2626">Tunica intima</tspan> = endothelium + basement membrane (innermost; smooth lining)</text>
+    <text x="16" y="56"><tspan font-weight="700" fill="#2563eb">Tunica media</tspan> = smooth muscle + elastic fibres (thickest in arteries; controls diameter)</text>
+    <text x="16" y="72"><tspan font-weight="700" fill="#15803d">Tunica adventitia</tspan> = connective tissue (anchors; vasa vasorum in large vessels)</text>
+  </g>
+  <line x1="16" y1="82" x2="464" y2="82" stroke="#e2e8f0"/>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="100">Vessel</text><text x="150" y="100">Wall feature</text><text x="330" y="100">Role</text></g>
+  <line x1="16" y1="105" x2="464" y2="105" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="122" font-weight="700" fill="#b91c1c">Elastic artery (aorta)</text><text x="150" y="122" fill="#475569">thick ELASTIC media</text><text x="330" y="122" fill="#475569">"Windkessel" — recoil sustains flow in diastole</text>
+    <text x="18" y="140" font-weight="700" fill="#b91c1c">Muscular artery</text><text x="150" y="140" fill="#475569">thick SMOOTH-MUSCLE media</text><text x="330" y="140" fill="#475569">distributes blood to organs</text>
+    <text x="18" y="158" font-weight="700" fill="#ea580c">Arteriole</text><text x="150" y="158" fill="#475569">smooth muscle, small lumen</text><text x="330" y="158" fill="#475569">main RESISTANCE vessels → control BP/flow</text>
+    <text x="18" y="176" font-weight="700" fill="#15803d">Capillary</text><text x="150" y="176" fill="#475569">endothelium only (1 cell)</text><text x="330" y="176" fill="#475569">EXCHANGE (thin; continuous/fenestrated/sinusoid)</text>
+    <text x="18" y="194" font-weight="700" fill="#2563eb">Vein / venule</text><text x="150" y="194" fill="#475569">thin wall, large lumen, VALVES</text><text x="330" y="194" fill="#475569">CAPACITANCE (~65% of blood); valves prevent backflow</text>
+  </g>
+  <text x="16" y="216" font-size="8.5" fill="#0369a1">Arteries: thick media, small lumen, high pressure. Veins: thin wall, big lumen, low pressure, valves, hold most of the blood.</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">Only arteries/arterioles have a prominent muscular media; capillaries are just endothelium (for diffusion). Lymphatics also have valves.</text>
+</svg>`;
+
+export const HEART_DEVELOPMENT = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Heart development" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Heart development: tube → loop → septate</text>
+  <rect x="16" y="30" width="146" height="70" rx="8" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="89" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#4338ca">1 Heart tube (wk 3)</text>
+  <text x="89" y="66" text-anchor="middle" font-size="7.5" fill="#3730a3">fuses from cardiogenic</text><text x="89" y="78" text-anchor="middle" font-size="7.5" fill="#3730a3">mesoderm; 5 regions</text><text x="89" y="92" text-anchor="middle" font-size="7" fill="#4338ca">(truncus, bulbus, ventricle, atrium, sinus venosus)</text>
+  <rect x="168" y="30" width="146" height="70" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="241" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">2 Looping (wk 4)</text>
+  <text x="241" y="66" text-anchor="middle" font-size="7.5" fill="#1e40af">D-loop: tube bends</text><text x="241" y="78" text-anchor="middle" font-size="7.5" fill="#1e40af">RIGHTward → positions</text><text x="241" y="90" text-anchor="middle" font-size="7.5" fill="#1e40af">chambers correctly</text>
+  <rect x="320" y="30" width="146" height="70" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="393" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">3 Septation (wk 4–8)</text>
+  <text x="393" y="66" text-anchor="middle" font-size="7.5" fill="#166534">atrial (septum primum/</text><text x="393" y="78" text-anchor="middle" font-size="7.5" fill="#166534">secundum), ventricular,</text><text x="393" y="90" text-anchor="middle" font-size="7.5" fill="#166534">+ outflow tract</text>
+  <g stroke="#94a3b8" stroke-width="1.5"><line x1="162" y1="65" x2="168" y2="65"/><line x1="314" y1="65" x2="320" y2="65"/></g>
+  <text x="16" y="126" font-size="9" font-weight="700" fill="#0369a1">Outflow tract split by the spiral aorticopulmonary (AP) septum:</text>
+  <text x="16" y="142" font-size="8.5" fill="#475569">truncus arteriosus → aorta + pulmonary trunk (neural-crest cells). Faulty spiralling → transposition; failure → persistent truncus.</text>
+  <text x="16" y="164" font-size="9" font-weight="700" fill="#0369a1">Common congenital defects:</text>
+  <text x="16" y="180" font-size="8.5" fill="#475569">• VSD (commonest) — membranous septum fails • ASD — foramen ovale/septum defect</text>
+  <text x="16" y="196" font-size="8.5" fill="#475569">• Tetralogy of Fallot — unequal AP-septum division (4 features) • Transposition — AP septum doesn't spiral</text>
+  <text x="16" y="214" font-size="8.5" fill="#475569">The heart beats from ~wk 3–4 (the first functioning organ). Septation errors → left-to-right or right-to-left shunts.</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">Mnemonic: the heart "Tubes, Turns (right), then Ties off" (tube → loop → septate).</text>
+</svg>`;
+
+export const FETAL_CIRCULATION = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Fetal circulation shunts" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Fetal circulation — 3 shunts bypass the lungs &amp; liver</text>
+  <text x="16" y="38" font-size="8.5" fill="#64748b">Oxygen comes from the PLACENTA (not lungs); the lungs are fluid-filled &amp; high-resistance, so blood is diverted.</text>
+  <g font-size="8.5">
+    <rect x="16" y="48" width="448" height="34" rx="6" fill="#fee2e2"/><text x="24" y="63" font-weight="700" fill="#b91c1c">1 Ductus venosus</text><text x="140" y="63" fill="#991b1b">umbilical vein → IVC, bypassing the LIVER</text><text x="24" y="76" fill="#991b1b">→ closes → ligamentum venosum</text>
+    <rect x="16" y="86" width="448" height="34" rx="6" fill="#fef9c3"/><text x="24" y="101" font-weight="700" fill="#a16207">2 Foramen ovale</text><text x="140" y="101" fill="#854d0e">RIGHT atrium → LEFT atrium, bypassing the lungs</text><text x="24" y="114" fill="#854d0e">→ closes → fossa ovalis (patent foramen ovale if not)</text>
+    <rect x="16" y="124" width="448" height="34" rx="6" fill="#dbeafe"/><text x="24" y="139" font-weight="700" fill="#1d4ed8">3 Ductus arteriosus</text><text x="150" y="139" fill="#1e40af">pulmonary artery → aorta, bypassing the lungs</text><text x="24" y="152" fill="#1e40af">→ closes → ligamentum arteriosum</text>
+  </g>
+  <text x="16" y="178" font-size="9" font-weight="700" fill="#0369a1">Umbilical vessels:</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">Umbilical VEIN carries OXYGENATED blood to the fetus (→ ligamentum teres). TWO umbilical arteries carry deoxygenated blood back.</text>
+  <text x="16" y="214" font-size="9" font-weight="700" fill="#0369a1">At birth:</text>
+  <text x="16" y="230" font-size="8.5" fill="#475569">First breath → lungs expand → ↓pulmonary resistance + ↑LA pressure → foramen ovale closes; ↑O₂ + ↓prostaglandins → ductus arteriosus closes.</text>
+  <text x="16" y="246" font-size="8" fill="#64748b">Prostaglandins keep the ductus OPEN (PGE₁ maintains it; indomethacin/NSAID closes it).</text>
+</svg>`;
+
+export const PACEMAKER_CONDUCTION = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cardiac conduction system and pacemaker potential" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Conduction system &amp; the pacemaker</text>
+  <!-- conduction path -->
+  <g font-size="8.5" fill="#334155">
+    <text x="16" y="42" font-weight="700" fill="#b91c1c">SA node</text><text x="80" y="42">(RA) — the natural PACEMAKER (~60–100/min)</text>
+    <text x="30" y="58">↓ (through atria → atrial contraction)</text>
+    <text x="16" y="74" font-weight="700" fill="#ea580c">AV node</text><text x="80" y="74">— DELAYS impulse (~0.1 s) → lets atria empty first</text>
+    <text x="30" y="90">↓</text>
+    <text x="16" y="106" font-weight="700" fill="#a16207">Bundle of His → L &amp; R bundle branches</text>
+    <text x="30" y="122">↓</text>
+    <text x="16" y="138" font-weight="700" fill="#7c3aed">Purkinje fibres</text><text x="110" y="138">— rapid spread → synchronous ventricular contraction</text>
+  </g>
+  <text x="16" y="160" font-size="8.5" fill="#0369a1">Intrinsic rates (backups): SA ~60–100 &gt; AV ~40–60 &gt; Purkinje/ventricle ~20–40 per min (fastest sets the pace).</text>
+  <line x1="16" y1="170" x2="464" y2="170" stroke="#e2e8f0"/>
+  <text x="16" y="188" font-size="9" font-weight="700" fill="#0369a1">Pacemaker (SA node) action potential — no stable resting potential</text>
+  <line x1="30" y1="235" x2="220" y2="235" stroke="#94a3b8"/>
+  <path d="M40 232 q18 -6 26 -22 L74 190 L86 232 q18 -6 26 -22 L120 190 L132 232 q18 -6 26 -22 L166 190 L178 232" fill="none" stroke="#b91c1c" stroke-width="2"/>
+  <text x="55" y="228" font-size="7" fill="#b91c1c">phase 4 slope</text>
+  <g font-size="8" fill="#475569"><text x="240" y="192">• Phase 4 = slow spontaneous depolarisation</text><text x="252" y="204">(the "funny current" I_f, Na⁺ in) → automaticity</text><text x="240" y="218">• Phase 0 upstroke = Ca²⁺ in (slow response)</text><text x="240" y="232">• Sympathetic ↑phase-4 slope → faster; vagus ↓ → slower</text></g>
+</svg>`;
+
+export const ECG_WAVES = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="ECG waves and intervals" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The ECG waveform — what each part means</text>
+  <line x1="20" y1="110" x2="460" y2="110" stroke="#cbd5e1"/>
+  <!-- P QRS T -->
+  <path d="M30 110 q15 -22 30 0 L90 110 L110 110 L120 118 L132 55 L146 135 L156 110 L200 110 q22 -28 44 0 L300 110 q15 -22 30 0 L400 110 L440 110" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <text x="45" y="82" font-size="8" font-weight="700" fill="#b91c1c">P</text><text x="30" y="96" font-size="6.5" fill="#991b1b">atrial depol.</text>
+  <text x="133" y="48" font-size="8" font-weight="700" fill="#b91c1c">QRS</text><text x="120" y="150" font-size="6.5" fill="#991b1b">ventricular depol.</text>
+  <text x="222" y="76" font-size="8" font-weight="700" fill="#b91c1c">T</text><text x="205" y="92" font-size="6.5" fill="#991b1b">ventricular repol.</text>
+  <text x="315" y="90" font-size="7" fill="#64748b">(atrial repol. hidden in QRS)</text>
+  <line x1="16" y1="160" x2="464" y2="160" stroke="#e2e8f0"/>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="180"><tspan font-weight="700" fill="#334155">PR interval</tspan> (start P → start QRS): AV conduction/delay — ↑ in heart block (normal 0.12–0.20 s)</text>
+    <text x="16" y="196"><tspan font-weight="700" fill="#334155">QRS duration</tspan>: ventricular depolarisation — wide (&gt;0.12 s) in bundle branch block</text>
+    <text x="16" y="212"><tspan font-weight="700" fill="#334155">QT interval</tspan>: total ventricular depol.+repol. — long QT → risk of torsades</text>
+  </g>
+  <text x="16" y="228" font-size="7.5" fill="#64748b">Paper: 1 small box = 0.04 s (25 mm/s); rate = 300 ÷ (big boxes between R waves).</text>
+</svg>`;
+
+export const ECG_LEADS_AXIS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="ECG leads and axis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The 12-lead ECG &amp; cardiac axis</text>
+  <text x="16" y="40" font-size="8.5" fill="#334155" font-weight="700">12 leads = 12 "views" of the heart's electrical vector:</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="24" y="58">• 6 LIMB leads (frontal plane): I, II, III (Einthoven's triangle) + aVR, aVL, aVF</text>
+    <text x="24" y="74">• 6 CHEST/precordial leads (horizontal plane): V1–V6</text>
+  </g>
+  <text x="16" y="96" font-size="8.5" fill="#475569">A wave toward a lead → upward (positive) deflection; away → downward. Territories:</text>
+  <g font-size="8"><text x="24" y="112" fill="#b91c1c">Inferior: II, III, aVF</text><text x="180" y="112" fill="#1d4ed8">Lateral: I, aVL, V5–V6</text><text x="340" y="112" fill="#15803d">Septal/anterior: V1–V4</text></g>
+  <!-- hexaxial -->
+  <circle cx="120" cy="185" r="48" fill="none" stroke="#cbd5e1"/>
+  <g stroke="#94a3b8" stroke-width="1"><line x1="72" y1="185" x2="168" y2="185"/><line x1="120" y1="137" x2="120" y2="233"/><line x1="86" y1="151" x2="154" y2="219"/><line x1="154" y1="151" x2="86" y2="219"/></g>
+  <text x="174" y="188" font-size="7" fill="#334155">I (0°)</text><text x="112" y="245" font-size="7" fill="#334155">aVF (+90°)</text><text x="100" y="132" font-size="7" fill="#334155">−90°</text>
+  <text x="16" y="228" font-size="8" fill="#475569" transform="translate(190,0)">Normal axis ≈ −30° to +90°.</text>
+  <g font-size="8" fill="#475569"><text x="206" y="152">Quick axis check (leads I &amp; aVF):</text><text x="212" y="168">• Both UP → normal axis</text><text x="212" y="182">• I up, aVF down → left axis deviation</text><text x="212" y="196">• I down, aVF up → right axis deviation</text><text x="212" y="210">• Both down → extreme axis</text></g>
+  <text x="16" y="244" font-size="7.5" fill="#64748b">"Leaving/Reaching" — I &amp; aVF both positive = normal; think of them as pointing to the heart's mean vector.</text>
+</svg>`;
+
+export const CARDIAC_BIOMARKERS = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cardiac biomarkers in ACS" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cardiac biomarkers in acute MI</text>
+  <line x1="50" y1="40" x2="50" y2="150" stroke="#94a3b8"/><line x1="50" y1="150" x2="450" y2="150" stroke="#94a3b8"/>
+  <text x="30" y="95" font-size="8" fill="#64748b" transform="rotate(-90 30 95)" text-anchor="middle">blood level</text>
+  <text x="250" y="166" text-anchor="middle" font-size="8" fill="#64748b">time after chest pain (days)</text>
+  <!-- troponin curve -->
+  <path d="M60 150 Q90 60 140 50 Q220 46 300 90 Q380 130 430 145" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="150" y="44" font-size="8" font-weight="700" fill="#b91c1c">Troponin (I/T)</text>
+  <!-- CK-MB curve -->
+  <path d="M60 150 Q95 95 130 88 Q170 82 210 110 Q250 140 290 148" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="120" y="105" font-size="8" font-weight="700" fill="#1d4ed8">CK-MB</text>
+  <g font-size="7.5" fill="#64748b"><text x="60" y="162">0</text><text x="150" y="162">1</text><text x="240" y="162">3</text><text x="340" y="162">7</text><text x="420" y="162">10</text></g>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Troponin</tspan> = the gold standard (most SENSITIVE &amp; SPECIFIC): rises ~3–4 h, peaks ~24 h, stays ↑ 7–10 days.</text>
+  <text x="16" y="204" font-size="8.5" fill="#475569"><tspan font-weight="700">CK-MB</tspan> rises/falls faster (back to normal ~2–3 days) → useful to detect RE-infarction.</text>
+  <text x="16" y="220" font-size="8.5" fill="#475569">Myoglobin = earliest but non-specific. High-sensitivity troponin allows early rule-in/rule-out with serial testing.</text>
+  <text x="16" y="235" font-size="8" fill="#64748b">Others: BNP/NT-proBNP (heart failure), D-dimer (rule out PE) — not ACS-specific. Troponin also ↑ in PE, sepsis, renal failure.</text>
+</svg>`;

@@ -1053,6 +1053,16 @@ import urinaryIncontinenceDrugs from './lectures/urinary-incontinence-drugs';
 import acidBaseDisorders from './lectures/acid-base-disorders';
 import bloodGasAnionGap from './lectures/blood-gas-anion-gap';
 
+// ── MHI (Microbiology of Human Infectious Diseases) — virology block ──
+import virologyPrinciplesClassification from './lectures/virology-principles-classification';
+import nonenvelopedRnaViruses from './lectures/nonenveloped-rna-viruses';
+import envelopedRnaVirusesOrthomyxoParamyxo from './lectures/enveloped-rna-viruses-orthomyxo-paramyxo';
+import otherEnvelopedRnaViruses from './lectures/other-enveloped-rna-viruses';
+import retrovirusesHiv from './lectures/retroviruses-hiv';
+import arbovirusesMosquitoBorne from './lectures/arboviruses-mosquito-borne';
+import dnaVirusesHerpesviruses from './lectures/dna-viruses-herpesviruses';
+import dnaVirusesOther from './lectures/dna-viruses-other';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1884,6 +1894,22 @@ export const lectures: Lecture[] = [
   acidBaseDisorders,
   // L18 Blood gas & anion gap
   bloodGasAnionGap,
+
+  // ── MHI (Microbiology of Human Infectious Diseases) — virology block ──
+  // L1 Introduction to medical virology
+  virologyPrinciplesClassification,
+  // L2 RNA viruses I (non-enveloped)
+  nonenvelopedRnaViruses,
+  // L3 RNA viruses II (enveloped)
+  envelopedRnaVirusesOrthomyxoParamyxo, otherEnvelopedRnaViruses,
+  // L4 Retroviruses
+  retrovirusesHiv,
+  // L5 RNA viruses III (arboviruses)
+  arbovirusesMosquitoBorne,
+  // L6 DNA viruses I (herpesviruses)
+  dnaVirusesHerpesviruses,
+  // L7 DNA viruses II
+  dnaVirusesOther,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

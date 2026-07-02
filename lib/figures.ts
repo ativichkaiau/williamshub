@@ -4182,3 +4182,73 @@ export const JVP_WAVEFORM = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org
   <text x="16" y="192" font-size="8" fill="#0369a1" font-weight="700">JVP reflects right atrial pressure — a window on right-heart filling and function (raised in right heart failure).</text>
   <text x="16" y="206" font-size="7.5" fill="#64748b">Measured as vertical height above the sternal angle; Kussmaul sign = paradoxical rise on inspiration (constriction/tamponade).</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HRS-2 expansion figures
+// ---------------------------------------------------------------------------
+
+export const PFT_PATTERNS = `<svg viewBox="0 0 470 225" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pulmonary function test patterns" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="225" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Pulmonary function tests: obstructive vs restrictive</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Measure</text><text x="180" y="40">Obstructive</text><text x="320" y="40">Restrictive</text></g>
+  <line x1="16" y1="45" x2="454" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#334155">FEV₁</text><text x="180" y="61" fill="#b91c1c">↓↓</text><text x="320" y="61" fill="#2563eb">↓</text>
+    <text x="18" y="77" font-weight="700" fill="#334155">FVC</text><text x="180" y="77" fill="#b91c1c">↓ or normal</text><text x="320" y="77" fill="#2563eb">↓↓</text>
+    <text x="18" y="93" font-weight="700" fill="#334155">FEV₁/FVC</text><text x="180" y="93" fill="#b91c1c">↓ (&lt;0.7) — the key</text><text x="320" y="93" fill="#2563eb">normal or ↑</text>
+    <text x="18" y="109" font-weight="700" fill="#334155">TLC / RV</text><text x="180" y="109" fill="#b91c1c">↑ (air trapping)</text><text x="320" y="109" fill="#2563eb">↓</text>
+    <text x="18" y="125" font-weight="700" fill="#334155">DLCO</text><text x="180" y="125" fill="#b91c1c">↓ emphysema / normal asthma</text><text x="320" y="125" fill="#2563eb">↓ (ILD) / normal (chest wall)</text>
+  </g>
+  <line x1="16" y1="134" x2="454" y2="134" stroke="#e2e8f0"/>
+  <text x="16" y="152" font-size="8.5" fill="#0369a1" font-weight="700">Start with FEV₁/FVC: &lt;0.7 = OBSTRUCTIVE; normal/high with low FVC & TLC = RESTRICTIVE.</text>
+  <text x="16" y="170" font-size="8" fill="#475569">Bronchodilator reversibility (≥12% &amp; 200 mL FEV₁ gain) = asthma; largely irreversible = COPD.</text>
+  <text x="16" y="186" font-size="8" fill="#475569">Flow–volume loop: obstructive = scooped/concave expiratory limb; restrictive = tall, narrow ("witch\'s hat").</text>
+  <text x="16" y="204" font-size="8" fill="#475569">DLCO separates causes: ↓ in emphysema &amp; ILD (parenchyma), normal in asthma &amp; chest-wall/neuromuscular restriction.</text>
+  <text x="16" y="219" font-size="7.5" fill="#64748b">Upper-airway obstruction flattens the inspiratory and/or expiratory loop (fixed vs variable).</text>
+</svg>`;
+
+export const CYSTIC_FIBROSIS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cystic fibrosis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cystic fibrosis — one gene, many organs</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569"><tspan font-weight="700" fill="#b91c1c">CFTR</tspan> mutation (chr 7, ΔF508 commonest) → defective Cl⁻ channel → thick, dehydrated secretions. Autosomal recessive.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="60" font-weight="700" fill="#0369a1">Lungs</text><text x="70" y="60">thick mucus → recurrent infection (S. aureus early, PSEUDOMONAS later),</text>
+    <text x="70" y="72">bronchiectasis, respiratory failure (the main cause of death)</text>
+    <text x="16" y="90" font-weight="700" fill="#0369a1">Pancreas</text><text x="70" y="90">exocrine insufficiency → malabsorption, steatorrhoea, fat-soluble vitamin</text>
+    <text x="70" y="102">deficiency, failure to thrive; CF-related diabetes later</text>
+    <text x="16" y="120" font-weight="700" fill="#0369a1">Gut</text><text x="70" y="120">meconium ileus (neonate); distal intestinal obstruction</text>
+    <text x="16" y="138" font-weight="700" fill="#0369a1">Other</text><text x="70" y="138">infertility (absent vas deferens in males), nasal polyps, clubbing</text>
+  </g>
+  <text x="16" y="160" font-size="8.5" fill="#0369a1" font-weight="700">Diagnosis: elevated SWEAT CHLORIDE (sweat test) + genetics; newborn screening (raised IRT).</text>
+  <text x="16" y="178" font-size="8" fill="#475569">Manage: airway clearance + inhaled antibiotics, pancreatic enzyme replacement + vitamins ADEK, CFTR modulators.</text>
+  <text x="16" y="196" font-size="8" fill="#475569" font-weight="700">"Salty baby" + recurrent chest infections + malabsorption + meconium ileus = CF.</text>
+  <text x="16" y="212" font-size="7.5" fill="#64748b">Commonest inherited cause of bronchiectasis in the young; Pseudomonas colonisation marks disease progression.</text>
+</svg>`;
+
+export const RESPIRATORY_FAILURE = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Respiratory failure types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Respiratory failure: type 1 vs type 2</text>
+  <rect x="14" y="30" width="222" height="118" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="125" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Type 1 (hypoxaemic)</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="22" y="64">↓PaO₂ with NORMAL/low PaCO₂</text>
+    <text x="22" y="80">Problem = oxygenation (V/Q mismatch,</text>
+    <text x="32" y="92">shunt, diffusion)</text>
+    <text x="22" y="108">Causes: pneumonia, oedema, PE,</text>
+    <text x="32" y="120">ARDS, fibrosis</text>
+    <text x="22" y="138" font-weight="700">Treat: give oxygen</text>
+  </g>
+  <rect x="242" y="30" width="214" height="118" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="349" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Type 2 (hypercapnic)</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="250" y="64">↓PaO₂ WITH ↑PaCO₂ (ventilatory failure)</text>
+    <text x="250" y="80">Problem = ventilation ("won\'t breathe /</text>
+    <text x="260" y="92">can\'t breathe")</text>
+    <text x="250" y="108">Causes: COPD, sedatives, neuromuscular,</text>
+    <text x="260" y="120">chest wall, severe asthma (late)</text>
+    <text x="250" y="138" font-weight="700">Controlled O₂ ± NIV/ventilation</text>
+  </g>
+  <text x="16" y="168" font-size="8.5" fill="#0369a1" font-weight="700">Type 1 = oxygenation failure; Type 2 = ventilation failure (CO₂ retention).</text>
+  <text x="16" y="186" font-size="8" fill="#475569">In chronic type 2 (COPD), give CONTROLLED oxygen (target ~88–92%) — high FiO₂ can worsen hypercapnia.</text>
+  <text x="16" y="203" font-size="7.5" fill="#64748b">NIV (BiPAP) supports ventilation in type 2; CPAP/high-flow O₂ for type 1 and pulmonary oedema.</text>
+</svg>`;

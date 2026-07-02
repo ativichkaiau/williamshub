@@ -840,6 +840,17 @@ import pleuralEffusionPneumothoraxMesothelioma from './lectures/pleural-effusion
 import mediastinalMasses from './lectures/mediastinal-masses';
 import chestRadiographInterpretation from './lectures/chest-radiograph-interpretation';
 import respiratoryClinicalApproach from './lectures/respiratory-clinical-approach';
+// HRS-2 expansion
+import cysticFibrosis from './lectures/cystic-fibrosis';
+import pulmonaryFunctionTestsInterpretation from './lectures/pulmonary-function-tests-interpretation';
+import hypersensitivityEosinophilicLungDisease from './lectures/hypersensitivity-eosinophilic-lung-disease';
+import mucolyticsCoughPharmacology from './lectures/mucolytics-cough-pharmacology';
+import respiratoryFailureOxygenTherapy from './lectures/respiratory-failure-oxygen-therapy';
+import obstructiveSleepApnoea from './lectures/obstructive-sleep-apnoea';
+import pulmonaryHypertensionCorPulmonale from './lectures/pulmonary-hypertension-cor-pulmonale';
+import tuberculosisClinicalLatentMdr from './lectures/tuberculosis-clinical-latent-mdr';
+import chestCtImagingPatterns from './lectures/chest-ct-imaging-patterns';
+import solitaryPulmonaryNodule from './lectures/solitary-pulmonary-nodule';
 
 // ── HGB-2 (Human Gastrointestinal and Biliary Tract System-2) ──
 import esophagealDisordersPathology from './lectures/esophageal-disorders-pathology';
@@ -1433,11 +1444,11 @@ export const lectures: Lecture[] = [
   // L2 Common Pathology of the Upper Respiratory Tract
   nasalSinusInflammatoryPathology, nasopharyngealLaryngealTumors,
   // L3 Respiratory Pharmacology
-  coughColdAllergyDrugs,
+  coughColdAllergyDrugs, mucolyticsCoughPharmacology,
   // L4 Pathology of Obstructive Lung Diseases
-  copdEmphysemaChronicBronchitis, asthmaBronchiectasisPathology,
+  copdEmphysemaChronicBronchitis, asthmaBronchiectasisPathology, cysticFibrosis, pulmonaryFunctionTestsInterpretation,
   // L5 Pathology of Restrictive Lung Diseases
-  pulmonaryFibrosisPneumoconioses, sarcoidosisGranulomatousLung,
+  pulmonaryFibrosisPneumoconioses, sarcoidosisGranulomatousLung, hypersensitivityEosinophilicLungDisease,
   // L6 Bacterial Infection of the Lower Respiratory Tract
   communityAcquiredPneumonia, hospitalAspirationPneumoniaAbscess,
   // L7 Fungal Lung Infections
@@ -1449,9 +1460,9 @@ export const lectures: Lecture[] = [
   // L10 Pathology of Pulmonary Infection
   pneumoniaPathologyPatterns, tuberculosisPathology,
   // L11 Ventilation & Circulatory Disorders of the Lung
-  pulmonaryEmbolismEdema, ardsPulmonaryHypertensionAtelectasis,
+  pulmonaryEmbolismEdema, ardsPulmonaryHypertensionAtelectasis, obstructiveSleepApnoea, pulmonaryHypertensionCorPulmonale,
   // L12 Pulmonary Neoplasms
-  nonSmallCellLungCarcinoma, smallCellAndOtherLungTumors,
+  nonSmallCellLungCarcinoma, smallCellAndOtherLungTumors, solitaryPulmonaryNodule,
   // L13 Drugs for Lower Respiratory Disease
   asthmaCopdPharmacology,
   // L14 Antibiotics for Respiratory Diseases
@@ -1459,13 +1470,13 @@ export const lectures: Lecture[] = [
   // L15 Antiviral Drugs in Respiratory Infection
   respiratoryAntiviralDrugs,
   // L16 Anti-Tuberculosis Drugs
-  antiTuberculosisDrugs,
+  antiTuberculosisDrugs, tuberculosisClinicalLatentMdr,
   // L17 Pathology of the Mediastinum & Pleura
   pleuralEffusionPneumothoraxMesothelioma, mediastinalMasses,
   // L18 Chest Radiology
-  chestRadiographInterpretation,
+  chestRadiographInterpretation, chestCtImagingPatterns,
   // L19 Early Clinical Exposure (HRS-II)
-  respiratoryClinicalApproach,
+  respiratoryClinicalApproach, respiratoryFailureOxygenTherapy,
 
   // ── HGB-2 (Human Gastrointestinal and Biliary Tract System-2) ──
   // L1 Pathology of the Upper GI Tract

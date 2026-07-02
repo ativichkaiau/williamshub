@@ -3751,3 +3751,198 @@ export const ASTHMA_COPD_DRUGS = `<svg viewBox="0 0 480 230" xmlns="http://www.w
   <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">Asthma is reversible + eosinophilic → steroid-responsive; COPD is largely fixed → bronchodilator-led.</text>
   <text x="16" y="218" font-size="8" fill="#64748b">Give a LABA only with an ICS in asthma (LABA monotherapy ↑ mortality). COPD triple therapy = LABA+LAMA+ICS.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HGB-2 — Human Gastrointestinal & Biliary Tract System-2 figures
+// ---------------------------------------------------------------------------
+
+export const GASTRIC_CARCINOMA_TYPES = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Gastric carcinoma types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Gastric adenocarcinoma — Lauren classification</text>
+  <rect x="14" y="30" width="226" height="140" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Intestinal type</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="22" y="66">• Glands/tubules; well-differentiated</text>
+    <text x="22" y="80">• Chronic gastritis → intestinal metaplasia</text>
+    <text x="32" y="92">→ dysplasia → carcinoma (H. pylori)</text>
+    <text x="22" y="106">• Older men; distal/antrum; expanding mass</text>
+    <text x="22" y="120">• Risk: H. pylori, nitrosamines, smoked food</text>
+    <text x="22" y="138" font-weight="700">Better differentiated, forms a mass</text>
+  </g>
+  <rect x="246" y="30" width="220" height="140" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="356" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Diffuse type</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="254" y="66">• SIGNET-RING cells (mucin pushes nucleus)</text>
+    <text x="254" y="80">• Infiltrative, no gland formation</text>
+    <text x="254" y="94">• Desmoplasia → LINITIS PLASTICA</text>
+    <text x="264" y="106">("leather-bottle" rigid stomach)</text>
+    <text x="254" y="120">• Younger; E-cadherin (CDH1) loss</text>
+    <text x="254" y="138" font-weight="700">Worse prognosis; Krukenberg (ovary)</text>
+  </g>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1" font-weight="700">Virchow node (left supraclavicular) &amp; Sister Mary Joseph nodule = metastatic spread.</text>
+  <text x="16" y="206" font-size="8" fill="#64748b">Gastric MALT lymphoma is H. pylori–driven and can regress with eradication. Early (mucosa/submucosa) vs advanced (past muscularis propria).</text>
+</svg>`;
+
+export const IBD_CROHN_UC = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Crohn disease vs ulcerative colitis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Inflammatory bowel disease: Crohn vs Ulcerative colitis</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Feature</text><text x="180" y="40">Crohn disease</text><text x="330" y="40">Ulcerative colitis</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#334155">Site</text><text x="180" y="61" fill="#b45309">Mouth → anus (spares rectum)</text><text x="330" y="61" fill="#1d4ed8">Rectum → colon (continuous)</text>
+    <text x="18" y="77" font-weight="700" fill="#334155">Pattern</text><text x="180" y="77" fill="#b45309">Skip lesions, patchy</text><text x="330" y="77" fill="#1d4ed8">Continuous, no skips</text>
+    <text x="18" y="93" font-weight="700" fill="#334155">Depth</text><text x="180" y="93" fill="#b45309">TRANSMURAL</text><text x="330" y="93" fill="#1d4ed8">Mucosa/submucosa only</text>
+    <text x="18" y="109" font-weight="700" fill="#334155">Histology</text><text x="180" y="109" fill="#b45309">Non-caseating granulomas</text><text x="330" y="109" fill="#1d4ed8">Crypt abscesses, no granuloma</text>
+    <text x="18" y="125" font-weight="700" fill="#334155">Gross</text><text x="180" y="125" fill="#b45309">Cobblestone, fistula, stricture</text><text x="330" y="125" fill="#1d4ed8">Pseudopolyps, "lead-pipe" colon</text>
+    <text x="18" y="141" font-weight="700" fill="#334155">Complications</text><text x="180" y="141" fill="#b45309">Fistula, abscess, B12/bile ↓, stones</text><text x="330" y="141" fill="#1d4ed8">Toxic megacolon, ↑↑cancer, PSC</text>
+  </g>
+  <line x1="16" y1="150" x2="464" y2="150" stroke="#e2e8f0"/>
+  <text x="16" y="168" font-size="8.5" fill="#0369a1" font-weight="700">Crohn = transmural + skip + granulomas; UC = mucosal + continuous + bloody diarrhoea.</text>
+  <text x="16" y="185" font-size="8" fill="#475569">Both: extraintestinal — arthritis, uveitis, erythema nodosum, pyoderma gangrenosum. UC → primary sclerosing cholangitis.</text>
+  <text x="16" y="203" font-size="8" fill="#475569">Smoking WORSENS Crohn but is PROTECTIVE in UC. p-ANCA more in UC; ASCA more in Crohn.</text>
+  <text x="16" y="221" font-size="8" fill="#64748b">Colorectal cancer risk rises with extent + duration (surveillance colonoscopy).</text>
+</svg>`;
+
+export const ADENOMA_CARCINOMA_SEQUENCE = `<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Adenoma carcinoma sequence" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Colorectal adenoma–carcinoma sequence</text>
+  <g>
+    <rect x="16" y="34" width="88" height="40" rx="6" fill="#dcfce7" stroke="#16a34a"/><text x="60" y="52" text-anchor="middle" font-size="8" fill="#166534">Normal</text><text x="60" y="66" text-anchor="middle" font-size="7" fill="#166534">epithelium</text>
+    <rect x="130" y="34" width="88" height="40" rx="6" fill="#fef9c3" stroke="#ca8a04"/><text x="174" y="52" text-anchor="middle" font-size="8" fill="#a16207">Adenoma</text><text x="174" y="66" text-anchor="middle" font-size="7" fill="#a16207">(polyp)</text>
+    <rect x="244" y="34" width="88" height="40" rx="6" fill="#fed7aa" stroke="#ea580c"/><text x="288" y="52" text-anchor="middle" font-size="8" fill="#9a3412">Advanced</text><text x="288" y="66" text-anchor="middle" font-size="7" fill="#9a3412">adenoma/dysplasia</text>
+    <rect x="358" y="34" width="106" height="40" rx="6" fill="#fecaca" stroke="#b91c1c"/><text x="411" y="52" text-anchor="middle" font-size="8" fill="#7f1d1d">Carcinoma</text><text x="411" y="66" text-anchor="middle" font-size="7" fill="#7f1d1d">(invasive)</text>
+    <g stroke="#94a3b8" stroke-width="1.5"><line x1="104" y1="54" x2="128" y2="54" marker-end="url(#gi)"/><line x1="218" y1="54" x2="242" y2="54" marker-end="url(#gi)"/><line x1="332" y1="54" x2="356" y2="54" marker-end="url(#gi)"/></g>
+    <defs><marker id="gi" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#94a3b8"/></marker></defs>
+  </g>
+  <g font-size="7.5" fill="#475569"><text x="110" y="90" fill="#b91c1c" font-weight="700">APC</text><text x="224" y="90" fill="#b91c1c" font-weight="700">KRAS</text><text x="332" y="90" fill="#b91c1c" font-weight="700">TP53 / DCC</text></g>
+  <text x="16" y="112" font-size="8.5" fill="#0369a1" font-weight="700">APC (loss) → KRAS (activate) → TP53 (loss) — the classic chromosomal-instability pathway.</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="132">• Adenomas: tubular (small, less risk) → villous (larger, MORE malignant potential)</text>
+    <text x="16" y="146">• FAP: APC germline → hundreds of polyps → 100% cancer (prophylactic colectomy)</text>
+    <text x="16" y="160">• Lynch (HNPCC): mismatch-repair (MSI), right-sided, fewer polyps, other cancers</text>
+    <text x="16" y="174">• Left colon → obstruction/napkin-ring; Right colon → occult bleeding/iron-def anaemia</text>
+  </g>
+  <text x="16" y="196" font-size="8" fill="#64748b">Screening (colonoscopy) removes adenomas to interrupt the sequence. CEA is a follow-up (not screening) marker. Serrated pathway (BRAF/MSI) is a second route.</text>
+</svg>`;
+
+export const LIVER_DISEASE_PROGRESSION = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Liver disease progression" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Chronic liver injury → cirrhosis → portal hypertension</text>
+  <g>
+    <rect x="14" y="30" width="104" height="34" rx="6" fill="#dcfce7" stroke="#16a34a"/><text x="66" y="50" text-anchor="middle" font-size="8" fill="#166534">Steatosis</text>
+    <rect x="132" y="30" width="104" height="34" rx="6" fill="#fef9c3" stroke="#ca8a04"/><text x="184" y="47" text-anchor="middle" font-size="8" fill="#a16207">Steatohepatitis</text><text x="184" y="59" text-anchor="middle" font-size="7" fill="#a16207">/ hepatitis</text>
+    <rect x="250" y="30" width="104" height="34" rx="6" fill="#fed7aa" stroke="#ea580c"/><text x="302" y="50" text-anchor="middle" font-size="8" fill="#9a3412">Fibrosis</text>
+    <rect x="368" y="30" width="98" height="34" rx="6" fill="#fecaca" stroke="#b91c1c"/><text x="417" y="50" text-anchor="middle" font-size="8" fill="#7f1d1d">Cirrhosis</text>
+    <g stroke="#94a3b8" stroke-width="1.5"><line x1="118" y1="47" x2="130" y2="47" marker-end="url(#lv)"/><line x1="236" y1="47" x2="248" y2="47" marker-end="url(#lv)"/><line x1="354" y1="47" x2="366" y2="47" marker-end="url(#lv)"/></g>
+    <defs><marker id="lv" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#94a3b8"/></marker></defs>
+  </g>
+  <text x="16" y="84" font-size="8.5" fill="#475569">Causes: alcohol, NAFLD/NASH (metabolic), chronic HBV/HCV, autoimmune, haemochromatosis (Fe), Wilson (Cu), α1-antitrypsin, PBC/PSC.</text>
+  <text x="16" y="102" font-size="8.5" fill="#0369a1" font-weight="700">Cirrhosis = diffuse fibrosis + regenerative nodules (often irreversible) → two problems:</text>
+  <g font-size="8" fill="#475569">
+    <text x="24" y="120"><tspan font-weight="700" fill="#b91c1c">Portal hypertension:</tspan> varices (haematemesis), ascites, splenomegaly, caput medusae</text>
+    <text x="24" y="134"><tspan font-weight="700" fill="#b45309">Hepatocellular failure:</tspan> jaundice, hypoalbuminaemia (oedema), coagulopathy,</text>
+    <text x="34" y="146">hyperammonaemia → encephalopathy (asterixis), gynaecomastia, spider naevi</text>
+  </g>
+  <text x="16" y="166" font-size="8.5" fill="#475569">Alcoholic: fatty change → alcoholic hepatitis (Mallory-Denk bodies, neutrophils) → cirrhosis (micronodular).</text>
+  <text x="16" y="184" font-size="8.5" fill="#0369a1" font-weight="700">Cirrhosis of ANY cause → risk of hepatocellular carcinoma (monitor AFP/ultrasound).</text>
+  <text x="16" y="204" font-size="8" fill="#64748b">Reversible if the cause is removed early (steatosis, some fibrosis); established cirrhosis usually is not.</text>
+</svg>`;
+
+export const HEPATITIS_SEROLOGY = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Viral hepatitis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Viral hepatitis A–E</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="38">Virus</text><text x="80" y="38">Route</text><text x="180" y="38">Chronic?</text><text x="270" y="38">Notes</text></g>
+  <line x1="16" y1="42" x2="464" y2="42" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="58" font-weight="700" fill="#16a34a">A</text><text x="80" y="58" fill="#475569">Faecal-oral</text><text x="180" y="58" fill="#475569">No</text><text x="270" y="58" fill="#475569">Acute, self-limited; travel/food</text>
+    <text x="18" y="74" font-weight="700" fill="#b91c1c">B</text><text x="80" y="74" fill="#475569">Blood/sexual/vertical</text><text x="180" y="74" fill="#475569">Yes (DNA)</text><text x="270" y="74" fill="#475569">Cirrhosis/HCC; vaccine exists</text>
+    <text x="18" y="90" font-weight="700" fill="#b91c1c">C</text><text x="80" y="90" fill="#475569">Blood</text><text x="180" y="90" fill="#475569">Yes (often)</text><text x="270" y="90" fill="#475569">Chronic; cirrhosis/HCC; curable (DAAs)</text>
+    <text x="18" y="106" font-weight="700" fill="#ca8a04">D</text><text x="80" y="106" fill="#475569">Blood</text><text x="180" y="106" fill="#475569">Only with B</text><text x="270" y="106" fill="#475569">Needs HBsAg (co-/super-infection)</text>
+    <text x="18" y="122" font-weight="700" fill="#16a34a">E</text><text x="80" y="122" fill="#475569">Faecal-oral (water)</text><text x="180" y="122" fill="#475569">No*</text><text x="270" y="122" fill="#475569">Fulminant in PREGNANCY</text>
+  </g>
+  <text x="16" y="140" font-size="7" fill="#64748b">*chronic E only in immunocompromised. "Vowels (A, E) hit the bowels" (faecal-oral); B, C, D are blood-borne.</text>
+  <line x1="16" y1="148" x2="464" y2="148" stroke="#e2e8f0"/>
+  <text x="16" y="166" font-size="9" font-weight="700" fill="#0369a1">Hepatitis B serology</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="182"><tspan font-weight="700">HBsAg</tspan> = active infection (acute or chronic if &gt;6 mo)</text>
+    <text x="16" y="196"><tspan font-weight="700">Anti-HBs</tspan> = immunity (recovery OR vaccination)</text>
+    <text x="16" y="210"><tspan font-weight="700">HBeAg / HBV DNA</tspan> = high infectivity/replication; <tspan font-weight="700">anti-HBc IgM</tspan> = acute/window</text>
+  </g>
+  <text x="16" y="226" font-size="7.5" fill="#64748b">Vaccinated = anti-HBs positive but anti-HBc NEGATIVE (no core exposure).</text>
+</svg>`;
+
+export const BACTERIAL_DIARRHEA_TYPES = `<svg viewBox="0 0 480 235" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Bacterial diarrhoea types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="235" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Bacterial diarrhoea: secretory (watery) vs inflammatory (invasive)</text>
+  <rect x="14" y="30" width="226" height="128" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="46" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Secretory / toxigenic</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="22" y="62">Watery, NO blood/WBC, small bowel</text>
+    <text x="22" y="78">• Vibrio cholerae — toxin (AB5) → GM1 →</text>
+    <text x="32" y="90">↑cAMP → "rice-water" stool; ORS!</text>
+    <text x="22" y="106">• ETEC (traveller's) — LT/ST toxins</text>
+    <text x="22" y="122">• S. aureus / B. cereus — PREFORMED toxin</text>
+    <text x="32" y="134">(rapid onset, vomiting)</text>
+    <text x="22" y="150" font-weight="700">Treat: fluids/ORS (toxin-mediated)</text>
+  </g>
+  <rect x="246" y="30" width="220" height="128" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="356" y="46" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b91c1c">Inflammatory / invasive</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="254" y="62">Bloody, WBC/fever, colon (dysentery)</text>
+    <text x="254" y="78">• Shigella — very low dose; Shiga toxin</text>
+    <text x="254" y="94">• Salmonella (typhi = enteric fever)</text>
+    <text x="254" y="110">• Campylobacter — curved rod; GBS/reactive</text>
+    <text x="254" y="126">• EHEC O157:H7 — Shiga-like → HUS</text>
+    <text x="264" y="138" font-weight="700">(NO antibiotics — ↑HUS risk)</text>
+    <text x="254" y="154" font-weight="700">• C. difficile — pseudomembranous colitis</text>
+  </g>
+  <text x="16" y="176" font-size="8.5" fill="#0369a1" font-weight="700">Cholera = massive secretory loss → treat with aggressive ORS (glucose-Na⁺ co-transport still works).</text>
+  <text x="16" y="194" font-size="8" fill="#475569">Enteric (typhoid) fever: S. Typhi → fever, rose spots, relative bradycardia, constipation then diarrhoea.</text>
+  <text x="16" y="210" font-size="8" fill="#475569">C. difficile follows antibiotics; toxins A/B → pseudomembranes; treat vancomycin/fidaxomicin (stop the culprit antibiotic).</text>
+  <text x="16" y="228" font-size="7.5" fill="#64748b">EHEC: do NOT give antibiotics or antimotility agents — they increase haemolytic-uraemic syndrome risk.</text>
+</svg>`;
+
+export const LIVER_FLUKE_CCA = `<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Liver fluke and cholangiocarcinoma" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Opisthorchis viverrini → cholangiocarcinoma</text>
+  <g>
+    <rect x="14" y="32" width="100" height="36" rx="6" fill="#dbeafe" stroke="#2563eb"/><text x="64" y="49" text-anchor="middle" font-size="7.5" fill="#1d4ed8">Eggs in faeces</text><text x="64" y="61" text-anchor="middle" font-size="7" fill="#1d4ed8">→ water</text>
+    <rect x="128" y="32" width="100" height="36" rx="6" fill="#dcfce7" stroke="#16a34a"/><text x="178" y="49" text-anchor="middle" font-size="7.5" fill="#166534">Snail → fish</text><text x="178" y="61" text-anchor="middle" font-size="7" fill="#166534">(metacercariae)</text>
+    <rect x="242" y="32" width="118" height="36" rx="6" fill="#fef9c3" stroke="#ca8a04"/><text x="301" y="49" text-anchor="middle" font-size="7.5" fill="#a16207">Raw/undercooked</text><text x="301" y="61" text-anchor="middle" font-size="7" fill="#a16207">fish eaten (koi pla)</text>
+    <rect x="374" y="32" width="92" height="36" rx="6" fill="#fed7aa" stroke="#ea580c"/><text x="420" y="49" text-anchor="middle" font-size="7.5" fill="#9a3412">Adult in bile</text><text x="420" y="61" text-anchor="middle" font-size="7" fill="#9a3412">ducts</text>
+    <g stroke="#94a3b8" stroke-width="1.5"><line x1="114" y1="50" x2="126" y2="50" marker-end="url(#fl)"/><line x1="228" y1="50" x2="240" y2="50" marker-end="url(#fl)"/><line x1="360" y1="50" x2="372" y2="50" marker-end="url(#fl)"/></g>
+    <defs><marker id="fl" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#94a3b8"/></marker></defs>
+  </g>
+  <text x="16" y="90" font-size="8.5" fill="#475569">Endemic in NE Thailand/Mekong from eating raw freshwater cyprinid fish. Adult flukes live in the intrahepatic bile ducts.</text>
+  <text x="16" y="110" font-size="8.5" fill="#0369a1" font-weight="700">Chronic biliary inflammation → periductal fibrosis → CHOLANGIOCARCINOMA (bile-duct cancer).</text>
+  <text x="16" y="128" font-size="8" fill="#475569">Symptoms: RUQ discomfort, hepatomegaly; heavy infection → cholangitis, stones, obstructive jaundice. Dx: eggs on stool exam.</text>
+  <text x="16" y="146" font-size="8" fill="#475569">Treat with PRAZIQUANTEL. Clonorchis sinensis (Chinese liver fluke) is analogous; Fasciola hepatica (sheep liver fluke) via watercress.</text>
+  <text x="16" y="166" font-size="8.5" fill="#0369a1" font-weight="700">Prevent by cooking fish — a leading cause of cholangiocarcinoma in this region.</text>
+  <text x="16" y="186" font-size="8" fill="#64748b">Intestinal fluke Fasciolopsis buski (aquatic plants); blood fluke Schistosoma (portal hypertension). Tapeworm Diphyllobothrium → B12 deficiency.</text>
+  <text x="16" y="203" font-size="7.5" fill="#64748b">Taenia solium cysticercosis (undercooked pork, CNS); Echinococcus → hydatid liver cysts.</text>
+</svg>`;
+
+export const VITAMINS_DEFICIENCY = `<svg viewBox="0 0 480 235" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Vitamins and deficiencies" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="235" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Vitamins &amp; trace elements — key deficiencies</text>
+  <text x="16" y="38" font-size="9" font-weight="700" fill="#b45309">Fat-soluble (A D E K) — stored, risk of toxicity</text>
+  <g font-size="8" fill="#475569">
+    <text x="22" y="53">A: night blindness, xerophthalmia, keratomalacia (excess: teratogen, ↑ICP)</text>
+    <text x="22" y="66">D: rickets (children) / osteomalacia (adults); ↓Ca²⁺/PO₄</text>
+    <text x="22" y="79">E: haemolysis, neuropathy/ataxia (antioxidant)</text>
+    <text x="22" y="92">K: bleeding (↓ factors II, VII, IX, X); newborns given K</text>
+  </g>
+  <text x="16" y="110" font-size="9" font-weight="700" fill="#1d4ed8">Water-soluble (B, C) — not stored (except B12)</text>
+  <g font-size="8" fill="#475569">
+    <text x="22" y="125">B1 thiamine: beriberi (wet/dry), Wernicke-Korsakoff (alcoholics)</text>
+    <text x="22" y="138">B2/B3: cheilosis; niacin → pellagra (dermatitis, diarrhoea, dementia)</text>
+    <text x="22" y="151">B6: neuropathy (isoniazid); B9 folate: neural-tube defects, megaloblastic</text>
+    <text x="22" y="164">B12: megaloblastic anaemia + SUBACUTE COMBINED DEGENERATION (neuro)</text>
+    <text x="22" y="177">C: scurvy (poor collagen — bleeding gums, poor healing, corkscrew hairs)</text>
+  </g>
+  <text x="16" y="195" font-size="9" font-weight="700" fill="#15803d">Trace elements</text>
+  <g font-size="8" fill="#475569">
+    <text x="22" y="210">Iron: microcytic anaemia. Zinc: poor healing, dermatitis, hypogeusia.</text>
+    <text x="22" y="223">Iodine: goitre/hypothyroid. Copper: anaemia/neuro. Selenium: cardiomyopathy.</text>
+  </g>
+</svg>`;

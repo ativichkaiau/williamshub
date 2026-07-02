@@ -812,6 +812,40 @@ import mediastinalMasses from './lectures/mediastinal-masses';
 import chestRadiographInterpretation from './lectures/chest-radiograph-interpretation';
 import respiratoryClinicalApproach from './lectures/respiratory-clinical-approach';
 
+// ── HGB-2 (Human Gastrointestinal and Biliary Tract System-2) ──
+import esophagealDisordersPathology from './lectures/esophageal-disorders-pathology';
+import gastritisAndGastropathy from './lectures/gastritis-and-gastropathy';
+import gastricCarcinomaLymphoma from './lectures/gastric-carcinoma-lymphoma';
+import inflammatoryBowelDisease from './lectures/inflammatory-bowel-disease';
+import colorectalPolypsCarcinoma from './lectures/colorectal-polyps-carcinoma';
+import appendicitisDiverticularIschemicBowel from './lectures/appendicitis-diverticular-ischemic-bowel';
+import hepatitisLiverInjuryPatterns from './lectures/hepatitis-liver-injury-patterns';
+import cirrhosisFattyLiverPortalHypertension from './lectures/cirrhosis-fatty-liver-portal-hypertension';
+import hepatocellularCarcinomaLiverTumors from './lectures/hepatocellular-carcinoma-liver-tumors';
+import acuteChronicPancreatitis from './lectures/acute-chronic-pancreatitis';
+import pancreaticCarcinoma from './lectures/pancreatic-carcinoma';
+import antiemeticsProkinetics from './lectures/antiemetics-prokinetics';
+import laxativesAntidiarrhealsOrs from './lectures/laxatives-antidiarrheals-ors';
+import pepticUlcerDisease from './lectures/peptic-ulcer-disease';
+import acidSuppressionHPyloriTherapy from './lectures/acid-suppression-h-pylori-therapy';
+import nutritionEnergyProteinMalnutrition from './lectures/nutrition-energy-protein-malnutrition';
+import obesityPathophysiology from './lectures/obesity-pathophysiology';
+import obesityPharmacotherapy from './lectures/obesity-pharmacotherapy';
+import pharmacologyInLiverDisease from './lectures/pharmacology-in-liver-disease';
+import hepatitisAeAcute from './lectures/hepatitis-a-e-acute';
+import hepatitisBcdChronic from './lectures/hepatitis-b-c-d-chronic';
+import viralGastroenteritis from './lectures/viral-gastroenteritis';
+import secretoryToxigenicEnteritis from './lectures/secretory-toxigenic-enteritis';
+import inflammatoryInvasiveEnteritis from './lectures/inflammatory-invasive-enteritis';
+import foodPoisoningPostInfectious from './lectures/food-poisoning-post-infectious';
+import intestinalRoundwormsPhasmid from './lectures/intestinal-roundworms-phasmid';
+import aphasmidNematodes from './lectures/aphasmid-nematodes';
+import liverFlukesCholangiocarcinoma from './lectures/liver-flukes-cholangiocarcinoma';
+import intestinalFlukesTapeworms from './lectures/intestinal-flukes-tapeworms';
+import fatSolubleVitamins from './lectures/fat-soluble-vitamins';
+import waterSolubleVitaminsTraceElements from './lectures/water-soluble-vitamins-trace-elements';
+import eatingDisorders from './lectures/eating-disorders';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1403,6 +1437,46 @@ export const lectures: Lecture[] = [
   chestRadiographInterpretation,
   // L19 Early Clinical Exposure (HRS-II)
   respiratoryClinicalApproach,
+
+  // ── HGB-2 (Human Gastrointestinal and Biliary Tract System-2) ──
+  // L1 Pathology of the Upper GI Tract
+  esophagealDisordersPathology, gastritisAndGastropathy, gastricCarcinomaLymphoma,
+  // L2 Pathology of the Lower GI Tract
+  inflammatoryBowelDisease, colorectalPolypsCarcinoma, appendicitisDiverticularIschemicBowel,
+  // L3 Pathology of the Liver
+  hepatitisLiverInjuryPatterns, cirrhosisFattyLiverPortalHypertension, hepatocellularCarcinomaLiverTumors,
+  // L4 Pathology of the Exocrine Pancreas
+  acuteChronicPancreatitis, pancreaticCarcinoma,
+  // L5 Drugs in GI Disorders & ORS
+  antiemeticsProkinetics, laxativesAntidiarrhealsOrs,
+  // L6 Peptic Ulcer Disease
+  pepticUlcerDisease, acidSuppressionHPyloriTherapy,
+  // L7 Nutrition & Malnutrition
+  nutritionEnergyProteinMalnutrition,
+  // L8 Obesity
+  obesityPathophysiology,
+  // L9 Drugs in Obesity
+  obesityPharmacotherapy,
+  // L10 Pharmacology in Liver Disease
+  pharmacologyInLiverDisease,
+  // L11 Viral Hepatitis
+  hepatitisAeAcute, hepatitisBcdChronic,
+  // L12 Viral Gastroenteritis
+  viralGastroenteritis,
+  // L13 Bacterial GI Infection I
+  secretoryToxigenicEnteritis, inflammatoryInvasiveEnteritis,
+  // L14 Bacterial GI Infection II
+  foodPoisoningPostInfectious,
+  // L15 Intestinal Roundworms
+  intestinalRoundwormsPhasmid,
+  // L16 Aphasmid Nematodes
+  aphasmidNematodes,
+  // L17 GI Flukes & Tapeworms
+  liverFlukesCholangiocarcinoma, intestinalFlukesTapeworms,
+  // L18 Vitamins & Trace Elements
+  fatSolubleVitamins, waterSolubleVitaminsTraceElements,
+  // L19 Eating Disorders
+  eatingDisorders,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

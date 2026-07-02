@@ -73,6 +73,27 @@ export const curriculum: CurriculumYear[] = [
 // Map each lecture `source` (L1–L4) to its subject. Add new lecture sources here
 // as content for other subjects is authored.
 export const subjectOfSource: Record<string, string> = {
+  // HGB-2 — Human Gastrointestinal and Biliary Tract System-2 (Year 3)
+  'L1 — Pathology of the Upper GI Tract': 'HGB-2',
+  'L2 — Pathology of the Lower GI Tract': 'HGB-2',
+  'L3 — Pathology of the Liver': 'HGB-2',
+  'L4 — Pathology of the Exocrine Pancreas': 'HGB-2',
+  'L5 — Drugs in GI Disorders & ORS': 'HGB-2',
+  'L6 — Peptic Ulcer Disease': 'HGB-2',
+  'L7 — Nutrition & Malnutrition': 'HGB-2',
+  'L8 — Obesity': 'HGB-2',
+  'L9 — Drugs in Obesity': 'HGB-2',
+  'L10 — Pharmacology in Liver Disease': 'HGB-2',
+  'L11 — Viral Hepatitis': 'HGB-2',
+  'L12 — Viral Gastroenteritis': 'HGB-2',
+  'L13 — Bacterial GI Infection I': 'HGB-2',
+  'L14 — Bacterial GI Infection II': 'HGB-2',
+  'L15 — Intestinal Roundworms': 'HGB-2',
+  'L16 — Aphasmid Nematodes': 'HGB-2',
+  'L17 — GI Flukes & Tapeworms': 'HGB-2',
+  'L18 — Vitamins & Trace Elements': 'HGB-2',
+  'L19 — Eating Disorders': 'HGB-2',
+
   // HRS-2 — Human Respiratory System-2 (Year 3)
   'L1 — Bacterial Infection of the Upper Respiratory Tract': 'HRS-2',
   'L2 — Common Pathology of the Upper Respiratory Tract': 'HRS-2',

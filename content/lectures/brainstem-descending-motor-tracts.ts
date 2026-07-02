@@ -4,11 +4,11 @@ export const brainstemDescendingMotorTracts: Lecture = {
   id: 'brainstem-descending-motor-tracts',
   title: 'Brainstem Motor Centres & Descending Tracts',
   system: 'neuro',
-  source: 'L5 — Brainstem Motor Centers',
+  source: 'L11 — Brainstem Motor Centers',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L5 Brainstem Motor' },
+    { kind: 'lecture', label: 'L11 Brainstem Motor' },
     { kind: 'mechanism', label: 'Extrapyramidal tracts' },
     { kind: 'exam', label: 'Posture & tone' },
   ],

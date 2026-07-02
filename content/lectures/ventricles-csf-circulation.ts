@@ -5,11 +5,11 @@ export const ventriclesCsfCirculation: Lecture = {
   id: 'ventricles-csf-circulation',
   title: 'Ventricles, CSF & Meninges',
   system: 'neuro',
-  source: 'L11 — Ventricular System & CSF',
+  source: 'L6 — Ventricular System & CSF',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L11 CSF & Meninges' },
+    { kind: 'lecture', label: 'L6 CSF & Meninges' },
     { kind: 'mechanism', label: 'CSF flow & absorption' },
     { kind: 'exam', label: 'Hydrocephalus' },
   ],

@@ -4,11 +4,11 @@ export const painNociceptionModulation: Lecture = {
   id: 'pain-nociception-modulation',
   title: 'Pain: Nociception & Modulation',
   system: 'neuro',
-  source: 'L10 — Ascending Sensory Pathways',
+  source: 'L8 — Ascending Sensory Pathways',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L10 Pain' },
+    { kind: 'lecture', label: 'L8 Pain' },
     { kind: 'mechanism', label: 'Gate control & descending inhibition' },
     { kind: 'exam', label: 'Fast vs slow pain; referred pain' },
   ],

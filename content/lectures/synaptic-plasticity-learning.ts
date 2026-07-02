@@ -4,11 +4,11 @@ export const synapticPlasticityLearning: Lecture = {
   id: 'synaptic-plasticity-learning',
   title: 'Synaptic Plasticity & Learning',
   system: 'neuro',
-  source: 'L7 — Neurotransmission',
+  source: 'L10 — Neurotransmission',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L7 Plasticity' },
+    { kind: 'lecture', label: 'L10 Plasticity' },
     { kind: 'mechanism', label: 'LTP, LTD & NMDA receptor' },
     { kind: 'exam', label: 'Hebbian plasticity; NMDA coincidence' },
   ],

@@ -4,11 +4,11 @@ export const autonomicNervousSystem: Lecture = {
   id: 'autonomic-nervous-system',
   title: 'Autonomic Nervous System',
   system: 'neuro',
-  source: 'L16 — Integrative Functions of the Brain',
+  source: 'L23 — Integrative Functions of the Brain',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L16 Autonomic NS' },
+    { kind: 'lecture', label: 'L23 Autonomic NS' },
     { kind: 'mechanism', label: 'Sympathetic vs parasympathetic' },
     { kind: 'exam', label: 'Outflow, transmitters, receptors' },
   ],

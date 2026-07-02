@@ -5,11 +5,11 @@ export const basalGangliaCircuitry: Lecture = {
   id: 'basal-ganglia-circuitry',
   title: 'Basal Ganglia Circuitry',
   system: 'neuro',
-  source: 'L4 — Basal Ganglia',
+  source: 'L12 — Basal Ganglia',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L4 Basal Ganglia' },
+    { kind: 'lecture', label: 'L12 Basal Ganglia' },
     { kind: 'mechanism', label: 'Direct/indirect pathways' },
     { kind: 'exam', label: 'Parkinson vs hyperkinetic' },
   ],

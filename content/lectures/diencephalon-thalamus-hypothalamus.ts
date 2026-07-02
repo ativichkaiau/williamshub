@@ -4,11 +4,11 @@ export const diencephalonThalamusHypothalamus: Lecture = {
   id: 'diencephalon-thalamus-hypothalamus',
   title: 'Diencephalon: Thalamus & Hypothalamus',
   system: 'neuro',
-  source: 'L13 — Forebrain: Diencephalon',
+  source: 'L5 — Forebrain: Diencephalon',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L13 Diencephalon' },
+    { kind: 'lecture', label: 'L5 Diencephalon' },
     { kind: 'mechanism', label: 'Relay & homeostasis' },
     { kind: 'exam', label: 'Thalamic nuclei; hypothalamic control' },
   ],

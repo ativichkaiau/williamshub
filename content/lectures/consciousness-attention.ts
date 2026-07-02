@@ -5,11 +5,11 @@ export const consciousnessAttention: Lecture = {
   id: 'consciousness-attention',
   title: 'Consciousness, Arousal & Attention',
   system: 'neuro',
-  source: 'L16 — Integrative Functions of the Brain',
+  source: 'L23 — Integrative Functions of the Brain',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L16 Consciousness' },
+    { kind: 'lecture', label: 'L23 Consciousness' },
     { kind: 'mechanism', label: 'Arousal + content' },
     { kind: 'exam', label: 'Coma, vegetative state, GCS' },
   ],

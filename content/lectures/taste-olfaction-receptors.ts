@@ -4,11 +4,11 @@ export const tasteOlfactionReceptors: Lecture = {
   id: 'taste-olfaction-receptors',
   title: 'Taste & Olfactory Receptor Histology',
   system: 'neuro',
-  source: 'L21 — Histology of Chemical Senses',
+  source: 'L17 — Histology of Chemical Senses',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L21 Chemoreceptor Histology' },
+    { kind: 'lecture', label: 'L17 Chemoreceptor Histology' },
     { kind: 'mechanism', label: 'Taste buds & olfactory epithelium' },
     { kind: 'exam', label: 'Five tastes; olfactory regeneration' },
   ],

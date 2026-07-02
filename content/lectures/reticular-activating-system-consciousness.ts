@@ -5,11 +5,11 @@ export const reticularActivatingSystemConsciousness: Lecture = {
   id: 'reticular-activating-system-consciousness',
   title: 'Reticular Activating System & Consciousness',
   system: 'neuro',
-  source: 'L1 — Reticular Activating System, Sleep & Circadian Rhythms',
+  source: 'L20 — Reticular Activating System, Sleep & Circadian Rhythms',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L1 RAS & Sleep' },
+    { kind: 'lecture', label: 'L20 RAS & Sleep' },
     { kind: 'mechanism', label: 'Ascending arousal' },
     { kind: 'exam', label: 'Coma' },
   ],

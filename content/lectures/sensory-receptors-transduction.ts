@@ -4,11 +4,11 @@ export const sensoryReceptorsTransduction: Lecture = {
   id: 'sensory-receptors-transduction',
   title: 'Sensory Receptors & Transduction',
   system: 'neuro',
-  source: 'L9 — Sensory Receptors',
+  source: 'L7 — Sensory Receptors',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L9 Sensory Receptors' },
+    { kind: 'lecture', label: 'L7 Sensory Receptors' },
     { kind: 'mechanism', label: 'Transduction & coding' },
     { kind: 'exam', label: 'Adaptation & receptor types' },
   ],

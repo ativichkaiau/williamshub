@@ -5,11 +5,11 @@ export const visualPhototransduction: Lecture = {
   id: 'visual-phototransduction',
   title: 'Vision: Phototransduction & Retina',
   system: 'neuro',
-  source: 'L22 — Phototransduction',
+  source: 'L16 — Phototransduction',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L22 Phototransduction' },
+    { kind: 'lecture', label: 'L16 Phototransduction' },
     { kind: 'mechanism', label: 'Rods/cones & the cascade' },
     { kind: 'exam', label: 'Rods vs cones; hyperpolarisation' },
   ],

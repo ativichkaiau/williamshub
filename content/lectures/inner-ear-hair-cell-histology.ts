@@ -4,11 +4,11 @@ export const innerEarHairCellHistology: Lecture = {
   id: 'inner-ear-hair-cell-histology',
   title: 'Inner Ear & Hair Cell Histology',
   system: 'neuro',
-  source: 'L21 — Histology of the Ear',
+  source: 'L17 — Histology of the Ear',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L21 Ear Histology' },
+    { kind: 'lecture', label: 'L17 Ear Histology' },
     { kind: 'mechanism', label: 'Hair cells & endolymph' },
     { kind: 'exam', label: 'Organ of Corti; endocochlear potential' },
   ],

@@ -4,11 +4,11 @@ export const spinalCordAnatomyOrganization: Lecture = {
   id: 'spinal-cord-anatomy-organization',
   title: 'Spinal Cord Anatomy & Organisation',
   system: 'neuro',
-  source: 'L15 — Spinal Cord',
+  source: 'L1 — Spinal Cord',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L15 Spinal Cord' },
+    { kind: 'lecture', label: 'L1 Spinal Cord' },
     { kind: 'mechanism', label: 'Grey/white matter & roots' },
     { kind: 'exam', label: 'Conus, cauda equina, tracts' },
   ],

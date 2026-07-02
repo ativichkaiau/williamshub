@@ -5,11 +5,11 @@ export const auditoryPhysiologyHearing: Lecture = {
   id: 'auditory-physiology-hearing',
   title: 'Auditory Physiology & Hearing',
   system: 'neuro',
-  source: 'L20 — Physiology of Hearing',
+  source: 'L15 — Physiology of Hearing',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L20 Hearing' },
+    { kind: 'lecture', label: 'L15 Hearing' },
     { kind: 'mechanism', label: 'Sound transduction & tonotopy' },
     { kind: 'exam', label: 'Conductive vs sensorineural loss' },
   ],

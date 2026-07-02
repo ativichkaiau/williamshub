@@ -4,11 +4,11 @@ export const brainstemAnatomyOrganization: Lecture = {
   id: 'brainstem-anatomy-organization',
   title: 'Brainstem Anatomy & Organisation',
   system: 'neuro',
-  source: 'L14 — Brainstem',
+  source: 'L2 — Brainstem',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L14 Brainstem' },
+    { kind: 'lecture', label: 'L2 Brainstem' },
     { kind: 'mechanism', label: 'Midbrain/pons/medulla & CN nuclei' },
     { kind: 'exam', label: 'Cranial nerve levels; crossed signs' },
   ],

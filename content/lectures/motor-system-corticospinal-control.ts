@@ -5,11 +5,11 @@ export const motorSystemCorticospinalControl: Lecture = {
   id: 'motor-system-corticospinal-control',
   title: 'The Motor System & Corticospinal Tract',
   system: 'neuro',
-  source: 'L6 — Motor System',
+  source: 'L9 — Motor System',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L6 Motor System' },
+    { kind: 'lecture', label: 'L9 Motor System' },
     { kind: 'mechanism', label: 'UMN & LMN' },
     { kind: 'exam', label: 'Corticospinal decussation' },
   ],

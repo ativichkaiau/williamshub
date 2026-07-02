@@ -5,11 +5,11 @@ export const somatosensoryAscendingPathways: Lecture = {
   id: 'somatosensory-ascending-pathways',
   title: 'Somatosensory Ascending Pathways',
   system: 'neuro',
-  source: 'L10 — Ascending Sensory Pathways',
+  source: 'L8 — Ascending Sensory Pathways',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L10 Ascending Pathways' },
+    { kind: 'lecture', label: 'L8 Ascending Pathways' },
     { kind: 'mechanism', label: 'DCML vs spinothalamic' },
     { kind: 'exam', label: 'Where each tract crosses' },
   ],

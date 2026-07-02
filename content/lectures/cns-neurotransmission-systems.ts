@@ -4,11 +4,11 @@ export const cnsNeurotransmissionSystems: Lecture = {
   id: 'cns-neurotransmission-systems',
   title: 'CNS Neurotransmission Systems',
   system: 'neuro',
-  source: 'L7 — Neurotransmission',
+  source: 'L10 — Neurotransmission',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L7 Neurotransmission' },
+    { kind: 'lecture', label: 'L10 Neurotransmission' },
     { kind: 'mechanism', label: 'Excitation vs inhibition' },
     { kind: 'exam', label: 'Glutamate & GABA' },
   ],

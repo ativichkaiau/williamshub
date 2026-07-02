@@ -4,11 +4,11 @@ export const cerebrumLobesWhiteMatter: Lecture = {
   id: 'cerebrum-lobes-white-matter',
   title: 'Cerebral Lobes & White Matter',
   system: 'neuro',
-  source: 'L13 — Forebrain: Cerebrum',
+  source: 'L4 — Forebrain: Cerebrum',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L13 Cerebrum' },
+    { kind: 'lecture', label: 'L4 Cerebrum' },
     { kind: 'mechanism', label: 'Lobes & tract types' },
     { kind: 'exam', label: 'Internal capsule / corpus callosum' },
   ],

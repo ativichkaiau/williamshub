@@ -4,11 +4,11 @@ export const dermatomesSpinalNerves: Lecture = {
   id: 'dermatomes-spinal-nerves',
   title: 'Spinal Nerves & Dermatomes',
   system: 'neuro',
-  source: 'L15 — Spinal Cord',
+  source: 'L1 — Spinal Cord',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L15 Spinal Nerves' },
+    { kind: 'lecture', label: 'L1 Spinal Nerves' },
     { kind: 'mechanism', label: 'Roots, dermatomes & plexuses' },
     { kind: 'exam', label: 'Landmark dermatomes; radiculopathy' },
   ],

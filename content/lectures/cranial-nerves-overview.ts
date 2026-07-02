@@ -4,11 +4,11 @@ export const cranialNervesOverview: Lecture = {
   id: 'cranial-nerves-overview',
   title: 'Cranial Nerves (I–XII) Overview',
   system: 'neuro',
-  source: 'L14 — Brainstem',
+  source: 'L2 — Brainstem',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L14 Cranial Nerves' },
+    { kind: 'lecture', label: 'L2 Cranial Nerves' },
     { kind: 'mechanism', label: 'Modality & nuclei' },
     { kind: 'exam', label: 'CN functions; UMN vs LMN facial' },
   ],

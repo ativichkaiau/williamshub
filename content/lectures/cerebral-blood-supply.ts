@@ -5,11 +5,11 @@ export const cerebralBloodSupply: Lecture = {
   id: 'cerebral-blood-supply',
   title: 'Cerebral Blood Supply & Circle of Willis',
   system: 'neuro',
-  source: 'L11 — Blood Supply of the Brain',
+  source: 'L6 — Blood Supply of the Brain',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L11 Cerebral Circulation' },
+    { kind: 'lecture', label: 'L6 Cerebral Circulation' },
     { kind: 'mechanism', label: 'Anterior & posterior circulations' },
     { kind: 'exam', label: 'ACA/MCA/PCA territories' },
   ],

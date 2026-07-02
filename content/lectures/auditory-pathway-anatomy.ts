@@ -5,11 +5,11 @@ export const auditoryPathwayAnatomy: Lecture = {
   id: 'auditory-pathway-anatomy',
   title: 'The Auditory Pathway',
   system: 'neuro',
-  source: 'L2 — Auditory, Gustatory & Olfactory Pathways',
+  source: 'L14 — Auditory, Gustatory & Olfactory Pathways',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L2 Special Sense Pathways' },
+    { kind: 'lecture', label: 'L14 Special Sense Pathways' },
     { kind: 'mechanism', label: 'Cochlea to cortex' },
     { kind: 'exam', label: 'Bilateral pathway' },
   ],

@@ -5,11 +5,11 @@ export const neuralTubeDevelopmentDefects: Lecture = {
   id: 'neural-tube-development-defects',
   title: 'Neurulation & Neural Tube Defects',
   system: 'neuro',
-  source: 'L8 — Development of the Nervous System',
+  source: 'L22 — Development of the Nervous System',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L8 Neurodevelopment' },
+    { kind: 'lecture', label: 'L22 Neurodevelopment' },
     { kind: 'mechanism', label: 'Neurulation' },
     { kind: 'exam', label: 'Spina bifida / anencephaly' },
   ],

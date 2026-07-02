@@ -5,11 +5,11 @@ export const brainVesiclesNeuralCrest: Lecture = {
   id: 'brain-vesicles-neural-crest',
   title: 'Brain Vesicles & Neural Crest Derivatives',
   system: 'neuro',
-  source: 'L8 — Development of the Nervous System',
+  source: 'L22 — Development of the Nervous System',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L8 Neurodevelopment' },
+    { kind: 'lecture', label: 'L22 Neurodevelopment' },
     { kind: 'mechanism', label: 'Vesicles & neural crest' },
     { kind: 'exam', label: 'Brain part origins' },
   ],

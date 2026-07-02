@@ -1624,54 +1624,53 @@ export const lectures: Lecture[] = [
   // L13 Medical Flies
   myiasisAndFlyVectors, bloodsuckingFlyVectors,
 
-  // ── HNS-1 (Human Nervous and Special Senses System-1) ──
-  // L1 Reticular Activating System, Sleep & Circadian Rhythms
-  reticularActivatingSystemConsciousness, sleepCircadianRhythms,
-  // L2 Auditory & Chemical Special-Sense Pathways
-  auditoryPathwayAnatomy, gustatoryOlfactoryPathways,
-  // L3 Cerebellum
-  cerebellumAnatomyFunction,
-  // L4 Basal Ganglia
-  basalGangliaCircuitry,
-  // L5 Brainstem Motor Centers
-  brainstemDescendingMotorTracts,
-  // L6 Motor System
-  motorSystemCorticospinalControl,
-  // L7 Neurotransmission
-  cnsNeurotransmissionSystems,
-  // L8 Development of the Nervous System
-  neuralTubeDevelopmentDefects, brainVesiclesNeuralCrest,
-  // L9 Sensory Receptors
-  sensoryReceptorsTransduction,
-  // L10 Ascending Sensory Pathways & Pain
-  somatosensoryAscendingPathways, painNociceptionModulation,
-  // L11 Blood Supply, Ventricles & CSF
-  cerebralBloodSupply, ventriclesCsfCirculation,
-  // L12 Cerebral Cortex
+  // ── HNS-1 (Human Nervous and Special Senses System-1) ── reordered 2026-07-02
+  // L1 Spinal Cord
+  spinalCordAnatomyOrganization, dermatomesSpinalNerves,
+  // L2 Brainstem
+  brainstemAnatomyOrganization, cranialNervesOverview,
+  // L3 Cerebral Cortex
   cerebralCortexOrganization, corticalAreasLanguage,
-  // L13 Forebrain: Cerebrum & Diencephalon
-  cerebrumLobesWhiteMatter, diencephalonThalamusHypothalamus,
-  // L14 Brainstem
-  brainstemAnatomyOrganization,
-  // L15 Spinal Cord
-  spinalCordAnatomyOrganization,
-  // L16 Integrative Functions of the Brain
-  higherCorticalFunctions, consciousnessAttention,
-  // L17 Vestibular System
-  vestibularSystemPhysiology,
+  // L4 Forebrain: Cerebrum
+  cerebrumLobesWhiteMatter,
+  // L5 Forebrain: Diencephalon
+  diencephalonThalamusHypothalamus,
+  // L6 Blood Supply, Ventricles & CSF
+  cerebralBloodSupply, ventriclesCsfCirculation,
+  // L7 Sensory Receptors
+  sensoryReceptorsTransduction,
+  // L8 Ascending Sensory Pathways & Pain
+  somatosensoryAscendingPathways, painNociceptionModulation,
+  // L9 Motor System
+  motorSystemCorticospinalControl, proprioceptorsMuscleSpindleReflexes,
+  // L10 Neurotransmission
+  cnsNeurotransmissionSystems, synapticPlasticityLearning,
+  // L11 Brainstem Motor Centers
+  brainstemDescendingMotorTracts,
+  // L12 Basal Ganglia
+  basalGangliaCircuitry,
+  // L13 Cerebellum
+  cerebellumAnatomyFunction,
+  // L14 Auditory, Gustatory & Olfactory Pathways
+  auditoryPathwayAnatomy, gustatoryOlfactoryPathways,
+  // L15 Physiology of Hearing
+  auditoryPhysiologyHearing,
+  // L16 Phototransduction
+  visualPhototransduction,
+  // L17 Histology of the Ear & Chemical Senses
+  innerEarHairCellHistology, tasteOlfactionReceptors,
   // L18 Limbic System
   limbicSystemEmotionMemory,
   // L19 Brain Metabolism
-  brainEnergyMetabolism,
-  // L20 Physiology of Hearing
-  auditoryPhysiologyHearing,
-  // L21 Histology of the Ear & Chemical Senses
-  innerEarHairCellHistology, tasteOlfactionReceptors,
-  // L22 Phototransduction
-  visualPhototransduction,
-  // HNS-1 expansion (2026-07-02): L6 reflexes, L7 plasticity, L14 cranial nerves, L15 dermatomes, L16 autonomic, L19 neuroglia
-  proprioceptorsMuscleSpindleReflexes, synapticPlasticityLearning, cranialNervesOverview,
-  dermatomesSpinalNerves, autonomicNervousSystem, neuronsGliaNeurohistology,
+  brainEnergyMetabolism, neuronsGliaNeurohistology,
+  // L20 Reticular Activating System, Sleep & Circadian Rhythms
+  reticularActivatingSystemConsciousness, sleepCircadianRhythms,
+  // L21 Vestibular System
+  vestibularSystemPhysiology,
+  // L22 Development of the Nervous System
+  neuralTubeDevelopmentDefects, brainVesiclesNeuralCrest,
+  // L23 Integrative Functions of the Brain
+  higherCorticalFunctions, consciousnessAttention, autonomicNervousSystem,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

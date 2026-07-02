@@ -5,11 +5,11 @@ export const cerebellumAnatomyFunction: Lecture = {
   id: 'cerebellum-anatomy-function',
   title: 'The Cerebellum',
   system: 'neuro',
-  source: 'L3 — Cerebellum',
+  source: 'L13 — Cerebellum',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L3 Cerebellum' },
+    { kind: 'lecture', label: 'L13 Cerebellum' },
     { kind: 'mechanism', label: 'Coordination' },
     { kind: 'exam', label: 'Ipsilateral signs' },
   ],

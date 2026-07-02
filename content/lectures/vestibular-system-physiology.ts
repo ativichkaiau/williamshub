@@ -4,11 +4,11 @@ export const vestibularSystemPhysiology: Lecture = {
   id: 'vestibular-system-physiology',
   title: 'Vestibular System & Balance',
   system: 'neuro',
-  source: 'L17 — Vestibular System',
+  source: 'L21 — Vestibular System',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L17 Vestibular' },
+    { kind: 'lecture', label: 'L21 Vestibular' },
     { kind: 'mechanism', label: 'Semicircular canals & otoliths' },
     { kind: 'exam', label: 'VOR, nystagmus, vertigo' },
   ],

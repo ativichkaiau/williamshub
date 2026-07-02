@@ -4,11 +4,11 @@ export const proprioceptorsMuscleSpindleReflexes: Lecture = {
   id: 'proprioceptors-muscle-spindle-reflexes',
   title: 'Proprioceptors & Spinal Reflexes',
   system: 'neuro',
-  source: 'L6 — Motor System',
+  source: 'L9 — Motor System',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L6 Reflexes' },
+    { kind: 'lecture', label: 'L9 Reflexes' },
     { kind: 'mechanism', label: 'Spindle, GTO & reflex arcs' },
     { kind: 'exam', label: 'Stretch reflex; reciprocal inhibition' },
   ],

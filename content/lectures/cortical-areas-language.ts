@@ -5,11 +5,11 @@ export const corticalAreasLanguage: Lecture = {
   id: 'cortical-areas-language',
   title: 'Language Areas & Aphasia',
   system: 'neuro',
-  source: 'L12 — Cerebral Cortex',
+  source: 'L3 — Cerebral Cortex',
   updated: '2026-07-02',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'L12 Language' },
+    { kind: 'lecture', label: 'L3 Language' },
     { kind: 'mechanism', label: 'Broca, Wernicke, arcuate' },
     { kind: 'exam', label: 'Aphasia types' },
   ],

@@ -432,6 +432,17 @@ import {
   bileFormationGallbladderEmptying,
 } from './lectures/hgb1-bile';
 
+// ── HRP-1 (Human Reproductive System and Perinatal Period-1) ────────────────
+// L1–L9 — reproductive anatomy, histology, endocrine control and cycles
+import { hrp1AnatomyHistology } from './lectures/hrp1-anatomy-histology';
+import { hrp1EndocrineCycles } from './lectures/hrp1-endocrine-cycles';
+// L10–L12 — gestational hormones, lactation and menopause
+import { hrp1GestationLactationMenopause } from './lectures/hrp1-gestation-lactation-menopause';
+// L13–L16 — pregnancy, safeguarding and psychosexual health
+import { hrp1PregnancyPsychosexual } from './lectures/hrp1-pregnancy-psychosexual';
+// L17–L18 — reproductive development and semen analysis
+import { hrp1DevelopmentSemen } from './lectures/hrp1-development-semen';
+
 // ── HMS-2 (Human Musculoskeletal System-2) ───────────────────────────────────
 // L1 — Diseases of Bone
 import boneBiologyRemodeling from './lectures/bone-biology-remodeling';
@@ -1004,6 +1015,17 @@ export const lectures: Lecture[] = [
   lipidDigestionAbsorptionHgb, vitaminAbsorption, mineralWaterAbsorption,
   // L9 Bile Secretion
   bileCompositionAcidSynthesis, enterohepaticBileCirculation, bileFormationGallbladderEmptying,
+
+  // ── HRP-1 (Human Reproductive System and Perinatal Period-1) ──
+  // L1–L9 Reproductive anatomy, histology, endocrine control and cycles
+  ...hrp1AnatomyHistology,
+  ...hrp1EndocrineCycles,
+  // L10–L12 Gestational hormones, lactation and menopause
+  ...hrp1GestationLactationMenopause,
+  // L13–L16 Pregnancy, safeguarding and psychosexual health
+  ...hrp1PregnancyPsychosexual,
+  // L17–L18 Reproductive development and semen analysis
+  ...hrp1DevelopmentSemen,
 
   // ── HMS-2 (Human Musculoskeletal System-2) ──
   // L1 Diseases of Bone

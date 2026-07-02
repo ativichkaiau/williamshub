@@ -201,6 +201,26 @@ export const subjectOfSource: Record<string, string> = {
   'L8 — Digestion & Absorption': 'HGB-1',
   'L9 — Bile Secretion': 'HGB-1',
 
+  // HRP-1 — Human Reproductive System and Perinatal Period-1 (Year 2)
+  'L1 — Gross Anatomy of Female Reproductive System': 'HRP-1',
+  'L2 — Histology of the Female Reproductive System': 'HRP-1',
+  'L3 — Anatomy of Breast & Placenta': 'HRP-1',
+  'L4 — Gross Anatomy of Male Reproductive System': 'HRP-1',
+  'L5 — Sex Steroid Hormones': 'HRP-1',
+  'L6 — Histology of the Male Reproductive System': 'HRP-1',
+  'L7 — Puberty & Disorders': 'HRP-1',
+  'L8 — Female Reproductive Cycle': 'HRP-1',
+  'L9 — Anatomy of Pelvic & Urogenital Diaphragm': 'HRP-1',
+  'L10 — Gestational Hormones': 'HRP-1',
+  'L11 — Lactation & Breastfeeding': 'HRP-1',
+  'L12 — Menopause': 'HRP-1',
+  'L13 — Pregnancy & Puerperium': 'HRP-1',
+  'L14 — Child Abuse & Trauma': 'HRP-1',
+  'L15 — Human Sexual Response & Sexual Dysfunction': 'HRP-1',
+  'L16 — Gender Identity': 'HRP-1',
+  'L17 — Development of the Reproductive System': 'HRP-1',
+  'L18 — Semen Production & Analysis': 'HRP-1',
+
   // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',

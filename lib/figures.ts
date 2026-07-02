@@ -3946,3 +3946,102 @@ export const VITAMINS_DEFICIENCY = `<svg viewBox="0 0 480 235" xmlns="http://www
     <text x="22" y="223">Iodine: goitre/hypothyroid. Copper: anaemia/neuro. Selenium: cardiomyopathy.</text>
   </g>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HRU-1 expansion figures
+// ---------------------------------------------------------------------------
+
+export const RENAL_VASCULATURE = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Renal blood supply" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Renal blood supply &amp; the two nephron types</text>
+  <text x="16" y="40" font-size="9" font-weight="700" fill="#0369a1">Arterial tree (in order):</text>
+  <text x="16" y="56" font-size="8.5" fill="#475569">renal artery → segmental → interlobar → arcuate → interlobular (cortical radiate) → AFFERENT arteriole →</text>
+  <text x="16" y="70" font-size="8.5" fill="#475569">GLOMERULUS → EFFERENT arteriole → peritubular capillaries / vasa recta → veins (a PORTAL system: 2 capillary beds).</text>
+  <line x1="16" y1="80" x2="464" y2="80" stroke="#e2e8f0"/>
+  <rect x="14" y="90" width="226" height="106" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="107" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Cortical nephrons (~85%)</text>
+  <g font-size="8" fill="#1e40af"><text x="22" y="124">• Glomeruli in outer cortex</text><text x="22" y="138">• SHORT loops of Henle</text><text x="22" y="152">• Peritubular capillaries</text><text x="22" y="166">• Handle bulk reabsorption</text><text x="22" y="184" font-weight="700">Salt/water excretion</text></g>
+  <rect x="246" y="90" width="220" height="106" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="356" y="107" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Juxtamedullary (~15%)</text>
+  <g font-size="8" fill="#166534"><text x="254" y="124">• Glomeruli near medulla</text><text x="254" y="138">• LONG loops of Henle</text><text x="254" y="152">• VASA RECTA (hairpin)</text><text x="254" y="166">• Build the medullary gradient</text><text x="254" y="184" font-weight="700">Urine concentration</text></g>
+  <text x="16" y="216" font-size="8" fill="#64748b">~20–25% of cardiac output; cortex is well-perfused, the medulla runs on low flow (hypoxia-prone) to preserve the gradient.</text>
+</svg>`;
+
+export const URINARY_STONES = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Urinary crystals and stones" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Urinary crystals &amp; kidney stones</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Stone (%)</text><text x="150" y="40">Urine pH</text><text x="230" y="40">Clue</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#334155">Calcium oxalate/PO₄ (~80%)</text><text x="150" y="61" fill="#475569">acid/alk</text><text x="230" y="61" fill="#475569">commonest; envelope/dumbbell crystals; hypercalciuria</text>
+    <text x="18" y="77" font-weight="700" fill="#b45309">Struvite (Mg-NH₄-PO₄)</text><text x="150" y="77" fill="#475569">ALKALINE</text><text x="230" y="77" fill="#475569">urease bacteria (Proteus); "coffin-lid"; STAGHORN</text>
+    <text x="18" y="93" font-weight="700" fill="#7c3aed">Uric acid</text><text x="150" y="93" fill="#475569">ACID</text><text x="230" y="93" fill="#475569">radiolucent; gout, high purine; rhomboid crystals</text>
+    <text x="18" y="109" font-weight="700" fill="#0e7490">Cystine</text><text x="150" y="109" fill="#475569">acid</text><text x="230" y="109" fill="#475569">hexagonal; hereditary cystinuria (children)</text>
+  </g>
+  <line x1="16" y1="118" x2="464" y2="118" stroke="#e2e8f0"/>
+  <text x="16" y="136" font-size="8.5" fill="#0369a1" font-weight="700">Presentation: severe colicky loin-to-groin pain + haematuria; lodges at the 3 ureteric narrowings.</text>
+  <text x="16" y="154" font-size="8" fill="#475569">Form when urine is supersaturated (low volume, abnormal pH, ↑solute); most are radio-opaque (uric acid is radiolucent).</text>
+  <text x="16" y="172" font-size="8" fill="#475569">Prevent with high fluid intake; thiazides lower urinary Ca²⁺ (Ca stones); alkalinise urine for uric acid/cystine stones.</text>
+  <text x="16" y="192" font-size="8.5" fill="#0369a1" font-weight="700">Struvite stones are infection stones — treat the urease-producing organism and remove the stone.</text>
+  <text x="16" y="210" font-size="8" fill="#64748b">Amorphous urates precipitate in acid urine; amorphous/triple phosphate in alkaline urine (usually benign findings).</text>
+</svg>`;
+
+export const AKI_CLASSIFICATION = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Acute kidney injury classification" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Acute kidney injury — where is the problem?</text>
+  <rect x="14" y="30" width="148" height="118" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="88" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">PRE-renal (~55%)</text>
+  <text x="88" y="61" text-anchor="middle" font-size="7.5" fill="#1e40af">↓ perfusion</text>
+  <g font-size="7.5" fill="#1e40af"><text x="20" y="78">Hypovolaemia, haemorrhage,</text><text x="20" y="90">shock, HF, renal artery</text><text x="20" y="106" font-weight="700">Tubules intact →</text><text x="20" y="118">reabsorb Na⁺/water avidly</text><text x="20" y="132">FENa &lt;1%, BUN:Cr &gt;20</text><text x="20" y="144">concentrated urine</text></g>
+  <rect x="166" y="30" width="148" height="118" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="240" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">INTRINSIC (~40%)</text>
+  <text x="240" y="61" text-anchor="middle" font-size="7.5" fill="#7f1d1d">kidney damage</text>
+  <g font-size="7.5" fill="#7f1d1d"><text x="172" y="78">ATN (ischaemia/toxins) =</text><text x="172" y="90">commonest; also GN,</text><text x="172" y="102">AIN, vascular</text><text x="172" y="118" font-weight="700">Tubules fail →</text><text x="172" y="130">FENa &gt;2%, BUN:Cr ~10–15</text><text x="172" y="142">muddy-brown casts (ATN)</text></g>
+  <rect x="318" y="30" width="148" height="118" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="392" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">POST-renal (~5%)</text>
+  <text x="392" y="61" text-anchor="middle" font-size="7.5" fill="#92400e">obstruction</text>
+  <g font-size="7.5" fill="#92400e"><text x="324" y="78">Stones, BPH/prostate,</text><text x="324" y="90">tumour, bilateral</text><text x="324" y="102">ureteric obstruction</text><text x="324" y="118" font-weight="700">Back-pressure →</text><text x="324" y="130">hydronephrosis</text><text x="324" y="142">reversible if relieved early</text></g>
+  <text x="16" y="168" font-size="8.5" fill="#0369a1" font-weight="700">AKI = abrupt ↓GFR → rising creatinine/urea (azotaemia) ± oliguria; often reversible.</text>
+  <text x="16" y="186" font-size="8" fill="#475569">FENa and BUN:Cr separate pre-renal (avid Na⁺ retention) from intrinsic ATN (tubules can\'t reabsorb Na⁺).</text>
+  <text x="16" y="204" font-size="8" fill="#64748b">Uraemic emergencies: hyperkalaemia, acidosis, fluid overload/pulmonary oedema, pericarditis, encephalopathy → dialysis.</text>
+</svg>`;
+
+export const ACID_BASE_DISORDERS = `<svg viewBox="0 0 480 235" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Acid-base disorders" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="235" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The four primary acid–base disorders</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Disorder</text><text x="150" y="40">Primary change</text><text x="270" y="40">Compensation</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="61" font-weight="700" fill="#b91c1c">Metabolic acidosis</text><text x="150" y="61" fill="#475569">↓HCO₃⁻ (↓pH)</text><text x="270" y="61" fill="#475569">hyperventilate → ↓CO₂ (fast)</text>
+    <text x="18" y="77" font-weight="700" fill="#2563eb">Metabolic alkalosis</text><text x="150" y="77" fill="#475569">↑HCO₃⁻ (↑pH)</text><text x="270" y="77" fill="#475569">hypoventilate → ↑CO₂</text>
+    <text x="18" y="93" font-weight="700" fill="#b45309">Respiratory acidosis</text><text x="150" y="93" fill="#475569">↑CO₂ (↓pH)</text><text x="270" y="93" fill="#475569">kidney retains HCO₃⁻ (slow, days)</text>
+    <text x="18" y="109" font-weight="700" fill="#15803d">Respiratory alkalosis</text><text x="150" y="109" fill="#475569">↓CO₂ (↑pH)</text><text x="270" y="109" fill="#475569">kidney excretes HCO₃⁻</text>
+  </g>
+  <line x1="16" y1="118" x2="464" y2="118" stroke="#e2e8f0"/>
+  <text x="16" y="136" font-size="8.5" fill="#0369a1" font-weight="700">Metabolic acidosis — split by the ANION GAP (Na⁺ − [Cl⁻ + HCO₃⁻], normal 8–12):</text>
+  <g font-size="8" fill="#475569">
+    <text x="24" y="152"><tspan font-weight="700">High gap "MUDPILES":</tspan> Methanol, Uraemia, DKA, Propylene glycol, Iron/INH, Lactate, Ethylene glycol, Salicylates</text>
+    <text x="24" y="166"><tspan font-weight="700">Normal gap (hyperchloraemic):</tspan> diarrhoea (HCO₃⁻ loss), renal tubular acidosis</text>
+  </g>
+  <text x="16" y="186" font-size="8.5" fill="#475569">Lungs compensate fast (minutes, CO₂); kidneys compensate slowly but completely (hours–days, HCO₃⁻/H⁺).</text>
+  <text x="16" y="204" font-size="8.5" fill="#0369a1" font-weight="700">Winter\'s formula checks respiratory compensation in metabolic acidosis: expected PCO₂ = 1.5×HCO₃⁻ + 8 (±2).</text>
+  <text x="16" y="222" font-size="8" fill="#64748b">Compensation never fully normalises the pH — over-correction means a second (mixed) disorder is present.</text>
+</svg>`;
+
+export const RENAL_ENDOCRINE = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Endocrine functions of the kidney" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The kidney as an endocrine organ</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="42" font-weight="700" fill="#b91c1c">Erythropoietin (EPO)</text>
+    <text x="26" y="56">made by peritubular interstitial cells in response to HYPOXIA → stimulates red-cell production.</text>
+    <text x="26" y="68">CKD → ↓EPO → normocytic anaemia (treat with EPO analogues).</text>
+    <text x="16" y="86" font-weight="700" fill="#15803d">Calcitriol (active vitamin D)</text>
+    <text x="26" y="100">1α-hydroxylase (proximal tubule) converts 25-OH-D → 1,25-(OH)₂-D; raises Ca²⁺/PO₄.</text>
+    <text x="26" y="112">CKD → ↓calcitriol → hypocalcaemia → secondary hyperparathyroidism (CKD-MBD).</text>
+    <text x="16" y="130" font-weight="700" fill="#1d4ed8">Renin</text>
+    <text x="26" y="144">JG cells release renin (↓perfusion/↓NaCl/sympathetic) → angiotensin/aldosterone → BP + volume.</text>
+    <text x="16" y="162" font-weight="700" fill="#7c3aed">Prostaglandins</text>
+    <text x="26" y="176">vasodilate to protect renal blood flow (NSAIDs block them → AKI in at-risk patients).</text>
+  </g>
+  <text x="16" y="198" font-size="8" fill="#64748b">So renal failure is not just excretory — it causes anaemia (EPO), bone disease (vitamin D) and BP dysregulation (renin).</text>
+</svg>`;

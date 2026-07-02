@@ -780,6 +780,17 @@ import urineMicroscopySediment from './lectures/urine-microscopy-sediment';
 import renalMetabolismGluconeogenesis from './lectures/renal-metabolism-gluconeogenesis';
 import renalBicarbonateReabsorption from './lectures/renal-bicarbonate-reabsorption';
 import renalAcidExcretion from './lectures/renal-acid-excretion';
+// HRU-1 expansion
+import renalBloodSupplyVasculature from './lectures/renal-blood-supply-vasculature';
+import renalClearancePrinciples from './lectures/renal-clearance-principles';
+import neurogenicBladderDisorders from './lectures/neurogenic-bladder-disorders';
+import sodiumBalanceEcfVolume from './lectures/sodium-balance-ecf-volume';
+import proteinuriaEvaluation from './lectures/proteinuria-evaluation';
+import acuteKidneyInjuryAzotemia from './lectures/acute-kidney-injury-azotemia';
+import urinaryCrystalsAndStones from './lectures/urinary-crystals-and-stones';
+import renalEndocrineFunctions from './lectures/renal-endocrine-functions';
+import chronicKidneyDiseaseUremia from './lectures/chronic-kidney-disease-uremia';
+import acidBaseDisordersCompensation from './lectures/acid-base-disorders-compensation';
 
 // ── HRS-2 (Human Respiratory System-2) ──
 import pharyngitisTonsillitisDiphtheria from './lectures/pharyngitis-tonsillitis-diphtheria';
@@ -1374,29 +1385,29 @@ export const lectures: Lecture[] = [
 
   // ── HRU-1 (Human Renal and Urinary System-1) ──
   // L1 Microscopic Anatomy of the Kidney & Urinary Tract
-  nephronKidneyHistology, lowerUrinaryTractHistology,
+  nephronKidneyHistology, lowerUrinaryTractHistology, renalBloodSupplyVasculature,
   // L2 Development of the Kidney & Urinary Tract
   kidneyDevelopmentMetanephros, kubCongenitalAnomalies,
   // L3 Glomerular Filtration, Hemodynamics & Tubular Transport
-  glomerularFiltrationGfr, renalHemodynamicsAutoregulation, tubularReabsorptionSecretion,
+  glomerularFiltrationGfr, renalHemodynamicsAutoregulation, tubularReabsorptionSecretion, renalClearancePrinciples,
   // L4 Urinary Concentration & Dilution
   urineConcentrationCountercurrent, adhWaterRegulation,
   // L5 Micturition
-  micturitionReflex,
+  micturitionReflex, neurogenicBladderDisorders,
   // L6 Body Fluids & Water Balance
-  bodyFluidCompartmentsRenal, volumeWaterBalanceHormones,
+  bodyFluidCompartmentsRenal, volumeWaterBalanceHormones, sodiumBalanceEcfVolume,
   // L7 Renal Handling of Electrolytes
   renalPotassiumHandling, renalCalciumPhosphateHandling,
   // L8 Urinalysis I: Physical & Chemical
-  urinalysisPhysicalChemical,
+  urinalysisPhysicalChemical, proteinuriaEvaluation, acuteKidneyInjuryAzotemia,
   // L9 Biochemistry of Urine
   urineBiochemicalComposition,
   // L10 Urinalysis II: Urine Sediment
-  urineMicroscopySediment,
+  urineMicroscopySediment, urinaryCrystalsAndStones,
   // L11 Renal Metabolism
-  renalMetabolismGluconeogenesis,
+  renalMetabolismGluconeogenesis, renalEndocrineFunctions, chronicKidneyDiseaseUremia,
   // L12 Renal Acid-Base Balance
-  renalBicarbonateReabsorption, renalAcidExcretion,
+  renalBicarbonateReabsorption, renalAcidExcretion, acidBaseDisordersCompensation,
 
   // ── HRS-2 (Human Respiratory System-2) ──
   // L1 Bacterial Infection of the Upper Respiratory Tract

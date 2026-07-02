@@ -73,6 +73,27 @@ export const curriculum: CurriculumYear[] = [
 // Map each lecture `source` (L1–L4) to its subject. Add new lecture sources here
 // as content for other subjects is authored.
 export const subjectOfSource: Record<string, string> = {
+  // HRS-2 — Human Respiratory System-2 (Year 3)
+  'L1 — Bacterial Infection of the Upper Respiratory Tract': 'HRS-2',
+  'L2 — Common Pathology of the Upper Respiratory Tract': 'HRS-2',
+  'L3 — Respiratory Pharmacology': 'HRS-2',
+  'L4 — Pathology of Obstructive Lung Diseases': 'HRS-2',
+  'L5 — Pathology of Restrictive Lung Diseases': 'HRS-2',
+  'L6 — Bacterial Infection of the Lower Respiratory Tract': 'HRS-2',
+  'L7 — Fungal Lung Infections': 'HRS-2',
+  'L8 — Viral Respiratory Pathogens & Lung Infection': 'HRS-2',
+  'L9 — Parasitic Lung Infection': 'HRS-2',
+  'L10 — Pathology of Pulmonary Infection': 'HRS-2',
+  'L11 — Ventilation & Circulatory Disorders of the Lung': 'HRS-2',
+  'L12 — Pulmonary Neoplasms': 'HRS-2',
+  'L13 — Drugs for Lower Respiratory Disease': 'HRS-2',
+  'L14 — Antibiotics for Respiratory Diseases': 'HRS-2',
+  'L15 — Antiviral Drugs in Respiratory Infection': 'HRS-2',
+  'L16 — Anti-Tuberculosis Drugs': 'HRS-2',
+  'L17 — Pathology of the Mediastinum & Pleura': 'HRS-2',
+  'L18 — Chest Radiology': 'HRS-2',
+  'L19 — Early Clinical Exposure (HRS-II)': 'HRS-2',
+
   'L1 — Cardiac Arrhythmias': 'HCVS-2',
   'L2 — Abnormal ECG': 'HCVS-2',
   'L3 — Congenital Heart Disease': 'HCVS-2',

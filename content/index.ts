@@ -781,6 +781,37 @@ import renalMetabolismGluconeogenesis from './lectures/renal-metabolism-gluconeo
 import renalBicarbonateReabsorption from './lectures/renal-bicarbonate-reabsorption';
 import renalAcidExcretion from './lectures/renal-acid-excretion';
 
+// ── HRS-2 (Human Respiratory System-2) ──
+import pharyngitisTonsillitisDiphtheria from './lectures/pharyngitis-tonsillitis-diphtheria';
+import otitisMediaSinusitisEpiglottitis from './lectures/otitis-media-sinusitis-epiglottitis';
+import nasalSinusInflammatoryPathology from './lectures/nasal-sinus-inflammatory-pathology';
+import nasopharyngealLaryngealTumors from './lectures/nasopharyngeal-laryngeal-tumors';
+import coughColdAllergyDrugs from './lectures/cough-cold-allergy-drugs';
+import copdEmphysemaChronicBronchitis from './lectures/copd-emphysema-chronic-bronchitis';
+import asthmaBronchiectasisPathology from './lectures/asthma-bronchiectasis-pathology';
+import pulmonaryFibrosisPneumoconioses from './lectures/pulmonary-fibrosis-pneumoconioses';
+import sarcoidosisGranulomatousLung from './lectures/sarcoidosis-granulomatous-lung';
+import communityAcquiredPneumonia from './lectures/community-acquired-pneumonia';
+import hospitalAspirationPneumoniaAbscess from './lectures/hospital-aspiration-pneumonia-abscess';
+import fungalLungInfections from './lectures/fungal-lung-infections';
+import influenzaCovidPneumonia from './lectures/influenza-covid-pneumonia';
+import otherRespiratoryViruses from './lectures/other-respiratory-viruses';
+import parasiticLungInfections from './lectures/parasitic-lung-infections';
+import pneumoniaPathologyPatterns from './lectures/pneumonia-pathology-patterns';
+import tuberculosisPathology from './lectures/tuberculosis-pathology';
+import pulmonaryEmbolismEdema from './lectures/pulmonary-embolism-edema';
+import ardsPulmonaryHypertensionAtelectasis from './lectures/ards-pulmonary-hypertension-atelectasis';
+import nonSmallCellLungCarcinoma from './lectures/non-small-cell-lung-carcinoma';
+import smallCellAndOtherLungTumors from './lectures/small-cell-and-other-lung-tumors';
+import asthmaCopdPharmacology from './lectures/asthma-copd-pharmacology';
+import respiratoryTractAntibiotics from './lectures/respiratory-tract-antibiotics';
+import respiratoryAntiviralDrugs from './lectures/respiratory-antiviral-drugs';
+import antiTuberculosisDrugs from './lectures/anti-tuberculosis-drugs';
+import pleuralEffusionPneumothoraxMesothelioma from './lectures/pleural-effusion-pneumothorax-mesothelioma';
+import mediastinalMasses from './lectures/mediastinal-masses';
+import chestRadiographInterpretation from './lectures/chest-radiograph-interpretation';
+import respiratoryClinicalApproach from './lectures/respiratory-clinical-approach';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1332,6 +1363,46 @@ export const lectures: Lecture[] = [
   renalMetabolismGluconeogenesis,
   // L12 Renal Acid-Base Balance
   renalBicarbonateReabsorption, renalAcidExcretion,
+
+  // ── HRS-2 (Human Respiratory System-2) ──
+  // L1 Bacterial Infection of the Upper Respiratory Tract
+  pharyngitisTonsillitisDiphtheria, otitisMediaSinusitisEpiglottitis,
+  // L2 Common Pathology of the Upper Respiratory Tract
+  nasalSinusInflammatoryPathology, nasopharyngealLaryngealTumors,
+  // L3 Respiratory Pharmacology
+  coughColdAllergyDrugs,
+  // L4 Pathology of Obstructive Lung Diseases
+  copdEmphysemaChronicBronchitis, asthmaBronchiectasisPathology,
+  // L5 Pathology of Restrictive Lung Diseases
+  pulmonaryFibrosisPneumoconioses, sarcoidosisGranulomatousLung,
+  // L6 Bacterial Infection of the Lower Respiratory Tract
+  communityAcquiredPneumonia, hospitalAspirationPneumoniaAbscess,
+  // L7 Fungal Lung Infections
+  fungalLungInfections,
+  // L8 Viral Respiratory Pathogens & Lung Infection
+  influenzaCovidPneumonia, otherRespiratoryViruses,
+  // L9 Parasitic Lung Infection
+  parasiticLungInfections,
+  // L10 Pathology of Pulmonary Infection
+  pneumoniaPathologyPatterns, tuberculosisPathology,
+  // L11 Ventilation & Circulatory Disorders of the Lung
+  pulmonaryEmbolismEdema, ardsPulmonaryHypertensionAtelectasis,
+  // L12 Pulmonary Neoplasms
+  nonSmallCellLungCarcinoma, smallCellAndOtherLungTumors,
+  // L13 Drugs for Lower Respiratory Disease
+  asthmaCopdPharmacology,
+  // L14 Antibiotics for Respiratory Diseases
+  respiratoryTractAntibiotics,
+  // L15 Antiviral Drugs in Respiratory Infection
+  respiratoryAntiviralDrugs,
+  // L16 Anti-Tuberculosis Drugs
+  antiTuberculosisDrugs,
+  // L17 Pathology of the Mediastinum & Pleura
+  pleuralEffusionPneumothoraxMesothelioma, mediastinalMasses,
+  // L18 Chest Radiology
+  chestRadiographInterpretation,
+  // L19 Early Clinical Exposure (HRS-II)
+  respiratoryClinicalApproach,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

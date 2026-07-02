@@ -3532,3 +3532,222 @@ export const RENAL_ACID_BASE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.
   <text x="16" y="216" font-size="8" fill="#475569">Type 4 — hypoaldosteronism (hyperkalaemia). All cause a normal-anion-gap metabolic acidosis.</text>
   <text x="16" y="232" font-size="8" fill="#64748b">Complements the respiratory/ABG side (blows off CO₂) — kidney handles the metabolic (HCO₃⁻) component.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HRS-2 — Human Respiratory System-2 (pathology & pharmacology) figures
+// ---------------------------------------------------------------------------
+
+export const OBSTRUCTIVE_LUNG_DISEASE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Obstructive lung diseases" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Obstructive lung diseases — airflow OUT is limited (↓FEV₁/FVC)</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="42" font-weight="700" fill="#b45309">Emphysema</text>
+    <text x="16" y="56">alveolar wall destruction → ↑compliance, air trapping</text>
+    <text x="26" y="70">• Centriacinar (upper lobes) = smoking</text>
+    <text x="26" y="84">• Panacinar (lower lobes) = α1-antitrypsin deficiency</text>
+    <text x="16" y="104" font-weight="700" fill="#0e7490">Chronic bronchitis</text>
+    <text x="16" y="118">productive cough ≥3 mo × 2 yr; Reid index ↑, mucous</text>
+    <text x="16" y="130">gland hyperplasia; "blue bloater"</text>
+    <text x="16" y="150" font-weight="700" fill="#7c3aed">Asthma</text>
+    <text x="16" y="164">reversible bronchospasm; Th2/IgE, eosinophils,</text>
+    <text x="16" y="176">Curschmann spirals, Charcot-Leyden crystals</text>
+    <text x="16" y="196" font-weight="700" fill="#be123c">Bronchiectasis</text>
+    <text x="16" y="210">permanent dilatation; CF, Kartagener, obstruction,</text>
+    <text x="16" y="222">infection → copious purulent sputum</text>
+  </g>
+  <!-- spirometry -->
+  <rect x="300" y="34" width="168" height="112" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="384" y="50" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Spirometry</text>
+  <text x="312" y="68" font-size="8" fill="#1e40af">Obstructive: ↓↓FEV₁, ↓FVC</text>
+  <text x="312" y="82" font-size="8" font-weight="700" fill="#b91c1c">→ FEV₁/FVC &lt; 0.7</text>
+  <text x="312" y="100" font-size="8" fill="#1e40af">↑TLC, ↑RV (air trapping)</text>
+  <text x="312" y="118" font-size="8" fill="#64748b">Restrictive (contrast):</text>
+  <text x="312" y="132" font-size="8" fill="#64748b">↓FVC, FEV₁/FVC normal/↑</text>
+  <text x="300" y="170" font-size="8.5" fill="#0369a1" font-weight="700">Pink puffer = emphysema; Blue bloater = chronic bronchitis.</text>
+  <text x="16" y="242" font-size="8" fill="#64748b">AERD/Samter triad: asthma + chronic rhinosinusitis/nasal polyps + aspirin sensitivity.</text>
+</svg>`;
+
+export const RESTRICTIVE_ILD = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Restrictive interstitial lung disease" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Restrictive lung disease — stiff lungs (↓FVC, FEV₁/FVC normal/↑)</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="40" font-weight="700" fill="#b45309">Idiopathic pulmonary fibrosis (UIP)</text>
+    <text x="24" y="54">patchy, subpleural/basal fibrosis + honeycomb;</text>
+    <text x="24" y="66">fibroblast foci; temporal heterogeneity; poor prognosis</text>
+    <text x="16" y="86" font-weight="700" fill="#0e7490">Pneumoconioses (occupational dust)</text>
+    <text x="24" y="100">• Coal → anthracosis, progressive massive fibrosis</text>
+    <text x="24" y="114">• Silica → silicotic nodules, ↑TB risk, eggshell nodes</text>
+    <text x="24" y="128">• Asbestos → pleural plaques, ferruginous bodies,</text>
+    <text x="34" y="140">bronchogenic ca (&gt; mesothelioma), lower lobes</text>
+    <text x="16" y="160" font-weight="700" fill="#7c3aed">Sarcoidosis</text>
+    <text x="24" y="174">NON-caseating granulomas, bilateral hilar nodes,</text>
+    <text x="24" y="186">↑ACE/Ca²⁺, Schaumann/asteroid bodies, young Black women</text>
+    <text x="16" y="206" font-weight="700" fill="#be123c">Hypersensitivity pneumonitis</text>
+    <text x="24" y="220">inhaled antigen (farmer's/bird) → granulomas, bronchiolocentric</text>
+  </g>
+  <text x="16" y="236" font-size="8" fill="#64748b">Also: ARDS (acute), drug/radiation, connective-tissue disease. Extrapulmonary restriction = obesity, kyphoscoliosis, neuromuscular.</text>
+</svg>`;
+
+export const PNEUMONIA_PATTERNS = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pneumonia patterns" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Patterns of pneumonia</text>
+  <!-- three lung schematics -->
+  <g>
+    <text x="80" y="40" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Lobar</text>
+    <path d="M60 48 q-14 30 0 66 q20 10 40 0 q14 -36 0 -66 q-20 -10 -40 0 Z" fill="#fecaca" stroke="#b91c1c"/>
+    <text x="80" y="130" text-anchor="middle" font-size="7" fill="#7f1d1d">whole lobe</text>
+  </g>
+  <g>
+    <text x="200" y="40" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Broncho-</text>
+    <path d="M180 48 q-14 30 0 66 q20 10 40 0 q14 -36 0 -66 q-20 -10 -40 0 Z" fill="#fff" stroke="#c2410c"/>
+    <g fill="#ea580c"><circle cx="188" cy="66" r="4"/><circle cx="206" cy="80" r="5"/><circle cx="192" cy="96" r="4"/><circle cx="210" cy="60" r="3"/></g>
+    <text x="200" y="130" text-anchor="middle" font-size="7" fill="#9a3412">patchy, multifocal</text>
+  </g>
+  <g>
+    <text x="320" y="40" text-anchor="middle" font-size="9" font-weight="700" fill="#6d28d9">Interstitial</text>
+    <path d="M300 48 q-14 30 0 66 q20 10 40 0 q14 -36 0 -66 q-20 -10 -40 0 Z" fill="#f5f3ff" stroke="#6d28d9"/>
+    <g stroke="#7c3aed" stroke-width="1"><line x1="300" y1="60" x2="340" y2="66"/><line x1="298" y1="80" x2="342" y2="86"/><line x1="302" y1="100" x2="338" y2="104"/></g>
+    <text x="320" y="130" text-anchor="middle" font-size="7" fill="#5b21b6">walls (atypical/viral)</text>
+  </g>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="152" font-weight="700" fill="#334155">Lobar:</text><text x="60" y="152">S. pneumoniae; 4 stages (congestion → red → grey hepatisation → resolution)</text>
+    <text x="16" y="168" font-weight="700" fill="#334155">Broncho:</text><text x="60" y="168">Staph, H. flu, Klebsiella, Pseudomonas; elderly, aspiration; neutrophil exudate</text>
+    <text x="16" y="184" font-weight="700" fill="#334155">Atypical:</text><text x="60" y="184">Mycoplasma, Legionella, Chlamydia, viruses; interstitial, "walking pneumonia"</text>
+  </g>
+  <text x="16" y="206" font-size="8" fill="#0369a1">Complications: abscess (S. aureus, Klebsiella, anaerobes), empyema, organisation, sepsis. TB: caseating granuloma (separate).</text>
+</svg>`;
+
+export const TB_PATHOGENESIS = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Tuberculosis pathogenesis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Tuberculosis — the caseating granuloma</text>
+  <rect x="14" y="30" width="150" height="80" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="89" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Primary TB</text>
+  <text x="22" y="62" font-size="7.5" fill="#1e40af">First exposure; mid/lower</text>
+  <text x="22" y="74" font-size="7.5" fill="#1e40af">zones. GHON FOCUS +</text>
+  <text x="22" y="86" font-size="7.5" fill="#1e40af">hilar node = Ghon complex</text>
+  <text x="22" y="100" font-size="7.5" fill="#1e40af">→ usually heals (Ranke)</text>
+  <rect x="170" y="30" width="150" height="80" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="245" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">Secondary (reactivation)</text>
+  <text x="178" y="62" font-size="7.5" fill="#92400e">Apex (high O₂); cavitation</text>
+  <text x="178" y="74" font-size="7.5" fill="#92400e">Fever, night sweats, weight</text>
+  <text x="178" y="86" font-size="7.5" fill="#92400e">loss, haemoptysis</text>
+  <text x="178" y="100" font-size="7.5" fill="#92400e">immunosuppression triggers</text>
+  <rect x="326" y="30" width="140" height="80" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="396" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Miliary / dissemination</text>
+  <text x="334" y="62" font-size="7.5" fill="#7f1d1d">Haematogenous spread →</text>
+  <text x="334" y="74" font-size="7.5" fill="#7f1d1d">tiny seed-like foci in lungs</text>
+  <text x="334" y="86" font-size="7.5" fill="#7f1d1d">+ organs (meninges, spine =</text>
+  <text x="334" y="100" font-size="7.5" fill="#7f1d1d">Pott, kidney, adrenal)</text>
+  <text x="16" y="134" font-size="9" font-weight="700" fill="#0369a1">Granuloma = epithelioid macrophages + Langhans giant cells + lymphocytes</text>
+  <text x="16" y="150" font-size="8.5" fill="#475569">with CENTRAL CASEOUS (cheesy) NECROSIS — the hallmark of TB (type IV hypersensitivity, Th1/IFN-γ driven).</text>
+  <text x="16" y="170" font-size="8.5" fill="#475569">Acid-fast bacilli (Ziehl-Neelsen); slow-growing; contains but does not eradicate → latent TB.</text>
+  <text x="16" y="192" font-size="8.5" fill="#0369a1" font-weight="700">Dx: sputum AFB/culture, NAAT, chest X-ray, tuberculin/IGRA.</text>
+  <text x="16" y="212" font-size="8" fill="#64748b">Non-caseating granulomas instead suggest sarcoidosis; caseation + AFB = TB (or atypical mycobacteria/fungi).</text>
+</svg>`;
+
+export const LUNG_CANCER_TYPES = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lung cancer classification" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lung carcinoma — central vs peripheral, SCLC vs NSCLC</text>
+  <!-- airway schematic -->
+  <line x1="120" y1="34" x2="120" y2="70" stroke="#94a3b8" stroke-width="6"/>
+  <line x1="120" y1="70" x2="90" y2="100" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="120" y1="70" x2="150" y2="100" stroke="#94a3b8" stroke-width="5"/>
+  <circle cx="120" cy="66" r="9" fill="#fca5a5" stroke="#b91c1c"/>
+  <text x="140" y="52" font-size="7.5" font-weight="700" fill="#b91c1c">CENTRAL</text>
+  <circle cx="196" cy="112" r="10" fill="#a5b4fc" stroke="#4338ca"/>
+  <text x="210" y="112" font-size="7.5" font-weight="700" fill="#4338ca">PERIPHERAL</text>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="140" font-weight="700" fill="#b91c1c">Central (near hilum):</text>
+    <text x="24" y="153">• Squamous cell — smoking, cavitation, keratin pearls,</text>
+    <text x="34" y="164">PTHrP → HYPERCALCAEMIA</text>
+    <text x="24" y="177">• Small cell (SCLC) — neuroendocrine, Kulchitsky, very</text>
+    <text x="34" y="188">aggressive, ectopic ADH/ACTH, Lambert-Eaton; chemo (not surgery)</text>
+    <text x="16" y="206" font-weight="700" fill="#4338ca">Peripheral:</text>
+    <text x="24" y="219">• Adenocarcinoma — commonest overall &amp; in non-smokers/women;</text>
+    <text x="34" y="230">glands/mucin, EGFR/ALK/KRAS; hypertrophic osteoarthropathy</text>
+    <text x="24" y="243">• Large cell — poorly differentiated; Carcinoid — low-grade NE</text>
+  </g>
+  <rect x="300" y="132" width="168" height="86" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="384" y="148" text-anchor="middle" font-size="8" font-weight="700" fill="#1d4ed8">Key splits</text>
+  <text x="308" y="164" font-size="7.5" fill="#1e40af">SCLC vs NSCLC (Rx differs)</text>
+  <text x="308" y="178" font-size="7.5" fill="#1e40af">Smoker: squamous + small cell</text>
+  <text x="308" y="192" font-size="7.5" fill="#1e40af">Pancoast → Horner, C8-T1</text>
+  <text x="308" y="206" font-size="7.5" fill="#1e40af">SVC syndrome (central mass)</text>
+</svg>`;
+
+export const PLEURAL_MEDIASTINAL = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pleural and mediastinal disorders" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Pleura &amp; mediastinum</text>
+  <text x="16" y="40" font-size="9" font-weight="700" fill="#0369a1">Pleural effusion — Light's criteria (exudate if any):</text>
+  <g font-size="8" fill="#475569"><text x="24" y="54">• Pleural/serum protein &gt; 0.5 · Pleural/serum LDH &gt; 0.6 · Pleural LDH &gt; ⅔ upper normal</text>
+    <text x="24" y="68"><tspan font-weight="700">Transudate</tspan> (HF, cirrhosis, nephrotic) vs <tspan font-weight="700">Exudate</tspan> (infection, malignancy, PE)</text></g>
+  <text x="16" y="88" font-size="8.5" fill="#475569"><tspan font-weight="700" fill="#b91c1c">Pneumothorax:</tspan> air in pleural space. Tension = mediastinal shift AWAY, hypotension — emergency needle decompression.</text>
+  <text x="16" y="104" font-size="8.5" fill="#475569"><tspan font-weight="700" fill="#7c3aed">Mesothelioma:</tspan> asbestos, long latency; encases lung; NOT related to smoking dose.</text>
+  <line x1="16" y1="114" x2="464" y2="114" stroke="#e2e8f0"/>
+  <text x="16" y="132" font-size="9" font-weight="700" fill="#0369a1">Mediastinal masses by compartment (the "4 T's" anterior):</text>
+  <rect x="16" y="142" width="144" height="78" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="88" y="158" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">Anterior</text>
+  <text x="24" y="174" font-size="7.5" fill="#7f1d1d">Thymoma (MG!), Teratoma/</text>
+  <text x="24" y="186" font-size="7.5" fill="#7f1d1d">germ cell, Thyroid (retrosternal),</text>
+  <text x="24" y="198" font-size="7.5" fill="#7f1d1d">"Terrible" lymphoma</text>
+  <rect x="168" y="142" width="144" height="78" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="240" y="158" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">Middle</text>
+  <text x="176" y="174" font-size="7.5" fill="#92400e">Lymphadenopathy,</text>
+  <text x="176" y="186" font-size="7.5" fill="#92400e">bronchogenic/pericardial cyst,</text>
+  <text x="176" y="198" font-size="7.5" fill="#92400e">vascular, metastasis</text>
+  <rect x="320" y="142" width="144" height="78" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="392" y="158" text-anchor="middle" font-size="8.5" font-weight="700" fill="#6d28d9">Posterior</text>
+  <text x="328" y="174" font-size="7.5" fill="#5b21b6">Neurogenic tumours</text>
+  <text x="328" y="186" font-size="7.5" fill="#5b21b6">(schwannoma, neuroblastoma),</text>
+  <text x="328" y="198" font-size="7.5" fill="#5b21b6">oesophageal, aneurysm</text>
+  <text x="16" y="234" font-size="8" fill="#64748b">Thymoma ↔ myasthenia gravis, pure red cell aplasia, hypogammaglobulinaemia.</text>
+</svg>`;
+
+export const ANTI_TB_DRUGS = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Anti-tuberculosis drugs" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">First-line anti-TB drugs — "RIPE"</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">Drug</text><text x="120" y="40">Mechanism</text><text x="270" y="40">Key toxicity</text></g>
+  <line x1="16" y1="45" x2="464" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="62" font-weight="700" fill="#b91c1c">Rifampin</text><text x="120" y="62" fill="#475569">↓ DNA-dep RNA polymerase</text><text x="270" y="62" fill="#475569">orange fluids; hepatitis; potent CYP INDUCER</text>
+    <text x="18" y="82" font-weight="700" fill="#0e7490">Isoniazid</text><text x="120" y="82" fill="#475569">↓ mycolic acid synthesis</text><text x="270" y="82" fill="#475569">hepatitis; peripheral neuropathy (give B6); lupus</text>
+    <text x="18" y="102" font-weight="700" fill="#7c3aed">Pyrazinamide</text><text x="120" y="102" fill="#475569">acidic pH (activated by pncA)</text><text x="270" y="102" fill="#475569">hepatitis; HYPERURICAEMIA (gout)</text>
+    <text x="18" y="122" font-weight="700" fill="#b45309">Ethambutol</text><text x="120" y="122" fill="#475569">↓ arabinosyltransferase</text><text x="270" y="122" fill="#475569">OPTIC neuritis (red-green colour, acuity)</text>
+  </g>
+  <line x1="16" y1="132" x2="464" y2="132" stroke="#e2e8f0"/>
+  <text x="16" y="150" font-size="8.5" fill="#0369a1" font-weight="700">Regimen: 2 months RIPE (intensive) → 4 months RI (continuation) = 6 months total.</text>
+  <text x="16" y="167" font-size="8.5" fill="#475569">All four (except ethambutol) are hepatotoxic — monitor LFTs. Isoniazid neuropathy prevented with pyridoxine (vitamin B6).</text>
+  <text x="16" y="184" font-size="8.5" fill="#475569">Latent TB: isoniazid (± rifapentine). MDR-TB: resistant to isoniazid + rifampin → second-line (fluoroquinolone, bedaquiline, linezolid).</text>
+  <text x="16" y="204" font-size="8" fill="#64748b">DOT (directly observed therapy) improves adherence; rifampin's enzyme induction lowers levels of OCPs, warfarin, HIV drugs.</text>
+</svg>`;
+
+export const ASTHMA_COPD_DRUGS = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Asthma and COPD drugs" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Drugs for asthma &amp; COPD</text>
+  <rect x="14" y="30" width="226" height="150" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="46" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Relievers (bronchodilators)</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="22" y="62">• SABA (salbutamol) — β₂, rescue</text>
+    <text x="22" y="76">• LABA (salmeterol/formoterol) — never</text>
+    <text x="32" y="88">alone in asthma (with ICS)</text>
+    <text x="22" y="104">• SAMA/LAMA (ipratropium/tiotropium)</text>
+    <text x="32" y="116">— antimuscarinic; mainstay in COPD</text>
+    <text x="22" y="132">• Theophylline — narrow index, PDE inhib</text>
+    <text x="22" y="150" font-weight="700">Acute severe: O₂ + neb SABA + ipratropium</text>
+    <text x="22" y="164">+ systemic steroid ± Mg²⁺</text>
+  </g>
+  <rect x="246" y="30" width="220" height="150" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="356" y="46" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Controllers (anti-inflammatory)</text>
+  <g font-size="8" fill="#166534">
+    <text x="254" y="62">• ICS (budesonide, fluticasone) —</text>
+    <text x="264" y="74">FIRST-LINE controller in asthma</text>
+    <text x="254" y="90">• LTRA (montelukast) — leukotriene</text>
+    <text x="264" y="102">block; AERD, exercise, allergic</text>
+    <text x="254" y="118">• Cromones; anti-IgE (omalizumab),</text>
+    <text x="264" y="130">anti-IL5 (mepolizumab) = severe</text>
+    <text x="254" y="146">• Roflumilast (PDE4) — severe COPD</text>
+    <text x="254" y="164" font-weight="700">Asthma = inflammatory → ICS core</text>
+  </g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">Asthma is reversible + eosinophilic → steroid-responsive; COPD is largely fixed → bronchodilator-led.</text>
+  <text x="16" y="218" font-size="8" fill="#64748b">Give a LABA only with an ICS in asthma (LABA monotherapy ↑ mortality). COPD triple therapy = LABA+LAMA+ICS.</text>
+</svg>`;

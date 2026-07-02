@@ -759,6 +759,28 @@ import cardiacBiomarkersAcs from './lectures/cardiac-biomarkers-acs';
 import bloodPressureMeasurementAbpm from './lectures/blood-pressure-measurement-abpm';
 import cardiovascularExamination from './lectures/cardiovascular-examination';
 
+// ── HRU-1 (Human Renal and Urinary System-1) ──
+import nephronKidneyHistology from './lectures/nephron-kidney-histology';
+import lowerUrinaryTractHistology from './lectures/lower-urinary-tract-histology';
+import kidneyDevelopmentMetanephros from './lectures/kidney-development-metanephros';
+import kubCongenitalAnomalies from './lectures/kub-congenital-anomalies';
+import glomerularFiltrationGfr from './lectures/glomerular-filtration-gfr';
+import renalHemodynamicsAutoregulation from './lectures/renal-hemodynamics-autoregulation';
+import tubularReabsorptionSecretion from './lectures/tubular-reabsorption-secretion';
+import urineConcentrationCountercurrent from './lectures/urine-concentration-countercurrent';
+import adhWaterRegulation from './lectures/adh-water-regulation';
+import micturitionReflex from './lectures/micturition-reflex';
+import bodyFluidCompartmentsRenal from './lectures/body-fluid-compartments-renal';
+import volumeWaterBalanceHormones from './lectures/volume-water-balance-hormones';
+import renalPotassiumHandling from './lectures/renal-potassium-handling';
+import renalCalciumPhosphateHandling from './lectures/renal-calcium-phosphate-handling';
+import urinalysisPhysicalChemical from './lectures/urinalysis-physical-chemical';
+import urineBiochemicalComposition from './lectures/urine-biochemical-composition';
+import urineMicroscopySediment from './lectures/urine-microscopy-sediment';
+import renalMetabolismGluconeogenesis from './lectures/renal-metabolism-gluconeogenesis';
+import renalBicarbonateReabsorption from './lectures/renal-bicarbonate-reabsorption';
+import renalAcidExcretion from './lectures/renal-acid-excretion';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1284,6 +1306,32 @@ export const lectures: Lecture[] = [
   bloodPressureMeasurementAbpm,
   // L13 Early Clinical Exposure (CVS)
   cardiovascularExamination,
+
+  // ── HRU-1 (Human Renal and Urinary System-1) ──
+  // L1 Microscopic Anatomy of the Kidney & Urinary Tract
+  nephronKidneyHistology, lowerUrinaryTractHistology,
+  // L2 Development of the Kidney & Urinary Tract
+  kidneyDevelopmentMetanephros, kubCongenitalAnomalies,
+  // L3 Glomerular Filtration, Hemodynamics & Tubular Transport
+  glomerularFiltrationGfr, renalHemodynamicsAutoregulation, tubularReabsorptionSecretion,
+  // L4 Urinary Concentration & Dilution
+  urineConcentrationCountercurrent, adhWaterRegulation,
+  // L5 Micturition
+  micturitionReflex,
+  // L6 Body Fluids & Water Balance
+  bodyFluidCompartmentsRenal, volumeWaterBalanceHormones,
+  // L7 Renal Handling of Electrolytes
+  renalPotassiumHandling, renalCalciumPhosphateHandling,
+  // L8 Urinalysis I: Physical & Chemical
+  urinalysisPhysicalChemical,
+  // L9 Biochemistry of Urine
+  urineBiochemicalComposition,
+  // L10 Urinalysis II: Urine Sediment
+  urineMicroscopySediment,
+  // L11 Renal Metabolism
+  renalMetabolismGluconeogenesis,
+  // L12 Renal Acid-Base Balance
+  renalBicarbonateReabsorption, renalAcidExcretion,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

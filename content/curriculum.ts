@@ -248,6 +248,20 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // HRU-1 — Human Renal and Urinary System-1 (Year 2)
+  'L1 — Microscopic Anatomy of the Kidney & Urinary Tract': 'HRU-1',
+  'L2 — Development of the Kidney & Urinary Tract': 'HRU-1',
+  'L3 — Glomerular Filtration, Hemodynamics & Tubular Transport': 'HRU-1',
+  'L4 — Urinary Concentration & Dilution': 'HRU-1',
+  'L5 — Micturition': 'HRU-1',
+  'L6 — Body Fluids & Water Balance': 'HRU-1',
+  'L7 — Renal Handling of Electrolytes': 'HRU-1',
+  'L8 — Urinalysis I: Physical & Chemical': 'HRU-1',
+  'L9 — Biochemistry of Urine': 'HRU-1',
+  'L10 — Urinalysis II: Urine Sediment': 'HRU-1',
+  'L11 — Renal Metabolism': 'HRU-1',
+  'L12 — Renal Acid-Base Balance': 'HRU-1',
+
   // HCVS-1 — Human Cardiovascular System-1 (Year 2)
   'L1 — Overview of the Cardiovascular System': 'HCVS-1',
   'L2 — Histology of the Cardiovascular System': 'HCVS-1',

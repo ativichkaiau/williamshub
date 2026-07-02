@@ -3313,3 +3313,222 @@ export const CARDIAC_BIOMARKERS = `<svg viewBox="0 0 480 240" xmlns="http://www.
   <text x="16" y="220" font-size="8.5" fill="#475569">Myoglobin = earliest but non-specific. High-sensitivity troponin allows early rule-in/rule-out with serial testing.</text>
   <text x="16" y="235" font-size="8" fill="#64748b">Others: BNP/NT-proBNP (heart failure), D-dimer (rule out PE) — not ACS-specific. Troponin also ↑ in PE, sepsis, renal failure.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HRU-1 — Human Renal & Urinary System-1 figures
+// ---------------------------------------------------------------------------
+
+export const NEPHRON_ANATOMY = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Nephron segments" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The nephron — the functional unit</text>
+  <!-- glomerulus -->
+  <circle cx="70" cy="70" r="24" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>
+  <text x="70" y="73" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7f1d1d">glomerulus</text>
+  <text x="70" y="108" text-anchor="middle" font-size="7" fill="#b91c1c">Bowman's capsule</text>
+  <!-- PCT -->
+  <path d="M94 70 q40 -6 46 26 q4 24 -20 30 q-24 4 -18 26" fill="none" stroke="#2563eb" stroke-width="7"/>
+  <text x="150" y="66" font-size="8" font-weight="700" fill="#1d4ed8">PCT</text>
+  <!-- loop of Henle -->
+  <path d="M102 152 L110 220 q10 20 30 0 L150 100" fill="none" stroke="#7c3aed" stroke-width="7"/>
+  <text x="90" y="200" font-size="8" font-weight="700" fill="#6d28d9">Loop of Henle</text>
+  <text x="90" y="212" font-size="6.5" fill="#5b21b6">(thin desc / thick asc)</text>
+  <!-- DCT -->
+  <path d="M150 100 q30 -4 30 24 q0 20 24 22" fill="none" stroke="#ea580c" stroke-width="7"/>
+  <text x="180" y="118" font-size="8" font-weight="700" fill="#c2410c">DCT</text>
+  <!-- collecting duct -->
+  <path d="M204 146 L210 240" fill="none" stroke="#15803d" stroke-width="8"/>
+  <text x="216" y="200" font-size="8" font-weight="700" fill="#15803d">Collecting duct</text>
+  <text x="216" y="212" font-size="6.5" fill="#166534">(ADH → water)</text>
+  <!-- functions panel -->
+  <g font-size="8" fill="#475569"><text x="270" y="46" font-weight="700" fill="#334155">Segment jobs:</text>
+    <text x="270" y="62" fill="#b91c1c">Glomerulus: filter (~180 L/day)</text>
+    <text x="270" y="78" fill="#1d4ed8">PCT: bulk reabsorption (~65% Na⁺,</text><text x="280" y="90" fill="#1d4ed8">all glucose/AA/HCO₃⁻; isosmotic)</text>
+    <text x="270" y="106" fill="#6d28d9">Thin desc limb: water out (concentrate)</text>
+    <text x="270" y="122" fill="#6d28d9">Thick asc: Na⁺/K⁺/2Cl⁻ out, water-tight</text><text x="280" y="134" fill="#6d28d9">(diluting segment; loop diuretic target)</text>
+    <text x="270" y="150" fill="#ea580c">DCT: Na⁺/Cl⁻ (thiazide); Ca²⁺ (PTH)</text>
+    <text x="270" y="166" fill="#15803d">Collecting duct: fine-tune —</text><text x="280" y="178" fill="#15803d">aldosterone (Na⁺/K⁺), ADH (water)</text>
+  </g>
+  <text x="16" y="248" font-size="8" fill="#0369a1">Juxtaglomerular apparatus (macula densa + JG cells) = where the DCT touches its own glomerulus → renin + tubuloglomerular feedback.</text>
+</svg>`;
+
+export const KIDNEY_DEVELOPMENT = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Kidney development" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Kidney development — three successive systems</text>
+  <rect x="14" y="30" width="148" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="88" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4338ca">1 Pronephros</text>
+  <text x="88" y="64" text-anchor="middle" font-size="7.5" fill="#3730a3">wk 4, non-functional,</text><text x="88" y="76" text-anchor="middle" font-size="7.5" fill="#3730a3">regresses (cervical)</text>
+  <rect x="166" y="30" width="148" height="60" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="240" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">2 Mesonephros</text>
+  <text x="240" y="64" text-anchor="middle" font-size="7.5" fill="#1e40af">temporary; its duct →</text><text x="240" y="76" text-anchor="middle" font-size="7.5" fill="#1e40af">male genital ducts</text>
+  <rect x="318" y="30" width="148" height="60" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="392" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">3 Metanephros</text>
+  <text x="392" y="64" text-anchor="middle" font-size="7.5" fill="#166534">= the definitive kidney</text><text x="392" y="76" text-anchor="middle" font-size="7.5" fill="#166534">(wk 5 → functions ~wk 10)</text>
+  <g stroke="#94a3b8" stroke-width="1.5"><line x1="162" y1="60" x2="166" y2="60"/><line x1="314" y1="60" x2="318" y2="60"/></g>
+  <text x="16" y="112" font-size="9" font-weight="700" fill="#0369a1">The metanephros has two parts that induce each other:</text>
+  <text x="16" y="128" font-size="8.5" fill="#475569">• <tspan font-weight="700">Ureteric bud</tspan> (from mesonephric duct) → collecting system: ureter, pelvis, calyces, collecting ducts.</text>
+  <text x="16" y="144" font-size="8.5" fill="#475569">• <tspan font-weight="700">Metanephric blastema</tspan> (mesoderm) → the nephrons: glomerulus → DCT.</text>
+  <text x="16" y="164" font-size="8.5" fill="#475569">Kidneys form in the PELVIS and ASCEND to the lumbar region (relative to caudal growth), gaining blood supply en route.</text>
+  <text x="16" y="184" font-size="8.5" fill="#0369a1" font-weight="700">Anomalies:</text>
+  <text x="16" y="200" font-size="8" fill="#475569">Horseshoe kidney (fused, caught under IMA); ectopic/pelvic kidney (failed ascent); renal agenesis (no ureteric bud);</text>
+  <text x="16" y="214" font-size="8" fill="#475569">duplex ureter; polycystic kidney; bladder exstrophy (ventral body-wall defect). Oligohydramnios → Potter sequence.</text>
+</svg>`;
+
+export const GLOMERULAR_FILTRATION = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Glomerular filtration" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Glomerular filtration &amp; GFR</text>
+  <text x="16" y="40" font-size="9" font-weight="700" fill="#0369a1">The 3-layer filtration barrier (keeps cells + protein IN):</text>
+  <g font-size="8.5" fill="#475569"><text x="24" y="56">1 Fenestrated endothelium (blocks cells)</text><text x="24" y="70">2 Glomerular basement membrane (negative charge → repels albumin)</text><text x="24" y="84">3 Podocyte foot processes + slit diaphragms (size barrier)</text></g>
+  <text x="16" y="102" font-size="8" fill="#64748b">Damage → proteinuria/haematuria (nephrotic = podocyte/charge; nephritic = GBM/inflammation).</text>
+  <line x1="16" y1="110" x2="464" y2="110" stroke="#e2e8f0"/>
+  <text x="16" y="128" font-size="9" font-weight="700" fill="#0369a1">Net filtration pressure (Starling forces)</text>
+  <g font-size="8.5" fill="#475569"><text x="24" y="144">Favouring filtration: glomerular capillary HYDROSTATIC pressure (P_GC, high, ~60)</text><text x="24" y="158">Opposing: Bowman's hydrostatic (P_BS) + capillary ONCOTIC pressure (π_GC)</text></g>
+  <text x="16" y="176" font-size="8.5" fill="#334155" font-weight="700">GFR ≈ 125 mL/min (180 L/day). GFR = K_f × net filtration pressure.</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">Efferent constriction (angiotensin II) ↑P_GC → ↑GFR; afferent constriction ↓GFR.</text>
+  <line x1="16" y1="204" x2="464" y2="204" stroke="#e2e8f0"/>
+  <text x="16" y="222" font-size="8.5" fill="#0369a1" font-weight="700">Clearance = (U×V)/P. Inulin/creatinine ≈ GFR (filtered, not reabsorbed/secreted);</text>
+  <text x="16" y="238" font-size="8.5" fill="#475569">PAH clearance ≈ renal plasma flow (fully secreted). Filtration fraction = GFR/RPF (~0.2).</text>
+</svg>`;
+
+export const RENAL_AUTOREGULATION = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Renal autoregulation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Renal autoregulation — stable RBF &amp; GFR</text>
+  <line x1="50" y1="120" x2="300" y2="120" stroke="#94a3b8"/><line x1="50" y1="40" x2="50" y2="120" stroke="#94a3b8"/>
+  <text x="30" y="80" font-size="7.5" fill="#64748b" transform="rotate(-90 30 80)" text-anchor="middle">GFR / RBF</text>
+  <text x="175" y="136" text-anchor="middle" font-size="7.5" fill="#64748b">mean arterial pressure (mmHg)</text>
+  <!-- flat plateau then drop -->
+  <path d="M55 118 Q80 118 95 70 L230 70 Q270 72 290 105" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="95" y1="120" x2="95" y2="70" stroke="#cbd5e1" stroke-dasharray="2 2"/><text x="95" y="132" text-anchor="middle" font-size="7" fill="#64748b">~80</text>
+  <line x1="230" y1="120" x2="230" y2="70" stroke="#cbd5e1" stroke-dasharray="2 2"/><text x="230" y="132" text-anchor="middle" font-size="7" fill="#64748b">~180</text>
+  <text x="160" y="62" text-anchor="middle" font-size="8" font-weight="700" fill="#1d4ed8">autoregulated plateau</text>
+  <text x="70" y="108" font-size="7" fill="#b91c1c">below 80: GFR falls</text>
+  <g font-size="8.5" fill="#475569"><text x="310" y="52" font-weight="700" fill="#334155">Two mechanisms:</text><text x="310" y="70" fill="#1d4ed8">1 Myogenic</text><text x="318" y="82">↑BP stretches afferent</text><text x="318" y="94">arteriole → it constricts</text><text x="310" y="114" fill="#15803d">2 Tubuloglomerular feedback</text><text x="318" y="126">macula densa senses ↑NaCl →</text><text x="318" y="138">adenosine → afferent constricts</text><text x="318" y="150">(↓GFR back to normal)</text></g>
+  <text x="16" y="184" font-size="8.5" fill="#0369a1">Keeps GFR/RBF constant over MAP ~80–180 (protects filtration). Below ~80 mmHg autoregulation fails → GFR drops (pre-renal AKI).</text>
+  <text x="16" y="202" font-size="8" fill="#64748b">Angiotensin II preferentially constricts the EFFERENT arteriole → preserves GFR when renal perfusion falls (why ACE-I can ↓GFR).</text>
+</svg>`;
+
+export const TUBULAR_TRANSPORT = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Tubular reabsorption and transport maximum" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Tubular transport &amp; the transport maximum (Tm)</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">The Na⁺/K⁺-ATPase on the basolateral membrane powers most reabsorption (creates the Na⁺ gradient the apical side exploits).</text>
+  <g font-size="8.5" fill="#475569"><text x="16" y="60" font-weight="700" fill="#334155">Transport types:</text><text x="24" y="76">• Primary active (Na⁺/K⁺-ATPase, H⁺-ATPase)</text><text x="24" y="90">• Secondary active — symport (SGLT: Na⁺+glucose) / antiport (Na⁺/H⁺)</text><text x="24" y="104">• Facilitated (GLUT), diffusion, paracellular, osmosis (water follows solute)</text></g>
+  <!-- Tm curve -->
+  <line x1="60" y1="220" x2="60" y2="130" stroke="#94a3b8"/><line x1="60" y1="220" x2="240" y2="220" stroke="#94a3b8"/>
+  <text x="45" y="180" font-size="7" fill="#64748b" transform="rotate(-90 45 180)" text-anchor="middle">rate</text>
+  <text x="150" y="234" text-anchor="middle" font-size="7.5" fill="#64748b">plasma glucose</text>
+  <path d="M60 220 Q110 150 160 140 L235 140" fill="none" stroke="#15803d" stroke-width="2"/>
+  <text x="200" y="134" font-size="7.5" font-weight="700" fill="#15803d">reabsorption (Tm)</text>
+  <path d="M60 220 L120 220 Q160 210 235 150" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <text x="180" y="180" font-size="7.5" font-weight="700" fill="#b91c1c">excretion</text>
+  <line x1="120" y1="220" x2="120" y2="130" stroke="#cbd5e1" stroke-dasharray="2 2"/><text x="120" y="232" text-anchor="middle" font-size="6.5" fill="#64748b">threshold</text>
+  <g font-size="8" fill="#475569"><text x="255" y="150" font-weight="700" fill="#334155">Glucose example:</text><text x="255" y="166">all filtered glucose is reabsorbed by</text><text x="255" y="178">SGLT2 (PCT) — UNTIL the transporters</text><text x="255" y="190">saturate (Tm). Above the threshold</text><text x="255" y="202">(~180–200 mg/dL) → glucose spills</text><text x="255" y="214">into urine = <tspan font-weight="700" fill="#b91c1c">glucosuria</tspan> (diabetes).</text></g>
+  <text x="16" y="234" font-size="7.5" fill="#64748b">Carrier-mediated transport is saturable (Tm), specific, and competitive — the same kinetics as facilitated diffusion.</text>
+</svg>`;
+
+export const COUNTERCURRENT_MULTIPLIER = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Countercurrent multiplier" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Countercurrent multiplier → medullary gradient</text>
+  <!-- loop -->
+  <path d="M120 40 L120 200 q0 20 20 20 q20 0 20 -20 L160 40" fill="none" stroke="#7c3aed" stroke-width="10"/>
+  <text x="105" y="36" font-size="7.5" fill="#6d28d9" text-anchor="end">descending</text>
+  <text x="175" y="36" font-size="7.5" fill="#6d28d9">ascending</text>
+  <!-- gradient arrows -->
+  <g font-size="8" fill="#334155"><text x="200" y="55">cortex ~300 mOsm (isotonic)</text><text x="200" y="215" font-weight="700">medulla ~1200 mOsm (hypertonic)</text></g>
+  <g stroke="#dc2626" stroke-width="1.5" fill="none"><line x1="118" y1="70" x2="90" y2="70" marker-end="url(#cc)"/><line x1="118" y1="120" x2="88" y2="120" marker-end="url(#cc)"/></g>
+  <text x="60" y="96" font-size="7" fill="#b91c1c" text-anchor="middle">H₂O out</text>
+  <defs><marker id="cc" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#dc2626"/></marker></defs>
+  <g stroke="#1d4ed8" stroke-width="1.5" fill="none"><line x1="162" y1="80" x2="190" y2="80" marker-end="url(#cc2)"/><line x1="162" y1="130" x2="192" y2="130" marker-end="url(#cc2)"/></g>
+  <text x="215" y="106" font-size="7" fill="#1d4ed8" text-anchor="middle">NaCl out</text>
+  <defs><marker id="cc2" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#1d4ed8"/></marker></defs>
+  <g font-size="8.5" fill="#475569"><text x="255" y="60" font-weight="700" fill="#6d28d9">Descending limb:</text><text x="255" y="74">water-permeable, no NaCl transport</text><text x="255" y="86">→ water leaves, fluid concentrates</text><text x="255" y="106" font-weight="700" fill="#1d4ed8">Thick ascending limb:</text><text x="255" y="120">water-TIGHT; Na⁺/K⁺/2Cl⁻ pumped out</text><text x="255" y="132">(NKCC2 = loop diuretic target)</text><text x="255" y="144">→ dilutes fluid, salts up the medulla</text></g>
+  <text x="16" y="238" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Urea recycling</tspan> (collecting duct→medulla) adds ~½ the gradient. <tspan font-weight="700">Vasa recta</tspan> = countercurrent EXCHANGER (preserves gradient without washing it out).</text>
+</svg>`;
+
+export const MICTURITION_CONTROL = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Micturition control" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Micturition — storage vs voiding</text>
+  <rect x="14" y="30" width="226" height="150" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">STORAGE (filling)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="66">• SYMPATHETIC (hypogastric, T11–L2):</text><text x="34" y="80">β → detrusor RELAXES;</text><text x="34" y="92">α → internal sphincter CONTRACTS</text><text x="24" y="110">• SOMATIC (pudendal, S2–4):</text><text x="34" y="124">external sphincter CONTRACTS (voluntary)</text><text x="24" y="144">• Pontine STORAGE centre inhibits voiding</text></g>
+  <text x="24" y="170" font-size="7.5" fill="#0369a1">"Sympathetic Stores" (β-relax + α-close).</text>
+  <rect x="246" y="30" width="220" height="150" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="356" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">VOIDING (micturition)</text>
+  <g font-size="8.5" fill="#166534"><text x="254" y="66">• Stretch receptors (full bladder) →</text><text x="264" y="80">spinal cord → PONTINE micturition centre</text><text x="254" y="98">• PARASYMPATHETIC (pelvic, S2–4):</text><text x="264" y="112">detrusor CONTRACTS (M3, ACh)</text><text x="254" y="130">• Internal + external sphincters RELAX</text><text x="254" y="150">• Voluntary cortical permission</text></g>
+  <text x="254" y="170" font-size="7.5" fill="#0369a1">"Parasympathetic Pees" (detrusor squeeze).</text>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">The micturition reflex is a spinal reflex under voluntary (pontine/cortical) control.</text>
+  <text x="16" y="216" font-size="8" fill="#475569">Spinal cord injury above sacrum → spastic/reflex (automatic) bladder; sacral/nerve injury → flaccid/atonic bladder (retention + overflow).</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">Continence needs intact sphincters + a compliant, low-pressure bladder during filling.</text>
+</svg>`;
+
+export const POTASSIUM_HANDLING = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Renal potassium handling" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Renal potassium handling</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">K⁺ is freely filtered, then mostly reabsorbed early — the KEY regulated step is SECRETION in the distal nephron.</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="62"><tspan font-weight="700" fill="#1d4ed8">PCT</tspan>: reabsorbs ~65% (with Na⁺/water, paracellular)</text>
+    <text x="16" y="80"><tspan font-weight="700" fill="#7c3aed">Thick ascending limb</tspan>: ~25% via NKCC2 (Na⁺/K⁺/2Cl⁻)</text>
+    <text x="16" y="98"><tspan font-weight="700" fill="#15803d">Principal cells (collecting duct)</tspan>: SECRETE K⁺ — the adjustable step</text>
+  </g>
+  <line x1="16" y1="108" x2="454" y2="108" stroke="#e2e8f0"/>
+  <text x="16" y="126" font-size="9" font-weight="700" fill="#0369a1">K⁺ secretion by principal cells is increased by:</text>
+  <g font-size="8.5" fill="#166534"><text x="24" y="142">• ALDOSTERONE (↑ENaC → more Na⁺ in → more K⁺ out)</text><text x="24" y="156">• High plasma K⁺; high distal flow &amp; Na⁺ delivery; alkalosis</text></g>
+  <text x="16" y="176" font-size="9" font-weight="700" fill="#0369a1">Drug logic:</text>
+  <g font-size="8.5" fill="#475569"><text x="24" y="192">• Loop/thiazide diuretics → ↑distal flow → K⁺ WASTING (hypokalaemia)</text><text x="24" y="206">• K⁺-sparing: spironolactone (blocks aldosterone), amiloride (blocks ENaC)</text></g>
+  <text x="16" y="224" font-size="7.5" fill="#64748b">The big transcellular Na⁺/K⁺ gradient is set by the Na⁺/K⁺-ATPase; acid-base shifts K⁺ across membranes (acidosis → hyperkalaemia).</text>
+</svg>`;
+
+export const URINALYSIS_DIPSTICK = `<svg viewBox="0 0 470 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Urinalysis dipstick" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Urinalysis — physical, chemical (dipstick) &amp; microscopy</text>
+  <text x="16" y="38" font-size="8.5" fill="#475569"><tspan font-weight="700" fill="#334155">Physical:</tspan> colour, clarity/turbidity, odour, volume, specific gravity (concentration).</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="58">Dipstick pad</text><text x="150" y="58">Positive means…</text></g>
+  <line x1="16" y1="62" x2="454" y2="62" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="78" font-weight="700" fill="#334155">Protein</text><text x="150" y="78" fill="#475569">glomerular disease (mainly albumin); ↑ in nephrotic</text>
+    <text x="18" y="94" font-weight="700" fill="#334155">Glucose</text><text x="150" y="94" fill="#475569">plasma glucose &gt; renal threshold (diabetes) — filtered load &gt; Tm</text>
+    <text x="18" y="110" font-weight="700" fill="#334155">Ketones</text><text x="150" y="110" fill="#475569">DKA, starvation, fasting</text>
+    <text x="18" y="126" font-weight="700" fill="#334155">Blood</text><text x="150" y="126" fill="#475569">haematuria / haemoglobin / myoglobin (confirm with microscopy)</text>
+    <text x="18" y="142" font-weight="700" fill="#334155">Leukocyte esterase + Nitrite</text><text x="150" y="142" fill="#475569">UTI (nitrite = Gram-neg reducing bacteria)</text>
+    <text x="18" y="158" font-weight="700" fill="#334155">Bilirubin / Urobilinogen</text><text x="150" y="158" fill="#475569">liver/biliary disease vs haemolysis</text>
+    <text x="18" y="174" font-weight="700" fill="#334155">pH / Specific gravity</text><text x="150" y="174" fill="#475569">acid-base &amp; stone risk / hydration &amp; concentrating ability</text>
+  </g>
+  <text x="16" y="196" font-size="8.5" fill="#0369a1" font-weight="700">Normal urine: NO glucose, protein, ketones, blood, bilirubin, or nitrite.</text>
+  <text x="16" y="212" font-size="8.5" fill="#475569">First morning void is most concentrated (best for many tests). Examine fresh — cells/casts lyse within 1–3 h at room temp.</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">Dipstick screens; microscopy of the spun sediment confirms (RBCs, WBCs, casts, crystals, organisms).</text>
+</svg>`;
+
+export const URINE_CASTS = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Urine casts" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Urine casts — moulds of the renal tubule</text>
+  <text x="16" y="38" font-size="8.5" fill="#475569">Casts form in the TUBULE (Tamm–Horsfall protein matrix), so their presence localises disease to the KIDNEY (not the bladder).</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="58">Cast</text><text x="170" y="58">Indicates</text></g>
+  <line x1="16" y1="62" x2="454" y2="62" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="78" font-weight="700" fill="#334155">Hyaline</text><text x="170" y="78" fill="#475569">non-specific/normal (dehydration, exercise, concentrated urine)</text>
+    <text x="18" y="94" font-weight="700" fill="#b91c1c">RBC (red cell)</text><text x="170" y="94" fill="#475569">GLOMERULONEPHRITIS (nephritic) — the key diagnostic cast</text>
+    <text x="18" y="110" font-weight="700" fill="#15803d">WBC (white cell)</text><text x="170" y="110" fill="#475569">pyelonephritis, interstitial nephritis</text>
+    <text x="18" y="126" font-weight="700" fill="#ea580c">Granular ("muddy brown")</text><text x="170" y="126" fill="#475569">acute tubular necrosis (ATN)</text>
+    <text x="18" y="142" font-weight="700" fill="#7c3aed">Fatty</text><text x="170" y="142" fill="#475569">nephrotic syndrome (lipiduria, "Maltese cross")</text>
+    <text x="18" y="158" font-weight="700" fill="#334155">Waxy / Broad</text><text x="170" y="158" fill="#475569">chronic kidney disease, very low flow (wide collecting ducts)</text>
+    <text x="18" y="174" font-weight="700" fill="#334155">Epithelial cell</text><text x="170" y="174" fill="#475569">tubular injury</text>
+  </g>
+  <text x="16" y="196" font-size="8.5" fill="#0369a1" font-weight="700">Also in sediment: crystals (urate, Ca-oxalate, phosphate, cystine), cells (RBC/WBC/epithelial), bacteria, yeast.</text>
+  <text x="16" y="212" font-size="8.5" fill="#475569">Dysmorphic RBCs + RBC casts = glomerular bleeding; isomorphic RBCs = lower-tract bleeding (stone, tumour, infection).</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">Casts do NOT form in the PCT or loop — they form in the distal tubule/collecting duct (where flow slows and protein gels).</text>
+</svg>`;
+
+export const RENAL_ACID_BASE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Renal acid-base handling" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Renal acid–base: reclaim HCO₃⁻ + excrete acid</text>
+  <rect x="14" y="30" width="226" height="96" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">1 Reabsorb filtered HCO₃⁻</text>
+  <g font-size="8" fill="#1e40af"><text x="22" y="66">• Mostly in the PROXIMAL tubule (~85%)</text><text x="22" y="80">• H⁺ secreted (Na⁺/H⁺ exchanger) reacts with</text><text x="32" y="92">filtered HCO₃⁻ → CO₂ + H₂O (carbonic</text><text x="32" y="104">anhydrase) → reabsorbed &amp; reformed inside</text><text x="22" y="118">• Reclaims bicarbonate (no NET acid loss yet)</text></g>
+  <rect x="246" y="30" width="220" height="96" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="356" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">2 Excrete acid + make NEW HCO₃⁻</text>
+  <g font-size="8" fill="#166534"><text x="254" y="66">In the COLLECTING DUCT (α-intercalated cells):</text><text x="254" y="82">• Titratable acid — H⁺ buffered by phosphate</text><text x="254" y="98">• Ammonium (NH₄⁺) — the ADJUSTABLE buffer</text><text x="264" y="110">(ammoniagenesis ↑ in chronic acidosis)</text><text x="254" y="124">Each H⁺ excreted → one NEW HCO₃⁻ made</text></g>
+  <text x="16" y="148" font-size="9" font-weight="700" fill="#0369a1">Net acid excretion = (titratable acid + NH₄⁺) − urinary HCO₃⁻</text>
+  <text x="16" y="166" font-size="8.5" fill="#475569">Aldosterone stimulates H⁺ secretion (and Na⁺/K⁺); the kidney is the SLOW (days) but complete compensator vs the fast lungs (CO₂).</text>
+  <text x="16" y="186" font-size="8.5" fill="#0369a1" font-weight="700">Renal tubular acidosis (RTA):</text>
+  <text x="16" y="202" font-size="8" fill="#475569">Type 1 (distal) — can't secrete H⁺ (urine pH high, stones); Type 2 (proximal) — can't reabsorb HCO₃⁻;</text>
+  <text x="16" y="216" font-size="8" fill="#475569">Type 4 — hypoaldosteronism (hyperkalaemia). All cause a normal-anion-gap metabolic acidosis.</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">Complements the respiratory/ABG side (blows off CO₂) — kidney handles the metabolic (HCO₃⁻) component.</text>
+</svg>`;

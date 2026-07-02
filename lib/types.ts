@@ -27,7 +27,8 @@ export type SystemId =
   | 'parasitology' // parasitology, helminthology & medical entomology (e.g. PHI)
   | 'pharmacology' // basic & clinical pharmacology — PK/PD & drug classes (e.g. BCP)
   | 'derm' // skin & connective tissue / dermatology (e.g. HSC)
-  | 'microbiology'; // medical bacteriology, virology & mycology (e.g. MHI)
+  | 'microbiology' // medical bacteriology, virology & mycology (e.g. MHI)
+  | 'pathology'; // general/anatomical pathology — cell injury, inflammation, neoplasia (e.g. BAP)
 
 export type TagKind =
   | 'system'

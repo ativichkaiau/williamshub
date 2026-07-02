@@ -1153,6 +1153,29 @@ import opportunisticMoldsAspergillusMucorales from './lectures/opportunistic-mol
 import mycetomaEumycetoma from './lectures/mycetoma-eumycetoma';
 import chromoblastomycosisSubcutaneousMycoses from './lectures/chromoblastomycosis-subcutaneous-mycoses';
 
+// ── BAP (Basic Human Anatomical Pathology) — general pathology (Year 2) ──
+import introPathologyScope from './lectures/intro-pathology-scope';
+import diagnosticPathologyMethods from './lectures/diagnostic-pathology-methods';
+import cellInjuryMechanisms from './lectures/cell-injury-mechanisms';
+import necrosisPatterns from './lectures/necrosis-patterns';
+import apoptosisCellDeath from './lectures/apoptosis-cell-death';
+import cellularAdaptationsGrowth from './lectures/cellular-adaptations-growth';
+import metaplasiaDysplasia from './lectures/metaplasia-dysplasia';
+import intracellularAccumulationsCalcification from './lectures/intracellular-accumulations-calcification';
+import acuteInflammation from './lectures/acute-inflammation';
+import inflammatoryMediatorsLeukocytes from './lectures/inflammatory-mediators-leukocytes';
+import chronicInflammationGranuloma from './lectures/chronic-inflammation-granuloma';
+import tissueRepairWoundHealing from './lectures/tissue-repair-wound-healing';
+import edemaHyperemiaCongestion from './lectures/edema-hyperemia-congestion';
+import hemostasisThrombosisEmbolism from './lectures/hemostasis-thrombosis-embolism';
+import infarctionShock from './lectures/infarction-shock';
+import neoplasiaNomenclature from './lectures/neoplasia-nomenclature';
+import neoplasiaDifferentiationInvasion from './lectures/neoplasia-differentiation-invasion';
+import carcinogenesisMolecular from './lectures/carcinogenesis-molecular';
+import cancerSpreadStagingClinical from './lectures/cancer-spread-staging-clinical';
+import environmentalChemicalTobaccoInjury from './lectures/environmental-chemical-tobacco-injury';
+import physicalNutritionalInjury from './lectures/physical-nutritional-injury';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -2040,6 +2063,24 @@ export const lectures: Lecture[] = [
   systemicDimorphicFungi, talaromycesSporothrix,
   dermatophytesTinea, opportunisticMoldsAspergillusMucorales,
   mycetomaEumycetoma, chromoblastomycosisSubcutaneousMycoses,
+
+  // ── BAP (Basic Human Anatomical Pathology) — general pathology (Year 2) ──
+  // L1 Introduction to Pathology
+  introPathologyScope, diagnosticPathologyMethods,
+  // L2 Cell Injury & Cell Death
+  cellInjuryMechanisms, necrosisPatterns, apoptosisCellDeath,
+  // L3 Adaptive Responses to Cell Injury
+  cellularAdaptationsGrowth, metaplasiaDysplasia,
+  // L4 Intracellular Accumulations
+  intracellularAccumulationsCalcification,
+  // L5 Inflammation & Repair
+  acuteInflammation, inflammatoryMediatorsLeukocytes, chronicInflammationGranuloma, tissueRepairWoundHealing,
+  // L6 Hemodynamic Disorders
+  edemaHyperemiaCongestion, hemostasisThrombosisEmbolism, infarctionShock,
+  // L7 Neoplasm
+  neoplasiaNomenclature, neoplasiaDifferentiationInvasion, carcinogenesisMolecular, cancerSpreadStagingClinical,
+  // L8 Environmental & Occupational Pathology
+  environmentalChemicalTobaccoInjury, physicalNutritionalInjury,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

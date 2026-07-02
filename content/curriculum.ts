@@ -145,6 +145,16 @@ export const subjectOfSource: Record<string, string> = {
   'L24 — Pathogenic Filamentous Fungi I': 'MHI',
   'L25 — Pathogenic Filamentous Fungi II': 'MHI',
 
+  // BAP — Basic Human Anatomical Pathology (Year 2, general pathology)
+  'L1 — Introduction to Pathology': 'BAP',
+  'L2 — Cell Injury & Cell Death': 'BAP',
+  'L3 — Adaptive Responses to Cell Injury': 'BAP',
+  'L4 — Intracellular Accumulations': 'BAP',
+  'L5 — Inflammation & Repair': 'BAP',
+  'L6 — Hemodynamic Disorders': 'BAP',
+  'L7 — Neoplasm': 'BAP',
+  'L8 — Environmental & Occupational Pathology': 'BAP',
+
   // HSC — Human Skin and Connective Tissue System (Year 3)
   'L1 — Dermatologic Diagnosis': 'HSC',
   'L2 — Skin Anatomy & Histology': 'HSC',

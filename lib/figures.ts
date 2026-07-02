@@ -4118,3 +4118,67 @@ export const MUSCLE_SPINDLE_REFLEX = `<svg viewBox="0 0 470 230" xmlns="http://w
   <text x="16" y="196" font-size="8" fill="#475569">Hyper-reflexia + clonus = UPPER motor neuron lesion; hypo/areflexia = LOWER motor neuron lesion.</text>
   <text x="16" y="212" font-size="8" fill="#64748b">Spindle = length (parallel, contract); GTO = tension (series, relax). γ-loop keeps the spindle taut during contraction.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HCVS-1 expansion figures
+// ---------------------------------------------------------------------------
+
+export const CORONARY_ARTERIES = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Coronary circulation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Coronary circulation</text>
+  <text x="16" y="40" font-size="8.5" fill="#475569">Two coronary arteries arise from the aortic sinuses just above the aortic valve.</text>
+  <rect x="14" y="50" width="222" height="120" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="125" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">Left coronary artery (LCA)</text>
+  <g font-size="8" fill="#7f1d1d">
+    <text x="22" y="84">• LAD (anterior descending): anterior LV,</text>
+    <text x="32" y="96">apex, anterior ⅔ of septum</text>
+    <text x="22" y="112">• Circumflex (LCx): lateral + posterior LV</text>
+    <text x="22" y="130" font-weight="700">"LAD = widowmaker" (commonest MI)</text>
+    <text x="22" y="148">Supplies most of the left ventricle</text>
+  </g>
+  <rect x="242" y="50" width="214" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="349" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Right coronary artery (RCA)</text>
+  <g font-size="8" fill="#1e40af">
+    <text x="250" y="84">• RV, inferior LV</text>
+    <text x="250" y="100">• SA node (~60%) + AV node (~90%)</text>
+    <text x="250" y="116">• Posterior descending (PDA) if</text>
+    <text x="260" y="128">"right dominant" (~85% of people)</text>
+    <text x="250" y="146" font-weight="700">Inferior MI → bradycardia/AV block</text>
+  </g>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1" font-weight="700">"Dominance" = which artery gives the posterior descending artery (right dominant in ~85%).</text>
+  <text x="16" y="204" font-size="8" fill="#475569">Coronary flow is greatest in DIASTOLE (systole compresses the vessels); the LV is perfused almost entirely in diastole.</text>
+  <text x="16" y="220" font-size="8" fill="#64748b">Venous drainage: coronary sinus → right atrium. Tachycardia shortens diastole → less coronary perfusion time.</text>
+</svg>`;
+
+export const ECG_INTERVALS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="ECG waves intervals and segments" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">ECG waves, intervals &amp; segments</text>
+  <!-- trace -->
+  <path d="M20 90 L70 90 q6 -14 12 0 L100 90 L112 90 L120 40 L128 130 L136 90 L200 90 q10 -26 20 0 L260 90 L280 90 q6 -14 12 0 L320 90 L360 90 q6 -14 12 0 L440 90" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <g font-size="8" font-weight="700" fill="#334155"><text x="70" y="80">P</text><text x="120" y="36">R</text><text x="112" y="112">Q</text><text x="136" y="112">S</text><text x="208" y="70">T</text></g>
+  <g font-size="7.5" fill="#475569">
+    <text x="16" y="130" font-weight="700" fill="#334155">P wave</text><text x="80" y="130">atrial depolarisation</text>
+    <text x="16" y="144" font-weight="700" fill="#334155">PR interval</text><text x="80" y="144">start P → start QRS; AV conduction (0.12–0.20 s); long = AV block</text>
+    <text x="16" y="158" font-weight="700" fill="#334155">QRS</text><text x="80" y="158">ventricular depolarisation (&lt;0.12 s); wide = bundle branch block</text>
+    <text x="16" y="172" font-weight="700" fill="#334155">ST segment</text><text x="80" y="172">isoelectric; elevation/depression = ischaemia/infarction</text>
+    <text x="16" y="186" font-weight="700" fill="#334155">T wave</text><text x="80" y="186">ventricular repolarisation (atrial repol. hidden in QRS)</text>
+    <text x="16" y="200" font-weight="700" fill="#334155">QT interval</text><text x="80" y="200">start QRS → end T; long QT → torsades risk (rate-corrected = QTc)</text>
+  </g>
+  <text x="16" y="216" font-size="7.5" fill="#64748b">Standard paper: 1 small box = 0.04 s / 0.1 mV; rate = 300 ÷ (large boxes between R waves).</text>
+</svg>`;
+
+export const JVP_WAVEFORM = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Jugular venous pressure waveform" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="210" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Jugular venous pressure (JVP) waveform</text>
+  <path d="M20 70 q14 -26 28 0 q10 22 22 6 q14 -30 28 -2 q14 24 26 6 q12 -14 22 6" fill="none" stroke="#2563eb" stroke-width="2" transform="translate(0 10)"/>
+  <g font-size="8" font-weight="700" fill="#1d4ed8"><text x="40" y="48">a</text><text x="86" y="60">c</text><text x="120" y="46">v</text></g>
+  <g font-size="8" fill="#475569">
+    <text x="16" y="108" font-weight="700" fill="#334155">a wave</text><text x="70" y="108">atrial contraction (lost in AF; giant "cannon" a in complete heart block)</text>
+    <text x="16" y="124" font-weight="700" fill="#334155">c wave</text><text x="70" y="124">tricuspid bulging into the atrium in early systole</text>
+    <text x="16" y="140" font-weight="700" fill="#334155">x descent</text><text x="70" y="140">atrial relaxation</text>
+    <text x="16" y="156" font-weight="700" fill="#334155">v wave</text><text x="70" y="156">atrial filling against a closed tricuspid (large in tricuspid regurgitation)</text>
+    <text x="16" y="172" font-weight="700" fill="#334155">y descent</text><text x="70" y="172">tricuspid opens, atrium empties</text>
+  </g>
+  <text x="16" y="192" font-size="8" fill="#0369a1" font-weight="700">JVP reflects right atrial pressure — a window on right-heart filling and function (raised in right heart failure).</text>
+  <text x="16" y="206" font-size="7.5" fill="#64748b">Measured as vertical height above the sternal angle; Kussmaul sign = paradoxical rise on inspiration (constriction/tamponade).</text>
+</svg>`;

@@ -767,6 +767,15 @@ import hemodynamicsPreloadAfterloadCardiacOutput from './lectures/hemodynamics-p
 import cardiacBiomarkersAcs from './lectures/cardiac-biomarkers-acs';
 import bloodPressureMeasurementAbpm from './lectures/blood-pressure-measurement-abpm';
 import cardiovascularExamination from './lectures/cardiovascular-examination';
+// HCVS-1 expansion
+import coronaryCirculation from './lectures/coronary-circulation';
+import cardiacIonCurrentsChannels from './lectures/cardiac-ion-currents-channels';
+import cardiacElectricalAxisVectors from './lectures/cardiac-electrical-axis-vectors';
+import ecgIntervalsSegments from './lectures/ecg-intervals-segments';
+import ecgChamberEnlargement from './lectures/ecg-chamber-enlargement';
+import jugularVenousPressureWaveform from './lectures/jugular-venous-pressure-waveform';
+import frankStarlingCardiacFunction from './lectures/frank-starling-cardiac-function';
+import heartSoundsMurmursAuscultation from './lectures/heart-sounds-murmurs-auscultation';
 
 // ── HRU-1 (Human Renal and Urinary System-1) ──
 import nephronKidneyHistology from './lectures/nephron-kidney-histology';
@@ -1366,31 +1375,31 @@ export const lectures: Lecture[] = [
 
   // ── HCVS-1 (Human Cardiovascular System-1) ──
   // L1 Overview of the Cardiovascular System
-  heartAnatomyChambersValves, systemicPulmonaryCirculation,
+  heartAnatomyChambersValves, systemicPulmonaryCirculation, coronaryCirculation,
   // L2 Histology of the Cardiovascular System
   heartWallCardiacHistology, bloodVesselHistology,
   // L3 Development of the Cardiovascular System
   heartTubeLoopingSeptation, fetalCirculationShunts,
   // L4 Cardiac Electrophysiology
-  cardiacActionPotential, pacemakerConductionSystem,
+  cardiacActionPotential, pacemakerConductionSystem, cardiacIonCurrentsChannels,
   // L5 ECG Formation
-  ecgFormationWaves,
+  ecgFormationWaves, cardiacElectricalAxisVectors,
   // L6 Electrocardiography
-  ecgLeadsAxis,
+  ecgLeadsAxis, ecgIntervalsSegments,
   // L7 Regulation of Blood Pressure
   bloodPressureBaroreceptorReflex, longTermBpRaas,
   // L8 ECG in Clinical Practice
-  ecgSystematicInterpretation,
+  ecgSystematicInterpretation, ecgChamberEnlargement,
   // L9 Echocardiography & Chest X-ray
   echocardiographyBasics, chestXrayCardiac,
   // L10 Cardiac Cycle & Hemodynamics
-  cardiacCycleHeartSounds, hemodynamicsPreloadAfterloadCardiacOutput,
+  cardiacCycleHeartSounds, hemodynamicsPreloadAfterloadCardiacOutput, jugularVenousPressureWaveform, frankStarlingCardiacFunction,
   // L11 Biomarkers in ACS
   cardiacBiomarkersAcs,
   // L12 Ambulatory Blood Pressure Monitoring
   bloodPressureMeasurementAbpm,
   // L13 Early Clinical Exposure (CVS)
-  cardiovascularExamination,
+  cardiovascularExamination, heartSoundsMurmursAuscultation,
 
   // ── HRU-1 (Human Renal and Urinary System-1) ──
   // L1 Microscopic Anatomy of the Kidney & Urinary Tract

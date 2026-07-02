@@ -707,6 +707,15 @@ import autonomicNeurotransmittersReceptors from './lectures/autonomic-neurotrans
 import reflexArcStretchWithdrawal from './lectures/reflex-arc-stretch-withdrawal';
 import apoptosisNecrosis from './lectures/apoptosis-necrosis';
 import cellularAgingTheories from './lectures/cellular-aging-theories';
+// EHP expansion
+import ionChannelsStructureGating from './lectures/ion-channels-structure-gating';
+import gradedPotentialsCableProperties from './lectures/graded-potentials-cable-properties';
+import neuromuscularJunctionTransmission from './lectures/neuromuscular-junction-transmission';
+import neurotransmitterSystemsCatalog from './lectures/neurotransmitter-systems-catalog';
+import synapticPlasticityLtdMemory from './lectures/synaptic-plasticity-ltd-memory';
+import muscleSpindleGolgiTendonOrgan from './lectures/muscle-spindle-golgi-tendon-organ';
+import reflexTypesClinicalTesting from './lectures/reflex-types-clinical-testing';
+import cellInjuryFreeRadicals from './lectures/cell-injury-free-radicals';
 
 // ── HMS-1 (Human Musculoskeletal System-1) ──
 import mskEmbryoSomites from './lectures/msk-embryo-somites';
@@ -1311,21 +1320,21 @@ export const lectures: Lecture[] = [
   // L3 Membrane Transport
   membraneTransportPassive, membraneTransportActiveVesicular,
   // L4 Genesis of the Action Potential
-  actionPotentialGenesis, actionPotentialPropagationRefractory,
+  actionPotentialGenesis, actionPotentialPropagationRefractory, ionChannelsStructureGating, gradedPotentialsCableProperties,
   // L5 Regulation of the Resting Membrane Potential
   restingMembranePotentialNernst, goldmanRmpRegulation,
   // L6 Neurotransmitters & Neuromodulators
-  neurotransmittersTypesLifecycle, synapticTransmissionEpspIpsp,
+  neurotransmittersTypesLifecycle, synapticTransmissionEpspIpsp, neuromuscularJunctionTransmission, neurotransmitterSystemsCatalog,
   // L7 Cell Communication
   cellSignalingModesReceptors, secondMessengerSystems,
   // L8 Synaptic Plasticity
-  synapticPlasticityLtp,
+  synapticPlasticityLtp, synapticPlasticityLtdMemory,
   // L9 Autonomic Nervous System
   autonomicSympatheticParasympathetic, autonomicNeurotransmittersReceptors,
   // L10 Reflexes
-  reflexArcStretchWithdrawal,
+  reflexArcStretchWithdrawal, muscleSpindleGolgiTendonOrgan, reflexTypesClinicalTesting,
   // L11 Cellular Aging & Cell Death
-  apoptosisNecrosis, cellularAgingTheories,
+  apoptosisNecrosis, cellularAgingTheories, cellInjuryFreeRadicals,
 
   // ── HMS-1 (Human Musculoskeletal System-1) ──
   // L1 Embryonic Development of the MSK System

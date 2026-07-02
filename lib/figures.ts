@@ -4045,3 +4045,76 @@ export const RENAL_ENDOCRINE = `<svg viewBox="0 0 470 210" xmlns="http://www.w3.
   </g>
   <text x="16" y="198" font-size="8" fill="#64748b">So renal failure is not just excretory — it causes anaemia (EPO), bone disease (vitamin D) and BP dysregulation (renin).</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// EHP expansion figures
+// ---------------------------------------------------------------------------
+
+export const ION_CHANNEL_GATING = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Voltage-gated sodium channel gating" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Voltage-gated Na⁺ channel — two gates, three states</text>
+  <g>
+    <rect x="24" y="40" width="120" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="84" y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">RESTING</text>
+    <text x="84" y="72" text-anchor="middle" font-size="7.5" fill="#1e40af">activation gate SHUT</text>
+    <text x="84" y="86" text-anchor="middle" font-size="7.5" fill="#1e40af">inactivation gate open</text>
+    <text x="84" y="104" text-anchor="middle" font-size="7" fill="#64748b">closed but "ready"</text>
+    <text x="84" y="140" text-anchor="middle" font-size="8" fill="#b91c1c">no Na⁺ flow</text>
+  </g>
+  <g>
+    <rect x="166" y="40" width="120" height="120" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="226" y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">ACTIVATED (open)</text>
+    <text x="226" y="72" text-anchor="middle" font-size="7.5" fill="#166534">depolarisation opens</text>
+    <text x="226" y="86" text-anchor="middle" font-size="7.5" fill="#166534">activation gate (fast)</text>
+    <text x="226" y="104" text-anchor="middle" font-size="7" fill="#64748b">both gates open briefly</text>
+    <text x="226" y="140" text-anchor="middle" font-size="8" font-weight="700" fill="#15803d">Na⁺ rushes IN</text>
+  </g>
+  <g>
+    <rect x="308" y="40" width="138" height="120" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="377" y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">INACTIVATED</text>
+    <text x="377" y="72" text-anchor="middle" font-size="7.5" fill="#7f1d1d">inactivation gate (ball)</text>
+    <text x="377" y="86" text-anchor="middle" font-size="7.5" fill="#7f1d1d">swings shut (slower)</text>
+    <text x="377" y="104" text-anchor="middle" font-size="7" fill="#64748b">= REFRACTORY period</text>
+    <text x="377" y="140" text-anchor="middle" font-size="8" fill="#b91c1c">no Na⁺ until reset</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="1.5"><line x1="144" y1="100" x2="164" y2="100" marker-end="url(#ic)"/><line x1="286" y1="100" x2="306" y2="100" marker-end="url(#ic)"/></g>
+  <defs><marker id="ic" markerWidth="6" markerHeight="6" refX="4" refY="2" orient="auto"><path d="M0 0 L4 2 L0 4 Z" fill="#94a3b8"/></marker></defs>
+  <text x="16" y="182" font-size="8.5" fill="#0369a1" font-weight="700">Reset (recovery) needs REPOLARISATION → the inactivation gate reopens and the activation gate re-shuts (back to resting).</text>
+  <text x="16" y="200" font-size="8" fill="#475569">Inactivation causes the ABSOLUTE refractory period — ensuring one-way propagation and limiting firing rate. K⁺ channels have one (slower) gate.</text>
+  <text x="16" y="215" font-size="7.5" fill="#64748b">Channels are ion-selective (selectivity filter) and gated by voltage (or ligands/mechanical force in other channel families).</text>
+</svg>`;
+
+export const NMJ_TRANSMISSION = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Neuromuscular junction transmission" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The neuromuscular junction — step by step</text>
+  <g font-size="8.5" fill="#475569">
+    <text x="16" y="42">1. Action potential reaches the axon terminal</text>
+    <text x="16" y="58">2. Voltage-gated <tspan font-weight="700" fill="#2563eb">Ca²⁺</tspan> channels open → Ca²⁺ enters</text>
+    <text x="16" y="74">3. Ca²⁺ triggers vesicle fusion → <tspan font-weight="700" fill="#15803d">ACETYLCHOLINE</tspan> released</text>
+    <text x="16" y="90">4. ACh binds <tspan font-weight="700">nicotinic</tspan> receptors on the motor end-plate</text>
+    <text x="16" y="106">5. Na⁺ influx → <tspan font-weight="700">end-plate potential (EPP)</tspan> — always suprathreshold</text>
+    <text x="16" y="122">6. EPP triggers a muscle action potential → contraction</text>
+    <text x="16" y="138">7. <tspan font-weight="700" fill="#b91c1c">Acetylcholinesterase</tspan> breaks down ACh → signal ends</text>
+  </g>
+  <line x1="16" y1="150" x2="454" y2="150" stroke="#e2e8f0"/>
+  <text x="16" y="168" font-size="8.5" fill="#0369a1" font-weight="700">The EPP is normally large enough to always fire the muscle (a high "safety factor") — unlike graded CNS synapses.</text>
+  <text x="16" y="186" font-size="8.5" fill="#475569" font-weight="700">Clinical:</text>
+  <text x="16" y="200" font-size="8" fill="#475569">Myasthenia gravis = anti-AChR antibodies (postsynaptic) → fatigable weakness; Lambert–Eaton = anti-Ca²⁺-channel (presynaptic).</text>
+  <text x="16" y="214" font-size="8" fill="#475569">Botulinum blocks ACh release; curare blocks the receptor; organophosphates inhibit acetylcholinesterase (ACh excess).</text>
+</svg>`;
+
+export const MUSCLE_SPINDLE_REFLEX = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Stretch reflex and muscle proprioceptors" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Proprioceptors &amp; the stretch reflex</text>
+  <rect x="14" y="30" width="226" height="96" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="127" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Muscle spindle</text>
+  <g font-size="8" fill="#1e40af"><text x="22" y="62">• Senses muscle LENGTH / stretch</text><text x="22" y="76">• Ia afferent; in parallel with fibres</text><text x="22" y="90">• Stretch → reflex CONTRACTION</text><text x="22" y="104">  (monosynaptic stretch reflex)</text><text x="22" y="118">• γ-motor neurons set its sensitivity</text></g>
+  <rect x="246" y="30" width="220" height="96" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="356" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">Golgi tendon organ</text>
+  <g font-size="8" fill="#92400e"><text x="254" y="62">• Senses muscle TENSION / force</text><text x="254" y="76">• Ib afferent; in SERIES (tendon)</text><text x="254" y="90">• High tension → reflex RELAXATION</text><text x="254" y="104">  (inverse myotatic; protective)</text><text x="254" y="118">• Disynaptic (inhibitory interneuron)</text></g>
+  <text x="16" y="146" font-size="8.5" fill="#0369a1" font-weight="700">Stretch reflex = tap tendon → spindle stretch → Ia → α-motor neuron → muscle contracts (e.g. knee jerk).</text>
+  <text x="16" y="164" font-size="8" fill="#475569">RECIPROCAL INNERVATION: the same Ia also inhibits the antagonist (via an interneuron) so it relaxes.</text>
+  <text x="16" y="182" font-size="8.5" fill="#475569" font-weight="700">Clinical value of reflexes:</text>
+  <text x="16" y="196" font-size="8" fill="#475569">Hyper-reflexia + clonus = UPPER motor neuron lesion; hypo/areflexia = LOWER motor neuron lesion.</text>
+  <text x="16" y="212" font-size="8" fill="#64748b">Spindle = length (parallel, contract); GTO = tension (series, relax). γ-loop keeps the spindle taut during contraction.</text>
+</svg>`;

@@ -1004,6 +1004,28 @@ import acneVulgaris from './lectures/acne-vulgaris';
 import skinNeoplasms from './lectures/skin-neoplasms';
 import dermatologicTherapy from './lectures/dermatologic-therapy';
 
+// ── HRU-2 (Human Renal and Urinary System-2) ──
+import renalDefenseMechanisms from './lectures/renal-defense-mechanisms';
+import utiPathogenesisMicrobiology from './lectures/uti-pathogenesis-microbiology';
+import urinalysisUrineExamination from './lectures/urinalysis-urine-examination';
+import urinaryTractPathology from './lectures/urinary-tract-pathology';
+import utiClinicalManagement from './lectures/uti-clinical-management';
+import nephroticSyndrome from './lectures/nephrotic-syndrome';
+import nephriticSyndrome from './lectures/nephritic-syndrome';
+import interstitialNephritisObstruction from './lectures/interstitial-nephritis-obstruction';
+import cysticKidneyDiseases from './lectures/cystic-kidney-diseases';
+import urinarySystemNeoplasms from './lectures/urinary-system-neoplasms';
+import renovascularDisorders from './lectures/renovascular-disorders';
+import acuteKidneyInjury from './lectures/acute-kidney-injury';
+import chronicKidneyDisease from './lectures/chronic-kidney-disease';
+import diureticsPharmacology from './lectures/diuretics-pharmacology';
+import drugDosingCkd from './lectures/drug-dosing-ckd';
+import glomerularDiseaseOverview from './lectures/glomerular-disease-overview';
+import fluidElectrolyteDisorders from './lectures/fluid-electrolyte-disorders';
+import urinaryIncontinenceDrugs from './lectures/urinary-incontinence-drugs';
+import acidBaseDisorders from './lectures/acid-base-disorders';
+import bloodGasAnionGap from './lectures/blood-gas-anion-gap';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1783,6 +1805,44 @@ export const lectures: Lecture[] = [
   skinNeoplasms,
   // L19 Dermatologic therapy
   dermatologicTherapy,
+
+  // ── HRU-2 (Human Renal and Urinary System-2) ──
+  // L1 Renal defense
+  renalDefenseMechanisms,
+  // L2 Infectious UTI
+  utiPathogenesisMicrobiology,
+  // L3 Urine collection & examination
+  urinalysisUrineExamination,
+  // L4 Urinary tract pathology
+  urinaryTractPathology,
+  // L5 UTI clinical
+  utiClinicalManagement,
+  // L6 Nephrotic & nephritic
+  nephroticSyndrome, nephriticSyndrome,
+  // L7 Interstitial & mechanical
+  interstitialNephritisObstruction,
+  // L8 Cystic diseases
+  cysticKidneyDiseases,
+  // L9 Neoplasms
+  urinarySystemNeoplasms,
+  // L10 Renovascular
+  renovascularDisorders,
+  // L11 AKI & CKD
+  acuteKidneyInjury, chronicKidneyDisease,
+  // L12 Diuretics
+  diureticsPharmacology,
+  // L13 Drug dosing in CKD
+  drugDosingCkd,
+  // L14 Glomerular disease overview
+  glomerularDiseaseOverview,
+  // L15 Fluid & electrolyte disorders
+  fluidElectrolyteDisorders,
+  // L16 Incontinence drugs
+  urinaryIncontinenceDrugs,
+  // L17 Acid–base
+  acidBaseDisorders,
+  // L18 Blood gas & anion gap
+  bloodGasAnionGap,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

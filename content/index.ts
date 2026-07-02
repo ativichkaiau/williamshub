@@ -956,6 +956,13 @@ import auditoryPhysiologyHearing from './lectures/auditory-physiology-hearing';
 import innerEarHairCellHistology from './lectures/inner-ear-hair-cell-histology';
 import tasteOlfactionReceptors from './lectures/taste-olfaction-receptors';
 import visualPhototransduction from './lectures/visual-phototransduction';
+// HNS-1 expansion (2026-07-02)
+import cranialNervesOverview from './lectures/cranial-nerves-overview';
+import autonomicNervousSystem from './lectures/autonomic-nervous-system';
+import neuronsGliaNeurohistology from './lectures/neurons-glia-neurohistology';
+import proprioceptorsMuscleSpindleReflexes from './lectures/proprioceptors-muscle-spindle-reflexes';
+import dermatomesSpinalNerves from './lectures/dermatomes-spinal-nerves';
+import synapticPlasticityLearning from './lectures/synaptic-plasticity-learning';
 
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
@@ -1662,6 +1669,9 @@ export const lectures: Lecture[] = [
   innerEarHairCellHistology, tasteOlfactionReceptors,
   // L22 Phototransduction
   visualPhototransduction,
+  // HNS-1 expansion (2026-07-02): L6 reflexes, L7 plasticity, L14 cranial nerves, L15 dermatomes, L16 autonomic, L19 neuroglia
+  proprioceptorsMuscleSpindleReflexes, synapticPlasticityLearning, cranialNervesOverview,
+  dermatomesSpinalNerves, autonomicNervousSystem, neuronsGliaNeurohistology,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

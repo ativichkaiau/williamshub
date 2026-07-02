@@ -24,7 +24,9 @@ export type SystemId =
   | 'research' // research methods / evidence / ethics (e.g. BMR)
   | 'histology' // basic histology / cell biology / tissue microanatomy (e.g. BHCB)
   | 'physiology' // general/cell/neuro physiology (e.g. EHP)
-  | 'parasitology'; // parasitology, helminthology & medical entomology (e.g. PHI)
+  | 'parasitology' // parasitology, helminthology & medical entomology (e.g. PHI)
+  | 'pharmacology' // basic & clinical pharmacology — PK/PD & drug classes (e.g. BCP)
+  | 'derm'; // skin & connective tissue / dermatology (e.g. HSC)
 
 export type TagKind =
   | 'system'

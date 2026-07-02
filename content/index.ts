@@ -964,6 +964,24 @@ import proprioceptorsMuscleSpindleReflexes from './lectures/proprioceptors-muscl
 import dermatomesSpinalNerves from './lectures/dermatomes-spinal-nerves';
 import synapticPlasticityLearning from './lectures/synaptic-plasticity-learning';
 
+// ── BCP (Basic Clinical Pharmacology) ──
+import drugDevelopmentBioequivalence from './lectures/drug-development-bioequivalence';
+import pharmacokineticsAdme from './lectures/pharmacokinetics-adme';
+import pharmacodynamicsReceptorsDoseResponse from './lectures/pharmacodynamics-receptors-dose-response';
+import antifungalAgents from './lectures/antifungal-agents';
+import anthelminticAgents from './lectures/anthelmintic-agents';
+import antiviralAntiretroviralAgents from './lectures/antiviral-antiretroviral-agents';
+import antibacterialCellWallAgents from './lectures/antibacterial-cell-wall-agents';
+import antibacterialProteinSynthesisInhibitors from './lectures/antibacterial-protein-synthesis-inhibitors';
+import cholinergicDrugs from './lectures/cholinergic-drugs';
+import adrenergicDrugs from './lectures/adrenergic-drugs';
+import antineoplasticPrinciples from './lectures/antineoplastic-principles';
+import drugInteractionsMechanisms from './lectures/drug-interactions-mechanisms';
+import antidotesPrinciples from './lectures/antidotes-principles';
+import immunomodulatingAgents from './lectures/immunomodulating-agents';
+import pharmacogenomics from './lectures/pharmacogenomics';
+import adverseDrugReactionsAllergy from './lectures/adverse-drug-reactions-allergy';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1671,6 +1689,38 @@ export const lectures: Lecture[] = [
   neuralTubeDevelopmentDefects, brainVesiclesNeuralCrest,
   // L23 Integrative Functions of the Brain
   higherCorticalFunctions, consciousnessAttention, autonomicNervousSystem,
+
+  // ── BCP (Basic Clinical Pharmacology) ──
+  // L1 Drug Development
+  drugDevelopmentBioequivalence,
+  // L2 Pharmacokinetics
+  pharmacokineticsAdme,
+  // L3 Pharmacodynamics
+  pharmacodynamicsReceptorsDoseResponse,
+  // L4 Antifungals
+  antifungalAgents,
+  // L5 Anthelmintics
+  anthelminticAgents,
+  // L6 Antivirals
+  antiviralAntiretroviralAgents,
+  // L7 Antibacterials
+  antibacterialCellWallAgents, antibacterialProteinSynthesisInhibitors,
+  // L8 Cholinergic drugs
+  cholinergicDrugs,
+  // L9 Adrenergic drugs
+  adrenergicDrugs,
+  // L10 Antineoplastics
+  antineoplasticPrinciples,
+  // L11 Drug interactions
+  drugInteractionsMechanisms,
+  // L12 Antidotes
+  antidotesPrinciples,
+  // L13 Immunomodulators
+  immunomodulatingAgents,
+  // L14 Pharmacogenomics
+  pharmacogenomics,
+  // L15 Drug allergy & ADR
+  adverseDrugReactionsAllergy,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

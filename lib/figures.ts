@@ -2796,3 +2796,163 @@ export const APOPTOSIS_NECROSIS = `<svg viewBox="0 0 480 250" xmlns="http://www.
   <text x="16" y="230" font-size="8.5" fill="#475569">Too little apoptosis → cancer/autoimmunity; too much → neurodegeneration/atrophy.</text>
   <text x="16" y="246" font-size="8" fill="#64748b">Apoptosis is essential in development (webbed digits, immune selection) — not just death.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HMS-1 — Human Musculoskeletal System-1 figures
+// ---------------------------------------------------------------------------
+
+export const SOMITE_DERIVATIVES = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Somite derivatives" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Somite derivatives — the MSK blueprint</text>
+  <rect x="180" y="30" width="130" height="24" rx="6" fill="#334155"/><text x="245" y="47" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Paraxial mesoderm</text>
+  <text x="245" y="70" text-anchor="middle" font-size="8" fill="#64748b">segments into → SOMITES</text>
+  <line x1="245" y1="74" x2="90" y2="96" stroke="#94a3b8"/><line x1="245" y1="74" x2="245" y2="96" stroke="#94a3b8"/><line x1="245" y1="74" x2="400" y2="96" stroke="#94a3b8"/>
+  <rect x="30" y="96" width="120" height="24" rx="6" fill="#dbeafe"/><text x="90" y="112" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Sclerotome</text>
+  <rect x="185" y="96" width="120" height="24" rx="6" fill="#dcfce7"/><text x="245" y="112" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Myotome</text>
+  <rect x="340" y="96" width="120" height="24" rx="6" fill="#fef9c3"/><text x="400" y="112" text-anchor="middle" font-size="9" font-weight="700" fill="#a16207">Dermatome</text>
+  <g font-size="8" fill="#1e40af"><text x="36" y="138">→ vertebrae + ribs</text><text x="36" y="152">(axial skeleton)</text><text x="36" y="166">via endochondral</text><text x="36" y="180">ossification</text></g>
+  <g font-size="8" fill="#166534"><text x="191" y="138">→ skeletal muscle</text><text x="191" y="152">Epimere (back:</text><text x="191" y="166">erector spinae)</text><text x="191" y="180">Hypomere (limb/</text><text x="191" y="194">body wall)</text></g>
+  <g font-size="8" fill="#854d0e"><text x="346" y="138">→ dermis of the</text><text x="346" y="152">back</text><text x="346" y="172">(a "dermatomyotome"</text><text x="346" y="186">splits into both)</text></g>
+  <text x="16" y="218" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Resegmentation:</tspan> caudal half of one sclerotome fuses with cranial half of the next → each vertebra forms from two somites.</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">This shift lets segmental muscles bridge intervertebral joints. Sclerotome errors → hemivertebra/scoliosis, rib anomalies.</text>
+</svg>`;
+
+export const NMJ_STRUCTURE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Neuromuscular junction" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The neuromuscular junction (NMJ)</text>
+  <!-- axon terminal -->
+  <path d="M30 34 h200 v58 q-100 26 -200 0 z" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="120" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Motor axon terminal</text>
+  <g fill="#1d4ed8">${[60,90,120,150,180].map(x=>`<circle cx="${x}" cy="80" r="5"/>`).join('')}</g>
+  <text x="200" y="82" font-size="7.5" fill="#1e40af">ACh vesicles</text>
+  <!-- cleft -->
+  <rect x="30" y="112" width="330" height="14" fill="#fef9c3"/><text x="195" y="123" text-anchor="middle" font-size="7.5" fill="#92400e">synaptic cleft (+ acetylcholinesterase)</text>
+  <!-- muscle w junctional folds -->
+  <path d="M30 128 q10 22 20 0 q10 22 20 0 q10 22 20 0 q10 22 20 0 q10 22 20 0 q10 22 20 0 q10 22 20 0 q10 22 20 0 L360 150 L360 200 L30 200 Z" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="120" y="185" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Motor end plate (muscle)</text>
+  <text x="120" y="198" text-anchor="middle" font-size="7" fill="#166534">junctional folds packed with nicotinic AChR</text>
+  <!-- steps -->
+  <g font-size="8" fill="#334155"><text x="368" y="46" font-weight="700">Transmission:</text><text x="368" y="62">1 AP → Ca²⁺ in</text><text x="368" y="76">2 ACh released</text><text x="368" y="90">(quantal, vesicles)</text><text x="368" y="104">3 ACh → nicotinic</text><text x="368" y="118">4 Na⁺ in → EPP</text><text x="368" y="132">5 EPP → muscle AP</text><text x="368" y="146">6 AChE breaks ACh</text></g>
+  <text x="16" y="222" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Safety factor:</tspan> each impulse releases far more ACh than needed → the EPP always exceeds threshold (1:1 reliable transmission).</text>
+  <text x="16" y="238" font-size="8" fill="#64748b">MEPP = miniature EPP from spontaneous single-vesicle release. Ca²⁺ entry is required for vesicle fusion.</text>
+</svg>`;
+
+export const CROSSBRIDGE_CYCLE = `<svg viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cross-bridge cycle" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The cross-bridge cycle (sliding filament)</text>
+  <circle cx="235" cy="135" r="82" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- 4 steps around circle -->
+  <rect x="150" y="40" width="170" height="42" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="235" y="56" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">1 Cross-bridge binding</text><text x="235" y="70" text-anchor="middle" font-size="7.5" fill="#991b1b">myosin head binds actin (Ca²⁺ exposed site)</text>
+  <rect x="330" y="114" width="130" height="42" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="395" y="130" text-anchor="middle" font-size="8.5" font-weight="700" fill="#a16207">2 Power stroke</text><text x="395" y="144" text-anchor="middle" font-size="7.5" fill="#854d0e">head pivots, Pi + ADP released</text>
+  <rect x="150" y="188" width="170" height="42" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="235" y="204" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">3 Detachment</text><text x="235" y="218" text-anchor="middle" font-size="7.5" fill="#1e40af">new ATP binds → myosin releases actin</text>
+  <rect x="10" y="114" width="130" height="42" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="75" y="130" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">4 Re-cocking</text><text x="75" y="144" text-anchor="middle" font-size="7.5" fill="#166534">ATP→ADP+Pi re-energises head</text>
+  <g stroke="#94a3b8" stroke-width="1.5" fill="none" marker-end="url(#cb)"><path d="M320 62 q40 20 42 50"/><path d="M395 156 q-30 40 -80 34"/><path d="M150 210 q-50 -10 -70 -50"/><path d="M75 114 q10 -40 75 -50"/></g>
+  <defs><marker id="cb" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#64748b"/></marker></defs>
+  <text x="235" y="132" text-anchor="middle" font-size="8" font-weight="700" fill="#334155">ATP</text>
+  <text x="235" y="146" text-anchor="middle" font-size="7.5" fill="#475569">each cycle = 1 ATP</text>
+  <text x="16" y="244" font-size="8" fill="#64748b">No ATP → head stays bound = rigor (rigor mortis). Filaments slide (I band/H zone shorten); the filaments themselves don't shorten.</text>
+</svg>`;
+
+export const EC_COUPLING = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Excitation-contraction coupling" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Excitation–contraction coupling</text>
+  <g font-size="8.5" fill="#334155">
+    <text x="20" y="42" font-weight="700">1</text><text x="34" y="42">Muscle AP travels along sarcolemma → down the <tspan font-weight="700" fill="#1d4ed8">T-tubule</tspan></text>
+    <text x="20" y="62" font-weight="700">2</text><text x="34" y="62">T-tubule <tspan font-weight="700" fill="#7c3aed">DHP receptor</tspan> (voltage sensor) → opens SR <tspan font-weight="700" fill="#b91c1c">ryanodine receptor (RyR)</tspan></text>
+    <text x="20" y="82" font-weight="700">3</text><text x="34" y="82"><tspan font-weight="700" fill="#dc2626">Ca²⁺ released</tspan> from the sarcoplasmic reticulum into the cytosol</text>
+    <text x="20" y="102" font-weight="700">4</text><text x="34" y="102">Ca²⁺ binds <tspan font-weight="700" fill="#15803d">troponin C</tspan> → tropomyosin moves off actin's binding sites</text>
+    <text x="20" y="122" font-weight="700">5</text><text x="34" y="122">Cross-bridges cycle → contraction (see cross-bridge cycle)</text>
+    <text x="20" y="142" font-weight="700">6</text><text x="34" y="142"><tspan font-weight="700">Relaxation:</tspan> SR Ca²⁺-ATPase (SERCA) pumps Ca²⁺ back → tropomyosin re-blocks</text>
+  </g>
+  <line x1="16" y1="156" x2="464" y2="156" stroke="#e2e8f0"/>
+  <text x="16" y="176" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Triad</tspan> = 1 T-tubule + 2 SR terminal cisternae (where DHPR meets RyR) — the coupling site.</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">Ca²⁺ is the switch: it links the electrical signal (AP) to the mechanical event (contraction).</text>
+  <text x="16" y="212" font-size="8" fill="#64748b">Rigor mortis: after death, ATP runs out → SERCA fails, Ca²⁺ stays high, cross-bridges lock. Malignant hyperthermia = RyR defect.</text>
+</svg>`;
+
+export const MUSCLE_MECHANICS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Skeletal muscle mechanics" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Grading muscle force</text>
+  <!-- twitch to tetanus -->
+  <text x="16" y="40" font-size="9" font-weight="700" fill="#0369a1">Frequency (temporal) summation → tetanus</text>
+  <line x1="20" y1="120" x2="230" y2="120" stroke="#94a3b8"/>
+  <path d="M20 120 q10 -30 20 0 M55 120 q10 -30 20 0" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="55" y="135" text-anchor="middle" font-size="7.5" fill="#b91c1c">single twitches</text>
+  <path d="M110 120 q6 -34 12 -14 q6 -30 12 -10 q6 -26 12 -6 q6 -22 12 -2 L170 60 L200 58" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="185" y="52" text-anchor="middle" font-size="7.5" fill="#1d4ed8">tetanus (fused)</text>
+  <text x="20" y="150" font-size="7.5" fill="#475569">Higher stimulus frequency → summation → unfused → fused tetanus (max force).</text>
+  <!-- length tension -->
+  <text x="250" y="40" font-size="9" font-weight="700" fill="#0369a1">Length–tension</text>
+  <line x1="260" y1="120" x2="460" y2="120" stroke="#94a3b8"/><line x1="260" y1="50" x2="260" y2="120" stroke="#94a3b8"/>
+  <path d="M270 118 q40 -60 90 -66 q40 4 90 60" fill="none" stroke="#7c3aed" stroke-width="2"/>
+  <text x="360" y="46" text-anchor="middle" font-size="7.5" fill="#6d28d9">optimal overlap</text>
+  <text x="250" y="140" font-size="7.5" fill="#475569">Force is greatest at optimal sarcomere length (ideal actin–myosin overlap).</text>
+  <line x1="16" y1="158" x2="464" y2="158" stroke="#e2e8f0"/>
+  <text x="16" y="178" font-size="9" font-weight="700" fill="#0369a1">Motor-unit recruitment — the size principle</text>
+  <text x="16" y="196" font-size="8.5" fill="#475569">A motor unit = one motor neuron + all the fibres it innervates. Force is graded by (1) firing FREQUENCY and (2) RECRUITMENT.</text>
+  <text x="16" y="214" font-size="8.5" fill="#475569">Size principle: SMALL (weak, fatigue-resistant) units recruited first → LARGE (strong, fatigable) units added as force rises.</text>
+  <text x="16" y="232" font-size="8" fill="#64748b">Isometric = tension, no shortening (holding); isotonic = constant load, muscle shortens (lifting). Treppe = staircase warm-up.</text>
+</svg>`;
+
+export const MUSCLE_FIBER_ENERGY = `<svg viewBox="0 0 490 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Muscle energy systems and fibre types" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Fuelling contraction: 3 ATP systems</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="40">System</text><text x="150" y="40">Speed / duration</text><text x="300" y="40">Yield</text></g>
+  <line x1="16" y1="45" x2="474" y2="45" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="62" font-weight="700" fill="#b91c1c">Phosphocreatine (PCr)</text><text x="150" y="62" fill="#475569">instant, ~10 s (sprint start)</text><text x="300" y="62" fill="#475569">very fast, tiny store</text>
+    <text x="18" y="82" font-weight="700" fill="#ea580c">Anaerobic glycolysis</text><text x="150" y="82" fill="#475569">seconds–~2 min; makes lactate</text><text x="300" y="82" fill="#475569">2 ATP/glucose, no O₂</text>
+    <text x="18" y="102" font-weight="700" fill="#15803d">Aerobic (oxidative)</text><text x="150" y="102" fill="#475569">slow, sustained (endurance)</text><text x="300" y="102" fill="#475569">~30+ ATP/glucose, needs O₂</text>
+  </g>
+  <text x="16" y="122" font-size="8" fill="#64748b">Sequence: PCr → anaerobic glycolysis → aerobic. "Oxygen debt" (EPOC) repays PCr &amp; clears lactate after exercise.</text>
+  <line x1="16" y1="132" x2="474" y2="132" stroke="#e2e8f0"/>
+  <text x="16" y="150" font-size="9" font-weight="700" fill="#0369a1">Fibre types</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="168">Type</text><text x="120" y="168">Metabolism</text><text x="250" y="168">Speed/fatigue</text><text x="370" y="168">Colour</text></g>
+  <line x1="16" y1="172" x2="474" y2="172" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="188" font-weight="700" fill="#b91c1c">I (slow oxidative)</text><text x="120" y="188" fill="#475569">aerobic, many mito</text><text x="250" y="188" fill="#475569">slow, fatigue-resistant</text><text x="370" y="188" fill="#475569">red (myoglobin)</text>
+    <text x="18" y="206" font-weight="700" fill="#ea580c">IIa (fast oxidative)</text><text x="120" y="206" fill="#475569">mixed</text><text x="250" y="206" fill="#475569">fast, intermediate</text><text x="370" y="206" fill="#475569">red-pink</text>
+    <text x="18" y="224" font-weight="700" fill="#1d4ed8">IIx (fast glycolytic)</text><text x="120" y="224" fill="#475569">anaerobic glycolysis</text><text x="250" y="224" fill="#475569">fast, fatigues quickly</text><text x="370" y="224" fill="#475569">white</text>
+  </g>
+  <text x="16" y="242" font-size="8" fill="#64748b">Type I = marathon/posture; Type II = sprint/power. Endurance training ↑mitochondria &amp; oxidative capacity.</text>
+</svg>`;
+
+export const FRACTURE_HEALING = `<svg viewBox="0 0 490 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Fracture healing stages" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Secondary fracture healing — the stages</text>
+  <!-- stage boxes -->
+  <rect x="14" y="32" width="112" height="120" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="70" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">1 Haematoma</text>
+  <text x="70" y="64" text-anchor="middle" font-size="7.5" fill="#991b1b">(hrs–days)</text>
+  <circle cx="70" cy="100" r="24" fill="#fca5a5"/>
+  <text x="70" y="140" text-anchor="middle" font-size="7" fill="#991b1b">bleeding + clot;</text>
+  <text x="70" y="150" text-anchor="middle" font-size="7" fill="#991b1b">inflammation</text>
+  <rect x="132" y="32" width="112" height="120" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="188" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#a16207">2 Soft callus</text>
+  <text x="188" y="64" text-anchor="middle" font-size="7.5" fill="#854d0e">(~2–3 wk)</text>
+  <rect x="164" y="82" width="48" height="40" rx="6" fill="#fde68a"/>
+  <text x="188" y="140" text-anchor="middle" font-size="7" fill="#854d0e">fibrocartilage</text>
+  <text x="188" y="150" text-anchor="middle" font-size="7" fill="#854d0e">bridges the gap</text>
+  <rect x="250" y="32" width="112" height="120" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="306" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">3 Hard callus</text>
+  <text x="306" y="64" text-anchor="middle" font-size="7.5" fill="#166534">(wk–months)</text>
+  <rect x="282" y="82" width="48" height="40" rx="6" fill="#86efac"/>
+  <text x="306" y="140" text-anchor="middle" font-size="7" fill="#166534">endochondral →</text>
+  <text x="306" y="150" text-anchor="middle" font-size="7" fill="#166534">woven bone</text>
+  <rect x="368" y="32" width="112" height="120" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="424" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">4 Remodelling</text>
+  <text x="424" y="64" text-anchor="middle" font-size="7.5" fill="#1e40af">(months–years)</text>
+  <rect x="410" y="82" width="28" height="40" rx="4" fill="#93c5fd"/>
+  <text x="424" y="140" text-anchor="middle" font-size="7" fill="#1e40af">woven → lamellar;</text>
+  <text x="424" y="150" text-anchor="middle" font-size="7" fill="#1e40af">osteoblast/clast</text>
+  <g stroke="#94a3b8" stroke-width="1.5" marker-end="url(#fh)"><line x1="126" y1="92" x2="132" y2="92"/><line x1="244" y1="92" x2="250" y2="92"/><line x1="362" y1="92" x2="368" y2="92"/></g>
+  <defs><marker id="fh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#64748b"/></marker></defs>
+  <text x="16" y="176" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Secondary healing</tspan> (callus, most fractures, some movement) vs <tspan font-weight="700">primary healing</tspan> (rigid fixation/ORIF → direct bone, no callus).</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">Needs: adequate blood supply, stability, and apposition. Impaired by movement, poor blood supply, infection, diabetes, smoking, NSAIDs, age.</text>
+  <text x="16" y="212" font-size="8.5" fill="#475569">Complications: non-union, malunion, delayed union, avascular necrosis, infection.</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">Fracture types: closed vs open (compound); simple, comminuted, greenstick (kids), spiral, pathological. Dislocation = joint surfaces lose contact; subluxation = partial.</text>
+</svg>`;

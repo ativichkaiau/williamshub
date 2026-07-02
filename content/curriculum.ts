@@ -205,6 +205,14 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // HMS-1 — Human Musculoskeletal System-1 (Year 2)
+  'L1 — Embryonic Development of the MSK System': 'HMS-1',
+  'L2 — The Neuromuscular Junction': 'HMS-1',
+  'L3 — Molecular Basis of Muscle Contraction': 'HMS-1',
+  'L4 — Behaviour of Skeletal Muscle': 'HMS-1',
+  'L5 — Energy Sources of Skeletal Muscle': 'HMS-1',
+  'L6 — Fracture & Fracture Healing': 'HMS-1',
+
   // EHP — Essential Human Physiology (Year 2)
   'L1 — Transport of Solutes & Water': 'EHP',
   'L2 — Cellular Homeostasis': 'EHP',

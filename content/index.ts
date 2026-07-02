@@ -636,6 +636,20 @@ import reflexArcStretchWithdrawal from './lectures/reflex-arc-stretch-withdrawal
 import apoptosisNecrosis from './lectures/apoptosis-necrosis';
 import cellularAgingTheories from './lectures/cellular-aging-theories';
 
+// ── HMS-1 (Human Musculoskeletal System-1) ──
+import mskEmbryoSomites from './lectures/msk-embryo-somites';
+import mskEmbryoLimbJoints from './lectures/msk-embryo-limb-joints';
+import nmjStructureTransmission from './lectures/nmj-structure-transmission';
+import nmjDrugsDisorders from './lectures/nmj-drugs-disorders';
+import muscleContractionCrossbridge from './lectures/muscle-contraction-crossbridge';
+import excitationContractionCoupling from './lectures/excitation-contraction-coupling';
+import muscleTwitchTetanusMechanics from './lectures/muscle-twitch-tetanus-mechanics';
+import motorUnitRecruitment from './lectures/motor-unit-recruitment';
+import muscleEnergySystems from './lectures/muscle-energy-systems';
+import muscleFiberTypesFatigue from './lectures/muscle-fiber-types-fatigue';
+import fractureClassification from './lectures/fracture-classification';
+import fractureHealing from './lectures/fracture-healing';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1061,6 +1075,20 @@ export const lectures: Lecture[] = [
   reflexArcStretchWithdrawal,
   // L11 Cellular Aging & Cell Death
   apoptosisNecrosis, cellularAgingTheories,
+
+  // ── HMS-1 (Human Musculoskeletal System-1) ──
+  // L1 Embryonic Development of the MSK System
+  mskEmbryoSomites, mskEmbryoLimbJoints,
+  // L2 The Neuromuscular Junction
+  nmjStructureTransmission, nmjDrugsDisorders,
+  // L3 Molecular Basis of Muscle Contraction
+  muscleContractionCrossbridge, excitationContractionCoupling,
+  // L4 Behaviour of Skeletal Muscle
+  muscleTwitchTetanusMechanics, motorUnitRecruitment,
+  // L5 Energy Sources of Skeletal Muscle
+  muscleEnergySystems, muscleFiberTypesFatigue,
+  // L6 Fracture & Fracture Healing
+  fractureClassification, fractureHealing,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

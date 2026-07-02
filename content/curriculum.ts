@@ -205,6 +205,14 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // HRS-1 — Human Respiratory System-1 (Year 2)
+  'L1 — Development of the Respiratory System': 'HRS-1',
+  'L2 — Structure of the Respiratory System': 'HRS-1',
+  'L3 — Pulmonary Circulation': 'HRS-1',
+  'L4 — Breathing & Ventilation': 'HRS-1',
+  'L5 — Gas Exchange & Transport': 'HRS-1',
+  'L6 — Regulation of Respiration & ABG': 'HRS-1',
+
   // HMS-1 — Human Musculoskeletal System-1 (Year 2)
   'L1 — Embryonic Development of the MSK System': 'HMS-1',
   'L2 — The Neuromuscular Junction': 'HMS-1',

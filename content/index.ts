@@ -650,6 +650,21 @@ import muscleFiberTypesFatigue from './lectures/muscle-fiber-types-fatigue';
 import fractureClassification from './lectures/fracture-classification';
 import fractureHealing from './lectures/fracture-healing';
 
+// ── HRS-1 (Human Respiratory System-1) ──
+import respiratoryDevelopmentStages from './lectures/respiratory-development-stages';
+import respiratoryCongenitalAnomalies from './lectures/respiratory-congenital-anomalies';
+import airwayConductingRespiratoryZones from './lectures/airway-conducting-respiratory-zones';
+import alveoliPneumocytesRespiratoryMembrane from './lectures/alveoli-pneumocytes-respiratory-membrane';
+import pulmonaryCirculationFeatures from './lectures/pulmonary-circulation-features';
+import ventilationPerfusionMatching from './lectures/ventilation-perfusion-matching';
+import lungVolumesVentilation from './lectures/lung-volumes-ventilation';
+import respiratoryMechanicsCompliance from './lectures/respiratory-mechanics-compliance';
+import gasExchangeDiffusion from './lectures/gas-exchange-diffusion';
+import oxygenTransportDissociationCurve from './lectures/oxygen-transport-dissociation-curve';
+import co2TransportBlood from './lectures/co2-transport-blood';
+import controlOfBreathing from './lectures/control-of-breathing';
+import abgAcidBaseInterpretation from './lectures/abg-acid-base-interpretation';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1089,6 +1104,20 @@ export const lectures: Lecture[] = [
   muscleEnergySystems, muscleFiberTypesFatigue,
   // L6 Fracture & Fracture Healing
   fractureClassification, fractureHealing,
+
+  // ── HRS-1 (Human Respiratory System-1) ──
+  // L1 Development of the Respiratory System
+  respiratoryDevelopmentStages, respiratoryCongenitalAnomalies,
+  // L2 Structure of the Respiratory System
+  airwayConductingRespiratoryZones, alveoliPneumocytesRespiratoryMembrane,
+  // L3 Pulmonary Circulation
+  pulmonaryCirculationFeatures, ventilationPerfusionMatching,
+  // L4 Breathing & Ventilation
+  lungVolumesVentilation, respiratoryMechanicsCompliance,
+  // L5 Gas Exchange & Transport
+  gasExchangeDiffusion, oxygenTransportDissociationCurve, co2TransportBlood,
+  // L6 Regulation of Respiration & ABG
+  controlOfBreathing, abgAcidBaseInterpretation,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

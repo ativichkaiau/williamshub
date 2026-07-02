@@ -2956,3 +2956,194 @@ export const FRACTURE_HEALING = `<svg viewBox="0 0 490 240" xmlns="http://www.w3
   <text x="16" y="212" font-size="8.5" fill="#475569">Complications: non-union, malunion, delayed union, avascular necrosis, infection.</text>
   <text x="16" y="230" font-size="8" fill="#64748b">Fracture types: closed vs open (compound); simple, comminuted, greenstick (kids), spiral, pathological. Dislocation = joint surfaces lose contact; subluxation = partial.</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// HRS-1 — Human Respiratory System-1 figures
+// ---------------------------------------------------------------------------
+
+export const RESPIRATORY_DEVELOPMENT = `<svg viewBox="0 0 490 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lung development stages" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lung development — 5 stages</text>
+  <text x="16" y="38" font-size="8.5" fill="#64748b">Respiratory diverticulum (lung bud) buds from the foregut ENDODERM (wk 4) → tree branches; mesoderm makes cartilage/muscle/vessels.</text>
+  <line x1="20" y1="52" x2="470" y2="52" stroke="#94a3b8"/>
+  <g font-size="7.5">
+    <rect x="20" y="56" width="70" height="22" rx="4" fill="#e0e7ff"/><text x="55" y="70" text-anchor="middle" font-weight="700" fill="#4338ca">Embryonic</text>
+    <rect x="94" y="56" width="88" height="22" rx="4" fill="#dbeafe"/><text x="138" y="70" text-anchor="middle" font-weight="700" fill="#1d4ed8">Pseudoglandular</text>
+    <rect x="186" y="56" width="80" height="22" rx="4" fill="#dcfce7"/><text x="226" y="70" text-anchor="middle" font-weight="700" fill="#15803d">Canalicular</text>
+    <rect x="270" y="56" width="90" height="22" rx="4" fill="#fef9c3"/><text x="315" y="70" text-anchor="middle" font-weight="700" fill="#a16207">Saccular (terminal)</text>
+    <rect x="364" y="56" width="106" height="22" rx="4" fill="#fee2e2"/><text x="417" y="70" text-anchor="middle" font-weight="700" fill="#b91c1c">Alveolar</text>
+  </g>
+  <g font-size="7" fill="#475569">
+    <text x="55" y="92" text-anchor="middle">wk 4–5</text><text x="55" y="102" text-anchor="middle">lung bud,</text><text x="55" y="112" text-anchor="middle">trachea splits</text>
+    <text x="138" y="92" text-anchor="middle">wk 5–17</text><text x="138" y="102" text-anchor="middle">airways branch to</text><text x="138" y="112" text-anchor="middle">terminal bronchioles</text><text x="138" y="122" text-anchor="middle">(NO respiration possible)</text>
+    <text x="226" y="92" text-anchor="middle">wk 16–26</text><text x="226" y="102" text-anchor="middle">respiratory bronchioles,</text><text x="226" y="112" text-anchor="middle">vascularisation begins</text>
+    <text x="315" y="92" text-anchor="middle">wk 26–birth</text><text x="315" y="102" text-anchor="middle">terminal sacs, type II</text><text x="315" y="112" text-anchor="middle">cells → SURFACTANT</text>
+    <text x="417" y="92" text-anchor="middle">wk 32 → 8 yr</text><text x="417" y="102" text-anchor="middle">mature alveoli</text><text x="417" y="112" text-anchor="middle">multiply</text>
+  </g>
+  <text x="16" y="152" font-size="8.5" fill="#0369a1" font-weight="700">Viability line ≈ 24–26 wk: enough respiratory surface + surfactant to survive (with support).</text>
+  <text x="16" y="170" font-size="8.5" fill="#475569">Surfactant (from type II pneumocytes) appears ~wk 24–28, adequate ~wk 35 → premature birth risks RDS.</text>
+  <text x="16" y="188" font-size="8.5" fill="#475569">Trachea + oesophagus separate via the tracheo-oesophageal septum — faulty septation → tracheo-oesophageal fistula.</text>
+  <text x="16" y="208" font-size="8" fill="#64748b">Pleura from mesoderm; diaphragm from septum transversum + pleuroperitoneal folds — defect → congenital diaphragmatic hernia.</text>
+  <text x="16" y="224" font-size="8" fill="#64748b">Mnemonic: "Every Pulmonologist Can See Alveoli" = Embryonic, Pseudoglandular, Canalicular, Saccular, Alveolar.</text>
+</svg>`;
+
+export const AIRWAY_ZONES = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Conducting and respiratory zones" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The airways: conducting vs respiratory zone</text>
+  <rect x="14" y="30" width="250" height="150" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="139" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">CONDUCTING zone (anatomical dead space)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="68">Trachea → primary (main) bronchi →</text><text x="24" y="82">secondary (lobar) → tertiary (segmental)</text><text x="24" y="96">→ bronchioles → terminal bronchioles</text><text x="24" y="114" font-weight="700">No gas exchange — just moves + conditions air</text><text x="24" y="128">(warm, humidify, filter)</text></g>
+  <text x="24" y="148" font-size="8" fill="#475569">Epithelium changes: pseudostratified ciliated columnar</text>
+  <text x="24" y="160" font-size="8" fill="#475569">+ goblet cells → simple cuboidal (club/Clara cells) distally.</text>
+  <text x="24" y="174" font-size="8" fill="#475569">Cartilage + glands decrease; smooth muscle relatively increases.</text>
+  <rect x="270" y="30" width="196" height="150" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="368" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">RESPIRATORY zone</text>
+  <g font-size="8.5" fill="#166534"><text x="278" y="68">Respiratory bronchioles →</text><text x="278" y="82">alveolar ducts → alveolar sacs</text><text x="278" y="96">→ ALVEOLI</text><text x="278" y="116" font-weight="700">Site of GAS EXCHANGE</text><text x="278" y="134">Huge surface area (~70 m²),</text><text x="278" y="148">very thin barrier</text></g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Anatomical dead space</tspan> ≈ 150 mL (conducting airways) — air here never reaches the exchange surface.</text>
+  <text x="16" y="218" font-size="8.5" fill="#475569">Mucociliary escalator (cilia + mucus) clears debris upward; smoking paralyses cilia.</text>
+  <text x="16" y="236" font-size="8" fill="#64748b">Asthma = bronchiolar smooth-muscle constriction; the terminal bronchiole is the last purely-conducting airway.</text>
+</svg>`;
+
+export const RESPIRATORY_MEMBRANE = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Alveolus and respiratory membrane" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The alveolus &amp; respiratory (blood–gas) membrane</text>
+  <!-- alveolus -->
+  <ellipse cx="130" cy="120" rx="100" ry="70" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="115" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Alveolar air (O₂ in)</text>
+  <text x="130" y="130" text-anchor="middle" font-size="8" fill="#1e40af">(CO₂ out)</text>
+  <!-- capillary -->
+  <path d="M210 90 q60 30 0 60" fill="none" stroke="#dc2626" stroke-width="14" opacity="0.8"/>
+  <text x="250" y="150" font-size="8" fill="#b91c1c">capillary (RBC)</text>
+  <!-- barrier layers -->
+  <g font-size="8.5" fill="#334155"><text x="250" y="46" font-weight="700">Barrier layers (thin!):</text><text x="256" y="62" fill="#1d4ed8">1 Type I pneumocyte (thin, 95% of area)</text><text x="256" y="78" fill="#475569">2 Fused basement membranes</text><text x="256" y="94" fill="#b91c1c">3 Capillary endothelium</text></g>
+  <!-- cells -->
+  <circle cx="90" cy="70" r="9" fill="#fef9c3" stroke="#ca8a04"/><text x="90" y="55" text-anchor="middle" font-size="7" fill="#a16207">type II</text>
+  <text x="250" y="118" font-size="8" fill="#a16207" font-weight="700">Type II pneumocyte:</text>
+  <text x="256" y="132" font-size="7.5" fill="#854d0e">• makes SURFACTANT (lamellar bodies)</text>
+  <text x="256" y="144" font-size="7.5" fill="#854d0e">• stem cell → repairs type I after injury</text>
+  <text x="250" y="164" font-size="8" fill="#334155" font-weight="700">Also: alveolar macrophage (dust cell).</text>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Surfactant</tspan> (DPPC) lowers alveolar surface tension → prevents collapse, ↑compliance; by Laplace, protects small alveoli.</text>
+  <text x="16" y="218" font-size="8.5" fill="#475569">Type I = gas exchange (thin); Type II = surfactant + repair (cuboidal). Thickened membrane (fibrosis/oedema) → ↓diffusion.</text>
+  <text x="16" y="234" font-size="8" fill="#64748b">Neonatal RDS = surfactant deficiency (prematurity); ARDS = diffuse alveolar damage.</text>
+</svg>`;
+
+export const PULMONARY_VQ = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pulmonary circulation and V/Q matching" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Pulmonary circulation &amp; V/Q matching</text>
+  <rect x="14" y="30" width="220" height="96" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="124" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Pulmonary circulation</text>
+  <g font-size="8" fill="#1e40af"><text x="22" y="64">• LOW pressure (~25/8), LOW resistance,</text><text x="32" y="76">high compliance</text><text x="22" y="90">• Hypoxic pulmonary VASOCONSTRICTION:</text><text x="32" y="102">low alveolar O₂ → local vasoconstriction</text><text x="32" y="114">→ diverts blood to well-ventilated alveoli</text></g>
+  <rect x="244" y="30" width="222" height="96" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="355" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">V/Q ratio (ventilation/perfusion)</text>
+  <g font-size="8" fill="#166534"><text x="252" y="64">Ideal V/Q ≈ 0.8 (whole lung)</text><text x="252" y="80">APEX: high V/Q (~3) — more ventilation</text><text x="262" y="92">than perfusion (dead-space-like)</text><text x="252" y="108">BASE: low V/Q (~0.6) — more perfusion</text><text x="262" y="120">than ventilation (shunt-like)</text></g>
+  <line x1="16" y1="138" x2="464" y2="138" stroke="#e2e8f0"/>
+  <text x="16" y="156" font-size="9" font-weight="700" fill="#0369a1">The two extremes</text>
+  <rect x="14" y="164" width="220" height="52" rx="8" fill="#fee2e2"/>
+  <text x="124" y="182" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">V/Q = 0 → SHUNT</text>
+  <text x="124" y="196" text-anchor="middle" font-size="7.5" fill="#991b1b">perfused, not ventilated (e.g. atelectasis)</text>
+  <text x="124" y="208" text-anchor="middle" font-size="7.5" fill="#991b1b">→ hypoxaemia NOT fixed by O₂</text>
+  <rect x="244" y="164" width="222" height="52" rx="8" fill="#fef9c3"/>
+  <text x="355" y="182" text-anchor="middle" font-size="9" font-weight="700" fill="#a16207">V/Q = ∞ → DEAD SPACE</text>
+  <text x="355" y="196" text-anchor="middle" font-size="7.5" fill="#854d0e">ventilated, not perfused (e.g. PE)</text>
+  <text x="355" y="208" text-anchor="middle" font-size="7.5" fill="#854d0e">wasted ventilation</text>
+  <text x="16" y="234" font-size="8" fill="#64748b">West zones: Zone 1 (apex, PA&gt;Pa&gt;Pv, little flow) → Zone 3 (base, Pa&gt;Pv&gt;PA, most flow). V/Q mismatch is the commonest cause of hypoxaemia.</text>
+</svg>`;
+
+export const LUNG_VOLUMES = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Lung volumes and capacities" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Lung volumes &amp; capacities (spirometry)</text>
+  <line x1="120" y1="34" x2="120" y2="200" stroke="#94a3b8"/>
+  <!-- volume bands -->
+  <rect x="122" y="40" width="180" height="34" fill="#dbeafe"/><text x="212" y="61" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">IRV (~3000 mL)</text>
+  <rect x="122" y="76" width="180" height="24" fill="#bfdbfe"/><text x="212" y="92" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">TV (~500 mL)</text>
+  <rect x="122" y="102" width="180" height="30" fill="#93c5fd"/><text x="212" y="121" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1e40af">ERV (~1100 mL)</text>
+  <rect x="122" y="134" width="180" height="46" fill="#fecaca"/><text x="212" y="161" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b91c1c">RV (~1200 mL) — can't be exhaled</text>
+  <!-- capacity brackets -->
+  <g stroke="#334155" stroke-width="1" fill="none"><path d="M310 40 h8 v92 h-8"/><path d="M330 40 h8 v140 h-8"/><path d="M350 134 h8 v46 h-8"/><path d="M370 40 h8 v160 h-8"/></g>
+  <g font-size="8" fill="#334155"><text x="322" y="90">IC</text><text x="342" y="114" font-weight="700">VC</text><text x="362" y="160">FRC</text><text x="382" y="124" font-weight="700">TLC</text></g>
+  <text x="16" y="220" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Capacities = sums:</tspan> VC = IRV+TV+ERV; FRC = ERV+RV; IC = TV+IRV; TLC = all four. RV &amp; FRC can't be measured by spirometry.</text>
+  <text x="16" y="236" font-size="8.5" fill="#475569"><tspan font-weight="700">FEV₁/FVC:</tspan> obstructive (asthma/COPD) &lt;0.7 (air trapping, ↑RV); restrictive (fibrosis) normal/high ratio but ↓all volumes.</text>
+</svg>`;
+
+export const OXYHEMOGLOBIN_CURVE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Oxyhemoglobin dissociation curve" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Oxyhaemoglobin dissociation curve</text>
+  <line x1="50" y1="40" x2="50" y2="200" stroke="#94a3b8"/><line x1="50" y1="200" x2="440" y2="200" stroke="#94a3b8"/>
+  <text x="30" y="120" font-size="8" fill="#64748b" transform="rotate(-90 30 120)" text-anchor="middle">% Hb saturation</text>
+  <text x="245" y="218" text-anchor="middle" font-size="8" fill="#64748b">PO₂ (mmHg)</text>
+  <!-- normal sigmoid -->
+  <path d="M50 195 Q80 150 110 90 Q140 55 200 48 Q300 44 430 42" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+  <!-- right shift -->
+  <path d="M50 197 Q100 175 140 110 Q175 70 240 55 Q320 48 430 45" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="345" y="38" font-size="8" font-weight="700" fill="#1d4ed8">arterial (PaO₂ 100 → ~97%)</text>
+  <text x="250" y="80" font-size="8" font-weight="700" fill="#dc2626">right shift ↓ affinity</text>
+  <!-- P50 marker -->
+  <line x1="130" y1="200" x2="130" y2="120" stroke="#94a3b8" stroke-dasharray="2 2"/><text x="130" y="212" text-anchor="middle" font-size="7.5" fill="#475569">P50 ≈ 27</text>
+  <circle cx="110" cy="90" r="3" fill="#15803d"/><text x="95" y="82" font-size="7.5" fill="#15803d">venous (~40, 75%)</text>
+  <text x="250" y="120" font-size="8" fill="#334155" font-weight="700">RIGHT shift (unload O₂ to tissues):</text>
+  <text x="258" y="133" font-size="7.5" fill="#991b1b">↑CO₂, ↑H⁺ (↓pH), ↑temp, ↑2,3-BPG (Bohr)</text>
+  <text x="250" y="150" font-size="8" fill="#334155" font-weight="700">LEFT shift (hold O₂ tighter):</text>
+  <text x="258" y="163" font-size="7.5" fill="#1d4ed8">↓CO₂/H⁺, ↓temp, ↓2,3-BPG, HbF, CO, MetHb</text>
+  <text x="16" y="186" font-size="7.5" fill="#64748b">Sigmoid = cooperative binding. Flat top = safety margin (small PaO₂ drop barely changes sat). Steep part = easy tissue unloading.</text>
+  <text x="16" y="240" font-size="8" fill="#0369a1">CO binds Hb ~250× tighter than O₂ AND left-shifts the curve → double hit; SaO₂ reads falsely normal on pulse oximetry.</text>
+</svg>`;
+
+export const CO2_TRANSPORT = `<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="CO2 transport in blood" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">CO₂ transport — three forms</text>
+  <rect x="14" y="32" width="150" height="70" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="89" y="50" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1d4ed8">Bicarbonate (~70%)</text>
+  <text x="89" y="66" text-anchor="middle" font-size="7.5" fill="#1e40af">CO₂ + H₂O ⇌ H₂CO₃</text>
+  <text x="89" y="78" text-anchor="middle" font-size="7.5" fill="#1e40af">⇌ H⁺ + HCO₃⁻</text>
+  <text x="89" y="92" text-anchor="middle" font-size="7" fill="#1e40af">(carbonic anhydrase in RBC)</text>
+  <rect x="170" y="32" width="150" height="70" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="245" y="50" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a16207">Carbamino-Hb (~23%)</text>
+  <text x="245" y="68" text-anchor="middle" font-size="7.5" fill="#854d0e">CO₂ bound to Hb</text>
+  <text x="245" y="80" text-anchor="middle" font-size="7.5" fill="#854d0e">globin (NOT haem)</text>
+  <rect x="326" y="32" width="140" height="70" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="396" y="50" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">Dissolved (~7%)</text>
+  <text x="396" y="68" text-anchor="middle" font-size="7.5" fill="#166534">plasma (sets PaCO₂)</text>
+  <text x="16" y="128" font-size="9" font-weight="700" fill="#0369a1">Chloride (Hamburger) shift</text>
+  <text x="16" y="144" font-size="8.5" fill="#475569">In tissues: HCO₃⁻ leaves the RBC → Cl⁻ moves in to balance charge (reversed in the lung).</text>
+  <text x="16" y="166" font-size="9" font-weight="700" fill="#0369a1">Haldane effect</text>
+  <text x="16" y="182" font-size="8.5" fill="#475569">Deoxygenated Hb carries CO₂ better → tissues load CO₂ as O₂ is released; oxygenation in the lung releases CO₂.</text>
+  <text x="16" y="204" font-size="8.5" fill="#475569"><tspan font-weight="700">Bohr</tspan> (CO₂/H⁺ → O₂ off Hb) and <tspan font-weight="700">Haldane</tspan> (O₂ → CO₂ off Hb) are two sides of the same coupling — efficient gas swap.</text>
+  <text x="16" y="222" font-size="8" fill="#64748b">The CO₂–bicarbonate system is also the blood's main buffer, linking respiration to acid–base balance.</text>
+</svg>`;
+
+export const CONTROL_OF_BREATHING = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Control of breathing" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Control of breathing</text>
+  <rect x="14" y="30" width="220" height="96" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="124" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#6d28d9">Central pattern generator</text>
+  <g font-size="8" fill="#5b21b6"><text x="22" y="66">MEDULLA: dorsal group (inspiration) +</text><text x="32" y="78">ventral group (active expiration)</text><text x="22" y="94">PONS: pneumotaxic (limits inspiration) +</text><text x="32" y="106">apneustic centres → smooth rhythm</text></g>
+  <text x="22" y="120" font-size="7.5" fill="#7c3aed">Sets automatic rhythm (override: voluntary cortex).</text>
+  <rect x="244" y="30" width="222" height="96" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="355" y="48" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0369a1">Chemoreceptors</text>
+  <g font-size="8" fill="#075985"><text x="252" y="66" font-weight="700">CENTRAL (medulla): the main driver</text><text x="258" y="78">sense CSF H⁺/CO₂ (~80% of drive)</text><text x="252" y="96" font-weight="700">PERIPHERAL (carotid + aortic bodies):</text><text x="258" y="108">sense low PaO₂ (&lt;60), ↑CO₂, ↑H⁺</text></g>
+  <text x="252" y="122" font-size="7.5" fill="#0369a1">Peripheral = the ONLY O₂ sensors.</text>
+  <text x="16" y="148" font-size="8.5" fill="#0369a1" font-weight="700">CO₂ (via H⁺) is the PRIMARY minute-to-minute stimulus to breathe — not O₂.</text>
+  <text x="16" y="166" font-size="8.5" fill="#475569">↑PaCO₂ → ↑CSF H⁺ → central chemoreceptors → ↑ventilation → blow off CO₂ (tight negative feedback).</text>
+  <text x="16" y="184" font-size="8.5" fill="#475569">Hypoxic drive (peripheral, low O₂) matters mainly at high altitude or in chronic CO₂ retainers (some COPD).</text>
+  <text x="16" y="204" font-size="8.5" fill="#475569">Hering–Breuer reflex: lung stretch receptors inhibit inspiration when the lung is over-inflated (protective).</text>
+  <text x="16" y="224" font-size="8" fill="#64748b">Also: irritant, J (juxtacapillary), and proprioceptor inputs modulate the pattern.</text>
+</svg>`;
+
+export const ABG_ACIDBASE = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Arterial blood gas acid-base" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">ABG &amp; acid–base — a 4-step read</text>
+  <g font-size="8.5" fill="#475569"><text x="16" y="40"><tspan font-weight="700" fill="#334155">Normals:</tspan> pH 7.35–7.45 · PaCO₂ 35–45 · HCO₃⁻ 22–26 · PaO₂ 80–100</text></g>
+  <g font-size="8.5" fill="#334155">
+    <text x="16" y="60" font-weight="700">1</text><text x="30" y="60">pH: &lt;7.35 = acidosis; &gt;7.45 = alkalosis</text>
+    <text x="16" y="76" font-weight="700">2</text><text x="30" y="76">Cause: PaCO₂ moves WITH pH oppositely = respiratory; HCO₃⁻ WITH pH = metabolic</text>
+    <text x="16" y="92" font-weight="700">3</text><text x="30" y="92">Compensation: the other system shifts to pull pH back toward normal</text>
+    <text x="16" y="108" font-weight="700">4</text><text x="30" y="108">If metabolic acidosis → check ANION GAP (Na − [Cl + HCO₃])</text>
+  </g>
+  <line x1="16" y1="118" x2="464" y2="118" stroke="#e2e8f0"/>
+  <g font-size="8">
+    <rect x="16" y="126" width="220" height="46" rx="6" fill="#fee2e2"/><text x="126" y="142" text-anchor="middle" font-weight="700" fill="#b91c1c">Respiratory acidosis</text><text x="126" y="155" text-anchor="middle" fill="#991b1b">↑PaCO₂ (hypoventilation: COPD, opioids)</text><text x="126" y="166" text-anchor="middle" fill="#991b1b">→ renal HCO₃⁻ retention (slow)</text>
+    <rect x="244" y="126" width="222" height="46" rx="6" fill="#dbeafe"/><text x="355" y="142" text-anchor="middle" font-weight="700" fill="#1d4ed8">Respiratory alkalosis</text><text x="355" y="155" text-anchor="middle" fill="#1e40af">↓PaCO₂ (hyperventilation: anxiety, PE,</text><text x="355" y="166" text-anchor="middle" fill="#1e40af">altitude)</text>
+    <rect x="16" y="178" width="220" height="52" rx="6" fill="#fef9c3"/><text x="126" y="194" text-anchor="middle" font-weight="700" fill="#a16207">Metabolic acidosis</text><text x="126" y="207" text-anchor="middle" fill="#854d0e">↓HCO₃⁻. High AG (MUDPILES:</text><text x="126" y="218" text-anchor="middle" fill="#854d0e">lactate, ketones, renal) vs normal AG</text><text x="126" y="228" text-anchor="middle" fill="#854d0e">(diarrhoea, RTA) → Kussmaul breathing</text>
+    <rect x="244" y="178" width="222" height="52" rx="6" fill="#dcfce7"/><text x="355" y="194" text-anchor="middle" font-weight="700" fill="#15803d">Metabolic alkalosis</text><text x="355" y="207" text-anchor="middle" fill="#166534">↑HCO₃⁻ (vomiting, diuretics)</text><text x="355" y="220" text-anchor="middle" fill="#166534">→ hypoventilation compensates</text>
+  </g>
+</svg>`;

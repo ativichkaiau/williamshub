@@ -1030,6 +1030,31 @@ import dermatologicTherapy from './lectures/dermatologic-therapy';
 import skinExaminationApproach from './lectures/skin-examination-approach';
 import dermatologicInvestigations from './lectures/dermatologic-investigations';
 import skinSignsSystemicDisease from './lectures/skin-signs-systemic-disease';
+import epidermisKeratinocyteBiology from './lectures/epidermis-keratinocyte-biology';
+import dermisAppendagesGlands from './lectures/dermis-appendages-glands';
+import photoagingPhotoprotection from './lectures/photoaging-photoprotection';
+import skinImmuneSystemCells from './lectures/skin-immune-system-cells';
+import cutaneousHypersensitivityReactions from './lectures/cutaneous-hypersensitivity-reactions';
+import skinBarrierFunction from './lectures/skin-barrier-function';
+import chronicWoundsLegUlcers from './lectures/chronic-wounds-leg-ulcers';
+import bacterialSkinInfections from './lectures/bacterial-skin-infections';
+import viralSkinInfections from './lectures/viral-skin-infections';
+import scabiesPediculosisClinical from './lectures/scabies-pediculosis-clinical';
+import psoriasisClinicalManagement from './lectures/psoriasis-clinical-management';
+import cutaneousVasculitis from './lectures/cutaneous-vasculitis';
+import cutaneousLupusDermatomyositis from './lectures/cutaneous-lupus-dermatomyositis';
+import severeCutaneousDrugReactions from './lectures/severe-cutaneous-drug-reactions';
+import neonatalSkinConditions from './lectures/neonatal-skin-conditions';
+import vascularBirthmarksGenodermatoses from './lectures/vascular-birthmarks-genodermatoses';
+import alopeciaClinicalApproach from './lectures/alopecia-clinical-approach';
+import hyperpigmentationMelasma from './lectures/hyperpigmentation-melasma';
+import atopicDermatitisClinical from './lectures/atopic-dermatitis-clinical';
+import contactDermatitisClinical from './lectures/contact-dermatitis-clinical';
+import acneManagement from './lectures/acne-management';
+import melanomaClinical from './lectures/melanoma-clinical';
+import keratinocyteCarcinomas from './lectures/keratinocyte-carcinomas';
+import topicalDermatologicTherapy from './lectures/topical-dermatologic-therapy';
+import systemicDermatologicTherapy from './lectures/systemic-dermatologic-therapy';
 
 // ── HRU-2 (Human Renal and Urinary System-2) ──
 import renalDefenseMechanisms from './lectures/renal-defense-mechanisms';
@@ -1856,6 +1881,16 @@ export const lectures: Lecture[] = [
   dermatologicTherapy,
   // HSC expansion (2026-07-02): L1 diagnosis deep-dives
   skinExaminationApproach, dermatologicInvestigations, skinSignsSystemicDisease,
+  // HSC expansion (2026-07-02): L2-L19 sub-topic deep-dives (to 2.5:1)
+  epidermisKeratinocyteBiology, dermisAppendagesGlands, photoagingPhotoprotection,
+  skinImmuneSystemCells, cutaneousHypersensitivityReactions, skinBarrierFunction,
+  chronicWoundsLegUlcers, bacterialSkinInfections, viralSkinInfections,
+  scabiesPediculosisClinical, psoriasisClinicalManagement, cutaneousVasculitis,
+  cutaneousLupusDermatomyositis, severeCutaneousDrugReactions, neonatalSkinConditions,
+  vascularBirthmarksGenodermatoses, alopeciaClinicalApproach, hyperpigmentationMelasma,
+  atopicDermatitisClinical, contactDermatitisClinical, acneManagement,
+  melanomaClinical, keratinocyteCarcinomas, topicalDermatologicTherapy,
+  systemicDermatologicTherapy,
 
   // ── HRU-2 (Human Renal and Urinary System-2) ──
   // L1 Renal defense

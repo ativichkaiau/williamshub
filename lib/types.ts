@@ -22,7 +22,8 @@ export type SystemId =
   | 'immune'
   | 'molecular' // foundational biochemistry / molecular biology (e.g. MBH)
   | 'research' // research methods / evidence / ethics (e.g. BMR)
-  | 'histology'; // basic histology / cell biology / tissue microanatomy (e.g. BHCB)
+  | 'histology' // basic histology / cell biology / tissue microanatomy (e.g. BHCB)
+  | 'physiology'; // general/cell/neuro physiology (e.g. EHP)
 
 export type TagKind =
   | 'system'

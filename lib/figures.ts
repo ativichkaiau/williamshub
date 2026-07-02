@@ -2566,3 +2566,233 @@ export const AUTOIMMUNITY_MECHANISMS = `<svg viewBox="0 0 480 230" xmlns="http:/
   <text x="250" y="197" font-size="8" fill="#5b21b6">arthritis (RF, anti-CCP), systemic sclerosis</text>
   <text x="16" y="220" font-size="8" fill="#64748b">Mediated via hypersensitivity types II (e.g. Graves, MG), III (SLE), and IV (T1DM, MS).</text>
 </svg>`;
+
+// ---------------------------------------------------------------------------
+// EHP — Essential Human Physiology figures
+// ---------------------------------------------------------------------------
+
+export const OSMOSIS_TONICITY = `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Tonicity and cell volume" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Tonicity — what happens to the cell</text>
+  <!-- hypotonic -->
+  <text x="90" y="44" text-anchor="middle" font-size="10" font-weight="700" fill="#2563eb">Hypotonic</text>
+  <rect x="30" y="52" width="120" height="90" rx="6" fill="#dbeafe" stroke="#93c5fd"/>
+  <circle cx="90" cy="97" r="38" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <g stroke="#1d4ed8" stroke-width="1.5"><path d="M90 62 l0 -8 M90 132 l0 8 M55 97 l-8 0 M125 97 l8 0"/></g>
+  <text x="90" y="160" text-anchor="middle" font-size="8" fill="#1e40af">water IN → cell SWELLS</text>
+  <text x="90" y="172" text-anchor="middle" font-size="7.5" fill="#1e40af">(may lyse / haemolysis)</text>
+  <!-- isotonic -->
+  <text x="240" y="44" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">Isotonic</text>
+  <rect x="180" y="52" width="120" height="90" rx="6" fill="#dcfce7" stroke="#86efac"/>
+  <circle cx="240" cy="97" r="30" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <text x="240" y="160" text-anchor="middle" font-size="8" fill="#166534">no net water movement</text>
+  <text x="240" y="172" text-anchor="middle" font-size="7.5" fill="#166534">(normal volume)</text>
+  <!-- hypertonic -->
+  <text x="390" y="44" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">Hypertonic</text>
+  <rect x="330" y="52" width="120" height="90" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+  <circle cx="390" cy="97" r="20" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>
+  <g stroke="#b91c1c" stroke-width="1.5"><path d="M390 73 l0 8 M390 121 l0 -8 M366 97 l8 0 M414 97 l-8 0"/></g>
+  <text x="390" y="160" text-anchor="middle" font-size="8" fill="#991b1b">water OUT → cell SHRINKS</text>
+  <text x="390" y="172" text-anchor="middle" font-size="7.5" fill="#991b1b">(crenation)</text>
+  <text x="16" y="196" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Osmolarity</tspan> = total solute particles/L (a property of the solution). <tspan font-weight="700">Tonicity</tspan> = EFFECTIVE osmolarity (only NON-penetrating solutes).</text>
+  <text x="16" y="212" font-size="8.5" fill="#64748b">Penetrating solutes (e.g. urea) add to osmolarity but NOT tonicity — they equilibrate and cause no lasting volume change.</text>
+</svg>`;
+
+export const HOMEOSTASIS_FEEDBACK = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Negative feedback homeostasis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Homeostasis — negative feedback loop</text>
+  <rect x="180" y="34" width="110" height="30" rx="6" fill="#e0e7ff"/><text x="235" y="53" text-anchor="middle" font-size="9" font-weight="700" fill="#4338ca">Stimulus: variable ↕</text>
+  <rect x="330" y="86" width="120" height="34" rx="6" fill="#dbeafe"/><text x="390" y="102" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1d4ed8">Sensor (receptor)</text><text x="390" y="114" text-anchor="middle" font-size="7.5" fill="#1e40af">detects change</text>
+  <rect x="180" y="150" width="110" height="34" rx="6" fill="#dcfce7"/><text x="235" y="166" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">Control centre</text><text x="235" y="178" text-anchor="middle" font-size="7.5" fill="#166534">compares to set point</text>
+  <rect x="20" y="86" width="120" height="34" rx="6" fill="#fef9c3"/><text x="80" y="102" text-anchor="middle" font-size="8.5" font-weight="700" fill="#a16207">Effector</text><text x="80" y="114" text-anchor="middle" font-size="7.5" fill="#854d0e">opposes the change</text>
+  <g stroke="#94a3b8" stroke-width="1.5" fill="none" marker-end="url(#fb)">
+    <path d="M290 52 q60 5 80 34"/><path d="M390 120 q-10 25 -100 34"/><path d="M180 168 q-70 5 -100 -44"/><path d="M80 86 q10 -40 100 -40"/>
+  </g>
+  <defs><marker id="fb" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#64748b"/></marker></defs>
+  <text x="235" y="112" text-anchor="middle" font-size="9" font-weight="700" fill="#dc2626">Restores set point</text>
+  <text x="16" y="204" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Negative feedback</tspan> (most) opposes change → stability (temperature, glucose, BP). <tspan font-weight="700">Positive feedback</tspan> amplifies (labour/oxytocin, clotting).</text>
+</svg>`;
+
+export const BODY_FLUID_COMPARTMENTS = `<svg viewBox="0 0 470 220" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Body fluid compartments" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="220" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Body fluid compartments (60–40–20 rule)</text>
+  <text x="16" y="38" font-size="8.5" fill="#64748b">Total body water ≈ 60% of body weight →</text>
+  <!-- ICF -->
+  <rect x="30" y="48" width="230" height="120" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="145" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">ICF ≈ 40%</text>
+  <text x="145" y="120" text-anchor="middle" font-size="8" fill="#1e40af">intracellular (2/3 of body water)</text>
+  <text x="145" y="136" text-anchor="middle" font-size="7.5" fill="#1e40af">high K⁺, Mg²⁺, phosphate, protein</text>
+  <!-- ECF -->
+  <rect x="270" y="48" width="180" height="120" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="360" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">ECF ≈ 20%</text>
+  <text x="360" y="80" text-anchor="middle" font-size="7.5" fill="#166534">(1/3 of body water); high Na⁺, Cl⁻, HCO₃⁻</text>
+  <rect x="280" y="90" width="160" height="34" rx="4" fill="#bbf7d0"/><text x="360" y="105" text-anchor="middle" font-size="8.5" font-weight="700" fill="#166534">Interstitial ≈ 15%</text><text x="360" y="118" text-anchor="middle" font-size="7" fill="#166534">(3/4 of ECF)</text>
+  <rect x="280" y="130" width="160" height="30" rx="4" fill="#86efac"/><text x="360" y="149" text-anchor="middle" font-size="8.5" font-weight="700" fill="#166534">Plasma ≈ 5% (1/4 of ECF)</text>
+  <text x="16" y="188" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Na⁺/K⁺-ATPase</tspan> maintains the ICF/ECF ionic difference (high intracellular K⁺, high extracellular Na⁺).</text>
+  <text x="16" y="204" font-size="8.5" fill="#64748b">Cell membrane separates ICF from ECF; capillary wall separates plasma from interstitial fluid.</text>
+</svg>`;
+
+export const MEMBRANE_TRANSPORT_TYPES = `<svg viewBox="0 0 490 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Membrane transport mechanisms" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Crossing the membrane: passive vs active</text>
+  <rect x="14" y="30" width="230" height="150" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="129" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">PASSIVE (no ATP, down-gradient)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="68">• Simple diffusion — lipid-soluble/small</text><text x="34" y="80">(O₂, CO₂, steroids) straight through bilayer</text><text x="24" y="98">• Facilitated diffusion via a protein:</text><text x="34" y="112">— channel (fast, ions/water; e.g. aquaporin)</text><text x="34" y="126">— carrier (e.g. GLUT — glucose)</text><text x="24" y="146">• Osmosis = water down its own gradient</text></g>
+  <text x="24" y="168" font-size="7.5" fill="#64748b">Carrier-mediated → saturable, specific, competitive.</text>
+  <rect x="250" y="30" width="226" height="150" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="363" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">ACTIVE (uses energy, up-gradient)</text>
+  <g font-size="8.5" fill="#991b1b"><text x="258" y="68">• Primary — direct ATP:</text><text x="268" y="82">Na⁺/K⁺-ATPase (3 Na⁺ out / 2 K⁺ in),</text><text x="268" y="94">Ca²⁺-ATPase, H⁺/K⁺-ATPase</text><text x="258" y="112">• Secondary — uses an ion gradient:</text><text x="268" y="126">symport (SGLT: Na⁺+glucose same way)</text><text x="268" y="140">antiport (Na⁺/Ca²⁺ exchange, opposite)</text><text x="258" y="160">• Vesicular: endocytosis / exocytosis</text></g>
+  <text x="16" y="202" font-size="8.5" fill="#0369a1">Key rule: PASSIVE moves DOWN the electrochemical gradient (no ATP); ACTIVE moves AGAINST it (needs energy).</text>
+  <text x="16" y="220" font-size="8.5" fill="#475569">Channels are faster and gated (voltage/ligand/mechanical); carriers change conformation and saturate (transport maximum).</text>
+  <text x="16" y="238" font-size="8" fill="#64748b">Defective Cl⁻ channel (CFTR) → cystic fibrosis: an example of transport-protein disease.</text>
+</svg>`;
+
+export const ACTION_POTENTIAL = `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Neuron action potential" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The action potential</text>
+  <line x1="50" y1="40" x2="50" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="50" y1="200" x2="450" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="30" y="120" font-size="8" fill="#64748b" transform="rotate(-90 30 120)" text-anchor="middle">mV</text>
+  <text x="250" y="216" text-anchor="middle" font-size="8" fill="#64748b">time →</text>
+  <line x1="50" y1="170" x2="450" y2="170" stroke="#cbd5e1" stroke-dasharray="3 3"/><text x="60" y="167" font-size="7.5" fill="#64748b">−70 (RMP)</text>
+  <line x1="50" y1="150" x2="450" y2="150" stroke="#e2e8f0" stroke-dasharray="2 2"/><text x="60" y="147" font-size="7.5" fill="#94a3b8">−55 threshold</text>
+  <line x1="50" y1="60" x2="450" y2="60" stroke="#e2e8f0" stroke-dasharray="2 2"/><text x="60" y="57" font-size="7.5" fill="#94a3b8">+30</text>
+  <path d="M50 170 L120 168 Q140 166 150 150 L175 60 Q185 52 200 60 L235 170 Q245 186 260 178 L300 170" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="150" y="130" font-size="8" font-weight="700" fill="#b91c1c">① Depolarisation</text><text x="150" y="141" font-size="7" fill="#991b1b">Na⁺ channels OPEN, Na⁺ in</text>
+  <text x="215" y="90" font-size="8" font-weight="700" fill="#1d4ed8">② Repolarisation</text><text x="215" y="101" font-size="7" fill="#1e40af">Na⁺ inactivate, K⁺ OUT</text>
+  <text x="255" y="192" font-size="8" font-weight="700" fill="#7c3aed">③ Hyperpolarisation</text><text x="255" y="202" font-size="7" fill="#5b21b6">(K⁺ overshoot)</text>
+  <text x="330" y="60" font-size="8" fill="#334155" font-weight="700">All-or-none:</text>
+  <text x="330" y="74" font-size="7.5" fill="#475569">reach threshold → full spike;</text>
+  <text x="330" y="86" font-size="7.5" fill="#475569">below threshold → nothing</text>
+  <text x="330" y="106" font-size="8" fill="#334155" font-weight="700">Refractory periods:</text>
+  <text x="330" y="120" font-size="7.5" fill="#475569">Absolute (Na⁺ inactivated) —</text>
+  <text x="330" y="131" font-size="7.5" fill="#475569">no 2nd AP possible</text>
+  <text x="330" y="144" font-size="7.5" fill="#475569">Relative — needs stronger stimulus</text>
+  <text x="16" y="236" font-size="8.5" fill="#0369a1">Channels: voltage-gated Na⁺ (fast, depolarise) then voltage-gated K⁺ (repolarise). Na⁺/K⁺-ATPase restores gradients afterward.</text>
+  <text x="16" y="252" font-size="8" fill="#64748b">Propagation: myelinated axons conduct faster by saltatory conduction (node-to-node); refractory period sets one-way travel.</text>
+</svg>`;
+
+export const NERNST_EQUILIBRIUM = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Resting membrane potential and Nernst" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Resting membrane potential (RMP ≈ −70 mV)</text>
+  <rect x="16" y="30" width="240" height="120" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="136" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Equilibrium (Nernst) potentials</text>
+  <g font-size="9" fill="#1e40af"><text x="26" y="70">E_K⁺  ≈ −90 mV</text><text x="26" y="90">E_Na⁺ ≈ +60 mV</text><text x="26" y="110">E_Cl⁻ ≈ −70 mV</text><text x="26" y="132">Nernst = potential where one ion is</text></g>
+  <text x="26" y="144" font-size="8" fill="#1e40af">balanced (no net flux)</text>
+  <rect x="264" y="30" width="212" height="120" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="370" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">Why RMP ≈ −70 (near E_K)</text>
+  <g font-size="8.5" fill="#166534"><text x="274" y="68">• Membrane is most permeable to K⁺</text><text x="284" y="80">(K⁺ leak channels) → RMP sits near E_K</text><text x="274" y="98">• Small Na⁺ leak pulls it slightly positive</text><text x="274" y="116">• Na⁺/K⁺-ATPase maintains gradients</text><text x="284" y="128">(3 Na⁺ out / 2 K⁺ in) — electrogenic</text></g>
+  <text x="16" y="176" font-size="8.5" fill="#0369a1" font-weight="700">Goldman equation = weighted average of all ions by their permeability.</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">The most permeable ion dominates the membrane potential (at rest, that's K⁺).</text>
+  <text x="16" y="212" font-size="8.5" fill="#475569">↑ extracellular K⁺ → E_K less negative → depolarises the cell (dangerous for the heart).</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">If Vm ≠ E_ion, that ion flows: toward its equilibrium, driven by the electrochemical gradient.</text>
+</svg>`;
+
+export const SYNAPTIC_TRANSMISSION = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Chemical synaptic transmission" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Chemical synaptic transmission</text>
+  <!-- presynaptic -->
+  <path d="M30 40 h180 v70 q-90 40 -180 0 z" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="110" y="60" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Presynaptic terminal</text>
+  <g fill="#1d4ed8">${[70,95,120,145].map(x=>`<circle cx="${x}" cy="95" r="5"/>`).join('')}</g>
+  <text x="150" y="98" font-size="7.5" fill="#1e40af">vesicles (NT)</text>
+  <!-- cleft -->
+  <rect x="30" y="132" width="330" height="16" fill="#fef9c3"/><text x="195" y="144" text-anchor="middle" font-size="7.5" fill="#92400e">synaptic cleft</text>
+  <!-- postsynaptic -->
+  <rect x="30" y="150" width="330" height="66" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="110" y="170" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Postsynaptic cell</text>
+  <rect x="150" y="146" width="10" height="12" fill="#15803d"/><rect x="230" y="146" width="10" height="12" fill="#15803d"/>
+  <text x="250" y="158" font-size="7.5" fill="#15803d">receptors (ionotropic/metabotropic)</text>
+  <!-- steps -->
+  <g font-size="8" fill="#334155"><text x="368" y="52" font-weight="700">Steps:</text><text x="368" y="66">1 AP → Ca²⁺ in</text><text x="368" y="80">2 vesicle fusion</text><text x="368" y="94">3 NT release</text><text x="368" y="108">4 bind receptor</text><text x="368" y="122">5 EPSP/IPSP</text><text x="368" y="136">6 removal:</text><text x="376" y="148">reuptake/enzyme</text></g>
+  <text x="16" y="234" font-size="8.5" fill="#0369a1"><tspan font-weight="700">EPSP</tspan> (excitatory, e.g. glutamate→Na⁺ in) vs <tspan font-weight="700">IPSP</tspan> (inhibitory, GABA/glycine→Cl⁻ in/K⁺ out). Summation → reach threshold → AP.</text>
+  <text x="16" y="248" font-size="8" fill="#64748b">NT cleared by reuptake (dopamine/serotonin), enzymatic breakdown (ACh→acetylcholinesterase), or diffusion.</text>
+</svg>`;
+
+export const CELL_SIGNALING_RECEPTORS = `<svg viewBox="0 0 490 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cell signalling receptors and second messengers" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cell communication: receptors &amp; second messengers</text>
+  <text x="16" y="38" font-size="9" font-weight="700" fill="#0369a1">Signalling range: endocrine (blood) · paracrine (neighbour) · autocrine (self) · synaptic (neuron)</text>
+  <g font-size="8" font-weight="700" fill="#475569"><text x="18" y="58">Receptor class</text><text x="180" y="58">Mechanism</text><text x="340" y="58">Example</text></g>
+  <line x1="16" y1="63" x2="474" y2="63" stroke="#cbd5e1"/>
+  <g font-size="8">
+    <text x="18" y="82" font-weight="700" fill="#1d4ed8">Ligand-gated ion channel</text><text x="180" y="82" fill="#475569">opens channel → fast ion flux (ms)</text><text x="340" y="82" fill="#475569">nicotinic ACh, GABA-A</text>
+    <text x="18" y="104" font-weight="700" fill="#b91c1c">GPCR (7-TM)</text><text x="180" y="104" fill="#475569">G protein → 2nd messenger</text><text x="340" y="104" fill="#475569">adrenergic, muscarinic</text>
+    <text x="18" y="126" font-weight="700" fill="#15803d">Enzyme-linked (RTK)</text><text x="180" y="126" fill="#475569">autophosphorylation → cascade</text><text x="340" y="126" fill="#475569">insulin, growth factors</text>
+    <text x="18" y="148" font-weight="700" fill="#7c3aed">Intracellular/nuclear</text><text x="180" y="148" fill="#475569">lipophilic ligand → gene transcription</text><text x="340" y="148" fill="#475569">steroids, thyroid hormone</text>
+  </g>
+  <line x1="16" y1="158" x2="474" y2="158" stroke="#e2e8f0"/>
+  <text x="16" y="176" font-size="9" font-weight="700" fill="#0369a1">GPCR second-messenger pathways</text>
+  <g font-size="8.5" fill="#475569"><text x="18" y="194">• Gs → adenylyl cyclase → ↑cAMP → PKA</text><text x="18" y="210">• Gi → ↓cAMP</text><text x="250" y="194">• Gq → phospholipase C → IP₃ (Ca²⁺ release) + DAG (PKC)</text><text x="250" y="210">• Ca²⁺ = a universal second messenger</text></g>
+  <text x="16" y="232" font-size="8.5" fill="#64748b">Second messengers AMPLIFY the signal (one receptor → many molecules). Response is terminated by feedback / phosphatases / GTP hydrolysis.</text>
+  <text x="16" y="246" font-size="8" fill="#94a3b8">Lipophilic hormones use intracellular receptors (slow, lasting); water-soluble use surface receptors (fast).</text>
+</svg>`;
+
+export const LTP_MECHANISM = `<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Long-term potentiation" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="470" height="230" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Synaptic plasticity — long-term potentiation (LTP)</text>
+  <text x="16" y="40" font-size="9" fill="#0369a1" font-weight="700">The NMDA receptor is a coincidence detector</text>
+  <g font-size="8.5" fill="#475569"><text x="18" y="58">• At rest, NMDA channel is blocked by Mg²⁺</text><text x="18" y="74">• Strong activity → AMPA depolarises → expels Mg²⁺</text><text x="18" y="90">• Glutamate + depolarisation together → NMDA opens → Ca²⁺ IN</text><text x="18" y="106">→ needs presynaptic glutamate AND postsynaptic depolarisation ("Hebbian")</text></g>
+  <line x1="16" y1="116" x2="454" y2="116" stroke="#e2e8f0"/>
+  <rect x="16" y="124" width="220" height="80" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="126" y="142" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Early LTP (induction)</text>
+  <g font-size="8" fill="#1e40af"><text x="24" y="158">Ca²⁺ → CaMKII → more AMPA</text><text x="24" y="172">receptors inserted + phosphorylated</text><text x="24" y="188">→ stronger response (minutes–hours)</text></g>
+  <rect x="244" y="124" width="212" height="80" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="350" y="142" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">Late LTP (maintenance)</text>
+  <g font-size="8" fill="#166534"><text x="252" y="158">CREB → new gene transcription +</text><text x="252" y="172">protein synthesis → new synapses</text><text x="252" y="188">→ lasting (hours–days); memory</text></g>
+  <text x="16" y="222" font-size="8" fill="#64748b">LTP (strengthening) &amp; LTD (weakening) in the hippocampus underlie learning/memory. Aβ (Alzheimer) impairs glutamate handling → disrupts LTP.</text>
+</svg>`;
+
+export const ANS_OVERVIEW = `<svg viewBox="0 0 490 260" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Autonomic nervous system" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="490" height="260" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Autonomic nervous system</text>
+  <rect x="14" y="30" width="230" height="150" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="129" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">SYMPATHETIC ("fight or flight")</text>
+  <g font-size="8.5" fill="#991b1b"><text x="24" y="66">• Thoracolumbar (T1–L2) outflow</text><text x="24" y="82">• SHORT pre- / LONG postganglionic</text><text x="24" y="98">• Ganglia near cord (paravertebral chain)</text><text x="24" y="114">• Post-ganglionic NT: noradrenaline</text><text x="34" y="126">(→ adrenergic α/β receptors)</text><text x="24" y="144">↑HR, ↑BP, pupils dilate, bronchodilate,</text><text x="34" y="156">↓gut, glycogenolysis, sweat</text></g>
+  <text x="24" y="174" font-size="7.5" fill="#64748b">Exception: sweat glands = sympathetic CHOLINERGIC.</text>
+  <rect x="250" y="30" width="226" height="150" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="363" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">PARASYMPATHETIC ("rest &amp; digest")</text>
+  <g font-size="8.5" fill="#166534"><text x="258" y="66">• Craniosacral (CN III, VII, IX, X; S2–4)</text><text x="258" y="82">• LONG pre- / SHORT postganglionic</text><text x="258" y="98">• Ganglia near/in the target organ</text><text x="258" y="114">• Post-ganglionic NT: acetylcholine</text><text x="268" y="126">(→ muscarinic receptors)</text><text x="258" y="144">↓HR, pupils constrict, bronchoconstrict,</text><text x="268" y="156">↑gut motility/secretion</text></g>
+  <text x="16" y="200" font-size="8.5" fill="#0369a1" font-weight="700">ALL preganglionic fibres (both divisions) release ACh onto NICOTINIC receptors in the ganglion.</text>
+  <text x="16" y="218" font-size="8.5" fill="#475569">Adrenal medulla = a modified sympathetic ganglion → releases adrenaline into blood (preganglionic ACh, no postganglionic neuron).</text>
+  <text x="16" y="236" font-size="8.5" fill="#475569">Most organs have dual (opposing) innervation; the two divisions balance to maintain homeostasis.</text>
+  <text x="16" y="252" font-size="8" fill="#64748b">Somatic motor (for contrast): one neuron, ACh → nicotinic on skeletal muscle, no ganglion.</text>
+</svg>`;
+
+export const REFLEX_ARC = `<svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Reflex arc" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="240" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">The reflex arc</text>
+  <g font-size="8" font-weight="700" fill="#334155">
+    <rect x="16" y="32" width="86" height="26" rx="6" fill="#fef9c3"/><text x="59" y="49" text-anchor="middle" fill="#a16207">1 Receptor</text>
+    <rect x="112" y="32" width="96" height="26" rx="6" fill="#fee2e2"/><text x="160" y="49" text-anchor="middle" fill="#b91c1c">2 Afferent (sensory)</text>
+    <rect x="218" y="32" width="96" height="26" rx="6" fill="#e0e7ff"/><text x="266" y="49" text-anchor="middle" fill="#4338ca">3 Integration (CNS)</text>
+    <rect x="324" y="32" width="90" height="26" rx="6" fill="#dbeafe"/><text x="369" y="49" text-anchor="middle" fill="#1d4ed8">4 Efferent (motor)</text>
+    <rect x="424" y="32" width="48" height="26" rx="6" fill="#dcfce7"/><text x="448" y="49" text-anchor="middle" fill="#15803d">5 Effector</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="1.5"><line x1="102" y1="45" x2="112" y2="45"/><line x1="208" y1="45" x2="218" y2="45"/><line x1="314" y1="45" x2="324" y2="45"/><line x1="414" y1="45" x2="424" y2="45"/></g>
+  <line x1="16" y1="72" x2="464" y2="72" stroke="#e2e8f0"/>
+  <rect x="16" y="82" width="220" height="70" rx="8" fill="#f0f9ff" stroke="#2563eb"/>
+  <text x="126" y="100" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Monosynaptic — stretch reflex</text>
+  <g font-size="8" fill="#1e40af"><text x="24" y="116">muscle stretch → muscle SPINDLE →</text><text x="24" y="130">Ia afferent → ONE synapse → α-motor</text><text x="24" y="144">neuron → same muscle contracts (knee jerk)</text></g>
+  <rect x="244" y="82" width="220" height="70" rx="8" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="354" y="100" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">Polysynaptic — withdrawal reflex</text>
+  <g font-size="8" fill="#9a3412"><text x="252" y="116">painful stimulus → interneurons →</text><text x="252" y="130">flexors contract + reciprocal inhibition</text><text x="252" y="144">of antagonists → limb withdraws</text></g>
+  <text x="16" y="176" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Muscle spindle</tspan> senses stretch (length); <tspan font-weight="700">Golgi tendon organ</tspan> senses tension → inverse stretch reflex (protective relaxation).</text>
+  <text x="16" y="194" font-size="8.5" fill="#475569">Reciprocal innervation: contracting a muscle simultaneously inhibits its antagonist.</text>
+  <text x="16" y="214" font-size="8.5" fill="#475569">Reflexes are involuntary, stereotyped, and rapid — a protective/postural CNS shortcut.</text>
+  <text x="16" y="230" font-size="8" fill="#64748b">Clinically: deep-tendon reflexes test the arc (afferent, cord segment, efferent) — hyper/hyporeflexia localises lesions.</text>
+</svg>`;
+
+export const APOPTOSIS_NECROSIS = `<svg viewBox="0 0 480 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Apoptosis vs necrosis" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="480" height="250" rx="10" fill="#fbfbff"/>
+  <text x="16" y="20" font-size="12" font-weight="700" fill="#334155">Cell death: apoptosis vs necrosis</text>
+  <rect x="14" y="30" width="230" height="160" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="129" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">APOPTOSIS (programmed)</text>
+  <g font-size="8.5" fill="#1e40af"><text x="24" y="68">• Active, energy (ATP)-dependent</text><text x="24" y="84">• Cell SHRINKS; membrane INTACT</text><text x="24" y="100">• Chromatin condenses; apoptotic bodies</text><text x="24" y="116">• NO inflammation (cleanly phagocytosed)</text><text x="24" y="132">• CASPASE-mediated:</text><text x="34" y="145">— intrinsic (mitochondria, cytochrome c,</text><text x="44" y="157">Bcl-2/Bax) — internal stress/DNA damage</text><text x="34" y="171">— extrinsic (death receptors: Fas/TNF)</text></g>
+  <rect x="250" y="30" width="226" height="160" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="363" y="48" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">NECROSIS (accidental)</text>
+  <g font-size="8.5" fill="#991b1b"><text x="258" y="68">• Passive, from injury (ischaemia, toxin)</text><text x="258" y="84">• Cell SWELLS; membrane RUPTURES</text><text x="258" y="100">• Contents spill out</text><text x="258" y="116">• INFLAMMATION (immune response)</text><text x="258" y="132">• Always pathological</text><text x="258" y="152">Autophagy = "self-eating" recycling —</text><text x="258" y="166">survival response; can also cause death</text></g>
+  <text x="16" y="212" font-size="8.5" fill="#0369a1"><tspan font-weight="700">Key contrast:</tspan> apoptosis = tidy, single cells, no inflammation, physiological; necrosis = messy, groups of cells, inflammation, pathological.</text>
+  <text x="16" y="230" font-size="8.5" fill="#475569">Too little apoptosis → cancer/autoimmunity; too much → neurodegeneration/atrophy.</text>
+  <text x="16" y="246" font-size="8" fill="#64748b">Apoptosis is essential in development (webbed digits, immune selection) — not just death.</text>
+</svg>`;

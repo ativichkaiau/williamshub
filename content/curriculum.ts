@@ -205,6 +205,19 @@ export const subjectOfSource: Record<string, string> = {
   'L20 — Gluteal Region, Posterior Thigh & Popliteal Fossa': 'HGA',
   'L21 — Leg & Foot': 'HGA',
 
+  // EHP — Essential Human Physiology (Year 2)
+  'L1 — Transport of Solutes & Water': 'EHP',
+  'L2 — Cellular Homeostasis': 'EHP',
+  'L3 — Membrane Transport': 'EHP',
+  'L4 — Genesis of the Action Potential': 'EHP',
+  'L5 — Regulation of the Resting Membrane Potential': 'EHP',
+  'L6 — Neurotransmitters & Neuromodulators': 'EHP',
+  'L7 — Cell Communication': 'EHP',
+  'L8 — Synaptic Plasticity': 'EHP',
+  'L9 — Autonomic Nervous System': 'EHP',
+  'L10 — Reflexes': 'EHP',
+  'L11 — Cellular Aging & Cell Death': 'EHP',
+
   // HIM — Human Immunology (Year 2)
   'L1 — Cells & Tissues of the Immune System': 'HIM',
   'L2 — Innate Immunity': 'HIM',

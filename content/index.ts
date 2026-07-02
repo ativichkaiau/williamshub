@@ -614,6 +614,28 @@ import tumorEvasionImmunotherapy from './lectures/tumor-evasion-immunotherapy';
 import vaccinesImmunization from './lectures/vaccines-immunization';
 import immunotherapyModulation from './lectures/immunotherapy-modulation';
 
+// ── EHP (Essential Human Physiology) ──
+import diffusionOsmosisBasics from './lectures/diffusion-osmosis-basics';
+import osmolarityTonicityCellVolume from './lectures/osmolarity-tonicity-cell-volume';
+import homeostasisFeedbackControl from './lectures/homeostasis-feedback-control';
+import bodyFluidCompartments from './lectures/body-fluid-compartments';
+import membraneTransportPassive from './lectures/membrane-transport-passive';
+import membraneTransportActiveVesicular from './lectures/membrane-transport-active-vesicular';
+import actionPotentialGenesis from './lectures/action-potential-genesis';
+import actionPotentialPropagationRefractory from './lectures/action-potential-propagation-refractory';
+import restingMembranePotentialNernst from './lectures/resting-membrane-potential-nernst';
+import goldmanRmpRegulation from './lectures/goldman-rmp-regulation';
+import neurotransmittersTypesLifecycle from './lectures/neurotransmitters-types-lifecycle';
+import synapticTransmissionEpspIpsp from './lectures/synaptic-transmission-epsp-ipsp';
+import cellSignalingModesReceptors from './lectures/cell-signaling-modes-receptors';
+import secondMessengerSystems from './lectures/second-messenger-systems';
+import synapticPlasticityLtp from './lectures/synaptic-plasticity-ltp';
+import autonomicSympatheticParasympathetic from './lectures/autonomic-sympathetic-parasympathetic';
+import autonomicNeurotransmittersReceptors from './lectures/autonomic-neurotransmitters-receptors';
+import reflexArcStretchWithdrawal from './lectures/reflex-arc-stretch-withdrawal';
+import apoptosisNecrosis from './lectures/apoptosis-necrosis';
+import cellularAgingTheories from './lectures/cellular-aging-theories';
+
 // ── BHCB (Basic Histology and Cell Biology) ──
 import histologyMethodsStaining from './lectures/histology-methods-staining';
 import plasmaMembraneTransport from './lectures/plasma-membrane-transport';
@@ -1015,6 +1037,30 @@ export const lectures: Lecture[] = [
   ecmFibersGroundSubstance, ecmAdhesionIntegrinsClinical,
   // L10 Clinical Cell Biology
   subcellularPathologyAlterations, intermediateFilamentsClinical,
+
+  // ── EHP (Essential Human Physiology) ──
+  // L1 Transport of Solutes & Water
+  diffusionOsmosisBasics, osmolarityTonicityCellVolume,
+  // L2 Cellular Homeostasis
+  homeostasisFeedbackControl, bodyFluidCompartments,
+  // L3 Membrane Transport
+  membraneTransportPassive, membraneTransportActiveVesicular,
+  // L4 Genesis of the Action Potential
+  actionPotentialGenesis, actionPotentialPropagationRefractory,
+  // L5 Regulation of the Resting Membrane Potential
+  restingMembranePotentialNernst, goldmanRmpRegulation,
+  // L6 Neurotransmitters & Neuromodulators
+  neurotransmittersTypesLifecycle, synapticTransmissionEpspIpsp,
+  // L7 Cell Communication
+  cellSignalingModesReceptors, secondMessengerSystems,
+  // L8 Synaptic Plasticity
+  synapticPlasticityLtp,
+  // L9 Autonomic Nervous System
+  autonomicSympatheticParasympathetic, autonomicNeurotransmittersReceptors,
+  // L10 Reflexes
+  reflexArcStretchWithdrawal,
+  // L11 Cellular Aging & Cell Death
+  apoptosisNecrosis, cellularAgingTheories,
 ];
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(

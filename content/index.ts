@@ -1026,6 +1026,10 @@ import eczemaDermatitis from './lectures/eczema-dermatitis';
 import acneVulgaris from './lectures/acne-vulgaris';
 import skinNeoplasms from './lectures/skin-neoplasms';
 import dermatologicTherapy from './lectures/dermatologic-therapy';
+// HSC expansion (2026-07-02)
+import skinExaminationApproach from './lectures/skin-examination-approach';
+import dermatologicInvestigations from './lectures/dermatologic-investigations';
+import skinSignsSystemicDisease from './lectures/skin-signs-systemic-disease';
 
 // ── HRU-2 (Human Renal and Urinary System-2) ──
 import renalDefenseMechanisms from './lectures/renal-defense-mechanisms';
@@ -1840,6 +1844,8 @@ export const lectures: Lecture[] = [
   skinNeoplasms,
   // L19 Dermatologic therapy
   dermatologicTherapy,
+  // HSC expansion (2026-07-02): L1 diagnosis deep-dives
+  skinExaminationApproach, dermatologicInvestigations, skinSignsSystemicDisease,
 
   // ── HRU-2 (Human Renal and Urinary System-2) ──
   // L1 Renal defense

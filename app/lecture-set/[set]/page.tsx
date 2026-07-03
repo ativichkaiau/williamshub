@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
+import ConceptModeController from '../../../components/concept/ConceptModeController';
+import { onePagerForModule } from '../../../lib/concept/onepagerForModule';
 import { lectureTheme } from '../../../lib/theme';
 
 export function generateStaticParams() {
@@ -73,7 +75,9 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
                 Open full module →
               </Link>
             </div>
-            <LectureBody lecture={l} />
+            <ConceptModeController lecture={l} onePager={onePagerForModule(l)}>
+              <LectureBody lecture={l} />
+            </ConceptModeController>
             <ActiveIntegrationPanel moduleId={l.id} />
           </section>
         ))}

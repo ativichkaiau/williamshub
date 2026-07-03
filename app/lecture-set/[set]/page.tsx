@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
+import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import { lectureTheme } from '../../../lib/theme';
 
 export function generateStaticParams() {
@@ -73,6 +74,7 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
               </Link>
             </div>
             <LectureBody lecture={l} />
+            <ActiveIntegrationPanel moduleId={l.id} />
           </section>
         ))}
       </div>

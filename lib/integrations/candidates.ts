@@ -15,7 +15,7 @@ import type {
   TrapLink,
 } from './types';
 import { STRENGTH_WEIGHT } from './types';
-import { getNode, sharedTagModules, wikilinkIn, wikilinkOut } from './graph';
+import { crossSubjectCandidates, getNode, sharedTagModules, wikilinkIn, wikilinkOut } from './graph';
 
 // Per-category caps so the panel stays compact.
 export const CAPS: Record<IntegrationType, number> = {
@@ -196,6 +196,17 @@ export function generateCandidateBundle(moduleId: string): ModuleIntegrationBund
     if (!b) continue;
     const { type } = classify(node, b);
     const strength: IntegrationStrength = shared >= 2 ? 'moderate' : 'weak';
+    upsert(byTarget, { targetId: oid, type, strength, reason: reasonFor(type, b), origin: 'tag' });
+  }
+
+  // 5) Cross-subject candidates — connect the concept across blocks/subjects
+  //    (basic-science ↔ clinical = vertical; other years = prerequisite/forward).
+  for (const { id: oid, score } of crossSubjectCandidates(moduleId).slice(0, 8)) {
+    if (byTarget.has(oid)) continue;
+    const b = getNode(oid);
+    if (!b) continue;
+    const { type } = classify(node, b);
+    const strength: IntegrationStrength = score >= 5 ? 'moderate' : 'weak';
     upsert(byTarget, { targetId: oid, type, strength, reason: reasonFor(type, b), origin: 'tag' });
   }
 

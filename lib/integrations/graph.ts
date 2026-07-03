@@ -132,3 +132,75 @@ export function sharedTagModules(id: string): { id: string; shared: number }[] {
 export function getNode(id: string): ModuleNode | undefined {
   return moduleNodes[id];
 }
+
+// --- Cross-subject term index ------------------------------------------------
+// Links related concepts ACROSS subjects/blocks (e.g. an organism → the disease,
+// drug and pathology modules in other subjects). Built from significant terms in
+// the title + tag labels; generic words are dropped so matches are meaningful.
+
+const TERM_STOPWORDS = new Set([
+  'and', 'the', 'for', 'with', 'from', 'into', 'over', 'under', 'vs',
+  'disease', 'diseases', 'disorder', 'disorders', 'syndrome', 'syndromes',
+  'acute', 'chronic', 'clinical', 'overview', 'introduction', 'intro', 'basic',
+  'human', 'system', 'systems', 'mechanism', 'mechanisms', 'approach', 'management',
+  'principles', 'general', 'other', 'part', 'type', 'types', 'cell', 'cells',
+  'tract', 'function', 'functions', 'used', 'related', 'common', 'primary',
+]);
+
+function terms(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/[\s-]+/)
+    .filter((w) => w.length >= 4 && !TERM_STOPWORDS.has(w));
+}
+
+function moduleTerms(id: string): Set<string> {
+  const l = lectureById[id];
+  const out = new Set<string>();
+  if (!l) return out;
+  for (const t of terms(l.title)) out.add(t);
+  for (const tag of l.tags) for (const t of terms(tag.label)) out.add(t);
+  return out;
+}
+
+/** term → module ids that carry it (from title + tag labels). */
+export const termIndex: Record<string, string[]> = (() => {
+  const idx: Record<string, Set<string>> = {};
+  for (const l of lectures) {
+    for (const t of moduleTerms(l.id)) (idx[t] ??= new Set()).add(l.id);
+  }
+  return Object.fromEntries(Object.entries(idx).map(([k, v]) => [k, [...v]]));
+})();
+
+/**
+ * Modules in a DIFFERENT subject that share significant terms, ranked by a
+ * rarity-weighted score. A rare shared term (an organism, drug or disease name —
+ * e.g. "staphylococcus", "lupus") counts strongly even alone; generic terms
+ * count little, and near-ubiquitous ones are ignored. This surfaces genuine
+ * cross-block links (organism ↔ disease ↔ drug ↔ pathology) without flooding.
+ */
+export function crossSubjectCandidates(id: string): { id: string; score: number }[] {
+  const node = moduleNodes[id];
+  if (!node) return [];
+  const scores: Record<string, number> = {};
+  const maxWeight: Record<string, number> = {};
+  for (const term of moduleTerms(id)) {
+    const carriers = termIndex[term] ?? [];
+    if (carriers.length > 40) continue; // too generic to be meaningful
+    const weight = carriers.length <= 3 ? 3 : carriers.length <= 8 ? 2 : 1;
+    for (const other of carriers) {
+      if (other === id) continue;
+      const on = moduleNodes[other];
+      if (!on || on.subjectCode === node.subjectCode) continue; // cross-subject only
+      scores[other] = (scores[other] ?? 0) + weight;
+      maxWeight[other] = Math.max(maxWeight[other] ?? 0, weight);
+    }
+  }
+  return Object.entries(scores)
+    // Require score ≥3 AND a specific anchor term (weight ≥2) — kills pure
+    // common-word coincidences while keeping organism/drug/disease-name links.
+    .filter(([oid, s]) => s >= 3 && (maxWeight[oid] ?? 0) >= 2)
+    .map(([oid, score]) => ({ id: oid, score }))
+    .sort((a, b) => b.score - a.score);
+}

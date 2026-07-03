@@ -3,7 +3,12 @@ import { notFound } from 'next/navigation';
 import { lectures, lectureById, lectureSetSlug, subjectOfSource, subjectSlug } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
+import ConceptModeController from '../../../components/concept/ConceptModeController';
+import { getIntegrations } from '../../../lib/integrations/resolve';
+import { buildOnePager } from '../../../lib/concept/modes';
 import { lectureTheme } from '../../../lib/theme';
+
+const INTEGRATION_LABEL = { prerequisite: 'Prereq', forward: 'Forward', vertical: 'Clinical', horizontal: 'Peer' } as const;
 
 export function generateStaticParams() {
   return lectures.map((l) => ({ id: l.id }));
@@ -20,6 +25,14 @@ export default function LecturePage({ params }: { params: { id: string } }) {
 
   const subjectCode = subjectOfSource[l.source];
   const theme = lectureTheme(l.source);
+
+  // OnePager block-integrations, resolved server-side from the Active-Integration
+  // graph (keeps `content` out of the client bundle).
+  const bundle = getIntegrations(l.id);
+  const blockLines = (['prerequisite', 'forward', 'vertical', 'horizontal'] as const).flatMap((k) =>
+    bundle[k].slice(0, 3).map((e) => `${INTEGRATION_LABEL[k]}: ${lectureById[e.targetId]?.title ?? e.targetId}`),
+  );
+  const onePager = buildOnePager(l, blockLines);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
@@ -49,7 +62,9 @@ export default function LecturePage({ params }: { params: { id: string } }) {
         </div>
       </header>
 
-      <LectureBody lecture={l} />
+      <ConceptModeController lecture={l} onePager={onePager}>
+        <LectureBody lecture={l} />
+      </ConceptModeController>
 
       <ActiveIntegrationPanel moduleId={l.id} />
 

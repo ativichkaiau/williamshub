@@ -113,3 +113,114 @@ model RepairRecommendation {
 
   @@index([moduleId])
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// WilliamsHub Upgrade — concept preferences, repair queue & WilliamsPod telemetry.
+// Still a documented, NON-wired future mirror. The static app stores these in
+// localStorage (lib/concept, lib/repair, lib/sync). A future WilliamsSync backend
+// would use these tables to sync across devices/users.
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum ConceptDepth {
+  quick_review
+  standard
+  mechanism
+  clinical
+  trap
+  teaching
+  onepager
+}
+
+enum ErrorType {
+  recall_error
+  mechanism_error
+  frame_error
+  trap_error
+  overthinking_error
+  timing_error
+  confidence_error
+  integration_error
+}
+
+enum RepairPriority {
+  low
+  medium
+  high
+  critical
+}
+
+enum RepairReason {
+  missed_high_yield
+  weak_mechanism
+  misread_question_frame
+  fell_for_distractor
+  second_guessed
+  ran_out_of_time
+  low_confidence
+  missed_cross_link
+  other
+}
+
+/// A user's concept-depth preference (global, or per-module override).
+model UserConceptPreference {
+  id        String       @id @default(cuid())
+  userId    String
+  moduleId  String? // null = global default
+  mode      ConceptDepth
+  updatedAt DateTime     @updatedAt
+
+  @@unique([userId, moduleId])
+  @@index([userId])
+}
+
+/// A personalised repair recommendation from a WilliamsPod mistake.
+model RepairQueueItem {
+  id                String         @id @default(cuid())
+  userId            String
+  moduleId          String
+  lectureId         String
+  subjectId         String
+  reason            RepairReason
+  errorType         ErrorType
+  priority          RepairPriority
+  recommendedAction String
+  sourceQuestionId  String?
+  createdAt         DateTime       @default(now())
+  completedAt       DateTime?
+
+  @@index([userId])
+  @@index([moduleId])
+}
+
+/// One answered question from a WilliamsPod session (raw telemetry).
+model PodQuestionResult {
+  id         String    @id @default(cuid())
+  userId     String
+  sessionId  String
+  questionId String
+  moduleId   String
+  lectureId  String
+  subjectId  String
+  correct    Boolean
+  errorType  ErrorType?
+  timeMs     Int?
+  confidence Float?
+  createdAt  DateTime  @default(now())
+
+  @@index([userId, sessionId])
+  @@index([moduleId])
+}
+
+/// Aggregate performance per module (weak-module surfacing / trends).
+model QuestionPerformanceSummary {
+  id             String     @id @default(cuid())
+  userId         String
+  moduleId       String
+  attempts       Int
+  correct        Int
+  accuracy       Float
+  commonErrorType ErrorType?
+  updatedAt      DateTime   @updatedAt
+
+  @@unique([userId, moduleId])
+}

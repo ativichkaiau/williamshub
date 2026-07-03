@@ -17,9 +17,12 @@ export default function Header() {
         <nav className="flex items-center gap-3 text-sm sm:gap-4">
           <span className="hidden text-slate-500 dark:text-slate-400 sm:inline">PhysioHub</span>
           <span className="hidden text-slate-300 dark:text-slate-600 sm:inline">|</span>
-          <span className="hidden text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 sm:inline">
-            Mode
-          </span>
+          <Link
+            href="/repair"
+            className="text-xs font-semibold uppercase tracking-wider text-slate-500 transition hover:text-rose-500 dark:text-slate-400 dark:hover:text-rose-400"
+          >
+            Repair
+          </Link>
           <ThemeToggle />
         </nav>
       </div>

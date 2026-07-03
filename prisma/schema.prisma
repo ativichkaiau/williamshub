@@ -1,0 +1,115 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// OPTIONAL / FUTURE BACKEND — NOT USED BY THE RUNNING APP.
+//
+// WilliamsHub is intentionally static and zero-backend: lecture content and the
+// Active-Integration graph are typed TypeScript objects (see lib/integrations/*)
+// resolved at build time, with personal data in localStorage. There is no live
+// database, and `@prisma/client` is deliberately NOT a dependency.
+//
+// This schema is provided as a documented, ready-to-adopt mirror of the
+// integration data model (lib/integrations/types.ts) IF the project ever grows a
+// server (e.g. Supabase Postgres) for shared/multi-user integration authoring.
+// To adopt: add prisma + @prisma/client, set DATABASE_URL, run `prisma migrate`.
+// Until then this file has zero effect on the static build.
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum IntegrationType {
+  prerequisite
+  forward
+  horizontal
+  vertical
+  trap
+  repair
+}
+
+enum IntegrationStrength {
+  weak
+  moderate
+  strong
+  critical
+}
+
+enum IntegrationOrigin {
+  wikilink
+  curriculum
+  tag
+  trap
+  ai
+  manual
+}
+
+/// A module node in the knowledge graph (mirrors lib/integrations ModuleNode).
+model ModuleNode {
+  id          String  @id // matches the Lecture id, e.g. 'aortic-dissection'
+  title       String
+  system      String
+  source      String
+  subjectCode String?
+  subjectName String?
+  year        Int?
+  lectureNo   Int?
+  foundational Boolean @default(false)
+
+  outgoing    ModuleIntegration[] @relation("source")
+  incoming    ModuleIntegration[] @relation("target")
+  traps       TrapLink[]
+  repairs     RepairRecommendation[] @relation("repairOwner")
+  repairOf    RepairRecommendation[] @relation("repairTarget")
+}
+
+/// A directed edge between two modules (mirrors ModuleIntegration).
+model ModuleIntegration {
+  id        String              @id @default(cuid())
+  sourceId  String
+  targetId  String
+  type      IntegrationType
+  strength  IntegrationStrength
+  origin    IntegrationOrigin
+  reason    String
+
+  source    ModuleNode @relation("source", fields: [sourceId], references: [id], onDelete: Cascade)
+  target    ModuleNode @relation("target", fields: [targetId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceId, targetId, type])
+  @@index([sourceId])
+  @@index([targetId])
+}
+
+/// An exam trap tied to a module (mirrors TrapLink).
+model TrapLink {
+  id               String  @id @default(cuid())
+  moduleId         String
+  questionCategory String
+  wrongInstinct    String
+  rightAnswer      String
+  discriminator    String
+  relatedModuleId  String?
+
+  module           ModuleNode @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+
+  @@index([moduleId])
+}
+
+/// "If you miss questions about X, review module Y" (mirrors RepairRecommendation).
+model RepairRecommendation {
+  id        String              @id @default(cuid())
+  moduleId  String // the module the recommendation is shown on
+  targetId  String // the module to review
+  trigger   String
+  reason    String
+  strength  IntegrationStrength
+
+  module    ModuleNode @relation("repairOwner", fields: [moduleId], references: [id], onDelete: Cascade)
+  target    ModuleNode @relation("repairTarget", fields: [targetId], references: [id], onDelete: Cascade)
+
+  @@index([moduleId])
+}

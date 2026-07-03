@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { lectures, lectureById, lectureSetSlug, subjectOfSource, subjectSlug } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
+import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import { lectureTheme } from '../../../lib/theme';
 
 export function generateStaticParams() {
@@ -49,6 +50,8 @@ export default function LecturePage({ params }: { params: { id: string } }) {
       </header>
 
       <LectureBody lecture={l} />
+
+      <ActiveIntegrationPanel moduleId={l.id} />
 
       <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite

@@ -1,5 +1,6 @@
 import RepairQueuePanel from '../../components/repair/RepairQueuePanel';
 import RepairSyncDemo from '../../components/repair/RepairSyncDemo';
+import PodConnectPanel from '../../components/repair/PodConnectPanel';
 
 export const metadata = { title: 'Repair Queue — WilliamsHub' };
 
@@ -15,6 +16,8 @@ export default function RepairPage() {
           error type — each links back to the module and the recommended repair action.
         </p>
       </header>
+
+      <PodConnectPanel />
 
       <RepairQueuePanel />
 

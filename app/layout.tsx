@@ -3,9 +3,9 @@ import './globals.css';
 import Header from '../components/Header';
 
 export const metadata: Metadata = {
-  title: 'WilliamsHub — M-8 · VESTRIPPN3.0',
+  title: 'WilliamsHub — Round M-8 · VESTRIPPN3.0',
   description:
-    'High-yield, mechanism-driven, exam-focused lecture pages built from MedCMU lectures. A VESTRIPPN satellite.',
+    'Pit-wall telemetry for MedCMU lectures — high-yield, mechanism-driven, exam-focused. A VESTRIPPN satellite running the FW15C line.',
 };
 
 // Applied before paint to avoid a flash of the wrong theme.

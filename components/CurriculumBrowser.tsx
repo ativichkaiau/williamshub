@@ -42,7 +42,7 @@ export default function CurriculumBrowser({
               onClick={() => setActive(y.year)}
               className={`clay-pill px-4 py-2 text-sm font-bold transition active:translate-y-px ${
                 isActive
-                  ? 'text-emerald-600 dark:text-emerald-400'
+                  ? 'text-[#1e5bd6] dark:text-[#7AA0FF]'
                   : 'text-slate-500 dark:text-slate-400'
               }`}
             >
@@ -67,14 +67,14 @@ export default function CurriculumBrowser({
               className="clay group flex flex-col p-4 transition hover:-translate-y-1"
             >
               <div className="flex items-center justify-between">
-                <span className="clay-pill px-2 py-0.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                <span className="clay-pill px-2 py-0.5 text-xs font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">
                   {s.code}
                 </span>
-                <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                <span className="text-[11px] font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">
                   {s.count} lecture{s.count === 1 ? '' : 's'} · {s.modules} modules →
                 </span>
               </div>
-              <span className="mt-2 text-sm font-bold text-slate-900 transition group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-400">
+              <span className="mt-2 text-sm font-bold text-slate-900 transition group-hover:text-[#1e5bd6] dark:text-white dark:group-hover:text-[#7AA0FF]">
                 {s.name}
               </span>
             </Link>

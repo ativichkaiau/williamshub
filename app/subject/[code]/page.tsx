@@ -83,11 +83,12 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         href="/"
         className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
       >
-        ← All years &amp; blocks
+        ← Back to the grid
       </Link>
 
       <header className="mb-8 mt-4">
-        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-emerald-600 dark:text-emerald-400">
+        <div className="livery-stripe mb-4 h-1 w-full rounded-full" />
+        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">
           <span className="clay-pill px-2 py-0.5">{subject.code}</span>
           <span className="text-slate-400">Year {subject.year}</span>
         </div>
@@ -138,7 +139,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
       ))}
 
       <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
+        WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>
   );

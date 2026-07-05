@@ -55,7 +55,7 @@ export default function BlockBrowser({
               className={`rounded-xl px-4 py-2 text-sm font-bold transition active:translate-y-px ${
                 isActive
                   ? o.key === 'williamshub'
-                    ? 'clay text-emerald-600 dark:text-emerald-400'
+                    ? 'clay text-[#1e5bd6] dark:text-[#7AA0FF]'
                     : 'clay text-sky-600 dark:text-sky-400'
                   : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200'
               }`}

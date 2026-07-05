@@ -60,7 +60,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
       <ActiveIntegrationPanel moduleId={l.id} />
 
       <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
+        WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>
   );

@@ -5,7 +5,7 @@
 export function WilliamsHubMark({ size = 40, className = '' }: { size?: number; className?: string }) {
   return (
     <span
-      className={`clay-node inline-flex shrink-0 items-center justify-center ${className}`}
+      className={`clay-node relative inline-flex shrink-0 items-center justify-center overflow-hidden ${className}`}
       style={{
         width: size,
         height: size,
@@ -24,6 +24,11 @@ export function WilliamsHubMark({ size = 40, className = '' }: { size?: number; 
           strokeLinecap="butt"
         />
       </svg>
+      {/* FW15C nose stripe */}
+      <span
+        className="livery-stripe pointer-events-none absolute inset-x-0 bottom-0"
+        style={{ height: Math.max(2, Math.round(size * 0.08)) }}
+      />
     </span>
   );
 }

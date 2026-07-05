@@ -82,7 +82,7 @@ export default function OnePagerBrowser({
                     {studied ? (
                       <Link
                         href={`/subject/${s.code.toLowerCase()}`}
-                        className="shrink-0 text-[11px] font-bold text-emerald-600 transition hover:underline dark:text-emerald-400"
+                        className="shrink-0 text-[11px] font-bold text-[#1e5bd6] transition hover:underline dark:text-[#7AA0FF]"
                       >
                         Study →
                       </Link>
@@ -96,7 +96,7 @@ export default function OnePagerBrowser({
       </div>
 
       <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">
-        OnePagers open in Google Drive. Subjects tagged <span className="font-bold text-emerald-600 dark:text-emerald-400">Study →</span> also have interactive WilliamsHub lectures.
+        OnePagers open in Google Drive. Subjects tagged <span className="font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">Study →</span> also have interactive WilliamsHub lectures.
       </p>
     </div>
   );

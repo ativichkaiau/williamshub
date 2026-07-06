@@ -3,9 +3,17 @@ import './globals.css';
 import Header from '../components/Header';
 
 export const metadata: Metadata = {
-  title: 'WilliamsHub — Round M-8 · VESTRIPPN3.0',
+  title: 'WilliamsHub — Study OS',
   description:
     'Pit-wall telemetry for MedCMU lectures — high-yield, mechanism-driven, exam-focused. A VESTRIPPN satellite running the FW15C line.',
+  icons: {
+    // The WilliamsHub W-mark. SVG first (crisp on modern Safari), PNG fallback.
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', type: 'image/png', sizes: '96x96' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
+  },
 };
 
 // Applied before paint to avoid a flash of the wrong theme.

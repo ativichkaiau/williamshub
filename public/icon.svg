@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="WilliamsHub">
+  <defs>
+    <linearGradient id="wm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E5BFF"/>
+      <stop offset="1" stop-color="#0A1A7A"/>
+    </linearGradient>
+    <clipPath id="wm-clip"><rect width="64" height="64" rx="15"/></clipPath>
+  </defs>
+  <g clip-path="url(#wm-clip)">
+    <rect width="64" height="64" fill="url(#wm-bg)"/>
+    <!-- angular Williams-style W -->
+    <path d="M15 16 L24 47 L32 29 L40 47 L49 16" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="miter"/>
+    <!-- FW15C nose stripe: Williams navy / Canon red / Camel yellow -->
+    <rect x="0" y="54" width="37" height="10" fill="#0a2472"/>
+    <rect x="37" y="54" width="13" height="10" fill="#e4002b"/>
+    <rect x="50" y="54" width="14" height="10" fill="#ffcc00"/>
+  </g>
+</svg>

@@ -38,10 +38,10 @@ const STRENGTH_BADGE: Record<IntegrationStrength, string> = {
 };
 
 const STRENGTH_LINE: Record<IntegrationStrength, { w: number; o: number }> = {
-  critical: { w: 3.2, o: 0.9 },
-  strong: { w: 2.4, o: 0.72 },
-  moderate: { w: 1.6, o: 0.52 },
-  weak: { w: 1, o: 0.38 },
+  critical: { w: 4, o: 0.95 },
+  strong: { w: 3, o: 0.85 },
+  moderate: { w: 2.2, o: 0.7 },
+  weak: { w: 1.5, o: 0.55 },
 };
 
 // ── shared bits ──────────────────────────────────────────────────────────────
@@ -240,6 +240,13 @@ function MapView({ view }: { view: ModuleGraphView }) {
       <p className="mt-3 min-h-[1.25rem] text-center text-xs text-slate-500 dark:text-slate-400">
         {hoveredReason ?? 'Hover a node to see how it connects · click to open the module.'}
       </p>
+
+      {view.traps.length > 0 || view.repair.length > 0 ? (
+        <div className="mt-4 grid gap-4 border-t border-black/5 pt-4 dark:border-white/10 sm:grid-cols-2">
+          <TrapSection traps={view.traps} />
+          <RepairSection items={view.repair} />
+        </div>
+      ) : null}
     </div>
   );
 }

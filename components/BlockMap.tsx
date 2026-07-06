@@ -64,9 +64,9 @@ export default function BlockMap({ view }: { view: BlockGraphView }) {
               const pb = pos.get(e.b);
               if (!pa || !pb) return null;
               const touches = hover && (e.a === hover || e.b === hover);
-              const w = 1.2 + 4 * (e.weight / maxW);
+              const w = 1.8 + 4.5 * (e.weight / maxW);
               const stroke = touches ? '#ffcc00' : '#2e5bff';
-              const opacity = hover ? (touches ? 0.95 : 0.05) : 0.16 + 0.34 * (e.weight / maxW);
+              const opacity = hover ? (touches ? 0.98 : 0.05) : 0.3 + 0.42 * (e.weight / maxW);
               return (
                 <line
                   key={i}

@@ -8,6 +8,8 @@ import {
   partOfSource,
 } from '../../../content';
 import { lectureTheme } from '../../../lib/theme';
+import { buildBlockGraph } from '../../../lib/integrations/graphView';
+import BlockMap from '../../../components/BlockMap';
 import type { Lecture } from '../../../lib/types';
 
 export function generateStaticParams() {
@@ -56,6 +58,8 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
   const items = lecturesBySubject[subject.code] ?? [];
   if (items.length === 0) notFound();
 
+  const block = buildBlockGraph(subject.code);
+
   // Group this subject's lectures by source (L1 → L9).
   const groups = items.reduce<Record<string, Lecture[]>>((acc, l) => {
     (acc[l.source] ??= []).push(l);
@@ -100,6 +104,23 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           opens as a whole-lecture scroll.
         </p>
       </header>
+
+      {block.nodes.length >= 2 && block.hasEdges ? (
+        <section className="clay clay-surface mb-8 p-5">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+                Block map
+              </h2>
+            </div>
+            <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+              how the lectures connect
+            </span>
+          </div>
+          <BlockMap view={block} />
+        </section>
+      ) : null}
 
       {partedGroups.map((group) => (
         <div key={group.part ?? '_'}>

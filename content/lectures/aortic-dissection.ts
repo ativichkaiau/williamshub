@@ -18,7 +18,7 @@ export const aorticDissection: Lecture = {
   highYield: [
     'Blood enters and tracks along the **media** via an **intimal tear** (or vasa-vasorum rupture → intramural hematoma).',
     'Etiology: **>90% hypertension** (men 40–60); **<10% connective-tissue** (Marfan, familial TAA).',
-    '**Sudden, severe, tearing chest pain radiating to the back.**',
+    'Sudden, severe, tearing chest pain radiating to the back.',
     'Stanford **A = ascending** (surgical emergency); **B = descending only** (often medical if uncomplicated).',
     'Ascending → aortic root → **acute aortic regurgitation (early diastolic murmur)**; rupture into pericardium → **tamponade**.',
   ],

@@ -20,7 +20,7 @@ export const stemiLocalization: Lecture = {
     '**Anterior V1–V4 (LAD)** · **Septal V1–V2** · **Lateral V5–V6, I, aVL** · **Inferior II, III, aVF (RCA/LCx)** · **Posterior V7–V9** · **RV V3R–V4R**.',
     '**Inferior STEMI → get right-sided leads (V4R)** to catch RV involvement.',
     'Reciprocal change (ST depression in the opposite wall) supports STEMI over mimics.',
-    '**New LBBB + ischemic symptoms = STEMI-equivalent.**',
+    'New LBBB + ischemic symptoms = STEMI-equivalent.',
   ],
 
   mechanism: {

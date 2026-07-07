@@ -20,7 +20,7 @@ export const aedsPrinciplesTargets: Lecture = {
     'AEDs reduce firing by **(1) blocking voltage-gated ion channels, (2) suppressing excitatory (glutamate) transmission, (3) enhancing inhibitory (GABA) transmission**.',
     'Seizure types: **focal**; **generalized** — **absence (petit mal)** and **tonic-clonic (grand mal)**; **status epilepticus** (continuous — a medical emergency).',
     '**Status epilepticus first-line = benzodiazepine** (lorazepam/diazepam/midazolam), then load a long-acting agent (phenytoin/valproate/levetiracetam).',
-    '**Absence seizures: use ethosuximide, valproate, lamotrigine, levetiracetam; AVOID (they worsen absence) carbamazepine, phenytoin, phenobarbital, vigabatrin, tiagabine, gabapentin, pregabalin.**',
+    'Absence seizures: use ethosuximide, valproate, lamotrigine, levetiracetam; AVOID (they worsen absence) carbamazepine, phenytoin, phenobarbital, vigabatrin, tiagabine, gabapentin, pregabalin.',
   ],
 
   mechanism: {

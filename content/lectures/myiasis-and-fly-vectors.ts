@@ -14,10 +14,10 @@ export const myiasisAndFlyVectors: Lecture = {
   ],
 
   highYield: [
-    '**Flies (order Diptera) harm human health in three ways: as MECHANICAL vectors of enteric pathogens, as BIOLOGICAL vectors (blood-sucking flies — see [[bloodsucking-fly-vectors]]), and directly through MYIASIS (infestation of tissue by fly LARVAE/maggots).**',
+    'Flies (order Diptera) harm human health in three ways: as MECHANICAL vectors of enteric pathogens, as BIOLOGICAL vectors (blood-sucking flies — see [[bloodsucking-fly-vectors]]), and directly through MYIASIS (infestation of tissue by fly LARVAE/maggots).',
     '**The common HOUSEFLY (Musca domestica) is a MECHANICAL vector: it feeds on faeces and food and carries enteric pathogens (bacteria, viruses, protozoan cysts, helminth eggs) on its body and mouthparts — spreading diarrhoeal disease, typhoid and more.** It does not transmit a parasite that develops in it; sanitation and food hygiene control it.',
-    '**MYIASIS is the infestation of living tissue by fly larvae. It is classified by site (cutaneous/furuncular, wound, cavity — nasal/aural/ocular, or intestinal) and by the fly\'s dependence: OBLIGATE myiasis (larvae require living tissue — e.g. screwworm) versus FACULTATIVE (larvae normally feed on dead tissue/carrion but can invade wounds).**',
-    '**Cutaneous (furuncular) myiasis presents as a boil-like nodule with a central pore through which the larva breathes (and sometimes moves) — treatment is to occlude the pore/extract the larva. Wound myiasis colonises neglected wounds; some larvae (obligate screwworm) invade healthy tissue and can be destructive.**',
+    'MYIASIS is the infestation of living tissue by fly larvae. It is classified by site (cutaneous/furuncular, wound, cavity — nasal/aural/ocular, or intestinal) and by the fly\'s dependence: OBLIGATE myiasis (larvae require living tissue — e.g. screwworm) versus FACULTATIVE (larvae normally feed on dead tissue/carrion but can invade wounds).',
+    'Cutaneous (furuncular) myiasis presents as a boil-like nodule with a central pore through which the larva breathes (and sometimes moves) — treatment is to occlude the pore/extract the larva. Wound myiasis colonises neglected wounds; some larvae (obligate screwworm) invade healthy tissue and can be destructive.',
     '**High-yield: housefly = mechanical vector of enteric disease (hygiene); myiasis = fly-larva infestation of tissue (furuncular boil with a breathing pore, or wound/cavity forms).** Flies sit within medical entomology ([[medical-entomology-vectors]]); the blood-sucking biological-vector flies (sandfly, tsetse, blackfly) are covered separately in [[bloodsucking-fly-vectors]].',
   ],
 

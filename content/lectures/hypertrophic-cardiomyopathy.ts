@@ -18,7 +18,7 @@ export const hypertrophicCardiomyopathy: Lecture = {
     '**Genetic** (AD), **sarcomere gene** mutations — **β-myosin heavy chain & myosin-binding protein C** most common; ~1 in 500.',
     '**LV hypertrophy without dilation** → **diastolic dysfunction** (poor compliance); EF preserved/high.',
     '**Asymmetric septal hypertrophy (90%)**; ⅓ have **LVOT obstruction (HOCM)** with **systolic anterior motion (SAM)** of the mitral leaflet → **harsh mid-systolic ejection murmur**.',
-    '**Most common cause of sudden cardiac death in young people / athletes.**',
+    'Most common cause of sudden cardiac death in young people / athletes.',
     'Micro: **myofiber disarray** + interstitial fibrosis.',
   ],
 

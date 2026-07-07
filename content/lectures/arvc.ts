@@ -17,7 +17,7 @@ export const arvc: Lecture = {
   highYield: [
     'Inherited (**AD, variable penetrance**); **desmosomal protein mutations** (e.g. plakoglobin) at the intercalated disk.',
     'Predominantly **right ventricle**; myocyte loss with **fibrofatty replacement**.',
-    '**Ventricular arrhythmias (VT/VF) → sudden death in young people / athletes.**',
+    'Ventricular arrhythmias (VT/VF) → sudden death in young people / athletes.',
     '**Naxos syndrome**: ARVC + **palmoplantar hyperkeratosis + woolly hair**.',
     'Prevalence ~1 per 5,000.',
   ],

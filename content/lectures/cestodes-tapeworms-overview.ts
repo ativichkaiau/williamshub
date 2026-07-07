@@ -14,7 +14,7 @@ export const cestodesTapewormsOverview: Lecture = {
   ],
 
   highYield: [
-    '**Cestodes (tapeworms) are flat, segmented flatworms with a scolex (attachment head) and no gut. The crucial distinction is whether humans harbour the ADULT (intestinal) tapeworm or the LARVAL cyst (tissue disease) — larval disease is far more dangerous.**',
+    'Cestodes (tapeworms) are flat, segmented flatworms with a scolex (attachment head) and no gut. The crucial distinction is whether humans harbour the ADULT (intestinal) tapeworm or the LARVAL cyst (tissue disease) — larval disease is far more dangerous.',
     '**Taenia saginata (beef) and Taenia solium (pork): eating undercooked meat with larval cysts gives an ADULT intestinal tapeworm (mild symptoms). But eating T. solium EGGS (faecal–oral) makes humans the intermediate host → CYSTICERCOSIS, with larval cysts in tissues; NEUROCYSTICERCOSIS is a leading cause of adult-onset SEIZURES** (see [[intestinal-flukes-tapeworms]]).',
     '**Diphyllobothrium latum (the fish tapeworm, from raw freshwater fish — the LARGEST human tapeworm) competes for VITAMIN B12 → megaloblastic (B12-deficiency) anaemia.** Hymenolepis nana (the dwarf tapeworm) is the commonest tapeworm worldwide and can AUTOINFECT (no intermediate host needed).',
     '**LARVAL-CYST zoonoses are the serious cestode diseases: Echinococcus granulosus → HYDATID cysts (dog definitive host; liver/lung cysts that must not be ruptured — anaphylaxis/spread); Spirometra → SPARGANOSIS (migrating larva in tissues).** These are detailed in [[echinococcosis-hydatid]] and [[sparganosis-spirometra]].',

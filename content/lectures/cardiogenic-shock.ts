@@ -17,7 +17,7 @@ export const cardiogenicShock: Lecture = {
   highYield: [
     'Shock = insufficient tissue perfusion; **cardiogenic = the heart cannot pump enough output**.',
     'Hypotension: **SBP <90**, **MAP <60**, or a fall in SBP **>30 mmHg**.',
-    '**CO = HR × SV; MAP = CO × SVR.**',
+    'CO = HR × SV; MAP = CO × SVR.',
     'Causes: **impaired contraction (MI = commonest**, cardiomyopathy, myocarditis, arrhythmia); **impaired outflow** (AS, HCM, PE); **impaired inflow** (MS, cardiac tamponade).',
     'Clinical: **cold, clammy, mottled**, hypotensive, ↓urine output, altered mentation, **↑lactate**.',
   ],

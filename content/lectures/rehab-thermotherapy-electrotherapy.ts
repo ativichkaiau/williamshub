@@ -19,7 +19,7 @@ export const rehabThermotherapyElectrotherapy: Lecture = {
     '**Heat** ↑ blood flow, nerve conduction, collagen extensibility → good for **chronic pain, muscle spasm, stiffness, myofascial pain**. **Contraindicated** in acute trauma/inflammation, ischemia/bleeding disorders, malignancy, and **impaired sensation** (burn risk). Superficial (hot pack, paraffin) vs deep (ultrasound, diathermy).',
     '**Cold (cryotherapy)** → vasoconstriction, ↓ metabolism/inflammation, ↓ nerve conduction → best for **acute injury (first 24–48 h), acute pain, spasticity**. Avoid in **Raynaud/cold hypersensitivity, arterial insufficiency, regenerating nerves**. **Rule: acute → cold; chronic → heat.**',
     '**TENS** relieves pain via the **gate-control theory** (large Aβ fibers) + endogenous opioids (low-frequency). **NMES** stimulates motor contraction → **retards disuse atrophy**. **Iontophoresis** delivers drugs transdermally (dexamethasone, lidocaine).',
-    '**Electrotherapy is contraindicated with pacemakers/cardiac devices, over the pregnant abdomen/pelvis, and over malignancy or thrombosis.**',
+    'Electrotherapy is contraindicated with pacemakers/cardiac devices, over the pregnant abdomen/pelvis, and over malignancy or thrombosis.',
   ],
 
   mechanism: {

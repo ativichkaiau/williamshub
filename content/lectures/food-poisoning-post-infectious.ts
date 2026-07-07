@@ -14,7 +14,7 @@ export const foodPoisoningPostInfectious: Lecture = {
   ],
 
   highYield: [
-    '**"Food poisoning" is best triaged by INCUBATION TIME and symptom type. PREFORMED toxins act within HOURS (the toxin is already in the food): Staphylococcus aureus (1–6 h, dairy/mayonnaise) and Bacillus cereus emetic type (1–6 h, reheated fried rice) cause abrupt VOMITING.**',
+    '"Food poisoning" is best triaged by INCUBATION TIME and symptom type. PREFORMED toxins act within HOURS (the toxin is already in the food): Staphylococcus aureus (1–6 h, dairy/mayonnaise) and Bacillus cereus emetic type (1–6 h, reheated fried rice) cause abrupt VOMITING.',
     '**Toxin produced IN VIVO acts over ~8–16 h: Clostridium perfringens (reheated meats) and Bacillus cereus diarrhoeal type cause watery diarrhoea and cramps.** Longer incubations (>16 h to days) suggest invasive organisms (Salmonella, Campylobacter, Shigella) or, for very short vomiting, preformed toxins — the timeline narrows the culprit.',
     '**Persistent/recurrent patterns: Enteroaggregative E. coli (EAEC) is a cause of PERSISTENT diarrhoea (travellers, children) — treated with fluoroquinolones or rifaximin; and recurrent Clostridioides difficile is an important cause of relapsing colitis** (may need faecal microbiota transplant). C. difficile spores are hardy and germinate after antibiotics disrupt the flora.',
     '**Post-infectious sequelae to know (especially after Campylobacter): Guillain–Barré syndrome (ascending demyelinating paralysis), reactive arthritis (part of the "can\'t see, can\'t pee, can\'t climb a tree" triad), and post-infectious irritable bowel syndrome.** These occur AFTER the acute infection has resolved, via immune mechanisms.',

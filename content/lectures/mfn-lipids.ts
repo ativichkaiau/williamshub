@@ -250,7 +250,7 @@ export const lipoproteinsAtherogenesis = mfnLecture({
   ],
   highYield: [
     '**Chylomicrons (apoB-48)** deliver dietary TAG; remnants return to liver through apoE. **VLDL (apoB-100)** exports hepatic TAG and becomes IDL then LDL.',
-    '**ApoC-II activates lipoprotein lipase; apoE mediates remnant uptake; apoB-100 binds the LDL receptor; apoA-I activates LCAT.**',
+    'ApoC-II activates lipoprotein lipase; apoE mediates remnant uptake; apoB-100 binds the LDL receptor; apoA-I activates LCAT.',
     'LDL delivers cholesterol to tissues by receptor-mediated endocytosis. HDL supports reverse cholesterol transport through ABCA1, LCAT, and hepatic return.',
     'Retained apoB lipoproteins enter the arterial intima, become modified/oxidized, trigger macrophage foam cells and inflammation, and build an atherosclerotic plaque.',
   ],

@@ -1,4 +1,5 @@
 import { lecturesBySubject, subjectByCode, subjectSlug } from '../../content';
+import { keystonesForSubject } from '../../lib/integrations/centrality';
 import StandingsDashboard, { type SubjectMeta } from '../../components/StandingsDashboard';
 
 export const metadata = { title: 'Progress — WilliamsHub' };
@@ -7,7 +8,14 @@ export default function StandingsPage() {
   const subjects: SubjectMeta[] = Object.entries(lecturesBySubject)
     .map(([code, mods]) => {
       const s = subjectByCode[code];
-      return { code, name: s?.name ?? code, slug: subjectSlug(code), year: s?.year ?? 0, total: mods.length };
+      return {
+        code,
+        name: s?.name ?? code,
+        slug: subjectSlug(code),
+        year: s?.year ?? 0,
+        total: mods.length,
+        keystones: keystonesForSubject(code, 3).map((k) => ({ id: k.id, title: k.title })),
+      };
     })
     .sort((a, b) => a.year - b.year || a.code.localeCompare(b.code));
 

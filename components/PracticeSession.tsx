@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { recordQuizAnswer } from '../lib/user/activity';
 import { addRepairItems, makeRepairItem } from '../lib/repair/store';
+import { getWeakModules, intersectsWeak } from '../lib/user/weakness';
 import type { ErrorType } from '../lib/repair/types';
 import type { BankQuestion, QuestionKind } from '../lib/questions/types';
 
@@ -32,6 +33,22 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+// Bias the sample toward the links you actually miss: integration questions that
+// bridge a weak module float to the front, then questions touching any weak
+// module, then everything else — with a random jitter so it still varies run to
+// run. With no weak signal this degrades to a plain shuffle.
+function weightedDeck(questions: BankQuestion[], size: number, weak: Set<string>): BankQuestion[] {
+  const scored = questions.map((q) => {
+    let w = Math.random();
+    const bridgesWeak = intersectsWeak(q.linkedModuleIds, weak);
+    if (q.kind === 'integration' && bridgesWeak) w += 2;
+    else if (bridgesWeak || weak.has(q.moduleId)) w += 1;
+    return { q, w };
+  });
+  scored.sort((a, b) => b.w - a.w);
+  return scored.slice(0, size).map((s) => s.q);
+}
+
 export default function PracticeSession({
   questions,
   title,
@@ -46,8 +63,12 @@ export default function PracticeSession({
   const [nonce, setNonce] = useState(0);
   const sessionSize = Math.min(20, questions.length);
   const [deck, setDeck] = useState<BankQuestion[]>(() => questions.slice(0, sessionSize));
+  const [weakBias, setWeakBias] = useState(0);
   useEffect(() => {
-    setDeck(shuffle(questions).slice(0, sessionSize));
+    const weak = getWeakModules();
+    const next = weak.size > 0 ? weightedDeck(questions, sessionSize, weak) : shuffle(questions).slice(0, sessionSize);
+    setDeck(next);
+    setWeakBias(next.filter((q) => intersectsWeak(q.linkedModuleIds, weak) || weak.has(q.moduleId)).length);
   }, [questions, nonce, sessionSize]);
   const [i, setI] = useState(0);
   const [chosen, setChosen] = useState<Record<string, string>>({});
@@ -176,6 +197,16 @@ export default function PracticeSession({
             This run is {deck.length} questions sampled from a {questions.length.toLocaleString()}-question pool.
           </span>
           <span className="font-semibold text-[#1e5bd6] dark:text-[#7AA0FF]">Restart reshuffles the pool.</span>
+        </div>
+      ) : null}
+
+      {weakBias > 0 ? (
+        <div className="mb-4 flex items-center gap-2 rounded-xl bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-700 dark:text-amber-300">
+          <span aria-hidden>◍</span>
+          <span>
+            Tuned to your weak links — {weakBias} of {deck.length} question{deck.length === 1 ? '' : 's'} target modules
+            you’ve been missing.
+          </span>
         </div>
       ) : null}
 

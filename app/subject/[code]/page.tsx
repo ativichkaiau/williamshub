@@ -9,6 +9,7 @@ import {
 } from '../../../content';
 import { lectureTheme } from '../../../lib/theme';
 import { buildBlockGraph } from '../../../lib/integrations/graphView';
+import { keystonesForSubject } from '../../../lib/integrations/centrality';
 import BlockMap from '../../../components/BlockMap';
 import type { Lecture } from '../../../lib/types';
 
@@ -59,6 +60,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
   if (items.length === 0) notFound();
 
   const block = buildBlockGraph(subject.code);
+  const keystones = keystonesForSubject(subject.code, 4);
 
   // Group this subject's lectures by source (L1 → L9).
   const groups = items.reduce<Record<string, Lecture[]>>((acc, l) => {
@@ -125,6 +127,49 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
             </span>
           </div>
           <BlockMap view={block} />
+        </section>
+      ) : null}
+
+      {keystones.length > 0 ? (
+        <section className="clay clay-surface mb-8 p-5">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+                Keystone concepts
+              </h2>
+            </div>
+            <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+              study these first
+            </span>
+          </div>
+          <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+            The most connected modules in this block — the hubs the rest lean on.
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {keystones.map((k, i) => (
+              <Link
+                key={k.id}
+                href={`/lecture/${k.id}`}
+                className="clay-node clay-surface flex items-center gap-3 px-3 py-2.5 transition hover:-translate-y-0.5"
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ffcc00]/20 text-xs font-black text-[#8a6d00] dark:text-[#ffcc00]">
+                  {i + 1}
+                </span>
+                <span className="min-w-0 flex-1 truncate text-sm font-bold text-slate-900 dark:text-white">
+                  {k.title}
+                </span>
+                {k.inbound > 0 ? (
+                  <span
+                    className="shrink-0 text-[10px] font-semibold text-slate-400"
+                    title={`${k.inbound} module${k.inbound === 1 ? '' : 's'} link here`}
+                  >
+                    ◈ {k.inbound}
+                  </span>
+                ) : null}
+              </Link>
+            ))}
+          </div>
         </section>
       ) : null}
 

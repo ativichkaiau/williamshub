@@ -12,6 +12,7 @@ export interface SubjectMeta {
   slug: string;
   year: number;
   total: number;
+  keystones?: { id: string; title: string }[];
 }
 
 interface Entry {
@@ -191,6 +192,15 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
     );
   }
 
+  // Keystones from the blocks that need you most: rank by open repairs, then by
+  // how little you've covered. Combines build-time centrality with live telemetry.
+  const focus = rows
+    .filter((r) => (r.keystones?.length ?? 0) > 0)
+    .map((r) => ({ r, need: r.repairs * 3 + (100 - r.pct) / 20 }))
+    .sort((a, b) => b.need - a.need)
+    .slice(0, 3)
+    .map((x) => x.r);
+
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -199,6 +209,45 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
         <StatTile icon="🔧" value={`${t.repairs}`} label="Open repairs" sub="repair queue" accent={t.repairs > 0 ? 'red' : undefined} />
         <StatTile icon="⭐" value={`${t.garage}`} label="Saved" sub="starred" />
       </div>
+
+      {focus.length > 0 ? (
+        <section className="clay clay-surface p-5">
+          <div className="mb-1 flex items-center gap-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
+            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+              Study these first
+            </h2>
+          </div>
+          <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+            Keystone modules from the blocks that need you most — the hubs the rest of each block leans on.
+          </p>
+          <div className="space-y-3">
+            {focus.map((r) => (
+              <div key={r.code}>
+                <div className="mb-1.5 flex items-center gap-2 text-xs">
+                  <Link href={`/subject/${r.slug}`} className="font-bold text-slate-700 hover:text-[#1e5bd6] dark:text-slate-200 dark:hover:text-[#7AA0FF]">
+                    {r.code}
+                  </Link>
+                  <span className="text-slate-400 dark:text-slate-500">
+                    {r.pct}% covered{r.repairs > 0 ? ` · ${r.repairs} repair${r.repairs === 1 ? '' : 's'}` : ''}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {r.keystones!.map((k) => (
+                    <Link
+                      key={k.id}
+                      href={`/lecture/${k.id}`}
+                      className="clay-pill px-2.5 py-1 text-xs font-semibold text-slate-700 transition hover:-translate-y-0.5 dark:text-slate-200"
+                    >
+                      {k.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="clay clay-surface p-5">
         <div className="mb-4 flex items-center justify-between gap-3">

@@ -9,6 +9,7 @@ import type {
   TrapView,
 } from '../lib/integrations/graphView';
 import type { IntegrationStrength } from '../lib/integrations/types';
+import { getWeakModules } from '../lib/user/weakness';
 
 // Active Integration — interactive map + list. Renders from a fully-resolved,
 // serializable view-model (no content imports → tiny client bundle). The map is
@@ -73,16 +74,19 @@ interface Seg {
   y2: number;
   cat: Cat;
   strength: IntegrationStrength;
+  weak: boolean;
 }
 
 function NodeCard({
   edge,
   cat,
   onHover,
+  weak,
 }: {
   edge: EdgeView;
   cat: Cat;
   onHover: (id: string | null) => void;
+  weak: boolean;
 }) {
   return (
     <Link
@@ -90,16 +94,21 @@ function NodeCard({
       data-node={edge.id}
       data-cat={cat}
       data-strength={edge.strength}
+      data-weak={weak ? '1' : undefined}
       onMouseEnter={() => onHover(edge.id)}
       onMouseLeave={() => onHover(null)}
       onFocus={() => onHover(edge.id)}
       onBlur={() => onHover(null)}
-      className="clay-node clay-surface group/node flex max-w-[15rem] items-center gap-1.5 px-2.5 py-1.5 transition hover:-translate-y-0.5"
+      title={weak ? 'A weak spot for you — this link is worth drilling' : undefined}
+      className={`clay-node clay-surface group/node flex max-w-[15rem] items-center gap-1.5 px-2.5 py-1.5 transition hover:-translate-y-0.5 ${
+        weak ? 'ring-2 ring-amber-400/80 dark:ring-amber-400/70' : ''
+      }`}
     >
-      <span className={`h-2 w-2 shrink-0 rounded-full ${CAT[cat].dot}`} />
+      <span className={`h-2 w-2 shrink-0 rounded-full ${weak ? 'bg-amber-500' : CAT[cat].dot}`} />
       <span className="truncate text-xs font-semibold text-slate-800 group-hover/node:text-slate-950 dark:text-slate-100 dark:group-hover/node:text-white">
         {edge.title}
       </span>
+      {weak ? <span className="shrink-0 text-[11px]" aria-label="weak spot">◍</span> : null}
       <SubjectChip code={edge.subjectCode} />
     </Link>
   );
@@ -110,11 +119,13 @@ function Group({
   edges,
   layout,
   onHover,
+  weak,
 }: {
   cat: Cat;
   edges: EdgeView[];
   layout: 'band' | 'column';
   onHover: (id: string | null) => void;
+  weak: Set<string>;
 }) {
   if (edges.length === 0) return null;
   const align = cat === 'prerequisite' ? 'sm:items-end' : cat === 'forward' ? 'sm:items-start' : 'items-center';
@@ -126,14 +137,14 @@ function Group({
       </div>
       <div className={layout === 'band' ? 'flex flex-wrap justify-center gap-1.5' : 'flex flex-col gap-1.5'}>
         {edges.map((e) => (
-          <NodeCard key={e.id} edge={e} cat={cat} onHover={onHover} />
+          <NodeCard key={e.id} edge={e} cat={cat} onHover={onHover} weak={weak.has(e.id)} />
         ))}
       </div>
     </div>
   );
 }
 
-function MapView({ view }: { view: ModuleGraphView }) {
+function MapView({ view, weak }: { view: ModuleGraphView; weak: Set<string> }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [segs, setSegs] = useState<Seg[]>([]);
   const [dims, setDims] = useState({ w: 0, h: 0 });
@@ -162,6 +173,7 @@ function MapView({ view }: { view: ModuleGraphView }) {
           y2: r.top + r.height / 2 - cRect.top,
           cat: (el.getAttribute('data-cat') as Cat) ?? 'horizontal',
           strength: (el.getAttribute('data-strength') as IntegrationStrength) ?? 'weak',
+          weak: el.getAttribute('data-weak') === '1',
         });
       });
       setSegs(next);
@@ -195,27 +207,40 @@ function MapView({ view }: { view: ModuleGraphView }) {
               const on = hovered === s.id;
               const line = STRENGTH_LINE[s.strength];
               return (
-                <line
-                  key={s.id}
-                  x1={s.x1}
-                  y1={s.y1}
-                  x2={s.x2}
-                  y2={s.y2}
-                  stroke={CAT[s.cat].stroke}
-                  strokeWidth={on ? line.w + 1 : line.w}
-                  strokeLinecap="round"
-                  opacity={dim ? 0.12 : on ? 1 : line.o}
-                />
+                <g key={s.id}>
+                  {s.weak ? (
+                    <line
+                      x1={s.x1}
+                      y1={s.y1}
+                      x2={s.x2}
+                      y2={s.y2}
+                      stroke="#f59e0b"
+                      strokeWidth={(on ? line.w + 1 : line.w) + 4}
+                      strokeLinecap="round"
+                      opacity={dim ? 0.1 : 0.4}
+                    />
+                  ) : null}
+                  <line
+                    x1={s.x1}
+                    y1={s.y1}
+                    x2={s.x2}
+                    y2={s.y2}
+                    stroke={CAT[s.cat].stroke}
+                    strokeWidth={on ? line.w + 1 : line.w}
+                    strokeLinecap="round"
+                    opacity={dim ? 0.12 : on ? 1 : line.o}
+                  />
+                </g>
               );
             })}
           </svg>
         ) : null}
 
         <div className="relative z-10 flex flex-col items-center gap-3">
-          <Group cat="horizontal" edges={view.horizontal} layout="band" onHover={setHovered} />
+          <Group cat="horizontal" edges={view.horizontal} layout="band" onHover={setHovered} weak={weak} />
 
           <div className="grid w-full items-center gap-3 sm:grid-cols-[1fr_auto_1fr]">
-            <Group cat="prerequisite" edges={view.prerequisite} layout="column" onHover={setHovered} />
+            <Group cat="prerequisite" edges={view.prerequisite} layout="column" onHover={setHovered} weak={weak} />
 
             <div
               data-center
@@ -230,15 +255,18 @@ function MapView({ view }: { view: ModuleGraphView }) {
               ) : null}
             </div>
 
-            <Group cat="forward" edges={view.forward} layout="column" onHover={setHovered} />
+            <Group cat="forward" edges={view.forward} layout="column" onHover={setHovered} weak={weak} />
           </div>
 
-          <Group cat="vertical" edges={view.vertical} layout="band" onHover={setHovered} />
+          <Group cat="vertical" edges={view.vertical} layout="band" onHover={setHovered} weak={weak} />
         </div>
       </div>
 
       <p className="mt-3 min-h-[1.25rem] text-center text-xs text-slate-500 dark:text-slate-400">
-        {hoveredReason ?? 'Hover a node to see how it connects · click to open the module.'}
+        {hoveredReason ??
+          (segs.some((s) => s.weak)
+            ? '◍ = a weak spot from your misses — those links are lit amber. Hover a node to see how it connects.'
+            : 'Hover a node to see how it connects · click to open the module.')}
       </p>
 
       {view.traps.length > 0 || view.repair.length > 0 ? (
@@ -253,14 +281,21 @@ function MapView({ view }: { view: ModuleGraphView }) {
 
 // ── LIST ─────────────────────────────────────────────────────────────────────
 
-function EdgeRow({ edge }: { edge: EdgeView }) {
+function EdgeRow({ edge, weak }: { edge: EdgeView; weak: boolean }) {
   return (
     <li className="flex items-start gap-2 text-sm">
       <StrengthBadge strength={edge.strength} />
       <span className="leading-snug">
+        {weak ? (
+          <span className="mr-1 text-amber-500" title="A weak spot for you" aria-label="weak spot">
+            ◍
+          </span>
+        ) : null}
         <Link
           href={`/lecture/${edge.id}`}
-          className="font-semibold text-slate-900 underline decoration-dotted underline-offset-2 hover:text-sky-700 dark:text-white dark:hover:text-sky-300"
+          className={`font-semibold underline decoration-dotted underline-offset-2 hover:text-sky-700 dark:hover:text-sky-300 ${
+            weak ? 'text-amber-700 dark:text-amber-300' : 'text-slate-900 dark:text-white'
+          }`}
         >
           {edge.title}
         </Link>{' '}
@@ -271,7 +306,7 @@ function EdgeRow({ edge }: { edge: EdgeView }) {
   );
 }
 
-function EdgeSection({ cat, edges }: { cat: Cat; edges: EdgeView[] }) {
+function EdgeSection({ cat, edges, weak }: { cat: Cat; edges: EdgeView[]; weak: Set<string> }) {
   if (edges.length === 0) return null;
   return (
     <div>
@@ -281,7 +316,7 @@ function EdgeSection({ cat, edges }: { cat: Cat; edges: EdgeView[] }) {
       </div>
       <ul className="space-y-1.5">
         {edges.map((e) => (
-          <EdgeRow key={e.id} edge={e} />
+          <EdgeRow key={e.id} edge={e} weak={weak.has(e.id)} />
         ))}
       </ul>
     </div>
@@ -361,13 +396,13 @@ function RepairSection({ items }: { items: RepairView[] }) {
   );
 }
 
-function ListView({ view }: { view: ModuleGraphView }) {
+function ListView({ view, weak }: { view: ModuleGraphView; weak: Set<string> }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
-      <EdgeSection cat="prerequisite" edges={view.prerequisite} />
-      <EdgeSection cat="forward" edges={view.forward} />
-      <EdgeSection cat="horizontal" edges={view.horizontal} />
-      <EdgeSection cat="vertical" edges={view.vertical} />
+      <EdgeSection cat="prerequisite" edges={view.prerequisite} weak={weak} />
+      <EdgeSection cat="forward" edges={view.forward} weak={weak} />
+      <EdgeSection cat="horizontal" edges={view.horizontal} weak={weak} />
+      <EdgeSection cat="vertical" edges={view.vertical} weak={weak} />
       <TrapSection traps={view.traps} />
       <RepairSection items={view.repair} />
     </div>
@@ -379,6 +414,17 @@ function ListView({ view }: { view: ModuleGraphView }) {
 export default function IntegrationExplorer({ view }: { view: ModuleGraphView }) {
   // A module whose links are all traps/repair has nothing to plot — open on List.
   const [mode, setMode] = useState<'map' | 'list'>(view.edgeCount > 0 ? 'map' : 'list');
+
+  // Personal weak-spot set — filled after mount (localStorage is client-only, and
+  // an empty initial set keeps the server/first-paint markup identical → no
+  // hydration mismatch). Recomputed when the user returns to the tab.
+  const [weak, setWeak] = useState<Set<string>>(() => new Set());
+  useEffect(() => {
+    const refresh = () => setWeak(getWeakModules());
+    refresh();
+    window.addEventListener('focus', refresh);
+    return () => window.removeEventListener('focus', refresh);
+  }, []);
 
   return (
     <div>
@@ -400,7 +446,7 @@ export default function IntegrationExplorer({ view }: { view: ModuleGraphView })
         ))}
       </div>
 
-      {mode === 'map' ? <MapView view={view} /> : <ListView view={view} />}
+      {mode === 'map' ? <MapView view={view} weak={weak} /> : <ListView view={view} weak={weak} />}
     </div>
   );
 }

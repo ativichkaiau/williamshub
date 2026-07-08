@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "search:index": "tsx scripts/generate-search-index.ts",
-    "prebuild": "npm run search:index",
+    "content:verify": "tsx scripts/verify-content.ts",
+    "prebuild": "npm run content:verify && npm run search:index",
     "integrations:generate": "tsx scripts/generate-integrations.ts",
     "questions:generate": "tsx scripts/generate-questions.ts"
   },

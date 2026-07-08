@@ -23,6 +23,14 @@ export default function Header() {
         <nav className="flex items-center gap-2 sm:gap-3">
           <CommandPalette />
           <Link
+            href="/practice"
+            aria-label="Practice"
+            className={`${navLink} text-slate-500 hover:text-[#1e5bd6] dark:text-slate-400 dark:hover:text-[#7AA0FF]`}
+          >
+            <span aria-hidden>📝</span>
+            <span className="hidden sm:inline">Practice</span>
+          </Link>
+          <Link
             href="/standings"
             aria-label="Progress"
             className={`${navLink} text-slate-500 hover:text-[#1e5bd6] dark:text-slate-400 dark:hover:text-[#7AA0FF]`}

@@ -32,7 +32,19 @@ function sortAndCap(edges: ModuleIntegration[], type: IntegrationType): ModuleIn
  * A curated category (if present and non-empty) replaces the baseline category;
  * otherwise the deterministic baseline is used.
  */
+// Per-process memo — getIntegrations is pure and hit many times per build
+// (lecture pages, learning paths, practice pages, the bank export).
+const _cache = new Map<string, ModuleIntegrationBundle>();
+
 export function getIntegrations(moduleId: string): ModuleIntegrationBundle {
+  const hit = _cache.get(moduleId);
+  if (hit) return hit;
+  const bundle = resolveIntegrations(moduleId);
+  _cache.set(moduleId, bundle);
+  return bundle;
+}
+
+function resolveIntegrations(moduleId: string): ModuleIntegrationBundle {
   const base = generateCandidateBundle(moduleId);
   const override = curatedIntegrations[moduleId];
   if (!override) return base;

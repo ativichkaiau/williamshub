@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { LearningPathView, PathStep } from '../lib/integrations/learningPath';
 
-// "The racing line" — the suggested study route rendered as a track of nodes:
+// Learning path — the suggested study route rendered as a track of nodes:
 // foundations on the left, this module (livery card) in the middle, applications
 // on the right. Server component, fully static.
 
@@ -52,7 +52,7 @@ export default function LearningPath({ view }: { view: LearningPathView }) {
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-[#2e5bff] to-[#e4002b]" />
-          <h3 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">The racing line</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">Learning path</h3>
         </div>
         <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
           suggested study route

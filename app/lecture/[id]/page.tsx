@@ -74,7 +74,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
       <ModuleNotes moduleId={l.id} />
 
       <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite
+        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>
   );

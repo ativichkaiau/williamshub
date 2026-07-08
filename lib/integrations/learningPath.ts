@@ -1,4 +1,4 @@
-// "The racing line" — a suggested linear study route through a module:
+// Learning path — a suggested linear study route through a module:
 //   foundation → … → prerequisite → THIS module → application → … → advanced
 //
 // Build-time + pure. Walks the strongest prerequisite/forward edge at each hop

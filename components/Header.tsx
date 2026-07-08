@@ -24,27 +24,27 @@ export default function Header() {
           <CommandPalette />
           <Link
             href="/standings"
-            aria-label="Standings"
+            aria-label="Progress"
             className={`${navLink} text-slate-500 hover:text-[#1e5bd6] dark:text-slate-400 dark:hover:text-[#7AA0FF]`}
           >
-            <span aria-hidden>🏆</span>
-            <span className="hidden sm:inline">Standings</span>
+            <span aria-hidden>📊</span>
+            <span className="hidden sm:inline">Progress</span>
           </Link>
           <Link
             href="/garage"
-            aria-label="Garage"
+            aria-label="Saved"
             className={`${navLink} text-slate-500 hover:text-[#1e5bd6] dark:text-slate-400 dark:hover:text-[#7AA0FF]`}
           >
             <span aria-hidden>⭐</span>
-            <span className="hidden sm:inline">Garage</span>
+            <span className="hidden sm:inline">Saved</span>
           </Link>
           <Link
             href="/repair"
-            aria-label="Pit Box"
+            aria-label="Repair"
             className={`${navLink} text-slate-500 hover:text-[#e4002b] dark:text-slate-400 dark:hover:text-[#ff5a72]`}
           >
             <span aria-hidden>🔧</span>
-            <span className="hidden sm:inline">Pit&nbsp;Box</span>
+            <span className="hidden sm:inline">Repair</span>
           </Link>
           <ThemeToggle />
         </nav>

@@ -87,7 +87,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         href="/"
         className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
       >
-        ← Back to the grid
+        ← All years &amp; blocks
       </Link>
 
       <header className="mb-8 mt-4">
@@ -160,7 +160,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
       ))}
 
       <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite
+        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>
   );

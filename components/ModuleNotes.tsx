@@ -23,7 +23,7 @@ export default function ModuleNotes({ moduleId }: { moduleId: string }) {
       <div className="mb-3 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-[#2e5bff] to-[#0a1a7a]" />
-          <h3 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">Pit notes</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">Notes</h3>
         </div>
         <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
           {ready && text.trim() ? 'saved · this device' : 'this device'}

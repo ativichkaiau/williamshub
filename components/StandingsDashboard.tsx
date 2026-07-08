@@ -175,17 +175,17 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
       .finally(() => setReady(true));
   }, [subjects]);
 
-  if (!ready) return <p className="py-10 text-center text-sm text-slate-400">Pulling telemetry…</p>;
+  if (!ready) return <p className="py-10 text-center text-sm text-slate-400">Loading…</p>;
 
   const noActivity = t.covered === 0 && t.repairs === 0 && t.garage === 0 && rows.every((r) => r.answered === 0);
   if (noActivity) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">🏁</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">No telemetry yet.</p>
+        <div className="text-3xl">📊</div>
+        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">No activity yet.</p>
         <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
-          Open modules, take the quizzes, and sync WilliamsPod — your coverage, accuracy and streak will build the
-          championship table here.
+          Open modules, take the quizzes, and sync WilliamsPod — your coverage, accuracy and streak will build your
+          progress here.
         </p>
       </div>
     );
@@ -196,8 +196,8 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <StatTile icon="🔥" value={`${t.streak}`} label="Day streak" sub={`best ${t.best}`} accent="gold" />
         <StatTile icon="📍" value={`${t.pct}%`} label="Coverage" sub={`${t.covered}/${t.modules}`} />
-        <StatTile icon="🔧" value={`${t.repairs}`} label="Open repairs" sub="pit box" accent={t.repairs > 0 ? 'red' : undefined} />
-        <StatTile icon="⭐" value={`${t.garage}`} label="In garage" sub="starred" />
+        <StatTile icon="🔧" value={`${t.repairs}`} label="Open repairs" sub="repair queue" accent={t.repairs > 0 ? 'red' : undefined} />
+        <StatTile icon="⭐" value={`${t.garage}`} label="Saved" sub="starred" />
       </div>
 
       <section className="clay clay-surface p-5">
@@ -205,7 +205,7 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
             <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
-              Constructors&rsquo; standings
+              Blocks
             </h2>
           </div>
           <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">

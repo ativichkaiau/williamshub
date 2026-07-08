@@ -46,17 +46,17 @@ export default function GarageView() {
   const noteIds = Object.keys(notes).filter((id) => notes[id]?.trim());
 
   if (!ready) {
-    return <p className="py-10 text-center text-sm text-slate-400">Opening the garage…</p>;
+    return <p className="py-10 text-center text-sm text-slate-400">Loading…</p>;
   }
 
   if (bookmarks.length === 0 && noteIds.length === 0) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">🅿️</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">Garage is empty.</p>
+        <div className="text-3xl">🔖</div>
+        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">Nothing saved yet.</p>
         <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
-          Hit <span className="font-semibold">☆ Save</span> on any module to park it here, and jot{' '}
-          <span className="font-semibold">pit notes</span> as you study. Everything is kept on this device.
+          Select <span className="font-semibold">☆ Save</span> on any module to save it here, and add{' '}
+          <span className="font-semibold">notes</span> as you study. Everything is kept on this device.
         </p>
       </div>
     );
@@ -91,7 +91,7 @@ export default function GarageView() {
                   <button
                     type="button"
                     onClick={() => unstar(id)}
-                    aria-label="Remove from garage"
+                    aria-label="Remove bookmark"
                     className="shrink-0 text-[#b8860b] transition hover:scale-110 dark:text-[#ffcc00]"
                   >
                     ⭐
@@ -108,7 +108,7 @@ export default function GarageView() {
           <div className="mb-3 flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#2e5bff]" />
             <h2 className="text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">
-              Pit notes · {noteIds.length}
+              Notes · {noteIds.length}
             </h2>
           </div>
           <ul className="space-y-2.5">

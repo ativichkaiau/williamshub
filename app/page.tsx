@@ -51,30 +51,30 @@ export default function Home() {
           <div>
             <span className="clay-pill inline-flex items-center gap-2 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#1e5bd6] dark:text-[#7AA0FF]">
               <span className="h-2 w-2 rounded-full bg-[#2E5BFF]" />
-              Pit-wall telemetry
+              Interactive lecture atlas
             </span>
             <h1 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight text-slate-900 dark:text-white sm:text-5xl">
-              Own every lap.
+              Own the lecture.
               <br />
               <span className="text-[#e4002b] dark:text-[#ff5a72]">Beat the exam trap.</span>
             </h1>
             <p className="mt-4 max-w-xl text-slate-600 dark:text-slate-300">
-              Telemetry from every MedCMU lecture — high-yield, mechanism-driven, sorted by year
-              and block. Do a recall lap first, then read the mechanism, the exam findings, and the
-              trap that loses marks. It feeds your OnePagers — it doesn&apos;t replace them.
+              High-yield, mechanism-driven pages built from your MedCMU lectures — organized by year
+              and block. Recall first, then read the mechanism, the exam findings, and the trap that
+              loses marks. Supplements your OnePagers — it doesn&apos;t replace them.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#browse"
                 className="clay-pill px-5 py-2.5 text-sm font-bold text-slate-900 transition active:translate-y-px dark:text-white"
               >
-                To the grid ↓
+                Choose a block
               </a>
               <Link
                 href={`/lecture/${first.id}`}
                 className="clay-pill px-5 py-2.5 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
               >
-                Warm-up lap
+                Run primer
               </Link>
             </div>
             {/* Year legend */}
@@ -93,18 +93,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right: Pit wall console */}
+          {/* Right: Lecture console */}
           <div className="clay-inset clay-surface livery-edge overflow-hidden p-5">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                Pit wall
+                Lecture console
               </span>
               <span className="clay-pill px-2.5 py-0.5 text-[11px] font-semibold text-slate-500 dark:text-slate-300">
                 HCVS-2 · Y3
               </span>
             </div>
             <div className="mt-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#b8860b] dark:text-[#ffcc00]">
-              <span aria-hidden>🏁</span> Pole position
+              <span aria-hidden>❤</span> Featured module
             </div>
             <Link href={`/lecture/${featured.id}`} className="mt-1 block">
               <div className="text-lg font-black text-slate-900 dark:text-white">
@@ -130,7 +130,7 @@ export default function Home() {
               href={`/lecture/${featured.id}`}
               className="clay-pill mt-4 inline-block px-4 py-2 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
             >
-              Roll out →
+              Open module
             </Link>
             <div className="mt-4 grid grid-cols-3 gap-2">
               {[
@@ -153,7 +153,7 @@ export default function Home() {
       {/* Block browser: WilliamsHub lectures ↔ OnePager library */}
       <section id="browse" className="scroll-mt-20">
         <h2 className="mb-1 text-xl font-black tracking-tight text-slate-900 dark:text-white">
-          Line up on the grid
+          Choose your block
         </h2>
         <p className="mb-5 text-sm text-slate-500 dark:text-slate-400">
           Toggle between interactive <span className="font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">WilliamsHub</span> lectures and your own <span className="font-bold text-sky-600 dark:text-sky-400">OnePagers</span>. Pick a year, then a block.
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite · telemetry from MedCMU lectures
+        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite · built from MedCMU lectures
       </footer>
     </main>
   );

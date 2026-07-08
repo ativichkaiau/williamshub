@@ -5,7 +5,7 @@ import Header from '../components/Header';
 export const metadata: Metadata = {
   title: 'WilliamsHub — Study OS',
   description:
-    'Pit-wall telemetry for MedCMU lectures — high-yield, mechanism-driven, exam-focused. A VESTRIPPN satellite running the FW15C line.',
+    'High-yield, mechanism-driven, exam-focused lecture pages built from MedCMU lectures. A VESTRIPPN satellite.',
   icons: {
     // The WilliamsHub W-mark. SVG first (crisp on modern Safari), PNG fallback.
     icon: [

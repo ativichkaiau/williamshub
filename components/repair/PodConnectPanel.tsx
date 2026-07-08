@@ -113,7 +113,7 @@ export default function PodConnectPanel() {
           disabled={busy || !token}
           className="clay-pill px-4 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px disabled:opacity-40 dark:text-[#7AA0FF]"
         >
-          {busy ? 'Pulling…' : '⤓ Pull telemetry'}
+          {busy ? 'Syncing…' : '⤓ Sync now'}
         </button>
         {status ? <span className="text-xs text-slate-500 dark:text-slate-400">{status}</span> : null}
       </div>

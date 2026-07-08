@@ -1,4 +1,4 @@
-// Starred modules ("the garage") + per-module personal notes. localStorage only.
+// Starred (saved) modules + per-module personal notes. localStorage only.
 
 import { readJSON, writeJSON } from './store';
 

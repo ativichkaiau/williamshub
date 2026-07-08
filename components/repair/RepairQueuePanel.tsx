@@ -60,10 +60,10 @@ export default function RepairQueuePanel() {
 
       {ready && items.length === 0 ? (
         <div className="rounded-xl border border-dashed border-black/10 p-5 text-sm text-slate-500 dark:border-white/10 dark:text-slate-400">
-          <p className="font-medium text-slate-600 dark:text-slate-300">Box is empty — the car&apos;s running clean.</p>
+          <p className="font-medium text-slate-600 dark:text-slate-300">No repairs queued yet.</p>
           <p className="mt-1">
-            After a WilliamsPod session syncs through WilliamsSync, your weak modules and the fixes to run
-            show up here — triaged by error type.
+            After a WilliamsPod session syncs through WilliamsSync, your weak modules and the recommended fixes
+            will appear here — prioritised by error type.
           </p>
         </div>
       ) : (

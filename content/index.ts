@@ -2103,9 +2103,20 @@ export const lecturesBySubject = lectures.reduce<Record<string, Lecture[]>>((acc
 // Consolidated "whole lecture" sets — every module of one lecture on a single page.
 // Slugs are namespaced by subject so lecture numbers can restart per block
 // (HCVS-2 L1 → `hcvs-2-l1`, HNS-2 L1 → `hns-2-l1`) without colliding.
+//
+// A few subjects reuse a lecture number for two distinct lectures (HNS-1 has two
+// L6 and two L17). Since the slug keys on `{subject}-l{n}`, those two would map to
+// the same slug and one whole-lecture page would shadow the other. Pin the second
+// lecture of each such pair to an explicit, unique slug (keyed by exact source);
+// every other slug is unchanged.
+const SET_SLUG_OVERRIDES: Record<string, string> = {
+  'L6 — Ventricular System & CSF': 'l6-ventricles-csf',
+  'L17 — Histology of Chemical Senses': 'l17-chemical-senses',
+};
+
 export function lectureSetSlug(source: string): string {
   const m = source.match(/^L(\d+)/i);
-  const base = m ? `l${m[1]}` : source.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const base = SET_SLUG_OVERRIDES[source] ?? (m ? `l${m[1]}` : source.toLowerCase().replace(/[^a-z0-9]+/g, '-'));
   const code = subjectOfSource[source];
   return code ? `${subjectSlug(code)}-${base}` : base;
 }

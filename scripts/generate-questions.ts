@@ -16,7 +16,7 @@
  * The running app never calls this — it stays static / zero-backend.
  */
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { lectures, lectureById } from '../content';
@@ -28,6 +28,31 @@ import type { ModuleIntegration } from '../lib/integrations/types';
 import type { QuestionBank } from '../lib/questions/types';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+function loadLocalEnv() {
+  for (const name of ['.env.local', '.env']) {
+    try {
+      const raw = readFileSync(join(root, name), 'utf8');
+      for (const line of raw.split('\n')) {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith('#')) continue;
+        const eq = trimmed.indexOf('=');
+        if (eq === -1) continue;
+        const key = trimmed.slice(0, eq).trim();
+        let value = trimmed.slice(eq + 1).trim();
+        if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+          value = value.slice(1, -1);
+        }
+        if (key && !(key in process.env)) process.env[key] = value;
+      }
+    } catch {
+      // Missing local env files are fine; CI can provide real env vars.
+    }
+  }
+}
+
+loadLocalEnv();
+
 const key = process.env.OPENAI_API_KEY ?? '';
 
 function linkedFor(moduleId: string): LinkedModule[] {
@@ -47,18 +72,22 @@ async function main() {
 
   if (key) {
     const model = process.env.OPENAI_MODEL ?? 'gpt-4o-mini';
-    console.log(`Generating AI questions for ${lectures.length} modules (${model})…`);
-    const CONCURRENCY = 4;
+    const CONCURRENCY = Math.max(1, Math.min(24, Number(process.env.QUESTION_GEN_CONCURRENCY) || 4));
+    console.log(`Generating AI questions for ${lectures.length} modules (${model}, concurrency ${CONCURRENCY})…`);
     let done = 0;
+    let aiCount = 0;
     for (let i = 0; i < lectures.length; i += CONCURRENCY) {
       await Promise.all(
         lectures.slice(i, i + CONCURRENCY).map(async (l) => {
           const qs = await generateAiQuestions(l, { linked: linkedFor(l.id) }, key, model);
-          if (qs.length) aiBank[l.id] = qs;
+          if (qs.length) {
+            aiBank[l.id] = qs;
+            aiCount += qs.length;
+          }
           done++;
         }),
       );
-      if (done % 40 === 0 || done >= lectures.length) console.log(`  ${done}/${lectures.length}`);
+      console.log(`  ${done}/${lectures.length} modules · ${aiCount} AI questions`);
     }
   } else {
     console.log('No OPENAI_API_KEY set — baking the deterministic bank only. Set the key to enrich with AI.');

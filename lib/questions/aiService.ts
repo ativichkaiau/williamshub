@@ -8,6 +8,7 @@ import type { BankQuestion, QuestionKind } from './types';
 
 const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 const KINDS: QuestionKind[] = ['recall', 'mechanism', 'trap', 'integration', 'clinical'];
+const REQUEST_TIMEOUT_MS = Math.max(10_000, Number(process.env.OPENAI_TIMEOUT_MS) || 60_000);
 
 /** A neighbour the model may reference in an integration question. */
 export interface LinkedModule {
@@ -118,12 +119,16 @@ export async function generateAiQuestions(
   });
 
   for (let attempt = 1; attempt <= 5; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
     try {
       const res = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
         body,
+        signal: controller.signal,
       });
+      clearTimeout(timeout);
       if (res.status === 429 || res.status >= 500) {
         if (attempt === 5) return [];
         const retryAfter = Number(res.headers.get('retry-after'));
@@ -135,6 +140,7 @@ export async function generateAiQuestions(
       const content = data.choices?.[0]?.message?.content;
       return content ? parseQuestions(content, module.id, allowed) : [];
     } catch {
+      clearTimeout(timeout);
       if (attempt === 5) return [];
       await sleep(2 ** attempt * 500);
     }

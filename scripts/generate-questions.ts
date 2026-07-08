@@ -5,7 +5,11 @@
  * clinical + cross-module INTEGRATION questions) using an OpenAI model when a key
  * is set, always merged with the deterministic baseline. Writes:
  *   • content/questions.generated.ts  — the AI layer (empty without a key)
- *   • public/question-bank.json        — the full bank the Hub practises + Pod pulls
+ *   • public/question-bank.json        — static full bank mirror
+ *
+ * Hub also exposes GET /api/question-bank for WilliamsPod:
+ *   • /api/question-bank?summary=1
+ *   • /api/question-bank?subject=HEN-2
  *
  *     npm run questions:generate        # OPENAI_API_KEY optional (.env.local or env)
  *

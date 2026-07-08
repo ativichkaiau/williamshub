@@ -44,10 +44,11 @@ export default function PracticeSession({
   // Deterministic initial order (SSR-safe), then shuffle on the client after mount
   // so server + client HTML match; "Restart" (nonce) reshuffles.
   const [nonce, setNonce] = useState(0);
-  const [deck, setDeck] = useState<BankQuestion[]>(() => questions.slice(0, 20));
+  const sessionSize = Math.min(20, questions.length);
+  const [deck, setDeck] = useState<BankQuestion[]>(() => questions.slice(0, sessionSize));
   useEffect(() => {
-    setDeck(shuffle(questions).slice(0, 20));
-  }, [questions, nonce]);
+    setDeck(shuffle(questions).slice(0, sessionSize));
+  }, [questions, nonce, sessionSize]);
   const [i, setI] = useState(0);
   const [chosen, setChosen] = useState<Record<string, string>>({});
   const [done, setDone] = useState(false);
@@ -169,6 +170,15 @@ export default function PracticeSession({
 
   return (
     <div>
+      {questions.length > deck.length ? (
+        <div className="clay clay-surface mb-4 flex flex-wrap items-center justify-between gap-2 p-3 text-xs text-slate-500 dark:text-slate-400">
+          <span>
+            This run is {deck.length} questions sampled from a {questions.length.toLocaleString()}-question pool.
+          </span>
+          <span className="font-semibold text-[#1e5bd6] dark:text-[#7AA0FF]">Restart reshuffles the pool.</span>
+        </div>
+      ) : null}
+
       {/* progress */}
       <div className="mb-4 flex items-center gap-3">
         <span className="clay-inset h-2 flex-1 overflow-hidden rounded-full">

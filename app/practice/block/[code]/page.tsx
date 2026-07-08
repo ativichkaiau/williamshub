@@ -19,7 +19,7 @@ export default function BlockPracticePage({ params }: { params: { code: string }
 
   const modules = lecturesBySubject[subject.code] ?? [];
   // A pool sampled across the whole block; the session shuffles + caps to 20.
-  const questions = modules.flatMap((m) => getModuleBank(m.id).slice(0, 3));
+  const questions = modules.flatMap((m) => getModuleBank(m.id));
   const subjectOf = Object.fromEntries(modules.map((m) => [m.id, subject.code]));
 
   return (
@@ -39,7 +39,8 @@ export default function BlockPracticePage({ params }: { params: { code: string }
         </div>
         <h1 className="mt-1 text-3xl font-black tracking-tight text-slate-900 dark:text-white">{subject.name}</h1>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          A mixed set drawn from the whole block — 20 questions per session, spanning modules, traps and cross-links.
+          A mixed set drawn from {questions.length.toLocaleString()} questions across {modules.length} modules — each
+          session serves 20 random questions spanning modules, traps and cross-links.
         </p>
       </header>
 

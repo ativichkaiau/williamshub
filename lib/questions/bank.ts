@@ -39,9 +39,17 @@ export function mergeBank(lists: BankQuestion[][]): BankQuestion[] {
   return merged;
 }
 
+// Per-process memo — pure, and called many times per build (practice launchers,
+// per-lecture / per-block / per-module sessions, the bank export).
+const _bankCache = new Map<string, BankQuestion[]>();
+
 /** Full bank for a module: authored + AI (if generated) + deterministic. */
 export function getModuleBank(moduleId: string): BankQuestion[] {
-  return mergeBank([authoredQuestions(moduleId), aiQuestions[moduleId] ?? [], deterministicQuestions(moduleId)]);
+  const hit = _bankCache.get(moduleId);
+  if (hit) return hit;
+  const merged = mergeBank([authoredQuestions(moduleId), aiQuestions[moduleId] ?? [], deterministicQuestions(moduleId)]);
+  _bankCache.set(moduleId, merged);
+  return merged;
 }
 
 export function bankSize(moduleId: string): number {

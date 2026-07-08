@@ -44,6 +44,13 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
           The whole lecture on one scroll — every topic, in full. Jump to a topic below.
         </p>
 
+        <Link
+          href={`/practice/lecture/${params.set}`}
+          className="clay-pill mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+        >
+          <span aria-hidden>📝</span> Practise this lecture
+        </Link>
+
         {/* Jump nav */}
         <nav className="mt-4 flex flex-wrap gap-2">
           {set.items.map((l) => (

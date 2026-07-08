@@ -4,7 +4,12 @@ import { lectures, lectureById, lectureSetSlug, subjectOfSource, subjectSlug } f
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
+import BookmarkButton from '../../../components/BookmarkButton';
+import ModuleNotes from '../../../components/ModuleNotes';
+import VisitTracker from '../../../components/VisitTracker';
+import LearningPath from '../../../components/LearningPath';
 import { onePagerForModule } from '../../../lib/concept/onepagerForModule';
+import { buildLearningPath } from '../../../lib/integrations/learningPath';
 import { lectureTheme } from '../../../lib/theme';
 
 export function generateStaticParams() {
@@ -24,9 +29,11 @@ export default function LecturePage({ params }: { params: { id: string } }) {
   const theme = lectureTheme(l.source);
 
   const onePager = onePagerForModule(l);
+  const learningPath = buildLearningPath(l.id);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
+      <VisitTracker moduleId={l.id} />
       <Link
         href={subjectCode ? `/subject/${subjectSlug(subjectCode)}` : '/'}
         className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
@@ -43,7 +50,10 @@ export default function LecturePage({ params }: { params: { id: string } }) {
           <span className={`h-2 w-2 rounded-full ${theme.dot}`} />
           {l.source}
         </Link>
-        <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-900 dark:text-white">{l.title}</h1>
+        <div className="mt-2 flex items-start justify-between gap-3">
+          <h1 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">{l.title}</h1>
+          <BookmarkButton moduleId={l.id} />
+        </div>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {l.tags.map((t) => (
             <span key={`${t.kind}-${t.label}`} className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${theme.chipBg}`}>
@@ -57,7 +67,11 @@ export default function LecturePage({ params }: { params: { id: string } }) {
         <LectureBody lecture={l} />
       </ConceptModeController>
 
+      <LearningPath view={learningPath} />
+
       <ActiveIntegrationPanel moduleId={l.id} />
+
+      <ModuleNotes moduleId={l.id} />
 
       <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
         WilliamsHub · Round M-8 · a VESTRIPPN3.0 satellite

@@ -2,10 +2,16 @@
 
 import { useState } from 'react';
 import type { QuizQuestion } from '../lib/types';
+import { recordQuizAnswer } from '../lib/user/activity';
 
-function QuizItem({ q }: { q: QuizQuestion }) {
+function QuizItem({ q, moduleId }: { q: QuizQuestion; moduleId?: string }) {
   const [chosen, setChosen] = useState<string | null>(null);
   const answered = chosen !== null;
+
+  const choose = (id: string) => {
+    setChosen(id);
+    if (moduleId) recordQuizAnswer(moduleId, q.id, id === q.answerId);
+  };
 
   return (
     <div className="clay-inset clay-surface p-4">
@@ -29,7 +35,7 @@ function QuizItem({ q }: { q: QuizQuestion }) {
               key={o.id}
               type="button"
               disabled={answered}
-              onClick={() => setChosen(o.id)}
+              onClick={() => choose(o.id)}
               className={cls}
             >
               <span className="font-bold uppercase">{o.id}.</span> {o.text}
@@ -55,11 +61,11 @@ function QuizItem({ q }: { q: QuizQuestion }) {
   );
 }
 
-export default function Quiz({ questions }: { questions: QuizQuestion[] }) {
+export default function Quiz({ questions, moduleId }: { questions: QuizQuestion[]; moduleId?: string }) {
   return (
     <div className="space-y-3">
       {questions.map((q) => (
-        <QuizItem key={q.id} q={q} />
+        <QuizItem key={q.id} q={q} moduleId={moduleId} />
       ))}
     </div>
   );

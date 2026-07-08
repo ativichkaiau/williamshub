@@ -165,7 +165,7 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
       {/* Quiz */}
       <Card>
         <Label color={sectionColors.quiz}>Active recall</Label>
-        <Quiz questions={l.quiz} />
+        <Quiz questions={l.quiz} moduleId={l.id} />
       </Card>
     </div>
   );

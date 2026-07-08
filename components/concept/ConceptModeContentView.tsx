@@ -140,7 +140,7 @@ export default function ConceptModeContentView({
         {l.quiz.length > 0 && (
           <Card>
             <Label dot={sectionColors.quiz.dot} text={sectionColors.quiz.text}>Test the trap</Label>
-            <Quiz questions={l.quiz} />
+            <Quiz questions={l.quiz} moduleId={l.id} />
           </Card>
         )}
       </div>

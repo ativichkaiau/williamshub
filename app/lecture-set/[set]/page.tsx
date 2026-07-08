@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug } from '../../../content';
+import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
@@ -21,16 +21,38 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
   if (!set) notFound();
 
   const subjectCode = subjectOfSource[set.source];
+  const subject = subjectCode ? subjectByCode[subjectCode] : undefined;
   const theme = lectureTheme(set.source);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
-      <Link
-        href={subjectCode ? `/subject/${subjectSlug(subjectCode)}` : '/'}
-        className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+      <nav
+        aria-label="Breadcrumb"
+        className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-400 dark:text-slate-500"
       >
-        ← {subjectCode ?? 'All lectures'}
-      </Link>
+        <Link href="/" className="transition hover:text-slate-700 dark:hover:text-slate-200">
+          All blocks
+        </Link>
+        {subjectCode ? (
+          <>
+            <span aria-hidden className="text-slate-300 dark:text-slate-600">
+              ›
+            </span>
+            <Link
+              href={`/subject/${subjectSlug(subjectCode)}`}
+              className="font-semibold text-[#1e5bd6] transition hover:underline dark:text-[#7AA0FF]"
+            >
+              {subjectCode}
+              {subject?.name ? ` — ${subject.name}` : ''}
+            </Link>
+            {subject?.year ? (
+              <span className="clay-pill px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-300">
+                Year {subject.year}
+              </span>
+            ) : null}
+          </>
+        ) : null}
+      </nav>
 
       {/* Header */}
       <header className="mb-6 mt-4">

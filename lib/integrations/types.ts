@@ -56,8 +56,10 @@ export interface ModuleIntegration {
   targetId: string;
   type: IntegrationType;
   strength: IntegrationStrength;
-  reason: string; // one-line, human-readable rationale
+  reason: string; // one-line, human-readable rationale (directional)
   origin: IntegrationOrigin;
+  via?: string; // the specific concept that bridges the two ('re-entry', 'Warfarin')
+  evidence?: string; // why we're confident ('mutual link', '3 shared concepts')
 }
 
 /** An exam trap surfaced on the module, optionally linked to a sibling module. */

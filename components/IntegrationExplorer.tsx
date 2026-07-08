@@ -187,8 +187,8 @@ function MapView({ view, weak }: { view: ModuleGraphView; weak: Set<string> }) {
   }, [view]);
 
   const showEdges = dims.w >= 560;
-  const hoveredReason = hovered
-    ? [...view.prerequisite, ...view.forward, ...view.horizontal, ...view.vertical].find((e) => e.id === hovered)?.reason
+  const hoveredEdge = hovered
+    ? [...view.prerequisite, ...view.forward, ...view.horizontal, ...view.vertical].find((e) => e.id === hovered)
     : null;
 
   return (
@@ -262,11 +262,26 @@ function MapView({ view, weak }: { view: ModuleGraphView; weak: Set<string> }) {
         </div>
       </div>
 
-      <p className="mt-3 min-h-[1.25rem] text-center text-xs text-slate-500 dark:text-slate-400">
-        {hoveredReason ??
-          (segs.some((s) => s.weak)
-            ? '◍ = a weak spot from your misses — those links are lit amber. Hover a node to see how it connects.'
-            : 'Hover a node to see how it connects · click to open the module.')}
+      <p className="mt-3 flex min-h-[1.25rem] flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center text-xs text-slate-500 dark:text-slate-400">
+        {hoveredEdge ? (
+          <>
+            <span>{hoveredEdge.reason}</span>
+            {hoveredEdge.via ? (
+              <span className="rounded bg-indigo-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-600 dark:text-indigo-300">
+                via {hoveredEdge.via}
+              </span>
+            ) : null}
+            {hoveredEdge.evidence ? (
+              <span className="rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-white/10 dark:text-slate-400">
+                ◆ {hoveredEdge.evidence}
+              </span>
+            ) : null}
+          </>
+        ) : segs.some((s) => s.weak) ? (
+          '◍ = a weak spot from your misses — those links are lit amber. Hover a node to see how it connects.'
+        ) : (
+          'Hover a node to see how it connects · click to open the module.'
+        )}
       </p>
 
       {view.traps.length > 0 || view.repair.length > 0 ? (
@@ -301,6 +316,16 @@ function EdgeRow({ edge, weak }: { edge: EdgeView; weak: boolean }) {
         </Link>{' '}
         <SubjectChip code={edge.subjectCode} />
         <span className="text-slate-500 dark:text-slate-400"> — {edge.reason}</span>
+        {edge.via ? (
+          <span className="ml-1 inline-block whitespace-nowrap rounded bg-indigo-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-600 dark:text-indigo-300">
+            via {edge.via}
+          </span>
+        ) : null}
+        {edge.evidence ? (
+          <span className="ml-1 inline-block whitespace-nowrap rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-white/10 dark:text-slate-400">
+            ◆ {edge.evidence}
+          </span>
+        ) : null}
       </span>
     </li>
   );

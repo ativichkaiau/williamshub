@@ -3,7 +3,8 @@
 // content/index.ts (the lectures) and content/curriculum.ts (year/subject map).
 
 import { lectures, lectureById } from '../../content';
-import { subjectOfSource, subjectByCode } from '../../content/curriculum';
+import { subjectByCode } from '../../content/curriculum';
+import { placementOf } from '../content/placement';
 import type { Lecture } from '../types';
 import type { ModuleNode } from './types';
 
@@ -28,25 +29,22 @@ function isFoundationalCode(code: string | null): boolean {
   return !SYSTEM_BLOCK_PREFIXES.some((p) => code.toUpperCase().startsWith(p));
 }
 
-function lectureNoOf(source: string): number | null {
-  const m = source.match(/^L(\d+)/i);
-  return m ? parseInt(m[1], 10) : null;
-}
-
-/** Build a graph node from a lecture (subject/year resolved via the curriculum). */
+/** Build a graph node from a lecture. Subject + lecture number come from the
+ *  first-class placement layer (typed fields + overrides), so directionality no
+ *  longer depends on ad-hoc source-string parsing scattered per call site. */
 export function toModuleNode(l: Lecture): ModuleNode {
-  const subjectCode = subjectOfSource[l.source] ?? null;
-  const subject = subjectCode ? subjectByCode[subjectCode] : undefined;
+  const p = placementOf(l);
+  const subject = p.subject ? subjectByCode[p.subject] : undefined;
   return {
     id: l.id,
     title: l.title,
     system: l.system,
     source: l.source,
-    subjectCode,
+    subjectCode: p.subject,
     subjectName: subject?.name ?? null,
     year: subject?.year ?? null,
-    lectureNo: lectureNoOf(l.source),
-    foundational: isFoundationalCode(subjectCode),
+    lectureNo: p.lectureNo,
+    foundational: isFoundationalCode(p.subject),
   };
 }
 
@@ -113,19 +111,39 @@ export const tagIndex: Record<string, string[]> = (() => {
   return Object.fromEntries(Object.entries(idx).map(([k, v]) => [k, [...v]]));
 })();
 
-/** Modules that share ≥1 meaningful tag with `id`, ranked by shared-tag count. */
-export function sharedTagModules(id: string): { id: string; shared: number }[] {
+/** Modules that share ≥1 meaningful tag with `id`, ranked by shared-tag count.
+ *  `tags` are the shared labels; `via` is the rarest of them (fewest carriers →
+ *  most specific), i.e. the concept that best names the bridge between the two. */
+const _sharedTagCache = new Map<string, { id: string; shared: number; tags: string[]; via: string | null }[]>();
+
+export function sharedTagModules(id: string): { id: string; shared: number; tags: string[]; via: string | null }[] {
+  const hit = _sharedTagCache.get(id);
+  if (hit) return hit;
+  const result = computeSharedTagModules(id);
+  _sharedTagCache.set(id, result);
+  return result;
+}
+
+function computeSharedTagModules(id: string): { id: string; shared: number; tags: string[]; via: string | null }[] {
   const l = lectureById[id];
   if (!l) return [];
   const counts: Record<string, number> = {};
+  const shared: Record<string, { label: string; rarity: number }[]> = {};
   for (const t of l.tags) {
     if (!MEANINGFUL_TAG_KINDS.has(t.kind)) continue;
-    for (const other of tagIndex[tagKey(t.kind, t.label)] ?? []) {
-      if (other !== id) counts[other] = (counts[other] ?? 0) + 1;
+    const carriers = tagIndex[tagKey(t.kind, t.label)] ?? [];
+    for (const other of carriers) {
+      if (other === id) continue;
+      counts[other] = (counts[other] ?? 0) + 1;
+      (shared[other] ??= []).push({ label: t.label, rarity: carriers.length });
     }
   }
   return Object.entries(counts)
-    .map(([oid, shared]) => ({ id: oid, shared }))
+    .map(([oid, count]) => {
+      const list = shared[oid] ?? [];
+      const rarest = [...list].sort((a, b) => a.rarity - b.rarity)[0];
+      return { id: oid, shared: count, tags: list.map((x) => x.label), via: rarest?.label ?? null };
+    })
     .sort((a, b) => b.shared - a.shared);
 }
 
@@ -145,6 +163,18 @@ const TERM_STOPWORDS = new Set([
   'human', 'system', 'systems', 'mechanism', 'mechanisms', 'approach', 'management',
   'principles', 'general', 'other', 'part', 'type', 'types', 'cell', 'cells',
   'tract', 'function', 'functions', 'used', 'related', 'common', 'primary',
+  // Generic clinical/English words + cross-system homonyms — too polysemous to be
+  // a real bridge on their own (e.g. cardiac "arrest" vs meiotic "arrest"). Kept
+  // out so a shared term implies a genuine entity (organism / drug / disease).
+  'arrest', 'screen', 'screening', 'drop', 'reflux', 'pressure', 'overload',
+  'response', 'release', 'uptake', 'gradient', 'barrier', 'defect', 'damage',
+  'injury', 'lesion', 'region', 'regions', 'structure', 'structures', 'feature',
+  'features', 'finding', 'findings', 'change', 'changes', 'effect', 'effects',
+  'cause', 'causes', 'result', 'results', 'level', 'levels', 'count', 'load',
+  'phase', 'phases', 'stage', 'stages', 'marker', 'markers', 'complex', 'target',
+  'factor', 'factors', 'signal', 'signals', 'pathway', 'pathways', 'process',
+  'presentation', 'formation', 'activity', 'normal', 'abnormal', 'increased',
+  'decreased', 'elevated', 'production', 'balance', 'modification', 'modifications',
 ]);
 
 function terms(text: string): string[] {
@@ -180,11 +210,26 @@ export const termIndex: Record<string, string[]> = (() => {
  * count little, and near-ubiquitous ones are ignored. This surfaces genuine
  * cross-block links (organism ↔ disease ↔ drug ↔ pathology) without flooding.
  */
-export function crossSubjectCandidates(id: string): { id: string; score: number }[] {
+const _crossSubjectCache = new Map<string, { id: string; score: number; anchor: string | null; anchorWeight: number }[]>();
+
+export function crossSubjectCandidates(
+  id: string,
+): { id: string; score: number; anchor: string | null; anchorWeight: number }[] {
+  const hit = _crossSubjectCache.get(id);
+  if (hit) return hit;
+  const result = computeCrossSubjectCandidates(id);
+  _crossSubjectCache.set(id, result);
+  return result;
+}
+
+function computeCrossSubjectCandidates(
+  id: string,
+): { id: string; score: number; anchor: string | null; anchorWeight: number }[] {
   const node = moduleNodes[id];
   if (!node) return [];
   const scores: Record<string, number> = {};
   const maxWeight: Record<string, number> = {};
+  const anchor: Record<string, string> = {}; // the rarest shared term = the named bridge
   for (const term of moduleTerms(id)) {
     const carriers = termIndex[term] ?? [];
     if (carriers.length > 40) continue; // too generic to be meaningful
@@ -194,13 +239,16 @@ export function crossSubjectCandidates(id: string): { id: string; score: number 
       const on = moduleNodes[other];
       if (!on || on.subjectCode === node.subjectCode) continue; // cross-subject only
       scores[other] = (scores[other] ?? 0) + weight;
-      maxWeight[other] = Math.max(maxWeight[other] ?? 0, weight);
+      if (weight > (maxWeight[other] ?? 0)) {
+        maxWeight[other] = weight;
+        anchor[other] = term;
+      }
     }
   }
   return Object.entries(scores)
     // Require score ≥3 AND a specific anchor term (weight ≥2) — kills pure
     // common-word coincidences while keeping organism/drug/disease-name links.
     .filter(([oid, s]) => s >= 3 && (maxWeight[oid] ?? 0) >= 2)
-    .map(([oid, score]) => ({ id: oid, score }))
+    .map(([oid, score]) => ({ id: oid, score, anchor: anchor[oid] ?? null, anchorWeight: maxWeight[oid] ?? 0 }))
     .sort((a, b) => b.score - a.score);
 }

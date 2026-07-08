@@ -19,6 +19,8 @@ export interface EdgeView {
   subjectCode: string | null;
   strength: IntegrationStrength;
   reason: string;
+  via?: string; // the specific concept bridging the two modules
+  evidence?: string; // why the link earned its place ('mutual link', '3 shared concepts')
 }
 
 export interface TrapView {
@@ -64,13 +66,21 @@ const MAP_CAP: Record<IntegrationType, number> = {
   repair: 4,
 };
 
-function toEdgeView(e: { targetId: string; strength: IntegrationStrength; reason: string }): EdgeView {
+function toEdgeView(e: {
+  targetId: string;
+  strength: IntegrationStrength;
+  reason: string;
+  via?: string;
+  evidence?: string;
+}): EdgeView {
   return {
     id: e.targetId,
     title: lectureById[e.targetId]?.title ?? e.targetId.replace(/-/g, ' '),
     subjectCode: moduleNodes[e.targetId]?.subjectCode ?? null,
     strength: e.strength,
     reason: e.reason,
+    via: e.via,
+    evidence: e.evidence,
   };
 }
 

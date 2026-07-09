@@ -23,7 +23,8 @@ import type { Lecture, SystemId } from '../lib/types';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET_PER_SUBJECT = 18; // within the requested 16–20 band
-const CONCURRENCY = 4;
+const BATCH_SIZE = 6; // substantive modules per API call, to stay under the token cap
+const CONCURRENCY = 3; // gpt-4o is slower / more rate-limited than the mini model
 
 function loadLocalEnv() {
   for (const name of ['.env.local', '.env']) {
@@ -54,6 +55,27 @@ function modalSystem(mods: Lecture[]): SystemId {
   return (top as SystemId) ?? 'pathology';
 }
 
+/** Generate one subject in small batches (so each rich response fits the token
+ *  cap), feeding accumulated titles forward so batches don't duplicate. */
+async function generateForSubject(spec: SubjectSpec, apiKey: string, model: string): Promise<Lecture[]> {
+  const out: Lecture[] = [];
+  const seenIds = new Set<string>();
+  const titles = [...spec.existingTitles];
+  const batches = Math.ceil(spec.count / BATCH_SIZE);
+  for (let b = 0; b < batches && out.length < spec.count; b++) {
+    const want = Math.min(BATCH_SIZE, spec.count - out.length);
+    const mods = await generateAdditionalTopics({ ...spec, count: want, existingTitles: titles }, apiKey, model);
+    for (const m of mods) {
+      if (seenIds.has(m.id)) continue;
+      seenIds.add(m.id);
+      titles.push(m.title);
+      out.push(m);
+    }
+    if (mods.length === 0) break; // a failed batch — stop retrying this subject
+  }
+  return out;
+}
+
 /** Run tasks with a small concurrency cap. */
 async function pool<T, R>(items: T[], limit: number, fn: (t: T) => Promise<R>): Promise<R[]> {
   const results: R[] = new Array(items.length);
@@ -71,7 +93,7 @@ async function pool<T, R>(items: T[], limit: number, fn: (t: T) => Promise<R>): 
 async function main() {
   loadLocalEnv();
   const apiKey = process.env.OPENAI_API_KEY ?? '';
-  const model = process.env.OPENAI_MODEL ?? 'gpt-4o-mini';
+  const model = process.env.OPENAI_MODEL ?? 'gpt-4o';
 
   if (!apiKey) {
     console.warn('additional:generate — no OPENAI_API_KEY found (.env.local or env).');
@@ -99,7 +121,7 @@ async function main() {
   console.log(`additional:generate — ${specs.length} subjects, target ${TARGET_PER_SUBJECT} each, model=${model}.`);
 
   const perSubject = await pool(specs, CONCURRENCY, async (spec) => {
-    const mods = await generateAdditionalTopics(spec, apiKey, model);
+    const mods = await generateForSubject(spec, apiKey, model);
     console.log(`  ${spec.code.padEnd(8)} ${mods.length} modules`);
     return { spec, mods };
   });

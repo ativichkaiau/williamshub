@@ -44,14 +44,14 @@ const JSON_SHAPE = `{
   "modules": [
     {
       "title": "a SPECIFIC exam-relevant topic NOT in the provided existing list",
-      "highYield": ["3-5 plain-text bullets — NO markdown, NO ** ", "..."],
-      "mechanism": { "title": "short summary phrase", "steps": ["4-6 short step labels forming a chain"] },
-      "examFindings": [{ "sign": "...", "mechanism": "why it happens", "key": true }],
-      "investigations": [{ "clue": "...", "meaning": "what it tells you" }],
-      "treatment": [{ "logic": "...", "detail": "why / when" }],
-      "mnemonics": [{ "hook": "...", "expansion": ["...", "..."] }],
-      "traps": [{ "category": "the lens tested", "wrong": "seductive wrong answer", "right": "the correct answer", "why": "one-line discriminator" }],
-      "quiz": [{ "stem": "one-best-answer question", "options": ["A", "B", "C", "D"], "answerIndex": 0, "explanation": "1-2 sentences", "tests": "recall|mechanism|exam|investigation|treatment|disease" }],
+      "highYield": ["5-7 substantive bullets — each a complete high-yield fact with specifics (values, cutoffs, drug/organism/gene names, classic associations). Plain text, NO markdown, NO **"],
+      "mechanism": { "title": "one-line summary of the causal thread", "steps": ["5-7 steps forming a clear cause->effect chain, each a short specific phrase"] },
+      "examFindings": [{ "sign": "the finding", "mechanism": "the specific reason it occurs", "key": true }],
+      "investigations": [{ "clue": "the test/finding, with values where relevant", "meaning": "what it tells you and how it discriminates" }],
+      "treatment": [{ "logic": "the step, with named drugs/classes and first-line vs alternative", "detail": "why / when / sequence" }],
+      "mnemonics": [{ "hook": "memory hook", "expansion": ["what each part stands for"] }],
+      "traps": [{ "category": "the lens tested", "wrong": "the seductive wrong answer", "right": "the correct answer", "why": "the sharp one-line discriminator" }],
+      "quiz": [{ "stem": "a clinical-vignette single-best-answer question", "options": ["four plausible options as PLAIN text with NO letter prefixes"], "answerIndex": 0, "explanation": "2-3 sentences: why the answer is right AND why the key distractor is wrong", "tests": "mechanism|exam|investigation|treatment|disease" }],
       "tags": [{ "kind": "disease|mechanism|exam|investigation|treatment", "label": "short label" }]
     }
   ]
@@ -59,18 +59,19 @@ const JSON_SHAPE = `{
 
 export function buildPrompt(spec: SubjectSpec): { system: string; user: string } {
   const system =
-    'You are a medical-education content author for a Thai (MedCMU) preclinical exam-prep app. ' +
+    'You are an expert medical-education author writing for a Thai (MedCMU) preclinical exam-prep app used by strong students. ' +
     `Write ${spec.count} additional, exam-relevant study modules for the subject "${spec.name}" (${spec.code}). ` +
     'Each must be a DISTINCT standard topic that is NOT already in the provided existing-titles list. ' +
-    'Keep content accurate, concise and at preclinical exam level. ' +
-    'IMPORTANT: use PLAIN TEXT only — never use markdown, asterisks, or ** highlighting anywhere. ' +
-    'Every module needs a mechanism chain (4-6 steps), 2-3 exam findings, 2-3 investigations, 2-3 treatment points, ' +
-    '1-2 mnemonics, 1-2 traps and 2-3 single-best-answer MCQs (exactly 4 options each, one correct). ' +
+    'DEPTH MATTERS: be substantive and specific — include real values, cutoffs, classic associations, named drugs/organisms/genes, and the discriminators that separate look-alikes. No vague one-liners, no filler. ' +
+    'Content must be medically accurate at preclinical exam level. ' +
+    'Use PLAIN TEXT only — never markdown, asterisks, ** highlighting, or letter/number prefixes inside option text. ' +
+    'Per module: 5-7 high-yield bullets, a 5-7 step mechanism chain, 3-4 exam findings, 3-4 investigations, 3-4 treatment points, ' +
+    '1-2 mnemonics, 2-3 traps, and 3-4 clinical-vignette single-best-answer MCQs (exactly 4 plain-text options each, one correct, with a 2-3 sentence explanation). ' +
     `Respond with STRICT JSON ONLY matching this shape (no prose, no markdown):\n${JSON_SHAPE}`;
 
   const user = JSON.stringify({
     subject: { code: spec.code, name: spec.name },
-    want: `${spec.count} additional topic modules`,
+    want: `${spec.count} substantive, in-depth additional topic modules`,
     existingTitles: spec.existingTitles,
   });
 
@@ -108,7 +109,7 @@ export function parseModules(raw: string, spec: SubjectSpec): Lecture[] {
       ? mech.steps.filter((s): s is string => typeof s === 'string').map(strip).filter(Boolean)
       : [];
     if (stepLabels.length < 2) continue;
-    const steps: MechanismStep[] = stepLabels.slice(0, 6).map((label, i) => ({ id: `s${i + 1}`, label }));
+    const steps: MechanismStep[] = stepLabels.slice(0, 7).map((label, i) => ({ id: `s${i + 1}`, label }));
 
     const examFindings = (Array.isArray(m.examFindings) ? m.examFindings : [])
       .map((e) => e as Record<string, unknown>)
@@ -194,7 +195,7 @@ export function parseModules(raw: string, spec: SubjectSpec): Lecture[] {
       source: `Additional Topics — ${spec.code}`,
       updated: new Date().toISOString().slice(0, 10),
       tags,
-      highYield: highYield.slice(0, 6),
+      highYield: highYield.slice(0, 7),
       mechanism: { title: typeof mech.title === 'string' ? strip(mech.title as string) : title, steps },
       examFindings,
       investigations,
@@ -212,13 +213,14 @@ export function parseModules(raw: string, spec: SubjectSpec): Lecture[] {
 export async function generateAdditionalTopics(
   spec: SubjectSpec,
   apiKey: string,
-  model = process.env.OPENAI_MODEL ?? 'gpt-4o-mini',
+  model = process.env.OPENAI_MODEL ?? 'gpt-4o',
 ): Promise<Lecture[]> {
   if (!apiKey) return [];
   const { system, user } = buildPrompt(spec);
   const body = JSON.stringify({
     model,
     temperature: 0.4,
+    max_tokens: 12000, // room for a batch of substantive modules without truncation
     response_format: { type: 'json_object' },
     messages: [
       { role: 'system', content: system },

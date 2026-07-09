@@ -1,5 +1,6 @@
 import type { Lecture } from '../lib/types';
 import { subjectOfSource, subjectSlug } from './curriculum';
+import { additionalTopics, additionalTopicSubjects } from './additional-topics';
 // L1 — Cardiac Arrhythmias
 import avBlock from './lectures/av-block';
 import atrialFibrillation from './lectures/atrial-fibrillation';
@@ -2081,7 +2082,15 @@ export const lectures: Lecture[] = [
   neoplasiaNomenclature, neoplasiaDifferentiationInvasion, carcinogenesisMolecular, cancerSpreadStagingClinical,
   // L8 Environmental & Occupational Pathology
   environmentalChemicalTobaccoInjury, physicalNutritionalInjury,
+  // Additional (supplementary) topics — extra modules per subject (see
+  // content/additional-topics). Plain (no highlighter markup), same structure.
+  ...additionalTopics,
 ];
+
+// Register the additional-topic sources → subject so they group and resolve
+// exactly like any lecture source. Must run before the by-subject / set
+// aggregations below (which read subjectOfSource).
+Object.assign(subjectOfSource, additionalTopicSubjects);
 
 export const lectureById: Record<string, Lecture> = Object.fromEntries(
   lectures.map((l) => [l.id, l]),

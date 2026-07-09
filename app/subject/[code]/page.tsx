@@ -67,9 +67,13 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
     (acc[l.source] ??= []).push(l);
     return acc;
   }, {});
-  const sources = Object.entries(groups).sort(([a], [b]) =>
-    a.localeCompare(b, undefined, { numeric: true }),
-  );
+  const sources = Object.entries(groups).sort(([a], [b]) => {
+    // "Additional Topics" always sorts to the very end of the block.
+    const aAdd = a.startsWith('Additional Topics');
+    const bAdd = b.startsWith('Additional Topics');
+    if (aAdd !== bAdd) return aAdd ? 1 : -1;
+    return a.localeCompare(b, undefined, { numeric: true });
+  });
 
   // Group sources into "Parts" (e.g. HGA Part 1–5) while preserving order.
   // Subjects without any part mapping fall into a single undefined-part group
@@ -185,20 +189,36 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           ) : null}
           {group.sources.map(([source, lects]) => {
             const theme = lectureTheme(source);
+            const isAdditional = source.startsWith('Additional Topics');
             return (
-              <section key={source} className="mb-9">
+              <section
+                key={source}
+                className={`mb-9 ${isAdditional ? 'mt-10 border-t border-dashed border-slate-200 pt-8 dark:border-white/10' : ''}`}
+              >
                 <div className={`mb-3 h-1 w-12 rounded-full bg-gradient-to-r ${theme.grad}`} />
                 <Link
                   href={`/lecture-set/${lectureSetSlug(source)}`}
-                  className="group mb-4 flex items-center gap-2"
+                  className={`group flex items-center gap-2 ${isAdditional ? 'mb-1' : 'mb-4'}`}
                 >
                   <span className={`h-3 w-3 rounded-full ${theme.dot}`} />
-                  <h2 className={`text-base font-black tracking-tight transition ${theme.text}`}>{source}</h2>
+                  <h2 className={`text-base font-black tracking-tight transition ${theme.text}`}>
+                    {isAdditional ? 'Additional Topics' : source}
+                  </h2>
+                  {isAdditional ? (
+                    <span className="clay-pill px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-300">
+                      supplementary
+                    </span>
+                  ) : null}
                   <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{lects.length}</span>
                   <span className={`text-xs font-semibold opacity-0 transition group-hover:opacity-100 ${theme.text}`}>
                     View whole lecture →
                   </span>
                 </Link>
+                {isAdditional ? (
+                  <p className="mb-4 text-xs text-slate-500 dark:text-slate-400">
+                    Extra exam-relevant topics beyond the core lecture list.
+                  </p>
+                ) : null}
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {lects.map((l) => (
                     <LectureCard key={l.id} l={l} theme={theme} />

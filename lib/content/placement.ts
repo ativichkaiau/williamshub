@@ -65,7 +65,8 @@ export function contentIssues(lectures: Lecture[]): ContentIssue[] {
     if (!p.subject) {
       issues.push({ moduleId: l.id, source: l.source, kind: 'no-subject', detail: 'source has no entry in subjectOfSource' });
     }
-    if (p.lectureNo == null) {
+    // "Additional Topics" sources are intentionally unnumbered — don't warn.
+    if (p.lectureNo == null && !l.source.startsWith('Additional Topics')) {
       issues.push({ moduleId: l.id, source: l.source, kind: 'no-lecture-no', detail: 'source does not start with "L<n>"' });
     }
 

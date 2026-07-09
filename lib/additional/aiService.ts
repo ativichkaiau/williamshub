@@ -26,6 +26,20 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 56);
 }
 
+const OPTION_ENUM = /^\s*\(?([A-Ea-e])[.)]\s+/;
+/**
+ * Strip "A) " / "B. " enumerator prefixes the model sometimes bakes into option
+ * text (which would double-label as "a) A) ..."). Only strips when EVERY option
+ * carries the sequential letter for its position, so a genuine "E. coli"-style
+ * option is never clobbered.
+ */
+export function stripOptionEnumerators(texts: string[]): string[] {
+  const seq = ['a', 'b', 'c', 'd', 'e'];
+  const letters = texts.map((t) => t.match(OPTION_ENUM)?.[1]?.toLowerCase() ?? null);
+  if (!letters.every((l, i) => l === seq[i])) return texts;
+  return texts.map((t) => t.replace(OPTION_ENUM, ''));
+}
+
 const JSON_SHAPE = `{
   "modules": [
     {
@@ -141,7 +155,8 @@ export function parseModules(raw: string, spec: SubjectSpec): Lecture[] {
     const quiz = (Array.isArray(m.quiz) ? m.quiz : [])
       .map((e) => e as Record<string, unknown>)
       .map((q, qi) => {
-        const options = Array.isArray(q.options) ? q.options.filter((o): o is string => typeof o === 'string') : [];
+        const rawOptions = Array.isArray(q.options) ? q.options.filter((o): o is string => typeof o === 'string') : [];
+        const options = stripOptionEnumerators(rawOptions);
         const answerIndex = typeof q.answerIndex === 'number' ? q.answerIndex : -1;
         if (typeof q.stem !== 'string' || options.length < 3 || options.length > 5) return null;
         if (answerIndex < 0 || answerIndex >= options.length) return null;

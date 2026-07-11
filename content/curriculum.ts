@@ -528,6 +528,18 @@ export const subjectOfSource: Record<string, string> = {
   'L8 — Types of Research Publication': 'BMR',
   'L9 — Academic Authorship': 'BMR',
 
+  // ERS-1 — Essential Research Skill-1 (Year 3, the ERS-68 / RS2 course)
+  'L1 — Research Question, Protocol & Ethics': 'ERS-1',
+  'L2 — Epidemiologic Study Designs': 'ERS-1',
+  'L3 — Measures of Frequency & Association': 'ERS-1',
+  'L4 — Causal Inference: Bias & Confounding': 'ERS-1',
+  'L5 — Diagnostic Test Evaluation': 'ERS-1',
+  'L6 — Basic Biostatistics': 'ERS-1',
+  'L7 — Statistical Tests & Sample Size': 'ERS-1',
+  'L8 — Randomized Controlled Trials': 'ERS-1',
+  'L9 — Systematic Review & Meta-Analysis': 'ERS-1',
+  'L10 — Critical Appraisal of the Literature': 'ERS-1',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

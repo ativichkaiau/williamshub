@@ -648,6 +648,18 @@ import publicationTypesImrad from './lectures/publication-types-imrad';
 import peerReviewJournalMetrics from './lectures/peer-review-journal-metrics';
 import academicAuthorship from './lectures/academic-authorship';
 
+// ── ERS-1 (Essential Research Skill-1, Year 3) ──
+import ersResearchQuestionProtocol from './lectures/ers-research-question-protocol';
+import ersStudyDesigns from './lectures/ers-study-designs';
+import ersMeasuresFrequencyAssociation from './lectures/ers-measures-frequency-association';
+import ersCausalInference from './lectures/ers-causal-inference';
+import ersDiagnosticTests from './lectures/ers-diagnostic-tests';
+import ersBiostatistics from './lectures/ers-biostatistics';
+import ersStatisticalTests from './lectures/ers-statistical-tests';
+import ersRct from './lectures/ers-rct';
+import ersSystematicReviewMetaAnalysis from './lectures/ers-systematic-review-meta-analysis';
+import ersCriticalAppraisal from './lectures/ers-critical-appraisal';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1564,6 +1576,11 @@ export const lectures: Lecture[] = [
   publicationTypesImrad, peerReviewJournalMetrics,
   // L9 Academic Authorship
   academicAuthorship,
+
+  // ── ERS-1 (Essential Research Skill-1, Year 3) ──
+  ersResearchQuestionProtocol, ersStudyDesigns, ersMeasuresFrequencyAssociation,
+  ersCausalInference, ersDiagnosticTests, ersBiostatistics, ersStatisticalTests,
+  ersRct, ersSystematicReviewMetaAnalysis, ersCriticalAppraisal,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

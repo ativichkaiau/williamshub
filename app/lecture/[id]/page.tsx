@@ -76,6 +76,12 @@ export default function LecturePage({ params }: { params: { id: string } }) {
           <h1 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">{l.title}</h1>
           <div className="flex shrink-0 items-center gap-2">
             <Link
+              href={`/flashcards/${l.id}`}
+              className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+            >
+              <span aria-hidden>🗂️</span> Cards
+            </Link>
+            <Link
               href={`/practice/${l.id}`}
               className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
             >

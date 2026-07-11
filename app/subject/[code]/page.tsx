@@ -109,12 +109,20 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           {sources.length} lecture{sources.length === 1 ? '' : 's'} · {items.length} modules — each lecture
           opens as a whole-lecture scroll.
         </p>
-        <Link
-          href={`/practice/block/${params.code}`}
-          className="clay-pill mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
-        >
-          <span aria-hidden>📝</span> Practise this block
-        </Link>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link
+            href={`/flashcards/block/${params.code}`}
+            className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+          >
+            <span aria-hidden>🗂️</span> Flashcards
+          </Link>
+          <Link
+            href={`/practice/block/${params.code}`}
+            className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+          >
+            <span aria-hidden>📝</span> Practise this block
+          </Link>
+        </div>
       </header>
 
       {block.nodes.length >= 2 && block.hasEdges ? (

@@ -18,12 +18,13 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { lecturesBySubject } from '../content';
 import { subjectByCode } from '../content/curriculum';
+import { additionalTopics as existingTopics, additionalTopicSubjects as existingSubjects } from '../content/additional-topics.generated';
 import { generateAdditionalTopics, type SubjectSpec } from '../lib/additional/aiService';
 import type { Lecture, SystemId } from '../lib/types';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TARGET_PER_SUBJECT = 18; // within the requested 16–20 band
-const BATCH_SIZE = 6; // substantive modules per API call, to stay under the token cap
+const BATCH_SIZE = 4; // fewer modules per call → more token room for complete modules (fuller quizzes/findings)
 const CONCURRENCY = 3; // gpt-4o is slower / more rate-limited than the mini model
 
 function loadLocalEnv() {
@@ -102,9 +103,15 @@ async function main() {
     return;
   }
 
+  // Optional subject filter: `npm run additional:generate -- ERS-1 HGB-2` targets
+  // only those subjects and MERGES into the existing file (others untouched).
+  const onlyCodes = new Set(process.argv.slice(2).map((s) => s.toUpperCase()).filter(Boolean));
+  const targeted = onlyCodes.size > 0;
+
   // Build one spec per subject from its CORE modules (exclude any prior Additional
   // Topics so we dedupe against the real curriculum and regenerate cleanly).
   const specs: SubjectSpec[] = Object.entries(lecturesBySubject)
+    .filter(([code]) => !targeted || onlyCodes.has(code.toUpperCase()))
     .map(([code, mods]) => {
       const core = mods.filter((m) => !m.source.startsWith('Additional Topics'));
       const subject = subjectByCode[code];
@@ -118,7 +125,9 @@ async function main() {
     })
     .sort((a, b) => a.code.localeCompare(b.code));
 
-  console.log(`additional:generate — ${specs.length} subjects, target ${TARGET_PER_SUBJECT} each, model=${model}.`);
+  console.log(
+    `additional:generate — ${specs.length}${targeted ? ` targeted` : ''} subject(s), target ${TARGET_PER_SUBJECT} each, model=${model}.`,
+  );
 
   const perSubject = await pool(specs, CONCURRENCY, async (spec) => {
     const mods = await generateForSubject(spec, apiKey, model);
@@ -126,10 +135,13 @@ async function main() {
     return { spec, mods };
   });
 
-  // De-duplicate ids globally (defensive) and collect the source→subject map.
-  const all: Lecture[] = [];
-  const seen = new Set<string>();
-  const subjectsMap: Record<string, string> = {};
+  // In targeted mode, start from the existing file and replace only the subjects
+  // we successfully regenerated; otherwise start fresh.
+  const regenCodes = new Set(perSubject.filter((p) => p.mods.length > 0).map((p) => p.spec.code));
+  const subjectOfMod = (m: Lecture): string => existingSubjects[m.source] ?? '';
+  const all: Lecture[] = targeted ? existingTopics.filter((m) => !regenCodes.has(subjectOfMod(m))) : [];
+  const subjectsMap: Record<string, string> = targeted ? { ...existingSubjects } : {};
+  const seen = new Set<string>(all.map((m) => m.id));
   for (const { spec, mods } of perSubject) {
     if (mods.length === 0) continue;
     subjectsMap[`Additional Topics — ${spec.code}`] = spec.code;

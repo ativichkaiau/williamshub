@@ -19,7 +19,8 @@
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { lectures, lectureById } from '../content';
+import { lectures, lectureById, subjectOfSource } from '../content';
+import { aiQuestions as existingAiQuestions } from '../content/questions.generated';
 import { getIntegrations } from '../lib/integrations/resolve';
 import { authoredQuestions, mergeBank } from '../lib/questions/bank';
 import { deterministicQuestions } from '../lib/questions/deterministic';
@@ -70,15 +71,25 @@ function linkedFor(moduleId: string): LinkedModule[] {
 async function main() {
   const aiBank: QuestionBank = {};
 
+  // Optional subject filter: `npm run questions:generate -- ERS-1` generates AI
+  // questions only for that subject's modules and MERGES into the existing bank.
+  const onlyCodes = new Set(process.argv.slice(2).map((s) => s.toUpperCase()).filter(Boolean));
+  const targeted = onlyCodes.size > 0;
+  const targets = targeted
+    ? lectures.filter((l) => onlyCodes.has((subjectOfSource[l.source] ?? '').toUpperCase()))
+    : lectures;
+
   if (key) {
     const model = process.env.OPENAI_MODEL ?? 'gpt-4o-mini';
     const CONCURRENCY = Math.max(1, Math.min(24, Number(process.env.QUESTION_GEN_CONCURRENCY) || 4));
-    console.log(`Generating AI questions for ${lectures.length} modules (${model}, concurrency ${CONCURRENCY})…`);
+    console.log(
+      `Generating AI questions for ${targets.length}${targeted ? ' targeted' : ''} modules (${model}, concurrency ${CONCURRENCY})…`,
+    );
     let done = 0;
     let aiCount = 0;
-    for (let i = 0; i < lectures.length; i += CONCURRENCY) {
+    for (let i = 0; i < targets.length; i += CONCURRENCY) {
       await Promise.all(
-        lectures.slice(i, i + CONCURRENCY).map(async (l) => {
+        targets.slice(i, i + CONCURRENCY).map(async (l) => {
           const qs = await generateAiQuestions(l, { linked: linkedFor(l.id) }, key, model);
           if (qs.length) {
             aiBank[l.id] = qs;
@@ -87,11 +98,14 @@ async function main() {
           done++;
         }),
       );
-      console.log(`  ${done}/${lectures.length} modules · ${aiCount} AI questions`);
+      console.log(`  ${done}/${targets.length} modules · ${aiCount} AI questions`);
     }
   } else {
     console.log('No OPENAI_API_KEY set — baking the deterministic bank only. Set the key to enrich with AI.');
   }
+
+  // In targeted mode, keep every other subject's existing AI questions untouched.
+  const finalAi: QuestionBank = targeted ? { ...existingAiQuestions, ...aiBank } : aiBank;
 
   // 1) AI layer → content/questions.generated.ts
   const header =
@@ -99,13 +113,13 @@ async function main() {
     '// Do not edit by hand.\n\n' +
     "import type { QuestionBank } from '../lib/questions/types';\n\n" +
     'export const aiQuestions: QuestionBank = ';
-  writeFileSync(join(root, 'content/questions.generated.ts'), header + JSON.stringify(aiBank) + ';\n');
+  writeFileSync(join(root, 'content/questions.generated.ts'), header + JSON.stringify(finalAi) + ';\n');
 
   // 2) Full bank → public/question-bank.json (authored + AI + deterministic)
   const bank: QuestionBank = {};
   let total = 0;
   for (const l of lectures) {
-    const merged = mergeBank([authoredQuestions(l.id), aiBank[l.id] ?? [], deterministicQuestions(l.id)]);
+    const merged = mergeBank([authoredQuestions(l.id), finalAi[l.id] ?? [], deterministicQuestions(l.id)]);
     if (merged.length) {
       bank[l.id] = merged;
       total += merged.length;
@@ -117,7 +131,7 @@ async function main() {
     JSON.stringify({ modules: Object.keys(bank).length, count: total, bank }),
   );
 
-  const aiCount = Object.values(aiBank).reduce((n, q) => n + q.length, 0);
+  const aiCount = Object.values(finalAi).reduce((n, q) => n + q.length, 0);
   console.log(`question-bank.json: ${Object.keys(bank).length} modules, ${total} questions (${aiCount} AI).`);
 }
 

@@ -659,6 +659,16 @@ import ersStatisticalTests from './lectures/ers-statistical-tests';
 import ersRct from './lectures/ers-rct';
 import ersSystematicReviewMetaAnalysis from './lectures/ers-systematic-review-meta-analysis';
 import ersCriticalAppraisal from './lectures/ers-critical-appraisal';
+import ersResearchEthics from './lectures/ers-research-ethics';
+import ersCohortCaseControl from './lectures/ers-cohort-case-control';
+import ersStandardisationRates from './lectures/ers-standardisation-rates';
+import ersBiasTypes from './lectures/ers-bias-types';
+import ersPretestPosttestProbability from './lectures/ers-pretest-posttest-probability';
+import ersDistributionsConfidenceIntervals from './lectures/ers-distributions-confidence-intervals';
+import ersSampleSizePower from './lectures/ers-sample-size-power';
+import ersTrialTypesAnalysis from './lectures/ers-trial-types-analysis';
+import ersMetaAnalysisInterpretation from './lectures/ers-meta-analysis-interpretation';
+import ersEvidenceBasedMedicine from './lectures/ers-evidence-based-medicine';
 
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
@@ -1581,6 +1591,10 @@ export const lectures: Lecture[] = [
   ersResearchQuestionProtocol, ersStudyDesigns, ersMeasuresFrequencyAssociation,
   ersCausalInference, ersDiagnosticTests, ersBiostatistics, ersStatisticalTests,
   ersRct, ersSystematicReviewMetaAnalysis, ersCriticalAppraisal,
+  // L1–L10 second modules
+  ersResearchEthics, ersCohortCaseControl, ersStandardisationRates, ersBiasTypes,
+  ersPretestPosttestProbability, ersDistributionsConfidenceIntervals, ersSampleSizePower,
+  ersTrialTypesAnalysis, ersMetaAnalysisInterpretation, ersEvidenceBasedMedicine,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

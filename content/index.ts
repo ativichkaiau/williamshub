@@ -688,6 +688,33 @@ import hrp2PerinatalJaundice from './lectures/hrp2-perinatal-jaundice';
 import hrp2FemaleHormonesDrugs from './lectures/hrp2-female-hormones-drugs';
 import hrp2AndrogenDrugs from './lectures/hrp2-androgen-drugs';
 import hrp2UterineContractionDrugs from './lectures/hrp2-uterine-contraction-drugs';
+// HRP-2 second/third modules per lecture
+import hrp2OvarianGermCellTumors from './lectures/hrp2-ovarian-germ-cell-tumors';
+import hrp2OvarianSexCordStromal from './lectures/hrp2-ovarian-sex-cord-stromal';
+import hrp2BenignBreastDisease from './lectures/hrp2-benign-breast-disease';
+import hrp2BreastCarcinomaTypes from './lectures/hrp2-breast-carcinoma-types';
+import hrp2TesticularPathology from './lectures/hrp2-testicular-pathology';
+import hrp2ProstatePenilePathology from './lectures/hrp2-prostate-penile-pathology';
+import hrp2VulvarVaginalNeoplasia from './lectures/hrp2-vulvar-vaginal-neoplasia';
+import hrp2CervicalCancerScreening from './lectures/hrp2-cervical-cancer-screening';
+import hrp2LeiomyomaAdenomyosis from './lectures/hrp2-leiomyoma-adenomyosis';
+import hrp2Endometriosis from './lectures/hrp2-endometriosis';
+import hrp2Choriocarcinoma from './lectures/hrp2-choriocarcinoma';
+import hrp2VulvarDermatoses from './lectures/hrp2-vulvar-dermatoses';
+import hrp2PidTuboOvarian from './lectures/hrp2-pid-tubo-ovarian';
+import hrp2SyphilisStages from './lectures/hrp2-syphilis-stages';
+import hrp2GenitalHerpesHivPregnancy from './lectures/hrp2-genital-herpes-hiv-pregnancy';
+import hrp2NeonatalSepsisGbs from './lectures/hrp2-neonatal-sepsis-gbs';
+import hrp2DysmenorrheaMenorrhagia from './lectures/hrp2-dysmenorrhea-menorrhagia';
+import hrp2Pcos from './lectures/hrp2-pcos';
+import hrp2MenopausePoi from './lectures/hrp2-menopause-poi';
+import hrp2GestationalDiabetes from './lectures/hrp2-gestational-diabetes';
+import hrp2RhIsoimmunisation from './lectures/hrp2-rh-isoimmunisation';
+import hrp2JaundiceManagement from './lectures/hrp2-jaundice-management';
+import hrp2HormonalContraception from './lectures/hrp2-hormonal-contraception';
+import hrp2MenopauseHrtDrugs from './lectures/hrp2-menopause-hrt-drugs';
+import hrp2AndrogenDeprivationAnabolic from './lectures/hrp2-androgen-deprivation-anabolic';
+import hrp2LabourInductionTocolysis from './lectures/hrp2-labour-induction-tocolysis';
 
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
@@ -1621,6 +1648,15 @@ export const lectures: Lecture[] = [
   hrp2OvaryPathology, hrp2BreastPathology, hrp2MaleReproPathology, hrp2AbnormalUterineBleeding,
   hrp2HpoAmenorrheaPuberty, hrp2PregnancyDisorders, hrp2PerinatalJaundice,
   hrp2FemaleHormonesDrugs, hrp2AndrogenDrugs, hrp2UterineContractionDrugs,
+  // HRP-2 second/third modules per lecture (→ 2.5 core modules per lecture)
+  hrp2OvarianGermCellTumors, hrp2OvarianSexCordStromal, hrp2BenignBreastDisease,
+  hrp2BreastCarcinomaTypes, hrp2TesticularPathology, hrp2ProstatePenilePathology,
+  hrp2VulvarVaginalNeoplasia, hrp2CervicalCancerScreening, hrp2LeiomyomaAdenomyosis,
+  hrp2Endometriosis, hrp2Choriocarcinoma, hrp2VulvarDermatoses, hrp2PidTuboOvarian,
+  hrp2SyphilisStages, hrp2GenitalHerpesHivPregnancy, hrp2NeonatalSepsisGbs,
+  hrp2DysmenorrheaMenorrhagia, hrp2Pcos, hrp2MenopausePoi, hrp2GestationalDiabetes,
+  hrp2RhIsoimmunisation, hrp2JaundiceManagement, hrp2HormonalContraception,
+  hrp2MenopauseHrtDrugs, hrp2AndrogenDeprivationAnabolic, hrp2LabourInductionTocolysis,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

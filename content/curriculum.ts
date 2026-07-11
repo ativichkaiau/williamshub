@@ -401,6 +401,26 @@ export const subjectOfSource: Record<string, string> = {
   'L17 — Development of the Reproductive System': 'HRP-1',
   'L18 — Semen Production & Analysis': 'HRP-1',
 
+  // HRP-2 — Human Reproductive System & Perinatal Period-2 (Year 3): pathology,
+  // infection, pharmacology & perinatal medicine of the reproductive system.
+  'L1 — Vulvovaginitis & Vaginal Discharge': 'HRP-2',
+  'L2 — Bacterial STIs & PID': 'HRP-2',
+  'L3 — Viral STIs & Antiviral Therapy': 'HRP-2',
+  'L4 — Perinatal (Congenital TORCH) Infections': 'HRP-2',
+  'L5 — Pathology of the Cervix, Vagina & Vulva': 'HRP-2',
+  'L6 — Pathology of the Uterine Corpus': 'HRP-2',
+  'L7 — Gestational Trophoblastic Disease': 'HRP-2',
+  'L8 — Pathology of the Ovary': 'HRP-2',
+  'L9 — Pathology of the Breast': 'HRP-2',
+  'L10 — Pathology of the Male Reproductive System': 'HRP-2',
+  'L11 — Abnormal Uterine Bleeding': 'HRP-2',
+  'L12 — HPO Axis, Amenorrhoea & Puberty': 'HRP-2',
+  'L13 — Disorders Related to Pregnancy': 'HRP-2',
+  'L14 — Perinatal Jaundice': 'HRP-2',
+  'L15 — Female Sex Hormones & Inhibitors': 'HRP-2',
+  'L16 — Androgens & Anti-androgens': 'HRP-2',
+  'L17 — Drugs Affecting Uterine Contraction': 'HRP-2',
+
   // HGA — Human Gross Anatomy (Year 2) · Part 1: Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'HGA',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'HGA',

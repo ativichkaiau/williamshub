@@ -670,6 +670,25 @@ import ersTrialTypesAnalysis from './lectures/ers-trial-types-analysis';
 import ersMetaAnalysisInterpretation from './lectures/ers-meta-analysis-interpretation';
 import ersEvidenceBasedMedicine from './lectures/ers-evidence-based-medicine';
 
+// ── HRP-2 (Human Reproductive System & Perinatal Period-2, Year 3) ──
+import hrp2Vulvovaginitis from './lectures/hrp2-vulvovaginitis';
+import hrp2BacterialStiPid from './lectures/hrp2-bacterial-sti-pid';
+import hrp2ViralStiAntivirals from './lectures/hrp2-viral-sti-antivirals';
+import hrp2PerinatalInfections from './lectures/hrp2-perinatal-infections';
+import hrp2CervixPathology from './lectures/hrp2-cervix-pathology';
+import hrp2UterineCorpusPathology from './lectures/hrp2-uterine-corpus-pathology';
+import hrp2GestationalTrophoblasticDisease from './lectures/hrp2-gestational-trophoblastic-disease';
+import hrp2OvaryPathology from './lectures/hrp2-ovary-pathology';
+import hrp2BreastPathology from './lectures/hrp2-breast-pathology';
+import hrp2MaleReproPathology from './lectures/hrp2-male-repro-pathology';
+import hrp2AbnormalUterineBleeding from './lectures/hrp2-abnormal-uterine-bleeding';
+import hrp2HpoAmenorrheaPuberty from './lectures/hrp2-hpo-amenorrhea-puberty';
+import hrp2PregnancyDisorders from './lectures/hrp2-pregnancy-disorders';
+import hrp2PerinatalJaundice from './lectures/hrp2-perinatal-jaundice';
+import hrp2FemaleHormonesDrugs from './lectures/hrp2-female-hormones-drugs';
+import hrp2AndrogenDrugs from './lectures/hrp2-androgen-drugs';
+import hrp2UterineContractionDrugs from './lectures/hrp2-uterine-contraction-drugs';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1595,6 +1614,13 @@ export const lectures: Lecture[] = [
   ersResearchEthics, ersCohortCaseControl, ersStandardisationRates, ersBiasTypes,
   ersPretestPosttestProbability, ersDistributionsConfidenceIntervals, ersSampleSizePower,
   ersTrialTypesAnalysis, ersMetaAnalysisInterpretation, ersEvidenceBasedMedicine,
+
+  // ── HRP-2 (Human Reproductive System & Perinatal Period-2, Year 3) ──
+  hrp2Vulvovaginitis, hrp2BacterialStiPid, hrp2ViralStiAntivirals, hrp2PerinatalInfections,
+  hrp2CervixPathology, hrp2UterineCorpusPathology, hrp2GestationalTrophoblasticDisease,
+  hrp2OvaryPathology, hrp2BreastPathology, hrp2MaleReproPathology, hrp2AbnormalUterineBleeding,
+  hrp2HpoAmenorrheaPuberty, hrp2PregnancyDisorders, hrp2PerinatalJaundice,
+  hrp2FemaleHormonesDrugs, hrp2AndrogenDrugs, hrp2UterineContractionDrugs,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

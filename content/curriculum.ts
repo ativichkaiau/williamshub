@@ -614,6 +614,22 @@ export const subjectOfSource: Record<string, string> = {
   'L11 — Epidemiological Methods': 'ICH',
   'L12 — Practical Evidence-Based Medicine': 'ICH',
 
+  // BEH — Behavioral Science (Year 3, CMU 305301)
+  'L1 — Introduction to Behavioral Science': 'BEH',
+  'L2 — Doctor-Patient Relationship & Communication': 'BEH',
+  'L3 — Psychiatric Assessment & Psychological Testing': 'BEH',
+  'L4 — Mental Disorders (DSM-5-TR)': 'BEH',
+  'L5 — Genetics & Biology of Behavior': 'BEH',
+  'L6 — Growth and Development': 'BEH',
+  'L7 — Family & its Psychopathology': 'BEH',
+  'L8 — Learning & Humanistic Theory': 'BEH',
+  'L9 — Psychodynamic Theories & Defense Mechanisms': 'BEH',
+  'L10 — Elderly Life Cycle & Successful Aging': 'BEH',
+  'L11 — Personality & Trait Theory': 'BEH',
+  'L12 — Stress & Resilience': 'BEH',
+  'L13 — Death, Dying & Bereavement': 'BEH',
+  'L14 — Abuse, Suicide & Violence': 'BEH',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

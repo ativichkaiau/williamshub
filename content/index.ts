@@ -843,6 +843,43 @@ import ichOccupationalPreventionControls from './lectures/ich-occupational-preve
 import ichSocialDeterminantsEquity from './lectures/ich-social-determinants-equity';
 import ichThaiHealthSystemSchemes from './lectures/ich-thai-health-system-schemes';
 
+// ── BEH (Behavioral Science) — 14 lectures ──
+import behAbuseNeglect from './lectures/beh-abuse-neglect';
+import behAggressionViolence from './lectures/beh-aggression-violence';
+import behAgingLifeCycle from './lectures/beh-aging-life-cycle';
+import behBehavioralGenetics from './lectures/beh-behavioral-genetics';
+import behBiopsychosocialModel from './lectures/beh-biopsychosocial-model';
+import behClassicalOperantConditioning from './lectures/beh-classical-operant-conditioning';
+import behCommunicationSkills from './lectures/beh-communication-skills';
+import behDeathDying from './lectures/beh-death-dying';
+import behDefenseMechanisms from './lectures/beh-defense-mechanisms';
+import behDevelopmentPrinciples from './lectures/beh-development-principles';
+import behDifficultEncounters from './lectures/beh-difficult-encounters';
+import behDoctorPatientRelationship from './lectures/beh-doctor-patient-relationship';
+import behEriksonPsychosocial from './lectures/beh-erikson-psychosocial';
+import behFamilyDynamics from './lectures/beh-family-dynamics';
+import behFamilyPsychopathology from './lectures/beh-family-psychopathology';
+import behFreudStructuralTopographic from './lectures/beh-freud-structural-topographic';
+import behGriefBereavement from './lectures/beh-grief-bereavement';
+import behHumanisticTheory from './lectures/beh-humanistic-theory';
+import behIntroBehavioralScience from './lectures/beh-intro-behavioral-science';
+import behMentalStatusExam from './lectures/beh-mental-status-exam';
+import behMoodAnxietyDisorders from './lectures/beh-mood-anxiety-disorders';
+import behNeurobiologyBehavior from './lectures/beh-neurobiology-behavior';
+import behOtherMajorDisorders from './lectures/beh-other-major-disorders';
+import behPersonalityDisorders from './lectures/beh-personality-disorders';
+import behPersonalityTraitTheory from './lectures/beh-personality-trait-theory';
+import behPiagetAttachment from './lectures/beh-piaget-attachment';
+import behPsychiatricHistory from './lectures/beh-psychiatric-history';
+import behPsychologicalTesting from './lectures/beh-psychological-testing';
+import behPsychosexualStages from './lectures/beh-psychosexual-stages';
+import behPsychoticDisorders from './lectures/beh-psychotic-disorders';
+import behResilience from './lectures/beh-resilience';
+import behSocialCognitiveLearning from './lectures/beh-social-cognitive-learning';
+import behStressResponse from './lectures/beh-stress-response';
+import behSuccessfulAging from './lectures/beh-successful-aging';
+import behSuicideAssessment from './lectures/beh-suicide-assessment';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1886,6 +1923,36 @@ export const lectures: Lecture[] = [
   ichEpiStudyDesigns, ichMeasuresOfAssociation, ichMortalityMorbidityMeasures,
   // L12 Practical Evidence-Based Medicine
   ichEbmApplyingEvidence, ichEbmCriticalAppraisal, ichEbmFiveSteps,
+
+  // ── BEH (Behavioral Science) — 14 lectures, 35 core modules ──
+  // L1 Introduction to Behavioral Science
+  behBiopsychosocialModel, behIntroBehavioralScience,
+  // L2 Doctor-Patient Relationship & Communication
+  behCommunicationSkills, behDifficultEncounters, behDoctorPatientRelationship,
+  // L3 Psychiatric Assessment & Psychological Testing
+  behMentalStatusExam, behPsychiatricHistory, behPsychologicalTesting,
+  // L4 Mental Disorders (DSM-5-TR)
+  behMoodAnxietyDisorders, behOtherMajorDisorders, behPsychoticDisorders,
+  // L5 Genetics & Biology of Behavior
+  behBehavioralGenetics, behNeurobiologyBehavior,
+  // L6 Growth and Development
+  behDevelopmentPrinciples, behEriksonPsychosocial, behPiagetAttachment,
+  // L7 Family & its Psychopathology
+  behFamilyDynamics, behFamilyPsychopathology,
+  // L8 Learning & Humanistic Theory
+  behClassicalOperantConditioning, behHumanisticTheory, behSocialCognitiveLearning,
+  // L9 Psychodynamic Theories & Defense Mechanisms
+  behDefenseMechanisms, behFreudStructuralTopographic, behPsychosexualStages,
+  // L10 Elderly Life Cycle & Successful Aging
+  behAgingLifeCycle, behSuccessfulAging,
+  // L11 Personality & Trait Theory
+  behPersonalityDisorders, behPersonalityTraitTheory,
+  // L12 Stress & Resilience
+  behResilience, behStressResponse,
+  // L13 Death, Dying & Bereavement
+  behDeathDying, behGriefBereavement,
+  // L14 Abuse, Suicide & Violence
+  behAbuseNeglect, behAggressionViolence, behSuicideAssessment,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

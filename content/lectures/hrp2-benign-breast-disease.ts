@@ -18,7 +18,7 @@ export const hrp2BenignBreastDisease: Lecture = {
     '**Fibroadenoma:** young women; **mobile, firm, well-circumscribed “breast mouse”**, oestrogen-sensitive, benign; the commonest benign breast tumour.',
     '**Fibrocystic change:** the commonest benign disorder — **lumpy, cyclical breast pain**, cysts and fibrosis. **Proliferative change with atypia (atypical ductal/lobular hyperplasia) raises later cancer risk**; non-proliferative change does not.',
     '**Intraductal papilloma** = commonest cause of **bloody nipple discharge** (subareolar). **Phyllodes tumour** = leaf-like fibroepithelial stromal tumour that can be borderline/malignant and recur locally.',
-    '**Others:** **fat necrosis** (post-trauma/surgery — can mimic cancer, may calcify); **acute mastitis/abscess** (lactational, *Staph aureus*); **gynaecomastia** in males (oestrogen:androgen imbalance — puberty, cirrhosis, drugs like spironolactone).',
+    '**Others:** **fat necrosis** (post-trauma/surgery — can mimic cancer, may calcify); **acute mastitis/abscess** (lactational, Staph aureus); **gynaecomastia** in males (oestrogen:androgen imbalance — puberty, cirrhosis, drugs like spironolactone).',
   ],
 
   mechanism: {

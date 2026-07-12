@@ -17,7 +17,7 @@ export const hhlSchistosomiasisLifecycle: Lecture = {
   highYield: [
     '**Schistosomes are blood-dwelling trematodes (flukes).** Key species: **S. mansoni & S. japonicum** (mesenteric veins → intestinal/hepatic disease), **S. mekongi** (Mekong region — relevant to Thailand/Laos), and **S. haematobium** (vesical plexus → urinary disease).',
     '**The snail is the obligate intermediate host.** Eggs in fresh water hatch to **miracidia → snail → cercariae**, which **penetrate intact human skin** during water contact (no ingestion needed).',
-    '**Egg morphology identifies the species:** *S. mansoni* has a **lateral spine**, *S. haematobium* a **terminal spine**, *S. japonicum/mekongi* a small **lateral knob**. See [[hhl-schistosomiasis-clinical]].',
+    '**Egg morphology identifies the species:** S. mansoni has a **lateral spine**, S. haematobium a **terminal spine**, S. japonicum/mekongi a small **lateral knob**. See [[hhl-schistosomiasis-clinical]].',
     '**Adult worms do not multiply in humans**; disease severity tracks **worm/egg burden**, and it is the **eggs (not the worms)** that drive pathology.',
   ],
 

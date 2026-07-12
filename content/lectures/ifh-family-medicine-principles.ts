@@ -18,7 +18,7 @@ export const ifhFamilyMedicinePrinciples: Lecture = {
     '**Person-centred, not disease-centred.** The unit of care is the whole person in the context of **family and community** (nested levels: person → family → community). The family doctor is a **generalist** who manages problems across all ages, both sexes and every organ system.',
     '**It runs on the biopsychosocial model.** Health is biological + psychological + social — see [[ifh-biopsychosocial-model]] — so the family doctor reads a raised blood pressure alongside the patient’s work, family and beliefs, not in isolation.',
     '**Comprehensiveness = cradle to grave.** One clinician covers prevention, acute illness, chronic-disease care and palliation. Primary care meets the **undifferentiated** early presentation, where disease prevalence and presentation differ from the hospital’s selected population.',
-    '**Community-oriented primary care (COPC).** The practice population is the *denominator*: the family doctor thinks in terms of the whole community’s health and acts as advocate and resource coordinator — a natural bridge to [[ifh-family-health-impact]].',
+    '**Community-oriented primary care (COPC).** The practice population is the denominator: the family doctor thinks in terms of the whole community’s health and acts as advocate and resource coordinator — a natural bridge to [[ifh-family-health-impact]].',
   ],
 
   mechanism: {

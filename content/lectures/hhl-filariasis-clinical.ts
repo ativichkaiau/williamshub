@@ -16,7 +16,7 @@ export const hhlFilariasisClinical: Lecture = {
 
   highYield: [
     '**Acute filariasis** = recurrent **fever with lymphangitis/lymphadenitis** (retrograde, painful cords) as the immune response reacts to worms and dying microfilariae.',
-    '**Chronic disease** results from **lymphatic obstruction and fibrosis** → **lymphoedema progressing to elephantiasis**, **hydrocele** (commonest chronic sign of *W. bancrofti*), and **chyluria**.',
+    '**Chronic disease** results from **lymphatic obstruction and fibrosis** → **lymphoedema progressing to elephantiasis**, **hydrocele** (commonest chronic sign of W. bancrofti), and **chyluria**.',
     '**Tropical pulmonary eosinophilia** is a hypersensitivity variant: **nocturnal cough/wheeze, very high eosinophils and IgE**, with microfilariae trapped in the lungs (absent from blood).',
     '**Diagnosis** = **nocturnal thick blood film** for microfilariae, **filarial antigen** tests, or ultrasound; **treat with diethylcarbamazine (DEC) ± albendazole/ivermectin**, plus mass drug administration for control. See [[hhl-filariasis-parasitology]].',
   ],

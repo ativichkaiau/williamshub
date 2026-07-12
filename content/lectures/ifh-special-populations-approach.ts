@@ -15,7 +15,7 @@ export const ifhSpecialPopulationsApproach: Lecture = {
   ],
 
   highYield: [
-    '**Access is multi-dimensional — the 5 A’s** (Penchansky & Thomas): **Availability** (is the service there?), **Accessibility** (can they reach it?), **Accommodation** (do the hours/systems fit?), **Affordability** (can they pay?), and **Acceptability** (is it culturally/attitudinally acceptable?). A barrier in *any* A blocks care.',
+    '**Access is multi-dimensional — the 5 A’s** (Penchansky & Thomas): **Availability** (is the service there?), **Accessibility** (can they reach it?), **Accommodation** (do the hours/systems fit?), **Affordability** (can they pay?), and **Acceptability** (is it culturally/attitudinally acceptable?). A barrier in any A blocks care.',
     '**Advocacy is part of the clinical role, not an optional extra.** Once you identify a vulnerable patient (see [[ifh-special-populations-vulnerable]]), the family doctor helps them **navigate or remove** barriers — connecting them to entitlements, coverage, and community resources.',
     '**The home visit reveals what the clinic hides.** Living conditions, medication storage, safety hazards, and real adherence barriers are only visible at home — invaluable for the housebound elderly, disabled, or complex patients.',
     '**Individualise and provide continuity.** Care must be tailored to the person’s context, and **continuity itself is therapeutic** for marginalised patients — one trusted doctor who coordinates care, the core promise of [[ifh-family-medicine-principles]] and the smooth [[ifh-patient-journey]].',

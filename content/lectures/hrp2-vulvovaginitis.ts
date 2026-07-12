@@ -18,8 +18,8 @@ export const hrp2Vulvovaginitis: Lecture = {
   highYield: [
     '**Normal flora = lactobacilli** producing lactic acid → **acidic vaginal pH (3.8–4.5)**; loss of lactobacilli lets pathogens overgrow. Approach any discharge with **pH, whiff (amine) test, and wet mount**.',
     '**Bacterial vaginosis (BV):** overgrowth of **Gardnerella**/anaerobes (not true inflammation). **Thin grey homogeneous** discharge, **fishy odour**, **pH > 4.5**, **positive whiff test**, **clue cells** on wet mount (Amsel criteria). Treat **metronidazole**.',
-    '**Vulvovaginal candidiasis:** *Candida albicans*. **Thick “cottage-cheese” white** discharge, **itch/erythema**, **normal pH (< 4.5)**, **pseudohyphae/budding yeast** on KOH. Treat topical/oral **azole (fluconazole)**; risk with diabetes, antibiotics, pregnancy.',
-    '**Trichomoniasis:** *Trichomonas vaginalis* (**STI**, flagellated protozoan). **Frothy yellow-green** discharge, **pruritus**, **pH > 4.5**, **“strawberry cervix”**, **motile trichomonads** on wet mount. Treat **metronidazole — and the partner**.',
+    '**Vulvovaginal candidiasis:** Candida albicans. **Thick “cottage-cheese” white** discharge, **itch/erythema**, **normal pH (< 4.5)**, **pseudohyphae/budding yeast** on KOH. Treat topical/oral **azole (fluconazole)**; risk with diabetes, antibiotics, pregnancy.',
+    '**Trichomoniasis:** Trichomonas vaginalis (**STI**, flagellated protozoan). **Frothy yellow-green** discharge, **pruritus**, **pH > 4.5**, **“strawberry cervix”**, **motile trichomonads** on wet mount. Treat **metronidazole — and the partner**.',
     '**Quick discriminator:** **normal pH → candida**; **high pH → BV or trichomonas** (BV has clue cells + fishy odour; trich has motile organisms + strawberry cervix). BV and trichomoniasis in pregnancy are linked to **preterm birth**.',
   ],
 

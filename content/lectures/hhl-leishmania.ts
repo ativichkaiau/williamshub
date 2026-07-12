@@ -15,7 +15,7 @@ export const hhlLeishmania: Lecture = {
   ],
 
   highYield: [
-    '**Leishmania** are haemoflagellates (family *Trypanosomatidae*) transmitted by the **sandfly** (*Phlebotomus*/*Lutzomyia*); the **amastigote** lives inside **macrophages**, the **promastigote** in the sandfly gut.',
+    '**Leishmania** are haemoflagellates (family Trypanosomatidae) transmitted by the **sandfly** (Phlebotomus/Lutzomyia); the **amastigote** lives inside **macrophages**, the **promastigote** in the sandfly gut.',
     '**Visceral leishmaniasis (kala-azar, mainly _L. donovani_):** the amastigotes colonise the reticuloendothelial system → **fever, massive hepatosplenomegaly, pancytopenia, and hypergammaglobulinaemia**; **untreated visceral disease is often fatal**.',
     '**Cutaneous & mucocutaneous forms** cause chronic skin ulcers and destructive mucosal lesions (espundia).',
     '**Diagnosis = amastigotes (_Leishman–Donovan bodies_) in bone-marrow/splenic aspirate**, culture (NNN medium), or serology; **treat with liposomal amphotericin B** (or pentavalent antimonials). Autochthonous cases are reported in Thailand.',

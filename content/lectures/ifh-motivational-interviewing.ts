@@ -16,10 +16,10 @@ export const ifhMotivationalInterviewing: Lecture = {
 
   highYield: [
     '**Motivational interviewing (Miller & Rollnick) is a collaborative, guiding style** that strengthens a person’s **own** motivation to change — you **evoke** reasons from the patient, you do not install them.',
-    '**MI spirit = PACE:** **P**artnership (work *with*, not *on*, the patient), **A**cceptance (worth, empathy, autonomy, affirmation), **C**ompassion (their welfare first), **E**vocation (draw motivation out — the answers are in the patient).',
+    '**MI spirit = PACE:** **P**artnership (work with, not on, the patient), **A**cceptance (worth, empathy, autonomy, affirmation), **C**ompassion (their welfare first), **E**vocation (draw motivation out — the answers are in the patient).',
     '**Core skills = OARS:** **O**pen questions, **A**ffirmations, **R**eflective listening (the workhorse), **S**ummaries. These are the tools you actually use in the room ([[ifh-clinical-communication-skills]]).',
-    '**Resist the “righting reflex.”** The urge to fix the patient by listing all the reasons they should change provokes **sustain talk** and argument — with an ambivalent patient, whoever voices the arguments *for* change is the one who gets talked out of them.',
-    '**Build motivation by three moves: develop discrepancy** (between current behaviour and the patient’s own goals/values), **roll with resistance** (dance, don’t wrestle — resistance is a signal to change *your* approach), and **support self-efficacy** — then selectively reflect and reinforce **change talk** to guide the patient toward their own stage of readiness ([[ifh-behavior-change-stages]]).',
+    '**Resist the “righting reflex.”** The urge to fix the patient by listing all the reasons they should change provokes **sustain talk** and argument — with an ambivalent patient, whoever voices the arguments for change is the one who gets talked out of them.',
+    '**Build motivation by three moves: develop discrepancy** (between current behaviour and the patient’s own goals/values), **roll with resistance** (dance, don’t wrestle — resistance is a signal to change your approach), and **support self-efficacy** — then selectively reflect and reinforce **change talk** to guide the patient toward their own stage of readiness ([[ifh-behavior-change-stages]]).',
   ],
 
   mechanism: {

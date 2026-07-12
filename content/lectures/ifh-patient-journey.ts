@@ -14,11 +14,11 @@ export const ifhPatientJourney: Lecture = {
   ],
 
   highYield: [
-    '**Follow the patient, not the disease.** The patient journey traces one person as the continuous *thread* through the system — symptom onset → help-seeking → **first contact** → diagnosis → treatment → **follow-up & continuity** — rather than a series of disconnected episodes. This person-as-thread view is the heart of the [[ifh-family-medicine-principles]].',
+    '**Follow the patient, not the disease.** The patient journey traces one person as the continuous thread through the system — symptom onset → help-seeking → **first contact** → diagnosis → treatment → **follow-up & continuity** — rather than a series of disconnected episodes. This person-as-thread view is the heart of the [[ifh-family-medicine-principles]].',
     '**First contact = access.** Primary care is the entry point (and gatekeeper) to the system. Care-seeking is filtered by **access barriers** — financial, geographic, cultural and availability — so lowering these barriers is what gets people onto the journey earlier.',
-    '**Continuity comes in three flavours.** *Informational* (records/knowledge follow the patient), *longitudinal/relational* (same clinician or team over time → trust), and *management* (one coherent plan across providers). Relational continuity is only one of the three.',
+    '**Continuity comes in three flavours.** Informational (records/knowledge follow the patient), longitudinal/relational (same clinician or team over time → trust), and management (one coherent plan across providers). Relational continuity is only one of the three.',
     '**Coordination closes the loop.** Primary care navigates referrals to secondary/tertiary care **and back** — the referral must return feedback. Fragmentation and dropped information at **transitions of care** (discharge, referral) are the high-risk gaps in the journey.',
-    '**The symptom iceberg.** Most symptoms in a population are self-managed at home and never reach a doctor; the decision to seek help is shaped by beliefs and *lay referral* networks — closely tied to the [[ifh-disease-vs-illness]] distinction.',
+    '**The symptom iceberg.** Most symptoms in a population are self-managed at home and never reach a doctor; the decision to seek help is shaped by beliefs and lay referral networks — closely tied to the [[ifh-disease-vs-illness]] distinction.',
   ],
 
   mechanism: {

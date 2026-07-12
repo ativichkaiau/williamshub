@@ -16,10 +16,10 @@ export const ifhTcmClinicalApproach: Lecture = {
 
   highYield: [
     '**"Natural" does NOT mean "safe."** Herbs are **pharmacologically active** — capable of **interactions, hepatotoxicity, and contamination**. Evidence varies: some modalities (e.g. acupuncture for certain pain) have support; many have none.',
-    '**Herb–drug interactions to know:** **St John’s Wort** is a potent **CYP450 / P-glycoprotein INDUCER** — it *lowers* levels of warfarin, oral contraceptives, antiretrovirals, and ciclosporin (transplant-rejection risk). **Ginkgo, garlic, ginger** *raise* bleeding risk with warfarin/antiplatelets.',
+    '**Herb–drug interactions to know:** **St John’s Wort** is a potent **CYP450 / P-glycoprotein INDUCER** — it lowers levels of warfarin, oral contraceptives, antiretrovirals, and ciclosporin (transplant-rejection risk). **Ginkgo, garlic, ginger** raise bleeding risk with warfarin/antiplatelets.',
     '**Beware contamination and hepatotoxicity.** Unregulated products may be adulterated with **steroids or NSAIDs** or contaminated with **heavy metals** (lead, arsenic, mercury); some herbals cause **liver injury**. Deranged LFTs in a herbal user should raise this flag.',
     '**Ask non-judgmentally — dismissal makes patients hide it.** Using the communication skills of [[ifh-clinical-communication-skills]], invite disclosure so hidden interactions surface. This builds on routinely asking about use (see [[ifh-tcm-overview]]).',
-    '**Integrate vs caution, then respect autonomy.** **Integrate** low-risk, patient-valued modalities; **caution** against unsafe, interacting, or *replacement* use. Then **inform and negotiate** rather than dismiss — the patient-centred stance of [[ifh-patient-centered-clinical-method]] and [[ifh-motivational-interviewing]].',
+    '**Integrate vs caution, then respect autonomy.** **Integrate** low-risk, patient-valued modalities; **caution** against unsafe, interacting, or replacement use. Then **inform and negotiate** rather than dismiss — the patient-centred stance of [[ifh-patient-centered-clinical-method]] and [[ifh-motivational-interviewing]].',
   ],
 
   mechanism: {

@@ -16,11 +16,11 @@ export const hrp2BacterialStiPid: Lecture = {
   ],
 
   highYield: [
-    '**Gonorrhoea (*Neisseria gonorrhoeae*, Gram-negative diplococci):** purulent cervicitis/urethritis, often asymptomatic in women. Diagnose by **NAAT**. Treat **ceftriaxone** (IM); rising resistance.',
-    '**Chlamydia (*Chlamydia trachomatis* D–K):** the **commonest** bacterial STI, frequently **silent** → a major cause of **tubal infertility**. **NAAT** diagnosis; treat **doxycycline** (azithromycin in pregnancy). **Co-treat empirically for both GC and chlamydia** because of frequent co-infection.',
-    '**Syphilis (*Treponema pallidum*, spirochaete):** **Primary** = painless **chancre** (dark-field microscopy); **Secondary** = diffuse rash incl. **palms & soles**, condylomata lata; **Tertiary** = gummas, aortitis, neurosyphilis. Serology: **non-treponemal (VDRL/RPR)** screen/monitor + **treponemal (TPHA/FTA-ABS)** confirm. Treat **penicillin**.',
+    '**Gonorrhoea** (Neisseria gonorrhoeae, Gram-negative diplococci): purulent cervicitis/urethritis, often asymptomatic in women. Diagnose by **NAAT**. Treat **ceftriaxone** (IM); rising resistance.',
+    '**Chlamydia (Chlamydia trachomatis D–K):** the **commonest** bacterial STI, frequently **silent** → a major cause of **tubal infertility**. **NAAT** diagnosis; treat **doxycycline** (azithromycin in pregnancy). **Co-treat empirically for both GC and chlamydia** because of frequent co-infection.',
+    '**Syphilis (Treponema pallidum, spirochaete):** **Primary** = painless **chancre** (dark-field microscopy); **Secondary** = diffuse rash incl. **palms & soles**, condylomata lata; **Tertiary** = gummas, aortitis, neurosyphilis. Serology: **non-treponemal (VDRL/RPR)** screen/monitor + **treponemal (TPHA/FTA-ABS)** confirm. Treat **penicillin**.',
     '**PID = ascending infection** (GC/chlamydia) of the upper tract → endometritis, salpingitis, tubo-ovarian abscess. **Cervical-motion (“chandelier”) tenderness**, lower-abdominal pain, fever. Sequelae: **infertility, ectopic pregnancy, chronic pain**; **Fitz-Hugh–Curtis** (perihepatitis).',
-    '**Genital ulcers:** **painless** → syphilis (or granuloma inguinale/LGV); **painful** → **chancroid** (*Haemophilus ducreyi*) or **HSV**. Always screen for **co-existing STIs (incl. HIV)** and treat partners.',
+    '**Genital ulcers:** **painless** → syphilis (or granuloma inguinale/LGV); **painful** → **chancroid** (Haemophilus ducreyi) or **HSV**. Always screen for **co-existing STIs (incl. HIV)** and treat partners.',
   ],
 
   mechanism: {

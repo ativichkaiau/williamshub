@@ -19,7 +19,7 @@ export const hhlIronChelators: Lecture = {
     '**Deferoxamine**: parenteral only, given as a slow **overnight SC infusion** → poor compliance; toxicity is **retinal & auditory** (monitor eyes/ears) plus growth/skeletal effects in children.',
     '**Deferiprone**: oral, uniquely good at **removing cardiac iron**, but risks **agranulocytosis** → **monitor CBC/ANC (weekly)**; also arthropathy.',
     '**Deferasirox**: oral **once-daily** (best adherence), but **renal and hepatic** toxicity and GI bleeding → monitor **creatinine and LFTs**.',
-    'Monitor iron burden with **serum ferritin (imperfect — an acute-phase reactant)** plus **cardiac MRI T2*** and liver iron concentration; **T2* <20 ms = cardiac iron loading**.',
+    'Monitor iron burden with **serum ferritin** (imperfect — an acute-phase reactant), cardiac MRI T2* and liver iron concentration; a value below 20 ms indicates **cardiac iron loading**.',
   ],
 
   mechanism: {

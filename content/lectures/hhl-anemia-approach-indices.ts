@@ -17,7 +17,7 @@ export const hhlAnemiaApproachIndices: Lecture = {
     'Anemia = ↓ red-cell mass; in practice a **low Hb by WHO cut-offs**: **men <13, non-pregnant women <12, pregnant women <11 g/dL** (children 6–59 mo <11). Always interpret against age, sex and pregnancy.',
     '**MCV is the first sorting key**: **microcytic <80 fL**, normocytic 80–100, **macrocytic >100 fL**. MCH/MCHC add hypochromia (**low MCHC = hypochromic**; a **high MCHC** points to spherocytes).',
     '**RDW = anisocytosis (variation in size)**. A **high RDW favours iron deficiency**; a **normal RDW with microcytosis favours thalassemia trait** — a classic discriminator.',
-    '**The reticulocyte response is the true first fork**: use the **corrected count / reticulocyte production index (RPI)** to ask *is the marrow responding?* **RPI ≥2–3 = adequate (blood loss / hemolysis)**; **RPI <2 = inadequate (hypoproliferative — nutritional, marrow failure, ACD)**.',
+    '**The reticulocyte response is the true first fork**: use the **corrected count / reticulocyte production index (RPI)** to ask is the marrow responding? **RPI ≥2–3 = adequate (blood loss / hemolysis)**; **RPI <2 = inadequate (hypoproliferative — nutritional, marrow failure, ACD)**.',
   ],
 
   mechanism: {

@@ -18,7 +18,7 @@ export const ifhHealthDataQuality: Lecture = {
     '**Data has types and sources:** administrative/claims, **EHR/medical records**, disease **registries**, vital statistics, surveys, and surveillance — structured (coded) and unstructured (free text). Good QI starts from knowing where the numbers come from.',
     '**Donabedian classifies indicators into structure, process, and outcome.** **Structure** = resources (staff, equipment); **Process** = what is done (% screened); **Outcome** = the result (% with HbA1c controlled). Displaying them on a **dashboard** turns data into monitoring.',
     '**PDSA is the engine of continuous QI: Plan → Do → Study → Act.** Run **small, rapid tests of change**, study the data against the aim, then adopt, adapt, or abandon — and iterate. Small tests beat big-bang rollouts.',
-    '**Frame improvement with the Model for Improvement:** three questions — *What are we trying to accomplish? How will we know a change is an improvement? What change can we make?* — plus PDSA cycles. It drives **data-driven decisions** in primary care instead of anecdote.',
+    '**Frame improvement with the Model for Improvement:** three questions — What are we trying to accomplish? How will we know a change is an improvement? What change can we make? — plus PDSA cycles. It drives **data-driven decisions** in primary care instead of anecdote.',
     '**QI ≠ research.** **QI seeks local improvement** through iterative PDSA; **research seeks generalizable knowledge**. They differ in aim, method, and oversight — though QI still needs proper data governance, covered in [[ifh-health-data-governance]]. QI operationalises the systems thinking behind [[ifh-family-medicine-principles]].',
   ],
 

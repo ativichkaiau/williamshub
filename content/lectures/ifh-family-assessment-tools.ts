@@ -14,7 +14,7 @@ export const ifhFamilyAssessmentTools: Lecture = {
   ],
 
   highYield: [
-    '**Family APGAR** is a 5-item screen of a member’s *satisfaction* with family function: **A**daptation, **P**artnership, **G**rowth, **A**ffection, **R**esolve. Each item scores 0–2, total 0–10 (roughly 7–10 highly functional, 4–6 moderate, 0–3 severe dysfunction). It measures **perception**, not objective fact.',
+    '**Family APGAR** is a 5-item screen of a member’s satisfaction with family function: **A**daptation, **P**artnership, **G**rowth, **A**ffection, **R**esolve. Each item scores 0–2, total 0–10 (roughly 7–10 highly functional, 4–6 moderate, 0–3 severe dysfunction). It measures **perception**, not objective fact.',
     '**SCREEM** inventories a family’s **resources and liabilities** for coping: **S**ocial, **C**ultural, **R**eligious, **E**conomic, **E**ducational, **M**edical. It shows where support exists and where it is missing — the practical complement to the genogram.',
     '**Family life-cycle stage** locates the family within Duvall’s stages so you can anticipate the developmental tasks and typical stressors ahead — the direct link to [[ifh-family-life-cycle]].',
     '**The family circle** is a quick projective map: the patient draws circles for members, where **size = importance/power** and **distance = closeness**. It is a fast subjective picture of bonds — pairing well with the [[ifh-genogram]].',

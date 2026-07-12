@@ -716,6 +716,76 @@ import hrp2MenopauseHrtDrugs from './lectures/hrp2-menopause-hrt-drugs';
 import hrp2AndrogenDeprivationAnabolic from './lectures/hrp2-androgen-deprivation-anabolic';
 import hrp2LabourInductionTocolysis from './lectures/hrp2-labour-induction-tocolysis';
 
+// ── HHL (Human Hematopoietic & Lymphoreticular System) — 27 lectures ──
+import hhlAboSystem from './lectures/hhl-abo-system';
+import hhlAcuteLeukemiaApproach from './lectures/hhl-acute-leukemia-approach';
+import hhlAiha from './lectures/hhl-aiha';
+import hhlAll from './lectures/hhl-all';
+import hhlAlphaBetaThalassemia from './lectures/hhl-alpha-beta-thalassemia';
+import hhlAml from './lectures/hhl-aml';
+import hhlAnemiaApproachIndices from './lectures/hhl-anemia-approach-indices';
+import hhlAnemiaClassification from './lectures/hhl-anemia-classification';
+import hhlAnticoagulants from './lectures/hhl-anticoagulants';
+import hhlAntimalarialTreatment from './lectures/hhl-antimalarial-treatment';
+import hhlAntimalarialsMechanisms from './lectures/hhl-antimalarials-mechanisms';
+import hhlAntiplatelets from './lectures/hhl-antiplatelets';
+import hhlAplasticAnemia from './lectures/hhl-aplastic-anemia';
+import hhlB12FolateMegaloblastic from './lectures/hhl-b12-folate-megaloblastic';
+import hhlBloodComponents from './lectures/hhl-blood-components';
+import hhlBloodDonation from './lectures/hhl-blood-donation';
+import hhlCll from './lectures/hhl-cll';
+import hhlCoagulationDisorders from './lectures/hhl-coagulation-disorders';
+import hhlComponentStorageProcessing from './lectures/hhl-component-storage-processing';
+import hhlDicThrombosis from './lectures/hhl-dic-thrombosis';
+import hhlEbvAssociatedDiseases from './lectures/hhl-ebv-associated-diseases';
+import hhlEbvMononucleosis from './lectures/hhl-ebv-mononucleosis';
+import hhlFebrileAllergicReactions from './lectures/hhl-febrile-allergic-reactions';
+import hhlFilariasisClinical from './lectures/hhl-filariasis-clinical';
+import hhlFilariasisParasitology from './lectures/hhl-filariasis-parasitology';
+import hhlG6pdMembraneDefects from './lectures/hhl-g6pd-membrane-defects';
+import hhlHdn from './lectures/hhl-hdn';
+import hhlHematinicsEsa from './lectures/hhl-hematinics-esa';
+import hhlHematopoiesisSites from './lectures/hhl-hematopoiesis-sites';
+import hhlHemoglobinSwitching from './lectures/hhl-hemoglobin-switching';
+import hhlHemoglobinopathiesDiagnosis from './lectures/hhl-hemoglobinopathies-diagnosis';
+import hhlHemolyticTransfusionReactions from './lectures/hhl-hemolytic-transfusion-reactions';
+import hhlHodgkinLymphoma from './lectures/hhl-hodgkin-lymphoma';
+import hhlIronChelators from './lectures/hhl-iron-chelators';
+import hhlIronDeficiency from './lectures/hhl-iron-deficiency';
+import hhlIronMetabolismStudies from './lectures/hhl-iron-metabolism-studies';
+import hhlLeishmania from './lectures/hhl-leishmania';
+import hhlLeukocyteQuantitative from './lectures/hhl-leukocyte-quantitative';
+import hhlLymphNodeHistology from './lectures/hhl-lymph-node-histology';
+import hhlLymphadenitisReactive from './lectures/hhl-lymphadenitis-reactive';
+import hhlLymphaticDevelopment from './lectures/hhl-lymphatic-development';
+import hhlMahaPnh from './lectures/hhl-maha-pnh';
+import hhlMalariaLifecycle from './lectures/hhl-malaria-lifecycle';
+import hhlMalariaMicroscopy from './lectures/hhl-malaria-microscopy';
+import hhlMalariaPathophysiology from './lectures/hhl-malaria-pathophysiology';
+import hhlMalariaRdtMolecular from './lectures/hhl-malaria-rdt-molecular';
+import hhlMolecularDiagnosticsHeme from './lectures/hhl-molecular-diagnostics-heme';
+import hhlMolecularTechniques from './lectures/hhl-molecular-techniques';
+import hhlMpn from './lectures/hhl-mpn';
+import hhlMultipleMyeloma from './lectures/hhl-multiple-myeloma';
+import hhlNonHodgkinLymphoma from './lectures/hhl-non-hodgkin-lymphoma';
+import hhlPrimaryHemostasisDisorders from './lectures/hhl-primary-hemostasis-disorders';
+import hhlRbcDegradationBilirubin from './lectures/hhl-rbc-degradation-bilirubin';
+import hhlRbcInclusionsArrangement from './lectures/hhl-rbc-inclusions-arrangement';
+import hhlRbcMembraneMetabolism from './lectures/hhl-rbc-membrane-metabolism';
+import hhlRbcMorphologyShapes from './lectures/hhl-rbc-morphology-shapes';
+import hhlRhSystem from './lectures/hhl-rh-system';
+import hhlSchistosomiasisClinical from './lectures/hhl-schistosomiasis-clinical';
+import hhlSchistosomiasisLifecycle from './lectures/hhl-schistosomiasis-lifecycle';
+import hhlSevereFalciparumMalaria from './lectures/hhl-severe-falciparum-malaria';
+import hhlSpleenThymusMalt from './lectures/hhl-spleen-thymus-malt';
+import hhlTargetedTherapyClasses from './lectures/hhl-targeted-therapy-classes';
+import hhlThrombolyticsAntifibrinolytics from './lectures/hhl-thrombolytics-antifibrinolytics';
+import hhlTkiCml from './lectures/hhl-tki-cml';
+import hhlTraliTacoInfectious from './lectures/hhl-trali-taco-infectious';
+import hhlTrypanosoma from './lectures/hhl-trypanosoma';
+import hhlWbcMorphologicAnomalies from './lectures/hhl-wbc-morphologic-anomalies';
+import hhlWbcNormalDifferential from './lectures/hhl-wbc-normal-differential';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1657,6 +1727,62 @@ export const lectures: Lecture[] = [
   hrp2DysmenorrheaMenorrhagia, hrp2Pcos, hrp2MenopausePoi, hrp2GestationalDiabetes,
   hrp2RhIsoimmunisation, hrp2JaundiceManagement, hrp2HormonalContraception,
   hrp2MenopauseHrtDrugs, hrp2AndrogenDeprivationAnabolic, hrp2LabourInductionTocolysis,
+
+  // ── HHL (Human Hematopoietic & Lymphoreticular System) — 27 lectures, 68 core modules ──
+  // L1 Development of Blood & Lymphatics
+  hhlHematopoiesisSites, hhlLymphaticDevelopment,
+  // L2 Red Blood Cell Structure & Function
+  hhlRbcDegradationBilirubin, hhlRbcMembraneMetabolism,
+  // L3 Abnormal Red Cell Morphology
+  hhlRbcInclusionsArrangement, hhlRbcMorphologyShapes,
+  // L4 White Blood Cells: Morphology & Non-neoplastic
+  hhlLeukocyteQuantitative, hhlWbcMorphologicAnomalies, hhlWbcNormalDifferential,
+  // L5 Histology of the Lymphoid System
+  hhlLymphNodeHistology, hhlSpleenThymusMalt,
+  // L6 Classification of Anemia & Aplastic Anemia
+  hhlAnemiaApproachIndices, hhlAnemiaClassification, hhlAplasticAnemia,
+  // L7 Thalassemia & Hemoglobinopathies
+  hhlAlphaBetaThalassemia, hhlHemoglobinSwitching, hhlHemoglobinopathiesDiagnosis,
+  // L8 Nutritional Anemia
+  hhlB12FolateMegaloblastic, hhlIronDeficiency, hhlIronMetabolismStudies,
+  // L9 Hemolytic Anemia
+  hhlAiha, hhlG6pdMembraneDefects, hhlMahaPnh,
+  // L10 Pathology of Lymph Node & Lymphoma
+  hhlHodgkinLymphoma, hhlLymphadenitisReactive, hhlNonHodgkinLymphoma,
+  // L11 Drugs for Anemia & Iron Chelation
+  hhlHematinicsEsa, hhlIronChelators,
+  // L12 Drugs Affecting Hemostasis
+  hhlAnticoagulants, hhlAntiplatelets, hhlThrombolyticsAntifibrinolytics,
+  // L13 Myeloproliferative Neoplasms, MM & CLL
+  hhlCll, hhlMpn, hhlMultipleMyeloma,
+  // L14 Platelet & Hemostatic Disorders
+  hhlCoagulationDisorders, hhlDicThrombosis, hhlPrimaryHemostasisDisorders,
+  // L15 Acute Leukemia
+  hhlAcuteLeukemiaApproach, hhlAll, hhlAml,
+  // L16 Targeted Therapy for Leukemia
+  hhlTargetedTherapyClasses, hhlTkiCml,
+  // L17 ABO & Rh Blood Groups; HDN
+  hhlAboSystem, hhlHdn, hhlRhSystem,
+  // L18 Molecular Basis in Hematology
+  hhlMolecularDiagnosticsHeme, hhlMolecularTechniques,
+  // L19 Blood Donation & Blood Products
+  hhlBloodComponents, hhlBloodDonation, hhlComponentStorageProcessing,
+  // L20 Blood Transfusion Reactions
+  hhlFebrileAllergicReactions, hhlHemolyticTransfusionReactions, hhlTraliTacoInfectious,
+  // L21 Lymphatic Filariasis
+  hhlFilariasisClinical, hhlFilariasisParasitology,
+  // L22 Schistosomiasis
+  hhlSchistosomiasisClinical, hhlSchistosomiasisLifecycle,
+  // L23 Haemoflagellates
+  hhlLeishmania, hhlTrypanosoma,
+  // L24 Malaria: Biology & Clinical Disease
+  hhlMalariaLifecycle, hhlMalariaPathophysiology, hhlSevereFalciparumMalaria,
+  // L25 Malaria: Laboratory Diagnosis
+  hhlMalariaMicroscopy, hhlMalariaRdtMolecular,
+  // L26 Antimalarial Drugs
+  hhlAntimalarialTreatment, hhlAntimalarialsMechanisms,
+  // L27 EBV & Infectious Mononucleosis
+  hhlEbvAssociatedDiseases, hhlEbvMononucleosis,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

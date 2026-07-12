@@ -816,6 +816,33 @@ import ifhStressLifeEvents from './lectures/ifh-stress-life-events';
 import ifhTcmClinicalApproach from './lectures/ifh-tcm-clinical-approach';
 import ifhTcmOverview from './lectures/ifh-tcm-overview';
 
+// ── ICH (Intro to Community Health) — 10 lectures ──
+import ichDemographicEpidemiologicTransition from './lectures/ich-demographic-epidemiologic-transition';
+import ichDemographyMeasures from './lectures/ich-demography-measures';
+import ichDescriptiveEpiSurveillance from './lectures/ich-descriptive-epi-surveillance';
+import ichDeterminantsOfHealth from './lectures/ich-determinants-of-health';
+import ichDiseaseOccurrenceConcepts from './lectures/ich-disease-occurrence-concepts';
+import ichDiseasePreventionStrategies from './lectures/ich-disease-prevention-strategies';
+import ichEbmApplyingEvidence from './lectures/ich-ebm-applying-evidence';
+import ichEbmCriticalAppraisal from './lectures/ich-ebm-critical-appraisal';
+import ichEbmFiveSteps from './lectures/ich-ebm-five-steps';
+import ichEconomicEvaluationHta from './lectures/ich-economic-evaluation-hta';
+import ichEnvironmentalHealthOverview from './lectures/ich-environmental-health-overview';
+import ichEnvironmentalRiskPrevention from './lectures/ich-environmental-risk-prevention';
+import ichEpiIntroUses from './lectures/ich-epi-intro-uses';
+import ichEpiStudyDesigns from './lectures/ich-epi-study-designs';
+import ichHealthEconomicsConcepts from './lectures/ich-health-economics-concepts';
+import ichHealthFinancingUhc from './lectures/ich-health-financing-uhc';
+import ichHealthPromotion from './lectures/ich-health-promotion';
+import ichHealthSystemBuildingBlocks from './lectures/ich-health-system-building-blocks';
+import ichMeasuresOfAssociation from './lectures/ich-measures-of-association';
+import ichMortalityMorbidityMeasures from './lectures/ich-mortality-morbidity-measures';
+import ichOccupationalDiseasesDiagnosis from './lectures/ich-occupational-diseases-diagnosis';
+import ichOccupationalHazards from './lectures/ich-occupational-hazards';
+import ichOccupationalPreventionControls from './lectures/ich-occupational-prevention-controls';
+import ichSocialDeterminantsEquity from './lectures/ich-social-determinants-equity';
+import ichThaiHealthSystemSchemes from './lectures/ich-thai-health-system-schemes';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1837,6 +1864,28 @@ export const lectures: Lecture[] = [
   ifhTcmClinicalApproach, ifhTcmOverview,
   // L11 Health Data for Quality Improvement
   ifhHealthDataGovernance, ifhHealthDataQuality,
+
+  // ── ICH (Intro to Community Health) — 10 lectures, 25 core modules ──
+  // L1 Health Promotion & Disease Prevention
+  ichDiseasePreventionStrategies, ichHealthPromotion,
+  // L2 Demography
+  ichDemographicEpidemiologicTransition, ichDemographyMeasures,
+  // L3 Determinants of Health
+  ichDeterminantsOfHealth, ichSocialDeterminantsEquity,
+  // L4 Health Care Systems & Health Policy in Thailand
+  ichHealthFinancingUhc, ichHealthSystemBuildingBlocks, ichThaiHealthSystemSchemes,
+  // L5 Environmental Health Determinants
+  ichEnvironmentalHealthOverview, ichEnvironmentalRiskPrevention,
+  // L6 Occupational Medicine
+  ichOccupationalDiseasesDiagnosis, ichOccupationalHazards, ichOccupationalPreventionControls,
+  // L9 Health Economics in Thailand
+  ichEconomicEvaluationHta, ichHealthEconomicsConcepts,
+  // L10 Epidemiological Principles
+  ichDescriptiveEpiSurveillance, ichDiseaseOccurrenceConcepts, ichEpiIntroUses,
+  // L11 Epidemiological Methods
+  ichEpiStudyDesigns, ichMeasuresOfAssociation, ichMortalityMorbidityMeasures,
+  // L12 Practical Evidence-Based Medicine
+  ichEbmApplyingEvidence, ichEbmCriticalAppraisal, ichEbmFiveSteps,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

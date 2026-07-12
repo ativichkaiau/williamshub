@@ -602,6 +602,18 @@ export const subjectOfSource: Record<string, string> = {
   'L10 — Traditional & Complementary Medicine': 'IFH',
   'L11 — Health Data for Quality Improvement': 'IFH',
 
+  // ICH — Intro to Community Health (Year 3, CMU 322316)
+  'L1 — Health Promotion & Disease Prevention': 'ICH',
+  'L2 — Demography': 'ICH',
+  'L3 — Determinants of Health': 'ICH',
+  'L4 — Health Care Systems & Health Policy in Thailand': 'ICH',
+  'L5 — Environmental Health Determinants': 'ICH',
+  'L6 — Occupational Medicine': 'ICH',
+  'L9 — Health Economics in Thailand': 'ICH',
+  'L10 — Epidemiological Principles': 'ICH',
+  'L11 — Epidemiological Methods': 'ICH',
+  'L12 — Practical Evidence-Based Medicine': 'ICH',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

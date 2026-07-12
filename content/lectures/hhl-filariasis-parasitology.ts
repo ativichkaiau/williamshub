@@ -17,7 +17,7 @@ export const hhlFilariasisParasitology: Lecture = {
   highYield: [
     '**Lymphatic filariasis** is caused by the tissue nematodes **Wuchereria bancrofti** and **Brugia malayi** (also B. timori); **adult worms live in lymphatics** while **microfilariae circulate in blood**.',
     '**Microfilariae show nocturnal periodicity** — they peak in peripheral blood around **10 pm–2 am**, matching the night-biting mosquito vectors — so **blood for diagnosis must be drawn at night**.',
-    '**Mosquito vectors:** Culex (urban W. bancrofti), **_Mansonia_ for _B. malayi_ (endemic in southern Thailand)**, plus Anopheles and Aedes. See [[hhl-filariasis-clinical]].',
+    '**Mosquito vectors:** Culex (urban W. bancrofti), **Mansonia for B. malayi (endemic in southern Thailand)**, plus Anopheles and Aedes. See [[hhl-filariasis-clinical]].',
     '**Microfilariae are identified on a stained film** by their **sheath** and the **pattern of tail nuclei** — B. malayi has two separate terminal nuclei; W. bancrofti has a tip free of nuclei.',
   ],
 

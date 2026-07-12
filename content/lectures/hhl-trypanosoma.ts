@@ -15,10 +15,10 @@ export const hhlTrypanosoma: Lecture = {
   ],
 
   highYield: [
-    '**Trypanosomes are haemoflagellates whose _trypomastigote_ circulates in blood.** Two clinical groups: **African trypanosomiasis (sleeping sickness)** and **American trypanosomiasis (Chagas disease)**.',
-    '**African (_T. brucei gambiense/rhodesiense_):** **tsetse fly (_Glossina_)** bite → chancre → **haemolymphatic stage (fever, _Winterbottom sign_ = posterior cervical nodes)** → **CNS invasion → daytime somnolence/coma**.',
-    '**American Chagas (_T. cruzi_):** **reduviid “kissing” bug** deposits infective forms in **faeces** rubbed into the bite/eye (**_Romaña sign_ = unilateral periorbital swelling**); **chronic dilated cardiomyopathy and mega-oesophagus/megacolon** years later.',
-    '**In tissues _T. cruzi_ becomes an amastigote**; diagnosis is by **blood films (trypomastigotes)**, tissue, or serology — treatments differ (African vs Chagas).',
+    '**Trypanosomes are haemoflagellates whose trypomastigote circulates in blood.** Two clinical groups: **African trypanosomiasis (sleeping sickness)** and **American trypanosomiasis (Chagas disease)**.',
+    '**African (T. brucei gambiense/rhodesiense):** **tsetse fly (Glossina)** bite → chancre → **haemolymphatic stage (fever, Winterbottom sign = posterior cervical nodes)** → **CNS invasion → daytime somnolence/coma**.',
+    '**American Chagas (T. cruzi):** **reduviid “kissing” bug** deposits infective forms in **faeces** rubbed into the bite/eye (**Romaña sign = unilateral periorbital swelling**); **chronic dilated cardiomyopathy and mega-oesophagus/megacolon** years later.',
+    '**In tissues T. cruzi becomes an amastigote**; diagnosis is by **blood films (trypomastigotes)**, tissue, or serology — treatments differ (African vs Chagas).',
   ],
 
   mechanism: {

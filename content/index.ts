@@ -786,6 +786,36 @@ import hhlTrypanosoma from './lectures/hhl-trypanosoma';
 import hhlWbcMorphologicAnomalies from './lectures/hhl-wbc-morphologic-anomalies';
 import hhlWbcNormalDifferential from './lectures/hhl-wbc-normal-differential';
 
+// ── IFH (Intro to Family Health) — 11 lectures ──
+import ifhAddictionManagement from './lectures/ifh-addiction-management';
+import ifhAddictionNeurobiology from './lectures/ifh-addiction-neurobiology';
+import ifhAddictionScreening from './lectures/ifh-addiction-screening';
+import ifhBehaviorChangeStages from './lectures/ifh-behavior-change-stages';
+import ifhBiopsychosocialModel from './lectures/ifh-biopsychosocial-model';
+import ifhBriefCounselling5a from './lectures/ifh-brief-counselling-5a';
+import ifhClinicalCommunicationSkills from './lectures/ifh-clinical-communication-skills';
+import ifhDiseaseVsIllness from './lectures/ifh-disease-vs-illness';
+import ifhFamilyAssessmentTools from './lectures/ifh-family-assessment-tools';
+import ifhFamilyDefinitionsTypes from './lectures/ifh-family-definitions-types';
+import ifhFamilyHealthImpact from './lectures/ifh-family-health-impact';
+import ifhFamilyLifeCycle from './lectures/ifh-family-life-cycle';
+import ifhFamilyMedicinePrinciples from './lectures/ifh-family-medicine-principles';
+import ifhGenogram from './lectures/ifh-genogram';
+import ifhHealthDataGovernance from './lectures/ifh-health-data-governance';
+import ifhHealthDataQuality from './lectures/ifh-health-data-quality';
+import ifhMotivationalInterviewing from './lectures/ifh-motivational-interviewing';
+import ifhPatientCenteredClinicalMethod from './lectures/ifh-patient-centered-clinical-method';
+import ifhPatientJourney from './lectures/ifh-patient-journey';
+import ifhPreventionLevels from './lectures/ifh-prevention-levels';
+import ifhScreeningPrinciples from './lectures/ifh-screening-principles';
+import ifhScreeningTestMetrics from './lectures/ifh-screening-test-metrics';
+import ifhSocialSupportHealth from './lectures/ifh-social-support-health';
+import ifhSpecialPopulationsApproach from './lectures/ifh-special-populations-approach';
+import ifhSpecialPopulationsVulnerable from './lectures/ifh-special-populations-vulnerable';
+import ifhStressLifeEvents from './lectures/ifh-stress-life-events';
+import ifhTcmClinicalApproach from './lectures/ifh-tcm-clinical-approach';
+import ifhTcmOverview from './lectures/ifh-tcm-overview';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1783,6 +1813,30 @@ export const lectures: Lecture[] = [
   hhlAntimalarialTreatment, hhlAntimalarialsMechanisms,
   // L27 EBV & Infectious Mononucleosis
   hhlEbvAssociatedDiseases, hhlEbvMononucleosis,
+
+  // ── IFH (Intro to Family Health) — 11 lectures, 28 core modules ──
+  // L1 Patient Journey & Introduction to Family Health
+  ifhFamilyMedicinePrinciples, ifhPatientJourney,
+  // L2 Patient-Centered Medicine & Communication
+  ifhClinicalCommunicationSkills, ifhDiseaseVsIllness, ifhPatientCenteredClinicalMethod,
+  // L3 Family Assessment Tools & Basic Health Data
+  ifhFamilyAssessmentTools, ifhGenogram,
+  // L4 Family Influences on Health
+  ifhFamilyDefinitionsTypes, ifhFamilyHealthImpact, ifhFamilyLifeCycle,
+  // L5 Psychosocial Influences on Health
+  ifhBiopsychosocialModel, ifhSocialSupportHealth, ifhStressLifeEvents,
+  // L6 Health Screening & Prevention
+  ifhPreventionLevels, ifhScreeningPrinciples, ifhScreeningTestMetrics,
+  // L7 Counselling, Health Promotion & Motivational Interviewing
+  ifhBehaviorChangeStages, ifhBriefCounselling5a, ifhMotivationalInterviewing,
+  // L8 Caring for Special Populations
+  ifhSpecialPopulationsApproach, ifhSpecialPopulationsVulnerable,
+  // L9 Addiction and Health
+  ifhAddictionManagement, ifhAddictionNeurobiology, ifhAddictionScreening,
+  // L10 Traditional & Complementary Medicine
+  ifhTcmClinicalApproach, ifhTcmOverview,
+  // L11 Health Data for Quality Improvement
+  ifhHealthDataGovernance, ifhHealthDataQuality,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

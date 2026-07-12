@@ -589,6 +589,19 @@ export const subjectOfSource: Record<string, string> = {
   'L26 — Antimalarial Drugs': 'HHL',
   'L27 — EBV & Infectious Mononucleosis': 'HHL',
 
+  // IFH — Intro to Family Health (Year 3, CMU 327301)
+  'L1 — Patient Journey & Introduction to Family Health': 'IFH',
+  'L2 — Patient-Centered Medicine & Communication': 'IFH',
+  'L3 — Family Assessment Tools & Basic Health Data': 'IFH',
+  'L4 — Family Influences on Health': 'IFH',
+  'L5 — Psychosocial Influences on Health': 'IFH',
+  'L6 — Health Screening & Prevention': 'IFH',
+  'L7 — Counselling, Health Promotion & Motivational Interviewing': 'IFH',
+  'L8 — Caring for Special Populations': 'IFH',
+  'L9 — Addiction and Health': 'IFH',
+  'L10 — Traditional & Complementary Medicine': 'IFH',
+  'L11 — Health Data for Quality Improvement': 'IFH',
+
   // MBH — Molecular Basis of Human Body (Year 1)
   'L1 — Amino Acids & Proteins': 'MBH',
   'L2 — Enzymes & Cofactors': 'MBH',

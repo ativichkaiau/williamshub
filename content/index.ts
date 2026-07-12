@@ -880,6 +880,101 @@ import behStressResponse from './lectures/beh-stress-response';
 import behSuccessfulAging from './lectures/beh-successful-aging';
 import behSuicideAssessment from './lectures/beh-suicide-assessment';
 
+// ── FCP-1 (Fundamentals of Clinical Practice-1) — 38 lectures ──
+import fcp1AbdominalMassApproach from './lectures/fcp1-abdominal-mass-approach';
+import fcp1AbdominalMassDifferential from './lectures/fcp1-abdominal-mass-differential';
+import fcp1AbdominalPainAcuteAbdomen from './lectures/fcp1-abdominal-pain-acute-abdomen';
+import fcp1AbdominalPainApproach from './lectures/fcp1-abdominal-pain-approach';
+import fcp1AbnormalVaginalBleeding from './lectures/fcp1-abnormal-vaginal-bleeding';
+import fcp1AnemiaApproachWorkup from './lectures/fcp1-anemia-approach-workup';
+import fcp1AnemiaClassification from './lectures/fcp1-anemia-classification';
+import fcp1AnemiaMicrocytic from './lectures/fcp1-anemia-microcytic';
+import fcp1ArthritisApproach from './lectures/fcp1-arthritis-approach';
+import fcp1BleedingAssessmentTool from './lectures/fcp1-bleeding-assessment-tool';
+import fcp1BleedingCoagulationTests from './lectures/fcp1-bleeding-coagulation-tests';
+import fcp1BleedingPrimaryVsSecondary from './lectures/fcp1-bleeding-primary-vs-secondary';
+import fcp1ChestPainCardiac from './lectures/fcp1-chest-pain-cardiac';
+import fcp1ChestPainDifferential from './lectures/fcp1-chest-pain-differential';
+import fcp1ChestPainRedFlags from './lectures/fcp1-chest-pain-red-flags';
+import fcp1CognitiveAssessment from './lectures/fcp1-cognitive-assessment';
+import fcp1ConsciousnessComaApproach from './lectures/fcp1-consciousness-coma-approach';
+import fcp1ConstipationBowelHabit from './lectures/fcp1-constipation-bowel-habit';
+import fcp1CoughApproach from './lectures/fcp1-cough-approach';
+import fcp1Cyanosis from './lectures/fcp1-cyanosis';
+import fcp1DeliriumVsDementia from './lectures/fcp1-delirium-vs-dementia';
+import fcp1DevelopmentMilestones from './lectures/fcp1-development-milestones';
+import fcp1DiarrheaApproach from './lectures/fcp1-diarrhea-approach';
+import fcp1DizzinessVertigo from './lectures/fcp1-dizziness-vertigo';
+import fcp1DyspepsiaReflux from './lectures/fcp1-dyspepsia-reflux';
+import fcp1Dysphagia from './lectures/fcp1-dysphagia';
+import fcp1DyspneaApproach from './lectures/fcp1-dyspnea-approach';
+import fcp1DyspneaDifferential from './lectures/fcp1-dyspnea-differential';
+import fcp1EdemaApproach from './lectures/fcp1-edema-approach';
+import fcp1EdemaMechanisms from './lectures/fcp1-edema-mechanisms';
+import fcp1EntCommonSymptoms from './lectures/fcp1-ent-common-symptoms';
+import fcp1EntRedFlags from './lectures/fcp1-ent-red-flags';
+import fcp1EyeRedEye from './lectures/fcp1-eye-red-eye';
+import fcp1EyeVisionLoss from './lectures/fcp1-eye-vision-loss';
+import fcp1FeverApproachDifferential from './lectures/fcp1-fever-approach-differential';
+import fcp1FeverOfUnknownOrigin from './lectures/fcp1-fever-of-unknown-origin';
+import fcp1FeverPathophysiology from './lectures/fcp1-fever-pathophysiology';
+import fcp1GiBleedLower from './lectures/fcp1-gi-bleed-lower';
+import fcp1GiBleedManagement from './lectures/fcp1-gi-bleed-management';
+import fcp1GiBleedUpper from './lectures/fcp1-gi-bleed-upper';
+import fcp1GrowthAssessment from './lectures/fcp1-growth-assessment';
+import fcp1HeadachePrimarySecondary from './lectures/fcp1-headache-primary-secondary';
+import fcp1HeadacheRedFlags from './lectures/fcp1-headache-red-flags';
+import fcp1HematuriaApproach from './lectures/fcp1-hematuria-approach';
+import fcp1HemoptysisApproach from './lectures/fcp1-hemoptysis-approach';
+import fcp1HemoptysisMassive from './lectures/fcp1-hemoptysis-massive';
+import fcp1HistorySymptomAnalysis from './lectures/fcp1-history-symptom-analysis';
+import fcp1HistoryTakingFramework from './lectures/fcp1-history-taking-framework';
+import fcp1Hyperthyroidism from './lectures/fcp1-hyperthyroidism';
+import fcp1Hypothyroidism from './lectures/fcp1-hypothyroidism';
+import fcp1InflammatoryVsMechanical from './lectures/fcp1-inflammatory-vs-mechanical';
+import fcp1JaundiceApproach from './lectures/fcp1-jaundice-approach';
+import fcp1JaundiceBilirubinMetabolism from './lectures/fcp1-jaundice-bilirubin-metabolism';
+import fcp1JaundiceCholestasis from './lectures/fcp1-jaundice-cholestasis';
+import fcp1LymphadenopathyApproach from './lectures/fcp1-lymphadenopathy-approach';
+import fcp1MalnutritionEvaluation from './lectures/fcp1-malnutrition-evaluation';
+import fcp1MedicalEthicsPrinciples from './lectures/fcp1-medical-ethics-principles';
+import fcp1MedicalLawThailand from './lectures/fcp1-medical-law-thailand';
+import fcp1MedicalNegligenceConfidentiality from './lectures/fcp1-medical-negligence-confidentiality';
+import fcp1MonoarthritisVsPolyarthritis from './lectures/fcp1-monoarthritis-vs-polyarthritis';
+import fcp1MovementHyperkinetic from './lectures/fcp1-movement-hyperkinetic';
+import fcp1MovementHypokineticParkinsonism from './lectures/fcp1-movement-hypokinetic-parkinsonism';
+import fcp1NauseaVomiting from './lectures/fcp1-nausea-vomiting';
+import fcp1NumbnessSensory from './lectures/fcp1-numbness-sensory';
+import fcp1NutritionalAssessment from './lectures/fcp1-nutritional-assessment';
+import fcp1ObesityApproach from './lectures/fcp1-obesity-approach';
+import fcp1ObgyneHistory from './lectures/fcp1-obgyne-history';
+import fcp1PediatricAbdominalPain from './lectures/fcp1-pediatric-abdominal-pain';
+import fcp1PediatricApproachCommunication from './lectures/fcp1-pediatric-approach-communication';
+import fcp1PediatricHistory from './lectures/fcp1-pediatric-history';
+import fcp1PediatricSeizures from './lectures/fcp1-pediatric-seizures';
+import fcp1PediatricVomitingDiarrhea from './lectures/fcp1-pediatric-vomiting-diarrhea';
+import fcp1PelvicMassApproach from './lectures/fcp1-pelvic-mass-approach';
+import fcp1PelvicPainApproach from './lectures/fcp1-pelvic-pain-approach';
+import fcp1ProfessionalismConsent from './lectures/fcp1-professionalism-consent';
+import fcp1SeizureClassification from './lectures/fcp1-seizure-classification';
+import fcp1SeizureVsMimics from './lectures/fcp1-seizure-vs-mimics';
+import fcp1SexualAssaultForensic from './lectures/fcp1-sexual-assault-forensic';
+import fcp1SexualAssaultMedical from './lectures/fcp1-sexual-assault-medical';
+import fcp1ShockClassification from './lectures/fcp1-shock-classification';
+import fcp1ShockManagement from './lectures/fcp1-shock-management';
+import fcp1SkinLesionMorphology from './lectures/fcp1-skin-lesion-morphology';
+import fcp1SkinSignsSystemicDisease from './lectures/fcp1-skin-signs-systemic-disease';
+import fcp1SplenomegalyApproach from './lectures/fcp1-splenomegaly-approach';
+import fcp1SyncopeApproach from './lectures/fcp1-syncope-approach';
+import fcp1ThyroidApproach from './lectures/fcp1-thyroid-approach';
+import fcp1TraumaPrimarySurvey from './lectures/fcp1-trauma-primary-survey';
+import fcp1TraumaResuscitation from './lectures/fcp1-trauma-resuscitation';
+import fcp1TraumaSecondarySurvey from './lectures/fcp1-trauma-secondary-survey';
+import fcp1UrinarySymptomsLuts from './lectures/fcp1-urinary-symptoms-luts';
+import fcp1WeaknessLocalization from './lectures/fcp1-weakness-localization';
+import fcp1WeaknessUmnLmn from './lectures/fcp1-weakness-umn-lmn';
+import fcp1WeightLossApproach from './lectures/fcp1-weight-loss-approach';
+
 // ── HIM (Human Immunology) ──
 import immuneSystemOverviewCells from './lectures/immune-system-overview-cells';
 import lymphoidOrgans from './lectures/lymphoid-organs';
@@ -1953,6 +2048,84 @@ export const lectures: Lecture[] = [
   behDeathDying, behGriefBereavement,
   // L14 Abuse, Suicide & Violence
   behAbuseNeglect, behAggressionViolence, behSuicideAssessment,
+
+  // ── FCP-1 (Fundamentals of Clinical Practice-1) — 38 lectures, 93 core modules ──
+  // L1 Medical History Taking
+  fcp1HistorySymptomAnalysis, fcp1HistoryTakingFramework,
+  // L2 Pediatric History Taking
+  fcp1PediatricApproachCommunication, fcp1PediatricHistory,
+  // L3 Growth & Development Assessment
+  fcp1DevelopmentMilestones, fcp1GrowthAssessment,
+  // L4 Nutritional Assessment
+  fcp1MalnutritionEvaluation, fcp1NutritionalAssessment,
+  // L5 OB-Gyne History Taking & Vaginal Bleeding
+  fcp1AbnormalVaginalBleeding, fcp1ObgyneHistory,
+  // L6 Fever
+  fcp1FeverApproachDifferential, fcp1FeverOfUnknownOrigin, fcp1FeverPathophysiology,
+  // L7 Obesity & Weight Loss
+  fcp1ObesityApproach, fcp1WeightLossApproach,
+  // L8 Edema
+  fcp1EdemaApproach, fcp1EdemaMechanisms,
+  // L9 Shock & Syncope
+  fcp1ShockClassification, fcp1ShockManagement, fcp1SyncopeApproach,
+  // L10 Approach to the Trauma Patient
+  fcp1TraumaPrimarySurvey, fcp1TraumaResuscitation, fcp1TraumaSecondarySurvey,
+  // L11 Chest Pain
+  fcp1ChestPainCardiac, fcp1ChestPainDifferential, fcp1ChestPainRedFlags,
+  // L12 Dyspnea & Cyanosis
+  fcp1Cyanosis, fcp1DyspneaApproach, fcp1DyspneaDifferential,
+  // L13 Cough & Hemoptysis
+  fcp1CoughApproach, fcp1HemoptysisApproach, fcp1HemoptysisMassive,
+  // L14 Abdominal Pain, Nausea & Vomiting
+  fcp1AbdominalPainAcuteAbdomen, fcp1AbdominalPainApproach, fcp1NauseaVomiting,
+  // L15 Dyspepsia, Reflux & Dysphagia
+  fcp1DyspepsiaReflux, fcp1Dysphagia,
+  // L16 Change in Bowel Habit
+  fcp1ConstipationBowelHabit, fcp1DiarrheaApproach,
+  // L17 Gastrointestinal Hemorrhage
+  fcp1GiBleedLower, fcp1GiBleedManagement, fcp1GiBleedUpper,
+  // L18 Jaundice
+  fcp1JaundiceApproach, fcp1JaundiceBilirubinMetabolism, fcp1JaundiceCholestasis,
+  // L19 Abdominal Mass
+  fcp1AbdominalMassApproach, fcp1AbdominalMassDifferential,
+  // L20 Common Pediatric GI Symptoms
+  fcp1PediatricAbdominalPain, fcp1PediatricVomitingDiarrhea,
+  // L21 Approach to Anemia
+  fcp1AnemiaApproachWorkup, fcp1AnemiaClassification, fcp1AnemiaMicrocytic,
+  // L22 Lymphadenopathy & Splenomegaly
+  fcp1LymphadenopathyApproach, fcp1SplenomegalyApproach,
+  // L23 Bleeding Tendency
+  fcp1BleedingAssessmentTool, fcp1BleedingCoagulationTests, fcp1BleedingPrimaryVsSecondary,
+  // L24 Headache, Dizziness & Vertigo
+  fcp1DizzinessVertigo, fcp1HeadachePrimarySecondary, fcp1HeadacheRedFlags,
+  // L25 Weakness & Numbness
+  fcp1NumbnessSensory, fcp1WeaknessLocalization, fcp1WeaknessUmnLmn,
+  // L26 Seizures & Abnormal Movements
+  fcp1PediatricSeizures, fcp1SeizureClassification, fcp1SeizureVsMimics,
+  // L27 Movement Disorders
+  fcp1MovementHyperkinetic, fcp1MovementHypokineticParkinsonism,
+  // L28 Cognitive Impairment & Disorders of Consciousness
+  fcp1CognitiveAssessment, fcp1ConsciousnessComaApproach, fcp1DeliriumVsDementia,
+  // L29 Approach to Thyroid Disease
+  fcp1Hyperthyroidism, fcp1Hypothyroidism, fcp1ThyroidApproach,
+  // L30 Approach to Arthritis
+  fcp1ArthritisApproach, fcp1InflammatoryVsMechanical, fcp1MonoarthritisVsPolyarthritis,
+  // L31 Skin Signs (Adult & Pediatric)
+  fcp1SkinLesionMorphology, fcp1SkinSignsSystemicDisease,
+  // L32 Common ENT Symptoms
+  fcp1EntCommonSymptoms, fcp1EntRedFlags,
+  // L33 Common Eye Symptoms
+  fcp1EyeRedEye, fcp1EyeVisionLoss,
+  // L34 Urinary Symptoms
+  fcp1HematuriaApproach, fcp1UrinarySymptomsLuts,
+  // L35 Pelvic Mass & Pelvic Pain
+  fcp1PelvicMassApproach, fcp1PelvicPainApproach,
+  // L36 Sexual Assault
+  fcp1SexualAssaultForensic, fcp1SexualAssaultMedical,
+  // L37 Medical Ethics & Professionalism
+  fcp1MedicalEthicsPrinciples, fcp1ProfessionalismConsent,
+  // L38 Medical Law for Physicians
+  fcp1MedicalLawThailand, fcp1MedicalNegligenceConfidentiality,
 
   // ── HIM (Human Immunology) ──
   // L1 Cells & Tissues of the Immune System

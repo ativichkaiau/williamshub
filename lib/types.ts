@@ -29,7 +29,8 @@ export type SystemId =
   | 'derm' // skin & connective tissue / dermatology (e.g. HSC)
   | 'microbiology' // medical bacteriology, virology & mycology (e.g. MHI)
   | 'pathology' // general/anatomical pathology — cell injury, inflammation, neoplasia (e.g. BAP)
-  | 'community'; // family, community & behavioral health / social & preventive medicine (e.g. IFH, ICH, BEH)
+  | 'community' // family, community & behavioral health / social & preventive medicine (e.g. IFH, ICH, BEH)
+  | 'clinical'; // fundamentals of clinical practice — history-taking & approach to symptoms (e.g. FCP)
 
 export type TagKind =
   | 'system'

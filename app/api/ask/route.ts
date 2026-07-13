@@ -43,7 +43,10 @@ const BASE_SYSTEM =
 
 export async function POST(req: Request) {
   try {
-    const key = process.env.OPENAI_API_KEY;
+    // Strip stray whitespace / non-ASCII (e.g. a U+2028 line separator that can
+    // sneak in when a key is pasted into a dashboard) — an HTTP header value must
+    // be Latin-1, so any character > 255 makes fetch throw before it even sends.
+    const key = (process.env.OPENAI_API_KEY ?? '').replace(/[^\x21-\x7e]/g, '');
     if (!key) {
       return err(
         'The AI tutor is not configured — set OPENAI_API_KEY in the deployment environment (Vercel → Project Settings → Environment Variables).',

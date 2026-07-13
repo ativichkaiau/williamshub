@@ -139,9 +139,9 @@ export default function AskAI() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Ask AI (Command J)"
-        className="clay-pill inline-flex items-center gap-2 px-3 py-1.5 text-sm font-semibold text-slate-500 transition active:translate-y-px dark:text-slate-300"
+        className="clay-pill fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 px-4 py-3 text-sm font-semibold text-[#1e5bd6] transition hover:-translate-y-0.5 active:translate-y-0 dark:text-[#7AA0FF]"
       >
-        <span aria-hidden>✨</span>
+        <span aria-hidden className="text-[15px] leading-none">✨</span>
         <span className="hidden sm:inline">Ask AI</span>
         <kbd className="hidden rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:bg-white/10 dark:text-slate-400 sm:inline">
           ⌘J

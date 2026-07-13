@@ -2,7 +2,6 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import WilliamsHubLogo from './WilliamsHubLogo';
 import CommandPalette from './CommandPalette';
-import AskAI from './AskAI';
 
 // The primary destinations, grouped into one segmented control so the top bar
 // reads as a single tidy unit rather than a scattered row of icons.
@@ -30,14 +29,10 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3">
         <Link href="/" className="flex items-center gap-3">
           <WilliamsHubLogo />
-          <span className="clay-pill hidden px-2.5 py-0.5 text-[11px] font-semibold text-slate-500 dark:text-slate-300 xl:inline">
-            VESTRIPPN<span className="text-[#2E5BFF] dark:text-[#7AA0FF]">3.0</span> · M-8
-          </span>
         </Link>
 
         <nav className="flex items-center gap-2">
           <CommandPalette />
-          <AskAI />
           <div className="clay-inset flex items-center gap-0.5 p-1">
             {NAV.map((item) => (
               <Link

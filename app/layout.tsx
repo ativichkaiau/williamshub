@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import './globals.css';
 import Header from '../components/Header';
+import AskAI from '../components/AskAI';
 
 export const metadata: Metadata = {
   title: 'WilliamsHub — Study OS',
@@ -26,6 +28,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <Header />
         {children}
+        {/* Corner furniture: brand mark bottom-left, Ask AI tutor bottom-right */}
+        <Link
+          href="/"
+          aria-label="VESTRIPPN3.0 · M-8"
+          className="clay-pill fixed bottom-5 left-5 z-40 hidden px-3 py-1.5 text-[11px] font-semibold text-slate-500 transition hover:-translate-y-0.5 dark:text-slate-300 sm:inline-flex"
+        >
+          VESTRIPPN<span className="text-[#2E5BFF] dark:text-[#7AA0FF]">3.0</span>&nbsp;·&nbsp;M-8
+        </Link>
+        <AskAI />
       </body>
     </html>
   );

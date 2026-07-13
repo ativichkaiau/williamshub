@@ -14,7 +14,7 @@ export const behPsychologicalTesting: Lecture = {
   ],
 
   highYield: [
-    '**Psychological tests are standardised, structured measures that supplement — never replace — the clinical [[beh-psychiatric-history]] and [[beh-mental-status-exam]].** Four broad families: **intelligence**, **personality**, **neuropsychological**, and **rating scales**.',
+    'Psychological tests are standardised, structured measures that supplement — never replace — the clinical [[beh-psychiatric-history]] and [[beh-mental-status-exam]]. Four broad families: **intelligence**, **personality**, **neuropsychological**, and **rating scales**.',
     '**Intelligence: the Wechsler scales are the workhorses** — **WAIS** (adults) and **WISC** (children), plus Stanford-Binet. IQ is a **deviation score** with a mean of **100** and a standard deviation of **15**, so about 68% of people score 85–115.',
     '**Personality tests split into objective vs projective.** **Objective** tests are structured, self-report, and empirically scored — the **MMPI** (hundreds of true/false items) is the prototype and carries **validity scales** that detect faking-good or faking-bad. **Projective** tests use ambiguous stimuli to elicit unconscious material — the **Rorschach** inkblots and the **TAT** (make up a story about a picture).',
     '**Neuropsychological tests map brain–behaviour relationships** (Halstead-Reitan, Bender-Gestalt visuomotor test), and **rating scales quantify and track symptom severity** — PHQ-9 and Beck for depression, Y-BOCS for OCD — useful for measuring change over time (relevant across [[beh-mood-anxiety-disorders]] and [[beh-other-major-disorders]]).',

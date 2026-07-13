@@ -14,7 +14,7 @@ export const behPsychiatricHistory: Lecture = {
   ],
 
   highYield: [
-    '**The psychiatric history is the subjective, longitudinal story; the [[beh-mental-status-exam]] is the objective here-and-now snapshot.** Together they form the psychiatric database — the history is what is **reported**, the MSE is what is **observed** during the same interview.',
+    'The psychiatric history is the subjective, longitudinal story; the [[beh-mental-status-exam]] is the objective here-and-now snapshot. Together they form the psychiatric database — the history is what is **reported**, the MSE is what is **observed** during the same interview.',
     '**Core components:** identifying data, **chief complaint** (in the patient’s own words), **HPI** (onset, course, precipitants, biopsychosocial context), past psychiatric history, medical and **substance** history, family history, **personal/developmental history**, and **premorbid personality**. Rapport-building is the technique that makes all of this obtainable — see [[beh-communication-skills]] and [[beh-doctor-patient-relationship]].',
     '**Premorbid personality = the baseline self before the illness.** A clear **change from baseline** (a once-sociable person becoming withdrawn) is often more diagnostic than any single symptom, and separates a disorder from a lifelong trait — contrast with [[beh-personality-trait-theory]].',
     '**Collateral (corroborative) history is essential in psychiatry.** Patients may lack insight, minimise, or be unable to report; family, records, and referrer accounts complete a picture the patient alone cannot give.',

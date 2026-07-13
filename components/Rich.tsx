@@ -1,12 +1,20 @@
 import Link from 'next/link';
 
-// Inline renderer for content bullets. Handles two inline syntaxes:
+// Inline renderer for content bullets. Handles three inline syntaxes:
 //   **bold**        → amber "highlighter" mark (works in light + dark)
+//   *italic*        → emphasis (e.g. species / Latin names, book titles)
 //   [[module-id]]   → internal cross-link to /lecture/module-id (shown de-kebabed)
+// The *italic* delimiters are markdown-flanked — the opening * may not be
+// preceded by an alphanumeric and the closing * may not be followed by one — so
+// intra-token stars like "HLA-B*57:01" or "T2*" stay literal and never italicise.
+// Anything else (lone *, _italic_, [[id|alias]], **[[id]]**) is rejected at build
+// time by content:verify, so only these three shapes ever reach the page.
 // Server-safe (no client JS). box-decoration-clone keeps the marker tidy when a
 // term wraps across lines.
 export function Rich({ text }: { text: string }) {
-  const parts = text.split(/(\*\*[^*]+\*\*|\[\[[a-z0-9-]+\]\])/g);
+  const parts = text.split(
+    /(\*\*[^*]+\*\*|(?<![A-Za-z0-9])\*(?!\s)[^*]+?(?<!\s)\*(?![A-Za-z0-9])|\[\[[a-z0-9-]+\]\])/g,
+  );
   return (
     <>
       {parts.map((p, i) => {
@@ -18,6 +26,13 @@ export function Rich({ text }: { text: string }) {
             >
               {p.slice(2, -2)}
             </mark>
+          );
+        }
+        if (p.length > 2 && p.startsWith('*') && p.endsWith('*')) {
+          return (
+            <em key={i} className="italic">
+              {p.slice(1, -1)}
+            </em>
           );
         }
         if (p.startsWith('[[') && p.endsWith(']]')) {

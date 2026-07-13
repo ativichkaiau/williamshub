@@ -19,7 +19,7 @@ export const ifhHealthDataGovernance: Lecture = {
     '**Thailand’s PDPA (Personal Data Protection Act, B.E. 2562/2019)** is the GDPR-like law governing personal data. Core principles: a **lawful basis / consent**, **purpose limitation**, **data minimization**, accuracy, storage limitation, and **security**, plus **data-subject rights** (access, rectify, erase, withdraw consent).',
     '**Health data = "sensitive personal data"** under the PDPA → it needs **explicit consent** and stricter protection than ordinary data. Know the roles: the **data controller** decides purpose; the **data processor** acts on the controller’s behalf.',
     '**Anonymized vs pseudonymized is the key distinction.** Truly **anonymized** (irreversible) data falls **outside** the PDPA; **pseudonymized** (coded, re-linkable) data is **still personal data** and remains regulated. De-identify properly before secondary use for QI or research.',
-    '**Governance is the guardrail on the data-driven QI of [[ifh-health-data-quality]].** Collect the minimum necessary, secure it (technical + organizational safeguards, breach notification), and honour data-subject rights — the ethical–legal counterpart to the trust built in [[ifh-clinical-communication-skills]].',
+    'Governance is the guardrail on the data-driven QI of [[ifh-health-data-quality]]. Collect the minimum necessary, secure it (technical + organizational safeguards, breach notification), and honour data-subject rights — the ethical–legal counterpart to the trust built in [[ifh-clinical-communication-skills]].',
   ],
 
   mechanism: {

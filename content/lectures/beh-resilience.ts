@@ -15,7 +15,7 @@ export const behResilience: Lecture = {
   ],
 
   highYield: [
-    '**Resilience is the capacity to adapt well in the face of adversity, trauma or significant stress ([[beh-stress-response]]).** Crucially it is **not a fixed trait** — it can be learned and strengthened. Ann Masten called it "ordinary magic" because it arises from common human resources, not rare gifts.',
+    'Resilience is the capacity to adapt well in the face of adversity, trauma or significant stress ([[beh-stress-response]]). Crucially it is **not a fixed trait** — it can be learned and strengthened. Ann Masten called it "ordinary magic" because it arises from common human resources, not rare gifts.',
     '**Protective factors are internal and external.** Internal: **optimism, self-efficacy, emotion regulation, cognitive flexibility, and a sense of meaning/purpose** ([[beh-humanistic-theory]]). External: **social support, secure relationships, and community resources**. At least one supportive relationship is the most consistent protective factor.',
     '**Resilience is built through** strong relationships, realistic goal-setting, self-care, positive reappraisal, and meaning-making — the same coping skills that buffer the stress response.',
     '**Physician burnout (Maslach) has three dimensions:** **emotional exhaustion**, **depersonalization/cynicism** (detachment from patients), and **reduced personal accomplishment**. It raises the risk of medical errors, poor care, attrition and even suicide ([[beh-suicide-assessment]]).',

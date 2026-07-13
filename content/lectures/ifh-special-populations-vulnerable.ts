@@ -19,7 +19,7 @@ export const ifhSpecialPopulationsVulnerable: Lecture = {
     '**Inequality ≠ inequity.** A health **inequality** is any measurable difference between groups. A health **inequity** is a difference that is **unfair, avoidable, and unjust** — rooted in social disadvantage. All inequities are inequalities, but not all inequalities are inequities (menopause differs by sex — an inequality, not an inequity).',
     '**Vulnerability is driven by the social determinants of health** — income, education, housing, legal status, discrimination — the same forces named in the [[ifh-biopsychosocial-model]]. **Intersectionality:** overlapping identities (poor + migrant + female) **compound** risk rather than simply adding to it.',
     '**Cultural humility > cultural competence.** Competence implies a finite checklist you can "master"; humility is **lifelong self-reflection**, recognising your own bias and treating the patient as the expert on their own context. Care must be **culturally-sensitive and non-judgmental**.',
-    '**Recognising vulnerability is step one; acting on it is the [[ifh-special-populations-approach]].** The generalist ethos of [[ifh-family-medicine-principles]] — whole-person, continuous care — makes the family doctor the natural advocate for these patients.',
+    'Recognising vulnerability is step one; acting on it is the [[ifh-special-populations-approach]]. The generalist ethos of [[ifh-family-medicine-principles]] — whole-person, continuous care — makes the family doctor the natural advocate for these patients.',
   ],
 
   mechanism: {

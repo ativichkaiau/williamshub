@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import WilliamsHubLogo from './WilliamsHubLogo';
 import CommandPalette from './CommandPalette';
+import AskAI from './AskAI';
 
 // The primary destinations, grouped into one segmented control so the top bar
 // reads as a single tidy unit rather than a scattered row of icons.
@@ -36,6 +37,7 @@ export default function Header() {
 
         <nav className="flex items-center gap-2">
           <CommandPalette />
+          <AskAI />
           <div className="clay-inset flex items-center gap-0.5 p-1">
             {NAV.map((item) => (
               <Link

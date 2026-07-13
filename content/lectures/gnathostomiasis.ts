@@ -18,7 +18,7 @@ export const gnathostomiasis: Lecture = {
     '**The hallmark is intermittent, MIGRATORY SUBCUTANEOUS SWELLINGS (nodular/creeping) — often on the trunk or face — that come and go over days to weeks, accompanied by marked EOSINOPHILIA.** The wandering larva causes local pain, itch and inflammation as it moves.',
     '**The dangerous form is CNS gnathostomiasis: the larva can migrate into the central nervous system, causing EOSINOPHILIC MENINGITIS or, characteristically, a painful RADICULOMYELITIS/eosinophilic meningoencephalitis that may be haemorrhagic** — a serious, sometimes fatal complication. Ocular involvement also occurs.',
     '**Diagnosis is largely CLINICAL (migratory swellings + eosinophilia + the right dietary history in an endemic area) supported by SEROLOGY, since the larva is in tissue (no eggs in stool).** It cannot be diagnosed by stool microscopy. Treatment is **albendazole or ivermectin** (± surgical removal if a larva is accessible).',
-    '**The high-yield vignette: migratory subcutaneous swellings + eosinophilia after raw freshwater fish in Thailand → gnathostomiasis.** It is a key regional larva-migrans nematode ([[toxocariasis-larva-migrans]]) and a cause of the eosinophilic meningitis differential alongside Angiostrongylus ([[angiostrongyliasis-eosinophilic-meningitis]]); prevention is cooking freshwater foods.',
+    '**The high-yield vignette: migratory subcutaneous swellings + eosinophilia after raw freshwater fish in Thailand → gnathostomiasis.** It is a key regional larva-migrans nematode ([[toxocariasis-larva-migrans]]) and a cause of the eosinophilic meningitis differential alongside *Angiostrongylus* ([[angiostrongyliasis-eosinophilic-meningitis]]); prevention is cooking freshwater foods.',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const gnathostomiasis: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Gnathostomiasis is a highly regional (Thai) larva-migrans nematode — migratory swellings + eosinophilia after raw freshwater food — and a cause of eosinophilic meningitis alongside Angiostrongylus ([[angiostrongyliasis-eosinophilic-meningitis]]). It shares the wrong-host wandering-larva theme with Toxocara ([[toxocariasis-larva-migrans]]); diagnosis is clinical/serological (not stool) and prevention is cooking freshwater foods.' },
+    { logic: 'Why it matters', detail: 'Gnathostomiasis is a highly regional (Thai) larva-migrans nematode — migratory swellings + eosinophilia after raw freshwater food — and a cause of eosinophilic meningitis alongside *Angiostrongylus* ([[angiostrongyliasis-eosinophilic-meningitis]]). It shares the wrong-host wandering-larva theme with *Toxocara* ([[toxocariasis-larva-migrans]]); diagnosis is clinical/serological (not stool) and prevention is cooking freshwater foods.' },
   ],
 
   mnemonics: [

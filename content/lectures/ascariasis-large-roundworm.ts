@@ -18,7 +18,7 @@ export const ascariasisLargeRoundworm: Lecture = {
     '**Its life cycle includes a LUNG-MIGRATION phase: swallowed eggs hatch in the small intestine → larvae penetrate the gut wall → travel via the blood to the LUNGS → break into alveoli, are coughed up and swallowed → mature into adult worms in the small bowel.** During the lung phase they can cause a transient cough with eosinophilia and pulmonary infiltrates — **Löffler syndrome** (see [[parasitic-lung-infections]]).',
     '**Adult worms in the intestine cause abdominal symptoms and, with a heavy WORM BURDEN, mechanical complications: intestinal OBSTRUCTION (a bolus of worms — especially in children) and BILIARY/pancreatic obstruction if a worm migrates into the bile duct** (biliary ascariasis). Malnutrition can result in heavily infected children.',
     '**Diagnosis is by finding the characteristic Ascaris EGGS (bile-stained, mammillated) in stool, or sometimes by seeing an adult worm passed or on imaging.** The large adult worms are visible to the naked eye. Treatment is a benzimidazole — **albendazole or mebendazole**.',
-    '**The high-yield story: faecal–oral egg → lung migration (Löffler) → adult in gut → obstruction if heavy.** Ascaris is the prototype soil-transmitted helminth and the anchor of the helminth introduction ([[helminth-classification-overview]]); prevention is sanitation and mass deworming programmes.',
+    '**The high-yield story: faecal–oral egg → lung migration (Löffler) → adult in gut → obstruction if heavy.** *Ascaris* is the prototype soil-transmitted helminth and the anchor of the helminth introduction ([[helminth-classification-overview]]); prevention is sanitation and mass deworming programmes.',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const ascariasisLargeRoundworm: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Ascaris is the prototype soil-transmitted helminth ([[helminth-classification-overview]]); its lung-migration phase is a cause of the eosinophilic Löffler pneumonia ([[parasitic-lung-infections]]), and heavy infection causes intestinal/biliary obstruction. Treatment is a benzimidazole, and prevention is sanitation/mass deworming. It shares the migration theme with hookworm/Strongyloides ([[intestinal-roundworms-phasmid]]).' },
+    { logic: 'Why it matters', detail: '*Ascaris* is the prototype soil-transmitted helminth ([[helminth-classification-overview]]); its lung-migration phase is a cause of the eosinophilic Löffler pneumonia ([[parasitic-lung-infections]]), and heavy infection causes intestinal/biliary obstruction. Treatment is a benzimidazole, and prevention is sanitation/mass deworming. It shares the migration theme with hookworm/*Strongyloides* ([[intestinal-roundworms-phasmid]]).' },
   ],
 
   mnemonics: [

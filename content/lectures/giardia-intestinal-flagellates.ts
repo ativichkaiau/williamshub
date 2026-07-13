@@ -17,8 +17,8 @@ export const giardiaIntestinalFlagellates: Lecture = {
     '**Giardia lamblia (duodenalis/intestinalis) is a flagellate causing GIARDIASIS — the commonest protozoal cause of diarrhoea worldwide.** It is acquired FAECAL–ORAL by ingesting CYSTS (low infectious dose) from contaminated water — the classic "backpacker\'s/traveller\'s diarrhoea" from streams, and outbreaks from unfiltered water.',
     '**The trophozoite is a distinctive PEAR-SHAPED cell with TWO NUCLEI (a "face"/"owl" appearance), a ventral sucking disc and flagella; it attaches to the DUODENAL/jejunal mucosa (it does NOT invade).** By coating the absorptive surface it causes MALABSORPTION → foul-smelling, FATTY (steatorrhoea) diarrhoea, bloating, flatulence and weight loss; there is NO blood (non-invasive).',
     '**Diagnosis: cysts (oval, 4 nuclei) or trophozoites in stool — but shedding is intermittent, so a single negative stool does not exclude it; STOOL ANTIGEN (ELISA) or PCR is more sensitive, and rarely a duodenal aspirate/"string test."** Treatment is METRONIDAZOLE (or tinidazole/nitazoxanide).',
-    '**Dientamoeba fragilis is a related flagellate (despite the "amoeba" name) that causes non-bloody diarrhoea/abdominal pain; it has no cyst stage.** Together with Giardia these are the non-invasive, WATERY/malabsorptive intestinal flagellates — contrasting with the invasive amoeba E. histolytica which causes bloody dysentery.',
-    '**The high-yield picture: greasy, non-bloody, malabsorptive diarrhoea after drinking untreated water → Giardia → stool antigen/PCR → metronidazole.** It is the flagellate counterpart to the amoebae ([[entamoeba-histolytica-amoebiasis]]) and the urogenital flagellate Trichomonas ([[trichomonas-balantidium]]); prevention is water treatment (it resists chlorine, so filtration/boiling).',
+    '**Dientamoeba fragilis is a related flagellate (despite the "amoeba" name) that causes non-bloody diarrhoea/abdominal pain; it has no cyst stage.** Together with *Giardia* these are the non-invasive, WATERY/malabsorptive intestinal flagellates — contrasting with the invasive amoeba *E. histolytica* which causes bloody dysentery.',
+    '**The high-yield picture: greasy, non-bloody, malabsorptive diarrhoea after drinking untreated water → Giardia → stool antigen/PCR → metronidazole.** It is the flagellate counterpart to the amoebae ([[entamoeba-histolytica-amoebiasis]]) and the urogenital flagellate *Trichomonas* ([[trichomonas-balantidium]]); prevention is water treatment (it resists chlorine, so filtration/boiling).',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const giardiaIntestinalFlagellates: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Giardia is the classic malabsorptive, non-bloody diarrhoea — contrasting with invasive amoebiasis ([[entamoeba-histolytica-amoebiasis]]) — and its intermittent shedding means stool antigen/PCR beats a single O&P. Water treatment (it resists chlorine) prevents it. It is a flagellate within the framework of [[protozoa-classification-biology]]; the urogenital/ciliate flagellates follow in [[trichomonas-balantidium]].' },
+    { logic: 'Why it matters', detail: '*Giardia* is the classic malabsorptive, non-bloody diarrhoea — contrasting with invasive amoebiasis ([[entamoeba-histolytica-amoebiasis]]) — and its intermittent shedding means stool antigen/PCR beats a single O&P. Water treatment (it resists chlorine) prevents it. It is a flagellate within the framework of [[protozoa-classification-biology]]; the urogenital/ciliate flagellates follow in [[trichomonas-balantidium]].' },
   ],
 
   mnemonics: [

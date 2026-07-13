@@ -14,10 +14,10 @@ export const nocardiaActinomyces: Lecture = {
   ],
 
   highYield: [
-    'Nocardia and Actinomyces are both FILAMENTOUS, BRANCHING Gram-positive rods that superficially resemble fungi but are BACTERIA — and they are a classic contrasting pair, separated by oxygen requirement, acid-fastness and habitat.',
+    '*Nocardia* and *Actinomyces* are both FILAMENTOUS, BRANCHING Gram-positive rods that superficially resemble fungi but are BACTERIA — and they are a classic contrasting pair, separated by oxygen requirement, acid-fastness and habitat.',
     'NOCARDIA is AEROBIC, WEAKLY/PARTIALLY ACID-FAST, and environmental (SOIL) — acquired by INHALATION or skin inoculation. It mainly affects the IMMUNOCOMPROMISED (steroids, transplant, HIV, malignancy), causing a subacute pulmonary infection (cavitary pneumonia) that characteristically DISSEMINATES to the BRAIN (abscesses) and skin. Treatment is CO-TRIMOXAZOLE (sulfonamide-based), often prolonged.',
-    'ACTINOMYCES (e.g. A. israelii) is ANAEROBIC, NOT acid-fast, and part of NORMAL ORAL/GI/genital FLORA — it causes ENDOGENOUS infection after mucosal breach (dental work, trauma, IUDs). Cervicofacial actinomycosis ("lumpy jaw") forms chronic draining SINUS TRACTS discharging SULFUR GRANULES (yellow microcolonies). It is exquisitely PENICILLIN-sensitive (prolonged high-dose).',
-    'The contrast is the exam core: NOCARDia = aerobic, acid-fast, soil/inhaled, immunocompromised, pulmonary→brain, treat CO-TRIMOXAZOLE; ACTINOMYCES = anaerobic, non-acid-fast, oral flora/endogenous, sulfur granules/sinus tracts, treat PENICILLIN. (SNAP: Sulfa for Nocardia, Actinomyces Penicillin.)',
+    'ACTINOMYCES (e.g. *A. israelii*) is ANAEROBIC, NOT acid-fast, and part of NORMAL ORAL/GI/genital FLORA — it causes ENDOGENOUS infection after mucosal breach (dental work, trauma, IUDs). Cervicofacial actinomycosis ("lumpy jaw") forms chronic draining SINUS TRACTS discharging SULFUR GRANULES (yellow microcolonies). It is exquisitely PENICILLIN-sensitive (prolonged high-dose).',
+    'The contrast is the exam core: NOCARDia = aerobic, acid-fast, soil/inhaled, immunocompromised, pulmonary→brain, treat CO-TRIMOXAZOLE; ACTINOMYCES = anaerobic, non-acid-fast, oral flora/endogenous, sulfur granules/sinus tracts, treat PENICILLIN. (SNAP: Sulfa for *Nocardia*, *Actinomyces* Penicillin.)',
     '**The take-home: branching filamentous Gram-positive bacteria. NOCARDIA = AEROBIC, acid-fast, SOIL/inhaled → immunocompromised pulmonary + BRAIN abscess → CO-TRIMOXAZOLE. ACTINOMYCES = ANAEROBIC, non-acid-fast, ORAL flora → "lumpy jaw", SULFUR GRANULES, sinus tracts → PENICILLIN.** Mycobacteria (also acid-fast) are [[mycobacterium-tuberculosis-leprae]]; anaerobes are [[bacteroides-gram-negative-anaerobes]].',
   ],
 
@@ -48,7 +48,7 @@ export const nocardiaActinomyces: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Nocardia and Actinomyces are branching filamentous bacteria distinguished by oxygen requirement, acid-fastness, habitat and treatment: Nocardia (aerobic, partially acid-fast, soil-derived) causes pulmonary infection that spreads to the brain in the immunocompromised and needs co-trimoxazole, whereas Actinomyces (anaerobic, non-acid-fast, oral flora) causes "lumpy jaw" with sulfur-granule-discharging sinus tracts after mucosal breach and is treated with prolonged penicillin. The SNAP mnemonic captures the therapy. Mycobacteria are [[mycobacterium-tuberculosis-leprae]]; anaerobes are [[bacteroides-gram-negative-anaerobes]].' },
+    { logic: 'Why it matters', detail: '*Nocardia* and *Actinomyces* are branching filamentous bacteria distinguished by oxygen requirement, acid-fastness, habitat and treatment: *Nocardia* (aerobic, partially acid-fast, soil-derived) causes pulmonary infection that spreads to the brain in the immunocompromised and needs co-trimoxazole, whereas *Actinomyces* (anaerobic, non-acid-fast, oral flora) causes "lumpy jaw" with sulfur-granule-discharging sinus tracts after mucosal breach and is treated with prolonged penicillin. The SNAP mnemonic captures the therapy. Mycobacteria are [[mycobacterium-tuberculosis-leprae]]; anaerobes are [[bacteroides-gram-negative-anaerobes]].' },
   ],
 
   mnemonics: [

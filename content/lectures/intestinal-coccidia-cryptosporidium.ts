@@ -17,9 +17,9 @@ export const intestinalCoccidiaCryptosporidium: Lecture = {
   highYield: [
     '**The intestinal coccidia are apicomplexan protozoa (Cryptosporidium, Cyclospora, Cystoisospora) that cause WATERY, non-bloody diarrhoea by infecting small-bowel enterocytes.** They are transmitted FAECAL–ORAL by resistant OOCYSTS in water/food, and their oocysts are typically ACID-FAST on stool staining — a key diagnostic clue.',
     '**Cryptosporidium is the most important: it causes self-limited watery diarrhoea in the immunocompetent, but CHRONIC, severe, life-threatening diarrhoea in the IMMUNOCOMPROMISED (especially advanced HIV/AIDS with low CD4).** Its oocysts RESIST CHLORINE, so it causes waterborne outbreaks (including from treated recreational/drinking water) — the classic "swimming pool/water-park" outbreak organism.',
-    '**Cyclospora cayetanensis is linked to imported FRESH PRODUCE (berries, herbs, salad) and causes prolonged, relapsing watery diarrhoea; Cystoisospora (Isospora) belli causes diarrhoea especially in HIV.** Cyclospora and Cystoisospora respond to co-trimoxazole; Cryptosporidium has no reliably effective drug (nitazoxanide helps the immunocompetent), so the key is immune reconstitution (antiretrovirals) in HIV.',
-    '**Diagnosis is by finding OOCYSTS in stool with a MODIFIED ACID-FAST stain (Cryptosporidium, Cyclospora, Cystoisospora all stain acid-fast) — routine O&P can miss them; Cryptosporidium antigen/PCR is also used.** Cyclospora oocysts autofluoresce under UV. The shared clue is "acid-fast oocysts + watery diarrhoea."',
-    '**High-yield: watery diarrhoea + acid-fast oocysts → intestinal coccidia; think CRYPTOSPORIDIUM (water, chlorine-resistant) especially with HIV/immunosuppression, CYCLOSPORA with imported produce.** They are the apicomplexan intestinal counterparts to Toxoplasma and the blood apicomplexa ([[toxoplasmosis]], [[blood-apicomplexa-malaria-babesia]]).',
+    '**Cyclospora cayetanensis is linked to imported FRESH PRODUCE (berries, herbs, salad) and causes prolonged, relapsing watery diarrhoea; Cystoisospora (Isospora) belli causes diarrhoea especially in HIV.** *Cyclospora* and *Cystoisospora* respond to co-trimoxazole; *Cryptosporidium* has no reliably effective drug (nitazoxanide helps the immunocompetent), so the key is immune reconstitution (antiretrovirals) in HIV.',
+    '**Diagnosis is by finding OOCYSTS in stool with a MODIFIED ACID-FAST stain (Cryptosporidium, Cyclospora, Cystoisospora all stain acid-fast) — routine O&P can miss them; Cryptosporidium antigen/PCR is also used.** *Cyclospora* oocysts autofluoresce under UV. The shared clue is "acid-fast oocysts + watery diarrhoea."',
+    '**High-yield: watery diarrhoea + acid-fast oocysts → intestinal coccidia; think CRYPTOSPORIDIUM (water, chlorine-resistant) especially with HIV/immunosuppression, CYCLOSPORA with imported produce.** They are the apicomplexan intestinal counterparts to *Toxoplasma* and the blood apicomplexa ([[toxoplasmosis]], [[blood-apicomplexa-malaria-babesia]]).',
   ],
 
   mechanism: {
@@ -49,7 +49,7 @@ export const intestinalCoccidiaCryptosporidium: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Intestinal coccidia are a leading cause of chronic diarrhoea in HIV/AIDS (Cryptosporidium especially) and of waterborne/produce outbreaks; the acid-fast oocyst is the diagnostic key (routine O&P misses them). Cryptosporidium lacks a reliable drug (immune reconstitution matters), while Cyclospora/Cystoisospora respond to co-trimoxazole. They are apicomplexa alongside [[toxoplasmosis]] and [[blood-apicomplexa-malaria-babesia]] ([[protozoa-classification-biology]]).' },
+    { logic: 'Why it matters', detail: 'Intestinal coccidia are a leading cause of chronic diarrhoea in HIV/AIDS (*Cryptosporidium* especially) and of waterborne/produce outbreaks; the acid-fast oocyst is the diagnostic key (routine O&P misses them). *Cryptosporidium* lacks a reliable drug (immune reconstitution matters), while *Cyclospora/Cystoisospora* respond to co-trimoxazole. They are apicomplexa alongside [[toxoplasmosis]] and [[blood-apicomplexa-malaria-babesia]] ([[protozoa-classification-biology]]).' },
   ],
 
   mnemonics: [

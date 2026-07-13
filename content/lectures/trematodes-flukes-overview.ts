@@ -17,7 +17,7 @@ export const trematodesFlukesOverview: Lecture = {
     '**Trematodes (flukes) are flat, leaf-shaped flatworms, HERMAPHRODITE except the blood flukes, and ALL require a SNAIL as the first intermediate host.** They are grouped clinically by where the adult lives: liver, intestinal, lung and blood flukes — a useful organising scheme.',
     '**LIVER flukes: Opisthorchis viverrini (the Southeast Asian liver fluke) and Clonorchis sinensis, from raw FRESHWATER FISH, live in the bile ducts and are a leading, preventable cause of CHOLANGIOCARCINOMA (Opisthorchis is a WHO group-1 carcinogen — high yield in NE Thailand). Fasciola hepatica (sheep liver fluke) comes from aquatic plants (watercress).** See [[liver-flukes-cholangiocarcinoma]].',
     '**INTESTINAL fluke: Fasciolopsis buski (the giant intestinal fluke) from aquatic plants (water chestnuts) → abdominal symptoms/malabsorption. LUNG fluke: Paragonimus westermani, from raw/undercooked freshwater CRAB → chronic cough and haemoptysis that MIMICS TUBERCULOSIS** (see [[parasitic-lung-infections]]).',
-    '**BLOOD flukes — Schistosoma (the exception with SEPARATE SEXES) — are acquired by CERCARIAE penetrating skin in fresh water (not by eating).** Eggs lodge in tissues: S. mansoni/japonicum → intestinal/hepatic (periportal fibrosis, portal hypertension); S. haematobium → urinary (haematuria, bladder fibrosis, and increased BLADDER SQUAMOUS-cell carcinoma).',
+    '**BLOOD flukes — Schistosoma (the exception with SEPARATE SEXES) — are acquired by CERCARIAE penetrating skin in fresh water (not by eating).** Eggs lodge in tissues: *S. mansoni*/japonicum → intestinal/hepatic (periportal fibrosis, portal hypertension); *S. haematobium* → urinary (haematuria, bladder fibrosis, and increased BLADDER SQUAMOUS-cell carcinoma).',
     '**Diagnosis is by finding OPERCULATED eggs in stool (or urine for S. haematobium); TREATMENT for essentially all flukes is PRAZIQUANTEL (Fasciola is the exception — triclabendazole).** The unifying reminders: all flukes need a snail; most are food-borne (COOK fish/crab/plants) while schistosomes penetrate skin in water. This is the parasitology-course view of flukes also seen clinically in HGB-2/HRS-2.',
   ],
 
@@ -48,7 +48,7 @@ export const trematodesFlukesOverview: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Flukes are a huge regional burden — Opisthorchis → cholangiocarcinoma ([[liver-flukes-cholangiocarcinoma]]), Paragonimus mimics TB ([[parasitic-lung-infections]]), Schistosoma causes portal hypertension and bladder cancer. Praziquantel treats most; prevention is cooking fish/crab/plants (or avoiding freshwater skin contact for schistosomes). This is the parasitology overview complementing the clinical HGB-2/HRS-2 modules; tapeworms follow in [[cestodes-tapeworms-overview]].' },
+    { logic: 'Why it matters', detail: 'Flukes are a huge regional burden — *Opisthorchis* → cholangiocarcinoma ([[liver-flukes-cholangiocarcinoma]]), *Paragonimus* mimics TB ([[parasitic-lung-infections]]), *Schistosoma* causes portal hypertension and bladder cancer. Praziquantel treats most; prevention is cooking fish/crab/plants (or avoiding freshwater skin contact for schistosomes). This is the parasitology overview complementing the clinical HGB-2/HRS-2 modules; tapeworms follow in [[cestodes-tapeworms-overview]].' },
   ],
 
   mnemonics: [

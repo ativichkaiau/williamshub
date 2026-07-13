@@ -16,8 +16,8 @@ export const coagulaseNegativeStaphylococci: Lecture = {
   highYield: [
     'Coagulase-NEGATIVE staphylococci (CoNS) are catalase-positive, coagulase-NEGATIVE skin commensals — usually low-virulence, but important as OPPORTUNISTS and as common CONTAMINANTS of blood cultures. The two exam species are S. EPIDERMIDIS and S. SAPROPHYTICUS, separated by the NOVOBIOCIN test (epidermidis SENSITIVE, saprophyticus RESISTANT).',
     'STAPHYLOCOCCUS EPIDERMIDIS (novobiocin-SENSITIVE) produces a polysaccharide BIOFILM ("slime") that lets it adhere to and infect PROSTHETIC/indwelling DEVICES — prosthetic heart valves, IV catheters/lines, CSF shunts, prosthetic joints — and cause device-related bacteraemia. Because it is a skin commensal, a single positive blood culture is often CONTAMINATION; device infection usually needs device REMOVAL plus antibiotics (often vancomycin, as many are methicillin-resistant).',
-    'STAPHYLOCOCCUS SAPROPHYTICUS (novobiocin-RESISTANT) is a leading cause of uncomplicated UTI/CYSTITIS in young, sexually active WOMEN — second only to E. coli. It is a genuine pathogen in this setting (not a contaminant), presenting with dysuria/frequency.',
-    'So CoNS matter in two archetypes: DEVICE/prosthetic infection and blood-culture contamination (S. epidermidis, biofilm) and community UTI in young women (S. saprophyticus). The novobiocin test and clinical context distinguish contamination from true infection, guiding whether to treat and whether to remove hardware.',
+    'STAPHYLOCOCCUS SAPROPHYTICUS (novobiocin-RESISTANT) is a leading cause of uncomplicated UTI/CYSTITIS in young, sexually active WOMEN — second only to *E. coli*. It is a genuine pathogen in this setting (not a contaminant), presenting with dysuria/frequency.',
+    'So CoNS matter in two archetypes: DEVICE/prosthetic infection and blood-culture contamination (*S. epidermidis*, biofilm) and community UTI in young women (*S. saprophyticus*). The novobiocin test and clinical context distinguish contamination from true infection, guiding whether to treat and whether to remove hardware.',
     '**The take-home: coagulase-NEGATIVE staph = catalase+, coagulase−. S. EPIDERMIDIS (novobiocin-SENSITIVE) = BIOFILM on prosthetic DEVICES/lines/valves + common blood-culture contaminant → often remove device. S. SAPROPHYTICUS (novobiocin-RESISTANT) = UTI in young women. Context distinguishes contamination from infection.** The coagulase-positive species is [[staphylococcus-aureus]]; UTI biology is [[uti-pathogenesis-microbiology]].',
   ],
 
@@ -48,7 +48,7 @@ export const coagulaseNegativeStaphylococci: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'CoNS are usually low-virulence commensals, so the clinical skill is context: S. epidermidis is both a biofilm-forming device pathogen (prosthetic valves, lines, shunts, joints — often needing hardware removal plus vancomycin) and the classic blood-culture contaminant, while S. saprophyticus is a true UTI pathogen in young women. The novobiocin test and the clinical picture separate contamination from infection and guide treatment. The coagulase-positive species is [[staphylococcus-aureus]]; UTI microbiology is [[uti-pathogenesis-microbiology]].' },
+    { logic: 'Why it matters', detail: 'CoNS are usually low-virulence commensals, so the clinical skill is context: *S. epidermidis* is both a biofilm-forming device pathogen (prosthetic valves, lines, shunts, joints — often needing hardware removal plus vancomycin) and the classic blood-culture contaminant, while *S. saprophyticus* is a true UTI pathogen in young women. The novobiocin test and the clinical picture separate contamination from infection and guide treatment. The coagulase-positive species is [[staphylococcus-aureus]]; UTI microbiology is [[uti-pathogenesis-microbiology]].' },
   ],
 
   mnemonics: [

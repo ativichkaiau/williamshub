@@ -18,7 +18,7 @@ export const hhlMalariaPathophysiology: Lecture = {
     '**Synchronous schizont rupture** releases merozoites plus hemozoin/toxins → **cytokine surge (TNF)** → the classic **paroxysm: cold (chills) → hot (fever) → sweating**, timed to the periodicity.',
     'Core haematological triad: **hemolytic anemia + splenomegaly + thrombocytopenia**. Both infected AND uninfected red cells are removed, so anemia exceeds the parasite load.',
     '**P. falciparum is severe because it sequesters**: **PfEMP1** on **knobs** mediates **cytoadherence, rosetting and sequestration** in microvasculature → organ ischaemia. See [[hhl-severe-falciparum-malaria]].',
-    '**P. vivax/ovale** relapse from **hypnozoites**; **P. malariae** runs chronic and can cause **immune-complex nephrotic syndrome** (quartan malarial nephropathy).',
+    '**P. vivax/ovale** relapse from **hypnozoites**; *P. malariae* runs chronic and can cause **immune-complex nephrotic syndrome** (quartan malarial nephropathy).',
   ],
 
   mechanism: {

@@ -17,8 +17,8 @@ export const freeLivingNonpathogenicAmoebae: Lecture = {
   highYield: [
     '**Free-living amoebae live in the environment (water/soil), NOT the faecal–oral cycle, yet can cause devastating CNS and eye infections.** The three to know are **Naegleria fowleri, Acanthamoeba, and Balamuthia** — each with a characteristic route, host and syndrome.',
     '**Naegleria fowleri is the "brain-eating amoeba": it lives in WARM FRESH water, enters through the NOSE during swimming/diving, and travels along the olfactory nerve through the cribriform plate to the brain → PRIMARY AMOEBIC MENINGOENCEPHALITIS (PAM).** PAM is acute, fulminant and almost always fatal, typically in previously HEALTHY young people; motile trophozoites are seen in CSF.',
-    '**Acanthamoeba causes two distinct diseases: (1) KERATITIS in CONTACT-LENS wearers (poor lens hygiene/exposure to water) — a painful, sight-threatening corneal infection; and (2) GRANULOMATOUS AMOEBIC ENCEPHALITIS (GAE) — a chronic, insidious brain infection in the IMMUNOCOMPROMISED.** Balamuthia mandrillaris also causes GAE.',
-    '**Contrast the CNS syndromes: NAEGLERIA → acute PAM in healthy swimmers (freshwater, nasal route); ACANTHAMOEBA/BALAMUTHIA → chronic GAE in the immunocompromised (haematogenous/ skin/sinus route).** Acanthamoeba forms a resistant cyst that helps it survive and makes keratitis hard to treat.',
+    '**Acanthamoeba causes two distinct diseases: (1) KERATITIS in CONTACT-LENS wearers (poor lens hygiene/exposure to water) — a painful, sight-threatening corneal infection; and (2) GRANULOMATOUS AMOEBIC ENCEPHALITIS (GAE) — a chronic, insidious brain infection in the IMMUNOCOMPROMISED.** *Balamuthia* mandrillaris also causes GAE.',
+    '**Contrast the CNS syndromes: NAEGLERIA → acute PAM in healthy swimmers (freshwater, nasal route); ACANTHAMOEBA/BALAMUTHIA → chronic GAE in the immunocompromised (haematogenous/ skin/sinus route).** *Acanthamoeba* forms a resistant cyst that helps it survive and makes keratitis hard to treat.',
     '**Non-pathogenic intestinal amoebae — Entamoeba coli, Endolimax nana, Iodamoeba bütschlii and Entamoeba gingivalis — are commensals whose importance is that they can be MISTAKEN for E. histolytica on stool microscopy.** They are distinguished by cyst size, nuclear number/structure and the ABSENCE of ingested red cells — so recognising them prevents over-diagnosis of pathogenic amoebiasis ([[entamoeba-histolytica-amoebiasis]]).',
   ],
 
@@ -49,7 +49,7 @@ export const freeLivingNonpathogenicAmoebae: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'These environmental amoebae cause high-mortality disease outside the faecal–oral route — recognising the exposure (warm freshwater/nasal for Naegleria; contact lenses for Acanthamoeba keratitis; immunosuppression for GAE) is the diagnostic key. The non-pathogenic commensals matter only because they mimic the invasive [[entamoeba-histolytica-amoebiasis]] on microscopy; amoeba biology is from [[protozoa-classification-biology]].' },
+    { logic: 'Why it matters', detail: 'These environmental amoebae cause high-mortality disease outside the faecal–oral route — recognising the exposure (warm freshwater/nasal for *Naegleria*; contact lenses for *Acanthamoeba* keratitis; immunosuppression for GAE) is the diagnostic key. The non-pathogenic commensals matter only because they mimic the invasive [[entamoeba-histolytica-amoebiasis]] on microscopy; amoeba biology is from [[protozoa-classification-biology]].' },
   ],
 
   mnemonics: [

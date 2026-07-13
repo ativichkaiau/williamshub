@@ -15,10 +15,10 @@ export const bloodApicomplexaMalariaBabesia: Lecture = {
 
   highYield: [
     '**Plasmodium (malaria) is the most important parasitic disease worldwide — an apicomplexan transmitted by the female ANOPHELES mosquito (the definitive host and vector).** Sporozoites injected at a bite infect the LIVER, then released merozoites invade RED BLOOD CELLS, cycling and lysing them — which produces the fever paroxysms.',
-    '**Five species infect humans; the two to prioritise: Plasmodium FALCIPARUM causes SEVERE/complicated malaria (cerebral malaria, severe anaemia, blackwater fever, high parasitaemia — the killer), while P. VIVAX and P. OVALE form dormant liver HYPNOZOITES that cause RELAPSES weeks–months later.** (P. malariae is chronic/low-grade; P. knowlesi is zoonotic.)',
+    '**Five species infect humans; the two to prioritise: Plasmodium FALCIPARUM causes SEVERE/complicated malaria (cerebral malaria, severe anaemia, blackwater fever, high parasitaemia — the killer), while P. VIVAX and P. OVALE form dormant liver HYPNOZOITES that cause RELAPSES weeks–months later.** (*P. malariae* is chronic/low-grade; *P. knowlesi* is zoonotic.)',
     '**The RBC cycle causes CYCLICAL FEVER (tertian ~48 h for vivax/ovale/falciparum; quartan ~72 h for malariae) with chills and sweats, plus haemolytic ANAEMIA and SPLENOMEGALY.** Falciparum-infected red cells sequester in capillaries (cerebral malaria) and cause high parasitaemia — features that mark severity.',
     'Diagnosis is the BLOOD FILM (thick film to detect, thin film to speciate and quantify parasitaemia) — the gold standard — plus rapid antigen tests. Treatment is artemisinin-based combination therapy (ACT); severe falciparum needs IV artesunate; PRIMAQUINE is added to kill vivax/ovale HYPNOZOITES and prevent relapse (check G6PD first).',
-    '**Babesia is a related blood apicomplexan transmitted by TICKS (not mosquitoes): it infects red cells causing a malaria-like haemolytic febrile illness, with a characteristic tetrad "MALTESE CROSS" on the blood film (and no pigment).** The high-yield contrasts: malaria = Anopheles + cyclical fever + falciparum severe/vivax relapses; Babesia = tick + Maltese cross. Prevention is vector control ([[mosquito-borne-diseases]]).',
+    '**Babesia is a related blood apicomplexan transmitted by TICKS (not mosquitoes): it infects red cells causing a malaria-like haemolytic febrile illness, with a characteristic tetrad "MALTESE CROSS" on the blood film (and no pigment).** The high-yield contrasts: malaria = *Anopheles* + cyclical fever + falciparum severe/vivax relapses; *Babesia* = tick + Maltese cross. Prevention is vector control ([[mosquito-borne-diseases]]).',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const bloodApicomplexaMalariaBabesia: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Malaria is the most important vector-borne parasite: recognising severe falciparum (IV artesunate) and adding primaquine for vivax/ovale relapse (after G6PD testing) are life-saving. The Anopheles vector links to mosquito-borne disease and control ([[mosquito-borne-diseases]], [[medical-entomology-vectors]]); the mosquito is the definitive host ([[parasitology-host-relationships]]). Babesia (ticks) is the tick-borne look-alike within the apicomplexa ([[intestinal-coccidia-cryptosporidium]], [[toxoplasmosis]]).' },
+    { logic: 'Why it matters', detail: 'Malaria is the most important vector-borne parasite: recognising severe falciparum (IV artesunate) and adding primaquine for vivax/ovale relapse (after G6PD testing) are life-saving. The *Anopheles* vector links to mosquito-borne disease and control ([[mosquito-borne-diseases]], [[medical-entomology-vectors]]); the mosquito is the definitive host ([[parasitology-host-relationships]]). *Babesia* (ticks) is the tick-borne look-alike within the apicomplexa ([[intestinal-coccidia-cryptosporidium]], [[toxoplasmosis]]).' },
   ],
 
   mnemonics: [

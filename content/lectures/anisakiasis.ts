@@ -18,7 +18,7 @@ export const anisakiasis: Lecture = {
     '**The larva attempts to penetrate the gastric or intestinal wall, causing anisakiasis: acute SEVERE EPIGASTRIC PAIN, nausea and vomiting within hours of eating raw marine fish (gastric form), or lower-abdominal pain (intestinal form) that can mimic appendicitis or an acute abdomen.** An eosinophilic granuloma may form around the larva.',
     '**Anisakis is also an important cause of food ALLERGY: it can provoke IgE-mediated reactions (urticaria, angioedema, even anaphylaxis) after eating fish — sometimes even when the fish is cooked (heat-stable allergens).** So it matters both as an invasive infection and as a hidden seafood allergen.',
     '**Diagnosis is by ENDOSCOPY, which can directly visualise (and remove) the larva burrowing into the gastric mucosa — this is also therapeutic; serology/history supports it.** There is no reliable drug; larval removal (or supportive care as the larva dies) is the mainstay.',
-    '**Prevention is straightforward: cook fish thoroughly, or FREEZE it (which kills the larvae) before serving raw** — the basis of sushi-grade fish regulations. The high-yield story: acute epigastric pain (or a fish allergy) after RAW SALTWATER fish → Anisakis → endoscopic removal. It contrasts with the freshwater-fish parasites Gnathostoma and Opisthorchis.',
+    '**Prevention is straightforward: cook fish thoroughly, or FREEZE it (which kills the larvae) before serving raw** — the basis of sushi-grade fish regulations. The high-yield story: acute epigastric pain (or a fish allergy) after RAW SALTWATER fish → *Anisakis* → endoscopic removal. It contrasts with the freshwater-fish parasites *Gnathostoma* and *Opisthorchis*.',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const anisakiasis: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Anisakiasis is an acute abdomen mimic and a hidden seafood allergen; endoscopic larval removal is both diagnostic and curative, and prevention is cooking/freezing fish. It is the MARINE-fish nematode, contrasting with the FRESHWATER-fish parasites Gnathostoma ([[gnathostomiasis]]) and the liver fluke Opisthorchis ([[trematodes-flukes-overview]]). It shares the dead-end-host/larva theme with Toxocara ([[toxocariasis-larva-migrans]]).' },
+    { logic: 'Why it matters', detail: 'Anisakiasis is an acute abdomen mimic and a hidden seafood allergen; endoscopic larval removal is both diagnostic and curative, and prevention is cooking/freezing fish. It is the MARINE-fish nematode, contrasting with the FRESHWATER-fish parasites *Gnathostoma* ([[gnathostomiasis]]) and the liver fluke *Opisthorchis* ([[trematodes-flukes-overview]]). It shares the dead-end-host/larva theme with *Toxocara* ([[toxocariasis-larva-migrans]]).' },
   ],
 
   mnemonics: [

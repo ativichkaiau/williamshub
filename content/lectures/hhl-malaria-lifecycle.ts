@@ -15,7 +15,7 @@ export const hhlMalariaLifecycle: Lecture = {
   ],
 
   highYield: [
-    'Five human species: **P. falciparum** and **P. vivax** (the two that dominate in **Thailand**), P. malariae, P. ovale, and the zoonotic **P. knowlesi**. Falciparum causes the severe/lethal disease; vivax is the great relapser.',
+    'Five human species: *P. falciparum* and *P. vivax* (the two that dominate in **Thailand**), *P. malariae*, *P. ovale*, and the zoonotic *P. knowlesi*. Falciparum causes the severe/lethal disease; vivax is the great relapser.',
     'Vector = the **female Anopheles** mosquito (only females take a blood meal). Sporozoites are injected → travel to the **liver** for **exo-erythrocytic schizogony**, then seed the blood.',
     '**Only P. vivax and P. ovale form hypnozoites** — dormant liver forms that reactivate weeks–months later to cause **relapse**. Falciparum and malariae have NO hypnozoites.',
     'Blood stage = **erythrocytic schizogony**: merozoite → **ring → trophozoite → schizont** → rupture releases new merozoites. Some differentiate into **gametocytes**, the form taken up by the mosquito.',

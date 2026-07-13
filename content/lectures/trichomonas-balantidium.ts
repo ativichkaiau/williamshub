@@ -18,7 +18,7 @@ export const trichomonasBalantidium: Lecture = {
     '**In women it causes vaginitis with a frothy, malodorous, YELLOW-GREEN discharge, itching, and a "STRAWBERRY CERVIX" (punctate haemorrhages); the vaginal pH is raised (>4.5).** Men are usually asymptomatic carriers (or have urethritis). Diagnosis is by seeing motile, jerky, pear-shaped flagellated trophozoites on a wet mount (or NAAT).',
     '**Treatment is METRONIDAZOLE (or tinidazole), and — crucially — the SEXUAL PARTNER must be treated too** to prevent reinfection (as with any STI). Being an STI without a cyst stage, it is prevented by safe sexual practices, not by sanitation.',
     '**Balantidium coli is the ONLY pathogenic CILIATE and the LARGEST human protozoan.** Acquired FAECAL–ORAL (cysts), often ZOONOTICALLY from PIGS (the reservoir), it invades the colon to cause a dysentery that can resemble amoebiasis (ulcers, bloody/mucoid diarrhoea). The trophozoite is large and covered in cilia with a characteristic macronucleus.',
-    '**Contrast the two: Trichomonas = a non-invasive UROGENITAL STI flagellate (no cyst); Balantidium = an invasive INTESTINAL ciliate (faecal–oral, pig zoonosis) causing dysentery.** Both are treated with metronidazole (Balantidium may use tetracycline). They complete the flagellate/ciliate group alongside Giardia ([[giardia-intestinal-flagellates]]).',
+    '**Contrast the two: Trichomonas = a non-invasive UROGENITAL STI flagellate (no cyst); Balantidium = an invasive INTESTINAL ciliate (faecal–oral, pig zoonosis) causing dysentery.** Both are treated with metronidazole (*Balantidium* may use tetracycline). They complete the flagellate/ciliate group alongside *Giardia* ([[giardia-intestinal-flagellates]]).',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const trichomonasBalantidium: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Trichomonas is a common curable STI — treat the patient AND partner with metronidazole (prevention is safe sex, not sanitation, as there is no environmental cyst). Balantidium is a pig-zoonotic invasive ciliate causing an amoebiasis-like dysentery ([[entamoeba-histolytica-amoebiasis]]). Both complete the flagellate/ciliate group of [[protozoa-classification-biology]] and [[giardia-intestinal-flagellates]].' },
+    { logic: 'Why it matters', detail: '*Trichomonas* is a common curable STI — treat the patient AND partner with metronidazole (prevention is safe sex, not sanitation, as there is no environmental cyst). *Balantidium* is a pig-zoonotic invasive ciliate causing an amoebiasis-like dysentery ([[entamoeba-histolytica-amoebiasis]]). Both complete the flagellate/ciliate group of [[protozoa-classification-biology]] and [[giardia-intestinal-flagellates]].' },
   ],
 
   mnemonics: [

@@ -15,7 +15,7 @@ export const mosquitoBorneDiseases: Lecture = {
 
   highYield: [
     '**Mosquitoes are the most important disease vectors in the world, and the three medically important GENERA each transmit a characteristic set of diseases — a classic exam matching task.** Only FEMALE mosquitoes take a blood meal (needed for egg production); the life cycle has aquatic stages (egg → larva → pupa in water → adult), which is why larval-source control works.',
-    '**ANOPHELES transmits MALARIA (Plasmodium — it is the definitive host) and also lymphatic filariasis.** It is the night-biting vector; malaria control centres on insecticide-treated bed nets and indoor spraying against Anopheles ([[blood-apicomplexa-malaria-babesia]]).',
+    '**ANOPHELES transmits MALARIA (Plasmodium — it is the definitive host) and also lymphatic filariasis.** It is the night-biting vector; malaria control centres on insecticide-treated bed nets and indoor spraying against *Anopheles* ([[blood-apicomplexa-malaria-babesia]]).',
     '**AEDES (Aedes aegypti/albopictus) is the DAY-BITING vector of the major arboviruses: DENGUE, ZIKA, CHIKUNGUNYA and yellow fever.** Its container-breeding habit (small collections of clean water around homes) drives urban outbreaks; control targets breeding sites and personal protection. Dengue is hugely important in Southeast Asia.',
     '**CULEX transmits lymphatic FILARIASIS (Wuchereria bancrofti — adult worms block lymphatics → LYMPHOEDEMA/elephantiasis; microfilariae are found in NIGHT blood films) and JAPANESE ENCEPHALITIS.** Filariasis is diagnosed by nocturnal blood films (microfilariae) and treated with diethylcarbamazine/ivermectin + albendazole.',
     '**High-yield genus→disease map: ANOPHELES = malaria; AEDES = dengue/Zika/chikungunya (day-biter); CULEX = filariasis + Japanese encephalitis.** Prevention is mosquito control (nets, repellents, eliminating breeding water) — the practical output of medical entomology ([[medical-entomology-vectors]]).',
@@ -48,7 +48,7 @@ export const mosquitoBorneDiseases: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'The genus→disease map (Anopheles=malaria; Aedes=dengue/arboviruses; Culex=filariasis/JE) is high-yield and drives control (nets/spraying for Anopheles; breeding-site removal for Aedes). Malaria connects to the blood apicomplexa ([[blood-apicomplexa-malaria-babesia]]); the Anopheles is malaria\'s definitive host ([[parasitology-host-relationships]]); it operationalises the entomology of [[medical-entomology-vectors]].' },
+    { logic: 'Why it matters', detail: 'The genus→disease map (*Anopheles*=malaria; *Aedes*=dengue/arboviruses; *Culex*=filariasis/JE) is high-yield and drives control (nets/spraying for *Anopheles*; breeding-site removal for *Aedes*). Malaria connects to the blood apicomplexa ([[blood-apicomplexa-malaria-babesia]]); the *Anopheles* is malaria\'s definitive host ([[parasitology-host-relationships]]); it operationalises the entomology of [[medical-entomology-vectors]].' },
   ],
 
   mnemonics: [

@@ -15,10 +15,10 @@ export const toxocariasisLarvaMigrans: Lecture = {
   ],
 
   highYield: [
-    '**"Larva migrans" describes zoonotic larvae migrating through an ACCIDENTAL (dead-end) human host in which they cannot mature — so they wander through tissue causing damage and marked EOSINOPHILIA.** The prototype is Toxocara, the dog/cat roundworm.',
+    '**"Larva migrans" describes zoonotic larvae migrating through an ACCIDENTAL (dead-end) human host in which they cannot mature — so they wander through tissue causing damage and marked EOSINOPHILIA.** The prototype is *Toxocara*, the dog/cat roundworm.',
     '**Toxocara canis (dog) and T. cati (cat) are acquired by ingesting embryonated eggs from soil contaminated by pet faeces (young children with pica/geophagia are at risk).** Larvae hatch and migrate but, because humans are the wrong host, they never become adults — instead they cause larva migrans syndromes.',
-    '**Two forms: VISCERAL larva migrans (VLM) — larvae in liver, lungs and other organs → fever, hepatomegaly, wheeze, and eosinophilia; and OCULAR larva migrans (OLM) — a larva in the eye causing a retinal granuloma that can MIMIC RETINOBLASTOMA (a critical differential in a child with leukocoria/an eye mass).** Diagnosis is largely serological (Toxocara ELISA) since larvae are in tissue, not stool.',
-    'Related migrans syndromes: CUTANEOUS larva migrans — animal HOOKWORM larvae (Ancylostoma braziliense) penetrating skin → an intensely itchy, serpiginous "creeping eruption"; and the tissue nematodes Gnathostoma and Angiostrongylus (see [[gnathostomiasis]], [[angiostrongyliasis-eosinophilic-meningitis]]). All share the "wrong host → wandering larva → eosinophilia" theme.',
+    '**Two forms: VISCERAL larva migrans (VLM) — larvae in liver, lungs and other organs → fever, hepatomegaly, wheeze, and eosinophilia; and OCULAR larva migrans (OLM) — a larva in the eye causing a retinal granuloma that can MIMIC RETINOBLASTOMA (a critical differential in a child with leukocoria/an eye mass).** Diagnosis is largely serological (*Toxocara* ELISA) since larvae are in tissue, not stool.',
+    'Related migrans syndromes: CUTANEOUS larva migrans — animal HOOKWORM larvae (*Ancylostoma* braziliense) penetrating skin → an intensely itchy, serpiginous "creeping eruption"; and the tissue nematodes *Gnathostoma* and *Angiostrongylus* (see [[gnathostomiasis]], [[angiostrongyliasis-eosinophilic-meningitis]]). All share the "wrong host → wandering larva → eosinophilia" theme.',
     '**The high-yield points: a child with pica + eosinophilia + hepatomegaly/wheeze (VLM) or a retinal mass mimicking retinoblastoma (OLM) → Toxocara, diagnosed serologically.** Prevention is deworming pets and hand hygiene; treatment (albendazole, ± steroids for OLM) targets the larvae. It anchors the larva-migrans concept for this block.',
   ],
 
@@ -49,7 +49,7 @@ export const toxocariasisLarvaMigrans: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Larva migrans is the "wrong host → wandering larva → eosinophilia" concept: Toxocara (VLM/OLM, serology; OLM mimics retinoblastoma), cutaneous LM (animal hookworm), and the tissue nematodes Gnathostoma and Angiostrongylus ([[gnathostomiasis]], [[angiostrongyliasis-eosinophilic-meningitis]]). It is diagnosed serologically (not stool) and prevented by deworming pets — a zoonotic nematode theme within [[helminth-classification-overview]].' },
+    { logic: 'Why it matters', detail: 'Larva migrans is the "wrong host → wandering larva → eosinophilia" concept: *Toxocara* (VLM/OLM, serology; OLM mimics retinoblastoma), cutaneous LM (animal hookworm), and the tissue nematodes *Gnathostoma* and *Angiostrongylus* ([[gnathostomiasis]], [[angiostrongyliasis-eosinophilic-meningitis]]). It is diagnosed serologically (not stool) and prevented by deworming pets — a zoonotic nematode theme within [[helminth-classification-overview]].' },
   ],
 
   mnemonics: [

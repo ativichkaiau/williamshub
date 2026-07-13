@@ -18,7 +18,7 @@ export const angiostrongyliasisEosinophilicMeningitis: Lecture = {
     '**In humans the larvae migrate to the brain and meninges but cannot mature, dying there and provoking an intense eosinophilic inflammatory response → EOSINOPHILIC MENINGITIS: headache, neck stiffness, and often paraesthesiae/hyperaesthesia, with EOSINOPHILS in the CSF.** It is usually self-limiting but can be severe.',
     '**The key diagnostic clue is EOSINOPHILS IN THE CSF (eosinophilic pleocytosis) plus peripheral eosinophilia and the right exposure (snails/slugs in an endemic area).** Diagnosis is supported by serology; the larvae are rarely found. It is managed supportively (analgesia, careful use of steroids; repeated lumbar puncture relieves headache) — anti-helminthics are used cautiously as killing larvae can worsen inflammation.',
     '**Angiostrongylus costaricensis is a related species that instead causes ABDOMINAL angiostrongyliasis (mesenteric arteritis mimicking appendicitis), rather than meningitis.** So the genus causes either eosinophilic meningitis (cantonensis) or an abdominal syndrome (costaricensis).',
-    'The high-yield differential of eosinophilic meningitis in Southeast Asia is Angiostrongylus (snails/slugs) versus Gnathostoma (raw freshwater fish — [[gnathostomiasis]]); both give CSF eosinophilia. The clinical clue "eosinophils in the CSF + snail/slug exposure" points to Angiostrongylus. Prevention is cooking snails/vegetables.',
+    'The high-yield differential of eosinophilic meningitis in Southeast Asia is *Angiostrongylus* (snails/slugs) versus *Gnathostoma* (raw freshwater fish — [[gnathostomiasis]]); both give CSF eosinophilia. The clinical clue "eosinophils in the CSF + snail/slug exposure" points to *Angiostrongylus*. Prevention is cooking snails/vegetables.',
   ],
 
   mechanism: {
@@ -48,7 +48,7 @@ export const angiostrongyliasisEosinophilicMeningitis: Lecture = {
   ],
 
   treatment: [
-    { logic: 'Why it matters', detail: 'Angiostrongylus is THE parasitic cause of eosinophilic meningitis (CSF eosinophils + snail/slug exposure), a key differential with Gnathostoma ([[gnathostomiasis]]) in Southeast Asia. Management is supportive (killing larvae can worsen CNS inflammation), and prevention is cooking snails/vegetables. It fits the tissue-nematode/larva-migrans theme ([[toxocariasis-larva-migrans]]).' },
+    { logic: 'Why it matters', detail: '*Angiostrongylus* is THE parasitic cause of eosinophilic meningitis (CSF eosinophils + snail/slug exposure), a key differential with *Gnathostoma* ([[gnathostomiasis]]) in Southeast Asia. Management is supportive (killing larvae can worsen CNS inflammation), and prevention is cooking snails/vegetables. It fits the tissue-nematode/larva-migrans theme ([[toxocariasis-larva-migrans]]).' },
   ],
 
   mnemonics: [

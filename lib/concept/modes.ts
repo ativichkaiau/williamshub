@@ -26,9 +26,14 @@ export function isConceptDepth(v: unknown): v is ConceptDepth {
 
 // --- text helpers ------------------------------------------------------------
 
-/** Strip **bold** and turn [[module-id]] into readable text. */
+/** Strip **bold** / *italic* markers and turn [[module-id]] into readable text.
+ *  The *italic* rule is markdown-flanked (matches components/Rich.tsx) so
+ *  intra-token stars like "HLA-B*57:01" or "T2*" are preserved. */
 export function stripMarkup(s: string): string {
-  return s.replace(/\*\*/g, '').replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id: string) => id.replace(/-/g, ' '));
+  return s
+    .replace(/\*\*/g, '')
+    .replace(/(?<![A-Za-z0-9])\*(?!\s)([^*]+?)(?<!\s)\*(?![A-Za-z0-9])/g, '$1')
+    .replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id: string) => id.replace(/-/g, ' '));
 }
 
 /** First sentence (or a trimmed lead) of a high-yield bullet. */

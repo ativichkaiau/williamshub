@@ -14,10 +14,10 @@ export const medicalMitesAcarology: Lecture = {
   ],
 
   highYield: [
-    '**Mites are tiny arachnids (Acari, with 8 legs as adults) of medical importance as direct parasites, allergens and disease vectors.** The four to know are the SCABIES mite, CHIGGER (trombiculid) mites, HOUSE DUST mites, and Demodex — each with a distinct clinical effect.',
+    '**Mites are tiny arachnids (Acari, with 8 legs as adults) of medical importance as direct parasites, allergens and disease vectors.** The four to know are the SCABIES mite, CHIGGER (trombiculid) mites, HOUSE DUST mites, and *Demodex* — each with a distinct clinical effect.',
     '**Sarcoptes scabiei causes SCABIES: the female mite BURROWS into the epidermis, causing intense ITCH (worse at night) and a papular rash with burrows in web spaces, wrists and genitalia.** It spreads by close/skin contact (and is effectively an STI in adults). CRUSTED (Norwegian) scabies — hyperinfestation with thousands of mites — occurs in the immunocompromised and is highly contagious. Treat with topical PERMETHRIN (or oral ivermectin) and treat close contacts.',
     '**Trombiculid mite LARVAE ("chiggers") bite and, in Asia, are the VECTOR of SCRUB TYPHUS (Orientia tsutsugamushi) — presenting with fever, an ESCHAR at the bite site, rash and lymphadenopathy.** So chiggers cause an itchy bite AND transmit a rickettsial disease (a key regional point).',
-    '**House DUST mites (Dermatophagoides) are a major indoor ALLERGEN: their faecal particles trigger allergic RHINITIS and ASTHMA (a common trigger of atopic disease).** Demodex mites live in hair follicles/sebaceous glands and are associated with blepharitis and rosacea-like facial dermatitis. Some mites also cause irritant/allergic dermatitis on contact.',
+    '**House DUST mites (Dermatophagoides) are a major indoor ALLERGEN: their faecal particles trigger allergic RHINITIS and ASTHMA (a common trigger of atopic disease).** *Demodex* mites live in hair follicles/sebaceous glands and are associated with blepharitis and rosacea-like facial dermatitis. Some mites also cause irritant/allergic dermatitis on contact.',
     '**High-yield summary: Scabies (Sarcoptes, burrowing itch → permethrin), Chigger (trombiculid → scrub typhus + eschar), Dust mite (allergen → asthma/rhinitis), Demodex (follicles → blepharitis/rosacea).** Mites are part of medical entomology/acarology alongside the arthropod vectors ([[medical-entomology-vectors]]) — knowing which mite does what is the exam focus.',
   ],
 

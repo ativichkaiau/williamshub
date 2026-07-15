@@ -17,7 +17,7 @@ export const aedsSodiumChannelBlockers: Lecture = {
   highYield: [
     'These enhance **Na⁺-channel inactivation** → block high-frequency firing. Use for **focal and tonic-clonic** seizures; several **worsen absence**.',
     '**Phenytoin (fosphenytoin)**: **zero-order (nonlinear) kinetics** at high dose, ~90% albumin-bound. Toxicities: **gingival hyperplasia, hirsutism, megaloblastic anemia (folate), purple glove syndrome, arrhythmia with rapid IV, enzyme inducer**; worsens absence.',
-    '**Carbamazepine / oxcarbazepine**: also for **trigeminal neuralgia & bipolar disorder**. Toxicities: **hyponatremia (SIADH), aplastic anemia/agranulocytosis, diplopia/ataxia**, and **SJS/TEN linked to HLA-B*1502** (screen Asians); enzyme inducer; worsens absence.',
+    '**Carbamazepine / oxcarbazepine**: also for **trigeminal neuralgia & bipolar disorder**. Toxicities: **hyponatremia (SIADH), aplastic anemia/agranulocytosis, diplopia/ataxia**, and **SJS/TEN** linked to HLA-B*1502 (screen Asians); enzyme inducer; worsens absence.',
     '**Lamotrigine**: blocks Na⁺ + ↓ glutamate release; broad use incl. **bipolar disorder**; key risk = **serious rash / SJS** (titrate slowly).',
     '**Lacosamide**: enhances **slow** Na⁺-channel inactivation; add-on/monotherapy for focal seizures; well tolerated.',
   ],

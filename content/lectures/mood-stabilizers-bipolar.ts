@@ -19,7 +19,7 @@ export const moodStabilizersBipolar: Lecture = {
     '**Lithium** (↓ IP₃/DAG, inhibits GSK-3) is first-line: **narrow therapeutic index** (keep <1.5 mEq/L). Adverse: **tremor, polyuria/polydipsia (nephrogenic DI), hypothyroidism, weight gain, renal impairment**; toxicity = nausea, ataxia, confusion. **Monitor lithium level, renal & thyroid function.**',
     '**Valproate** (↑ GABA, blocks Na⁺ channels): also for mania/migraine; adverse **weight gain, tremor, thrombocytopenia, hepatotoxicity, teratogenicity (neural tube defects)** — avoid in pregnancy.',
     '**Lamotrigine** (Na⁺ block, ↓ glutamate) — good for bipolar depression; risk = **serious rash / Stevens-Johnson syndrome** (titrate slowly).',
-    '**Carbamazepine** (Na⁺ block): adverse **hyponatremia (SIADH), agranulocytosis, SJS (HLA-B*1502), and enzyme induction**.',
+    '**Carbamazepine** (Na⁺ block): adverse **hyponatremia (SIADH), agranulocytosis**, SJS (HLA-B*1502), and **enzyme induction**.',
   ],
 
   mechanism: {

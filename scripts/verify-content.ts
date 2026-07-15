@@ -62,6 +62,14 @@ const UNDERSCORE = /(?<![A-Za-z0-9_])_[^_\n]+?_(?![A-Za-z0-9_])/; // _italic_ (u
 const ALIAS = /\[\[[a-z0-9-]+\|/; // [[id|alias]] (unsupported)
 const BAD_ID = /\[\[(?![a-z0-9-]+\]\])[^\]]{1,60}\]\]/; // [[ inner that isn't lowercase-kebab ]]
 const LINK = /\[\[([a-z0-9-]+)\]\]/g; // a well-formed link → target must exist
+// Rich.tsx tokenizer (bold | flanked *italic* | link). If a ** survives after every
+// valid token is removed, the module has an unclosed / broken bold (e.g. a * inside
+// a **…** span, or an unterminated **) that renders as a literal ** on the page.
+const RICH_TOKEN = /\*\*[^*]+\*\*|(?<![A-Za-z0-9])\*(?!\s)[^*]+?(?<!\s)\*(?![A-Za-z0-9])|\[\[[a-z0-9-]+\]\]/g;
+/** The only fields rendered through Rich.tsx (see components/LectureBody.tsx). */
+function richFields(l: (typeof lectures)[number]): string[] {
+  return [...(l.highYield ?? []), ...(l.treatment ?? []).map((t) => t.detail).filter((d): d is string => !!d)];
+}
 
 for (const l of lectures) {
   for (const s of strings(l)) {
@@ -78,6 +86,11 @@ for (const l of lectures) {
   for (const q of l.quiz ?? []) {
     if (!q.options.some((o) => o.id === q.answerId)) {
       fatals.push({ moduleId: l.id, kind: 'bad-answer-id', detail: `${q.id}: answerId "${q.answerId}" not an option` });
+    }
+  }
+  for (const s of richFields(l)) {
+    if (s.replace(RICH_TOKEN, '').includes('**')) {
+      fatals.push({ moduleId: l.id, kind: 'unbalanced-bold', detail: s.slice(0, 60) });
     }
   }
 }

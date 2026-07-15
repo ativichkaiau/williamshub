@@ -17,7 +17,7 @@ export const goutDrugs: Lecture = {
   highYield: [
     'Two separate goals: **treat the acute flare** (anti-inflammatory) vs **lower urate long-term (ULT)**. Do **not** start ULT for asymptomatic hyperuricemia alone.',
     '**Acute gout** — “Nice Cold Compressions”: **NSAIDs (not aspirin), Colchicine, Corticosteroids**. **Colchicine** binds tubulin → inhibits microtubules/neutrophil migration & NLRP3 inflammasome; narrow window, causes **GI upset (diarrhea)**.',
-    '**Urate-lowering (chronic gout)** — “FALL”: **Febuxostat, ALLopurinol**. **Allopurinol** (→ oxypurinol) **inhibits xanthine oxidase** (first-line); risk of **severe hypersensitivity (SJS/TEN)** → screen **HLA-B*58:01** in Southeast Asians. Also treats **tumor lysis syndrome**.',
+    '**Urate-lowering (chronic gout)** — “FALL”: **Febuxostat, ALLopurinol**. **Allopurinol** (→ oxypurinol) **inhibits xanthine oxidase** (first-line); risk of **severe hypersensitivity (SJS/TEN)** → screen HLA-B*58:01 in Southeast Asians. Also treats **tumor lysis syndrome**.',
     '**Febuxostat** = xanthine oxidase inhibitor (when allopurinol fails; **cardiovascular boxed warning**).',
     '**Uricosurics (probenecid)** inhibit URAT1 → ↑ renal urate excretion (avoid in renal stones/CKD); **uricase (rasburicase/pegloticase)** degrades urate → allantoin (extreme hyperuricemia / tumor lysis).',
   ],

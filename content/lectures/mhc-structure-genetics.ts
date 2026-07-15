@@ -18,7 +18,7 @@ export const mhcStructureGenetics: Lecture = {
     '**HLA gene loci.** **Class I: HLA-A, -B, -C.** **Class II: HLA-DR, -DQ, -DP.** They lie on chromosome 6.',
     '**HLA genes are the most polymorphic in the genome** and are **codominantly** expressed (both parental alleles) and **polygenic** (several loci) → each person expresses many different MHC molecules, maximising the range of peptides presentable. This diversity underlies **transplant matching**.',
     '**T cells are MHC-restricted:** a TCR only recognises its peptide **when presented by the individual\'s own MHC** (self-MHC). **CD8 binds MHC I; CD4 binds MHC II** ("rule of 8": CD8×I=8, CD4×II=8).',
-    '**HLA–disease associations (classic exam links).** **HLA-B27** → ankylosing spondylitis, reactive arthritis; **HLA-DQ2/DQ8** → coeliac disease; **HLA-DR3/DR4** → type 1 diabetes; **HLA-B*57:01** → abacavir hypersensitivity. Also drives **graft rejection** (mismatched HLA) and susceptibility to some autoimmune diseases.',
+    '**HLA–disease associations (classic exam links).** **HLA-B27** → ankylosing spondylitis, reactive arthritis; **HLA-DQ2/DQ8** → coeliac disease; **HLA-DR3/DR4** → type 1 diabetes; HLA-B*57:01 → abacavir hypersensitivity. Also drives **graft rejection** (mismatched HLA) and susceptibility to some autoimmune diseases.',
   ],
 
   mechanism: {

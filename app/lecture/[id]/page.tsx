@@ -5,6 +5,7 @@ import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
 import BookmarkButton from '../../../components/BookmarkButton';
+import AskAboutButton from '../../../components/AskAboutButton';
 import ModuleNotes from '../../../components/ModuleNotes';
 import VisitTracker from '../../../components/VisitTracker';
 import LearningPath from '../../../components/LearningPath';
@@ -87,6 +88,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
             >
               <span aria-hidden>📝</span> Practice
             </Link>
+            <AskAboutButton />
             <BookmarkButton moduleId={l.id} />
           </div>
         </div>

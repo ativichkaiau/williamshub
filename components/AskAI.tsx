@@ -69,6 +69,32 @@ export default function AskAI() {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
+  // Opened from a lecture page's "Ask" button (components/AskAboutButton.tsx).
+  useEffect(() => {
+    const openEvt = () => setOpen(true);
+    window.addEventListener('williamshub:ask-ai', openEvt);
+    return () => window.removeEventListener('williamshub:ask-ai', openEvt);
+  }, []);
+
+  // Restore the conversation on load, then keep it in sync (survives navigation).
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('wh-ask-ai');
+      if (saved) setMessages(JSON.parse(saved) as Msg[]);
+    } catch {
+      /* ignore corrupt/absent state */
+    }
+  }, []);
+  useEffect(() => {
+    if (streaming) return; // don't thrash storage on every token
+    try {
+      if (messages.length) localStorage.setItem('wh-ask-ai', JSON.stringify(messages.slice(-40)));
+      else localStorage.removeItem('wh-ask-ai');
+    } catch {
+      /* ignore quota / privacy-mode errors */
+    }
+  }, [messages, streaming]);
+
   useEffect(() => {
     if (open) requestAnimationFrame(() => inputRef.current?.focus());
   }, [open]);

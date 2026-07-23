@@ -9,11 +9,8 @@ export const metadata: Metadata = {
   description:
     'High-yield, mechanism-driven, exam-focused lecture pages built from MedCMU lectures. A VESTRIPPN satellite.',
   icons: {
-    // The WilliamsHub W-mark. SVG first (crisp on modern Safari), PNG fallback.
-    icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/icon.png', type: 'image/png', sizes: '96x96' },
-    ],
+    // The Williams W-mark (public/icon.png, 512×512).
+    icon: [{ url: '/icon.png', type: 'image/png', sizes: '512x512' }],
     apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
   },
 };

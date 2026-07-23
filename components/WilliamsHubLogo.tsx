@@ -1,34 +1,16 @@
-// WilliamsHub brand mark — styled after the Williams F1 wordmark:
-// a bold angular "W", heavy tight-tracked wordmark, and a spaced "STUDY HUB"
-// subtitle echoing the "F1 TEAM" line. Williams cobalt-blue + white.
+// WilliamsHub brand mark — the Williams "W" logo (public/williams-mark.png),
+// clipped into the app's rounded clay tile. Paired with the heavy wordmark and a
+// spaced "STUDY HUB" subtitle.
 
 export function WilliamsHubMark({ size = 40, className = '' }: { size?: number; className?: string }) {
   return (
     <span
       className={`clay-node relative inline-flex shrink-0 items-center justify-center overflow-hidden ${className}`}
-      style={{
-        width: size,
-        height: size,
-        borderRadius: Math.round(size * 0.26),
-        background: 'linear-gradient(135deg,#2E5BFF 0%,#0A1A7A 100%)',
-      }}
+      style={{ width: size, height: size, borderRadius: Math.round(size * 0.26) }}
       aria-hidden="true"
     >
-      <svg viewBox="0 0 64 58" width={size * 0.64} height={size * 0.64} fill="none">
-        {/* angular Williams-style W */}
-        <path
-          d="M6 9 L19 49 L32 26 L45 49 L58 9"
-          stroke="#fff"
-          strokeWidth="9"
-          strokeLinejoin="miter"
-          strokeLinecap="butt"
-        />
-      </svg>
-      {/* FW15C nose stripe */}
-      <span
-        className="livery-stripe pointer-events-none absolute inset-x-0 bottom-0"
-        style={{ height: Math.max(2, Math.round(size * 0.08)) }}
-      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/williams-mark.png" alt="" width={size} height={size} className="h-full w-full object-cover" />
     </span>
   );
 }

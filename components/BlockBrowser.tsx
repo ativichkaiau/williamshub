@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import CurriculumBrowser, { type YearData } from './CurriculumBrowser';
 import OnePagerBrowser from './OnePagerBrowser';
+import HubIcon, { type HubIconName } from './HubIcon';
 
 type Mode = 'williamshub' | 'onepager';
 
@@ -35,15 +36,15 @@ export default function BlockBrowser({
     } catch {}
   }
 
-  const options: { key: Mode; label: string; hint: string }[] = [
-    { key: 'williamshub', label: 'WilliamsHub', hint: 'Interactive lectures' },
-    { key: 'onepager', label: 'OnePagers', hint: 'Your Drive library' },
+  const options: { key: Mode; label: string; icon: HubIconName }[] = [
+    { key: 'williamshub', label: 'WilliamsHub', icon: 'book' },
+    { key: 'onepager', label: 'OnePagers', icon: 'cards' },
   ];
 
   return (
     <div>
       {/* Segmented toggle */}
-      <div className="clay-inset mb-5 inline-flex gap-1 p-1">
+      <div className="library-modes mb-4" role="group" aria-label="Library source">
         {options.map((o) => {
           const isActive = mode === o.key;
           return (
@@ -52,18 +53,10 @@ export default function BlockBrowser({
               type="button"
               onClick={() => pick(o.key)}
               aria-pressed={isActive}
-              className={`rounded-xl px-4 py-2 text-sm font-bold transition active:translate-y-px ${
-                isActive
-                  ? o.key === 'williamshub'
-                    ? 'clay text-[#1e5bd6] dark:text-[#7AA0FF]'
-                    : 'clay text-sky-600 dark:text-sky-400'
-                  : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200'
-              }`}
+              className="library-mode"
             >
+              <HubIcon name={o.icon} />
               {o.label}
-              <span className="ml-1.5 hidden text-[11px] font-medium text-slate-400 sm:inline">
-                · {o.hint}
-              </span>
             </button>
           );
         })}

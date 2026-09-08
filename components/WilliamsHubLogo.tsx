@@ -1,6 +1,5 @@
 // WilliamsHub brand mark — the Williams "W" logo (public/williams-mark.png),
-// clipped into the app's rounded clay tile. Paired with the heavy wordmark and a
-// spaced "STUDY HUB" subtitle.
+// paired with a compact wordmark and a spaced "STUDY HUB" subtitle.
 
 export function WilliamsHubMark({ size = 40, className = '' }: { size?: number; className?: string }) {
   return (
@@ -18,12 +17,12 @@ export function WilliamsHubMark({ size = 40, className = '' }: { size?: number; 
 export default function WilliamsHubLogo({ className = '' }: { className?: string }) {
   return (
     <span className={`flex items-center gap-2.5 ${className}`}>
-      <WilliamsHubMark size={40} />
+      <WilliamsHubMark size={36} />
       <span className="flex flex-col leading-none">
-        <span className="text-[19px] font-black leading-none tracking-[-0.015em] text-slate-900 dark:text-white">
+        <span className="text-[18px] font-semibold leading-none tracking-[-0.04em] text-slate-900 dark:text-white">
           Williams<span className="text-[#2E5BFF] dark:text-[#7AA0FF]">Hub</span>
         </span>
-        <span className="mt-[5px] text-[8.5px] font-bold uppercase leading-none tracking-[0.36em] text-slate-400 dark:text-slate-500">
+        <span className="mt-[5px] text-[8px] font-medium uppercase leading-none tracking-[0.3em] text-slate-500 dark:text-slate-400">
           Study&nbsp;Hub
         </span>
       </span>

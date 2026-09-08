@@ -1,55 +1,49 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 import WilliamsHubLogo from './WilliamsHubLogo';
 import CommandPalette from './CommandPalette';
+import HubIcon, { type HubIconName } from './HubIcon';
 
-// The primary destinations, grouped into one segmented control so the top bar
-// reads as a single tidy unit rather than a scattered row of icons.
-const NAV: { href: string; icon: string; label: string; accent?: 'red' }[] = [
-  { href: '/flashcards', icon: '🗂️', label: 'Cards' },
-  { href: '/practice', icon: '📝', label: 'Practice' },
-  { href: '/standings', icon: '📊', label: 'Progress' },
-  { href: '/garage', icon: '⭐', label: 'Saved' },
-  { href: '/repair', icon: '🔧', label: 'Repair', accent: 'red' },
+const NAV: { href: string; icon: HubIconName; label: string }[] = [
+  { href: '/flashcards', icon: 'cards', label: 'Cards' },
+  { href: '/practice', icon: 'practice', label: 'Practice' },
+  { href: '/standings', icon: 'progress', label: 'Progress' },
+  { href: '/garage', icon: 'bookmark', label: 'Saved' },
+  { href: '/repair', icon: 'repair', label: 'Repair' },
 ];
 
-const itemBase =
-  'flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-wide transition';
-const itemColor = {
-  default: 'text-slate-500 hover:bg-black/[0.04] hover:text-[#1e5bd6] dark:text-slate-400 dark:hover:bg-white/[0.06] dark:hover:text-[#7AA0FF]',
-  red: 'text-slate-500 hover:bg-black/[0.04] hover:text-[#e4002b] dark:text-slate-400 dark:hover:bg-white/[0.06] dark:hover:text-[#ff5a72]',
-};
-
-// WilliamsHub brand (Williams-F1-styled), part of the VESTRIPPN3.0 family.
 export default function Header() {
+  const pathname = usePathname();
+
   return (
-    <header className="sticky top-0 z-30 border-b border-slate-900/5 bg-white/55 backdrop-blur-md dark:border-white/5 dark:bg-[#07173a]/55">
-      {/* Timing-gantry livery flash */}
-      <div className="livery-stripe h-1 w-full" />
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3">
-        <Link href="/" className="flex items-center gap-3">
+    <header className="site-header sticky top-0 z-30">
+      <div className="livery-stripe h-0.5 w-full" aria-hidden="true" />
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 px-5 py-3 md:flex-nowrap">
+        <Link href="/" aria-label="WilliamsHub home" className="shrink-0 rounded-sm">
           <WilliamsHubLogo />
         </Link>
 
-        <nav className="flex items-center gap-2">
-          <CommandPalette />
-          <div className="clay-inset flex items-center gap-0.5 p-1">
-            {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                aria-label={item.label}
-                className={`${itemBase} ${item.accent === 'red' ? itemColor.red : itemColor.default}`}
-              >
-                <span aria-hidden className="text-[13px] leading-none">
-                  {item.icon}
-                </span>
-                <span className="hidden sm:inline">{item.label}</span>
-              </Link>
-            ))}
-          </div>
-          <ThemeToggle />
+        <nav aria-label="Main navigation" className="order-3 mt-3 flex w-full items-center justify-between gap-0.5 border-t border-[var(--line)] pt-2 md:order-none md:mt-0 md:ml-auto md:w-auto md:justify-start md:border-0 md:pt-0">
+          {NAV.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-label={item.label}
+              aria-current={pathname === item.href || pathname.startsWith(`${item.href}/`) ? 'page' : undefined}
+              className="header-link max-[374px]:px-1.5"
+            >
+              <HubIcon name={item.icon} className="hidden lg:inline-block" />
+              <span>{item.label}</span>
+            </Link>
+          ))}
         </nav>
+        <div className="flex items-center gap-1 md:border-l md:border-[var(--line)] md:pl-3">
+          <CommandPalette />
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

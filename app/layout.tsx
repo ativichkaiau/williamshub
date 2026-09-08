@@ -23,13 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen text-slate-800 antialiased dark:text-slate-200">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <div className="page-decoration" aria-hidden="true" />
         <Header />
         {children}
-        {/* Corner furniture: brand mark bottom-left, Ask AI tutor bottom-right */}
         <Link
           href="/"
           aria-label="VESTRIPPN3.0 · M-8"
-          className="clay-pill fixed bottom-5 left-5 z-40 hidden px-3 py-1.5 text-[11px] font-semibold text-slate-500 transition hover:-translate-y-0.5 dark:text-slate-300 sm:inline-flex"
+          className="brand-signature fixed bottom-5 left-5 z-20 hidden rounded bg-[var(--canvas)] px-2 py-1.5 transition hover:text-[var(--accent)] 2xl:inline-flex"
         >
           VESTRIPPN<span className="text-[#2E5BFF] dark:text-[#7AA0FF]">3.0</span>&nbsp;·&nbsp;M-8
         </Link>

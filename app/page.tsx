@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug } from '../content';
+import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug, subjectOfSource, subjectByCode } from '../content';
 import { type YearData } from '../components/CurriculumBrowser';
 import BlockBrowser from '../components/BlockBrowser';
 import { onePagerGroups } from '../content/onepagers';
+import HubIcon from '../components/HubIcon';
+import LiverySlashes from '../components/LiverySlashes';
 
 export default function Home() {
   const years: YearData[] = curriculum.map((y) => {
@@ -41,122 +43,95 @@ export default function Home() {
   const featured = lectureById['tetralogy-of-fallot'] ?? lectures[0];
   const trapCount = lectures.reduce((n, l) => n + l.traps.length, 0);
 
+  const featuredCode = subjectOfSource[featured.source];
+  const featuredSubject = featuredCode ? subjectByCode[featuredCode] : undefined;
+
   return (
-    <main className="mx-auto max-w-6xl px-5 py-8">
-      {/* Hero */}
-      <section className="clay mb-10 overflow-hidden p-0">
-        <div className="livery-stripe h-1.5 w-full" />
-        <div className="grid gap-8 p-7 lg:grid-cols-[1.4fr_1fr] lg:p-9">
-          {/* Left */}
+    <main className="mx-auto max-w-6xl px-5 pb-24 pt-8 sm:pt-10">
+      <section className="home-hero" aria-labelledby="hero-title">
+        <div className="hero-stripes" aria-hidden="true"><span /><span /><span /></div>
+        <div className="flex items-center gap-3">
+          <LiverySlashes />
+          <span className="eyebrow">MedCMU / Lecture atlas</span>
+        </div>
+
+        <div className="relative grid gap-9 pb-10 pt-10 lg:grid-cols-[1.45fr_1fr] lg:gap-16 lg:pb-12 lg:pt-12">
           <div>
-            <span className="clay-pill inline-flex items-center gap-2 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#1e5bd6] dark:text-[#7AA0FF]">
-              <span className="h-2 w-2 rounded-full bg-[#2E5BFF]" />
-              Interactive lecture atlas
-            </span>
-            <h1 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight text-slate-900 dark:text-white sm:text-5xl">
+            <h1 id="hero-title" className="hero-title">
               Own the lecture.
               <br />
-              <span className="text-[#e4002b] dark:text-[#ff5a72]">Beat the exam trap.</span>
+              <span>Beat the exam trap.</span>
             </h1>
-            <p className="mt-4 max-w-xl text-slate-600 dark:text-slate-300">
-              High-yield, mechanism-driven pages built from your MedCMU lectures — organized by year
-              and block. Recall first, then read the mechanism, the exam findings, and the trap that
-              loses marks. Supplements your OnePagers — it doesn&apos;t replace them.
+            <p className="mt-5 max-w-md text-sm leading-7 text-[var(--muted)] sm:text-[15px]">
+              Your MedCMU lectures, connected. Recall the essentials,
+              understand the mechanism, and spot the exam trap.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="#browse"
-                className="clay-pill px-5 py-2.5 text-sm font-bold text-slate-900 transition active:translate-y-px dark:text-white"
-              >
-                Choose a block
+            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2">
+              <a href="#browse" className="primary-action">
+                Choose a block <HubIcon name="arrow" />
               </a>
-              <Link
-                href={`/lecture/${first.id}`}
-                className="clay-pill px-5 py-2.5 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
-              >
-                Run primer
+              <Link href={`/lecture/${first.id}`} className="text-action">
+                Run primer <span aria-hidden="true">↗</span>
               </Link>
             </div>
-            {/* Year legend */}
-            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-              {years.map((y) => (
-                <span key={y.year} className="flex items-center gap-1.5">
-                  <span
-                    className={`h-2 w-2 rounded-full ${
-                      y.hasContent ? 'bg-emerald-500' : 'bg-slate-300 dark:bg-slate-600'
-                    }`}
-                  />
-                  {y.label}
-                  {!y.hasContent && y.note ? ` · ${y.note}` : ''}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Right: Lecture console */}
-          <div className="clay-inset clay-surface livery-edge overflow-hidden p-5">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                Lecture console
-              </span>
-              <span className="clay-pill px-2.5 py-0.5 text-[11px] font-semibold text-slate-500 dark:text-slate-300">
-                HCVS-2 · Y3
-              </span>
-            </div>
-            <div className="mt-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#b8860b] dark:text-[#ffcc00]">
-              <span aria-hidden>❤</span> Featured module
-            </div>
-            <Link href={`/lecture/${featured.id}`} className="mt-1 block">
-              <div className="text-lg font-black text-slate-900 dark:text-white">
-                {featured.title}
-              </div>
-            </Link>
-            <div className="clay mt-3 p-3">
-              <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-                {featured.mechanism.title}
-              </div>
-              <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                {featured.mechanism.steps.slice(0, 3).map((s, i) => (
-                  <span key={s.id} className="flex items-center gap-1.5">
-                    <span className="clay-node bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-                      {s.label}
-                    </span>
-                    {i < 2 && <span className="text-slate-400">→</span>}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <Link
-              href={`/lecture/${featured.id}`}
-              className="clay-pill mt-4 inline-block px-4 py-2 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
-            >
-              Open module
-            </Link>
-            <div className="mt-4 grid grid-cols-3 gap-2">
+            <dl className="library-stats mt-9" aria-label="Library overview">
               {[
-                { v: Object.keys(lecturesBySubject).length, l: 'Blocks' },
-                { v: lectures.length, l: 'Modules' },
-                { v: trapCount, l: 'Traps' },
-              ].map((s) => (
-                <div key={s.l} className="clay-node clay-surface px-2 py-3 text-center">
-                  <div className="text-2xl font-black text-slate-900 dark:text-white">{s.v}</div>
-                  <div className="text-[10px] uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                    {s.l}
-                  </div>
+                { value: Object.keys(lecturesBySubject).length, label: 'Blocks' },
+                { value: lectures.length, label: 'Modules' },
+                { value: trapCount, label: 'Exam traps' },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <dt className="order-2">{stat.label}</dt>
+                  <dd className="order-1">{stat.value.toLocaleString('en-US')}</dd>
                 </div>
               ))}
-            </div>
+            </dl>
           </div>
+
+          <aside className="featured-module self-start p-5 sm:p-6" aria-labelledby="featured-title">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <span className="eyebrow">Featured module</span>
+              {featuredSubject && (
+                <span className="font-mono text-[10px] text-[var(--muted)]">
+                  {featuredSubject.code} / Y{featuredSubject.year}
+                </span>
+              )}
+            </div>
+            <h2 id="featured-title" className="mt-4 text-xl font-semibold tracking-tight text-[var(--ink)]">
+              <Link href={`/lecture/${featured.id}`} className="transition hover:text-[var(--accent)]">
+                {featured.title}
+              </Link>
+            </h2>
+            <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{featured.mechanism.title}</p>
+            <ol className="mechanism-preview my-5 space-y-3" aria-label="Mechanism preview">
+              {featured.mechanism.steps.slice(0, 3).map((step, index) => (
+                <li key={step.id} className="flex items-start gap-3 text-xs leading-6 text-[var(--ink)]">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--line)] font-mono text-[10px] text-[var(--muted)]" aria-hidden="true">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span>{step.label}</span>
+                </li>
+              ))}
+            </ol>
+            <div className="border-t border-[var(--line)] pt-2">
+              <Link href={`/lecture/${featured.id}`} className="text-action w-full justify-between">
+                Open module <HubIcon name="arrow" />
+              </Link>
+            </div>
+          </aside>
         </div>
       </section>
 
-      {/* Block browser: WilliamsHub lectures ↔ OnePager library */}
-      <section id="browse" className="scroll-mt-20">
-        <h2 className="mb-1 text-xl font-black tracking-tight text-slate-900 dark:text-white">
+      <section id="browse" aria-labelledby="browse-title" className="scroll-mt-36 pt-9 sm:pt-10 md:scroll-mt-24">
+        <div className="section-rule mb-4">
+          <span className="eyebrow">01 / The library</span>
+          <LiverySlashes />
+        </div>
+        <h2 id="browse-title" className="text-2xl font-semibold tracking-tight text-[var(--ink)]">
           Choose your block
         </h2>
-        <p className="mb-5 text-sm text-slate-500 dark:text-slate-400">
-          Toggle between interactive <span className="font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">WilliamsHub</span> lectures and your own <span className="font-bold text-sky-600 dark:text-sky-400">OnePagers</span>. Pick a year, then a block.
+        <p className="mb-6 mt-2 text-sm leading-6 text-[var(--muted)]">
+          Pick a year. Find your block. Study with interactive lectures or your OnePagers.
         </p>
         <BlockBrowser
           years={years}
@@ -166,8 +141,9 @@ export default function Home() {
         />
       </section>
 
-      <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
-        WilliamsHub · M-8 · a VESTRIPPN3.0 satellite · built from MedCMU lectures
+      <footer className="site-footer mt-12 flex flex-wrap items-center justify-between gap-4 pt-5 text-[11px] leading-5 text-[var(--muted)]">
+        <span className="flex items-center gap-3"><LiverySlashes /> WilliamsHub · A VESTRIPPN3.0 satellite</span>
+        <span>Built from MedCMU lectures · Alongside your OnePagers</span>
       </footer>
     </main>
   );

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
+import HubIcon from './HubIcon';
 
 // ⌘K global search over the whole curriculum. The compact index is fetched once
 // on first open (public/search-index.json) so no content ships in the JS bundle.
@@ -138,11 +139,11 @@ export default function CommandPalette() {
         type="button"
         onClick={openPalette}
         aria-label="Search (Command K)"
-        className="clay-pill inline-flex items-center gap-2 px-3 py-1.5 text-sm font-semibold text-slate-500 transition active:translate-y-px dark:text-slate-300"
+        className="header-tool"
       >
-        <span aria-hidden>🔍</span>
-        <span className="hidden sm:inline">Search</span>
-        <kbd className="hidden rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:bg-white/10 dark:text-slate-400 sm:inline">
+        <HubIcon name="search" />
+        <span className="hidden xl:inline">Search</span>
+        <kbd className="shortcut hidden lg:inline">
           ⌘K
         </kbd>
       </button>
@@ -163,7 +164,7 @@ export default function CommandPalette() {
               >
                 <div className="livery-stripe h-1 w-full" />
                 <div className="flex items-center gap-2 px-4 py-3">
-                  <span aria-hidden className="text-slate-400">🔍</span>
+                  <HubIcon name="search" className="text-slate-400" />
                   <input
                     ref={inputRef}
                     value={query}

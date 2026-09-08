@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import HubIcon from './HubIcon';
 
 // Day/Night toggle. The actual class is applied pre-paint by an inline script in
 // layout.tsx (no flash); this just reflects + flips it, persisting the choice.
@@ -27,10 +28,11 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label="Toggle day / night"
-      className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-slate-700 transition active:translate-y-px dark:text-slate-200"
+      aria-pressed={ready && dark}
+      title={ready && dark ? 'Switch to day mode' : 'Switch to night mode'}
+      className="header-tool"
     >
-      <span aria-hidden>{ready && dark ? '🌙' : '☀️'}</span>
-      <span>{ready && dark ? 'Night' : 'Day'}</span>
+      <HubIcon name={ready && dark ? 'moon' : 'sun'} />
     </button>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import HubIcon from './HubIcon';
 
 export interface SubjectCard {
   code: string;
@@ -32,7 +33,7 @@ export default function CurriculumBrowser({
   return (
     <div>
       {/* Year tabs */}
-      <div className="mb-5 flex flex-wrap gap-2">
+      <div className="year-tabs" role="group" aria-label="Academic year">
         {years.map((y) => {
           const isActive = y.year === active;
           return (
@@ -40,18 +41,11 @@ export default function CurriculumBrowser({
               key={y.year}
               type="button"
               onClick={() => setActive(y.year)}
-              className={`clay-pill px-4 py-2 text-sm font-bold transition active:translate-y-px ${
-                isActive
-                  ? 'text-[#1e5bd6] dark:text-[#7AA0FF]'
-                  : 'text-slate-500 dark:text-slate-400'
-              }`}
+              aria-pressed={isActive}
+              className="year-tab"
             >
               {y.label}
-              {y.hasContent ? (
-                <span className="ml-1.5 inline-block h-2 w-2 rounded-full bg-emerald-500 align-middle" />
-              ) : y.note ? (
-                <span className="ml-1.5 text-[11px] font-medium text-slate-400">· {y.note}</span>
-              ) : null}
+              {!y.hasContent && y.note && <span className="text-[11px]">· {y.note}</span>}
             </button>
           );
         })}
@@ -64,29 +58,31 @@ export default function CurriculumBrowser({
             <Link
               key={s.code}
               href={`/subject/${s.slug}`}
-              className="clay group flex flex-col p-4 transition hover:-translate-y-1"
+              className="subject-card group"
             >
               <div className="flex items-center justify-between">
-                <span className="clay-pill px-2 py-0.5 text-xs font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">
+                <span className="font-mono text-[11px] font-medium tracking-wide text-[var(--accent)]">
                   {s.code}
                 </span>
-                <span className="text-[11px] font-bold text-[#1e5bd6] dark:text-[#7AA0FF]">
-                  {s.count} lecture{s.count === 1 ? '' : 's'} · {s.modules} modules →
-                </span>
+                <span className="subject-card-mark" aria-hidden="true" />
               </div>
-              <span className="mt-2 text-sm font-bold text-slate-900 transition group-hover:text-[#1e5bd6] dark:text-white dark:group-hover:text-[#7AA0FF]">
+              <span className="mb-5 mt-3 text-[15px] font-medium leading-6 text-[var(--ink)]">
                 {s.name}
+              </span>
+              <span className="mt-auto flex items-center justify-between gap-2 text-[11px] text-[var(--muted)]">
+                <span>{s.count} lecture{s.count === 1 ? '' : 's'} · {s.modules} modules</span>
+                <HubIcon name="arrow" className="text-[var(--muted)] transition group-hover:text-[var(--accent)]" />
               </span>
             </Link>
           ) : (
-            <div key={s.code} className="clay flex flex-col p-4 opacity-50">
+            <div key={s.code} className="subject-card subject-card-unavailable">
               <div className="flex items-center justify-between">
-                <span className="rounded-full bg-black/5 px-2 py-0.5 text-xs font-bold text-slate-500 dark:bg-white/10 dark:text-slate-400">
+                <span className="font-mono text-[11px] tracking-wide text-[var(--muted)]">
                   {s.code}
                 </span>
-                <span className="text-[11px] font-medium text-slate-400">Coming soon</span>
+                <span className="text-[11px] text-[var(--muted)]">Coming soon</span>
               </div>
-              <span className="mt-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
+              <span className="mt-3 text-[15px] font-medium leading-6 text-[var(--muted)]">
                 {s.name}
               </span>
             </div>

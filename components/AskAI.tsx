@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { usePathname } from 'next/navigation';
+import HubIcon from './HubIcon';
 
 // Global "Ask AI" study tutor (⌘J). Streams from /api/ask, where the OpenAI key
 // lives server-side. On a /lecture/<id> page it passes moduleId so answers are
@@ -165,11 +166,11 @@ export default function AskAI() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Ask AI (Command J)"
-        className="clay-pill fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 px-4 py-3 text-sm font-semibold text-[#1e5bd6] transition hover:-translate-y-0.5 active:translate-y-0 dark:text-[#7AA0FF]"
+        className="clay-pill tutor-trigger fixed bottom-5 right-5 z-40 inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)]"
       >
-        <span aria-hidden className="text-[15px] leading-none">✨</span>
+        <HubIcon name="sparkles" />
         <span className="hidden sm:inline">Ask AI</span>
-        <kbd className="hidden rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:bg-white/10 dark:text-slate-400 sm:inline">
+        <kbd className="shortcut hidden sm:inline">
           ⌘J
         </kbd>
       </button>
@@ -192,7 +193,7 @@ export default function AskAI() {
 
                 {/* header */}
                 <div className="flex items-center gap-2 border-b border-black/5 px-4 py-3 dark:border-white/10">
-                  <span aria-hidden className="text-[15px]">✨</span>
+                  <HubIcon name="sparkles" />
                   <span className="text-sm font-semibold text-slate-900 dark:text-white">Ask AI</span>
                   {moduleLabel ? (
                     <span className="ml-1 truncate rounded bg-[#2e5bff]/12 px-2 py-0.5 text-[11px] font-medium text-[#1e5bd6] dark:text-[#7AA0FF]">

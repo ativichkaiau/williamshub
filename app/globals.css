@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
- * WilliamsHub — FW15C Livery.
- * The 1993 Williams-Renault bodywork: bright white base, Williams navy,
- * Canon red and Camel yellow racing stripe. Soft claymorphic surfaces
- * (dual light/shadow) tinted navy, hosting the livery flash as a signature
- * motif. Day = the car in the sun; Night = the garage under the lights.
- */
-
-/* ── Livery constants (mode-independent) — the paint scheme ── */
+/* WilliamsHub — quiet surfaces, precise rules, and a little racing livery. */
 :root {
   --wm-navy: #0a2472; /* Williams navy */
   --wm-blue: #2e5bff; /* Williams cobalt (primary accent) */
@@ -21,31 +13,30 @@
 
 :root {
   color-scheme: light;
-  /* Bodywork — white nose fading to cool silver + faint blue-steel */
-  --bg-1: #ffffff;
-  --bg-2: #e9eff8;
-  --bg-3: #dee7f4;
-  --clay-surface: #f3f7fd;
-  --clay-d: rgba(10, 36, 114, 0.15); /* navy contact shadow */
-  --clay-l: rgba(255, 255, 255, 0.95); /* top light */
-  --grid: rgba(10, 36, 114, 0.05);
-  /* Livery atmosphere glows */
-  --livery-glow-navy: rgba(10, 36, 114, 0.06);
-  --livery-glow-red: rgba(228, 0, 43, 0.05);
+  --canvas: #f8f9fb;
+  --clay-surface: #ffffff;
+  --surface-muted: #f1f3f7;
+  --line: #e2e6ed;
+  --ink: #14213b;
+  --muted: #637087;
+  --accent: #254dcc;
+  --accent-soft: #edf2ff;
+  --stripe-ink: #142e68;
+  --header-surface: rgba(248, 249, 251, 0.94);
 }
 
 .dark {
   color-scheme: dark;
-  /* Night garage — deep Williams navy under the lights */
-  --bg-1: #061128;
-  --bg-2: #081a38;
-  --bg-3: #0b2350;
-  --clay-surface: #0f2449;
-  --clay-d: rgba(0, 0, 0, 0.55);
-  --clay-l: rgba(90, 130, 220, 0.1); /* blue-tinted top light */
-  --grid: rgba(90, 130, 220, 0.06);
-  --livery-glow-navy: rgba(46, 91, 255, 0.1);
-  --livery-glow-red: rgba(228, 0, 43, 0.06);
+  --canvas: #0c1321;
+  --clay-surface: #121e30;
+  --surface-muted: #172438;
+  --line: #28354a;
+  --ink: #ecf1fa;
+  --muted: #9aa9bf;
+  --accent: #91b0ff;
+  --accent-soft: #1c2c4a;
+  --stripe-ink: #7196ed;
+  --header-surface: rgba(12, 19, 33, 0.94);
 }
 
 html {
@@ -53,42 +44,339 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   min-height: 100vh;
-  background-color: var(--bg-2);
-  background-image:
-    radial-gradient(58% 42% at 86% 6%, var(--livery-glow-navy), transparent 70%),
-    radial-gradient(52% 40% at 10% 98%, var(--livery-glow-red), transparent 70%),
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
-    linear-gradient(135deg, var(--bg-1), var(--bg-2) 48%, var(--bg-3));
-  background-size:
-    100% 100%,
-    100% 100%,
-    28px 28px,
-    28px 28px,
-    100% 100%;
-  background-attachment: fixed;
+  background: var(--canvas);
 }
 
-/* Claymorphism — soft, puffy extruded surfaces (navy-tinted shadow). */
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
 @layer components {
+  /* Retain the shared class names so every study surface gets the same finish. */
   .clay {
     background: var(--clay-surface);
-    border-radius: 22px;
-    box-shadow: 7px 7px 16px var(--clay-d), -7px -7px 16px var(--clay-l);
+    border: 1px solid var(--line);
+    border-radius: 12px;
   }
   .clay-pill {
     background: var(--clay-surface);
-    border-radius: 9999px;
-    box-shadow: 5px 5px 11px var(--clay-d), -5px -5px 11px var(--clay-l);
+    border: 1px solid var(--line);
+    border-radius: 8px;
   }
   .clay-node {
-    border-radius: 14px;
-    box-shadow: 4px 4px 9px var(--clay-d), -4px -4px 9px var(--clay-l);
+    border: 1px solid var(--line);
+    border-radius: 8px;
   }
   .clay-inset {
-    border-radius: 16px;
-    box-shadow: inset 4px 4px 9px var(--clay-d), inset -4px -4px 9px var(--clay-l);
+    background: var(--surface-muted);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .clay-surface {
+    background-color: var(--clay-surface);
+  }
+
+  .page-decoration {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .page-decoration::before {
+    content: "";
+    position: absolute;
+    inset: 0 max(24px, calc((100vw - 1216px) / 2));
+    border-inline: 1px solid var(--line);
+    opacity: 0.5;
+  }
+  .page-decoration::after {
+    content: "";
+    position: absolute;
+    right: max(24px, calc((100vw - 1216px) / 2));
+    top: 30%;
+    width: 16px;
+    height: 144px;
+    background: repeating-linear-gradient(-45deg, var(--stripe-ink) 0 1px, transparent 1px 7px);
+    opacity: 0.22;
+  }
+
+  .site-header {
+    border-bottom: 1px solid var(--line);
+    background: var(--header-surface);
+    backdrop-filter: blur(16px);
+  }
+  .header-link {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 150ms, color 150ms;
+  }
+  .header-link:hover,
+  .header-link[aria-current="page"] {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .header-tool {
+    display: inline-flex;
+    min-width: 40px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 12px;
+    transition: background-color 150ms, color 150ms;
+  }
+  .header-tool:hover {
+    background: var(--surface-muted);
+    color: var(--ink);
+  }
+  .shortcut {
+    padding: 2px 4px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1;
+  }
+  .brand-signature {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+  .tutor-trigger {
+    min-width: 44px;
+    min-height: 44px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
+  }
+
+  .eyebrow {
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .section-rule {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-rule::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: var(--line);
+  }
+  .livery-slashes {
+    display: inline-flex;
+    flex: none;
+    gap: 3px;
+    width: 29px;
+    height: 14px;
+    transform: skew(-24deg);
+  }
+  .livery-slashes > span:nth-child(1) { width: 12px; background: var(--stripe-ink); }
+  .livery-slashes > span:nth-child(2) { width: 5px; background: var(--wm-red); }
+  .livery-slashes > span:nth-child(3) { width: 5px; background: var(--wm-yellow); }
+
+  .home-hero {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-stripes {
+    position: absolute;
+    top: -35px;
+    right: 42px;
+    display: flex;
+    gap: 7px;
+    height: 128px;
+    transform: skew(-24deg);
+    pointer-events: none;
+  }
+  .hero-stripes > span:nth-child(1) { width: 32px; background: var(--stripe-ink); }
+  .hero-stripes > span:nth-child(2) { width: 10px; background: var(--wm-red); }
+  .hero-stripes > span:nth-child(3) { width: 10px; background: var(--wm-yellow); }
+  .hero-title {
+    color: var(--ink);
+    font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+    font-weight: 600;
+    letter-spacing: -0.055em;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .hero-title > span { color: var(--accent); }
+  .primary-action {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 11px 18px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: var(--ink);
+    color: var(--canvas);
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 150ms;
+  }
+  .primary-action:hover { background: var(--accent); }
+  .text-action {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .text-action:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .featured-module {
+    position: relative;
+    overflow: hidden;
+    background: var(--clay-surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .featured-module::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 52px;
+    background: var(--stripe-ink);
+  }
+  .mechanism-preview > li { position: relative; }
+  .mechanism-preview > li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 28px;
+    bottom: -8px;
+    width: 1px;
+    background: var(--line);
+  }
+  .library-stats {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
+  .library-stats > div { display: flex; align-items: baseline; gap: 8px; }
+  .library-stats dt { color: var(--muted); font-size: 11px; }
+  .library-stats dd { color: var(--ink); font-size: 21px; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+  .library-modes {
+    display: inline-flex;
+    max-width: 100%;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-muted);
+  }
+  .library-mode {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 150ms, background-color 150ms;
+  }
+  .library-mode[aria-pressed="true"] {
+    border-color: var(--line);
+    background: var(--clay-surface);
+    color: var(--ink);
+  }
+  .library-mode:hover { color: var(--accent); }
+  .year-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .year-tab {
+    position: relative;
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .year-tab[aria-pressed="true"] { color: var(--ink); }
+  .year-tab[aria-pressed="true"]::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 -1px;
+    height: 2px;
+    background: var(--accent);
+  }
+  .year-tab:hover { color: var(--accent); }
+  .subject-card {
+    position: relative;
+    display: flex;
+    min-height: 152px;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--clay-surface);
+    transition: border-color 150ms, background-color 150ms;
+  }
+  a.subject-card:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .subject-card-mark {
+    width: 23px;
+    height: 9px;
+    background: repeating-linear-gradient(-55deg, var(--stripe-ink) 0 2px, transparent 2px 6px);
+    opacity: 0.22;
+  }
+  .subject-card-unavailable { background: transparent; border-style: dashed; }
+  .site-footer { border-top: 1px solid var(--line); }
+
+  @media (max-width: 1023px) {
+    .page-decoration { display: none; }
+  }
+  @media (max-width: 639px) {
+    .hero-stripes { right: 22px; top: -44px; height: 94px; gap: 5px; }
+    .hero-stripes > span:nth-child(1) { width: 23px; }
+    .hero-stripes > span:nth-child(2),
+    .hero-stripes > span:nth-child(3) { width: 7px; }
+    .library-stats { column-gap: 20px; }
+    .library-stats > div { flex-direction: column; gap: 2px; }
+    .subject-card { min-height: 140px; }
   }
 
   /* ── Signature livery motifs ── */
@@ -97,11 +385,11 @@ body {
   .livery-stripe {
     background: linear-gradient(
       90deg,
-      var(--wm-navy) 0%,
-      var(--wm-navy) 56%,
-      var(--wm-red) 56%,
+      var(--stripe-ink) 0%,
+      var(--stripe-ink) 78%,
       var(--wm-red) 78%,
-      var(--wm-yellow) 78%,
+      var(--wm-red) 89%,
+      var(--wm-yellow) 89%,
       var(--wm-yellow) 100%
     );
   }
@@ -127,9 +415,9 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 4px;
-    border-radius: 22px 0 0 22px;
-    background: linear-gradient(180deg, var(--wm-navy), var(--wm-blue) 55%, var(--wm-red));
+    width: 2px;
+    border-radius: 12px 0 0 12px;
+    background: var(--stripe-ink);
   }
 
   /* Chequered finish-flag texture (overlay a low-opacity layer) */

@@ -162,7 +162,7 @@ export default function CommandPalette() {
                 onClick={(e) => e.stopPropagation()}
                 onKeyDown={onListKey}
               >
-                <div className="livery-stripe h-1 w-full" />
+                <div className="livery-stripe h-0.5 w-full" />
                 <div className="flex items-center gap-2 px-4 py-3">
                   <HubIcon name="search" className="text-slate-400" />
                   <input

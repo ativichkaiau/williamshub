@@ -189,7 +189,7 @@ export default function AskAI() {
                 style={{ maxHeight: '78vh' }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="livery-stripe h-1 w-full" />
+                <div className="livery-stripe h-0.5 w-full" />
 
                 {/* header */}
                 <div className="flex items-center gap-2 border-b border-black/5 px-4 py-3 dark:border-white/10">

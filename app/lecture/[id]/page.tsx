@@ -6,6 +6,7 @@ import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
 import BookmarkButton from '../../../components/BookmarkButton';
 import AskAboutButton from '../../../components/AskAboutButton';
+import HubIcon from '../../../components/HubIcon';
 import ModuleNotes from '../../../components/ModuleNotes';
 import VisitTracker from '../../../components/VisitTracker';
 import LearningPath from '../../../components/LearningPath';
@@ -65,7 +66,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
       </nav>
 
       <header className="mb-6 mt-4">
-        <div className={`mb-4 h-1.5 w-full rounded-full bg-gradient-to-r ${theme.grad}`} />
+        <div className={`mb-4 h-1 w-full rounded-full bg-gradient-to-r ${theme.grad}`} />
         <Link
           href={`/lecture-set/${lectureSetSlug(l.source)}`}
           className={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide transition hover:opacity-80 ${theme.text}`}
@@ -74,19 +75,19 @@ export default function LecturePage({ params }: { params: { id: string } }) {
           {l.source}
         </Link>
         <div className="mt-2 flex items-start justify-between gap-3">
-          <h1 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">{l.title}</h1>
+          <h1 className="text-3xl font-semibold tracking-tight text-[var(--ink)]">{l.title}</h1>
           <div className="flex shrink-0 items-center gap-2">
             <Link
               href={`/flashcards/${l.id}`}
-              className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+              className="clay-pill inline-flex min-h-9 items-center gap-1.5 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
             >
-              <span aria-hidden>🗂️</span> Cards
+              <HubIcon name="cards" /> Cards
             </Link>
             <Link
               href={`/practice/${l.id}`}
-              className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+              className="clay-pill inline-flex min-h-9 items-center gap-1.5 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
             >
-              <span aria-hidden>📝</span> Practice
+              <HubIcon name="practice" /> Practice
             </Link>
             <AskAboutButton />
             <BookmarkButton moduleId={l.id} />
@@ -111,7 +112,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
 
       <ModuleNotes moduleId={l.id} />
 
-      <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-10 text-center text-xs text-[var(--muted)]">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

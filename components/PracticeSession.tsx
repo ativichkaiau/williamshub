@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import HubIcon from './HubIcon';
 import { recordQuizAnswer } from '../lib/user/activity';
 import { addRepairItems, makeRepairItem } from '../lib/repair/store';
 import { getWeakModules, intersectsWeak } from '../lib/user/weakness';
@@ -78,12 +79,12 @@ export default function PracticeSession({
   if (deck.length === 0) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">🗒️</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">No questions here yet.</p>
-        <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
+        <HubIcon name="practice" className="mx-auto h-8 w-8 text-[var(--muted)]" />
+        <p className="mt-3 font-semibold text-[var(--ink)]">No questions here yet.</p>
+        <p className="mx-auto mt-1 max-w-sm text-sm leading-6 text-[var(--muted)]">
           Questions are built from this module’s content and links. Run{' '}
-          <code className="rounded bg-black/5 px-1 dark:bg-white/10">npm run questions:generate</code> with an OpenAI key
-          to add AI questions.
+          <code className="rounded bg-[var(--surface-muted)] px-1 font-mono">npm run questions:generate</code> with an
+          OpenAI key to add AI questions.
         </p>
       </div>
     );
@@ -128,16 +129,16 @@ export default function PracticeSession({
     return (
       <div className="space-y-5">
         <div className="clay clay-surface p-6 text-center">
-          <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Session complete</div>
-          <div className="mt-1 text-4xl font-black tabular-nums text-slate-900 dark:text-white">{pct}%</div>
-          <div className="text-sm text-slate-500 dark:text-slate-400">
+          <div className="eyebrow">Session complete</div>
+          <div className="mt-1.5 text-4xl font-semibold tabular-nums text-[var(--ink)]">{pct}%</div>
+          <div className="text-sm text-[var(--muted)]">
             {score} / {deck.length} correct · {title}
           </div>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             <button
               type="button"
               onClick={restart}
-              className="clay-pill px-4 py-2 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+              className="clay-pill px-4 py-2 text-sm font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
             >
               ↻ Practise again
             </button>
@@ -146,12 +147,12 @@ export default function PracticeSession({
                 type="button"
                 onClick={sendToRepair}
                 disabled={savedRepair}
-                className="clay-pill px-4 py-2 text-sm font-bold text-[#e4002b] transition active:translate-y-px disabled:opacity-50 dark:text-[#ff5a72]"
+                className="clay-pill px-4 py-2 text-sm font-medium text-[#e4002b] transition hover:border-[#e4002b] active:translate-y-px disabled:opacity-50 dark:text-[#ff5a72]"
               >
                 {savedRepair ? '✓ Sent to Repair' : `Send ${misses.length} miss${misses.length === 1 ? '' : 'es'} to Repair`}
               </button>
             ) : null}
-            <Link href="/standings" className="clay-pill px-4 py-2 text-sm font-bold text-slate-600 dark:text-slate-300">
+            <Link href="/standings" className="clay-pill px-4 py-2 text-sm font-medium text-[var(--muted)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]">
               View progress
             </Link>
           </div>
@@ -159,26 +160,26 @@ export default function PracticeSession({
 
         {misses.length > 0 ? (
           <div>
-            <h3 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">
               Review your misses
             </h3>
             <ul className="space-y-2">
               {misses.map((m) => (
                 <li key={m.q.id} className="clay-node clay-surface p-4 text-sm">
-                  <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold uppercase ${KIND_META[m.q.kind].cls}`}>
+                  <span className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase ${KIND_META[m.q.kind].cls}`}>
                     {KIND_META[m.q.kind].label}
                   </span>
-                  <p className="mt-1.5 font-medium text-slate-900 dark:text-white">{m.q.stem}</p>
+                  <p className="mt-1.5 font-medium text-[var(--ink)]">{m.q.stem}</p>
                   <p className="mt-1 text-emerald-600 dark:text-emerald-400">
                     ✓ {m.q.options.find((o) => o.id === m.q.answerId)?.text}
                   </p>
-                  <p className="mt-1 text-slate-500 dark:text-slate-400">{m.q.explanation}</p>
+                  <p className="mt-1 leading-6 text-[var(--muted)]">{m.q.explanation}</p>
                 </li>
               ))}
             </ul>
           </div>
         ) : (
-          <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Clean sweep — no misses. 🎯</p>
+          <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Clean sweep — no misses.</p>
         )}
       </div>
     );
@@ -192,11 +193,11 @@ export default function PracticeSession({
   return (
     <div>
       {questions.length > deck.length ? (
-        <div className="clay clay-surface mb-4 flex flex-wrap items-center justify-between gap-2 p-3 text-xs text-slate-500 dark:text-slate-400">
+        <div className="clay clay-surface mb-4 flex flex-wrap items-center justify-between gap-2 p-3 text-xs text-[var(--muted)]">
           <span>
             This run is {deck.length} questions sampled from a {questions.length.toLocaleString()}-question pool.
           </span>
-          <span className="font-semibold text-[#1e5bd6] dark:text-[#7AA0FF]">Restart reshuffles the pool.</span>
+          <span className="font-medium text-[var(--accent)]">Restart reshuffles the pool.</span>
         </div>
       ) : null}
 
@@ -212,48 +213,48 @@ export default function PracticeSession({
 
       {/* progress */}
       <div className="mb-4 flex items-center gap-3">
-        <span className="clay-inset h-2 flex-1 overflow-hidden rounded-full">
+        <span className="clay-inset h-1.5 flex-1 overflow-hidden rounded-full">
           <span
-            className="block h-full rounded-full bg-[linear-gradient(90deg,#2e5bff,#0a1a7a)] transition-all"
+            className="block h-full rounded-full bg-[var(--accent)] transition-all"
             style={{ width: `${(answeredCount / deck.length) * 100}%` }}
           />
         </span>
-        <span className="shrink-0 text-xs font-semibold tabular-nums text-slate-500 dark:text-slate-400">
+        <span className="shrink-0 text-xs font-medium tabular-nums text-[var(--muted)]">
           {i + 1} / {deck.length}
         </span>
       </div>
 
       <div className="clay clay-surface p-5">
         <div className="flex items-center gap-2">
-          <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold uppercase ${KIND_META[q.kind].cls}`}>
+          <span className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase ${KIND_META[q.kind].cls}`}>
             {KIND_META[q.kind].label}
           </span>
-          <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400">Score {score}</span>
+          <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">Score {score}</span>
         </div>
-        <p className="mt-2 text-[15px] font-medium leading-relaxed text-slate-900 dark:text-white">{q.stem}</p>
+        <p className="mt-2 text-[15px] font-medium leading-relaxed text-[var(--ink)]">{q.stem}</p>
 
         <div className="mt-3 space-y-2">
           {q.options.map((o) => {
             const isCorrect = o.id === q.answerId;
             const isPick = o.id === pick;
             let cls = 'clay-node w-full text-left text-sm px-3 py-2 transition ';
-            if (!answered) cls += 'clay-surface text-slate-700 dark:text-slate-200 active:translate-y-px';
+            if (!answered) cls += 'clay-surface text-[var(--ink)] hover:border-[var(--accent)] active:translate-y-px';
             else if (isCorrect) cls += 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/45 dark:text-emerald-100';
             else if (isPick) cls += 'bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100';
-            else cls += 'clay-surface text-slate-400 dark:text-slate-500';
+            else cls += 'clay-surface text-[var(--muted)]';
             return (
               <button key={o.id} type="button" disabled={answered} onClick={() => choose(q, o.id)} className={cls}>
-                <span className="font-bold uppercase">{o.id}.</span> {o.text}
+                <span className="font-mono font-semibold uppercase">{o.id}.</span> {o.text}
               </button>
             );
           })}
         </div>
 
         {answered ? (
-          <div className="clay mt-3 p-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          <div className="clay mt-3 p-3 text-sm leading-relaxed text-[var(--ink)]">
             <span
               className={
-                pick === q.answerId ? 'font-bold text-emerald-600 dark:text-emerald-400' : 'font-bold text-rose-500 dark:text-rose-400'
+                pick === q.answerId ? 'font-semibold text-emerald-600 dark:text-emerald-400' : 'font-semibold text-rose-500 dark:text-rose-400'
               }
             >
               {pick === q.answerId ? 'Correct. ' : 'Not quite. '}
@@ -267,7 +268,7 @@ export default function PracticeSession({
             type="button"
             onClick={() => (i < deck.length - 1 ? setI(i + 1) : setDone(true))}
             disabled={!answered}
-            className="clay-pill px-5 py-2 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px disabled:opacity-40 dark:text-[#7AA0FF]"
+            className="clay-pill px-5 py-2 text-sm font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px disabled:opacity-40"
           >
             {i < deck.length - 1 ? 'Next →' : 'Finish'}
           </button>

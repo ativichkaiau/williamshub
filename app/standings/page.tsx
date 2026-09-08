@@ -1,6 +1,7 @@
 import { lecturesBySubject, subjectByCode, subjectSlug } from '../../content';
 import { keystonesForSubject } from '../../lib/integrations/centrality';
 import StandingsDashboard, { type SubjectMeta } from '../../components/StandingsDashboard';
+import LiverySlashes from '../../components/LiverySlashes';
 
 export const metadata = { title: 'Progress — WilliamsHub' };
 
@@ -22,16 +23,19 @@ export default function StandingsPage() {
   return (
     <main className="mx-auto max-w-4xl px-5 py-8">
       <header className="mb-6">
-        <div className="livery-stripe mb-4 h-1.5 w-full rounded-full" />
-        <h1 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">Your progress</h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-3">
+          <LiverySlashes />
+          <span className="eyebrow">On this device</span>
+        </div>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--ink)]">Your progress</h1>
+        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
           Your progress so far — coverage, quiz accuracy, open repairs and your study streak. All from this device.
         </p>
       </header>
 
       <StandingsDashboard subjects={subjects} />
 
-      <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-10 text-center text-xs text-[var(--muted)]">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

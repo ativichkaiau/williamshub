@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { getVisited, getStreak, getQuizStats } from '../lib/user/activity';
 import { getBookmarks } from '../lib/user/bookmarks';
 import { getRepairQueue } from '../lib/repair/store';
+import HubIcon from './HubIcon';
 
 export interface SubjectMeta {
   code: string;
@@ -30,13 +31,11 @@ interface Row extends SubjectMeta {
 }
 
 function StatTile({
-  icon,
   value,
   label,
   sub,
   accent,
 }: {
-  icon: string;
   value: string;
   label: string;
   sub?: string;
@@ -47,13 +46,12 @@ function StatTile({
       ? 'text-[#e4002b] dark:text-[#ff5a72]'
       : accent === 'gold'
         ? 'text-[#b8860b] dark:text-[#ffcc00]'
-        : 'text-slate-900 dark:text-white';
+        : 'text-[var(--ink)]';
   return (
-    <div className="clay-node clay-surface px-3 py-4 text-center">
-      <div className="text-xl" aria-hidden>{icon}</div>
-      <div className={`mt-1 text-2xl font-black tabular-nums ${valueCls}`}>{value}</div>
-      <div className="text-[10px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">{label}</div>
-      {sub ? <div className="text-[10px] text-slate-400 dark:text-slate-500">{sub}</div> : null}
+    <div className="clay-node clay-surface px-4 py-4">
+      <div className="eyebrow">{label}</div>
+      <div className={`mt-1.5 text-2xl font-semibold tabular-nums ${valueCls}`}>{value}</div>
+      {sub ? <div className="mt-0.5 text-[11px] text-[var(--muted)]">{sub}</div> : null}
     </div>
   );
 }
@@ -62,24 +60,24 @@ function RowView({ r, rank }: { r: Row; rank: number }) {
   return (
     <Link
       href={`/subject/${r.slug}`}
-      className="clay-node clay-surface flex items-center gap-3 px-3 py-2.5 transition hover:-translate-y-0.5"
+      className="clay-node clay-surface flex items-center gap-3 px-3 py-2.5 transition hover:border-[var(--accent)]"
     >
-      <span className="w-6 shrink-0 text-center text-sm font-black tabular-nums text-slate-400 dark:text-slate-500">
+      <span className="w-6 shrink-0 text-center font-mono text-xs font-medium tabular-nums text-[var(--muted)]">
         {rank}
       </span>
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
-          <span className="shrink-0 text-sm font-black text-slate-900 dark:text-white">{r.code}</span>
-          <span className="truncate text-xs text-slate-400 dark:text-slate-500">{r.name}</span>
+          <span className="shrink-0 font-mono text-xs font-medium text-[var(--accent)]">{r.code}</span>
+          <span className="truncate text-xs text-[var(--muted)]">{r.name}</span>
         </div>
         <div className="mt-1.5 flex items-center gap-2">
-          <span className="clay-inset h-2 flex-1 overflow-hidden rounded-full">
+          <span className="clay-inset h-1.5 flex-1 overflow-hidden rounded-full">
             <span
-              className="block h-full rounded-full bg-[linear-gradient(90deg,#2e5bff,#0a1a7a)]"
+              className="block h-full rounded-full bg-[var(--accent)]"
               style={{ width: `${r.pct}%` }}
             />
           </span>
-          <span className="w-14 shrink-0 text-right text-[11px] font-semibold tabular-nums text-slate-500 dark:text-slate-400">
+          <span className="w-14 shrink-0 text-right text-[11px] font-medium tabular-nums text-[var(--muted)]">
             {r.covered}/{r.total}
           </span>
         </div>
@@ -93,8 +91,8 @@ function RowView({ r, rank }: { r: Row; rank: number }) {
         </span>
       ) : null}
       {r.repairs > 0 ? (
-        <span className="shrink-0 rounded bg-rose-100 px-1.5 py-0.5 text-[10px] font-bold text-rose-700 dark:bg-rose-900/45 dark:text-rose-200">
-          🔧 {r.repairs}
+        <span className="inline-flex shrink-0 items-center gap-1 rounded bg-rose-100 px-1.5 py-0.5 text-[10px] font-semibold text-rose-700 dark:bg-rose-900/45 dark:text-rose-200">
+          <HubIcon name="repair" className="h-3 w-3" /> {r.repairs}
         </span>
       ) : null}
     </Link>
@@ -176,15 +174,15 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
       .finally(() => setReady(true));
   }, [subjects]);
 
-  if (!ready) return <p className="py-10 text-center text-sm text-slate-400">Loading…</p>;
+  if (!ready) return <p className="py-10 text-center text-sm text-[var(--muted)]">Loading…</p>;
 
   const noActivity = t.covered === 0 && t.repairs === 0 && t.garage === 0 && rows.every((r) => r.answered === 0);
   if (noActivity) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">📊</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">No activity yet.</p>
-        <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
+        <HubIcon name="progress" className="mx-auto h-8 w-8 text-[var(--muted)]" />
+        <p className="mt-3 font-semibold text-[var(--ink)]">No activity yet.</p>
+        <p className="mx-auto mt-1 max-w-sm text-sm leading-6 text-[var(--muted)]">
           Open modules, take the quizzes, and sync WilliamsPod — your coverage, accuracy and streak will build your
           progress here.
         </p>
@@ -204,31 +202,31 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <StatTile icon="🔥" value={`${t.streak}`} label="Day streak" sub={`best ${t.best}`} accent="gold" />
-        <StatTile icon="📍" value={`${t.pct}%`} label="Coverage" sub={`${t.covered}/${t.modules}`} />
-        <StatTile icon="🔧" value={`${t.repairs}`} label="Open repairs" sub="repair queue" accent={t.repairs > 0 ? 'red' : undefined} />
-        <StatTile icon="⭐" value={`${t.garage}`} label="Saved" sub="starred" />
+        <StatTile value={`${t.streak}`} label="Day streak" sub={`best ${t.best}`} accent="gold" />
+        <StatTile value={`${t.pct}%`} label="Coverage" sub={`${t.covered}/${t.modules}`} />
+        <StatTile value={`${t.repairs}`} label="Open repairs" sub="repair queue" accent={t.repairs > 0 ? 'red' : undefined} />
+        <StatTile value={`${t.garage}`} label="Saved" sub="starred" />
       </div>
 
       {focus.length > 0 ? (
         <section className="clay clay-surface p-5">
           <div className="mb-1 flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
-            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-[var(--ink)]">
               Study these first
             </h2>
           </div>
-          <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+          <p className="mb-3 text-xs text-[var(--muted)]">
             Keystone modules from the blocks that need you most — the hubs the rest of each block leans on.
           </p>
           <div className="space-y-3">
             {focus.map((r) => (
               <div key={r.code}>
                 <div className="mb-1.5 flex items-center gap-2 text-xs">
-                  <Link href={`/subject/${r.slug}`} className="font-bold text-slate-700 hover:text-[#1e5bd6] dark:text-slate-200 dark:hover:text-[#7AA0FF]">
+                  <Link href={`/subject/${r.slug}`} className="font-mono font-medium text-[var(--accent)] transition hover:underline">
                     {r.code}
                   </Link>
-                  <span className="text-slate-400 dark:text-slate-500">
+                  <span className="text-[var(--muted)]">
                     {r.pct}% covered{r.repairs > 0 ? ` · ${r.repairs} repair${r.repairs === 1 ? '' : 's'}` : ''}
                   </span>
                 </div>
@@ -237,7 +235,7 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
                     <Link
                       key={k.id}
                       href={`/lecture/${k.id}`}
-                      className="clay-pill px-2.5 py-1 text-xs font-semibold text-slate-700 transition hover:-translate-y-0.5 dark:text-slate-200"
+                      className="clay-pill px-2.5 py-1 text-xs font-medium text-[var(--ink)] transition hover:text-[var(--accent)] hover:border-[var(--accent)]"
                     >
                       {k.title}
                     </Link>
@@ -253,11 +251,11 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
         <div className="mb-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
-            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-[var(--ink)]">
               Blocks
             </h2>
           </div>
-          <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+          <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">
             by coverage
           </span>
         </div>

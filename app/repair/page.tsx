@@ -1,6 +1,7 @@
 import RepairQueuePanel from '../../components/repair/RepairQueuePanel';
 import RepairSyncDemo from '../../components/repair/RepairSyncDemo';
 import PodConnectPanel from '../../components/repair/PodConnectPanel';
+import LiverySlashes from '../../components/LiverySlashes';
 
 export const metadata = { title: 'Repair Queue — WilliamsHub' };
 
@@ -9,9 +10,12 @@ export default function RepairPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-8">
       <header className="mb-6">
-        <div className="livery-stripe mb-4 h-1.5 w-full rounded-full" />
-        <h1 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white">Repair Queue</h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-3">
+          <LiverySlashes />
+          <span className="eyebrow">WilliamsSync</span>
+        </div>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--ink)]">Repair Queue</h1>
+        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
           Your personalised fix-list. WilliamsPod mistakes flow in through WilliamsSync and are prioritised by
           error type — each links back to the module and the recommended repair action.
         </p>
@@ -24,11 +28,11 @@ export default function RepairPage() {
       {dev ? (
         <div className="mt-4 flex items-center gap-2">
           <RepairSyncDemo />
-          <span className="text-[11px] text-slate-400 dark:text-slate-500">dev-only — seeds sample data</span>
+          <span className="text-[11px] text-[var(--muted)]">dev-only — seeds sample data</span>
         </div>
       ) : null}
 
-      <footer className="mt-10 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-10 text-center text-xs text-[var(--muted)]">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

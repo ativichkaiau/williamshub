@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getBookmarks, getNotes, toggleBookmark } from '../lib/user/bookmarks';
+import HubIcon from './HubIcon';
 
 interface Entry {
   k: string;
@@ -46,17 +47,19 @@ export default function GarageView() {
   const noteIds = Object.keys(notes).filter((id) => notes[id]?.trim());
 
   if (!ready) {
-    return <p className="py-10 text-center text-sm text-slate-400">Loading…</p>;
+    return <p className="py-10 text-center text-sm text-[var(--muted)]">Loading…</p>;
   }
 
   if (bookmarks.length === 0 && noteIds.length === 0) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">🔖</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">Nothing saved yet.</p>
-        <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
-          Select <span className="font-semibold">☆ Save</span> on any module to save it here, and add{' '}
-          <span className="font-semibold">notes</span> as you study. Everything is kept on this device.
+        <HubIcon name="bookmark" className="mx-auto h-8 w-8 text-[var(--muted)]" />
+        <p className="mt-3 font-semibold text-[var(--ink)]">Nothing saved yet.</p>
+        <p className="mx-auto mt-1 max-w-sm text-sm leading-6 text-[var(--muted)]">
+          Hit{' '}
+          <span className="inline-flex items-center gap-1 font-medium text-[var(--ink)]"><HubIcon name="bookmark" className="inline-block" /> Save</span>{' '}
+          on any module to keep it here, and add <span className="font-medium text-[var(--ink)]">notes</span> as you
+          study. Everything is kept on this device.
         </p>
       </div>
     );
@@ -68,7 +71,7 @@ export default function GarageView() {
         <section>
           <div className="mb-3 flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#ffcc00]" />
-            <h2 className="text-xs font-bold uppercase tracking-wide text-[#b8860b] dark:text-[#ffcc00]">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.1em] text-[#b8860b] dark:text-[#ffcc00]">
               Starred modules · {bookmarks.length}
             </h2>
           </div>
@@ -78,13 +81,13 @@ export default function GarageView() {
               return (
                 <div key={id} className="clay flex items-center gap-2 p-4">
                   <Link href={`/lecture/${id}`} className="group min-w-0 flex-1">
-                    <span className="block truncate text-sm font-bold text-slate-900 transition group-hover:text-[#1e5bd6] dark:text-white dark:group-hover:text-[#7AA0FF]">
+                    <span className="block truncate text-sm font-medium text-[var(--ink)] transition group-hover:text-[var(--accent)]">
                       {title}
                     </span>
-                    {sub ? <span className="block truncate text-[11px] text-slate-400">{sub}</span> : null}
+                    {sub ? <span className="block truncate text-[11px] text-[var(--muted)]">{sub}</span> : null}
                   </Link>
                   {subject ? (
-                    <span className="shrink-0 rounded bg-black/5 px-1 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-white/10 dark:text-slate-400">
+                    <span className="shrink-0 rounded bg-[var(--surface-muted)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--muted)]">
                       {subject}
                     </span>
                   ) : null}
@@ -94,7 +97,7 @@ export default function GarageView() {
                     aria-label="Remove bookmark"
                     className="shrink-0 text-[#b8860b] transition hover:scale-110 dark:text-[#ffcc00]"
                   >
-                    ⭐
+                    <HubIcon name="bookmark" className="fill-current" />
                   </button>
                 </div>
               );
@@ -106,8 +109,8 @@ export default function GarageView() {
       {noteIds.length > 0 ? (
         <section>
           <div className="mb-3 flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-[#2e5bff]" />
-            <h2 className="text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">
+            <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
+            <h2 className="text-xs font-semibold uppercase tracking-[0.1em] text-[var(--accent)]">
               Notes · {noteIds.length}
             </h2>
           </div>
@@ -119,17 +122,17 @@ export default function GarageView() {
                   <div className="flex items-center justify-between gap-2">
                     <Link
                       href={`/lecture/${id}`}
-                      className="truncate text-sm font-bold text-slate-900 underline decoration-dotted underline-offset-2 hover:text-[#1e5bd6] dark:text-white dark:hover:text-[#7AA0FF]"
+                      className="truncate text-sm font-medium text-[var(--ink)] underline decoration-dotted underline-offset-2 transition hover:text-[var(--accent)]"
                     >
                       {title}
                     </Link>
                     {subject ? (
-                      <span className="shrink-0 rounded bg-black/5 px-1 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-white/10 dark:text-slate-400">
+                      <span className="shrink-0 rounded bg-[var(--surface-muted)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--muted)]">
                         {subject}
                       </span>
                     ) : null}
                   </div>
-                  <p className="mt-1.5 whitespace-pre-wrap text-sm text-slate-600 dark:text-slate-300">{notes[id]}</p>
+                  <p className="mt-1.5 whitespace-pre-wrap text-sm leading-6 text-[var(--ink)]">{notes[id]}</p>
                 </li>
               );
             })}

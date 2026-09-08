@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './globals.css';
 import Header from '../components/Header';
 import AskAI from '../components/AskAI';
+import LiveryMotion from '../components/LiveryMotion';
 
 export const metadata: Metadata = {
   title: 'WilliamsHub — Study OS',
@@ -15,8 +16,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Applied before paint to avoid a flash of the wrong theme.
-const themeScript = `(function(){try{var t=localStorage.getItem('wh-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`;
+// Applied before paint to avoid a flash of the wrong theme, and to arm the
+// livery motion. Gating .motion here (rather than in CSS) means that with JS
+// off — or with reduced motion asked for — the reveal styles never apply and
+// every section renders visible and static.
+const themeScript = `(function(){try{var t=localStorage.getItem('wh-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches)document.documentElement.classList.add('motion');}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -24,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen text-slate-800 antialiased dark:text-slate-200">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <div className="page-decoration" aria-hidden="true" />
+        <LiveryMotion />
         <Header />
         {children}
         <Link

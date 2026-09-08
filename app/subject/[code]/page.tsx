@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { notFound } from 'next/navigation';
 import {
   lecturesBySubject,
@@ -24,12 +25,13 @@ export function generateMetadata({ params }: { params: { code: string } }) {
   return { title: s ? `${s.code} ${s.name} — WilliamsHub` : 'WilliamsHub' };
 }
 
-function LectureCard({ l, theme }: { l: Lecture; theme: ReturnType<typeof lectureTheme> }) {
+function LectureCard({ l, theme, i }: { l: Lecture; theme: ReturnType<typeof lectureTheme>; i: number }) {
   // Each topic opens the whole-lecture format, scrolled to its section.
   return (
     <Link
       href={`/lecture-set/${lectureSetSlug(l.source)}#${l.id}`}
       className="clay group flex flex-col p-5 transition hover:border-[var(--accent)]"
+      style={{ '--i': i } as CSSProperties}
     >
       <div className="flex items-center gap-2">
         <span className={`h-2.5 w-2.5 rounded-full ${theme.dot}`} />
@@ -98,7 +100,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         ← All years &amp; blocks
       </Link>
 
-      <header className="mb-8 mt-5">
+      <header className="mb-8 mt-5" data-reveal>
         <div className="flex items-center gap-3">
           <LiverySlashes />
           <span className="eyebrow">{subject.code} · Year {subject.year}</span>
@@ -127,7 +129,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
       </header>
 
       {block.nodes.length >= 2 && block.hasEdges ? (
-        <section className="clay clay-surface mb-8 p-5">
+        <section className="clay clay-surface mb-8 p-5" data-reveal>
           <div className="mb-2 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500" />
@@ -144,7 +146,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
       ) : null}
 
       {keystones.length > 0 ? (
-        <section className="clay clay-surface mb-8 p-5">
+        <section className="clay clay-surface mb-8 p-5" data-reveal>
           <div className="mb-2 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
@@ -228,9 +230,9 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
                     Extra exam-relevant topics beyond the core lecture list.
                   </p>
                 ) : null}
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {lects.map((l) => (
-                    <LectureCard key={l.id} l={l} theme={theme} />
+                <div className="grid-stagger grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {lects.map((l, i) => (
+                    <LectureCard key={l.id} l={l} theme={theme} i={i} />
                   ))}
                 </div>
               </section>

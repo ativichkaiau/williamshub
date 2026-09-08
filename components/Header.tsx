@@ -20,7 +20,8 @@ export default function Header() {
 
   return (
     <header className="site-header sticky top-0 z-30">
-      <div className="livery-stripe h-0.5 w-full" aria-hidden="true" />
+      {/* Timing stripe — fills as the page scrolls (components/LiveryMotion.tsx) */}
+      <div className="livery-progress h-0.5 w-full" aria-hidden="true" />
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 px-5 py-3 md:flex-nowrap">
         <Link href="/" aria-label="WilliamsHub home" className="shrink-0 rounded-sm">
           <WilliamsHubLogo />

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import Link from 'next/link';
 import HubIcon from './HubIcon';
 
@@ -51,14 +51,16 @@ export default function CurriculumBrowser({
         })}
       </div>
 
-      {/* Subject grid */}
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {year.subjects.map((s) =>
+      {/* Subject grid — grid-stagger replays the entrance when a year tab
+          swaps the list, so switching years feels like the cars filing past. */}
+      <div key={active} className="grid-stagger grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {year.subjects.map((s, i) =>
           s.count > 0 ? (
             <Link
               key={s.code}
               href={`/subject/${s.slug}`}
               className="subject-card group"
+              style={{ '--i': i } as CSSProperties}
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[11px] font-medium tracking-wide text-[var(--accent)]">
@@ -75,7 +77,7 @@ export default function CurriculumBrowser({
               </span>
             </Link>
           ) : (
-            <div key={s.code} className="subject-card subject-card-unavailable">
+            <div key={s.code} className="subject-card subject-card-unavailable" style={{ '--i': i } as CSSProperties}>
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[11px] tracking-wide text-[var(--muted)]">
                   {s.code}

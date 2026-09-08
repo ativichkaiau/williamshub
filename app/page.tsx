@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug, subjectOfSource, subjectByCode } from '../content';
 import { type YearData } from '../components/CurriculumBrowser';
 import BlockBrowser from '../components/BlockBrowser';
@@ -56,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="relative grid gap-9 pb-10 pt-10 lg:grid-cols-[1.45fr_1fr] lg:gap-16 lg:pb-12 lg:pt-12">
-          <div>
+          <div data-reveal>
             <h1 id="hero-title" className="hero-title">
               Own the lecture.
               <br />
@@ -88,7 +89,12 @@ export default function Home() {
             </dl>
           </div>
 
-          <aside className="featured-module self-start p-5 sm:p-6" aria-labelledby="featured-title">
+          <aside
+            className="featured-module self-start p-5 sm:p-6"
+            aria-labelledby="featured-title"
+            data-reveal
+            style={{ '--reveal-i': 1 } as CSSProperties}
+          >
             <div className="flex flex-wrap items-center justify-between gap-3">
               <span className="eyebrow">Featured module</span>
               {featuredSubject && (
@@ -122,7 +128,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="browse" aria-labelledby="browse-title" className="scroll-mt-36 pt-9 sm:pt-10 md:scroll-mt-24">
+      <section id="browse" aria-labelledby="browse-title" className="scroll-mt-36 pt-9 sm:pt-10 md:scroll-mt-24" data-reveal>
         <div className="section-rule mb-4">
           <span className="eyebrow">01 / The library</span>
           <LiverySlashes />
@@ -141,7 +147,10 @@ export default function Home() {
         />
       </section>
 
-      <footer className="site-footer mt-12 flex flex-wrap items-center justify-between gap-4 pt-5 text-[11px] leading-5 text-[var(--muted)]">
+      <footer
+        className="site-footer mt-12 flex flex-wrap items-center justify-between gap-4 pt-5 text-[11px] leading-5 text-[var(--muted)]"
+        data-reveal
+      >
         <span className="flex items-center gap-3"><LiverySlashes /> WilliamsHub · A VESTRIPPN3.0 satellite</span>
         <span>Built from MedCMU lectures · Alongside your OnePagers</span>
       </footer>

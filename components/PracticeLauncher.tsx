@@ -23,17 +23,17 @@ function Row({
   titleOf: (id: string) => string;
 }) {
   if (ids.length === 0) return null;
-  const dot = color === 'red' ? 'bg-[#e4002b]' : 'bg-[#2e5bff]';
-  const text = color === 'red' ? 'text-[#e4002b] dark:text-[#ff5a72]' : 'text-[#1e5bd6] dark:text-[#7AA0FF]';
+  const dot = color === 'red' ? 'bg-[#e4002b]' : 'bg-[var(--accent)]';
+  const text = color === 'red' ? 'text-[#e4002b] dark:text-[#ff5a72]' : 'text-[var(--accent)]';
   return (
     <div>
       <div className="mb-2 flex items-center gap-2">
         <span className={`h-2 w-2 rounded-full ${dot}`} />
-        <h3 className={`text-xs font-bold uppercase tracking-wide ${text}`}>{label}</h3>
+        <h3 className={`text-xs font-semibold uppercase tracking-[0.1em] ${text}`}>{label}</h3>
       </div>
       <div className="flex flex-wrap gap-2">
         {ids.map((id) => (
-          <Link key={id} href={`/practice/${id}`} className="clay-pill px-3 py-1.5 text-xs font-semibold text-slate-700 transition active:translate-y-px dark:text-slate-200">
+          <Link key={id} href={`/practice/${id}`} className="clay-pill px-3 py-1.5 text-xs font-medium text-[var(--ink)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]">
             {titleOf(id)}
           </Link>
         ))}

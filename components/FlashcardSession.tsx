@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
+import HubIcon from './HubIcon';
 import { touchStreak } from '../lib/user/activity';
 import { readJSON, writeJSON, todayKey } from '../lib/user/store';
 import type { Flashcard, FlashcardKind } from '../lib/flashcards/build';
@@ -95,9 +96,9 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
   if (deck.length === 0) {
     return (
       <div className="clay clay-surface p-8 text-center">
-        <div className="text-3xl">🗂️</div>
-        <p className="mt-2 font-bold text-slate-700 dark:text-slate-200">No cards here yet.</p>
-        <p className="mx-auto mt-1 max-w-sm text-sm text-slate-500 dark:text-slate-400">
+        <HubIcon name="cards" className="mx-auto h-8 w-8 text-[var(--muted)]" />
+        <p className="mt-3 font-semibold text-[var(--ink)]">No cards here yet.</p>
+        <p className="mx-auto mt-1 max-w-sm text-sm leading-6 text-[var(--muted)]">
           Cards are built from a module’s high-yield points, traps, findings and mnemonics.
         </p>
       </div>
@@ -111,9 +112,9 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
     return (
       <div className="space-y-5">
         <div className="clay clay-surface p-6 text-center">
-          <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Deck complete</div>
-          <div className="mt-1 text-4xl font-black tabular-nums text-slate-900 dark:text-white">{pct}%</div>
-          <div className="text-sm text-slate-500 dark:text-slate-400">
+          <div className="eyebrow">Deck complete</div>
+          <div className="mt-1.5 text-4xl font-semibold tabular-nums text-[var(--ink)]">{pct}%</div>
+          <div className="text-sm text-[var(--muted)]">
             {got.length} got · {review.length} to review · {title}
           </div>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -121,7 +122,7 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
               <button
                 type="button"
                 onClick={() => restart(reviewCards)}
-                className="clay-pill px-4 py-2 text-sm font-bold text-[#e4002b] transition active:translate-y-px dark:text-[#ff5a72]"
+                className="clay-pill px-4 py-2 text-sm font-medium text-[#e4002b] transition hover:border-[#e4002b] active:translate-y-px dark:text-[#ff5a72]"
               >
                 ↻ Restudy {reviewCards.length} to review
               </button>
@@ -129,14 +130,14 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
             <button
               type="button"
               onClick={() => restart()}
-              className="clay-pill px-4 py-2 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+              className="clay-pill px-4 py-2 text-sm font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
             >
               ↻ Shuffle all again
             </button>
           </div>
         </div>
         {review.length === 0 ? (
-          <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Clean run — every card got. 🎯</p>
+          <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Clean run — every card got.</p>
         ) : null}
       </div>
     );
@@ -148,13 +149,13 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
     <div>
       {/* progress */}
       <div className="mb-4 flex items-center gap-3">
-        <span className="clay-inset h-2 flex-1 overflow-hidden rounded-full">
+        <span className="clay-inset h-1.5 flex-1 overflow-hidden rounded-full">
           <span
-            className="block h-full rounded-full bg-[linear-gradient(90deg,#2e5bff,#0a1a7a)] transition-all"
+            className="block h-full rounded-full bg-[var(--accent)] transition-all"
             style={{ width: `${(i / deck.length) * 100}%` }}
           />
         </span>
-        <span className="shrink-0 text-xs font-semibold tabular-nums text-slate-500 dark:text-slate-400">
+        <span className="shrink-0 text-xs font-medium tabular-nums text-[var(--muted)]">
           {i + 1} / {deck.length}
         </span>
       </div>
@@ -165,19 +166,19 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
         className="clay clay-surface flex min-h-[16rem] w-full flex-col items-center justify-center gap-4 p-8 text-center transition active:translate-y-px"
       >
         <div className="flex items-center gap-2">
-          <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold uppercase ${meta.cls}`}>{meta.label}</span>
-          <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400">{card.moduleTitle}</span>
+          <span className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase ${meta.cls}`}>{meta.label}</span>
+          <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">{card.moduleTitle}</span>
         </div>
 
-        <p className="max-w-xl text-lg font-bold leading-snug text-slate-900 dark:text-white">{card.front}</p>
+        <p className="max-w-xl text-lg font-semibold leading-snug text-[var(--ink)]">{card.front}</p>
 
         {revealed ? (
           <>
-            <span className="h-px w-16 bg-slate-200 dark:bg-white/10" />
-            <p className="max-w-xl whitespace-pre-line text-[15px] leading-relaxed text-slate-700 dark:text-slate-200">{card.back}</p>
+            <span className="h-px w-16 bg-[var(--line)]" />
+            <p className="max-w-xl whitespace-pre-line text-[15px] leading-relaxed text-[var(--ink)]">{card.back}</p>
           </>
         ) : (
-          <span className="text-xs font-medium text-slate-400 dark:text-slate-500">Tap or press space to reveal</span>
+          <span className="text-xs font-medium text-[var(--muted)]">Tap or press space to reveal</span>
         )}
       </button>
 
@@ -188,14 +189,14 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
             <button
               type="button"
               onClick={() => grade(false)}
-              className="clay-pill px-5 py-2.5 text-sm font-bold text-[#e4002b] transition active:translate-y-px dark:text-[#ff5a72]"
+              className="clay-pill px-5 py-2.5 text-sm font-medium text-[#e4002b] transition hover:border-[#e4002b] active:translate-y-px dark:text-[#ff5a72]"
             >
               Review <span className="ml-1 text-[10px] opacity-60">1</span>
             </button>
             <button
               type="button"
               onClick={() => grade(true)}
-              className="clay-pill px-5 py-2.5 text-sm font-bold text-emerald-600 transition active:translate-y-px dark:text-emerald-400"
+              className="clay-pill px-5 py-2.5 text-sm font-medium text-emerald-600 transition hover:border-emerald-500 active:translate-y-px dark:text-emerald-400"
             >
               Got it <span className="ml-1 text-[10px] opacity-60">2</span>
             </button>
@@ -204,15 +205,15 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
           <button
             type="button"
             onClick={() => setRevealed(true)}
-            className="clay-pill px-6 py-2.5 text-sm font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+            className="clay-pill px-6 py-2.5 text-sm font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
           >
             Show answer
           </button>
         )}
       </div>
 
-      <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
-        <Link href={`/lecture/${card.moduleId}`} className="underline decoration-dotted underline-offset-2 hover:text-slate-600 dark:hover:text-slate-300">
+      <p className="mt-4 text-center text-xs text-[var(--muted)]">
+        <Link href={`/lecture/${card.moduleId}`} className="underline decoration-dotted underline-offset-2 transition hover:text-[var(--ink)]">
           Open “{card.moduleTitle}”
         </Link>
       </p>

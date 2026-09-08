@@ -11,6 +11,8 @@ import { lectureTheme } from '../../../lib/theme';
 import { buildBlockGraph } from '../../../lib/integrations/graphView';
 import { keystonesForSubject } from '../../../lib/integrations/centrality';
 import BlockMap from '../../../components/BlockMap';
+import HubIcon from '../../../components/HubIcon';
+import LiverySlashes from '../../../components/LiverySlashes';
 import type { Lecture } from '../../../lib/types';
 
 export function generateStaticParams() {
@@ -27,15 +29,15 @@ function LectureCard({ l, theme }: { l: Lecture; theme: ReturnType<typeof lectur
   return (
     <Link
       href={`/lecture-set/${lectureSetSlug(l.source)}#${l.id}`}
-      className="clay group flex flex-col p-5 transition hover:-translate-y-1"
+      className="clay group flex flex-col p-5 transition hover:border-[var(--accent)]"
     >
       <div className="flex items-center gap-2">
         <span className={`h-2.5 w-2.5 rounded-full ${theme.dot}`} />
-        <span className="text-base font-bold text-slate-900 transition dark:text-white">
+        <span className="text-[15px] font-medium leading-6 text-[var(--ink)] transition group-hover:text-[var(--accent)]">
           {l.title}
         </span>
       </div>
-      <p className="mt-1.5 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">
+      <p className="mt-1.5 line-clamp-2 text-sm leading-6 text-[var(--muted)]">
         {l.highYield[0]?.replace(/\*\*/g, '')}
       </p>
       <div className="mt-3 flex flex-wrap gap-1.5">
@@ -91,36 +93,35 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
     <main className="mx-auto max-w-5xl px-5 py-8">
       <Link
         href="/"
-        className="text-sm text-slate-500 transition hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+        className="text-sm text-[var(--muted)] transition hover:text-[var(--ink)]"
       >
         ← All years &amp; blocks
       </Link>
 
-      <header className="mb-8 mt-4">
-        <div className="livery-stripe mb-4 h-1 w-full rounded-full" />
-        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">
-          <span className="clay-pill px-2 py-0.5">{subject.code}</span>
-          <span className="text-slate-400">Year {subject.year}</span>
+      <header className="mb-8 mt-5">
+        <div className="flex items-center gap-3">
+          <LiverySlashes />
+          <span className="eyebrow">{subject.code} · Year {subject.year}</span>
         </div>
-        <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
           {subject.name}
         </h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
           {sources.length} lecture{sources.length === 1 ? '' : 's'} · {items.length} modules — each lecture
           opens as a whole-lecture scroll.
         </p>
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href={`/flashcards/block/${params.code}`}
-            className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+            className="clay-pill inline-flex min-h-9 items-center gap-1.5 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
           >
-            <span aria-hidden>🗂️</span> Flashcards
+            <HubIcon name="cards" /> Flashcards
           </Link>
           <Link
             href={`/practice/block/${params.code}`}
-            className="clay-pill inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
+            className="clay-pill inline-flex min-h-9 items-center gap-1.5 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
           >
-            <span aria-hidden>📝</span> Practise this block
+            <HubIcon name="practice" /> Practise this block
           </Link>
         </div>
       </header>
@@ -130,11 +131,11 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           <div className="mb-2 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-[var(--ink)]">
                 Block map
               </h2>
             </div>
-            <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">
               how the lectures connect
             </span>
           </div>
@@ -147,15 +148,15 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           <div className="mb-2 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-[#ffcc00]" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-200">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-[var(--ink)]">
                 Keystone concepts
               </h2>
             </div>
-            <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">
               study these first
             </span>
           </div>
-          <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+          <p className="mb-3 text-xs text-[var(--muted)]">
             The most connected modules in this block — the hubs the rest lean on.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
@@ -165,10 +166,10 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
                 href={`/lecture/${k.id}`}
                 className="clay-node clay-surface flex items-center gap-3 px-3 py-2.5 transition hover:-translate-y-0.5"
               >
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ffcc00]/20 text-xs font-black text-[#8a6d00] dark:text-[#ffcc00]">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ffcc00]/20 font-mono text-[11px] font-medium text-[#8a6d00] dark:text-[#ffcc00]">
                   {i + 1}
                 </span>
-                <span className="min-w-0 flex-1 truncate text-sm font-bold text-slate-900 dark:text-white">
+                <span className="min-w-0 flex-1 truncate text-sm font-medium text-[var(--ink)]">
                   {k.title}
                 </span>
                 {k.inbound > 0 ? (
@@ -189,10 +190,10 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         <div key={group.part ?? '_'}>
           {hasParts && group.part ? (
             <div className="mb-5 mt-2 flex items-center gap-3">
-              <span className="clay-pill px-3 py-1 text-sm font-black tracking-tight text-slate-900 dark:text-white">
+              <span className="clay-pill px-3 py-1 text-sm font-semibold tracking-tight text-[var(--ink)]">
                 {group.part}
               </span>
-              <span className="h-px flex-1 bg-slate-200 dark:bg-white/10" />
+              <span className="h-px flex-1 bg-[var(--line)]" />
             </div>
           ) : null}
           {group.sources.map(([source, lects]) => {
@@ -201,7 +202,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
             return (
               <section
                 key={source}
-                className={`mb-9 ${isAdditional ? 'mt-10 border-t border-dashed border-slate-200 pt-8 dark:border-white/10' : ''}`}
+                className={`mb-9 ${isAdditional ? 'mt-10 border-t border-dashed border-[var(--line)] pt-8' : ''}`}
               >
                 <div className={`mb-3 h-1 w-12 rounded-full bg-gradient-to-r ${theme.grad}`} />
                 <Link
@@ -209,7 +210,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
                   className={`group flex items-center gap-2 ${isAdditional ? 'mb-1' : 'mb-4'}`}
                 >
                   <span className={`h-3 w-3 rounded-full ${theme.dot}`} />
-                  <h2 className={`text-base font-black tracking-tight transition ${theme.text}`}>
+                  <h2 className={`text-base font-semibold tracking-tight transition ${theme.text}`}>
                     {isAdditional ? 'Additional Topics' : source}
                   </h2>
                   {isAdditional ? (
@@ -238,7 +239,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
         </div>
       ))}
 
-      <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-12 text-center text-xs text-[var(--muted)]">
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

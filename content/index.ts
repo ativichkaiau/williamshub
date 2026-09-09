@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–V
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–V (complete)
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1605,6 +1605,14 @@ import ghpOsmoticEquilibriumTonicity from './lectures/ghp-osmotic-equilibrium-to
 import ghpProximalTubuleReabsorption from './lectures/ghp-proximal-tubule-reabsorption';
 import ghpRegulationTubularReabsorption from './lectures/ghp-regulation-tubular-reabsorption';
 import ghpRenalAutoregulationTgf from './lectures/ghp-renal-autoregulation-tgf';
+import ghpAcidBaseBuffersRespiratory from './lectures/ghp-acid-base-buffers-respiratory';
+import ghpAdhThirstOsmoreceptorControl from './lectures/ghp-adh-thirst-osmoreceptor-control';
+import ghpCalciumPhosphateVolumeIntegration from './lectures/ghp-calcium-phosphate-volume-integration';
+import ghpCountercurrentUrineConcentration from './lectures/ghp-countercurrent-urine-concentration';
+import ghpDiureticClassesMechanisms from './lectures/ghp-diuretic-classes-mechanisms';
+import ghpPotassiumExcretionRegulation from './lectures/ghp-potassium-excretion-regulation';
+import ghpRenalAcidExcretionDisorders from './lectures/ghp-renal-acid-excretion-disorders';
+import ghpRenalFailureAcuteChronic from './lectures/ghp-renal-failure-acute-chronic';
 
 export * from './curriculum';
 
@@ -2722,6 +2730,14 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAcidBaseBuffersRespiratory,
+  ghpAdhThirstOsmoreceptorControl,
+  ghpCalciumPhosphateVolumeIntegration,
+  ghpCountercurrentUrineConcentration,
+  ghpDiureticClassesMechanisms,
+  ghpPotassiumExcretionRegulation,
+  ghpRenalAcidExcretionDisorders,
+  ghpRenalFailureAcuteChronic,
   ghpBodyFluidCompartmentsMeasurement,
   ghpGfrDeterminantsFiltrationFraction,
   ghpLoopDistalCollectingTransport,

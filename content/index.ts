@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–IV
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–V
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1596,6 +1596,15 @@ import ghpStarlingForcesFiltration from './lectures/ghp-starling-forces-filtrati
 import ghpVascularComplianceVolumeDistribution from './lectures/ghp-vascular-compliance-volume-distribution';
 import ghpVasomotorCentreSympatheticControl from './lectures/ghp-vasomotor-centre-sympathetic-control';
 import ghpVenousPressureBloodReservoir from './lectures/ghp-venous-pressure-blood-reservoir';
+import ghpBodyFluidCompartmentsMeasurement from './lectures/ghp-body-fluid-compartments-measurement';
+import ghpGfrDeterminantsFiltrationFraction from './lectures/ghp-gfr-determinants-filtration-fraction';
+import ghpLoopDistalCollectingTransport from './lectures/ghp-loop-distal-collecting-transport';
+import ghpNephronFiltrationBarrier from './lectures/ghp-nephron-filtration-barrier';
+import ghpOedemaSafetyFactors from './lectures/ghp-oedema-safety-factors';
+import ghpOsmoticEquilibriumTonicity from './lectures/ghp-osmotic-equilibrium-tonicity';
+import ghpProximalTubuleReabsorption from './lectures/ghp-proximal-tubule-reabsorption';
+import ghpRegulationTubularReabsorption from './lectures/ghp-regulation-tubular-reabsorption';
+import ghpRenalAutoregulationTgf from './lectures/ghp-renal-autoregulation-tgf';
 
 export * from './curriculum';
 
@@ -2713,6 +2722,15 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpBodyFluidCompartmentsMeasurement,
+  ghpGfrDeterminantsFiltrationFraction,
+  ghpLoopDistalCollectingTransport,
+  ghpNephronFiltrationBarrier,
+  ghpOedemaSafetyFactors,
+  ghpOsmoticEquilibriumTonicity,
+  ghpProximalTubuleReabsorption,
+  ghpRegulationTubularReabsorption,
+  ghpRenalAutoregulationTgf,
   ghpArterialPulsePressure,
   ghpBaroreceptorChemoreceptorReflexes,
   ghpCapillaryExchangeDiffusion,

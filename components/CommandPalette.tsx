@@ -151,14 +151,14 @@ export default function CommandPalette() {
       {mounted && open
         ? createPortal(
             <div
-              className="fixed inset-0 z-[100] flex items-start justify-center bg-slate-900/40 px-4 pt-[12vh] backdrop-blur-sm"
+              className="modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-slate-900/40 px-4 pt-[12vh] backdrop-blur-sm"
               onClick={() => setOpen(false)}
               role="dialog"
               aria-modal="true"
               aria-label="Search"
             >
               <div
-                className="clay clay-surface w-full max-w-xl overflow-hidden p-0"
+                className="clay clay-surface modal-panel w-full max-w-xl overflow-hidden p-0"
                 onClick={(e) => e.stopPropagation()}
                 onKeyDown={onListKey}
               >
@@ -179,7 +179,10 @@ export default function CommandPalette() {
 
                 <div ref={listRef} className="max-h-[52vh] overflow-y-auto border-t border-black/5 px-2 py-2 dark:border-white/10">
                   {loading && !index ? (
-                    <p className="px-3 py-6 text-center text-sm text-slate-400">Loading index…</p>
+                    <div className="px-3 py-6 text-center">
+                      <span className="livery-slide mx-auto block h-1 w-32 rounded-full" aria-hidden="true" />
+                      <p className="mt-3 text-sm text-slate-400">Loading index…</p>
+                    </div>
                   ) : query.trim() === '' ? (
                     <p className="px-3 py-6 text-center text-sm text-slate-400">
                       Type to search every module, lecture and block.

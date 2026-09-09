@@ -178,14 +178,14 @@ export default function AskAI() {
       {mounted && open
         ? createPortal(
             <div
-              className="fixed inset-0 z-[100] flex items-start justify-center bg-slate-900/40 px-4 pt-[10vh] backdrop-blur-sm"
+              className="modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-slate-900/40 px-4 pt-[10vh] backdrop-blur-sm"
               onClick={() => setOpen(false)}
               role="dialog"
               aria-modal="true"
               aria-label="Ask AI"
             >
               <div
-                className="clay clay-surface flex w-full max-w-2xl flex-col overflow-hidden p-0"
+                className="clay clay-surface modal-panel flex w-full max-w-2xl flex-col overflow-hidden p-0"
                 style={{ maxHeight: '78vh' }}
                 onClick={(e) => e.stopPropagation()}
               >
@@ -235,7 +235,7 @@ export default function AskAI() {
                     </div>
                   ) : (
                     messages.map((m, i) => (
-                      <div key={i} className={m.role === 'user' ? 'flex justify-end' : 'flex justify-start'}>
+                      <div key={i} className={`chat-msg ${m.role === 'user' ? 'flex justify-end' : 'flex justify-start'}`}>
                         <div
                           className={
                             m.role === 'user'

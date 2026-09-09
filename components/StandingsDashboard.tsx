@@ -174,7 +174,13 @@ export default function StandingsDashboard({ subjects }: { subjects: SubjectMeta
       .finally(() => setReady(true));
   }, [subjects]);
 
-  if (!ready) return <p className="py-10 text-center text-sm text-[var(--muted)]">Loading…</p>;
+  if (!ready)
+    return (
+      <div className="py-10 text-center">
+        <span className="livery-slide mx-auto block h-1 w-40 rounded-full" aria-hidden="true" />
+        <p className="mt-3 text-sm text-[var(--muted)]">Loading…</p>
+      </div>
+    );
 
   const noActivity = t.covered === 0 && t.repairs === 0 && t.garage === 0 && rows.every((r) => r.answered === 0);
   if (noActivity) {

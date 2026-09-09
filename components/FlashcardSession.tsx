@@ -174,8 +174,8 @@ export default function FlashcardSession({ cards, title }: { cards: Flashcard[];
 
         {revealed ? (
           <>
-            <span className="h-px w-16 bg-[var(--line)]" />
-            <p className="max-w-xl whitespace-pre-line text-[15px] leading-relaxed text-[var(--ink)]">{card.back}</p>
+            <span className="card-rule h-px w-16 bg-[var(--line)]" />
+            <p className="card-answer max-w-xl whitespace-pre-line text-[15px] leading-relaxed text-[var(--ink)]">{card.back}</p>
           </>
         ) : (
           <span className="text-xs font-medium text-[var(--muted)]">Tap or press space to reveal</span>

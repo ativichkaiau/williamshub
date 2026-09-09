@@ -27,7 +27,11 @@ export default function BookmarkButton({ moduleId }: { moduleId: string }) {
           : 'text-[var(--muted)]'
       }`}
     >
-      <HubIcon name="bookmark" className={ready && starred ? 'fill-current' : ''} />
+      <HubIcon
+        key={ready && starred ? 'on' : 'off'}
+        name="bookmark"
+        className={ready && starred ? 'fill-current bookmark-pop' : ''}
+      />
       <span>{ready && starred ? 'Saved' : 'Save'}</span>
     </button>
   );

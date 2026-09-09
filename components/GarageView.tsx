@@ -47,7 +47,12 @@ export default function GarageView() {
   const noteIds = Object.keys(notes).filter((id) => notes[id]?.trim());
 
   if (!ready) {
-    return <p className="py-10 text-center text-sm text-[var(--muted)]">Loading…</p>;
+    return (
+      <div className="py-10 text-center">
+        <span className="livery-slide mx-auto block h-1 w-40 rounded-full" aria-hidden="true" />
+        <p className="mt-3 text-sm text-[var(--muted)]">Loading…</p>
+      </div>
+    );
   }
 
   if (bookmarks.length === 0 && noteIds.length === 0) {

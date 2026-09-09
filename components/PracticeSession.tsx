@@ -239,8 +239,8 @@ export default function PracticeSession({
             const isPick = o.id === pick;
             let cls = 'clay-node w-full text-left text-sm px-3 py-2 transition ';
             if (!answered) cls += 'clay-surface text-[var(--ink)] hover:border-[var(--accent)] active:translate-y-px';
-            else if (isCorrect) cls += 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/45 dark:text-emerald-100';
-            else if (isPick) cls += 'bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100';
+            else if (isCorrect) cls += 'answer-settle bg-emerald-100 text-emerald-900 dark:bg-emerald-900/45 dark:text-emerald-100';
+            else if (isPick) cls += 'answer-settle bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100';
             else cls += 'clay-surface text-[var(--muted)]';
             return (
               <button key={o.id} type="button" disabled={answered} onClick={() => choose(q, o.id)} className={cls}>

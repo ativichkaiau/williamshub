@@ -32,7 +32,7 @@ export default function ThemeToggle() {
       title={ready && dark ? 'Switch to day mode' : 'Switch to night mode'}
       className="header-tool"
     >
-      <HubIcon name={ready && dark ? 'moon' : 'sun'} />
+      <HubIcon key={ready && dark ? 'moon' : 'sun'} name={ready && dark ? 'moon' : 'sun'} className="theme-icon" />
     </button>
   );
 }

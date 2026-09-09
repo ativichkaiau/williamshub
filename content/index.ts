@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–V complete, VI in progress
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–VII (complete)
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1616,6 +1616,28 @@ import ghpRenalFailureAcuteChronic from './lectures/ghp-renal-failure-acute-chro
 import ghpAnaemiaPolycythaemiaCirculation from './lectures/ghp-anaemia-polycythaemia-circulation';
 import ghpErythropoiesisIronMetabolism from './lectures/ghp-erythropoiesis-iron-metabolism';
 import ghpLeukocytesPhagocytosis from './lectures/ghp-leukocytes-phagocytosis';
+import ghpAnticoagulationBleedingDisorders from './lectures/ghp-anticoagulation-bleeding-disorders';
+import ghpBloodTypesTransfusion from './lectures/ghp-blood-types-transfusion';
+import ghpCellMediatedImmunityAllergy from './lectures/ghp-cell-mediated-immunity-allergy';
+import ghpChemoreceptorControl from './lectures/ghp-chemoreceptor-control';
+import ghpCo2TransportHaldane from './lectures/ghp-co2-transport-haldane';
+import ghpCoagulationCascade from './lectures/ghp-coagulation-cascade';
+import ghpGasDiffusionRespiratoryMembrane from './lectures/ghp-gas-diffusion-respiratory-membrane';
+import ghpHumoralImmunityAntibodies from './lectures/ghp-humoral-immunity-antibodies';
+import ghpInnateAdaptiveOverview from './lectures/ghp-innate-adaptive-overview';
+import ghpLungVolumesDeadSpace from './lectures/ghp-lung-volumes-dead-space';
+import ghpMechanicsOfVentilation from './lectures/ghp-mechanics-of-ventilation';
+import ghpOxygenTherapyArtificialRespiration from './lectures/ghp-oxygen-therapy-artificial-respiration';
+import ghpOxygenTransportHaemoglobin from './lectures/ghp-oxygen-transport-haemoglobin';
+import ghpOxyhaemoglobinCurveShifts from './lectures/ghp-oxyhaemoglobin-curve-shifts';
+import ghpPrimaryHaemostasisPlatelets from './lectures/ghp-primary-haemostasis-platelets';
+import ghpPulmonaryCirculationZones from './lectures/ghp-pulmonary-circulation-zones';
+import ghpPulmonaryOedemaPleuralFluid from './lectures/ghp-pulmonary-oedema-pleural-fluid';
+import ghpRespiratoryCentresRhythm from './lectures/ghp-respiratory-centres-rhythm';
+import ghpRespiratoryInsufficiencyHypoxia from './lectures/ghp-respiratory-insufficiency-hypoxia';
+import ghpSurfactantCompliance from './lectures/ghp-surfactant-compliance';
+import ghpTransplantationRejection from './lectures/ghp-transplantation-rejection';
+import ghpVentilationPerfusionMatching from './lectures/ghp-ventilation-perfusion-matching';
 
 export * from './curriculum';
 
@@ -2733,6 +2755,28 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAnticoagulationBleedingDisorders,
+  ghpBloodTypesTransfusion,
+  ghpCellMediatedImmunityAllergy,
+  ghpChemoreceptorControl,
+  ghpCo2TransportHaldane,
+  ghpCoagulationCascade,
+  ghpGasDiffusionRespiratoryMembrane,
+  ghpHumoralImmunityAntibodies,
+  ghpInnateAdaptiveOverview,
+  ghpLungVolumesDeadSpace,
+  ghpMechanicsOfVentilation,
+  ghpOxygenTherapyArtificialRespiration,
+  ghpOxygenTransportHaemoglobin,
+  ghpOxyhaemoglobinCurveShifts,
+  ghpPrimaryHaemostasisPlatelets,
+  ghpPulmonaryCirculationZones,
+  ghpPulmonaryOedemaPleuralFluid,
+  ghpRespiratoryCentresRhythm,
+  ghpRespiratoryInsufficiencyHypoxia,
+  ghpSurfactantCompliance,
+  ghpTransplantationRejection,
+  ghpVentilationPerfusionMatching,
   ghpAnaemiaPolycythaemiaCirculation,
   ghpErythropoiesisIronMetabolism,
   ghpLeukocytesPhagocytosis,

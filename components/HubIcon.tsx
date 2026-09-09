@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-export type HubIconName = 'cards' | 'practice' | 'progress' | 'bookmark' | 'repair' | 'search' | 'sun' | 'moon' | 'sparkles' | 'arrow' | 'book';
+export type HubIconName = 'cards' | 'practice' | 'progress' | 'bookmark' | 'repair' | 'search' | 'sun' | 'moon' | 'sparkles' | 'arrow' | 'book' | 'pause' | 'play';
 
 const paths: Record<HubIconName, ReactNode> = {
   cards: <><rect x="7" y="7" width="13" height="14" rx="2" /><path d="M16 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2" /></>,
@@ -14,6 +14,8 @@ const paths: Record<HubIconName, ReactNode> = {
   sparkles: <><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4M18 4h4" /></>,
   arrow: <path d="M4 12h16m-6-6 6 6-6 6" />,
   book: <><path d="M12 5v16M12 5C9 3 5 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-3-1-7-1-10 1Z" /></>,
+  pause: <><path d="M8 5v14M16 5v14" strokeWidth="3" /></>,
+  play: <path d="m8 4 12 8-12 8Z" />,
 };
 
 export default function HubIcon({ name, className = '' }: { name: HubIconName; className?: string }) {

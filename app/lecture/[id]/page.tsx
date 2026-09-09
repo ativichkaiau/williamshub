@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { notFound } from 'next/navigation';
 import { lectures, lectureById, lectureSetSlug, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
@@ -65,7 +66,7 @@ export default function LecturePage({ params }: { params: { id: string } }) {
         ) : null}
       </nav>
 
-      <header className="mb-6 mt-4">
+      <header className="mb-6 mt-4" data-reveal>
         <div className={`mb-4 h-1 w-full rounded-full bg-gradient-to-r ${theme.grad}`} />
         <Link
           href={`/lecture-set/${lectureSetSlug(l.source)}`}
@@ -102,17 +103,25 @@ export default function LecturePage({ params }: { params: { id: string } }) {
         </div>
       </header>
 
-      <ConceptModeController lecture={l} onePager={onePager}>
-        <LectureBody lecture={l} />
-      </ConceptModeController>
+      <div data-reveal style={{ '--reveal-i': 1 } as CSSProperties}>
+        <ConceptModeController lecture={l} onePager={onePager}>
+          <LectureBody lecture={l} />
+        </ConceptModeController>
+      </div>
 
-      <LearningPath view={learningPath} />
+      <div data-reveal style={{ '--reveal-i': 2 } as CSSProperties}>
+        <LearningPath view={learningPath} />
+      </div>
 
-      <ActiveIntegrationPanel moduleId={l.id} />
+      <div data-reveal style={{ '--reveal-i': 3 } as CSSProperties}>
+        <ActiveIntegrationPanel moduleId={l.id} />
+      </div>
 
-      <ModuleNotes moduleId={l.id} />
+      <div data-reveal style={{ '--reveal-i': 4 } as CSSProperties}>
+        <ModuleNotes moduleId={l.id} />
+      </div>
 
-      <footer className="mt-10 text-center text-xs text-[var(--muted)]">
+      <footer className="mt-10 text-center text-xs text-[var(--muted)]" data-reveal>
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

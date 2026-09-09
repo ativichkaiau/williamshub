@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 import WilliamsHubLogo from './WilliamsHubLogo';
 import CommandPalette from './CommandPalette';
+import MotionToggle from './MotionToggle';
 import HubIcon, { type HubIconName } from './HubIcon';
 
 const NAV: { href: string; icon: HubIconName; label: string }[] = [
@@ -21,8 +22,8 @@ export default function Header() {
   return (
     <header className="site-header sticky top-0 z-30">
       {/* Timing stripe — fills as the page scrolls (components/LiveryMotion.tsx) */}
-      <div className="livery-progress h-0.5 w-full" aria-hidden="true" />
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 px-5 py-3 md:flex-nowrap">
+      <div className="livery-progress h-1 w-full" aria-hidden="true" />
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-2 px-5 py-3 sm:gap-x-4 md:flex-nowrap">
         <Link href="/" aria-label="WilliamsHub home" className="shrink-0 rounded-sm">
           <WilliamsHubLogo />
         </Link>
@@ -41,8 +42,9 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-1 md:border-l md:border-[var(--line)] md:pl-3">
+        <div className="flex items-center sm:gap-1 md:border-l md:border-[var(--line)] md:pl-3">
           <CommandPalette />
+          <MotionToggle />
           <ThemeToggle />
         </div>
       </div>

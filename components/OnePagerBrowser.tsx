@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import Link from 'next/link';
 import { onePagerGroups, onePagerYears } from '../content/onepagers';
 
@@ -39,9 +39,9 @@ export default function OnePagerBrowser({
       </div>
 
       {/* Module cards */}
-      <div className="grid gap-3 sm:grid-cols-2">
-        {groups.map((g) => (
-          <div key={`${g.year}-${g.term}`} className="clay flex flex-col p-5">
+      <div key={active} className="grid-stagger grid gap-3 sm:grid-cols-2">
+        {groups.map((g, i) => (
+          <div key={`${g.year}-${g.term}`} className="clay flex flex-col p-5" style={{ '--i': i } as CSSProperties}>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="eyebrow">
                 {YEAR_LABEL[g.year] ?? `Year ${g.year}`} · {g.term}

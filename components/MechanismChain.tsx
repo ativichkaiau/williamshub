@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import type { CSSProperties } from 'react';
 import type { MechanismChain as Chain, MechanismStep, Emphasis } from '../lib/types';
 
 // Claymorphic mechanism diagram. Ordered spine left→right with arrows, then
@@ -13,14 +14,17 @@ const tone: Record<Emphasis, string> = {
   danger: 'bg-rose-100 text-rose-900 dark:bg-rose-900/45 dark:text-rose-100',
 };
 
-function Node({ step }: { step: MechanismStep }) {
+function Node({ step, index }: { step: MechanismStep; index: number }) {
   const [open, setOpen] = useState(false);
   const e = step.emphasis ?? 'normal';
   return (
     <button
       type="button"
       onClick={() => step.detail && setOpen((v) => !v)}
-      className={`clay-node relative px-3 py-2 text-sm font-medium transition ${tone[e]} ${
+      aria-expanded={step.detail ? open : undefined}
+      data-emphasis={e}
+      style={{ '--i': index } as CSSProperties}
+      className={`mechanism-node clay-node relative px-3 py-2 text-sm font-medium transition ${tone[e]} ${
         step.detail ? 'cursor-pointer active:translate-y-px' : 'cursor-default'
       }`}
     >
@@ -40,7 +44,7 @@ function Node({ step }: { step: MechanismStep }) {
 
 function Arrow() {
   return (
-    <span className="select-none text-slate-400 dark:text-slate-500" aria-hidden>
+    <span className="mechanism-arrow select-none text-slate-400 dark:text-slate-500" aria-hidden>
       →
     </span>
   );
@@ -57,10 +61,10 @@ export default function MechanismChain({ chain }: { chain: Chain }) {
       </div>
 
       {/* Spine */}
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="mechanism-spine flex flex-wrap items-center gap-2">
         {chain.steps.map((s, i) => (
           <span key={s.id} className="flex items-center gap-2">
-            <Node step={s} />
+            <Node step={s} index={i} />
             {i < chain.steps.length - 1 && <Arrow />}
           </span>
         ))}
@@ -70,7 +74,7 @@ export default function MechanismChain({ chain }: { chain: Chain }) {
       {chain.branches?.map((b, bi) => (
         <div
           key={bi}
-          className="mt-4 border-l-2 border-dashed border-slate-300 pl-4 dark:border-slate-600"
+          className="mechanism-branch mt-4 border-l-2 border-dashed border-slate-300 pl-4 dark:border-slate-600"
         >
           {b.title && (
             <div className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-400 dark:text-slate-500">
@@ -80,7 +84,7 @@ export default function MechanismChain({ chain }: { chain: Chain }) {
           <div className="flex flex-wrap items-center gap-2">
             {b.steps.map((s, i) => (
               <span key={s.id} className="flex items-center gap-2">
-                <Node step={s} />
+                <Node step={s} index={i} />
                 {i < b.steps.length - 1 && <Arrow />}
               </span>
             ))}

@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { MOTION_CHANGE_EVENT, motionEnabled } from '../lib/motion';
 
 // Drives the livery motion defined in globals.css:
 //   · --scroll-progress (0→1) feeds the header timing stripe and the
@@ -9,16 +10,28 @@ import { usePathname } from 'next/navigation';
 //   · [data-reveal] sections get data-revealed as they enter the viewport,
 //     once each — the CSS handles the actual transition.
 //
-// Everything is gated on the .motion class, which layout.tsx sets pre-paint
-// only when the reader hasn't asked for reduced motion. If it's absent this
-// component does nothing at all and the page renders static.
+// Decorative motion follows the system setting and the user's pause control.
+// Reading progress and reveal bookkeeping stay active in either mode.
 
 export default function LiveryMotion() {
   const pathname = usePathname();
 
   useEffect(() => {
     const root = document.documentElement;
-    if (!root.classList.contains('motion')) return;
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const syncMotion = (event?: Event) => {
+      const requested = (event as CustomEvent<{ enabled: boolean }> | undefined)?.detail?.enabled;
+      const enabled = !preference.matches && (requested ?? motionEnabled());
+      root.classList.toggle('motion', enabled);
+      root.toggleAttribute('data-motion-paused', !enabled);
+    };
+    syncMotion();
+    preference.addEventListener('change', syncMotion);
+    window.addEventListener(MOTION_CHANGE_EVENT, syncMotion);
+    const cleanPreferences = () => {
+      preference.removeEventListener('change', syncMotion);
+      window.removeEventListener(MOTION_CHANGE_EVENT, syncMotion);
+    };
 
     // ── Lap progress ──────────────────────────────────────────────────
     let frame = 0;
@@ -36,12 +49,10 @@ export default function LiveryMotion() {
     window.addEventListener('resize', onScroll);
 
     // ── Reveal on entry ───────────────────────────────────────────────
-    // Drop the gate rather than transition to visible: wherever the reveal
-    // fails, the rendering steps are starved, so a transition would never
-    // advance either. Removing .motion stops the hiding rules matching at all,
-    // which paints the content immediately and needs no frames.
+    // If an observer is throttled, bypass only the entrance choreography.
+    // This leaves the content visible without permanently disabling motion.
     const revealAll = () => {
-      root.classList.remove('motion');
+      root.classList.add('reveal-fallback');
       for (const el of document.querySelectorAll<HTMLElement>('[data-reveal]:not([data-revealed])')) {
         el.dataset.revealed = '';
       }
@@ -52,6 +63,7 @@ export default function LiveryMotion() {
     if (typeof IntersectionObserver === 'undefined') {
       revealAll();
       return () => {
+        cleanPreferences();
         window.removeEventListener('scroll', onScroll);
         window.removeEventListener('resize', onScroll);
         if (frame) cancelAnimationFrame(frame);
@@ -89,20 +101,29 @@ export default function LiveryMotion() {
     // Safety net. Observer callbacks are delivered on the rendering steps, so
     // anywhere those are starved (throttled webviews, headless capture) they
     // may never arrive — and reveal styling would leave the page permanently
-    // blank. If something is on screen and *nothing* has revealed, take that
-    // as proof the observer isn't delivering and just show everything. On a
-    // healthy browser the top section reveals in ~50ms, so this never fires.
+    // blank. If something is on screen and *nothing* has revealed, or a known
+    // nested choreography is still at its hidden first frame, take that as
+    // proof the observer/animation timeline isn't delivering and show all
+    // content. On a healthy browser the top section reveals in ~50ms and the
+    // nested choreography settles before this check runs, so it never fires.
     const safety = window.setTimeout(() => {
-      if (document.querySelector('[data-reveal][data-revealed]')) return;
       const pending = [...document.querySelectorAll<HTMLElement>('[data-reveal]:not([data-revealed])')];
       const onScreen = pending.some((el) => {
         const r = el.getBoundingClientRect();
         return r.top < window.innerHeight && r.bottom > 0;
       });
-      if (onScreen) revealAll();
+      const choreography = document.querySelectorAll<HTMLElement>(
+        '.hero-title, .library-stats > div, .mechanism-preview > li, .grid-stagger > *, .lecture-body > *',
+      );
+      const nestedHidden = [...choreography].some((el) => {
+        if (!el.closest('[data-reveal][data-revealed]')) return false;
+        return getComputedStyle(el).opacity === '0';
+      });
+      if (onScreen || nestedHidden) revealAll();
     }, 1200);
 
     return () => {
+      cleanPreferences();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
       if (frame) cancelAnimationFrame(frame);

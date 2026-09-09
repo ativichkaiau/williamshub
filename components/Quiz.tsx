@@ -14,7 +14,7 @@ function QuizItem({ q, moduleId }: { q: QuizQuestion; moduleId?: string }) {
   };
 
   return (
-    <div className="clay-inset clay-surface p-4">
+    <div className="quiz-item clay-inset clay-surface p-4">
       <p className="text-sm font-medium text-slate-900 dark:text-white">{q.stem}</p>
       <div className="mt-3 space-y-2">
         {q.options.map((o) => {
@@ -63,7 +63,7 @@ function QuizItem({ q, moduleId }: { q: QuizQuestion; moduleId?: string }) {
 
 export default function Quiz({ questions, moduleId }: { questions: QuizQuestion[]; moduleId?: string }) {
   return (
-    <div className="space-y-3">
+    <div className="quiz-list space-y-3">
       {questions.map((q) => (
         <QuizItem key={q.id} q={q} moduleId={moduleId} />
       ))}

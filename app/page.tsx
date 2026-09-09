@@ -6,6 +6,7 @@ import BlockBrowser from '../components/BlockBrowser';
 import { onePagerGroups } from '../content/onepagers';
 import HubIcon from '../components/HubIcon';
 import LiverySlashes from '../components/LiverySlashes';
+import AnimatedCount from '../components/AnimatedCount';
 
 export default function Home() {
   const years: YearData[] = curriculum.map((y) => {
@@ -50,6 +51,7 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-5 pb-24 pt-8 sm:pt-10">
       <section className="home-hero" aria-labelledby="hero-title">
+        <div className="hero-traces" aria-hidden="true"><span /><span /><span /></div>
         <div className="hero-stripes" aria-hidden="true"><span /><span /><span /></div>
         <div className="flex items-center gap-3">
           <LiverySlashes />
@@ -83,7 +85,7 @@ export default function Home() {
               ].map((stat) => (
                 <div key={stat.label}>
                   <dt className="order-2">{stat.label}</dt>
-                  <dd className="order-1">{stat.value.toLocaleString('en-US')}</dd>
+                  <dd className="order-1"><AnimatedCount value={stat.value} /></dd>
                 </div>
               ))}
             </dl>

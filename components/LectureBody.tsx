@@ -25,7 +25,7 @@ function Card({ children }: { children: React.ReactNode }) {
 
 export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
   return (
-    <div className="space-y-5">
+    <div className="lecture-body space-y-5">
       {/* High-yield (recall-first) */}
       <Card>
         <Label color={sectionColors.highYield}>High-yield summary</Label>

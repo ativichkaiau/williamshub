@@ -44,7 +44,7 @@ export default function BlockBrowser({
   return (
     <div>
       {/* Segmented toggle */}
-      <div className="library-modes mb-4" role="group" aria-label="Library source">
+      <div className="library-modes mb-4" role="group" aria-label="Library source" data-mode={mode}>
         {options.map((o) => {
           const isActive = mode === o.key;
           return (

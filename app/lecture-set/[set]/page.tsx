@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { notFound } from 'next/navigation';
 import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
@@ -55,7 +56,7 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
       </nav>
 
       {/* Header */}
-      <header className="mb-6 mt-4">
+      <header className="mb-6 mt-4" data-reveal>
         <div className={`mb-4 h-1.5 w-full rounded-full bg-gradient-to-r ${theme.grad}`} />
         <div className="flex items-center gap-2.5">
           <span className={`h-3.5 w-3.5 rounded-full ${theme.dot}`} />
@@ -89,8 +90,8 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
 
       {/* Each topic in full */}
       <div className="space-y-12">
-        {set.items.map((l) => (
-          <section key={l.id} id={l.id} className="scroll-mt-24">
+        {set.items.map((l, i) => (
+          <section key={l.id} id={l.id} className="scroll-mt-24" data-reveal style={{ '--reveal-i': i } as CSSProperties}>
             <div className={`mb-3 h-1 w-16 rounded-full bg-gradient-to-r ${theme.grad}`} />
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
               <h2 className="flex items-center gap-2 text-2xl font-black tracking-tight text-slate-900 dark:text-white">
@@ -112,7 +113,7 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
         ))}
       </div>
 
-      <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-12 text-center text-xs text-slate-400 dark:text-slate-500" data-reveal>
         WilliamsHub · M-8 · a VESTRIPPN3.0 satellite
       </footer>
     </main>

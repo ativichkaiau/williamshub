@@ -109,6 +109,9 @@ body {
     background: repeating-linear-gradient(-45deg, var(--stripe-ink) 0 1px, transparent 1px 7px);
     opacity: 0.22;
   }
+  .motion .page-decoration::before {
+    animation: frame-breathe 9s ease-in-out infinite;
+  }
 
   .site-header {
     border-bottom: 1px solid var(--line);
@@ -116,6 +119,7 @@ body {
     backdrop-filter: blur(16px);
   }
   .header-link {
+    position: relative;
     display: inline-flex;
     min-height: 40px;
     align-items: center;
@@ -228,6 +232,8 @@ body {
   }
   .hero-title > span { color: var(--accent); }
   .primary-action {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     min-height: 44px;
     align-items: center;
@@ -279,6 +285,19 @@ body {
     width: 1px;
     background: var(--line);
   }
+  .mechanism-preview > li > span:first-child {
+    position: relative;
+    z-index: 0;
+  }
+  .mechanism-preview > li > span:first-child::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    z-index: -1;
+    border: 1px solid var(--accent);
+    border-radius: inherit;
+    opacity: 0;
+  }
   .library-stats {
     display: flex;
     flex-wrap: wrap;
@@ -290,7 +309,10 @@ body {
   .library-stats dd { color: var(--ink); font-size: 21px; font-weight: 500; font-variant-numeric: tabular-nums; }
 
   .library-modes {
-    display: inline-flex;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 100%;
     gap: 4px;
     padding: 4px;
@@ -298,7 +320,21 @@ body {
     border-radius: 8px;
     background: var(--surface-muted);
   }
+  .library-modes::before {
+    content: "";
+    position: absolute;
+    inset: 4px auto 4px 4px;
+    width: calc((100% - 12px) / 2);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--clay-surface);
+    transition: transform 420ms cubic-bezier(0.22, 1.3, 0.36, 1);
+  }
+  .library-modes[data-mode="onepager"]::before {
+    transform: translateX(calc(100% + 4px));
+  }
   .library-mode {
+    position: relative;
     display: inline-flex;
     min-height: 40px;
     align-items: center;
@@ -313,8 +349,6 @@ body {
     transition: color 150ms, background-color 150ms;
   }
   .library-mode[aria-pressed="true"] {
-    border-color: var(--line);
-    background: var(--clay-surface);
     color: var(--ink);
   }
   .library-mode:hover { color: var(--accent); }
@@ -370,6 +404,7 @@ body {
     .page-decoration { display: none; }
   }
   @media (max-width: 639px) {
+    .header-tool { min-width: 36px; }
     .hero-stripes { right: 22px; top: -44px; height: 94px; gap: 5px; }
     .hero-stripes > span:nth-child(1) { width: 23px; }
     .hero-stripes > span:nth-child(2),
@@ -507,29 +542,36 @@ body {
   .motion [data-reveal][data-revealed] .section-rule::after {
     transform: scaleX(1);
     transition: transform 760ms cubic-bezier(0.16, 1, 0.3, 1) 180ms;
+    background: linear-gradient(90deg, var(--line), var(--accent), var(--line));
+    background-size: 220% 100%;
+    animation: rule-scan 8s linear 900ms infinite;
   }
 
   /* Card grids stagger on mount, so they re-run when a tab swaps the
      list out — no observer involved. */
   .motion .grid-stagger > * {
-    animation: livery-rise 560ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
-    animation-delay: calc(var(--i, 0) * 45ms);
+    animation: card-arrive 660ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation-delay: min(calc(var(--i, 0) * 55ms), 440ms);
   }
 
   /* The hero flash: navy, then red, then yellow, sweeping in from the right. */
   .motion .hero-stripes > span {
-    animation: livery-sweep 900ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation:
+      livery-sweep 900ms cubic-bezier(0.16, 1, 0.3, 1) backwards,
+      stripe-float 5s ease-in-out infinite;
   }
-  .motion .hero-stripes > span:nth-child(1) { animation-delay: 90ms; }
-  .motion .hero-stripes > span:nth-child(2) { animation-delay: 180ms; }
-  .motion .hero-stripes > span:nth-child(3) { animation-delay: 260ms; }
+  .motion .hero-stripes > span:nth-child(1) { animation-delay: 90ms, 900ms; }
+  .motion .hero-stripes > span:nth-child(2) { animation-delay: 180ms, 1200ms; }
+  .motion .hero-stripes > span:nth-child(3) { animation-delay: 260ms, 1500ms; }
 
   .motion .livery-slashes > span {
-    animation: livery-slash-in 520ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation:
+      livery-slash-in 520ms cubic-bezier(0.16, 1, 0.3, 1) backwards,
+      slash-wave 4.5s ease-in-out infinite;
   }
-  .motion .livery-slashes > span:nth-child(1) { animation-delay: 40ms; }
-  .motion .livery-slashes > span:nth-child(2) { animation-delay: 110ms; }
-  .motion .livery-slashes > span:nth-child(3) { animation-delay: 180ms; }
+  .motion .livery-slashes > span:nth-child(1) { animation-delay: 40ms, 1500ms; }
+  .motion .livery-slashes > span:nth-child(2) { animation-delay: 110ms, 1660ms; }
+  .motion .livery-slashes > span:nth-child(3) { animation-delay: 180ms, 1820ms; }
 
   /* The edge hatch drifts against the scroll. */
   .motion .page-decoration::after {
@@ -547,6 +589,20 @@ body {
     opacity: 0.55;
     background-position: 14px 0;
   }
+  .subject-card::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -1px;
+    left: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--stripe-ink), var(--wm-red), var(--wm-yellow));
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .motion a.subject-card:hover::after,
+  .motion a.subject-card:focus-visible::after { transform: scaleX(1); }
 
   /* ── Static entrance choreography ─────────────────────────────────
      Runs once, on load: the top bar assembling itself, the headline
@@ -595,6 +651,9 @@ body {
   .motion [data-reveal][data-revealed] .library-stats > div:nth-child(1) { transition-delay: 380ms; }
   .motion [data-reveal][data-revealed] .library-stats > div:nth-child(2) { transition-delay: 440ms; }
   .motion [data-reveal][data-revealed] .library-stats > div:nth-child(3) { transition-delay: 500ms; }
+  .motion [data-reveal][data-revealed] .library-stats dd {
+    animation: count-settle 760ms cubic-bezier(0.16, 1, 0.3, 1) 360ms backwards;
+  }
 
   /* Featured module: the corner flash draws, then the mechanism lands. */
   .motion [data-reveal].featured-module::before {
@@ -618,11 +677,20 @@ body {
   .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(1) { transition-delay: 260ms; }
   .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(2) { transition-delay: 320ms; }
   .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(3) { transition-delay: 380ms; }
+  .motion [data-reveal][data-revealed] .mechanism-preview > li > span:first-child::after {
+    animation: node-pulse 1.1s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+  .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(1) > span:first-child::after { animation-delay: 420ms; }
+  .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(2) > span:first-child::after { animation-delay: 500ms; }
+  .motion [data-reveal][data-revealed] .mechanism-preview > li:nth-child(3) > span:first-child::after { animation-delay: 580ms; }
 
   /* A page bar / modal stripe lays itself down as the surface arrives. */
   .motion .livery-stripe {
     transform-origin: left center;
-    animation: livery-lay 560ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    background-size: 140% 100%;
+    animation:
+      livery-lay 560ms cubic-bezier(0.16, 1, 0.3, 1) backwards,
+      stripe-shift 8s linear 560ms infinite;
   }
 
   /* The active year underline redraws itself each time it moves. */
@@ -682,6 +750,273 @@ body {
   .motion .chat-msg {
     animation: livery-rise 340ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
   }
+
+  /* Lecture sections cascade in after their shell arrives. */
+  .motion .lecture-body > * {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  .motion [data-reveal][data-revealed] .lecture-body > * {
+    animation: body-section-in 560ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(2) { animation-delay: 70ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(3) { animation-delay: 140ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(4) { animation-delay: 210ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(5) { animation-delay: 280ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(6) { animation-delay: 350ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(7) { animation-delay: 420ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(8) { animation-delay: 490ms; }
+  .motion [data-reveal][data-revealed] .lecture-body > *:nth-child(9) { animation-delay: 560ms; }
+
+  /* Mechanism chains read like a live circuit: nodes settle in order and the
+     arrows keep a restrained pulse so the direction stays legible. */
+  .motion [data-reveal][data-revealed] .mechanism-node {
+    animation: mechanism-node-in 480ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation-delay: min(calc(var(--i, 0) * 55ms), 330ms);
+  }
+  .motion .mechanism-node {
+    transition-property: border-color, box-shadow, translate, scale;
+    transition-duration: 220ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .motion .mechanism-node:hover,
+  .motion .mechanism-node:focus-visible,
+  .motion .mechanism-node[aria-expanded="true"] {
+    translate: 0 -2px;
+    box-shadow: 0 8px 18px -14px color-mix(in srgb, var(--accent) 50%, transparent);
+  }
+  .motion .mechanism-arrow {
+    animation: arrow-pulse 3.6s ease-in-out infinite;
+  }
+  .motion .quiz-list .quiz-item {
+    animation: body-section-in 480ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+
+  /* Ambient livery keeps moving after the entrance has finished. */
+  .hero-traces {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-traces > span {
+    position: absolute;
+    left: -35%;
+    width: 28%;
+    height: 1px;
+    opacity: 0;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+  .hero-traces > span:nth-child(1) { top: 34px; }
+  .hero-traces > span:nth-child(2) { top: 54%; }
+  .hero-traces > span:nth-child(3) { bottom: 12px; }
+  .motion .hero-traces > span { animation: track-pass 8s linear infinite; }
+  .motion .hero-traces > span:nth-child(2) { animation-delay: 2.5s; }
+  .motion .hero-traces > span:nth-child(3) { animation-delay: 5s; }
+
+  .motion .livery-progress::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 1;
+    width: 16%;
+    background: linear-gradient(90deg, transparent, var(--stripe-ink) 45%, var(--wm-red) 75%, var(--wm-yellow));
+    animation: timing-pass 6s ease-in-out infinite;
+  }
+  .motion .page-decoration::after {
+    animation: hatch-drift 3s linear infinite;
+  }
+  .motion .featured-module::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 30%;
+    height: 2px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, var(--accent), var(--wm-red), transparent);
+    animation: edge-pass 5s ease-in-out infinite;
+  }
+
+  .motion :is(.primary-action, .clay-pill, .header-tool, .header-link, .library-mode, .subject-card, a.clay, a.clay-node) {
+    transition-property: color, background-color, border-color, box-shadow, translate, scale;
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .motion :is(.primary-action, button.clay-pill, a.clay-pill, .header-tool, .library-mode):active:not(:disabled) {
+    scale: 0.96;
+    translate: 0 1px;
+  }
+  .motion .primary-action::after {
+    content: "";
+    position: absolute;
+    inset: -50% auto -50% -60%;
+    width: 35%;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 24%), transparent);
+    transform: skewX(-20deg);
+    animation: action-sheen 6.5s ease-in-out infinite;
+  }
+  .header-link::after {
+    content: "";
+    position: absolute;
+    inset: auto 10px 3px;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .header-link[aria-current="page"]::after { transform: scaleX(1); }
+  .motion .library-mode[aria-pressed="true"] svg {
+    animation: icon-settle 420ms cubic-bezier(0.22, 1.3, 0.36, 1);
+  }
+  .motion .year-tab[aria-pressed="true"] {
+    text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+  .motion .tutor-trigger > svg {
+    animation: tutor-twinkle 6s ease-in-out 2s infinite;
+  }
+  .motion .tutor-trigger {
+    animation: tutor-float 7s ease-in-out 1.8s infinite;
+  }
+  .motion .clay-inset:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+    transition: border-color 240ms ease, box-shadow 240ms ease;
+  }
+  .motion-toggle:disabled { opacity: 0.45; }
+
+  @media (hover: hover) and (pointer: fine) {
+    .motion :is(a.subject-card, a.clay, a.clay-node):hover {
+      translate: 0 -5px;
+      box-shadow: 0 12px 26px -14px color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    .motion :is(.primary-action, a.clay-pill, button.clay-pill):hover:not(:disabled) { translate: 0 -3px; }
+    .motion .header-link:hover::after { transform: scaleX(1); }
+    .motion .header-tool:hover:not(:disabled) { translate: 0 -2px; }
+    .motion .header-tool > svg { transition: rotate 300ms ease; }
+    .motion .header-tool:hover:not(:disabled) > svg { rotate: -12deg; }
+    .motion a.subject-card:hover .subject-card-mark { animation: hatch-drift 1.2s linear infinite; }
+  }
+
+  /* A slow observer must never hide text, including nested choreography. */
+  .motion.reveal-fallback [data-reveal],
+  .motion.reveal-fallback [data-reveal] :is(.hero-title, .library-stats > div, .mechanism-preview > li, .lecture-body > *) {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .motion.reveal-fallback [data-reveal] :is(.mechanism-node, .quiz-item) {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  .motion.reveal-fallback [data-reveal] .section-rule::after { transform: none !important; }
+}
+
+@keyframes stripe-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 20px; }
+}
+
+@keyframes slash-wave {
+  0%, 65%, 100% { translate: 0 0; scale: 1 1; }
+  78% { translate: 0 -4px; scale: 1 1.18; }
+  90% { translate: 0 1px; }
+}
+
+@keyframes track-pass {
+  0% { transform: translateX(0); opacity: 0; }
+  10%, 60% { opacity: 0.3; }
+  85%, 100% { transform: translateX(600%); opacity: 0; }
+}
+
+@keyframes timing-pass {
+  0% { transform: translateX(-110%); opacity: 0; }
+  8%, 70% { opacity: 1; }
+  90%, 100% { transform: translateX(725%); opacity: 0; }
+}
+
+@keyframes hatch-drift {
+  to { background-position: 20px 0; }
+}
+
+@keyframes edge-pass {
+  0%, 12% { transform: translateX(-110%); opacity: 0; }
+  25%, 70% { opacity: 1; }
+  85%, 100% { transform: translateX(440%); opacity: 0; }
+}
+
+@keyframes action-sheen {
+  0%, 55% { translate: 0 0; }
+  85%, 100% { translate: 520% 0; }
+}
+
+@keyframes card-arrive {
+  from { opacity: 0; transform: translateY(26px) scale(0.975); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes icon-settle {
+  0% { transform: translateY(4px) scale(0.8); }
+  65% { transform: translateY(-2px) scale(1.08); }
+  100% { transform: none; }
+}
+
+@keyframes tutor-twinkle {
+  0%, 65%, 100% { rotate: 0deg; scale: 1; }
+  76% { rotate: 16deg; scale: 1.18; }
+  87% { rotate: -8deg; scale: 0.95; }
+}
+
+@keyframes frame-breathe {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes node-pulse {
+  0% { opacity: 0; transform: scale(0.65); }
+  38% { opacity: 0.65; transform: scale(1.15); }
+  100% { opacity: 0; transform: scale(1.45); }
+}
+
+@keyframes stripe-shift {
+  from { background-position: 0 0; }
+  to { background-position: 40% 0; }
+}
+
+@keyframes rule-scan {
+  from { background-position: 180% 0; }
+  to { background-position: -20% 0; }
+}
+
+@keyframes count-settle {
+  0% { opacity: 0; transform: translateY(7px) scale(0.86); }
+  68% { opacity: 1; transform: translateY(-1px) scale(1.04); }
+  100% { opacity: 1; transform: none; }
+}
+
+@keyframes tutor-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+
+@keyframes body-section-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes mechanism-node-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  70% { opacity: 1; transform: translateY(-1px) scale(1.01); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes arrow-pulse {
+  0%, 62%, 100% { opacity: 0.45; translate: 0 0; }
+  74% { opacity: 0.95; translate: 2px 0; }
+  86% { opacity: 0.55; translate: 0 0; }
 }
 
 @keyframes livery-slide {
@@ -803,6 +1138,14 @@ body {
 }
 
 /* Respect reduced-motion — freeze every livery animation + smooth scroll. */
+html[data-motion-paused] { scroll-behavior: auto; }
+[data-motion-paused] *,
+[data-motion-paused] *::before,
+[data-motion-paused] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

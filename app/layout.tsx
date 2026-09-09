@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 // livery motion. Gating .motion here (rather than in CSS) means that with JS
 // off — or with reduced motion asked for — the reveal styles never apply and
 // every section renders visible and static.
-const themeScript = `(function(){try{var t=localStorage.getItem('wh-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches)document.documentElement.classList.add('motion');}catch(e){}})();`;
+const themeScript = `(function(){try{var t=localStorage.getItem('wh-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');if(window.matchMedia('(prefers-reduced-motion: no-preference)').matches&&localStorage.getItem('wh-motion')!=='paused')document.documentElement.classList.add('motion');else document.documentElement.setAttribute('data-motion-paused','');}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

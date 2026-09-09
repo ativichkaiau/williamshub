@@ -1533,6 +1533,42 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–III
+import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
+import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
+import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
+import ghpCardiacMuscleActionPotential from './lectures/ghp-cardiac-muscle-action-potential';
+import ghpCellCycleMitosisApoptosis from './lectures/ghp-cell-cycle-mitosis-apoptosis';
+import ghpCellMotilityCilia from './lectures/ghp-cell-motility-cilia';
+import ghpCellOrganellesFunctions from './lectures/ghp-cell-organelles-functions';
+import ghpConductionSystemAutonomicControl from './lectures/ghp-conduction-system-autonomic-control';
+import ghpEcgInjuryCurrent from './lectures/ghp-ecg-injury-current';
+import ghpEcgLeadsRecording from './lectures/ghp-ecg-leads-recording';
+import ghpEndocytosisLysosomalDigestion from './lectures/ghp-endocytosis-lysosomal-digestion';
+import ghpExcitationContractionCouplingSkeletal from './lectures/ghp-excitation-contraction-coupling-skeletal';
+import ghpFibrillationReentry from './lectures/ghp-fibrillation-reentry';
+import ghpFrankStarlingMechanism from './lectures/ghp-frank-starling-mechanism';
+import ghpHomeostasisInternalEnvironment from './lectures/ghp-homeostasis-internal-environment';
+import ghpLengthTensionLoadVelocity from './lectures/ghp-length-tension-load-velocity';
+import ghpMeanElectricalAxis from './lectures/ghp-mean-electrical-axis';
+import ghpMembraneTransportOverview from './lectures/ghp-membrane-transport-overview';
+import ghpMuscleEnergeticsFibreTypes from './lectures/ghp-muscle-energetics-fibre-types';
+import ghpNegativeFeedbackGain from './lectures/ghp-negative-feedback-gain';
+import ghpNerveActionPotential from './lectures/ghp-nerve-action-potential';
+import ghpNeuromuscularJunction from './lectures/ghp-neuromuscular-junction';
+import ghpNormalEcgWaves from './lectures/ghp-normal-ecg-waves';
+import ghpPositiveFeedbackControlSystems from './lectures/ghp-positive-feedback-control-systems';
+import ghpPrematureBeatsTachycardias from './lectures/ghp-premature-beats-tachycardias';
+import ghpPrimaryActiveTransportNaKAtpase from './lectures/ghp-primary-active-transport-na-k-atpase';
+import ghpRestingMembranePotential from './lectures/ghp-resting-membrane-potential';
+import ghpSaNodePacemaker from './lectures/ghp-sa-node-pacemaker';
+import ghpSarcomereSlidingFilament from './lectures/ghp-sarcomere-sliding-filament';
+import ghpSecondaryActiveTransport from './lectures/ghp-secondary-active-transport';
+import ghpSmoothMuscleContraction from './lectures/ghp-smooth-muscle-contraction';
+import ghpSmoothMuscleRegulation from './lectures/ghp-smooth-muscle-regulation';
+import ghpTranscriptionGeneticCode from './lectures/ghp-transcription-genetic-code';
+import ghpTranslationRibosomes from './lectures/ghp-translation-ribosomes';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -2647,6 +2683,42 @@ export const lectures: Lecture[] = [
   // Additional (supplementary) topics — extra modules per subject (see
   // content/additional-topics). Plain (no highlighter markup), same structure.
   ...additionalTopics,
+
+  // Guyton & Hall Physiology (GHP)
+  ghpAbnormalSinusRhythmsBlocks,
+  ghpApPropagationRefractory,
+  ghpCardiacCyclePump,
+  ghpCardiacMuscleActionPotential,
+  ghpCellCycleMitosisApoptosis,
+  ghpCellMotilityCilia,
+  ghpCellOrganellesFunctions,
+  ghpConductionSystemAutonomicControl,
+  ghpEcgInjuryCurrent,
+  ghpEcgLeadsRecording,
+  ghpEndocytosisLysosomalDigestion,
+  ghpExcitationContractionCouplingSkeletal,
+  ghpFibrillationReentry,
+  ghpFrankStarlingMechanism,
+  ghpHomeostasisInternalEnvironment,
+  ghpLengthTensionLoadVelocity,
+  ghpMeanElectricalAxis,
+  ghpMembraneTransportOverview,
+  ghpMuscleEnergeticsFibreTypes,
+  ghpNegativeFeedbackGain,
+  ghpNerveActionPotential,
+  ghpNeuromuscularJunction,
+  ghpNormalEcgWaves,
+  ghpPositiveFeedbackControlSystems,
+  ghpPrematureBeatsTachycardias,
+  ghpPrimaryActiveTransportNaKAtpase,
+  ghpRestingMembranePotential,
+  ghpSaNodePacemaker,
+  ghpSarcomereSlidingFilament,
+  ghpSecondaryActiveTransport,
+  ghpSmoothMuscleContraction,
+  ghpSmoothMuscleRegulation,
+  ghpTranscriptionGeneticCode,
+  ghpTranslationRibosomes,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve

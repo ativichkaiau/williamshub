@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–III
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–IV
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1568,6 +1568,34 @@ import ghpSmoothMuscleContraction from './lectures/ghp-smooth-muscle-contraction
 import ghpSmoothMuscleRegulation from './lectures/ghp-smooth-muscle-regulation';
 import ghpTranscriptionGeneticCode from './lectures/ghp-transcription-genetic-code';
 import ghpTranslationRibosomes from './lectures/ghp-translation-ribosomes';
+import ghpArterialPulsePressure from './lectures/ghp-arterial-pulse-pressure';
+import ghpBaroreceptorChemoreceptorReflexes from './lectures/ghp-baroreceptor-chemoreceptor-reflexes';
+import ghpCapillaryExchangeDiffusion from './lectures/ghp-capillary-exchange-diffusion';
+import ghpCardiacFailureCompensation from './lectures/ghp-cardiac-failure-compensation';
+import ghpCardiacOutputMeasurement from './lectures/ghp-cardiac-output-measurement';
+import ghpCardiacOutputVenousReturnCurves from './lectures/ghp-cardiac-output-venous-return-curves';
+import ghpCardiacReserve from './lectures/ghp-cardiac-reserve';
+import ghpCnsIschaemicResponse from './lectures/ghp-cns-ischaemic-response';
+import ghpCongenitalShuntDynamics from './lectures/ghp-congenital-shunt-dynamics';
+import ghpCoronaryCirculationIschaemia from './lectures/ghp-coronary-circulation-ischaemia';
+import ghpDecompensatedFailureOedema from './lectures/ghp-decompensated-failure-oedema';
+import ghpExerciseMuscleBloodFlow from './lectures/ghp-exercise-muscle-blood-flow';
+import ghpHeartSoundsValveLesions from './lectures/ghp-heart-sounds-valve-lesions';
+import ghpHemodynamicsPressureFlowResistance from './lectures/ghp-hemodynamics-pressure-flow-resistance';
+import ghpHumoralEndothelialControl from './lectures/ghp-humoral-endothelial-control';
+import ghpLocalBloodFlowAutoregulation from './lectures/ghp-local-blood-flow-autoregulation';
+import ghpLongTermFlowAngiogenesis from './lectures/ghp-long-term-flow-angiogenesis';
+import ghpLymphaticInterstitialFluid from './lectures/ghp-lymphatic-interstitial-fluid';
+import ghpMeanSystemicFillingPressure from './lectures/ghp-mean-systemic-filling-pressure';
+import ghpRenalBodyFluidPressureControl from './lectures/ghp-renal-body-fluid-pressure-control';
+import ghpReninAngiotensinHypertension from './lectures/ghp-renin-angiotensin-hypertension';
+import ghpShockStagesHaemorrhagic from './lectures/ghp-shock-stages-haemorrhagic';
+import ghpShockTreatmentPhysiology from './lectures/ghp-shock-treatment-physiology';
+import ghpShockTypesDistributive from './lectures/ghp-shock-types-distributive';
+import ghpStarlingForcesFiltration from './lectures/ghp-starling-forces-filtration';
+import ghpVascularComplianceVolumeDistribution from './lectures/ghp-vascular-compliance-volume-distribution';
+import ghpVasomotorCentreSympatheticControl from './lectures/ghp-vasomotor-centre-sympathetic-control';
+import ghpVenousPressureBloodReservoir from './lectures/ghp-venous-pressure-blood-reservoir';
 
 export * from './curriculum';
 
@@ -2685,6 +2713,34 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpArterialPulsePressure,
+  ghpBaroreceptorChemoreceptorReflexes,
+  ghpCapillaryExchangeDiffusion,
+  ghpCardiacFailureCompensation,
+  ghpCardiacOutputMeasurement,
+  ghpCardiacOutputVenousReturnCurves,
+  ghpCardiacReserve,
+  ghpCnsIschaemicResponse,
+  ghpCongenitalShuntDynamics,
+  ghpCoronaryCirculationIschaemia,
+  ghpDecompensatedFailureOedema,
+  ghpExerciseMuscleBloodFlow,
+  ghpHeartSoundsValveLesions,
+  ghpHemodynamicsPressureFlowResistance,
+  ghpHumoralEndothelialControl,
+  ghpLocalBloodFlowAutoregulation,
+  ghpLongTermFlowAngiogenesis,
+  ghpLymphaticInterstitialFluid,
+  ghpMeanSystemicFillingPressure,
+  ghpRenalBodyFluidPressureControl,
+  ghpReninAngiotensinHypertension,
+  ghpShockStagesHaemorrhagic,
+  ghpShockTreatmentPhysiology,
+  ghpShockTypesDistributive,
+  ghpStarlingForcesFiltration,
+  ghpVascularComplianceVolumeDistribution,
+  ghpVasomotorCentreSympatheticControl,
+  ghpVenousPressureBloodReservoir,
   ghpAbnormalSinusRhythmsBlocks,
   ghpApPropagationRefractory,
   ghpCardiacCyclePump,

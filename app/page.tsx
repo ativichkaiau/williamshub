@@ -101,7 +101,7 @@ export default function Home() {
               <span className="eyebrow">Featured module</span>
               {featuredSubject && (
                 <span className="font-mono text-[10px] text-[var(--muted)]">
-                  {featuredSubject.code} / Y{featuredSubject.year}
+                  {featuredSubject.code} / {featuredSubject.yearLabel}
                 </span>
               )}
             </div>

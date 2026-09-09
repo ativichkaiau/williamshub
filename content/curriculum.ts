@@ -69,11 +69,34 @@ export const curriculum: CurriculumYear[] = [
       { code: 'FCP-1', name: 'Fundamentals of Clinical Practice-1' },
     ],
   },
+  {
+    // Reference texts, not MedCMU blocks — kept apart from Years 1–3 so textbook
+    // material never gets mistaken for a lecture. Sorts last everywhere.
+    year: 4,
+    label: 'Reference',
+    subjects: [{ code: 'GHP', name: 'Guyton & Hall Physiology' }],
+  },
 ];
 
 // Map each lecture `source` (L1–L4) to its subject. Add new lecture sources here
 // as content for other subjects is authored.
 export const subjectOfSource: Record<string, string> = {
+  // GHP — Guyton & Hall Physiology (Reference)
+  'Ch 1 — Functional Organization & Homeostasis': 'GHP',
+  'Ch 2 — The Cell and Its Functions': 'GHP',
+  'Ch 3 — Genetic Control of Protein Synthesis & Cell Reproduction': 'GHP',
+  'Ch 4 — Transport of Substances Through the Cell Membrane': 'GHP',
+  'Ch 5 — Membrane Potentials and Action Potentials': 'GHP',
+  'Ch 6 — Contraction of Skeletal Muscle': 'GHP',
+  'Ch 7 — Neuromuscular Transmission & Excitation–Contraction Coupling': 'GHP',
+  'Ch 8 — Contraction and Excitation of Smooth Muscle': 'GHP',
+  'Ch 9 — Heart Muscle; The Heart as a Pump': 'GHP',
+  'Ch 10 — Rhythmical Excitation of the Heart': 'GHP',
+  'Ch 11 — The Normal Electrocardiogram': 'GHP',
+  'Ch 12 — Vectorial Analysis of the ECG': 'GHP',
+  'Ch 13 — Cardiac Arrhythmias & Their ECG Interpretation': 'GHP',
+
+
   // HNS-1 — Human Nervous and Special Senses System-1 (Year 2)
   'L20 — Reticular Activating System, Sleep & Circadian Rhythms': 'HNS-1',
   'L14 — Auditory, Gustatory & Olfactory Pathways': 'HNS-1',
@@ -689,6 +712,22 @@ export const subjectOfSource: Record<string, string> = {
 // large subject, is taught as Part 1–5). Maps a lecture `source` → part label.
 // Subjects without entries here just render their lectures flat (ungrouped).
 export const partOfSource: Record<string, string> = {
+  // GHP units
+  'Ch 1 — Functional Organization & Homeostasis': 'Unit I · Cell & General Physiology',
+  'Ch 2 — The Cell and Its Functions': 'Unit I · Cell & General Physiology',
+  'Ch 3 — Genetic Control of Protein Synthesis & Cell Reproduction': 'Unit I · Cell & General Physiology',
+  'Ch 4 — Transport of Substances Through the Cell Membrane': 'Unit II · Membrane, Nerve & Muscle',
+  'Ch 5 — Membrane Potentials and Action Potentials': 'Unit II · Membrane, Nerve & Muscle',
+  'Ch 6 — Contraction of Skeletal Muscle': 'Unit II · Membrane, Nerve & Muscle',
+  'Ch 7 — Neuromuscular Transmission & Excitation–Contraction Coupling': 'Unit II · Membrane, Nerve & Muscle',
+  'Ch 8 — Contraction and Excitation of Smooth Muscle': 'Unit II · Membrane, Nerve & Muscle',
+  'Ch 9 — Heart Muscle; The Heart as a Pump': 'Unit III · The Heart',
+  'Ch 10 — Rhythmical Excitation of the Heart': 'Unit III · The Heart',
+  'Ch 11 — The Normal Electrocardiogram': 'Unit III · The Heart',
+  'Ch 12 — Vectorial Analysis of the ECG': 'Unit III · The Heart',
+  'Ch 13 — Cardiac Arrhythmias & Their ECG Interpretation': 'Unit III · The Heart',
+
+
   // HGA Part 1 — Upper Limb & Back
   'L1 — Pectoral Girdle, Superficial Back & Axilla': 'Part 1 · Upper Limb & Back',
   'L2 — Humerus, Shoulder Region & Cubital Fossa': 'Part 1 · Upper Limb & Back',
@@ -721,10 +760,10 @@ export function subjectSlug(code: string): string {
   return code.toLowerCase();
 }
 
-export const subjectByCode: Record<string, Subject & { year: number }> = Object.fromEntries(
-  curriculum.flatMap((y) => y.subjects.map((s) => [s.code, { ...s, year: y.year }])),
+export const subjectByCode: Record<string, Subject & { year: number; yearLabel: string }> = Object.fromEntries(
+  curriculum.flatMap((y) => y.subjects.map((s) => [s.code, { ...s, year: y.year, yearLabel: y.label }])),
 );
 
-export const subjectBySlug: Record<string, Subject & { year: number }> = Object.fromEntries(
+export const subjectBySlug: Record<string, Subject & { year: number; yearLabel: string }> = Object.fromEntries(
   Object.values(subjectByCode).map((s) => [subjectSlug(s.code), s]),
 );

@@ -103,7 +103,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
       <header className="mb-8 mt-5" data-reveal>
         <div className="flex items-center gap-3">
           <LiverySlashes />
-          <span className="eyebrow">{subject.code} · Year {subject.year}</span>
+          <span className="eyebrow">{subject.code} · {subject.yearLabel}</span>
         </div>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
           {subject.name}

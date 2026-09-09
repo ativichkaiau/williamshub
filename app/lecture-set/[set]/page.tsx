@@ -48,7 +48,7 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
             </Link>
             {subject?.year ? (
               <span className="clay-pill px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                Year {subject.year}
+                {subject.yearLabel}
               </span>
             ) : null}
           </>

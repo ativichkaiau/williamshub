@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–IX
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–X
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1654,6 +1654,17 @@ import ghpSomatosensoryCortexPosition from './lectures/ghp-somatosensory-cortex-
 import ghpSynapticTransmission from './lectures/ghp-synaptic-transmission';
 import ghpTactileReceptorsModalities from './lectures/ghp-tactile-receptors-modalities';
 import ghpVisceralPainThermalSensation from './lectures/ghp-visceral-pain-thermal-sensation';
+import ghpAuditoryPathwaysDeafness from './lectures/ghp-auditory-pathways-deafness';
+import ghpColourVisionRetinalCircuits from './lectures/ghp-colour-vision-retinal-circuits';
+import ghpEyeMovementsPupillaryControl from './lectures/ghp-eye-movements-pupillary-control';
+import ghpOpticsRefractionAccommodation from './lectures/ghp-optics-refraction-accommodation';
+import ghpPhototransductionDarkAdaptation from './lectures/ghp-phototransduction-dark-adaptation';
+import ghpRefractiveErrorsVisualAcuity from './lectures/ghp-refractive-errors-visual-acuity';
+import ghpRetinaPhotoreceptors from './lectures/ghp-retina-photoreceptors';
+import ghpSmellOlfaction from './lectures/ghp-smell-olfaction';
+import ghpSoundTransmissionCochlea from './lectures/ghp-sound-transmission-cochlea';
+import ghpTasteSensation from './lectures/ghp-taste-sensation';
+import ghpVisualPathwaysCortex from './lectures/ghp-visual-pathways-cortex';
 
 export * from './curriculum';
 
@@ -2771,6 +2782,17 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAuditoryPathwaysDeafness,
+  ghpColourVisionRetinalCircuits,
+  ghpEyeMovementsPupillaryControl,
+  ghpOpticsRefractionAccommodation,
+  ghpPhototransductionDarkAdaptation,
+  ghpRefractiveErrorsVisualAcuity,
+  ghpRetinaPhotoreceptors,
+  ghpSmellOlfaction,
+  ghpSoundTransmissionCochlea,
+  ghpTasteSensation,
+  ghpVisualPathwaysCortex,
   ghpAltitudeIllnessSpace,
   ghpDecompressionHyperbaricTherapy,
   ghpDivingGasPartialPressures,

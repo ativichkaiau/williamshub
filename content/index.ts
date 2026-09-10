@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–VII (complete)
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–IX
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1638,6 +1638,22 @@ import ghpRespiratoryInsufficiencyHypoxia from './lectures/ghp-respiratory-insuf
 import ghpSurfactantCompliance from './lectures/ghp-surfactant-compliance';
 import ghpTransplantationRejection from './lectures/ghp-transplantation-rejection';
 import ghpVentilationPerfusionMatching from './lectures/ghp-ventilation-perfusion-matching';
+import ghpAltitudeIllnessSpace from './lectures/ghp-altitude-illness-space';
+import ghpDecompressionHyperbaricTherapy from './lectures/ghp-decompression-hyperbaric-therapy';
+import ghpDivingGasPartialPressures from './lectures/ghp-diving-gas-partial-pressures';
+import ghpDorsalColumnVsAnterolateral from './lectures/ghp-dorsal-column-vs-anterolateral';
+import ghpHighAltitudeAcclimatisation from './lectures/ghp-high-altitude-acclimatisation';
+import ghpNervousSystemOrganisation from './lectures/ghp-nervous-system-organisation';
+import ghpNeuronalCircuitsProcessing from './lectures/ghp-neuronal-circuits-processing';
+import ghpNeurotransmittersReceptors from './lectures/ghp-neurotransmitters-receptors';
+import ghpPainFastSlowPathways from './lectures/ghp-pain-fast-slow-pathways';
+import ghpPainModulationAnalgesia from './lectures/ghp-pain-modulation-analgesia';
+import ghpReceptorAdaptationIntensity from './lectures/ghp-receptor-adaptation-intensity';
+import ghpSensoryReceptorsTransduction from './lectures/ghp-sensory-receptors-transduction';
+import ghpSomatosensoryCortexPosition from './lectures/ghp-somatosensory-cortex-position';
+import ghpSynapticTransmission from './lectures/ghp-synaptic-transmission';
+import ghpTactileReceptorsModalities from './lectures/ghp-tactile-receptors-modalities';
+import ghpVisceralPainThermalSensation from './lectures/ghp-visceral-pain-thermal-sensation';
 
 export * from './curriculum';
 
@@ -2755,6 +2771,22 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAltitudeIllnessSpace,
+  ghpDecompressionHyperbaricTherapy,
+  ghpDivingGasPartialPressures,
+  ghpDorsalColumnVsAnterolateral,
+  ghpHighAltitudeAcclimatisation,
+  ghpNervousSystemOrganisation,
+  ghpNeuronalCircuitsProcessing,
+  ghpNeurotransmittersReceptors,
+  ghpPainFastSlowPathways,
+  ghpPainModulationAnalgesia,
+  ghpReceptorAdaptationIntensity,
+  ghpSensoryReceptorsTransduction,
+  ghpSomatosensoryCortexPosition,
+  ghpSynapticTransmission,
+  ghpTactileReceptorsModalities,
+  ghpVisceralPainThermalSensation,
   ghpAnticoagulationBleedingDisorders,
   ghpBloodTypesTransfusion,
   ghpCellMediatedImmunityAllergy,

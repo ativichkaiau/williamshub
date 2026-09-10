@@ -124,6 +124,17 @@ export const subjectOfSource: Record<string, string> = {
   'Ch 40 — Transport of Oxygen & Carbon Dioxide in Blood': 'GHP',
   'Ch 41 — Regulation of Respiration': 'GHP',
   'Ch 42 — Respiratory Insufficiency — Pathophysiology & Oxygen Therapy': 'GHP',
+  'Ch 43 — Aviation, High-Altitude & Space Physiology': 'GHP',
+  'Ch 44 — Physiology of Deep-Sea Diving & Hyperbaric Conditions': 'GHP',
+  'Ch 45 — Organization of the Nervous System; Synapses & Transmitters': 'GHP',
+  'Ch 46 — Sensory Receptors & Neuronal Circuits for Processing Information': 'GHP',
+  'Ch 47 — Somatic Sensations I — Tactile & Position Senses': 'GHP',
+  'Ch 48 — Somatic Sensations II — Pain, Headache & Thermal Sensations': 'GHP',
+  'Ch 49 — The Eye I — Optics of Vision': 'GHP',
+  'Ch 50 — The Eye II — Receptor & Neural Function of the Retina': 'GHP',
+  'Ch 51 — The Eye III — Central Neurophysiology of Vision': 'GHP',
+  'Ch 52 — The Sense of Hearing': 'GHP',
+  'Ch 53 — The Chemical Senses — Taste & Smell': 'GHP',
 
 
   // HNS-1 — Human Nervous and Special Senses System-1 (Year 2)
@@ -784,6 +795,17 @@ export const partOfSource: Record<string, string> = {
   'Ch 40 — Transport of Oxygen & Carbon Dioxide in Blood': 'Unit VII · Respiration',
   'Ch 41 — Regulation of Respiration': 'Unit VII · Respiration',
   'Ch 42 — Respiratory Insufficiency — Pathophysiology & Oxygen Therapy': 'Unit VII · Respiration',
+  'Ch 43 — Aviation, High-Altitude & Space Physiology': 'Unit VIII · Aviation, Space & Diving',
+  'Ch 44 — Physiology of Deep-Sea Diving & Hyperbaric Conditions': 'Unit VIII · Aviation, Space & Diving',
+  'Ch 45 — Organization of the Nervous System; Synapses & Transmitters': 'Unit IX · Nervous System — General & Sensory',
+  'Ch 46 — Sensory Receptors & Neuronal Circuits for Processing Information': 'Unit IX · Nervous System — General & Sensory',
+  'Ch 47 — Somatic Sensations I — Tactile & Position Senses': 'Unit IX · Nervous System — General & Sensory',
+  'Ch 48 — Somatic Sensations II — Pain, Headache & Thermal Sensations': 'Unit IX · Nervous System — General & Sensory',
+  'Ch 49 — The Eye I — Optics of Vision': 'Unit X · Nervous System — Special Senses',
+  'Ch 50 — The Eye II — Receptor & Neural Function of the Retina': 'Unit X · Nervous System — Special Senses',
+  'Ch 51 — The Eye III — Central Neurophysiology of Vision': 'Unit X · Nervous System — Special Senses',
+  'Ch 52 — The Sense of Hearing': 'Unit X · Nervous System — Special Senses',
+  'Ch 53 — The Chemical Senses — Taste & Smell': 'Unit X · Nervous System — Special Senses',
 
 
   // HGA Part 1 — Upper Limb & Back

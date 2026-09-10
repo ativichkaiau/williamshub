@@ -1533,7 +1533,7 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–X
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–XI
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
@@ -1665,6 +1665,27 @@ import ghpSmellOlfaction from './lectures/ghp-smell-olfaction';
 import ghpSoundTransmissionCochlea from './lectures/ghp-sound-transmission-cochlea';
 import ghpTasteSensation from './lectures/ghp-taste-sensation';
 import ghpVisualPathwaysCortex from './lectures/ghp-visual-pathways-cortex';
+import ghpAutonomicOrganisation from './lectures/ghp-autonomic-organisation';
+import ghpAutonomicReceptorsEffects from './lectures/ghp-autonomic-receptors-effects';
+import ghpBasalGangliaCircuits from './lectures/ghp-basal-ganglia-circuits';
+import ghpBrainstemMotorPosturalControl from './lectures/ghp-brainstem-motor-postural-control';
+import ghpCerebellarAnatomyCircuitry from './lectures/ghp-cerebellar-anatomy-circuitry';
+import ghpCerebellarDysfunction from './lectures/ghp-cerebellar-dysfunction';
+import ghpCerebralBloodFlowMetabolism from './lectures/ghp-cerebral-blood-flow-metabolism';
+import ghpCorticalAreasAssociation from './lectures/ghp-cortical-areas-association';
+import ghpCsfBloodBrainBarrier from './lectures/ghp-csf-blood-brain-barrier';
+import ghpEpilepsySeizures from './lectures/ghp-epilepsy-seizures';
+import ghpGolgiTendonOrganCordReflexes from './lectures/ghp-golgi-tendon-organ-cord-reflexes';
+import ghpLanguageAphasia from './lectures/ghp-language-aphasia';
+import ghpLearningMemory from './lectures/ghp-learning-memory';
+import ghpLimbicHypothalamusBehaviour from './lectures/ghp-limbic-hypothalamus-behaviour';
+import ghpMotorCortexCorticospinal from './lectures/ghp-motor-cortex-corticospinal';
+import ghpMovementDisorders from './lectures/ghp-movement-disorders';
+import ghpMuscleSpindleStretchReflex from './lectures/ghp-muscle-spindle-stretch-reflex';
+import ghpPsychosesNeurotransmitterBasis from './lectures/ghp-psychoses-neurotransmitter-basis';
+import ghpRewardPunishmentMotivation from './lectures/ghp-reward-punishment-motivation';
+import ghpSleepStagesBrainWaves from './lectures/ghp-sleep-stages-brain-waves';
+import ghpUpperVsLowerMotorNeuron from './lectures/ghp-upper-vs-lower-motor-neuron';
 
 export * from './curriculum';
 
@@ -2782,6 +2803,27 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAutonomicOrganisation,
+  ghpAutonomicReceptorsEffects,
+  ghpBasalGangliaCircuits,
+  ghpBrainstemMotorPosturalControl,
+  ghpCerebellarAnatomyCircuitry,
+  ghpCerebellarDysfunction,
+  ghpCerebralBloodFlowMetabolism,
+  ghpCorticalAreasAssociation,
+  ghpCsfBloodBrainBarrier,
+  ghpEpilepsySeizures,
+  ghpGolgiTendonOrganCordReflexes,
+  ghpLanguageAphasia,
+  ghpLearningMemory,
+  ghpLimbicHypothalamusBehaviour,
+  ghpMotorCortexCorticospinal,
+  ghpMovementDisorders,
+  ghpMuscleSpindleStretchReflex,
+  ghpPsychosesNeurotransmitterBasis,
+  ghpRewardPunishmentMotivation,
+  ghpSleepStagesBrainWaves,
+  ghpUpperVsLowerMotorNeuron,
   ghpAuditoryPathwaysDeafness,
   ghpColourVisionRetinalCircuits,
   ghpEyeMovementsPupillaryControl,

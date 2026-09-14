@@ -1533,9 +1533,10 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–XI
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–XII
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
+import ghpCarbohydrateProteinDigestion from './lectures/ghp-carbohydrate-protein-digestion';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
 import ghpCardiacMuscleActionPotential from './lectures/ghp-cardiac-muscle-action-potential';
 import ghpCellCycleMitosisApoptosis from './lectures/ghp-cell-cycle-mitosis-apoptosis';
@@ -1545,11 +1546,18 @@ import ghpConductionSystemAutonomicControl from './lectures/ghp-conduction-syste
 import ghpEcgInjuryCurrent from './lectures/ghp-ecg-injury-current';
 import ghpEcgLeadsRecording from './lectures/ghp-ecg-leads-recording';
 import ghpEndocytosisLysosomalDigestion from './lectures/ghp-endocytosis-lysosomal-digestion';
+import ghpEntericNervousSystem from './lectures/ghp-enteric-nervous-system';
 import ghpExcitationContractionCouplingSkeletal from './lectures/ghp-excitation-contraction-coupling-skeletal';
+import ghpFatDigestionAbsorption from './lectures/ghp-fat-digestion-absorption';
 import ghpFibrillationReentry from './lectures/ghp-fibrillation-reentry';
 import ghpFrankStarlingMechanism from './lectures/ghp-frank-starling-mechanism';
+import ghpGastricMotilityEmptying from './lectures/ghp-gastric-motility-emptying';
+import ghpGastricSecretion from './lectures/ghp-gastric-secretion';
+import ghpGiDisordersSwallowingStomach from './lectures/ghp-gi-disorders-swallowing-stomach';
+import ghpGiSmoothMuscleElectrical from './lectures/ghp-gi-smooth-muscle-electrical';
 import ghpHomeostasisInternalEnvironment from './lectures/ghp-homeostasis-internal-environment';
 import ghpLengthTensionLoadVelocity from './lectures/ghp-length-tension-load-velocity';
+import ghpMalabsorptionBowelDisorders from './lectures/ghp-malabsorption-bowel-disorders';
 import ghpMeanElectricalAxis from './lectures/ghp-mean-electrical-axis';
 import ghpMembraneTransportOverview from './lectures/ghp-membrane-transport-overview';
 import ghpMuscleEnergeticsFibreTypes from './lectures/ghp-muscle-energetics-fibre-types';
@@ -1557,15 +1565,20 @@ import ghpNegativeFeedbackGain from './lectures/ghp-negative-feedback-gain';
 import ghpNerveActionPotential from './lectures/ghp-nerve-action-potential';
 import ghpNeuromuscularJunction from './lectures/ghp-neuromuscular-junction';
 import ghpNormalEcgWaves from './lectures/ghp-normal-ecg-waves';
+import ghpPancreaticBiliarySecretion from './lectures/ghp-pancreatic-biliary-secretion';
 import ghpPositiveFeedbackControlSystems from './lectures/ghp-positive-feedback-control-systems';
 import ghpPrematureBeatsTachycardias from './lectures/ghp-premature-beats-tachycardias';
 import ghpPrimaryActiveTransportNaKAtpase from './lectures/ghp-primary-active-transport-na-k-atpase';
 import ghpRestingMembranePotential from './lectures/ghp-resting-membrane-potential';
 import ghpSaNodePacemaker from './lectures/ghp-sa-node-pacemaker';
+import ghpSalivaryIntestinalSecretion from './lectures/ghp-salivary-intestinal-secretion';
 import ghpSarcomereSlidingFilament from './lectures/ghp-sarcomere-sliding-filament';
 import ghpSecondaryActiveTransport from './lectures/ghp-secondary-active-transport';
+import ghpSmallLargeBowelMotility from './lectures/ghp-small-large-bowel-motility';
 import ghpSmoothMuscleContraction from './lectures/ghp-smooth-muscle-contraction';
 import ghpSmoothMuscleRegulation from './lectures/ghp-smooth-muscle-regulation';
+import ghpSplanchnicCirculation from './lectures/ghp-splanchnic-circulation';
+import ghpSwallowingOesophagealMotility from './lectures/ghp-swallowing-oesophageal-motility';
 import ghpTranscriptionGeneticCode from './lectures/ghp-transcription-genetic-code';
 import ghpTranslationRibosomes from './lectures/ghp-translation-ribosomes';
 import ghpArterialPulsePressure from './lectures/ghp-arterial-pulse-pressure';
@@ -1686,6 +1699,7 @@ import ghpPsychosesNeurotransmitterBasis from './lectures/ghp-psychoses-neurotra
 import ghpRewardPunishmentMotivation from './lectures/ghp-reward-punishment-motivation';
 import ghpSleepStagesBrainWaves from './lectures/ghp-sleep-stages-brain-waves';
 import ghpUpperVsLowerMotorNeuron from './lectures/ghp-upper-vs-lower-motor-neuron';
+import ghpWaterElectrolyteAbsorption from './lectures/ghp-water-electrolyte-absorption';
 
 export * from './curriculum';
 
@@ -2807,22 +2821,35 @@ export const lectures: Lecture[] = [
   ghpAutonomicReceptorsEffects,
   ghpBasalGangliaCircuits,
   ghpBrainstemMotorPosturalControl,
+  ghpCarbohydrateProteinDigestion,
   ghpCerebellarAnatomyCircuitry,
   ghpCerebellarDysfunction,
   ghpCerebralBloodFlowMetabolism,
   ghpCorticalAreasAssociation,
   ghpCsfBloodBrainBarrier,
+  ghpEntericNervousSystem,
   ghpEpilepsySeizures,
+  ghpFatDigestionAbsorption,
+  ghpGastricMotilityEmptying,
+  ghpGastricSecretion,
+  ghpGiDisordersSwallowingStomach,
+  ghpGiSmoothMuscleElectrical,
   ghpGolgiTendonOrganCordReflexes,
   ghpLanguageAphasia,
   ghpLearningMemory,
   ghpLimbicHypothalamusBehaviour,
+  ghpMalabsorptionBowelDisorders,
   ghpMotorCortexCorticospinal,
   ghpMovementDisorders,
   ghpMuscleSpindleStretchReflex,
+  ghpPancreaticBiliarySecretion,
   ghpPsychosesNeurotransmitterBasis,
   ghpRewardPunishmentMotivation,
+  ghpSalivaryIntestinalSecretion,
   ghpSleepStagesBrainWaves,
+  ghpSmallLargeBowelMotility,
+  ghpSplanchnicCirculation,
+  ghpSwallowingOesophagealMotility,
   ghpUpperVsLowerMotorNeuron,
   ghpAuditoryPathwaysDeafness,
   ghpColourVisionRetinalCircuits,
@@ -2955,6 +2982,7 @@ export const lectures: Lecture[] = [
   ghpSmoothMuscleRegulation,
   ghpTranscriptionGeneticCode,
   ghpTranslationRibosomes,
+  ghpWaterElectrolyteAbsorption,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve

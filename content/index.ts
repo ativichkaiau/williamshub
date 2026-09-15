@@ -1533,9 +1533,14 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–XII
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–XIII
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
+import ghpAminoAcidPoolHormonalControl from './lectures/ghp-amino-acid-pool-hormonal-control';
+import ghpAnaerobicGlycolysisOxygenDebt from './lectures/ghp-anaerobic-glycolysis-oxygen-debt';
 import ghpApPropagationRefractory from './lectures/ghp-ap-propagation-refractory';
+import ghpAtpEnergyCurrency from './lectures/ghp-atp-energy-currency';
+import ghpBmrDeterminantsMeasurement from './lectures/ghp-bmr-determinants-measurement';
+import ghpBodyTemperatureHeatBalance from './lectures/ghp-body-temperature-heat-balance';
 import ghpCarbohydrateProteinDigestion from './lectures/ghp-carbohydrate-protein-digestion';
 import ghpCardiacCyclePump from './lectures/ghp-cardiac-cycle-pump';
 import ghpCardiacMuscleActionPotential from './lectures/ghp-cardiac-muscle-action-potential';
@@ -1543,12 +1548,16 @@ import ghpCellCycleMitosisApoptosis from './lectures/ghp-cell-cycle-mitosis-apop
 import ghpCellMotilityCilia from './lectures/ghp-cell-motility-cilia';
 import ghpCellOrganellesFunctions from './lectures/ghp-cell-organelles-functions';
 import ghpConductionSystemAutonomicControl from './lectures/ghp-conduction-system-autonomic-control';
+import ghpDietaryBalancesEnergyRequirement from './lectures/ghp-dietary-balances-energy-requirement';
 import ghpEcgInjuryCurrent from './lectures/ghp-ecg-injury-current';
 import ghpEcgLeadsRecording from './lectures/ghp-ecg-leads-recording';
 import ghpEndocytosisLysosomalDigestion from './lectures/ghp-endocytosis-lysosomal-digestion';
+import ghpEnergyExpenditureMetabolicRate from './lectures/ghp-energy-expenditure-metabolic-rate';
 import ghpEntericNervousSystem from './lectures/ghp-enteric-nervous-system';
 import ghpExcitationContractionCouplingSkeletal from './lectures/ghp-excitation-contraction-coupling-skeletal';
+import ghpFatAsFuelKetosis from './lectures/ghp-fat-as-fuel-ketosis';
 import ghpFatDigestionAbsorption from './lectures/ghp-fat-digestion-absorption';
+import ghpFeverHyperthermiaHypothermia from './lectures/ghp-fever-hyperthermia-hypothermia';
 import ghpFibrillationReentry from './lectures/ghp-fibrillation-reentry';
 import ghpFrankStarlingMechanism from './lectures/ghp-frank-starling-mechanism';
 import ghpGastricMotilityEmptying from './lectures/ghp-gastric-motility-emptying';
@@ -1556,7 +1565,12 @@ import ghpGastricSecretion from './lectures/ghp-gastric-secretion';
 import ghpGiDisordersSwallowingStomach from './lectures/ghp-gi-disorders-swallowing-stomach';
 import ghpGiSmoothMuscleElectrical from './lectures/ghp-gi-smooth-muscle-electrical';
 import ghpHomeostasisInternalEnvironment from './lectures/ghp-homeostasis-internal-environment';
+import ghpHypothalamicFeedingRegulation from './lectures/ghp-hypothalamic-feeding-regulation';
+import ghpHypothalamicThermostatSetPoint from './lectures/ghp-hypothalamic-thermostat-set-point';
 import ghpLengthTensionLoadVelocity from './lectures/ghp-length-tension-load-velocity';
+import ghpLipidTransportStorage from './lectures/ghp-lipid-transport-storage';
+import ghpLiverFunctionalAnatomyBloodFlow from './lectures/ghp-liver-functional-anatomy-blood-flow';
+import ghpLiverMetabolicClearanceStorage from './lectures/ghp-liver-metabolic-clearance-storage';
 import ghpMalabsorptionBowelDisorders from './lectures/ghp-malabsorption-bowel-disorders';
 import ghpMeanElectricalAxis from './lectures/ghp-mean-electrical-axis';
 import ghpMembraneTransportOverview from './lectures/ghp-membrane-transport-overview';
@@ -1569,6 +1583,7 @@ import ghpPancreaticBiliarySecretion from './lectures/ghp-pancreatic-biliary-sec
 import ghpPositiveFeedbackControlSystems from './lectures/ghp-positive-feedback-control-systems';
 import ghpPrematureBeatsTachycardias from './lectures/ghp-premature-beats-tachycardias';
 import ghpPrimaryActiveTransportNaKAtpase from './lectures/ghp-primary-active-transport-na-k-atpase';
+import ghpProteinTurnoverNitrogenBalance from './lectures/ghp-protein-turnover-nitrogen-balance';
 import ghpRestingMembranePotential from './lectures/ghp-resting-membrane-potential';
 import ghpSaNodePacemaker from './lectures/ghp-sa-node-pacemaker';
 import ghpSalivaryIntestinalSecretion from './lectures/ghp-salivary-intestinal-secretion';
@@ -1578,6 +1593,7 @@ import ghpSmallLargeBowelMotility from './lectures/ghp-small-large-bowel-motilit
 import ghpSmoothMuscleContraction from './lectures/ghp-smooth-muscle-contraction';
 import ghpSmoothMuscleRegulation from './lectures/ghp-smooth-muscle-regulation';
 import ghpSplanchnicCirculation from './lectures/ghp-splanchnic-circulation';
+import ghpStarvationVitaminMineralDeficiency from './lectures/ghp-starvation-vitamin-mineral-deficiency';
 import ghpSwallowingOesophagealMotility from './lectures/ghp-swallowing-oesophageal-motility';
 import ghpTranscriptionGeneticCode from './lectures/ghp-transcription-genetic-code';
 import ghpTranslationRibosomes from './lectures/ghp-translation-ribosomes';
@@ -2817,9 +2833,14 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpAminoAcidPoolHormonalControl,
+  ghpAnaerobicGlycolysisOxygenDebt,
+  ghpAtpEnergyCurrency,
   ghpAutonomicOrganisation,
   ghpAutonomicReceptorsEffects,
   ghpBasalGangliaCircuits,
+  ghpBmrDeterminantsMeasurement,
+  ghpBodyTemperatureHeatBalance,
   ghpBrainstemMotorPosturalControl,
   ghpCarbohydrateProteinDigestion,
   ghpCerebellarAnatomyCircuitry,
@@ -2827,28 +2848,39 @@ export const lectures: Lecture[] = [
   ghpCerebralBloodFlowMetabolism,
   ghpCorticalAreasAssociation,
   ghpCsfBloodBrainBarrier,
+  ghpDietaryBalancesEnergyRequirement,
+  ghpEnergyExpenditureMetabolicRate,
   ghpEntericNervousSystem,
   ghpEpilepsySeizures,
+  ghpFatAsFuelKetosis,
   ghpFatDigestionAbsorption,
+  ghpFeverHyperthermiaHypothermia,
   ghpGastricMotilityEmptying,
   ghpGastricSecretion,
   ghpGiDisordersSwallowingStomach,
   ghpGiSmoothMuscleElectrical,
   ghpGolgiTendonOrganCordReflexes,
+  ghpHypothalamicFeedingRegulation,
+  ghpHypothalamicThermostatSetPoint,
   ghpLanguageAphasia,
   ghpLearningMemory,
   ghpLimbicHypothalamusBehaviour,
+  ghpLipidTransportStorage,
+  ghpLiverFunctionalAnatomyBloodFlow,
+  ghpLiverMetabolicClearanceStorage,
   ghpMalabsorptionBowelDisorders,
   ghpMotorCortexCorticospinal,
   ghpMovementDisorders,
   ghpMuscleSpindleStretchReflex,
   ghpPancreaticBiliarySecretion,
+  ghpProteinTurnoverNitrogenBalance,
   ghpPsychosesNeurotransmitterBasis,
   ghpRewardPunishmentMotivation,
   ghpSalivaryIntestinalSecretion,
   ghpSleepStagesBrainWaves,
   ghpSmallLargeBowelMotility,
   ghpSplanchnicCirculation,
+  ghpStarvationVitaminMineralDeficiency,
   ghpSwallowingOesophagealMotility,
   ghpUpperVsLowerMotorNeuron,
   ghpAuditoryPathwaysDeafness,

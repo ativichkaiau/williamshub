@@ -4,11 +4,11 @@ export const ghpLipidTransportStorage: Lecture = {
   id: 'ghp-lipid-transport-storage',
   title: 'Lipid Transport & Adipose Storage',
   system: 'molecular',
-  source: 'Ch 68 — Lipid Metabolism',
+  source: 'Ch 69 — Lipid Metabolism',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 68 Lipid Metabolism' },
+    { kind: 'lecture', label: 'Ch 69 Lipid Metabolism' },
     { kind: 'mechanism', label: 'LPL fills the depot · HSL empties it' },
     { kind: 'exam', label: 'Anhydrous storage · the glycerol-3-phosphate rule' },
   ],

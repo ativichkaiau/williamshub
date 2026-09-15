@@ -4,11 +4,11 @@ export const ghpEntericNervousSystem: Lecture = {
   id: 'ghp-enteric-nervous-system',
   title: 'The Enteric Nervous System',
   system: 'gi',
-  source: 'Ch 62 — General Principles of Gastrointestinal Function',
+  source: 'Ch 63 — General Principles of Gastrointestinal Function',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 62 Enteric Nervous System' },
+    { kind: 'lecture', label: 'Ch 63 Enteric Nervous System' },
     { kind: 'mechanism', label: 'Myenteric motility · submucosal secretion' },
     { kind: 'exam', label: 'VIP and NO · three reflex levels · Hirschsprung' },
   ],

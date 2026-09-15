@@ -4,11 +4,11 @@ export const ghpAutonomicReceptorsEffects: Lecture = {
   id: 'ghp-autonomic-receptors-effects',
   title: 'Autonomic Receptors & Organ Effects: Deriving the Table',
   system: 'neuro',
-  source: 'Ch 60 — The Autonomic Nervous System & the Adrenal Medulla',
+  source: 'Ch 61 — The Autonomic Nervous System & the Adrenal Medulla',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'Ch 60 The Autonomic Nervous System' },
+    { kind: 'lecture', label: 'Ch 61 The Autonomic Nervous System' },
     { kind: 'mechanism', label: 'Receptor subtype and second messenger' },
     { kind: 'exam', label: 'Antimuscarinic toxidrome' },
   ],

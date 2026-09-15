@@ -4,11 +4,11 @@ export const ghpRenalAutoregulationTgf: Lecture = {
   id: 'ghp-renal-autoregulation-tgf',
   title: 'Renal Autoregulation & Tubuloglomerular Feedback',
   system: 'renal',
-  source: 'Ch 26 — Urine Formation I — Glomerular Filtration & Renal Blood Flow',
+  source: 'Ch 27 — Urine Formation I — Glomerular Filtration & Renal Blood Flow',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 26 Filtration & Renal Blood Flow' },
+    { kind: 'lecture', label: 'Ch 27 Filtration & Renal Blood Flow' },
     { kind: 'mechanism', label: 'Macula densa feedback' },
     { kind: 'exam', label: 'Why GFR stays flat' },
   ],

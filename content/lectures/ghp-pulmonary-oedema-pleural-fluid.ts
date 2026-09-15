@@ -4,11 +4,11 @@ export const ghpPulmonaryOedemaPleuralFluid: Lecture = {
   id: 'ghp-pulmonary-oedema-pleural-fluid',
   title: 'Pulmonary Oedema & Pleural Fluid',
   system: 'respiratory',
-  source: 'Ch 38 — Pulmonary Circulation, Pulmonary Edema & Pleural Fluid',
+  source: 'Ch 39 — Pulmonary Circulation, Pulmonary Edema & Pleural Fluid',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 38 Pulmonary Circulation' },
+    { kind: 'lecture', label: 'Ch 39 Pulmonary Circulation' },
     { kind: 'mechanism', label: 'Starling forces in the lung' },
     { kind: 'disease', label: 'Cardiogenic versus permeability oedema' },
   ],

@@ -4,11 +4,11 @@ export const ghpBasalGangliaCircuits: Lecture = {
   id: 'ghp-basal-ganglia-circuits',
   title: 'Basal Ganglia Circuits: Direct, Indirect and Dopamine',
   system: 'neuro',
-  source: 'Ch 56 — Cerebellum & Basal Ganglia in Motor Control',
+  source: 'Ch 57 — Cerebellum & Basal Ganglia in Motor Control',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 56 Cerebellum & Basal Ganglia' },
+    { kind: 'lecture', label: 'Ch 57 Cerebellum & Basal Ganglia' },
     { kind: 'mechanism', label: 'Cortex → striatum → pallidum → thalamus → cortex' },
     { kind: 'exam', label: 'D1 vs D2 · disinhibition · subthalamic nucleus' },
   ],

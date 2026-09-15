@@ -4,11 +4,11 @@ export const ghpOpticsRefractionAccommodation: Lecture = {
   id: 'ghp-optics-refraction-accommodation',
   title: 'Optics of the Eye: Refraction, Accommodation and Presbyopia',
   system: 'neuro',
-  source: 'Ch 49 — The Eye I — Optics of Vision',
+  source: 'Ch 50 — The Eye I — Optics of Vision',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 49 Optics of Vision' },
+    { kind: 'lecture', label: 'Ch 50 Optics of Vision' },
     { kind: 'mechanism', label: 'Ciliary contraction → zonules slacken → lens rounds' },
     { kind: 'exam', label: 'Presbyopia · near triad · cycloplegia' },
   ],

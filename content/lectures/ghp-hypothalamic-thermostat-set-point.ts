@@ -4,11 +4,11 @@ export const ghpHypothalamicThermostatSetPoint: Lecture = {
   id: 'ghp-hypothalamic-thermostat-set-point',
   title: 'The Hypothalamic Thermostat & Set-Point Control',
   system: 'physiology',
-  source: 'Ch 73 — Body Temperature, Temperature Regulation & Fever',
+  source: 'Ch 74 — Body Temperature, Temperature Regulation & Fever',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 73 Body Temperature & Fever' },
+    { kind: 'lecture', label: 'Ch 74 Body Temperature & Fever' },
     { kind: 'mechanism', label: 'Sense → compare with set point → graded effector response' },
     { kind: 'exam', label: 'Sweating is sympathetic but cholinergic' },
   ],

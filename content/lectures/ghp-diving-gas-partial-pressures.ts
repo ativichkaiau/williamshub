@@ -4,11 +4,11 @@ export const ghpDivingGasPartialPressures: Lecture = {
   id: 'ghp-diving-gas-partial-pressures',
   title: 'Deep-Sea Diving: Gas Partial Pressures at Depth',
   system: 'physiology',
-  source: 'Ch 44 — Physiology of Deep-Sea Diving & Hyperbaric Conditions',
+  source: 'Ch 45 — Physiology of Deep-Sea Diving & Hyperbaric Conditions',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 44 Deep-Sea Diving' },
+    { kind: 'lecture', label: 'Ch 45 Deep-Sea Diving' },
     { kind: 'mechanism', label: 'Partial pressure and volume at depth' },
     { kind: 'exam', label: 'Narcosis, oxygen toxicity, barotrauma' },
   ],

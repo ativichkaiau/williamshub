@@ -4,11 +4,11 @@ export const ghpHypothalamicFeedingRegulation: Lecture = {
   id: 'ghp-hypothalamic-feeding-regulation',
   title: 'Hypothalamic Regulation of Feeding',
   system: 'gi',
-  source: 'Ch 71 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
+  source: 'Ch 72 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 71 Feeding & Obesity' },
+    { kind: 'lecture', label: 'Ch 72 Feeding & Obesity' },
     { kind: 'mechanism', label: 'Leptin → arcuate → melanocortin → paraventricular nucleus' },
     { kind: 'exam', label: 'Lateral lesion aphagia · ventromedial lesion hyperphagia · leptin resistance not deficiency' },
   ],

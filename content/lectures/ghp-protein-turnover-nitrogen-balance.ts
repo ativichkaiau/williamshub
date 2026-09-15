@@ -4,11 +4,11 @@ export const ghpProteinTurnoverNitrogenBalance: Lecture = {
   id: 'ghp-protein-turnover-nitrogen-balance',
   title: 'Protein Turnover & Nitrogen Balance',
   system: 'molecular',
-  source: 'Ch 69 — Protein Metabolism',
+  source: 'Ch 70 — Protein Metabolism',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 69 Protein Metabolism' },
+    { kind: 'lecture', label: 'Ch 70 Protein Metabolism' },
     { kind: 'mechanism', label: 'No storage form — spending protein costs function' },
     { kind: 'exam', label: 'Obligatory nitrogen loss · albumin is not a nutrition marker' },
   ],

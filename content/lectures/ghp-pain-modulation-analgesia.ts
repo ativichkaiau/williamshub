@@ -4,11 +4,11 @@ export const ghpPainModulationAnalgesia: Lecture = {
   id: 'ghp-pain-modulation-analgesia',
   title: 'Pain Modulation and the Analgesia System',
   system: 'neuro',
-  source: 'Ch 48 — Somatic Sensations II — Pain, Headache & Thermal Sensations',
+  source: 'Ch 49 — Somatic Sensations II — Pain, Headache & Thermal Sensations',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'Ch 48 Pain & Thermal Sensation' },
+    { kind: 'lecture', label: 'Ch 49 Pain & Thermal Sensation' },
     { kind: 'mechanism', label: 'PAG → raphe magnus → dorsal horn' },
     { kind: 'exam', label: 'Gate control · referred pain' },
   ],

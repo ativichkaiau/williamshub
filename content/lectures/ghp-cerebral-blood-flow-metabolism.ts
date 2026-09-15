@@ -4,11 +4,11 @@ export const ghpCerebralBloodFlowMetabolism: Lecture = {
   id: 'ghp-cerebral-blood-flow-metabolism',
   title: 'Cerebral Blood Flow, Metabolism & Intracranial Pressure',
   system: 'neuro',
-  source: 'Ch 61 — Cerebral Blood Flow, Cerebrospinal Fluid & Brain Metabolism',
+  source: 'Ch 62 — Cerebral Blood Flow, Cerebrospinal Fluid & Brain Metabolism',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neurology' },
-    { kind: 'lecture', label: 'Ch 61 Cerebral Flow & CSF' },
+    { kind: 'lecture', label: 'Ch 62 Cerebral Flow & CSF' },
     { kind: 'mechanism', label: 'CO₂-dominant autoregulation' },
     { kind: 'exam', label: 'Monro–Kellie · Cushing' },
   ],

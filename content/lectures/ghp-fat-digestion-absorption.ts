@@ -4,11 +4,11 @@ export const ghpFatDigestionAbsorption: Lecture = {
   id: 'ghp-fat-digestion-absorption',
   title: 'Fat Digestion, Micelles & Chylomicrons',
   system: 'gi',
-  source: 'Ch 65 — Digestion & Absorption in the Gastrointestinal Tract',
+  source: 'Ch 66 — Digestion & Absorption in the Gastrointestinal Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 65 Digestion & Absorption' },
+    { kind: 'lecture', label: 'Ch 66 Digestion & Absorption' },
     { kind: 'mechanism', label: 'Emulsify → lipase + colipase → micelle → chylomicron' },
     { kind: 'exam', label: 'Lymph not portal · ADEK lost with the micelle' },
   ],

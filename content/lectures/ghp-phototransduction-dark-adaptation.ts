@@ -4,11 +4,11 @@ export const ghpPhototransductionDarkAdaptation: Lecture = {
   id: 'ghp-phototransduction-dark-adaptation',
   title: 'Phototransduction, the Dark Current and Dark Adaptation',
   system: 'neuro',
-  source: 'Ch 50 — The Eye II — Receptor & Neural Function of the Retina',
+  source: 'Ch 51 — The Eye II — Receptor & Neural Function of the Retina',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 50 Phototransduction' },
+    { kind: 'lecture', label: 'Ch 51 Phototransduction' },
     { kind: 'mechanism', label: 'Rhodopsin → transducin → cGMP falls → channels close' },
     { kind: 'exam', label: 'Hyperpolarisation · night blindness · rod-cone break' },
   ],

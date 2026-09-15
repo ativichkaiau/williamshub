@@ -4,11 +4,11 @@ export const ghpSalivaryIntestinalSecretion: Lecture = {
   id: 'ghp-salivary-intestinal-secretion',
   title: 'Salivary & Intestinal Secretion',
   system: 'gi',
-  source: 'Ch 64 — Secretory Functions of the Alimentary Tract',
+  source: 'Ch 65 — Secretory Functions of the Alimentary Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 64 Alimentary Secretion' },
+    { kind: 'lecture', label: 'Ch 65 Alimentary Secretion' },
     { kind: 'mechanism', label: 'Two-stage saliva · crypt Cl⁻ secretion' },
     { kind: 'exam', label: 'Flow rate · cholera and ORS' },
   ],

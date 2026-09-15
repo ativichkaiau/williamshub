@@ -13,13 +13,14 @@ export function generateMetadata({ params }: { params: { code: string } }) {
 }
 
 function lectureNo(source: string): number {
-  const m = source.match(/^L(\d+)/i);
+  const m = source.match(/^(?:L|Ch\s+)(\d+)/i);
   return m ? parseInt(m[1], 10) : 999;
 }
 
 export default function BlockPracticeLauncher({ params }: { params: { code: string } }) {
   const subject = subjectBySlug[params.code];
   if (!subject) notFound();
+  const unit = subject.code === 'GHP' ? 'chapter' : 'lecture';
 
   // Group the block's modules into their lectures (source), with question counts.
   const bySource = new Map<string, { items: { id: string }[]; count: number }>();
@@ -51,8 +52,8 @@ export default function BlockPracticeLauncher({ params }: { params: { code: stri
         </div>
         <h1 className="mt-1 text-3xl font-black tracking-tight text-slate-900 dark:text-white">{subject.name}</h1>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          {total.toLocaleString()} question{total === 1 ? '' : 's'} across {lectures.length} lecture
-          {lectures.length === 1 ? '' : 's'}. Pick a lecture, or practise a mixed set from the whole block.
+          {total.toLocaleString()} question{total === 1 ? '' : 's'} across {lectures.length} {unit}
+          {lectures.length === 1 ? '' : 's'}. Pick a {unit}, or practise a mixed set from the whole block.
         </p>
       </header>
 
@@ -65,13 +66,13 @@ export default function BlockPracticeLauncher({ params }: { params: { code: stri
             Mixed — whole block
           </span>
           <span className="mt-0.5 block text-sm font-bold text-slate-900 dark:text-white">
-            20 random from all {lectures.length} lectures
+            20 random from all {lectures.length} {unit}s
           </span>
         </span>
         <span className="shrink-0 text-[11px] font-semibold text-slate-400">{total.toLocaleString()} →</span>
       </Link>
 
-      <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">By lecture</h2>
+      <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">By {unit}</h2>
       <div className="space-y-2">
         {lectures.map((l) => (
           <Link

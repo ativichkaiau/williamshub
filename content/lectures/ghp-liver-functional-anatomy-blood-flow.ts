@@ -4,11 +4,11 @@ export const ghpLiverFunctionalAnatomyBloodFlow: Lecture = {
   id: 'ghp-liver-functional-anatomy-blood-flow',
   title: 'The Liver: Functional Anatomy & Blood Flow',
   system: 'gi',
-  source: 'Ch 70 — The Liver as an Organ',
+  source: 'Ch 71 — The Liver as an Organ',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 70 Hepatic Anatomy & Blood Flow' },
+    { kind: 'lecture', label: 'Ch 71 Hepatic Anatomy & Blood Flow' },
     { kind: 'mechanism', label: 'Arterial buffer response · sinusoidal permeability · acinar zonation' },
     { kind: 'exam', label: 'Centrilobular necrosis · protein-rich ascites · nutmeg liver' },
   ],

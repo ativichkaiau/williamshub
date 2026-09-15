@@ -4,11 +4,11 @@ export const ghpMechanicsOfVentilation: Lecture = {
   id: 'ghp-mechanics-of-ventilation',
   title: 'Mechanics of Ventilation',
   system: 'respiratory',
-  source: 'Ch 37 — Pulmonary Ventilation',
+  source: 'Ch 38 — Pulmonary Ventilation',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 37 Pulmonary Ventilation' },
+    { kind: 'lecture', label: 'Ch 38 Pulmonary Ventilation' },
     { kind: 'mechanism', label: 'Pleural and alveolar pressures' },
     { kind: 'exam', label: 'Pneumothorax physiology' },
   ],

@@ -4,11 +4,11 @@ export const ghpRenalAcidExcretionDisorders: Lecture = {
   id: 'ghp-renal-acid-excretion-disorders',
   title: 'Renal Acid Excretion & the Acid–Base Disorders',
   system: 'renal',
-  source: 'Ch 30 — Regulation of Acid–Base Balance',
+  source: 'Ch 31 — Regulation of Acid–Base Balance',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 30 Acid–Base Balance' },
+    { kind: 'lecture', label: 'Ch 31 Acid–Base Balance' },
     { kind: 'mechanism', label: 'Titratable acid & ammonium' },
     { kind: 'exam', label: 'Anion gap' },
   ],

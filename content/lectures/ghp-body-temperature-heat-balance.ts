@@ -4,11 +4,11 @@ export const ghpBodyTemperatureHeatBalance: Lecture = {
   id: 'ghp-body-temperature-heat-balance',
   title: 'Body Temperature & the Heat Balance Equation',
   system: 'physiology',
-  source: 'Ch 73 — Body Temperature, Temperature Regulation & Fever',
+  source: 'Ch 74 — Body Temperature, Temperature Regulation & Fever',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 73 Body Temperature & Fever' },
+    { kind: 'lecture', label: 'Ch 74 Body Temperature & Fever' },
     { kind: 'mechanism', label: 'Heat stored = heat produced − heat lost' },
     { kind: 'exam', label: 'Above skin temperature only evaporation is left' },
   ],

@@ -4,11 +4,11 @@ export const ghpNeurotransmittersReceptors: Lecture = {
   id: 'ghp-neurotransmitters-receptors',
   title: 'Neurotransmitters and Their Receptors',
   system: 'neuro',
-  source: 'Ch 45 — Organization of the Nervous System; Synapses & Transmitters',
+  source: 'Ch 46 — Organization of the Nervous System; Synapses & Transmitters',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 45 Transmitters' },
+    { kind: 'lecture', label: 'Ch 46 Transmitters' },
     { kind: 'mechanism', label: 'Ionotropic vs metabotropic' },
     { kind: 'exam', label: 'The receptor sets the sign' },
   ],

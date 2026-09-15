@@ -4,11 +4,11 @@ export const ghpLanguageAphasia: Lecture = {
   id: 'ghp-language-aphasia',
   title: 'Language: Wernicke, Broca and Deriving the Aphasias',
   system: 'neuro',
-  source: 'Ch 57 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
+  source: 'Ch 58 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 57 Cerebral Cortex & Intellectual Function' },
+    { kind: 'lecture', label: 'Ch 58 Cerebral Cortex & Intellectual Function' },
     { kind: 'mechanism', label: 'Wernicke → arcuate fasciculus → Broca' },
     { kind: 'exam', label: 'Fluency · comprehension · repetition' },
   ],

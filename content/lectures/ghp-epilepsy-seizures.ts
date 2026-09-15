@@ -4,11 +4,11 @@ export const ghpEpilepsySeizures: Lecture = {
   id: 'ghp-epilepsy-seizures',
   title: 'Epilepsy: Synchronous Discharge, Spread and the Postictal State',
   system: 'neuro',
-  source: 'Ch 59 — States of Brain Activity — Sleep, Brain Waves, Epilepsy, Psychoses',
+  source: 'Ch 60 — States of Brain Activity — Sleep, Brain Waves, Epilepsy, Psychoses',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 59 States of Brain Activity' },
+    { kind: 'lecture', label: 'Ch 60 States of Brain Activity' },
     { kind: 'mechanism', label: 'Paroxysmal depolarising shift, loss of surround inhibition' },
     { kind: 'disease', label: 'Tonic-clonic · absence · focal' },
   ],

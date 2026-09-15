@@ -4,11 +4,11 @@ export const ghpOxyhaemoglobinCurveShifts: Lecture = {
   id: 'ghp-oxyhaemoglobin-curve-shifts',
   title: 'The Oxyhaemoglobin Curve & Its Shifts',
   system: 'respiratory',
-  source: 'Ch 40 — Transport of Oxygen & Carbon Dioxide in Blood',
+  source: 'Ch 41 — Transport of Oxygen & Carbon Dioxide in Blood',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 40 O₂ & CO₂ Transport' },
+    { kind: 'lecture', label: 'Ch 41 O₂ & CO₂ Transport' },
     { kind: 'mechanism', label: 'Affinity modulation' },
     { kind: 'exam', label: 'P50 · CO poisoning' },
   ],

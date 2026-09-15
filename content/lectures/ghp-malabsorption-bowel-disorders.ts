@@ -4,11 +4,11 @@ export const ghpMalabsorptionBowelDisorders: Lecture = {
   id: 'ghp-malabsorption-bowel-disorders',
   title: 'Malabsorption, Diarrhoea & Constipation',
   system: 'gi',
-  source: 'Ch 66 — Physiology of Gastrointestinal Disorders',
+  source: 'Ch 67 — Physiology of Gastrointestinal Disorders',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 66 GI Disorders' },
+    { kind: 'lecture', label: 'Ch 67 GI Disorders' },
     { kind: 'mechanism', label: 'Lumen · mucosa · lymphatic — three failure layers' },
     { kind: 'exam', label: 'Osmotic vs secretory · stool gap · fasting test' },
   ],

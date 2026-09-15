@@ -4,11 +4,11 @@ export const ghpGastricSecretion: Lecture = {
   id: 'ghp-gastric-secretion',
   title: 'Gastric Secretion & the Parietal Cell',
   system: 'gi',
-  source: 'Ch 64 — Secretory Functions of the Alimentary Tract',
+  source: 'Ch 65 — Secretory Functions of the Alimentary Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 64 Alimentary Secretion' },
+    { kind: 'lecture', label: 'Ch 65 Alimentary Secretion' },
     { kind: 'mechanism', label: 'H⁺/K⁺-ATPase · ECL histamine' },
     { kind: 'exam', label: 'Three stimuli · antral pH feedback' },
   ],

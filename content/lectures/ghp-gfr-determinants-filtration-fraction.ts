@@ -4,11 +4,11 @@ export const ghpGfrDeterminantsFiltrationFraction: Lecture = {
   id: 'ghp-gfr-determinants-filtration-fraction',
   title: 'Determinants of GFR & Filtration Fraction',
   system: 'renal',
-  source: 'Ch 26 — Urine Formation I — Glomerular Filtration & Renal Blood Flow',
+  source: 'Ch 27 — Urine Formation I — Glomerular Filtration & Renal Blood Flow',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 26 Filtration & Renal Blood Flow' },
+    { kind: 'lecture', label: 'Ch 27 Filtration & Renal Blood Flow' },
     { kind: 'mechanism', label: 'Starling forces at the glomerulus' },
     { kind: 'exam', label: 'Afferent vs efferent tone' },
   ],

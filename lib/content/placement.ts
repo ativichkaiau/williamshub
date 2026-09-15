@@ -13,16 +13,16 @@ import type { Lecture } from '../types';
 
 export interface Placement {
   subject: string | null; // subject code, e.g. 'HCVS-2'
-  lectureNo: number | null; // 1..n within the subject (parsed from 'L<n>')
+  lectureNo: number | null; // 1..n within the subject ('L<n>' or reference 'Ch <n>')
   lectureTitle: string; // e.g. 'Cardiac Arrhythmias'
   source: string; // the raw source string
   setSlug: string; // slug of the lecture-set (whole-lecture) route
 }
 
 function parseSource(source: string): { lectureNo: number | null; lectureTitle: string } {
-  const full = source.match(/^L(\d+)\s*[—–-]\s*(.+)$/i);
+  const full = source.match(/^(?:L|Ch\s+)(\d+)\s*[—–-]\s*(.+)$/i);
   if (full) return { lectureNo: parseInt(full[1], 10), lectureTitle: full[2].trim() };
-  const n = source.match(/^L(\d+)/i);
+  const n = source.match(/^(?:L|Ch\s+)(\d+)/i);
   return { lectureNo: n ? parseInt(n[1], 10) : null, lectureTitle: source };
 }
 
@@ -67,7 +67,7 @@ export function contentIssues(lectures: Lecture[]): ContentIssue[] {
     }
     // "Additional Topics" sources are intentionally unnumbered — don't warn.
     if (p.lectureNo == null && !l.source.startsWith('Additional Topics')) {
-      issues.push({ moduleId: l.id, source: l.source, kind: 'no-lecture-no', detail: 'source does not start with "L<n>"' });
+      issues.push({ moduleId: l.id, source: l.source, kind: 'no-lecture-no', detail: 'source does not start with "L<n>" or "Ch <n>"' });
     }
 
     const owner = slugOwner.get(p.setSlug);

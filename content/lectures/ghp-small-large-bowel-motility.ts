@@ -4,11 +4,11 @@ export const ghpSmallLargeBowelMotility: Lecture = {
   id: 'ghp-small-large-bowel-motility',
   title: 'Small & Large Bowel Motility and Defecation',
   system: 'gi',
-  source: 'Ch 63 — Propulsion & Mixing of Food in the Alimentary Tract',
+  source: 'Ch 64 — Propulsion & Mixing of Food in the Alimentary Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 63 Propulsion & Mixing' },
+    { kind: 'lecture', label: 'Ch 64 Propulsion & Mixing' },
     { kind: 'mechanism', label: 'Segmentation · MMC · mass movement' },
     { kind: 'exam', label: 'Defecation reflex · cord injury' },
   ],

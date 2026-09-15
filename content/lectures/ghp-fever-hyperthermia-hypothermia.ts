@@ -4,11 +4,11 @@ export const ghpFeverHyperthermiaHypothermia: Lecture = {
   id: 'ghp-fever-hyperthermia-hypothermia',
   title: 'Fever, Hyperthermia & Hypothermia',
   system: 'physiology',
-  source: 'Ch 73 — Body Temperature, Temperature Regulation & Fever',
+  source: 'Ch 74 — Body Temperature, Temperature Regulation & Fever',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 73 Body Temperature & Fever' },
+    { kind: 'lecture', label: 'Ch 74 Body Temperature & Fever' },
     { kind: 'mechanism', label: 'Fever raises the set point; hyperthermia overwhelms it' },
     { kind: 'exam', label: 'Antipyretics work in fever and not in heat stroke' },
   ],

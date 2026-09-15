@@ -4,11 +4,11 @@ export const ghpDorsalColumnVsAnterolateral: Lecture = {
   id: 'ghp-dorsal-column-vs-anterolateral',
   title: 'Dorsal Column versus Anterolateral: The Crossing Level Decides Everything',
   system: 'neuro',
-  source: 'Ch 47 — Somatic Sensations I — Tactile & Position Senses',
+  source: 'Ch 48 — Somatic Sensations I — Tactile & Position Senses',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 47 Tactile & Position Senses' },
+    { kind: 'lecture', label: 'Ch 48 Tactile & Position Senses' },
     { kind: 'mechanism', label: 'Where each system decussates' },
     { kind: 'exam', label: 'Dissociated sensory loss' },
   ],

@@ -4,11 +4,11 @@ export const ghpGiSmoothMuscleElectrical: Lecture = {
   id: 'ghp-gi-smooth-muscle-electrical',
   title: 'GI Smooth Muscle: Slow Waves and Spike Potentials',
   system: 'gi',
-  source: 'Ch 62 — General Principles of Gastrointestinal Function',
+  source: 'Ch 63 — General Principles of Gastrointestinal Function',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 62 GI Electrical Activity' },
+    { kind: 'lecture', label: 'Ch 63 GI Electrical Activity' },
     { kind: 'mechanism', label: 'Slow wave sets rate · spikes set force' },
     { kind: 'exam', label: 'Stomach 3/min · duodenum 12/min · −40 mV' },
   ],

@@ -4,11 +4,11 @@ export const ghpBmrDeterminantsMeasurement: Lecture = {
   id: 'ghp-bmr-determinants-measurement',
   title: 'Basal Metabolic Rate: Determinants & Measurement',
   system: 'physiology',
-  source: 'Ch 72 — Energetics & Metabolic Rate',
+  source: 'Ch 73 — Energetics & Metabolic Rate',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 72 Energetics & Metabolic Rate' },
+    { kind: 'lecture', label: 'Ch 73 Energetics & Metabolic Rate' },
     { kind: 'mechanism', label: 'Lean mass sets BMR · thyroid sets the gain' },
     { kind: 'exam', label: 'Sex and age differences are body composition, not sex and age' },
   ],

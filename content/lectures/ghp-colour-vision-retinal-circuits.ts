@@ -4,11 +4,11 @@ export const ghpColourVisionRetinalCircuits: Lecture = {
   id: 'ghp-colour-vision-retinal-circuits',
   title: 'Colour Vision, Retinal Circuitry and Centre-Surround Fields',
   system: 'neuro',
-  source: 'Ch 50 — The Eye II — Receptor & Neural Function of the Retina',
+  source: 'Ch 51 — The Eye II — Receptor & Neural Function of the Retina',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 50 Colour & Retinal Circuits' },
+    { kind: 'lecture', label: 'Ch 51 Colour & Retinal Circuits' },
     { kind: 'mechanism', label: 'Three cone ratios → ON/OFF bipolars → centre-surround' },
     { kind: 'exam', label: 'X-linked red-green · lateral inhibition' },
   ],

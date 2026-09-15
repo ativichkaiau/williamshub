@@ -4,11 +4,11 @@ export const ghpBloodTypesTransfusion: Lecture = {
   id: 'ghp-blood-types-transfusion',
   title: 'Blood Groups, Transfusion & Reactions',
   system: 'heme',
-  source: 'Ch 35 — Blood Types; Transfusion; Transplantation',
+  source: 'Ch 36 — Blood Types; Transfusion; Transplantation',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Haematology' },
-    { kind: 'lecture', label: 'Ch 35 Blood Types & Transplantation' },
+    { kind: 'lecture', label: 'Ch 36 Blood Types & Transplantation' },
     { kind: 'mechanism', label: 'Agglutinin-mediated haemolysis' },
     { kind: 'investigation', label: 'Group and crossmatch' },
   ],

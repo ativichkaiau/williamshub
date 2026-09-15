@@ -4,11 +4,11 @@ export const ghpCellMediatedImmunityAllergy: Lecture = {
   id: 'ghp-cell-mediated-immunity-allergy',
   title: 'Cell-Mediated Immunity, MHC Restriction & Hypersensitivity',
   system: 'immune',
-  source: 'Ch 34 — Resistance to Infection II — Immunity & Allergy',
+  source: 'Ch 35 — Resistance to Infection II — Immunity & Allergy',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Immunology' },
-    { kind: 'lecture', label: 'Ch 34 Immunity & Allergy' },
+    { kind: 'lecture', label: 'Ch 35 Immunity & Allergy' },
     { kind: 'mechanism', label: 'MHC restriction' },
     { kind: 'exam', label: 'Hypersensitivity I–IV' },
   ],

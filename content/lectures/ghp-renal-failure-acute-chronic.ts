@@ -4,11 +4,11 @@ export const ghpRenalFailureAcuteChronic: Lecture = {
   id: 'ghp-renal-failure-acute-chronic',
   title: 'Acute & Chronic Renal Failure',
   system: 'renal',
-  source: 'Ch 31 — Kidney Diseases & Diuretics',
+  source: 'Ch 32 — Kidney Diseases & Diuretics',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 31 Kidney Disease & Diuretics' },
+    { kind: 'lecture', label: 'Ch 32 Kidney Disease & Diuretics' },
     { kind: 'mechanism', label: 'Nephron loss & hyperfiltration' },
     { kind: 'exam', label: 'Prerenal vs intrinsic' },
   ],

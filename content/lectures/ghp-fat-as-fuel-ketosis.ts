@@ -4,11 +4,11 @@ export const ghpFatAsFuelKetosis: Lecture = {
   id: 'ghp-fat-as-fuel-ketosis',
   title: 'Fat as Fuel: Beta-Oxidation & Ketosis',
   system: 'molecular',
-  source: 'Ch 68 — Lipid Metabolism',
+  source: 'Ch 69 — Lipid Metabolism',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 68 Lipid Metabolism' },
+    { kind: 'lecture', label: 'Ch 69 Lipid Metabolism' },
     { kind: 'mechanism', label: 'Acetyl-CoA exceeds oxaloacetate → ketone export' },
     { kind: 'exam', label: 'Fat makes no glucose · ketosis spares protein' },
   ],

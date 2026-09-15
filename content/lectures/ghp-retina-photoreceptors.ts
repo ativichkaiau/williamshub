@@ -4,11 +4,11 @@ export const ghpRetinaPhotoreceptors: Lecture = {
   id: 'ghp-retina-photoreceptors',
   title: 'The Retina: Layers, Rods and Cones, Fovea and Pigment Epithelium',
   system: 'neuro',
-  source: 'Ch 50 — The Eye II — Receptor & Neural Function of the Retina',
+  source: 'Ch 51 — The Eye II — Receptor & Neural Function of the Retina',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 50 Retina: Receptor Function' },
+    { kind: 'lecture', label: 'Ch 51 Retina: Receptor Function' },
     { kind: 'mechanism', label: 'Inverted retina → rod/cone division of labour' },
     { kind: 'exam', label: 'Cherry-red spot · blind spot · detachment' },
   ],

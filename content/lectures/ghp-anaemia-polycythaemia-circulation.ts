@@ -4,11 +4,11 @@ export const ghpAnaemiaPolycythaemiaCirculation: Lecture = {
   id: 'ghp-anaemia-polycythaemia-circulation',
   title: 'Circulatory Effects of Anaemia & Polycythaemia',
   system: 'heme',
-  source: 'Ch 32 — Red Blood Cells, Anemia & Polycythemia',
+  source: 'Ch 33 — Red Blood Cells, Anemia & Polycythemia',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Haematology' },
-    { kind: 'lecture', label: 'Ch 32 Red Cells & Anaemia' },
+    { kind: 'lecture', label: 'Ch 33 Red Cells & Anaemia' },
     { kind: 'mechanism', label: 'Viscosity vs oxygen carriage' },
     { kind: 'exam', label: 'High-output failure' },
   ],

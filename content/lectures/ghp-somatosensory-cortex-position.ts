@@ -4,11 +4,11 @@ export const ghpSomatosensoryCortexPosition: Lecture = {
   id: 'ghp-somatosensory-cortex-position',
   title: 'Somatosensory Cortex, the Homunculus and Position Sense',
   system: 'neuro',
-  source: 'Ch 47 — Somatic Sensations I — Tactile & Position Senses',
+  source: 'Ch 48 — Somatic Sensations I — Tactile & Position Senses',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 47 Tactile & Position Senses' },
+    { kind: 'lecture', label: 'Ch 48 Tactile & Position Senses' },
     { kind: 'mechanism', label: 'VPL/VPM → layer IV → column' },
     { kind: 'exam', label: 'Astereognosis · neglect · Romberg' },
   ],

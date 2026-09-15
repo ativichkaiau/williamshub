@@ -4,11 +4,11 @@ export const ghpGastricMotilityEmptying: Lecture = {
   id: 'ghp-gastric-motility-emptying',
   title: 'Gastric Motility & the Control of Emptying',
   system: 'gi',
-  source: 'Ch 63 — Propulsion & Mixing of Food in the Alimentary Tract',
+  source: 'Ch 64 — Propulsion & Mixing of Food in the Alimentary Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 63 Propulsion & Mixing' },
+    { kind: 'lecture', label: 'Ch 64 Propulsion & Mixing' },
     { kind: 'mechanism', label: 'Retropulsion · duodenal feedback' },
     { kind: 'exam', label: 'Enterogastric reflex · dumping' },
   ],

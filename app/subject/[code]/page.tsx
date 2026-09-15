@@ -109,9 +109,14 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           {subject.name}
         </h1>
         <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-          {sources.length} lecture{sources.length === 1 ? '' : 's'} · {items.length} modules — each lecture
-          opens as a whole-lecture scroll.
+          {sources.length} {subject.code === 'GHP' ? 'chapters' : `lecture${sources.length === 1 ? '' : 's'}`} · {items.length} modules
+          {' — '}each {subject.code === 'GHP' ? 'chapter' : 'lecture'} opens as one study scroll.
         </p>
+        {subject.code === 'GHP' && (
+          <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+            Original study notes aligned to all 85 chapters in the 14th-edition contents, with mechanisms and practice questions.
+          </p>
+        )}
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href={`/flashcards/block/${params.code}`}

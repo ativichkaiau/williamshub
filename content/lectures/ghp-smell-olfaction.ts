@@ -4,11 +4,11 @@ export const ghpSmellOlfaction: Lecture = {
   id: 'ghp-smell-olfaction',
   title: 'Smell: A Regenerating Neuron, a Combinatorial Code and No Thalamus',
   system: 'neuro',
-  source: 'Ch 53 — The Chemical Senses — Taste & Smell',
+  source: 'Ch 54 — The Chemical Senses — Taste & Smell',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 53 Chemical Senses' },
+    { kind: 'lecture', label: 'Ch 54 Chemical Senses' },
     { kind: 'mechanism', label: 'Odorant → G-olf → cAMP → CNG channel → chloride amplification' },
     { kind: 'exam', label: 'No thalamic relay · cribriform fracture · anosmia as lost flavour' },
   ],

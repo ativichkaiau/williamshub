@@ -1,6 +1,7 @@
 import type { Lecture } from '../lib/types';
 import { subjectOfSource, subjectSlug } from './curriculum';
 import { additionalTopics, additionalTopicSubjects } from './additional-topics';
+import ghpChapterRedirects from './ghp-redirects.json';
 // L1 — Cardiac Arrhythmias
 import avBlock from './lectures/av-block';
 import atrialFibrillation from './lectures/atrial-fibrillation';
@@ -1533,7 +1534,32 @@ import ecmAdhesionIntegrinsClinical from './lectures/ecm-adhesion-integrins-clin
 import subcellularPathologyAlterations from './lectures/subcellular-pathology-alterations';
 import intermediateFilamentsClinical from './lectures/intermediate-filaments-clinical';
 
-// Guyton & Hall Physiology (GHP) — reference layer, Units I–XIII
+// Guyton & Hall Physiology (GHP) — reference layer, Units I–XV
+import ghpUrinaryFunctionalAnatomy from './lectures/ghp-urinary-functional-anatomy';
+import ghpMicturitionStorageVoiding from './lectures/ghp-micturition-storage-voiding';
+import ghpExerciseEnergyTraining from './lectures/ghp-exercise-energy-training';
+import ghpExerciseOxygenDelivery from './lectures/ghp-exercise-oxygen-delivery';
+import ghpExerciseHeatFluidBalance from './lectures/ghp-exercise-heat-fluid-balance';
+import ghpAdrenocorticalSteroidSynthesis from './lectures/ghp-adrenocortical-steroid-synthesis';
+import ghpAnteriorPituitaryHypothalamicControl from './lectures/ghp-anterior-pituitary-hypothalamic-control';
+import ghpBoneRemodellingVitaminD from './lectures/ghp-bone-remodelling-vitamin-d';
+import ghpCalciumPhosphateHomeostasis from './lectures/ghp-calcium-phosphate-homeostasis';
+import ghpCortisolActionsStressResponse from './lectures/ghp-cortisol-actions-stress-response';
+import ghpDiabetesPathophysiologyComplications from './lectures/ghp-diabetes-pathophysiology-complications';
+import ghpEndocrineFeedbackControlPrinciples from './lectures/ghp-endocrine-feedback-control-principles';
+import ghpFetalCirculationGrowth from './lectures/ghp-fetal-circulation-growth';
+import ghpHormoneClassesReceptorMechanisms from './lectures/ghp-hormone-classes-receptor-mechanisms';
+import ghpInsulinGlucagonFuelSwitching from './lectures/ghp-insulin-glucagon-fuel-switching';
+import ghpNeonatalTransitionAdaptation from './lectures/ghp-neonatal-transition-adaptation';
+import ghpOestrogenProgesteroneActions from './lectures/ghp-oestrogen-progesterone-actions';
+import ghpOvarianCycleHormonalControl from './lectures/ghp-ovarian-cycle-hormonal-control';
+import ghpParturitionLactationPhysiology from './lectures/ghp-parturition-lactation-physiology';
+import ghpPosteriorPituitaryAdhOxytocin from './lectures/ghp-posterior-pituitary-adh-oxytocin';
+import ghpPregnancyMaternalAdaptation from './lectures/ghp-pregnancy-maternal-adaptation';
+import ghpSpermatogenesisTesticularFunction from './lectures/ghp-spermatogenesis-testicular-function';
+import ghpTestosteroneActionsMaleAxis from './lectures/ghp-testosterone-actions-male-axis';
+import ghpThyroidMetabolicActions from './lectures/ghp-thyroid-metabolic-actions';
+import ghpThyroidSynthesisStorageRelease from './lectures/ghp-thyroid-synthesis-storage-release';
 import ghpAbnormalSinusRhythmsBlocks from './lectures/ghp-abnormal-sinus-rhythms-blocks';
 import ghpAminoAcidPoolHormonalControl from './lectures/ghp-amino-acid-pool-hormonal-control';
 import ghpAnaerobicGlycolysisOxygenDebt from './lectures/ghp-anaerobic-glycolysis-oxygen-debt';
@@ -2833,6 +2859,31 @@ export const lectures: Lecture[] = [
   ...additionalTopics,
 
   // Guyton & Hall Physiology (GHP)
+  ghpUrinaryFunctionalAnatomy,
+  ghpMicturitionStorageVoiding,
+  ghpExerciseEnergyTraining,
+  ghpExerciseOxygenDelivery,
+  ghpExerciseHeatFluidBalance,
+  ghpAdrenocorticalSteroidSynthesis,
+  ghpAnteriorPituitaryHypothalamicControl,
+  ghpBoneRemodellingVitaminD,
+  ghpCalciumPhosphateHomeostasis,
+  ghpCortisolActionsStressResponse,
+  ghpDiabetesPathophysiologyComplications,
+  ghpEndocrineFeedbackControlPrinciples,
+  ghpFetalCirculationGrowth,
+  ghpHormoneClassesReceptorMechanisms,
+  ghpInsulinGlucagonFuelSwitching,
+  ghpNeonatalTransitionAdaptation,
+  ghpOestrogenProgesteroneActions,
+  ghpOvarianCycleHormonalControl,
+  ghpParturitionLactationPhysiology,
+  ghpPosteriorPituitaryAdhOxytocin,
+  ghpPregnancyMaternalAdaptation,
+  ghpSpermatogenesisTesticularFunction,
+  ghpTestosteroneActionsMaleAxis,
+  ghpThyroidMetabolicActions,
+  ghpThyroidSynthesisStorageRelease,
   ghpAminoAcidPoolHormonalControl,
   ghpAnaerobicGlycolysisOxygenDebt,
   ghpAtpEnergyCurrency,
@@ -3074,3 +3125,8 @@ export const lectureSets: LectureSet[] = Object.entries(lecturesBySource)
 export const lectureSetBySlug: Record<string, LectureSet> = Object.fromEntries(
   lectureSets.map((s) => [s.slug, s]),
 );
+
+// The initial GHP release omitted chapter 26, so its published chapters 26–73
+// correspond to the corrected chapters 27–74. Preserve those reading/practice
+// URLs; module ids (and therefore saved progress and question ids) do not change.
+export const lectureSetRedirects: Record<string, string> = Object.assign(Object.create(null), ghpChapterRedirects);

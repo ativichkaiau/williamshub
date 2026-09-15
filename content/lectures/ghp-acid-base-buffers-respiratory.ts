@@ -4,11 +4,11 @@ export const ghpAcidBaseBuffersRespiratory: Lecture = {
   id: 'ghp-acid-base-buffers-respiratory',
   title: 'Buffers & Respiratory Control of pH',
   system: 'renal',
-  source: 'Ch 30 — Regulation of Acid–Base Balance',
+  source: 'Ch 31 — Regulation of Acid–Base Balance',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 30 Acid–Base Balance' },
+    { kind: 'lecture', label: 'Ch 31 Acid–Base Balance' },
     { kind: 'mechanism', label: 'Three lines of defence' },
     { kind: 'exam', label: 'Henderson–Hasselbalch' },
   ],

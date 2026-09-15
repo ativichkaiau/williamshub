@@ -4,11 +4,11 @@ export const ghpMovementDisorders: Lecture = {
   id: 'ghp-movement-disorders',
   title: 'Movement Disorders: Hypokinetic and Hyperkinetic Failures of the Loop',
   system: 'neuro',
-  source: 'Ch 56 — Cerebellum & Basal Ganglia in Motor Control',
+  source: 'Ch 57 — Cerebellum & Basal Ganglia in Motor Control',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 56 Cerebellum & Basal Ganglia' },
+    { kind: 'lecture', label: 'Ch 57 Cerebellum & Basal Ganglia' },
     { kind: 'mechanism', label: 'GPi output up = too little, down = too much' },
     { kind: 'disease', label: 'Parkinson · Huntington · hemiballismus' },
   ],

@@ -4,11 +4,11 @@ export const ghpRegulationTubularReabsorption: Lecture = {
   id: 'ghp-regulation-tubular-reabsorption',
   title: 'Regulation of Tubular Reabsorption & Pressure Natriuresis',
   system: 'renal',
-  source: 'Ch 27 — Urine Formation II — Tubular Processing of the Filtrate',
+  source: 'Ch 28 — Urine Formation II — Tubular Processing of the Filtrate',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 27 Tubular Processing' },
+    { kind: 'lecture', label: 'Ch 28 Tubular Processing' },
     { kind: 'mechanism', label: 'Glomerulotubular balance' },
     { kind: 'exam', label: 'Peritubular Starling forces' },
   ],

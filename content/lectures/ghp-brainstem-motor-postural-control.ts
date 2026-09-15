@@ -4,11 +4,11 @@ export const ghpBrainstemMotorPosturalControl: Lecture = {
   id: 'ghp-brainstem-motor-postural-control',
   title: 'Brain Stem Motor Control: Antigravity Tone, Spasticity and Posturing',
   system: 'neuro',
-  source: 'Ch 55 — Cortical & Brain Stem Control of Motor Function',
+  source: 'Ch 56 — Cortical & Brain Stem Control of Motor Function',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 55 Cortical & Brain Stem Motor Control' },
+    { kind: 'lecture', label: 'Ch 56 Cortical & Brain Stem Motor Control' },
     { kind: 'mechanism', label: 'Pontine excitation vs medullary inhibition' },
     { kind: 'exam', label: 'Decorticate vs decerebrate · spasticity' },
   ],

@@ -4,11 +4,11 @@ export const ghpInnateAdaptiveOverview: Lecture = {
   id: 'ghp-innate-adaptive-overview',
   title: 'Innate vs Adaptive Immunity, Clonal Selection & Memory',
   system: 'immune',
-  source: 'Ch 34 — Resistance to Infection II — Immunity & Allergy',
+  source: 'Ch 35 — Resistance to Infection II — Immunity & Allergy',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Immunology' },
-    { kind: 'lecture', label: 'Ch 34 Immunity & Allergy' },
+    { kind: 'lecture', label: 'Ch 35 Immunity & Allergy' },
     { kind: 'mechanism', label: 'Clonal selection' },
     { kind: 'exam', label: 'Primary vs secondary response' },
   ],

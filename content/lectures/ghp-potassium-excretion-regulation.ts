@@ -4,11 +4,11 @@ export const ghpPotassiumExcretionRegulation: Lecture = {
   id: 'ghp-potassium-excretion-regulation',
   title: 'Potassium Distribution & Renal Excretion',
   system: 'renal',
-  source: 'Ch 29 — Renal Regulation of K⁺, Ca²⁺, Phosphate & Mg²⁺; Volume Control',
+  source: 'Ch 30 — Renal Regulation of K⁺, Ca²⁺, Phosphate & Mg²⁺; Volume Control',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 29 K⁺, Ca²⁺, Phosphate & Volume' },
+    { kind: 'lecture', label: 'Ch 30 K⁺, Ca²⁺, Phosphate & Volume' },
     { kind: 'mechanism', label: 'Internal shift then excretion' },
     { kind: 'exam', label: 'Aldosterone · distal flow' },
   ],

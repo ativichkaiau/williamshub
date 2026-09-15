@@ -4,11 +4,11 @@ export const ghpHumoralImmunityAntibodies: Lecture = {
   id: 'ghp-humoral-immunity-antibodies',
   title: 'Humoral Immunity — B Cells, Plasma Cells & Antibody Function',
   system: 'immune',
-  source: 'Ch 34 — Resistance to Infection II — Immunity & Allergy',
+  source: 'Ch 35 — Resistance to Infection II — Immunity & Allergy',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Immunology' },
-    { kind: 'lecture', label: 'Ch 34 Immunity & Allergy' },
+    { kind: 'lecture', label: 'Ch 35 Immunity & Allergy' },
     { kind: 'mechanism', label: 'Antibody effector functions' },
     { kind: 'exam', label: 'T-dependent vs T-independent' },
   ],

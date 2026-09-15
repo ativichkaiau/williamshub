@@ -4,11 +4,11 @@ export const ghpPulmonaryCirculationZones: Lecture = {
   id: 'ghp-pulmonary-circulation-zones',
   title: 'Pulmonary Circulation & the West Zones',
   system: 'respiratory',
-  source: 'Ch 38 — Pulmonary Circulation, Pulmonary Edema & Pleural Fluid',
+  source: 'Ch 39 — Pulmonary Circulation, Pulmonary Edema & Pleural Fluid',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 38 Pulmonary Circulation' },
+    { kind: 'lecture', label: 'Ch 39 Pulmonary Circulation' },
     { kind: 'mechanism', label: 'Hypoxic pulmonary vasoconstriction' },
     { kind: 'exam', label: 'West zones 1 to 3' },
   ],

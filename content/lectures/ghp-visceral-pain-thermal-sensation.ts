@@ -4,11 +4,11 @@ export const ghpVisceralPainThermalSensation: Lecture = {
   id: 'ghp-visceral-pain-thermal-sensation',
   title: 'Visceral Pain and Thermal Sensation',
   system: 'neuro',
-  source: 'Ch 48 — Somatic Sensations II — Pain, Headache & Thermal Sensations',
+  source: 'Ch 49 — Somatic Sensations II — Pain, Headache & Thermal Sensations',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'Ch 48 Pain & Thermal Sensation' },
+    { kind: 'lecture', label: 'Ch 49 Pain & Thermal Sensation' },
     { kind: 'mechanism', label: 'True visceral vs parietal pain' },
     { kind: 'exam', label: 'Colic · 45 °C · thermal adaptation' },
   ],

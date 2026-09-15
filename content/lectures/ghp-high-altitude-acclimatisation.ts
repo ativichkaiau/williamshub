@@ -4,11 +4,11 @@ export const ghpHighAltitudeAcclimatisation: Lecture = {
   id: 'ghp-high-altitude-acclimatisation',
   title: 'High Altitude & Acclimatisation',
   system: 'physiology',
-  source: 'Ch 43 — Aviation, High-Altitude & Space Physiology',
+  source: 'Ch 44 — Aviation, High-Altitude & Space Physiology',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 43 High-Altitude Physiology' },
+    { kind: 'lecture', label: 'Ch 44 High-Altitude Physiology' },
     { kind: 'mechanism', label: 'Acclimatisation sequence' },
     { kind: 'exam', label: 'Why the kidney sets the pace' },
   ],

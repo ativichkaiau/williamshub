@@ -4,11 +4,11 @@ export const ghpMotorCortexCorticospinal: Lecture = {
   id: 'ghp-motor-cortex-corticospinal',
   title: 'Motor Cortex, the Homunculus and the Corticospinal Tract',
   system: 'neuro',
-  source: 'Ch 55 — Cortical & Brain Stem Control of Motor Function',
+  source: 'Ch 56 — Cortical & Brain Stem Control of Motor Function',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 55 Cortical & Brain Stem Motor Control' },
+    { kind: 'lecture', label: 'Ch 56 Cortical & Brain Stem Motor Control' },
     { kind: 'mechanism', label: 'Area 4 → capsule → pyramid → decussation' },
     { kind: 'exam', label: 'Homunculus · capsular stroke · lateralisation' },
   ],

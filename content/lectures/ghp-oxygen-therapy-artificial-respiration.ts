@@ -4,11 +4,11 @@ export const ghpOxygenTherapyArtificialRespiration: Lecture = {
   id: 'ghp-oxygen-therapy-artificial-respiration',
   title: 'Oxygen Therapy & Artificial Respiration',
   system: 'respiratory',
-  source: 'Ch 42 — Respiratory Insufficiency — Pathophysiology & Oxygen Therapy',
+  source: 'Ch 43 — Respiratory Insufficiency — Pathophysiology & Oxygen Therapy',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 42 Respiratory Insufficiency' },
+    { kind: 'lecture', label: 'Ch 43 Respiratory Insufficiency' },
     { kind: 'mechanism', label: 'When oxygen helps' },
     { kind: 'exam', label: 'Positive pressure trade-offs' },
   ],

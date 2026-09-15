@@ -4,11 +4,11 @@ export const ghpDecompressionHyperbaricTherapy: Lecture = {
   id: 'ghp-decompression-hyperbaric-therapy',
   title: 'Decompression Sickness & Hyperbaric Therapy',
   system: 'physiology',
-  source: 'Ch 44 — Physiology of Deep-Sea Diving & Hyperbaric Conditions',
+  source: 'Ch 45 — Physiology of Deep-Sea Diving & Hyperbaric Conditions',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 44 Hyperbaric Conditions' },
+    { kind: 'lecture', label: 'Ch 45 Hyperbaric Conditions' },
     { kind: 'disease', label: 'Decompression sickness' },
     { kind: 'treatment', label: 'Recompression & hyperbaric oxygen' },
   ],

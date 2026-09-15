@@ -4,11 +4,11 @@ export const ghpRespiratoryCentresRhythm: Lecture = {
   id: 'ghp-respiratory-centres-rhythm',
   title: 'Respiratory Centres & Rhythm Generation',
   system: 'respiratory',
-  source: 'Ch 41 — Regulation of Respiration',
+  source: 'Ch 42 — Regulation of Respiration',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 41 Regulation of Respiration' },
+    { kind: 'lecture', label: 'Ch 42 Regulation of Respiration' },
     { kind: 'mechanism', label: 'Inspiratory ramp' },
     { kind: 'exam', label: 'Breathing pattern' },
   ],

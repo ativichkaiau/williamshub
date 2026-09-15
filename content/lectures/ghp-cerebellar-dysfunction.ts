@@ -4,11 +4,11 @@ export const ghpCerebellarDysfunction: Lecture = {
   id: 'ghp-cerebellar-dysfunction',
   title: 'Cerebellar Dysfunction: Signs of a Failed Comparator',
   system: 'neuro',
-  source: 'Ch 56 — Cerebellum & Basal Ganglia in Motor Control',
+  source: 'Ch 57 — Cerebellum & Basal Ganglia in Motor Control',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 56 Cerebellum & Basal Ganglia' },
+    { kind: 'lecture', label: 'Ch 57 Cerebellum & Basal Ganglia' },
     { kind: 'mechanism', label: 'No brake → overshoot → correction tremor' },
     { kind: 'exam', label: 'Ipsilateral signs · Romberg discriminator' },
   ],

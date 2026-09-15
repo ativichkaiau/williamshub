@@ -4,11 +4,11 @@ export const ghpCerebellarAnatomyCircuitry: Lecture = {
   id: 'ghp-cerebellar-anatomy-circuitry',
   title: 'Cerebellar Zones, Cortical Circuitry and the Comparator',
   system: 'neuro',
-  source: 'Ch 56 — Cerebellum & Basal Ganglia in Motor Control',
+  source: 'Ch 57 — Cerebellum & Basal Ganglia in Motor Control',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 56 Cerebellum & Basal Ganglia' },
+    { kind: 'lecture', label: 'Ch 57 Cerebellum & Basal Ganglia' },
     { kind: 'mechanism', label: 'Mossy + climbing → Purkinje → deep nuclei' },
     { kind: 'exam', label: 'Three zones · peduncles · comparator' },
   ],

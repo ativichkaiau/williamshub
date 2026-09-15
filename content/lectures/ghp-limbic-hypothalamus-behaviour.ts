@@ -4,11 +4,11 @@ export const ghpLimbicHypothalamusBehaviour: Lecture = {
   id: 'ghp-limbic-hypothalamus-behaviour',
   title: 'The Limbic System and Hypothalamus: Autonomic, Endocrine and Behavioural Output',
   system: 'neuro',
-  source: 'Ch 58 — Behavioral & Motivational Mechanisms — Limbic System & Hypothalamus',
+  source: 'Ch 59 — Behavioral & Motivational Mechanisms — Limbic System & Hypothalamus',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 58 Limbic System & Hypothalamus' },
+    { kind: 'lecture', label: 'Ch 59 Limbic System & Hypothalamus' },
     { kind: 'mechanism', label: 'Amygdala → hypothalamus → autonomic, endocrine, behaviour' },
     { kind: 'exam', label: 'VMH · thermostat · SCN · Kluver-Bucy' },
   ],

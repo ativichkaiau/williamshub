@@ -4,11 +4,11 @@ export const ghpAnaerobicGlycolysisOxygenDebt: Lecture = {
   id: 'ghp-anaerobic-glycolysis-oxygen-debt',
   title: 'Anaerobic Glycolysis & Oxygen Debt',
   system: 'molecular',
-  source: 'Ch 67 — Metabolism of Carbohydrates & Formation of ATP',
+  source: 'Ch 68 — Metabolism of Carbohydrates & Formation of ATP',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 67 Carbohydrate Metabolism & ATP' },
+    { kind: 'lecture', label: 'Ch 68 Carbohydrate Metabolism & ATP' },
     { kind: 'mechanism', label: 'Glycolysis runs to regenerate NAD⁺ · lactate is a fuel' },
     { kind: 'exam', label: 'What oxygen debt actually repays' },
   ],

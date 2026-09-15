@@ -4,11 +4,11 @@ export const ghpSoundTransmissionCochlea: Lecture = {
   id: 'ghp-sound-transmission-cochlea',
   title: 'Sound Transmission, the Cochlea and Hair Cell Transduction',
   system: 'neuro',
-  source: 'Ch 52 — The Sense of Hearing',
+  source: 'Ch 53 — The Sense of Hearing',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 52 The Sense of Hearing' },
+    { kind: 'lecture', label: 'Ch 53 The Sense of Hearing' },
     { kind: 'mechanism', label: 'Impedance match → travelling wave → tip link' },
     { kind: 'exam', label: 'Place principle · OHC amplifier · attenuation reflex' },
   ],

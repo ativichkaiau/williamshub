@@ -4,11 +4,11 @@ export const ghpVentilationPerfusionMatching: Lecture = {
   id: 'ghp-ventilation-perfusion-matching',
   title: 'Ventilation–Perfusion Matching',
   system: 'respiratory',
-  source: 'Ch 39 — Physical Principles of Gas Exchange & Diffusion',
+  source: 'Ch 40 — Physical Principles of Gas Exchange & Diffusion',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 39 Gas Exchange & Diffusion' },
+    { kind: 'lecture', label: 'Ch 40 Gas Exchange & Diffusion' },
     { kind: 'mechanism', label: 'V/Q spectrum' },
     { kind: 'exam', label: 'Shunt vs mismatch' },
   ],

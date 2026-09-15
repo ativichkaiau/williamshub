@@ -4,11 +4,11 @@ export const ghpGolgiTendonOrganCordReflexes: Lecture = {
   id: 'ghp-golgi-tendon-organ-cord-reflexes',
   title: 'Golgi Tendon Organ, Withdrawal Reflexes and Spinal Shock',
   system: 'neuro',
-  source: 'Ch 54 — Motor Functions of the Spinal Cord; the Cord Reflexes',
+  source: 'Ch 55 — Motor Functions of the Spinal Cord; the Cord Reflexes',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 54 Motor Functions of the Cord' },
+    { kind: 'lecture', label: 'Ch 55 Motor Functions of the Cord' },
     { kind: 'mechanism', label: 'Ib inhibition · reciprocal innervation' },
     { kind: 'exam', label: 'Clasp-knife · crossed extensor · spinal shock' },
   ],

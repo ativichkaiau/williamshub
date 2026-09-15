@@ -4,11 +4,11 @@ export const ghpPrimaryHaemostasisPlatelets: Lecture = {
   id: 'ghp-primary-haemostasis-platelets',
   title: 'Primary Haemostasis & the Platelet Plug',
   system: 'heme',
-  source: 'Ch 36 — Hemostasis & Blood Coagulation',
+  source: 'Ch 37 — Hemostasis & Blood Coagulation',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Haematology' },
-    { kind: 'lecture', label: 'Ch 36 Haemostasis & Coagulation' },
+    { kind: 'lecture', label: 'Ch 37 Haemostasis & Coagulation' },
     { kind: 'mechanism', label: 'Adhesion, activation, aggregation' },
     { kind: 'exam', label: 'Mucocutaneous bleeding' },
   ],

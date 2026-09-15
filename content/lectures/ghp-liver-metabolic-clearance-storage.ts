@@ -4,11 +4,11 @@ export const ghpLiverMetabolicClearanceStorage: Lecture = {
   id: 'ghp-liver-metabolic-clearance-storage',
   title: 'Hepatic Metabolic, Storage & Clearance Functions',
   system: 'gi',
-  source: 'Ch 70 — The Liver as an Organ',
+  source: 'Ch 71 — The Liver as an Organ',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 70 Hepatic Metabolic & Clearance Functions' },
+    { kind: 'lecture', label: 'Ch 71 Hepatic Metabolic & Clearance Functions' },
     { kind: 'mechanism', label: 'Glucose buffer · synthetic reserve · first-pass clearance' },
     { kind: 'exam', label: 'Factor VII first, albumin last, factor VIII spared' },
   ],

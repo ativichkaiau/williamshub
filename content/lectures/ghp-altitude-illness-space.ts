@@ -4,11 +4,11 @@ export const ghpAltitudeIllnessSpace: Lecture = {
   id: 'ghp-altitude-illness-space',
   title: 'Altitude Illness, Acceleration & Weightlessness',
   system: 'physiology',
-  source: 'Ch 43 — Aviation, High-Altitude & Space Physiology',
+  source: 'Ch 44 — Aviation, High-Altitude & Space Physiology',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 43 Aviation & Space Physiology' },
+    { kind: 'lecture', label: 'Ch 44 Aviation & Space Physiology' },
     { kind: 'disease', label: 'AMS, HAPE, HACE' },
     { kind: 'mechanism', label: 'G forces and microgravity' },
   ],

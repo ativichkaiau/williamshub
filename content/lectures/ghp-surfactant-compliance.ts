@@ -4,11 +4,11 @@ export const ghpSurfactantCompliance: Lecture = {
   id: 'ghp-surfactant-compliance',
   title: 'Surfactant, Surface Tension & Compliance',
   system: 'respiratory',
-  source: 'Ch 37 — Pulmonary Ventilation',
+  source: 'Ch 38 — Pulmonary Ventilation',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 37 Pulmonary Ventilation' },
+    { kind: 'lecture', label: 'Ch 38 Pulmonary Ventilation' },
     { kind: 'mechanism', label: 'Laplace law and alveolar stability' },
     { kind: 'disease', label: 'Neonatal respiratory distress syndrome' },
   ],

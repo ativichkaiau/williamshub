@@ -4,11 +4,11 @@ export const ghpUpperVsLowerMotorNeuron: Lecture = {
   id: 'ghp-upper-vs-lower-motor-neuron',
   title: 'Upper versus Lower Motor Neuron: Deriving the Table',
   system: 'neuro',
-  source: 'Ch 55 — Cortical & Brain Stem Control of Motor Function',
+  source: 'Ch 56 — Cortical & Brain Stem Control of Motor Function',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 55 Cortical & Brain Stem Motor Control' },
+    { kind: 'lecture', label: 'Ch 56 Cortical & Brain Stem Motor Control' },
     { kind: 'mechanism', label: 'Final common path · loop gain' },
     { kind: 'exam', label: 'Tone · reflexes · wasting · plantar' },
   ],

@@ -4,11 +4,11 @@ export const ghpNervousSystemOrganisation: Lecture = {
   id: 'ghp-nervous-system-organisation',
   title: 'Organisation of the Nervous System',
   system: 'neuro',
-  source: 'Ch 45 — Organization of the Nervous System; Synapses & Transmitters',
+  source: 'Ch 46 — Organization of the Nervous System; Synapses & Transmitters',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 45 Nervous System Organisation' },
+    { kind: 'lecture', label: 'Ch 46 Nervous System Organisation' },
     { kind: 'mechanism', label: 'Three levels · convergence and divergence' },
     { kind: 'exam', label: 'Grey vs white matter' },
   ],

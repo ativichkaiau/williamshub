@@ -4,11 +4,11 @@ export const ghpVisualPathwaysCortex: Lecture = {
   id: 'ghp-visual-pathways-cortex',
   title: 'Visual Pathways, the Lateral Geniculate and Striate Cortex',
   system: 'neuro',
-  source: 'Ch 51 — The Eye III — Central Neurophysiology of Vision',
+  source: 'Ch 52 — The Eye III — Central Neurophysiology of Vision',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 51 Central Neurophysiology of Vision' },
+    { kind: 'lecture', label: 'Ch 52 Central Neurophysiology of Vision' },
     { kind: 'mechanism', label: 'Retina → chiasm → LGN → V1' },
     { kind: 'exam', label: 'Field defects · macular sparing · what vs where' },
   ],

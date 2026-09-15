@@ -4,11 +4,11 @@ export const ghpSensoryReceptorsTransduction: Lecture = {
   id: 'ghp-sensory-receptors-transduction',
   title: 'Sensory Receptors, Differential Sensitivity & Receptor Potentials',
   system: 'neuro',
-  source: 'Ch 46 — Sensory Receptors & Neuronal Circuits for Processing Information',
+  source: 'Ch 47 — Sensory Receptors & Neuronal Circuits for Processing Information',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neurophysiology' },
-    { kind: 'lecture', label: 'Ch 46 Sensory Receptors' },
+    { kind: 'lecture', label: 'Ch 47 Sensory Receptors' },
     { kind: 'mechanism', label: 'Receptor potential → spike train' },
     { kind: 'exam', label: 'Labelled line · differential sensitivity' },
   ],

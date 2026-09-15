@@ -4,11 +4,11 @@ export const ghpSplanchnicCirculation: Lecture = {
   id: 'ghp-splanchnic-circulation',
   title: 'Splanchnic Circulation and the Portal System',
   system: 'gi',
-  source: 'Ch 62 — General Principles of Gastrointestinal Function',
+  source: 'Ch 63 — General Principles of Gastrointestinal Function',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 62 Splanchnic Circulation' },
+    { kind: 'lecture', label: 'Ch 63 Splanchnic Circulation' },
     { kind: 'mechanism', label: 'Portal first pass · villus countercurrent' },
     { kind: 'exam', label: 'Autoregulatory escape · villus tip necrosis' },
   ],

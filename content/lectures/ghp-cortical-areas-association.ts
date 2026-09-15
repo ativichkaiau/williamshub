@@ -4,11 +4,11 @@ export const ghpCorticalAreasAssociation: Lecture = {
   id: 'ghp-cortical-areas-association',
   title: 'Cortical Layers, Columns and the Association Areas',
   system: 'neuro',
-  source: 'Ch 57 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
+  source: 'Ch 58 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 57 Cerebral Cortex & Intellectual Function' },
+    { kind: 'lecture', label: 'Ch 58 Cerebral Cortex & Intellectual Function' },
     { kind: 'mechanism', label: 'Thalamus → layer IV → column → gnostic area' },
     { kind: 'exam', label: 'Agnosia · Wernicke · prefrontal · split brain' },
   ],

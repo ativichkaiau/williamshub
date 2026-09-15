@@ -18,6 +18,7 @@
 
 import { lectures } from '../content';
 import { contentIssues, type ContentIssue } from '../lib/content/placement';
+import { guytonCoverageIssues } from './verify-ghp';
 
 // ── Tier 1: placement warnings (non-fatal) ──────────────────────────────────
 const issues = contentIssues(lectures);
@@ -39,7 +40,7 @@ if (issues.length === 0) {
 
 // ── Tier 2: integrity + markup errors (fatal) ───────────────────────────────
 type Fatal = { moduleId: string; kind: string; detail: string };
-const fatals: Fatal[] = [];
+const fatals: Fatal[] = guytonCoverageIssues();
 
 const ids = new Set<string>();
 const dups = new Set<string>();
@@ -111,3 +112,4 @@ if (fatals.length > 0) {
 }
 
 console.log(`content:verify — integrity clean: ${ids.size} unique ids, all cross-links resolve, all quiz answers valid.`);
+console.log('content:verify — GHP coverage clean: all 85 chapters registered, correctly grouped, with notes, mechanisms and quizzes; legacy chapter URLs preserved.');

@@ -4,11 +4,11 @@ export const ghpAtpEnergyCurrency: Lecture = {
   id: 'ghp-atp-energy-currency',
   title: 'ATP as the Energy Currency',
   system: 'molecular',
-  source: 'Ch 67 — Metabolism of Carbohydrates & Formation of ATP',
+  source: 'Ch 68 — Metabolism of Carbohydrates & Formation of ATP',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 67 Carbohydrate Metabolism & ATP' },
+    { kind: 'lecture', label: 'Ch 68 Carbohydrate Metabolism & ATP' },
     { kind: 'mechanism', label: 'Turnover, not pool size · PCr buffer · ADP as the signal' },
     { kind: 'exam', label: 'Power vs capacity of the three energy systems' },
   ],

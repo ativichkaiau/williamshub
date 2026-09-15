@@ -4,11 +4,11 @@ export const ghpSynapticTransmission: Lecture = {
   id: 'ghp-synaptic-transmission',
   title: 'Synaptic Transmission: EPSPs, IPSPs and the Decision to Fire',
   system: 'neuro',
-  source: 'Ch 45 — Organization of the Nervous System; Synapses & Transmitters',
+  source: 'Ch 46 — Organization of the Nervous System; Synapses & Transmitters',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 45 Synapses' },
+    { kind: 'lecture', label: 'Ch 46 Synapses' },
     { kind: 'mechanism', label: 'Ca²⁺-triggered quantal release' },
     { kind: 'exam', label: 'Summation · axon hillock threshold' },
   ],

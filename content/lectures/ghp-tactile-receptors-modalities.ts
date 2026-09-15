@@ -4,11 +4,11 @@ export const ghpTactileReceptorsModalities: Lecture = {
   id: 'ghp-tactile-receptors-modalities',
   title: 'Tactile Receptors and Their Submodalities',
   system: 'neuro',
-  source: 'Ch 47 — Somatic Sensations I — Tactile & Position Senses',
+  source: 'Ch 48 — Somatic Sensations I — Tactile & Position Senses',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 47 Tactile & Position Senses' },
+    { kind: 'lecture', label: 'Ch 48 Tactile & Position Senses' },
     { kind: 'mechanism', label: 'Adaptation rate = what is measured' },
     { kind: 'exam', label: 'Two-point · vibration · itch' },
   ],

@@ -4,11 +4,11 @@ export const ghpCountercurrentUrineConcentration: Lecture = {
   id: 'ghp-countercurrent-urine-concentration',
   title: 'Countercurrent Multiplier & Urine Concentration',
   system: 'renal',
-  source: 'Ch 28 — Regulation of Extracellular Fluid Osmolarity & Sodium',
+  source: 'Ch 29 — Regulation of Extracellular Fluid Osmolarity & Sodium',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 28 Osmolarity & Sodium' },
+    { kind: 'lecture', label: 'Ch 29 Osmolarity & Sodium' },
     { kind: 'mechanism', label: 'Countercurrent multiplication' },
     { kind: 'exam', label: 'Medullary gradient' },
   ],

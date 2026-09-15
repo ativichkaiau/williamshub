@@ -4,11 +4,11 @@ export const ghpChemoreceptorControl: Lecture = {
   id: 'ghp-chemoreceptor-control',
   title: 'Chemoreceptor Control of Ventilation',
   system: 'respiratory',
-  source: 'Ch 41 — Regulation of Respiration',
+  source: 'Ch 42 — Regulation of Respiration',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 41 Regulation of Respiration' },
+    { kind: 'lecture', label: 'Ch 42 Regulation of Respiration' },
     { kind: 'mechanism', label: 'CO₂ as the effective stimulus' },
     { kind: 'investigation', label: 'Arterial blood gas' },
   ],

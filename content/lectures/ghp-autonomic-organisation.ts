@@ -4,11 +4,11 @@ export const ghpAutonomicOrganisation: Lecture = {
   id: 'ghp-autonomic-organisation',
   title: 'Autonomic Organisation: Two Divisions, One Ganglionic Rule',
   system: 'neuro',
-  source: 'Ch 60 — The Autonomic Nervous System & the Adrenal Medulla',
+  source: 'Ch 61 — The Autonomic Nervous System & the Adrenal Medulla',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuro' },
-    { kind: 'lecture', label: 'Ch 60 The Autonomic Nervous System' },
+    { kind: 'lecture', label: 'Ch 61 The Autonomic Nervous System' },
     { kind: 'mechanism', label: 'Preganglionic to postganglionic relay' },
     { kind: 'exam', label: 'Denervation supersensitivity' },
   ],

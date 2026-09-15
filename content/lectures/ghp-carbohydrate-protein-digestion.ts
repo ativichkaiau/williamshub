@@ -4,11 +4,11 @@ export const ghpCarbohydrateProteinDigestion: Lecture = {
   id: 'ghp-carbohydrate-protein-digestion',
   title: 'Carbohydrate & Protein Digestion and Absorption',
   system: 'gi',
-  source: 'Ch 65 — Digestion & Absorption in the Gastrointestinal Tract',
+  source: 'Ch 66 — Digestion & Absorption in the Gastrointestinal Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 65 Digestion & Absorption' },
+    { kind: 'lecture', label: 'Ch 66 Digestion & Absorption' },
     { kind: 'mechanism', label: 'SGLT1 · GLUT5 · PepT1' },
     { kind: 'exam', label: 'Why ORS works · lactase deficiency' },
   ],

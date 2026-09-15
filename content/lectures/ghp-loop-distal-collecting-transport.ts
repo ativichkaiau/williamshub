@@ -4,11 +4,11 @@ export const ghpLoopDistalCollectingTransport: Lecture = {
   id: 'ghp-loop-distal-collecting-transport',
   title: 'Loop of Henle, Distal Tubule & Collecting Duct',
   system: 'renal',
-  source: 'Ch 27 — Urine Formation II — Tubular Processing of the Filtrate',
+  source: 'Ch 28 — Urine Formation II — Tubular Processing of the Filtrate',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 27 Tubular Processing' },
+    { kind: 'lecture', label: 'Ch 28 Tubular Processing' },
     { kind: 'mechanism', label: 'Segment-specific transporters' },
     { kind: 'exam', label: 'Diuretic target sites' },
   ],

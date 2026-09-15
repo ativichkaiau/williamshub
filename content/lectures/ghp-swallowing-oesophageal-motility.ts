@@ -4,11 +4,11 @@ export const ghpSwallowingOesophagealMotility: Lecture = {
   id: 'ghp-swallowing-oesophageal-motility',
   title: 'Swallowing & Oesophageal Motility',
   system: 'gi',
-  source: 'Ch 63 — Propulsion & Mixing of Food in the Alimentary Tract',
+  source: 'Ch 64 — Propulsion & Mixing of Food in the Alimentary Tract',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Gastrointestinal' },
-    { kind: 'lecture', label: 'Ch 63 Propulsion & Mixing' },
+    { kind: 'lecture', label: 'Ch 64 Propulsion & Mixing' },
     { kind: 'mechanism', label: 'Deglutition reflex · peristalsis' },
     { kind: 'exam', label: 'Airway protection · achalasia' },
   ],

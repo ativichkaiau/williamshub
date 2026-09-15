@@ -4,11 +4,11 @@ export const ghpLeukocytesPhagocytosis: Lecture = {
   id: 'ghp-leukocytes-phagocytosis',
   title: 'Leukocytes, Phagocytosis & the Macrophage System',
   system: 'immune',
-  source: 'Ch 33 — Resistance to Infection I — Leukocytes & Inflammation',
+  source: 'Ch 34 — Resistance to Infection I — Leukocytes & Inflammation',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Immunology' },
-    { kind: 'lecture', label: 'Ch 33 Leukocytes & Inflammation' },
+    { kind: 'lecture', label: 'Ch 34 Leukocytes & Inflammation' },
     { kind: 'mechanism', label: 'Killing machinery' },
     { kind: 'exam', label: 'Respiratory burst' },
   ],

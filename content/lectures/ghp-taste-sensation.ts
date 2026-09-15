@@ -4,11 +4,11 @@ export const ghpTasteSensation: Lecture = {
   id: 'ghp-taste-sensation',
   title: 'Taste: Five Primaries, Two Transduction Routes and Three Nerves',
   system: 'neuro',
-  source: 'Ch 53 — The Chemical Senses — Taste & Smell',
+  source: 'Ch 54 — The Chemical Senses — Taste & Smell',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 53 Chemical Senses' },
+    { kind: 'lecture', label: 'Ch 54 Chemical Senses' },
     { kind: 'mechanism', label: 'Gustducin → IP3 → TRPM5 → ATP' },
     { kind: 'exam', label: 'VII vs IX vs X · bitter threshold' },
   ],

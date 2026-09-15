@@ -4,11 +4,11 @@ export const ghpRefractiveErrorsVisualAcuity: Lecture = {
   id: 'ghp-refractive-errors-visual-acuity',
   title: 'Refractive Errors, Visual Acuity and the Aqueous Humour',
   system: 'neuro',
-  source: 'Ch 49 — The Eye I — Optics of Vision',
+  source: 'Ch 50 — The Eye I — Optics of Vision',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 49 Optics of Vision' },
+    { kind: 'lecture', label: 'Ch 50 Optics of Vision' },
     { kind: 'mechanism', label: 'Axial length vs refractive power → where the focus lands' },
     { kind: 'exam', label: 'Minus for myopia · plus for hyperopia · cylinder for astigmatism' },
     { kind: 'disease', label: 'Glaucoma as an outflow failure' },

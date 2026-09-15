@@ -4,11 +4,11 @@ export const ghpNeuronalCircuitsProcessing: Lecture = {
   id: 'ghp-neuronal-circuits-processing',
   title: 'Nerve Fibre Types & Neuronal Circuits for Processing Information',
   system: 'neuro',
-  source: 'Ch 46 — Sensory Receptors & Neuronal Circuits for Processing Information',
+  source: 'Ch 47 — Sensory Receptors & Neuronal Circuits for Processing Information',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neurophysiology' },
-    { kind: 'lecture', label: 'Ch 46 Fibre Types & Circuits' },
+    { kind: 'lecture', label: 'Ch 47 Fibre Types & Circuits' },
     { kind: 'mechanism', label: 'Divergence · convergence · lateral inhibition' },
     { kind: 'exam', label: 'Aα Aβ Aγ Aδ C · afterdischarge' },
   ],

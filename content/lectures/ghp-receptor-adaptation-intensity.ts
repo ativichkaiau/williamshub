@@ -4,11 +4,11 @@ export const ghpReceptorAdaptationIntensity: Lecture = {
   id: 'ghp-receptor-adaptation-intensity',
   title: 'Receptor Adaptation & the Coding of Stimulus Intensity',
   system: 'neuro',
-  source: 'Ch 46 — Sensory Receptors & Neuronal Circuits for Processing Information',
+  source: 'Ch 47 — Sensory Receptors & Neuronal Circuits for Processing Information',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neurophysiology' },
-    { kind: 'lecture', label: 'Ch 46 Adaptation & Intensity' },
+    { kind: 'lecture', label: 'Ch 47 Adaptation & Intensity' },
     { kind: 'mechanism', label: 'Viscoelastic capsule · accommodation' },
     { kind: 'exam', label: 'Tonic vs phasic · Weber-Fechner' },
   ],

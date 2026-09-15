@@ -4,11 +4,11 @@ export const ghpCalciumPhosphateVolumeIntegration: Lecture = {
   id: 'ghp-calcium-phosphate-volume-integration',
   title: 'Calcium, Phosphate & Integrated Volume Control',
   system: 'renal',
-  source: 'Ch 29 — Renal Regulation of K⁺, Ca²⁺, Phosphate & Mg²⁺; Volume Control',
+  source: 'Ch 30 — Renal Regulation of K⁺, Ca²⁺, Phosphate & Mg²⁺; Volume Control',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 29 K⁺, Ca²⁺, Phosphate & Volume' },
+    { kind: 'lecture', label: 'Ch 30 K⁺, Ca²⁺, Phosphate & Volume' },
     { kind: 'mechanism', label: 'PTH and vitamin D' },
     { kind: 'exam', label: 'Renal bone disease' },
   ],

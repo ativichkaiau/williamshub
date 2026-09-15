@@ -4,11 +4,11 @@ export const ghpEyeMovementsPupillaryControl: Lecture = {
   id: 'ghp-eye-movements-pupillary-control',
   title: 'Eye Movements, Conjugate Gaze and Pupillary Control',
   system: 'neuro',
-  source: 'Ch 51 — The Eye III — Central Neurophysiology of Vision',
+  source: 'Ch 52 — The Eye III — Central Neurophysiology of Vision',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 51 Eye Movements & Autonomic Control' },
+    { kind: 'lecture', label: 'Ch 52 Eye Movements & Autonomic Control' },
     { kind: 'mechanism', label: 'PPRF · MLF · pretectum → Edinger-Westphal' },
     { kind: 'exam', label: 'RAPD · INO · Horner vs CN III' },
   ],

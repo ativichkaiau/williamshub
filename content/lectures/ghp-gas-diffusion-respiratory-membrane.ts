@@ -4,11 +4,11 @@ export const ghpGasDiffusionRespiratoryMembrane: Lecture = {
   id: 'ghp-gas-diffusion-respiratory-membrane',
   title: 'Gas Diffusion & the Respiratory Membrane',
   system: 'respiratory',
-  source: 'Ch 39 — Physical Principles of Gas Exchange & Diffusion',
+  source: 'Ch 40 — Physical Principles of Gas Exchange & Diffusion',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Respiratory' },
-    { kind: 'lecture', label: 'Ch 39 Gas Exchange & Diffusion' },
+    { kind: 'lecture', label: 'Ch 40 Gas Exchange & Diffusion' },
     { kind: 'mechanism', label: 'Fick across the membrane' },
     { kind: 'exam', label: 'CO₂ vs O₂ diffusion' },
   ],

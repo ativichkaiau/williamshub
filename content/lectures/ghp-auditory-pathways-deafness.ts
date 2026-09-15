@@ -4,11 +4,11 @@ export const ghpAuditoryPathwaysDeafness: Lecture = {
   id: 'ghp-auditory-pathways-deafness',
   title: 'Central Auditory Pathways, Sound Localisation and Deafness',
   system: 'neuro',
-  source: 'Ch 52 — The Sense of Hearing',
+  source: 'Ch 53 — The Sense of Hearing',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 52 The Sense of Hearing' },
+    { kind: 'lecture', label: 'Ch 53 The Sense of Hearing' },
     { kind: 'mechanism', label: 'Cochlear nucleus → olive → IC → MGB → Heschl' },
     { kind: 'exam', label: 'Rinne & Weber · ITD vs ILD · presbycusis' },
   ],

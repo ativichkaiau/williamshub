@@ -4,11 +4,11 @@ export const ghpEnergyExpenditureMetabolicRate: Lecture = {
   id: 'ghp-energy-expenditure-metabolic-rate',
   title: 'Energy Expenditure & Metabolic Rate',
   system: 'physiology',
-  source: 'Ch 72 — Energetics & Metabolic Rate',
+  source: 'Ch 73 — Energetics & Metabolic Rate',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Physiology' },
-    { kind: 'lecture', label: 'Ch 72 Energetics & Metabolic Rate' },
+    { kind: 'lecture', label: 'Ch 73 Energetics & Metabolic Rate' },
     { kind: 'mechanism', label: 'BMR 60–70% · thermic effect 10% · activity the remainder' },
     { kind: 'investigation', label: 'Indirect calorimetry · respiratory quotient' },
   ],

@@ -4,11 +4,11 @@ export const ghpAminoAcidPoolHormonalControl: Lecture = {
   id: 'ghp-amino-acid-pool-hormonal-control',
   title: 'The Amino-Acid Pool & Its Hormonal Control',
   system: 'molecular',
-  source: 'Ch 69 — Protein Metabolism',
+  source: 'Ch 70 — Protein Metabolism',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'Molecular' },
-    { kind: 'lecture', label: 'Ch 69 Protein Metabolism' },
+    { kind: 'lecture', label: 'Ch 70 Protein Metabolism' },
     { kind: 'mechanism', label: 'One shared pool · insulin and GH in, cortisol and glucagon out' },
     { kind: 'exam', label: 'Cortisol redistributes · thyroid hormone is biphasic' },
   ],

@@ -68851,7 +68851,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-renal-autoregulation-tgf",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 26 — Urine Formation I — Glomerular Filtration & Renal Blood Flow).",
+        "reason": "Same lecture (Ch 27 — Urine Formation I — Glomerular Filtration & Renal Blood Flow).",
         "origin": "curriculum",
         "evidence": "same lecture"
       },
@@ -68955,7 +68955,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-proximal-tubule-reabsorption",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 27 — Urine Formation II — Tubular Processing of the Filtrate).",
+        "reason": "Same lecture (Ch 28 — Urine Formation II — Tubular Processing of the Filtrate).",
         "origin": "curriculum",
         "evidence": "same lecture"
       },
@@ -68963,7 +68963,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-regulation-tubular-reabsorption",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 27 — Urine Formation II — Tubular Processing of the Filtrate).",
+        "reason": "Same lecture (Ch 28 — Urine Formation II — Tubular Processing of the Filtrate).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -70003,7 +70003,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-humoral-immunity-antibodies",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 34 — Resistance to Infection II — Immunity & Allergy).",
+        "reason": "Same lecture (Ch 35 — Resistance to Infection II — Immunity & Allergy).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -70175,7 +70175,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-primary-haemostasis-platelets",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 36 — Hemostasis & Blood Coagulation).",
+        "reason": "Same lecture (Ch 37 — Hemostasis & Blood Coagulation).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -70626,7 +70626,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-cell-mediated-immunity-allergy",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 34 — Resistance to Infection II — Immunity & Allergy).",
+        "reason": "Same lecture (Ch 35 — Resistance to Infection II — Immunity & Allergy).",
         "origin": "curriculum",
         "evidence": "same lecture"
       },
@@ -70722,7 +70722,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-surfactant-compliance",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 37 — Pulmonary Ventilation).",
+        "reason": "Same lecture (Ch 38 — Pulmonary Ventilation).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -71624,7 +71624,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-lung-volumes-dead-space",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 37 — Pulmonary Ventilation).",
+        "reason": "Same lecture (Ch 38 — Pulmonary Ventilation).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -71915,7 +71915,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-anaemia-polycythaemia-circulation",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 32 — Red Blood Cells, Anemia & Polycythemia).",
+        "reason": "Same lecture (Ch 33 — Red Blood Cells, Anemia & Polycythemia).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }
@@ -73250,7 +73250,7 @@ export const curatedIntegrations: Record<string, CuratedIntegrationOverride> = {
         "targetId": "ghp-nervous-system-organisation",
         "type": "horizontal",
         "strength": "strong",
-        "reason": "Same lecture (Ch 45 — Organization of the Nervous System; Synapses & Transmitters).",
+        "reason": "Same lecture (Ch 46 — Organization of the Nervous System; Synapses & Transmitters).",
         "origin": "curriculum",
         "evidence": "same lecture"
       }

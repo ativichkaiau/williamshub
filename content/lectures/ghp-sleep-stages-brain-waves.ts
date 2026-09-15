@@ -4,11 +4,11 @@ export const ghpSleepStagesBrainWaves: Lecture = {
   id: 'ghp-sleep-stages-brain-waves',
   title: 'Brain Waves, Sleep Stages and the Sleep-Wake Switch',
   system: 'neuro',
-  source: 'Ch 59 — States of Brain Activity — Sleep, Brain Waves, Epilepsy, Psychoses',
+  source: 'Ch 60 — States of Brain Activity — Sleep, Brain Waves, Epilepsy, Psychoses',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 59 States of Brain Activity' },
+    { kind: 'lecture', label: 'Ch 60 States of Brain Activity' },
     { kind: 'mechanism', label: 'VLPO versus arousal nuclei, stabilised by orexin' },
     { kind: 'exam', label: 'Alpha blocking · spindles · cataplexy' },
   ],

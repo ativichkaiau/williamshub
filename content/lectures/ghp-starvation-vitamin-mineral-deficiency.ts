@@ -4,11 +4,11 @@ export const ghpStarvationVitaminMineralDeficiency: Lecture = {
   id: 'ghp-starvation-vitamin-mineral-deficiency',
   title: 'Starvation, Vitamin & Mineral Deficiency',
   system: 'gi',
-  source: 'Ch 71 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
+  source: 'Ch 72 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 71 Starvation, Vitamins & Minerals' },
+    { kind: 'lecture', label: 'Ch 72 Starvation, Vitamins & Minerals' },
     { kind: 'mechanism', label: 'Glycogen → gluconeogenesis → ketones spare protein → fat exhausted → death' },
     { kind: 'exam', label: 'Nitrogen excretion as the readout · phosphate kills in refeeding · thiamine before glucose' },
   ],

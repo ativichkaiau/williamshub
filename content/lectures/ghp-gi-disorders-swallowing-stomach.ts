@@ -4,11 +4,11 @@ export const ghpGiDisordersSwallowingStomach: Lecture = {
   id: 'ghp-gi-disorders-swallowing-stomach',
   title: 'Disorders of Swallowing & the Stomach',
   system: 'gi',
-  source: 'Ch 66 — Physiology of Gastrointestinal Disorders',
+  source: 'Ch 67 — Physiology of Gastrointestinal Disorders',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 66 GI Disorders' },
+    { kind: 'lecture', label: 'Ch 67 GI Disorders' },
     { kind: 'mechanism', label: 'Attack versus mucosal defence' },
     { kind: 'exam', label: 'Achalasia · reflux · ulcer · dumping · vomiting' },
   ],

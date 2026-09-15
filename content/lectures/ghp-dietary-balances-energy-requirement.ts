@@ -4,11 +4,11 @@ export const ghpDietaryBalancesEnergyRequirement: Lecture = {
   id: 'ghp-dietary-balances-energy-requirement',
   title: 'Dietary Balances & Energy Requirements',
   system: 'gi',
-  source: 'Ch 71 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
+  source: 'Ch 72 — Dietary Balances; Feeding, Obesity & Starvation; Vitamins & Minerals',
   updated: '2026-09-14',
   tags: [
     { kind: 'system', label: 'GI' },
-    { kind: 'lecture', label: 'Ch 71 Dietary Balances' },
+    { kind: 'lecture', label: 'Ch 72 Dietary Balances' },
     { kind: 'mechanism', label: 'Intake minus expenditure equals change in stores' },
     { kind: 'exam', label: '4/9/4 and 7 kcal/g · SDA highest for protein · 6.25 g protein per g N' },
   ],

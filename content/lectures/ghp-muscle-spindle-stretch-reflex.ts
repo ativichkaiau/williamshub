@@ -4,11 +4,11 @@ export const ghpMuscleSpindleStretchReflex: Lecture = {
   id: 'ghp-muscle-spindle-stretch-reflex',
   title: 'The Muscle Spindle, Gamma Coactivation and the Stretch Reflex',
   system: 'neuro',
-  source: 'Ch 54 — Motor Functions of the Spinal Cord; the Cord Reflexes',
+  source: 'Ch 55 — Motor Functions of the Spinal Cord; the Cord Reflexes',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 54 Motor Functions of the Cord' },
+    { kind: 'lecture', label: 'Ch 55 Motor Functions of the Cord' },
     { kind: 'mechanism', label: 'Ia → alpha motor neuron, monosynaptic' },
     { kind: 'exam', label: 'Tendon jerk · clonus · reflex level' },
   ],

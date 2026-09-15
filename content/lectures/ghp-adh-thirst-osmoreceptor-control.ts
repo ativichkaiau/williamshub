@@ -4,11 +4,11 @@ export const ghpAdhThirstOsmoreceptorControl: Lecture = {
   id: 'ghp-adh-thirst-osmoreceptor-control',
   title: 'Osmoreceptor–ADH Feedback & Thirst',
   system: 'renal',
-  source: 'Ch 28 — Regulation of Extracellular Fluid Osmolarity & Sodium',
+  source: 'Ch 29 — Regulation of Extracellular Fluid Osmolarity & Sodium',
   updated: '2026-09-09',
   tags: [
     { kind: 'system', label: 'Renal' },
-    { kind: 'lecture', label: 'Ch 28 Osmolarity & Sodium' },
+    { kind: 'lecture', label: 'Ch 29 Osmolarity & Sodium' },
     { kind: 'mechanism', label: 'Osmotic vs volume triggers' },
     { kind: 'exam', label: 'SIADH vs DI' },
   ],

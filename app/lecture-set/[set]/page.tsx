@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
-import { notFound } from 'next/navigation';
-import { lectureSets, lectureSetBySlug, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { lectureSets, lectureSetBySlug, lectureSetRedirects, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
@@ -13,11 +13,13 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { set: string } }) {
-  const s = lectureSetBySlug[params.set];
+  const s = lectureSetBySlug[lectureSetRedirects[params.set] ?? params.set];
   return { title: s ? `${s.source} — WilliamsHub` : 'WilliamsHub' };
 }
 
 export default function LectureSetPage({ params }: { params: { set: string } }) {
+  const redirect = lectureSetRedirects[params.set];
+  if (redirect) permanentRedirect(`/lecture-set/${redirect}`);
   const set = lectureSetBySlug[params.set];
   if (!set) notFound();
 
@@ -64,14 +66,14 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
           <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{set.items.length} topics</span>
         </div>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          The whole lecture on one scroll — every topic, in full. Jump to a topic below.
+          All {subjectCode === 'GHP' ? 'chapter' : 'lecture'} study modules on one scroll. Jump to a topic below.
         </p>
 
         <Link
           href={`/practice/lecture/${params.set}`}
           className="clay-pill mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
         >
-          <span aria-hidden>📝</span> Practise this lecture
+          <span aria-hidden>📝</span> Practise this {subjectCode === 'GHP' ? 'chapter' : 'lecture'}
         </Link>
 
         {/* Jump nav */}

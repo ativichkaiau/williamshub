@@ -4,11 +4,11 @@ export const ghpLearningMemory: Lecture = {
   id: 'ghp-learning-memory',
   title: 'Learning and Memory: Consolidation, Amnesia and LTP',
   system: 'neuro',
-  source: 'Ch 57 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
+  source: 'Ch 58 — Cerebral Cortex; Intellectual Functions, Learning & Memory',
   updated: '2026-09-10',
   tags: [
     { kind: 'system', label: 'Neuroscience' },
-    { kind: 'lecture', label: 'Ch 57 Cerebral Cortex & Intellectual Function' },
+    { kind: 'lecture', label: 'Ch 58 Cerebral Cortex & Intellectual Function' },
     { kind: 'mechanism', label: 'Reverberation → consolidation → structural change' },
     { kind: 'exam', label: 'Anterograde vs retrograde · declarative vs skill' },
   ],

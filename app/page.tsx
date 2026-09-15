@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
-import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug, subjectOfSource, subjectByCode } from '../content';
+import { lectures, lectureById, lecturesBySubject, curriculum, subjectSlug, subjectOfSource, subjectByCode, referenceFrameworkByCode } from '../content';
 import { type YearData } from '../components/CurriculumBrowser';
 import BlockBrowser from '../components/BlockBrowser';
 import { onePagerGroups } from '../content/onepagers';
@@ -12,6 +12,7 @@ export default function Home() {
   const years: YearData[] = curriculum.map((y) => {
     const subjects = y.subjects.map((s) => {
       const mods = lecturesBySubject[s.code] ?? [];
+      const framework = referenceFrameworkByCode[s.code];
       return {
         code: s.code,
         name: s.name,
@@ -19,13 +20,16 @@ export default function Home() {
         count: new Set(mods.map((l) => l.source)).size,
         modules: mods.length,
         slug: subjectSlug(s.code),
+        isFramework: Boolean(framework),
+        frameworkChapters: framework?.chapters.length,
+        frameworkUnits: framework?.units.length,
       };
     });
     return {
       year: y.year,
       label: y.label,
       note: y.note,
-      hasContent: subjects.some((s) => s.count > 0),
+      hasContent: subjects.some((s) => s.count > 0 || s.isFramework),
       subjects,
     };
   });
@@ -35,6 +39,7 @@ export default function Home() {
   const contentCodes = Object.entries(lecturesBySubject)
     .filter(([, mods]) => mods.length > 0)
     .map(([code]) => code);
+  const blockCount = new Set([...Object.keys(lecturesBySubject), ...Object.keys(referenceFrameworkByCode)]).size;
   // OnePager view opens on the first year that has content, else its first year.
   const onePagerYearsWithContent = onePagerGroups
     .filter((g) => g.subjects.some((s) => contentCodes.includes(s.code)))
@@ -79,7 +84,7 @@ export default function Home() {
             </div>
             <dl className="library-stats mt-9" aria-label="Library overview">
               {[
-                { value: Object.keys(lecturesBySubject).length, label: 'Blocks' },
+                { value: blockCount, label: 'Blocks' },
                 { value: lectures.length, label: 'Modules' },
                 { value: trapCount, label: 'Exam traps' },
               ].map((stat) => (

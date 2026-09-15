@@ -18,10 +18,11 @@ import {
   subjectByCode,
   subjectSlug,
   lectureSetSlug,
+  referenceFrameworkByCode,
 } from '../content';
 
 interface Entry {
-  k: 'm' | 'l' | 's'; // module | lecture(-set) | subject
+  k: 'm' | 'l' | 's' | 'f'; // module | lecture(-set) | subject | framework chapter
   t: string; // title / label
   u: string; // url
   s?: string | null; // subject code
@@ -51,10 +52,24 @@ for (const l of lectures) {
   }
 }
 
-for (const code of Object.keys(lecturesBySubject)) {
+const subjectCodes = new Set([...Object.keys(lecturesBySubject), ...Object.keys(referenceFrameworkByCode)]);
+for (const code of subjectCodes) {
   const subj = subjectByCode[code];
   if (!subj) continue;
   entries.push({ k: 's', t: `${code} — ${subj.name}`, u: `/subject/${subjectSlug(code)}`, s: code });
+
+  const framework = referenceFrameworkByCode[code];
+  if (framework) {
+    for (const chapter of framework.chapters) {
+      entries.push({
+        k: 'f',
+        t: `Ch ${chapter.number} — ${chapter.title}`,
+        u: `/subject/${subjectSlug(code)}#framework-${code.toLowerCase()}-chapter-${chapter.number}`,
+        s: code,
+        sub: framework.title,
+      });
+    }
+  }
 }
 
 const outDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'public');

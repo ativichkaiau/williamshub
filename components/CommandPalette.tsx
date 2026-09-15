@@ -9,7 +9,7 @@ import HubIcon from './HubIcon';
 // on first open (public/search-index.json) so no content ships in the JS bundle.
 
 interface Entry {
-  k: 'm' | 'l' | 's';
+  k: 'm' | 'l' | 's' | 'f';
   t: string;
   u: string;
   s?: string | null;
@@ -21,6 +21,7 @@ const KIND: Record<Entry['k'], { label: string; cls: string }> = {
   m: { label: 'Module', cls: 'bg-[#2e5bff]/12 text-[#1e5bd6] dark:text-[#7AA0FF]' },
   l: { label: 'Lecture', cls: 'bg-indigo-500/12 text-indigo-600 dark:text-indigo-300' },
   s: { label: 'Block', cls: 'bg-amber-500/15 text-amber-700 dark:text-amber-300' },
+  f: { label: 'Framework', cls: 'bg-teal-500/12 text-teal-700 dark:text-teal-300' },
 };
 
 function scoreEntry(e: Entry, tokens: string[]): number {
@@ -169,7 +170,7 @@ export default function CommandPalette() {
                     ref={inputRef}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Search modules, lectures, blocks, terms…"
+                    placeholder="Search modules, lectures, blocks, frameworks…"
                     className="w-full bg-transparent text-[15px] text-slate-900 outline-none placeholder:text-slate-400 dark:text-white"
                   />
                   <kbd className="rounded bg-black/5 px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:bg-white/10">
@@ -185,7 +186,7 @@ export default function CommandPalette() {
                     </div>
                   ) : query.trim() === '' ? (
                     <p className="px-3 py-6 text-center text-sm text-slate-400">
-                      Type to search every module, lecture and block.
+                      Type to search every module, lecture, block and framework.
                     </p>
                   ) : results.length === 0 ? (
                     <p className="px-3 py-6 text-center text-sm text-slate-400">No matches for “{query}”.</p>

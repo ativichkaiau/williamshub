@@ -10,6 +10,9 @@ export interface SubjectCard {
   count: number; // distinct lectures (L1, L2, …)
   modules: number;
   slug: string;
+  isFramework?: boolean;
+  frameworkChapters?: number;
+  frameworkUnits?: number;
 }
 
 export interface YearData {
@@ -55,7 +58,7 @@ export default function CurriculumBrowser({
           swaps the list, so switching years feels like the cars filing past. */}
       <div key={active} className="grid-stagger grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {year.subjects.map((s, i) =>
-          s.count > 0 ? (
+          s.count > 0 || s.isFramework ? (
             <Link
               key={s.code}
               href={`/subject/${s.slug}`}
@@ -66,13 +69,21 @@ export default function CurriculumBrowser({
                 <span className="font-mono text-[11px] font-medium tracking-wide text-[var(--accent)]">
                   {s.code}
                 </span>
-                <span className="subject-card-mark" aria-hidden="true" />
+                {s.isFramework ? (
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
+                    Framework
+                  </span>
+                ) : <span className="subject-card-mark" aria-hidden="true" />}
               </div>
               <span className="mb-5 mt-3 text-[15px] font-medium leading-6 text-[var(--ink)]">
                 {s.name}
               </span>
               <span className="mt-auto flex items-center justify-between gap-2 text-[11px] text-[var(--muted)]">
-                <span>{s.count} lecture{s.count === 1 ? '' : 's'} · {s.modules} modules</span>
+                <span>
+                  {s.isFramework
+                    ? `${s.frameworkChapters ?? 0} chapters · ${s.frameworkUnits ?? 0} units`
+                    : `${s.count} lecture${s.count === 1 ? '' : 's'} · ${s.modules} modules`}
+                </span>
                 <HubIcon name="arrow" className="text-[var(--muted)] transition group-hover:text-[var(--accent)]" />
               </span>
             </Link>

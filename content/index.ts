@@ -2,6 +2,7 @@ import type { Lecture } from '../lib/types';
 import { subjectOfSource, subjectSlug } from './curriculum';
 import { additionalTopics, additionalTopicSubjects } from './additional-topics';
 import ghpChapterRedirects from './ghp-redirects.json';
+export * from './reference-frameworks';
 // L1 — Cardiac Arrhythmias
 import avBlock from './lectures/av-block';
 import atrialFibrillation from './lectures/atrial-fibrillation';

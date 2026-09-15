@@ -1,5 +1,5 @@
 // MedCMU curriculum: Year → Subject (block). Lectures attach to a subject via
-// `subjectOfSource` below. Only HCVS-2 (Year 3) has content so far.
+// `subjectOfSource` below; reference frameworks may exist without lecture modules.
 
 export interface Subject {
   code: string;
@@ -74,7 +74,10 @@ export const curriculum: CurriculumYear[] = [
     // material never gets mistaken for a lecture. Sorts last everywhere.
     year: 4,
     label: 'Reference',
-    subjects: [{ code: 'GHP', name: 'Guyton & Hall Physiology' }],
+    subjects: [
+      { code: 'GHP', name: 'Guyton & Hall Physiology' },
+      { code: 'RBP', name: 'Robbins Basic Pathology' },
+    ],
   },
 ];
 

@@ -7,6 +7,7 @@ import {
   subjectSlug,
   lectureSetSlug,
   partOfSource,
+  referenceFrameworkByCode,
 } from '../../../content';
 import { lectureTheme } from '../../../lib/theme';
 import { buildBlockGraph } from '../../../lib/integrations/graphView';
@@ -17,7 +18,7 @@ import LiverySlashes from '../../../components/LiverySlashes';
 import type { Lecture } from '../../../lib/types';
 
 export function generateStaticParams() {
-  return Object.keys(lecturesBySubject).map((code) => ({ code: subjectSlug(code) }));
+  return [...Object.keys(lecturesBySubject), ...Object.keys(referenceFrameworkByCode)].map((code) => ({ code: subjectSlug(code) }));
 }
 
 export function generateMetadata({ params }: { params: { code: string } }) {
@@ -61,7 +62,8 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
   if (!subject) notFound();
 
   const items = lecturesBySubject[subject.code] ?? [];
-  if (items.length === 0) notFound();
+  const framework = referenceFrameworkByCode[subject.code];
+  if (items.length === 0 && !framework) notFound();
 
   const block = buildBlockGraph(subject.code);
   const keystones = keystonesForSubject(subject.code, 4);
@@ -90,6 +92,8 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
     else partedGroups.push({ part, sources: [entry] });
   }
   const hasParts = partedGroups.some((g) => g.part);
+  const chaptersByNumber = new Map(framework?.chapters.map((chapter) => [chapter.number, chapter]));
+  const isFrameworkOnly = Boolean(framework && items.length === 0);
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-8">
@@ -109,15 +113,16 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           {subject.name}
         </h1>
         <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-          {sources.length} {subject.code === 'GHP' ? 'chapters' : `lecture${sources.length === 1 ? '' : 's'}`} · {items.length} modules
-          {' — '}each {subject.code === 'GHP' ? 'chapter' : 'lecture'} opens as one study scroll.
+          {framework ? `${framework.chapters.length} chapters · ${framework.units.length} units` : `${sources.length} lecture${sources.length === 1 ? '' : 's'}`}
+          {items.length > 0 ? ` · ${items.length} modules` : ''}
+          {isFrameworkOnly ? ' — reading spine only.' : ` — each ${subject.code === 'GHP' ? 'chapter' : 'lecture'} opens as one study scroll.`}
         </p>
         {subject.code === 'GHP' && (
           <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
             Original study notes aligned to all 85 chapters in the 14th-edition contents, with mechanisms and practice questions.
           </p>
         )}
-        <div className="mt-4 flex flex-wrap gap-2">
+        {items.length > 0 ? <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href={`/flashcards/block/${params.code}`}
             className="clay-pill inline-flex min-h-9 items-center gap-1.5 px-3 py-2 text-xs font-medium text-[var(--accent)] transition hover:border-[var(--accent)] active:translate-y-px"
@@ -130,8 +135,60 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           >
             <HubIcon name="practice" /> Practise this block
           </Link>
-        </div>
+        </div> : null}
       </header>
+
+      {framework ? (
+        <section className="clay clay-surface mb-8 p-5 sm:p-6" data-reveal>
+          <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[var(--line)] pb-5">
+            <div>
+              <div className="eyebrow">Reading spine</div>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight text-[var(--ink)]">
+                {framework.title}
+              </h2>
+            </div>
+            <span className="clay-pill px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
+              {framework.edition}
+            </span>
+          </div>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+            {framework.description}
+          </p>
+          <div className="mt-6 space-y-7">
+            {framework.units.map((unit, unitIndex) => (
+              <section key={unit.id} className="border-t border-[var(--line)] pt-5 first:border-t-0 first:pt-0">
+                <div className="flex items-start gap-3">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]/10 font-mono text-[10px] font-semibold text-[var(--accent)]">
+                    {String(unitIndex + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-semibold text-[var(--ink)]">{unit.title}</h3>
+                    <p className="mt-1 text-xs leading-5 text-[var(--muted)]">{unit.description}</p>
+                  </div>
+                </div>
+                <ol className="mt-4 grid gap-2 sm:grid-cols-2">
+                  {unit.chapters.map((number) => {
+                    const chapter = chaptersByNumber.get(number);
+                    if (!chapter) return null;
+                    return (
+                      <li id={`framework-${framework.code.toLowerCase()}-chapter-${chapter.number}`} key={chapter.number} className="flex items-start gap-3 rounded-xl border border-[var(--line)] px-3 py-2.5">
+                        <span className="font-mono text-[10px] font-semibold text-[var(--accent)]">{String(chapter.number).padStart(2, '0')}</span>
+                        <span className="min-w-0">
+                          <span className="block text-xs font-medium leading-5 text-[var(--ink)]">{chapter.title}</span>
+                          <span className="mt-0.5 block text-[11px] leading-5 text-[var(--muted)]">{chapter.focus}</span>
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </section>
+            ))}
+          </div>
+          <p className="mt-6 border-t border-dashed border-[var(--line)] pt-4 text-xs leading-5 text-[var(--muted)]">
+            Framework only for this pass. Detailed chapter notes, mechanisms, figures, and practice sets can be layered onto these 23 anchors later.
+          </p>
+        </section>
+      ) : null}
 
       {block.nodes.length >= 2 && block.hasEdges ? (
         <section className="clay clay-surface mb-8 p-5" data-reveal>

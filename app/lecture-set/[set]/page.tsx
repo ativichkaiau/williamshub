@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 import { notFound, permanentRedirect } from 'next/navigation';
-import { lectureSets, lectureSetBySlug, lectureSetRedirects, subjectOfSource, subjectSlug, subjectByCode } from '../../../content';
+import { lectureSets, lectureSetBySlug, lectureSetRedirects, subjectOfSource, subjectSlug, subjectByCode, referenceFrameworkByCode } from '../../../content';
 import LectureBody from '../../../components/LectureBody';
 import ActiveIntegrationPanel from '../../../components/ActiveIntegrationPanel';
 import ConceptModeController from '../../../components/concept/ConceptModeController';
@@ -25,6 +25,7 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
 
   const subjectCode = subjectOfSource[set.source];
   const subject = subjectCode ? subjectByCode[subjectCode] : undefined;
+  const framework = subjectCode ? referenceFrameworkByCode[subjectCode] : undefined;
   const theme = lectureTheme(set.source);
 
   return (
@@ -66,14 +67,15 @@ export default function LectureSetPage({ params }: { params: { set: string } }) 
           <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{set.items.length} topics</span>
         </div>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          All {subjectCode === 'GHP' ? 'chapter' : 'lecture'} study modules on one scroll. Jump to a topic below.
+          All {subject?.yearLabel === 'Reference' ? 'chapter' : 'lecture'} study modules on one scroll. Jump to a topic below.
         </p>
+        {framework ? <p className="mt-2 text-xs leading-5 text-[var(--muted)]">Original study notes aligned to {framework.source}. Selected core concepts; read alongside the source chapter.</p> : null}
 
         <Link
           href={`/practice/lecture/${params.set}`}
           className="clay-pill mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-[#1e5bd6] transition active:translate-y-px dark:text-[#7AA0FF]"
         >
-          <span aria-hidden>📝</span> Practise this {subjectCode === 'GHP' ? 'chapter' : 'lecture'}
+          <span aria-hidden>📝</span> Practise this {subject?.yearLabel === 'Reference' ? 'chapter' : 'lecture'}
         </Link>
 
         {/* Jump nav */}

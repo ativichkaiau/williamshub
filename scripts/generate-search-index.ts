@@ -61,9 +61,11 @@ for (const code of subjectCodes) {
   const framework = referenceFrameworkByCode[code];
   if (framework) {
     for (const chapter of framework.chapters) {
+      const source = `Ch ${chapter.number} — ${chapter.title}`;
+      if (seenSets.has(lectureSetSlug(source))) continue;
       entries.push({
         k: 'f',
-        t: `Ch ${chapter.number} — ${chapter.title}`,
+        t: source,
         u: `/subject/${subjectSlug(code)}#framework-${code.toLowerCase()}-chapter-${chapter.number}`,
         s: code,
         sub: framework.title,

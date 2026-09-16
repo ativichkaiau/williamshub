@@ -203,7 +203,7 @@ export default function CommandPalette() {
                         }`}
                       >
                         <span className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide ${KIND[r.k].cls}`}>
-                          {KIND[r.k].label}
+                          {r.k === 'l' && r.t.startsWith('Ch ') ? 'Chapter' : KIND[r.k].label}
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-semibold text-slate-900 dark:text-white">{r.t}</span>

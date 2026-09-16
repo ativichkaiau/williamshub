@@ -163,13 +163,13 @@ export interface BlockGraphView {
 const BACKBONE_W = 2;
 
 function lectureNoOf(source: string): number {
-  const m = source.match(/^L(\d+)/i);
+  const m = source.match(/^(?:L|Ch\s*)(\d+)/i);
   return m ? parseInt(m[1], 10) : 999;
 }
 
 function shortOf(source: string): string {
-  const m = source.match(/^L\d+/i);
-  return m ? m[0].toUpperCase() : source.slice(0, 3);
+  const m = source.match(/^(L|Ch\s*)(\d+)/i);
+  return m ? `${m[1].trim().toLowerCase() === 'l' ? 'L' : 'Ch '}${m[2]}` : source.slice(0, 3);
 }
 
 function labelOf(source: string): string {

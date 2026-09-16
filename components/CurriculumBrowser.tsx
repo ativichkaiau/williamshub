@@ -13,6 +13,7 @@ export interface SubjectCard {
   isFramework?: boolean;
   frameworkChapters?: number;
   frameworkUnits?: number;
+  unitLabel?: 'chapter' | 'lecture';
 }
 
 export interface YearData {
@@ -71,7 +72,7 @@ export default function CurriculumBrowser({
                 </span>
                 {s.isFramework ? (
                   <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
-                    Framework
+                    {s.count > 0 ? 'Study notes' : 'Framework'}
                   </span>
                 ) : <span className="subject-card-mark" aria-hidden="true" />}
               </div>
@@ -81,8 +82,10 @@ export default function CurriculumBrowser({
               <span className="mt-auto flex items-center justify-between gap-2 text-[11px] text-[var(--muted)]">
                 <span>
                   {s.isFramework
-                    ? `${s.frameworkChapters ?? 0} chapters · ${s.frameworkUnits ?? 0} units`
-                    : `${s.count} lecture${s.count === 1 ? '' : 's'} · ${s.modules} modules`}
+                    ? s.count > 0
+                      ? `${s.count}/${s.frameworkChapters ?? 0} chapters · ${s.modules} modules`
+                      : `${s.frameworkChapters ?? 0} chapters · ${s.frameworkUnits ?? 0} units`
+                    : `${s.count} ${s.unitLabel ?? 'lecture'}${s.count === 1 ? '' : 's'} · ${s.modules} modules`}
                 </span>
                 <HubIcon name="arrow" className="text-[var(--muted)] transition group-hover:text-[var(--accent)]" />
               </span>

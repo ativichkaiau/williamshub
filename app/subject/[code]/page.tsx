@@ -18,7 +18,7 @@ import LiverySlashes from '../../../components/LiverySlashes';
 import type { Lecture } from '../../../lib/types';
 
 export function generateStaticParams() {
-  return [...Object.keys(lecturesBySubject), ...Object.keys(referenceFrameworkByCode)].map((code) => ({ code: subjectSlug(code) }));
+  return [...new Set([...Object.keys(lecturesBySubject), ...Object.keys(referenceFrameworkByCode)])].map((code) => ({ code: subjectSlug(code) }));
 }
 
 export function generateMetadata({ params }: { params: { code: string } }) {
@@ -94,6 +94,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
   const hasParts = partedGroups.some((g) => g.part);
   const chaptersByNumber = new Map(framework?.chapters.map((chapter) => [chapter.number, chapter]));
   const isFrameworkOnly = Boolean(framework && items.length === 0);
+  const unitLabel = subject.yearLabel === 'Reference' ? 'chapter' : 'lecture';
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-8">
@@ -113,9 +114,9 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
           {subject.name}
         </h1>
         <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-          {framework ? `${framework.chapters.length} chapters · ${framework.units.length} units` : `${sources.length} lecture${sources.length === 1 ? '' : 's'}`}
+          {framework ? `${sources.length} of ${framework.chapters.length} chapters with notes · ${framework.units.length} study units` : `${sources.length} ${unitLabel}${sources.length === 1 ? '' : 's'}`}
           {items.length > 0 ? ` · ${items.length} modules` : ''}
-          {isFrameworkOnly ? ' — reading spine only.' : ` — each ${subject.code === 'GHP' ? 'chapter' : 'lecture'} opens as one study scroll.`}
+          {isFrameworkOnly ? ' — reading spine only.' : ` — each ${unitLabel} opens as one study scroll.`}
         </p>
         {subject.code === 'GHP' && (
           <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
@@ -170,12 +171,21 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
                   {unit.chapters.map((number) => {
                     const chapter = chaptersByNumber.get(number);
                     if (!chapter) return null;
+                    const source = `Ch ${chapter.number} — ${chapter.title}`;
+                    const modules = groups[source];
                     return (
-                      <li id={`framework-${framework.code.toLowerCase()}-chapter-${chapter.number}`} key={chapter.number} className="flex items-start gap-3 rounded-xl border border-[var(--line)] px-3 py-2.5">
+                      <li id={`framework-${framework.code.toLowerCase()}-chapter-${chapter.number}`} key={chapter.number} className="flex scroll-mt-24 items-start gap-3 rounded-xl border border-[var(--line)] px-3 py-2.5">
                         <span className="font-mono text-[10px] font-semibold text-[var(--accent)]">{String(chapter.number).padStart(2, '0')}</span>
-                        <span className="min-w-0">
-                          <span className="block text-xs font-medium leading-5 text-[var(--ink)]">{chapter.title}</span>
+                        <span className="min-w-0 flex-1">
+                          {modules ? (
+                            <Link href={`/lecture-set/${lectureSetSlug(source)}`} className="block text-xs font-medium leading-5 text-[var(--ink)] underline decoration-[var(--line)] underline-offset-4 transition hover:text-[var(--accent)]">
+                              {chapter.title} <span aria-hidden="true">↗</span>
+                            </Link>
+                          ) : <span className="block text-xs font-medium leading-5 text-[var(--ink)]">{chapter.title}</span>}
                           <span className="mt-0.5 block text-[11px] leading-5 text-[var(--muted)]">{chapter.focus}</span>
+                          <span className={`mt-1 block text-[10px] font-medium ${modules ? 'text-[var(--accent)]' : 'text-[var(--muted)]'}`}>
+                            {modules ? `${modules.length} study modules · ${modules.reduce((n, m) => n + m.quiz.length, 0)} core questions` : 'Outline only'}
+                          </span>
                         </span>
                       </li>
                     );
@@ -185,7 +195,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
             ))}
           </div>
           <p className="mt-6 border-t border-dashed border-[var(--line)] pt-4 text-xs leading-5 text-[var(--muted)]">
-            Framework only for this pass. Detailed chapter notes, mechanisms, figures, and practice sets can be layered onto these 23 anchors later.
+            {isFrameworkOnly ? 'Chapter outlines are available; study notes and practice questions will follow.' : 'Available chapters contain original study notes, mechanisms, and practice questions. They introduce the chapter’s core concepts; the remaining chapters currently have outlines only.'}
           </p>
         </section>
       ) : null}
@@ -200,10 +210,10 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
               </h2>
             </div>
             <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)]">
-              how the lectures connect
+              how the {unitLabel}s connect
             </span>
           </div>
-          <BlockMap view={block} />
+          <BlockMap view={block} unitLabel={unitLabel} />
         </section>
       ) : null}
 
@@ -284,7 +294,7 @@ export default function SubjectPage({ params }: { params: { code: string } }) {
                   ) : null}
                   <span className={`clay-pill px-2.5 py-0.5 text-xs font-semibold ${theme.text}`}>{lects.length}</span>
                   <span className={`text-xs font-semibold opacity-0 transition group-hover:opacity-100 ${theme.text}`}>
-                    View whole lecture →
+                    View whole {unitLabel} →
                   </span>
                 </Link>
                 {isAdditional ? (

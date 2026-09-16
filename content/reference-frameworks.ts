@@ -21,15 +21,15 @@ export interface ReferenceFramework {
   chapters: ReferenceFrameworkChapter[];
 }
 
-// Reading spine only. Chapter notes, mechanisms, figures, and practice sets
-// can be added later without changing the source's chapter order.
+// Chapters follow the source contents; the five study units are WilliamsHub's
+// editorial grouping. Availability is derived from registered study modules.
 export const robbinsBasicPathologyFramework: ReferenceFramework = {
   code: 'RBP',
   title: 'Robbins Basic Pathology',
-  edition: 'Ninth edition · 2012',
-  source: 'Robbins Basic Pathology, 9th ed. (2012)',
+  edition: 'Ninth edition · ©2013',
+  source: 'Robbins Basic Pathology, 9th ed. (©2013)',
   description:
-    'A five-unit reading spine that moves from general mechanisms of disease into organ-system pathology, then closes with reproductive, endocrine, musculoskeletal, nervous-system, and skin disease.',
+    'The book’s 23 chapters, arranged into five WilliamsHub study units. Start with general mechanisms of disease, then follow them into organ-system pathology. These study units are an editorial grouping, not units from the textbook.',
   units: [
     {
       id: 'general-pathology',

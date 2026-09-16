@@ -23,6 +23,7 @@ export default function Home() {
         isFramework: Boolean(framework),
         frameworkChapters: framework?.chapters.length,
         frameworkUnits: framework?.units.length,
+        unitLabel: y.label === 'Reference' ? 'chapter' as const : 'lecture' as const,
       };
     });
     return {

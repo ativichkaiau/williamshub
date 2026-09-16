@@ -1,4 +1,7 @@
-import { referenceFrameworkByCode, subjectByCode } from '../content';
+import { readdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { referenceFrameworkByCode, subjectByCode, lectures, subjectOfSource, partOfSource, lectureSetBySlug, lectureSetSlug } from '../content';
+import type { Lecture } from '../lib/types';
 
 const expectedTitles = [
   'Cell Injury, Cell Death, and Adaptations',
@@ -26,7 +29,7 @@ const expectedTitles = [
   'Skin',
 ];
 
-export function robbinsFrameworkIssues() {
+export function robbinsFrameworkIssues(modules: Lecture[] = lectures) {
   const issues: { moduleId: string; kind: string; detail: string }[] = [];
   const fail = (detail: string) => issues.push({ moduleId: 'RBP', kind: 'rbp-framework', detail });
   const framework = referenceFrameworkByCode.RBP;
@@ -58,6 +61,35 @@ export function robbinsFrameworkIssues() {
   }
   for (let number = 1; number <= expectedTitles.length; number++) {
     if (!assigned.has(number)) fail(`Chapter ${number} is not assigned to a unit.`);
+  }
+
+  const rbp = modules.filter((module) => module.id.startsWith('rbp-'));
+  const ids = new Set(rbp.map((module) => module.id));
+  const available = new Set<number>();
+  for (const module of rbp) {
+    const number = Number(module.source.match(/^Ch (\d+) — /)?.[1]);
+    const chapter = framework.chapters.find((chapter) => chapter.number === number);
+    const unit = framework.units.find((unit) => unit.chapters.includes(number));
+    if (!chapter || module.source !== `Ch ${number} — ${chapter.title}`) fail(`${module.id}: source does not match a framework chapter.`);
+    if (subjectOfSource[module.source] !== 'RBP') fail(`${module.id}: missing RBP curriculum mapping.`);
+    if (!unit || partOfSource[module.source] !== unit.title) fail(`${module.id}: incorrect study unit.`);
+    if (!module.tags.some((tag) => tag.kind === 'lecture' && tag.label.startsWith(`Ch ${number} `))) fail(`${module.id}: chapter tag disagrees with source.`);
+    if (!module.highYield.length || !module.mechanism.steps.length || !module.quiz.length) fail(`${module.id}: missing notes, mechanism or quiz.`);
+    if (!lectureSetBySlug[lectureSetSlug(module.source)]?.items.some((item) => item.id === module.id)) fail(`${module.id}: absent from its reading/practice chapter.`);
+    if (new Set(module.quiz.map((question) => question.id)).size !== module.quiz.length) fail(`${module.id}: repeated quiz id.`);
+    for (const question of module.quiz) {
+      if (!question.stem.trim() || !question.explanation.trim() || question.options.length < 2 || question.options.some((option) => !option.text.trim())) fail(`${module.id}/${question.id}: incomplete quiz.`);
+      if (new Set(question.options.map((option) => option.id)).size !== question.options.length) fail(`${module.id}/${question.id}: repeated option id.`);
+    }
+    available.add(number);
+  }
+  // Protect the released chapters without marking the remaining outlines as complete.
+  for (let number = 1; number <= 8; number++) {
+    if (!available.has(number)) fail(`Released chapter ${number} has no registered study modules.`);
+  }
+  const directory = fileURLToPath(new URL('../content/lectures/', import.meta.url));
+  for (const file of readdirSync(directory).filter((file) => /^rbp-.*\.ts$/.test(file))) {
+    if (!ids.has(file.replace(/\.ts$/, ''))) fail(`Unregistered module file: ${file}`);
   }
 
   return issues;

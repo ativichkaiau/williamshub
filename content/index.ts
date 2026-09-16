@@ -1744,6 +1744,32 @@ import ghpSleepStagesBrainWaves from './lectures/ghp-sleep-stages-brain-waves';
 import ghpUpperVsLowerMotorNeuron from './lectures/ghp-upper-vs-lower-motor-neuron';
 import ghpWaterElectrolyteAbsorption from './lectures/ghp-water-electrolyte-absorption';
 
+// Robbins Basic Pathology — general pathology study modules (chapters 1–8).
+import rbpCellInjury from './lectures/rbp-cell-injury-reversible-irreversible';
+import rbpCellDeath from './lectures/rbp-necrosis-apoptosis-adaptations';
+import rbpOxidativeStress from './lectures/rbp-oxidative-stress-protein-damage';
+import rbpAccumulations from './lectures/rbp-accumulations-calcification-ageing';
+import rbpAcuteInflammation from './lectures/rbp-acute-inflammation-mediators';
+import rbpChronicInflammation from './lectures/rbp-chronic-inflammation-repair';
+import rbpInflammatoryPatterns from './lectures/rbp-inflammatory-patterns-systemic-response';
+import rbpRepair from './lectures/rbp-repair-angiogenesis-fibrosis';
+import rbpThrombosis from './lectures/rbp-edema-haemostasis-thrombosis';
+import rbpShock from './lectures/rbp-embolism-infarction-shock';
+import rbpHypercoagulability from './lectures/rbp-hypercoagulability-dic';
+import rbpCongestion from './lectures/rbp-hyperemia-congestion-haemorrhage';
+import rbpHypersensitivity from './lectures/rbp-hypersensitivity-reactions';
+import rbpImmunodeficiency from './lectures/rbp-immunodeficiency-transplant-amyloid';
+import rbpAutoimmune from './lectures/rbp-autoimmune-connective-tissue-diseases';
+import rbpImmunodeficiencies from './lectures/rbp-primary-secondary-immunodeficiencies';
+import rbpNeoplasia from './lectures/rbp-neoplasia-nomenclature-biology';
+import rbpCarcinogenesis from './lectures/rbp-carcinogenesis-tumour-progression';
+import rbpGenetics from './lectures/rbp-genetic-disease-mechanisms';
+import rbpPaediatrics from './lectures/rbp-paediatric-congenital-disease';
+import rbpEnvironment from './lectures/rbp-environmental-toxic-injury';
+import rbpNutrition from './lectures/rbp-nutritional-disease-obesity';
+import rbpInfection from './lectures/rbp-infectious-agents-injury-mechanisms';
+import rbpInfectionPatterns from './lectures/rbp-host-response-infection-patterns';
+
 export * from './curriculum';
 
 // Registry of all lecture modules, ordered chronologically by lecture (L1 → L21).
@@ -3067,6 +3093,19 @@ export const lectures: Lecture[] = [
   ghpTranscriptionGeneticCode,
   ghpTranslationRibosomes,
   ghpWaterElectrolyteAbsorption,
+  // Robbins Basic Pathology (RBP), in chapter order.
+  rbpCellInjury, rbpCellDeath,
+  rbpOxidativeStress, rbpAccumulations,
+  rbpAcuteInflammation, rbpChronicInflammation,
+  rbpInflammatoryPatterns, rbpRepair,
+  rbpThrombosis, rbpShock,
+  rbpHypercoagulability, rbpCongestion,
+  rbpHypersensitivity, rbpImmunodeficiency,
+  rbpAutoimmune, rbpImmunodeficiencies,
+  rbpNeoplasia, rbpCarcinogenesis,
+  rbpGenetics, rbpPaediatrics,
+  rbpEnvironment, rbpNutrition,
+  rbpInfection, rbpInfectionPatterns,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve

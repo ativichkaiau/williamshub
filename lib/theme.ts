@@ -34,9 +34,9 @@ export const lectureThemes: Record<string, LectureTheme> = {
   l23: { dot: 'bg-emerald-500', text: 'text-emerald-600 dark:text-emerald-400', chipBg: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200', grad: 'from-emerald-400 to-teal-500' },
 };
 
-// Accepts a slug ('l5') or a source string ('L5 — Vascular Disorders').
+// Accepts a lecture slug or a lecture/chapter source string.
 export function lectureTheme(slugOrSource: string): LectureTheme {
-  const m = slugOrSource.match(/^l(\d+)/i);
+  const m = slugOrSource.match(/^(?:l|ch\s*)(\d+)/i);
   const key = m ? `l${m[1]}` : '';
   return lectureThemes[key] ?? lectureThemes.l1;
 }

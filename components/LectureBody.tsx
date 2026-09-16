@@ -76,7 +76,7 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
 
       {/* Exam findings */}
       <Card>
-        <Label color={sectionColors.exam}>Physical examination findings</Label>
+        <Label color={sectionColors.exam}>{l.system === 'pathology' ? 'Pathological & clinical findings' : 'Physical examination findings'}</Label>
         <div className="divide-y divide-black/5 dark:divide-white/10">
           {l.examFindings.map((f, i) => (
             <div key={i} className="flex items-start gap-3 py-2">
@@ -112,7 +112,7 @@ export default function LectureBody({ lecture: l }: { lecture: Lecture }) {
           </ul>
         </Card>
         <Card>
-          <Label color={sectionColors.treatment}>Treatment logic</Label>
+          <Label color={sectionColors.treatment}>{l.system === 'pathology' ? 'Clinical implications' : 'Treatment logic'}</Label>
           <ul className="space-y-2 text-sm">
             {l.treatment.map((t, i) => (
               <li key={i}>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound, permanentRedirect } from 'next/navigation';
-import { lectureSets, lectureSetBySlug, lectureSetRedirects, subjectOfSource, subjectSlug } from '../../../../content';
+import { lectureSets, lectureSetBySlug, lectureSetRedirects, subjectOfSource, subjectSlug, subjectByCode } from '../../../../content';
 import { getModuleBank } from '../../../../lib/questions/bank';
 import PracticeSession from '../../../../components/PracticeSession';
 
@@ -21,6 +21,7 @@ export default function LecturePracticePage({ params }: { params: { set: string 
 
   const questions = set.items.flatMap((m) => getModuleBank(m.id));
   const subjectCode = subjectOfSource[set.source] ?? 'unknown';
+  const unit = subjectByCode[subjectCode]?.yearLabel === 'Reference' ? 'chapter' : 'lecture';
   const subjectOf = Object.fromEntries(set.items.map((m) => [m.id, subjectCode]));
   const backHref = subjectCode !== 'unknown' ? `/practice/block/${subjectSlug(subjectCode)}` : '/practice';
 
@@ -35,11 +36,11 @@ export default function LecturePracticePage({ params }: { params: { set: string 
 
       <header className="mb-6 mt-4">
         <div className="livery-stripe mb-4 h-1.5 w-full rounded-full" />
-        <div className="text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">Practice · {subjectCode === 'GHP' ? 'chapter' : 'lecture'}</div>
+        <div className="text-xs font-bold uppercase tracking-wide text-[#1e5bd6] dark:text-[#7AA0FF]">Practice · {unit}</div>
         <h1 className="mt-1 text-3xl font-black tracking-tight text-slate-900 dark:text-white">{set.source}</h1>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
           {questions.length.toLocaleString()} question{questions.length === 1 ? '' : 's'} across {set.items.length} topic
-          {set.items.length === 1 ? '' : 's'} in this {subjectCode === 'GHP' ? 'chapter' : 'lecture'} — up to 20 random per session.
+          {set.items.length === 1 ? '' : 's'} in this {unit} — up to 20 random per session.
         </p>
       </header>
 

@@ -12,7 +12,7 @@ const VB = 620;
 const CENTER = VB / 2;
 const RADIUS = 232;
 
-export default function BlockMap({ view }: { view: BlockGraphView }) {
+export default function BlockMap({ view, unitLabel = 'lecture' }: { view: BlockGraphView; unitLabel?: 'chapter' | 'lecture' }) {
   const router = useRouter();
   const [hover, setHover] = useState<string | null>(null);
 
@@ -88,7 +88,7 @@ export default function BlockMap({ view }: { view: BlockGraphView }) {
             {view.subjectCode}
           </text>
           <text x={CENTER} y={CENTER + 14} textAnchor="middle" className="fill-slate-400 dark:fill-slate-500" fontSize="11" fontWeight="600">
-            {nodes.length} lectures · {edges.length} links
+            {nodes.length} {unitLabel}s · {edges.length} links
           </text>
 
           {/* nodes */}
@@ -142,11 +142,11 @@ export default function BlockMap({ view }: { view: BlockGraphView }) {
         {hoveredNode ? (
           <span>
             <span className="font-bold text-slate-700 dark:text-slate-200">{hoveredNode.short}</span> · {hoveredNode.label} ·{' '}
-            {hoveredNode.moduleCount} module{hoveredNode.moduleCount === 1 ? '' : 's'} · {connected.size} linked lecture
+            {hoveredNode.moduleCount} module{hoveredNode.moduleCount === 1 ? '' : 's'} · {connected.size} linked {unitLabel}
             {connected.size === 1 ? '' : 's'}
           </span>
         ) : (
-          'Hover a lecture to trace its links · click to open the whole lecture. Bigger node = more connected.'
+          `Hover a ${unitLabel} to trace its links · click to open the whole ${unitLabel}. Bigger node = more connected.`
         )}
       </p>
     </div>

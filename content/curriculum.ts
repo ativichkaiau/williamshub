@@ -171,6 +171,31 @@ export const subjectOfSource: Record<string, string> = {
   'Ch 84 — Fetal & Neonatal Physiology': 'GHP',
   'Ch 85 — Sports Physiology': 'GHP',
 
+  // RBP — Robbins Basic Pathology (reference layer)
+  'Ch 1 — Cell Injury, Cell Death, and Adaptations': 'RBP',
+  'Ch 2 — Inflammation and Repair': 'RBP',
+  'Ch 3 — Hemodynamic Disorders, Thromboembolism, and Shock': 'RBP',
+  'Ch 4 — Diseases of the Immune System': 'RBP',
+  'Ch 5 — Neoplasia': 'RBP',
+  'Ch 6 — Genetic and Pediatric Diseases': 'RBP',
+  'Ch 7 — Environmental and Nutritional Diseases': 'RBP',
+  'Ch 8 — General Pathology of Infectious Diseases': 'RBP',
+  'Ch 9 — Blood Vessels': 'RBP',
+  'Ch 10 — Heart': 'RBP',
+  'Ch 11 — Hematopoietic and Lymphoid Systems': 'RBP',
+  'Ch 12 — Lung': 'RBP',
+  'Ch 13 — Kidney and Its Collecting System': 'RBP',
+  'Ch 14 — Oral Cavity and Gastrointestinal Tract': 'RBP',
+  'Ch 15 — Liver, Gallbladder, and Biliary Tract': 'RBP',
+  'Ch 16 — Pancreas': 'RBP',
+  'Ch 17 — Male Genital System and Lower Urinary Tract': 'RBP',
+  'Ch 18 — Female Genital System and Breast': 'RBP',
+  'Ch 19 — Endocrine System': 'RBP',
+  'Ch 20 — Bones, Joints, and Soft Tissue Tumors': 'RBP',
+  'Ch 21 — Peripheral Nerves and Muscles': 'RBP',
+  'Ch 22 — Central Nervous System': 'RBP',
+  'Ch 23 — Skin': 'RBP',
+
 
   // HNS-1 — Human Nervous and Special Senses System-1 (Year 2)
   'L20 — Reticular Activating System, Sleep & Circadian Rhythms': 'HNS-1',
@@ -873,6 +898,31 @@ export const partOfSource: Record<string, string> = {
   'Ch 83 — Pregnancy & Lactation': 'Unit XIV · Endocrinology & Reproduction',
   'Ch 84 — Fetal & Neonatal Physiology': 'Unit XIV · Endocrinology & Reproduction',
   'Ch 85 — Sports Physiology': 'Unit XV · Sports Physiology',
+
+  // RBP — Robbins Basic Pathology (reference layer)
+  'Ch 1 — Cell Injury, Cell Death, and Adaptations': 'Unit I · General pathology',
+  'Ch 2 — Inflammation and Repair': 'Unit I · General pathology',
+  'Ch 3 — Hemodynamic Disorders, Thromboembolism, and Shock': 'Unit I · General pathology',
+  'Ch 4 — Diseases of the Immune System': 'Unit I · General pathology',
+  'Ch 5 — Neoplasia': 'Unit I · General pathology',
+  'Ch 6 — Genetic and Pediatric Diseases': 'Unit I · General pathology',
+  'Ch 7 — Environmental and Nutritional Diseases': 'Unit I · General pathology',
+  'Ch 8 — General Pathology of Infectious Diseases': 'Unit I · General pathology',
+  'Ch 9 — Blood Vessels': 'Unit II · Cardiovascular and hematolymphoid pathology',
+  'Ch 10 — Heart': 'Unit II · Cardiovascular and hematolymphoid pathology',
+  'Ch 11 — Hematopoietic and Lymphoid Systems': 'Unit II · Cardiovascular and hematolymphoid pathology',
+  'Ch 12 — Lung': 'Unit III · Thoracoabdominal organs',
+  'Ch 13 — Kidney and Its Collecting System': 'Unit III · Thoracoabdominal organs',
+  'Ch 14 — Oral Cavity and Gastrointestinal Tract': 'Unit III · Thoracoabdominal organs',
+  'Ch 15 — Liver, Gallbladder, and Biliary Tract': 'Unit III · Thoracoabdominal organs',
+  'Ch 16 — Pancreas': 'Unit III · Thoracoabdominal organs',
+  'Ch 17 — Male Genital System and Lower Urinary Tract': 'Unit IV · Reproductive and endocrine pathology',
+  'Ch 18 — Female Genital System and Breast': 'Unit IV · Reproductive and endocrine pathology',
+  'Ch 19 — Endocrine System': 'Unit IV · Reproductive and endocrine pathology',
+  'Ch 20 — Bones, Joints, and Soft Tissue Tumors': 'Unit V · Musculoskeletal, nervous system, and skin',
+  'Ch 21 — Peripheral Nerves and Muscles': 'Unit V · Musculoskeletal, nervous system, and skin',
+  'Ch 22 — Central Nervous System': 'Unit V · Musculoskeletal, nervous system, and skin',
+  'Ch 23 — Skin': 'Unit V · Musculoskeletal, nervous system, and skin',
 
 
   // HGA Part 1 — Upper Limb & Back

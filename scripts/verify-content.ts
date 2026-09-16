@@ -114,4 +114,4 @@ if (fatals.length > 0) {
 
 console.log(`content:verify — integrity clean: ${ids.size} unique ids, all cross-links resolve, all quiz answers valid.`);
 console.log('content:verify — GHP coverage clean: all 85 chapters registered, correctly grouped, with notes, mechanisms and quizzes; legacy chapter URLs preserved.');
-console.log('content:verify — RBP framework clean: all 23 source chapters are ordered and assigned to a unit.');
+console.log(`content:verify — RBP clean: 23 source chapters ordered and grouped; ${new Set(lectures.filter((module) => module.id.startsWith('rbp-')).map((module) => module.source)).size} chapters with registered notes, mechanisms and quizzes.`);

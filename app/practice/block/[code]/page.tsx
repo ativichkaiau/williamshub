@@ -20,7 +20,7 @@ function lectureNo(source: string): number {
 export default function BlockPracticeLauncher({ params }: { params: { code: string } }) {
   const subject = subjectBySlug[params.code];
   if (!subject) notFound();
-  const unit = subject.code === 'GHP' ? 'chapter' : 'lecture';
+  const unit = subject.yearLabel === 'Reference' ? 'chapter' : 'lecture';
 
   // Group the block's modules into their lectures (source), with question counts.
   const bySource = new Map<string, { items: { id: string }[]; count: number }>();

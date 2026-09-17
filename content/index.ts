@@ -1769,6 +1769,20 @@ import rbpEnvironment from './lectures/rbp-environmental-toxic-injury';
 import rbpNutrition from './lectures/rbp-nutritional-disease-obesity';
 import rbpInfection from './lectures/rbp-infectious-agents-injury-mechanisms';
 import rbpInfectionPatterns from './lectures/rbp-host-response-infection-patterns';
+import rbpVascularWall from './lectures/rbp-vascular-wall-endothelial-injury';
+import rbpAtherosclerosis from './lectures/rbp-atherosclerosis-pathogenesis';
+import rbpHypertensiveVascular from './lectures/rbp-hypertensive-vascular-aneurysms';
+import rbpVasculitis from './lectures/rbp-vasculitis-vascular-tumours';
+import rbpIhd from './lectures/rbp-ischaemic-heart-disease-infarction';
+import rbpValvular from './lectures/rbp-hypertensive-valvular-heart-disease';
+import rbpCardiomyopathy from './lectures/rbp-cardiomyopathy-myocarditis';
+import rbpCongenitalHeart from './lectures/rbp-congenital-heart-pericardial-disease';
+import rbpAnaemiaProduction from './lectures/rbp-anaemia-production-failure';
+import rbpHaemolysis from './lectures/rbp-haemolytic-anaemias';
+import rbpLeukocyteLeukaemia from './lectures/rbp-leukocyte-disorders-acute-leukaemia';
+import rbpLymphoid from './lectures/rbp-lymphoid-neoplasms-lymphoma';
+import rbpMyeloid from './lectures/rbp-myeloid-neoplasms-mds';
+import rbpPlasmaCell from './lectures/rbp-plasma-cell-neoplasms-spleen';
 
 export * from './curriculum';
 
@@ -3106,6 +3120,13 @@ export const lectures: Lecture[] = [
   rbpGenetics, rbpPaediatrics,
   rbpEnvironment, rbpNutrition,
   rbpInfection, rbpInfectionPatterns,
+  rbpVascularWall, rbpAtherosclerosis,
+  rbpHypertensiveVascular, rbpVasculitis,
+  rbpIhd, rbpValvular,
+  rbpCardiomyopathy, rbpCongenitalHeart,
+  rbpAnaemiaProduction, rbpHaemolysis,
+  rbpLeukocyteLeukaemia, rbpLymphoid,
+  rbpMyeloid, rbpPlasmaCell,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve

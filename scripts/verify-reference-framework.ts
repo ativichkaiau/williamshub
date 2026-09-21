@@ -84,7 +84,7 @@ export function robbinsFrameworkIssues(modules: Lecture[] = lectures) {
     available.add(number);
   }
   // Protect the released chapters without marking the remaining outlines as complete.
-  for (let number = 1; number <= 11; number++) {
+  for (let number = 1; number <= 16; number++) {
     if (!available.has(number)) fail(`Released chapter ${number} has no registered study modules.`);
   }
   const directory = fileURLToPath(new URL('../content/lectures/', import.meta.url));

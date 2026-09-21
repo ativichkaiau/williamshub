@@ -1783,6 +1783,23 @@ import rbpLeukocyteLeukaemia from './lectures/rbp-leukocyte-disorders-acute-leuk
 import rbpLymphoid from './lectures/rbp-lymphoid-neoplasms-lymphoma';
 import rbpMyeloid from './lectures/rbp-myeloid-neoplasms-mds';
 import rbpPlasmaCell from './lectures/rbp-plasma-cell-neoplasms-spleen';
+import rbpObstructiveLung from './lectures/rbp-obstructive-lung-disease';
+import rbpRestrictiveLung from './lectures/rbp-restrictive-interstitial-lung';
+import rbpPulmonaryInfection from './lectures/rbp-pulmonary-infection-vascular';
+import rbpLungTumours from './lectures/rbp-lung-tumours-pleura';
+import rbpGlomerularMechanisms from './lectures/rbp-glomerular-disease-mechanisms';
+import rbpNephroticNephritic from './lectures/rbp-nephrotic-nephritic-syndromes';
+import rbpTubulointerstitial from './lectures/rbp-tubulointerstitial-vascular-renal';
+import rbpRenalCysticTumours from './lectures/rbp-cystic-obstructive-renal-tumours';
+import rbpOralOesophageal from './lectures/rbp-oral-oesophageal-pathology';
+import rbpGastricPathology from './lectures/rbp-gastric-pathology-ulceration';
+import rbpIntestinalInflammatory from './lectures/rbp-intestinal-inflammatory-malabsorption';
+import rbpColorectalNeoplasia from './lectures/rbp-colorectal-neoplasia-vascular';
+import rbpHepaticInjury from './lectures/rbp-hepatic-injury-hepatitis';
+import rbpCirrhosisPortal from './lectures/rbp-cirrhosis-portal-hypertension';
+import rbpCholestasisBiliary from './lectures/rbp-cholestasis-biliary-liver-tumours';
+import rbpPancreatitis from './lectures/rbp-pancreatitis-acute-chronic';
+import rbpPancreaticNeoplasia from './lectures/rbp-pancreatic-neoplasia';
 
 export * from './curriculum';
 
@@ -3127,6 +3144,15 @@ export const lectures: Lecture[] = [
   rbpAnaemiaProduction, rbpHaemolysis,
   rbpLeukocyteLeukaemia, rbpLymphoid,
   rbpMyeloid, rbpPlasmaCell,
+  rbpObstructiveLung, rbpRestrictiveLung,
+  rbpPulmonaryInfection, rbpLungTumours,
+  rbpGlomerularMechanisms, rbpNephroticNephritic,
+  rbpTubulointerstitial, rbpRenalCysticTumours,
+  rbpOralOesophageal, rbpGastricPathology,
+  rbpIntestinalInflammatory, rbpColorectalNeoplasia,
+  rbpHepaticInjury, rbpCirrhosisPortal,
+  rbpCholestasisBiliary, rbpPancreatitis,
+  rbpPancreaticNeoplasia,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve

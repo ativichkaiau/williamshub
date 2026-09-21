@@ -3,209 +3,179 @@ import type { Lecture } from '../../lib/types';
 // Original study notes aligned to Robbins Basic Pathology, 9th edition.
 // Source and review scope: docs/robbins-coverage.md.
 export const rbpInfectiousAgentsInjuryMechanisms: Lecture = {
-  "id": "rbp-infectious-agents-injury-mechanisms",
-  "title": "How Infectious Agents Cause Injury",
-  "system": "pathology",
-  "source": "Ch 8 — General Pathology of Infectious Diseases",
-  "updated": "2026-09-16",
-  "tags": [
-    {
-      "kind": "system",
-      "label": "Pathology"
-    },
-    {
-      "kind": "lecture",
-      "label": "Ch 8 General Pathology of Infectious Diseases"
-    },
-    {
-      "kind": "mechanism",
-      "label": "Pathogen damage, toxins & immune evasion"
-    }
+  id: 'rbp-infectious-agents-injury-mechanisms',
+  title: 'How Infectious Agents Cause Injury',
+  system: 'pathology',
+  source: 'Ch 8 — General Pathology of Infectious Diseases',
+  updated: '2026-09-21',
+  tags: [
+    { kind: 'system', label: 'Pathology' },
+    { kind: 'lecture', label: 'Ch 8 General Pathology of Infectious Diseases' },
+    { kind: 'mechanism', label: 'Five routes to injury — and most of the damage is done by the host, not the microbe' },
+    { kind: 'exam', label: 'Exotoxin is a scalpel, endotoxin is a fire alarm · the defect names the organism' },
   ],
-  "highYield": [
-    "**Infection is an interaction between agent, portal of entry and host defence.** Establishment, spread and severity depend on inoculum, virulence factors, tissue tropism and immune status. Colonisation, latent infection and symptomatic disease are different states.",
-    "**Microbes injure through direct and indirect mechanisms.** Organisms can kill cells, release toxins, disrupt vessels or provoke immune-mediated damage. A vigorous host response can contribute substantially to injury even when it helps control microbial replication.",
-    "**Exotoxins and endotoxin are different molecular categories.** Many exotoxins are proteins with specific cellular actions; some can be made into toxoids for vaccination. Lipopolysaccharide from Gram-negative bacteria activates innate signalling, especially through lipid A and the TLR4 pathway. Gram-positive organisms and fungi can also trigger sepsis through other signals.",
-    "**Viruses can produce cytopathic effects or immune-mediated injury.** Inclusion bodies, cell fusion and altered growth may suggest particular viral processes, while T cells can damage infected tissue. Some viruses promote oncogenesis. The degree of inflammation varies with the organism, tissue and host.",
-    "**Immune evasion is a recurring strategy.** Capsules impede phagocytosis; antigenic variation alters recognition; intracellular survival and latency protect some agents from clearance. Defects in neutrophil, antibody or T-cell function shift the differential but do not identify one pathogen by themselves. See [[rbp-host-response-infection-patterns]]."
+
+  highYield: [
+    '**There are five routes by which a microbe injures tissue, and the one that does most of the damage is the HOST.** (1) **Direct cytopathic killing** — poliovirus shuts off host cap-dependent translation by cleaving eIF4G and the motor neuron dies. (2) **Exotoxin** — a secreted protein with one enzymatic target, acting at a distance from any organism. (3) **Endotoxin and other PAMPs** — the microbe supplies a signal and the host supplies the entire injury. (4) **Induction of a damaging adaptive immune response**. (5) **Transformation to neoplasia**. Route 4 is the thread of the chapter, and it is evidenced rather than asserted. **Hepatitis B virus is not cytopathic**: the immunotolerant carrier can run a viral load in the hundreds of millions with a **persistently normal ALT and a near-normal liver**, and the hepatitis appears only when CD8 cytotoxic T cells begin killing infected hepatocytes — which is why a **falling HBV DNA with a RISING ALT is seroconversion, not deterioration**, and why withdrawing rituximab or starting antiretrovirals can precipitate a fatal flare. **Caseous necrosis in tuberculosis is a delayed-type hypersensitivity product**, not a bacterial toxin — no mycobacterial toxin has ever been found — and **blocking TNF converts contained granulomatous tuberculosis into disseminated disease**, proving that the inflammation was doing the containing. **Immune reconstitution inflammatory syndrome** makes the same point prospectively: the patient gets worse as the immune system recovers and the organism burden falls. Add post-streptococcal glomerulonephritis and rheumatic fever, where the organism has gone by the time the disease starts. Mechanisms of immune-mediated tissue damage in detail: [[rbp-hypersensitivity-reactions]].',
+    '**Exotoxin against endotoxin is a genuine discriminator, and every line of it is clinically consequential.** **Exotoxin: a PROTEIN**, actively **secreted by living** Gram-positive and Gram-negative organisms, frequently encoded on a **phage or plasmid** (diphtheria toxin on a lysogenic beta-phage, cholera toxin on CTX-phi), with **one specific enzymatic target** and therefore extreme potency — botulinum toxin is lethal at around a nanogram per kilogram. It is **strongly antigenic**, so it elicits **neutralising antibody**, can be **neutralised in the patient by antitoxin** and can be **converted with formaldehyde into a TOXOID** and given as a vaccine. It is **heat-labile**, destroyed around 60 degrees — with staphylococcal enterotoxin as the exception that reheating does not defeat. And because the toxin acts alone, **disease can occur with no living organism present at all** (botulism from preformed toxin in food). **Endotoxin: a LIPOPOLYSACCHARIDE**, a structural component of the Gram-negative outer membrane, **released when the organism LYSES** — including when antibiotics kill it. The active moiety is **lipid A**, which is handed by LBP to **CD14**, presented to **MD-2 and TLR4**, and signals through **MyD88 to NF-kappaB**, releasing **TNF, IL-1 and IL-6** plus endothelial **tissue factor**. The response is **stereotyped whatever the Gram-negative organism** — fever, vasodilatation, capillary leak, disseminated intravascular coagulation — because the host, not the microbe, is writing the script. It is **weakly antigenic, has NO antitoxin and NO toxoid**, and it is **HEAT-STABLE**: autoclaving kills the bacterium and leaves lipid A fully active, which is why intravenous fluids must be depyrogenated and not merely sterilised. The failure of every anti-endotoxin and anti-TNF trial in sepsis is the clinical proof that the target is the response, not the molecule. **Superantigens** are a third category worth naming: TSST-1 and the streptococcal pyrogenic exotoxins **bridge MHC class II to the T-cell receptor beta chain OUTSIDE the peptide groove**, activating **up to 20% of T cells** against roughly one in ten thousand for a conventional antigen — so a trivial or even absent local infection produces shock.',
+    '**Name the exotoxin mechanisms once and the specificity stops being an abstraction.** **Diphtheria toxin ADP-ribosylates the diphthamide residue of elongation factor 2**, halting protein synthesis; a single molecule can kill a cell. Locally that gives the adherent grey **pseudomembrane of fibrin, necrotic epithelium and leukocytes**; systemically the toxin reaches **myocardium and nerve**, producing myocarditis and a palatal or peripheral neuropathy one to two weeks later. **Tetanospasmin and botulinum toxin are the same molecule twice** — zinc metalloproteases that cleave **SNARE proteins** and block vesicle fusion. **Tetanospasmin travels retrogradely up the motor axon to INHIBITORY interneurons in the spinal cord** and cleaves synaptobrevin, so glycine and GABA release stops and motor neurons fire unopposed: **trismus, risus sardonicus, opisthotonos, spastic paralysis in a fully conscious patient**. **Botulinum toxin stays at the PERIPHERAL cholinergic terminal** and cleaves SNAP-25, so acetylcholine release stops: **descending, symmetrical FLACCID paralysis beginning with diplopia and dysphagia**. Identical chemistry, opposite clinical sign, decided by nothing except which synapse the toxin reaches. **Cholera toxin ADP-ribosylates the alpha subunit of Gs**, disabling its intrinsic GTPase so **adenylate cyclase can never switch off**; cAMP rises, PKA phosphorylates **CFTR**, and chloride and water pour into the lumen at up to a litre an hour — **the rice-water stool, over a histologically INTACT mucosa with no inflammatory infiltrate**, because nothing has been invaded. Pertussis toxin reaches the same cAMP endpoint from the opposite direction by ADP-ribosylating **Gi**, inhibiting the inhibitor. **Clostridium perfringens alpha-toxin is a phospholipase C** that hydrolyses membrane lecithin directly, which is why gas gangrene necroses tissue faster than any immune response could.',
+    '**Use the terms precisely, because each one is answering a different question.** **Pathogenicity** is qualitative: can this species cause disease in an immunocompetent host at all. **Virulence** is quantitative: HOW severe a disease this particular strain causes, measured as LD50. **Infectivity** is a separate axis — the ability to enter and establish, measured as ID50 and reproduction number — and the two dissociate completely: **rhinovirus is highly infective and barely virulent; rabies is almost uniformly lethal and poorly transmissible**. **Inoculum** is part of the arithmetic: **Shigella needs only 10 to 100 organisms** because it survives gastric acid, while **Vibrio cholerae needs on the order of a hundred million** unless acid is absent — which is why proton pump inhibitors and achlorhydria lower the infectious dose by orders of magnitude. **Colonisation** is presence and multiplication without tissue injury or host response; **infection** is invasion with a response. The practical rule this gives is hard rather than hedged: **a positive culture from a normally sterile site — blood, cerebrospinal fluid, joint fluid, deep tissue — is evidence of infection, while a positive culture from a non-sterile site — sputum, an ulcer swab, a catheter urine, a tracheal aspirate — may be documenting colonisation and must be read against the tissue response.** An **opportunist** is an organism of low virulence that causes disease only when a specific defence fails, and the corollary is the single most useful predictive rule in infectious pathology: **the host defect names the organism.** Neutropenia or neutrophil dysfunction gives **pyogenic bacteria and invasive Aspergillus and Candida**; terminal complement (C5 to C9) deficiency or eculizumab gives **recurrent Neisseria**; asplenia, sickle-cell autosplenectomy or antibody deficiency gives **encapsulated organisms** because opsonisation is the only way past a capsule; T-cell deficiency gives **intracellular organisms** — Pneumocystis, mycobacteria, Cryptococcus, Toxoplasma, CMV, endemic dimorphic fungi. In HIV the rule even comes with numbers: [[secondary-immunodeficiency-hiv]].',
+    '**Viral tropism is receptor arithmetic, and the morphology it leaves behind often names the virus before any test does.** Tropism first: **HIV gp120 binds CD4 plus CCR5 or CXCR4**, and homozygous CCR5-delta32 confers near-complete resistance; **EBV binds CD21 (CR2) on B cells**; **parvovirus B19 binds the P antigen on erythroid progenitors**, hence pure red cell aplasia and aplastic crisis in sickle-cell disease; **rabies glycoprotein binds the nicotinic acetylcholine receptor** and the virus travels retrogradely up the axon, which is why the incubation period tracks the distance of the bite from the brain; **influenza haemagglutinin binds sialic acid**, the alpha-2,6 linkage of the human upper airway against the alpha-2,3 linkage of avian gut and human lower airway — the reason avian strains are severe but poorly transmissible. Then the morphology. **CMV gives a large cell with a single basophilic INTRANUCLEAR inclusion surrounded by a clear halo — the owl eye — PLUS smaller cytoplasmic inclusions**, and being the common virus with both is itself the discriminator. **HSV and VZV give the Cowdry type A eosinophilic intranuclear inclusion with chromatin margination and multinucleate cells** (the Tzanck preparation). **Adenovirus gives the smudge cell**; **rabies gives the Negri body, eosinophilic and CYTOPLASMIC, in hippocampal pyramidal and Purkinje cells**; **measles gives the Warthin-Finkeldey giant cell**; **HPV gives the koilocyte**, a perinuclear halo with a raisinoid hyperchromatic nucleus. The organising rule: **DNA viruses replicate in the nucleus and tend to give nuclear inclusions, RNA viruses replicate in cytoplasm and give cytoplasmic ones** — rabies and measles obey it, and the poxviruses are the DNA exception because they replicate in cytoplasm. **Syncytium formation** is a strategy, not an accident: fusion glycoproteins on the infected cell membrane fuse it with neighbours (RSV, measles, HSV, VZV, HIV) so the virus spreads cell to cell **without ever entering the extracellular space where neutralising antibody waits**.',
+    '**Latency, transformation and immune evasion are three ways of not being cleared.** **Latency** is defined by shutting gene expression down to almost nothing — no viral protein, therefore no peptide on MHC class I, therefore no CD8 target and no antiviral target either, which is why **herpesviruses are controlled and never eradicated**: HSV in trigeminal and dorsal root ganglia, **VZV in dorsal root ganglia reactivating as dermatomal zoster exactly when T-cell surveillance wanes** with age or immunosuppression, EBV in memory B cells, CMV in myeloid progenitors; HIV integrates as provirus into resting memory CD4 cells, the reservoir that makes cure rather than control the unsolved problem. **Transformation**: roughly **15 to 20% of human cancer worldwide is infectious in origin**, and the mechanisms are specific — **HPV E6 degrades p53 and E7 releases E2F from Rb**; **EBV LMP1 mimics a constitutively active CD40 receptor**, with the MYC translocation completing Burkitt lymphoma; **HBV and HCV work through chronic injury, regeneration and HBx**; HHV-8 for Kaposi sarcoma, HTLV-1 Tax for adult T-cell leukaemia, Merkel cell polyomavirus, and **Helicobacter pylori for gastric adenocarcinoma and MALT lymphoma — the only cancer that can be cured with antibiotics**. Carcinogenic mechanism in full: [[rbp-carcinogenesis-tumour-progression]]. **Immune evasion** is best learned as five moves. **Antigenic variation** — influenza drift by point mutation against shift by reassortment of its segmented genome, HIV reverse transcriptase making about one error per genome per cycle, trypanosome variant surface glycoprotein switching through a repertoire of around a thousand genes to give successive waves of parasitaemia, and gonococcal pilin variation, which is why there is no gonorrhoea vaccine and reinfection is routine. **Capsule** — a polysaccharide is a T-independent antigen, poorly opsonised and poorly immunogenic under the age of two, which is precisely why **conjugating it to a protein carrier recruits T-cell help and generates memory**, the single change that transformed child mortality from Haemophilus influenzae type b and pneumococcus. **Intracellular refuge** — Mycobacterium tuberculosis blocks phagosome-lysosome fusion and prevents acidification, Legionella diverts its vacuole to the endoplasmic reticulum, Listeria and Shigella escape into the cytosol and travel to the next cell on actin comet tails without touching extracellular space. **Interference with complement and presentation** — staphylococcal protein A binds IgG by its Fc, streptococcal M protein and gonococcal sialylation recruit factor H to accelerate C3b decay, IgA proteases cleave secretory antibody at the mucosa, and **HSV ICP47 and CMV US2 and US11 block TAP and degrade MHC class I** — whereupon NK cells would kill the MHC-negative cell, so CMV also encodes the class I decoy UL18 to hold the NK inhibitory receptor. **Biofilm** — an exopolysaccharide matrix on catheters, prosthetic joints and heart valves in which quiescent organisms tolerate antibiotic concentrations **a hundred to a thousand times the planktonic MIC** and are physically shielded from phagocytes, giving the hardest rule in the chapter: **device-associated infection is not cured by antibiotics; the device comes out.**',
   ],
-  "mechanism": {
-    "title": "From microbial entry to tissue injury",
-    "steps": [
+
+  mechanism: {
+    title: 'Hepatitis B: a virus that kills no cells → MHC I presentation → CD8 killing → hepatitis. The damage is the response',
+    steps: [
       {
-        "id": "s1",
-        "label": "Entry through a susceptible barrier",
-        "detail": "Skin, mucosa, vectors or devices provide possible routes.",
-        "emphasis": "key"
+        id: 's1',
+        label: 'HBV enters the hepatocyte and replicates without any direct cytopathic effect',
+        detail: 'The virus buds rather than lyses. Nothing in the replication cycle kills the cell, which is the premise the whole chain depends on.',
+        emphasis: 'key',
       },
       {
-        "id": "s2",
-        "label": "Adherence and local replication",
-        "detail": "Microbial factors and tissue receptors shape tropism.",
-        "emphasis": "normal"
+        id: 's2',
+        label: 'Viral peptides are loaded onto MHC class I and displayed on the hepatocyte surface',
+        detail: 'Every infected hepatocyte now advertises itself. The virus has done nothing harmful; it has only become visible.',
       },
       {
-        "id": "s3",
-        "label": "Defences respond",
-        "detail": "Innate recognition activates phagocytes, complement and inflammatory signals.",
-        "emphasis": "normal"
+        id: 's3',
+        label: 'CD8 cytotoxic T cells recognise the peptide and kill the hepatocyte by perforin, granzyme and Fas ligand',
+        detail: 'Apoptotic hepatocytes are the Councilman bodies of acute hepatitis. CD4 help and interferon-gamma recruit the macrophages that make the lobular infiltrate.',
+        emphasis: 'key',
       },
       {
-        "id": "s4",
-        "label": "Direct and immune-mediated injury accumulate",
-        "detail": "Toxins, cytolysis, vascular effects and host responses may combine.",
-        "emphasis": "normal"
+        id: 's4',
+        label: 'ALT therefore measures the CD8 response, not the virus — so ALT and viral load move in OPPOSITE directions',
+        detail: 'The immunotolerant carrier has a viral load in the hundreds of millions and a normal ALT with a near-normal liver. A falling DNA with a rising ALT is seroconversion, not deterioration.',
+        emphasis: 'key',
       },
       {
-        "id": "s5",
-        "label": "Containment, persistence or dissemination follows",
-        "detail": "Outcome depends on microbial properties and the host’s capacity to control them.",
-        "emphasis": "normal"
-      }
-    ]
+        id: 's5',
+        label: 'A vigorous response clears the virus and injures the liver; a weak response spares the liver and leaves a chronic carrier',
+        detail: 'Neonatal infection with an immature response becomes chronic in about 90% of cases; adult infection with a competent response clears in about 95%. Same virus, opposite outcome, decided entirely by the host.',
+      },
+      {
+        id: 's6',
+        label: 'Restoring or removing the response is what changes the disease — and either direction can be lethal',
+        detail: 'Withdrawing rituximab or a steroid, or starting antiretrovirals in coinfection, restores CD8 killing against a huge infected hepatocyte mass and can precipitate a fatal flare. The virus did not change; the immunology did.',
+        emphasis: 'danger',
+      },
+    ],
+    branches: [
+      {
+        fromId: 's4',
+        title: 'The same argument in three other diseases — this is not an HBV quirk',
+        steps: [
+          { id: 'b1', label: 'Tuberculosis: caseous necrosis is a delayed-type hypersensitivity product — no mycobacterial toxin exists', emphasis: 'key' },
+          { id: 'b2', label: 'Blocking TNF disseminates contained tuberculosis, proving the inflammation was doing the containing', emphasis: 'danger' },
+          { id: 'b3', label: 'Immune reconstitution: the patient deteriorates as CD4 counts rise and organism burden falls', emphasis: 'danger' },
+          { id: 'b4', label: 'Rheumatic fever and post-streptococcal glomerulonephritis: the organism has been cleared before the disease begins', emphasis: 'key' },
+        ],
+      },
+    ],
   },
-  "examFindings": [
-    {
-      "sign": "Extensive tissue injury with relatively few organisms",
-      "mechanism": "Can reflect toxin effects or immune-mediated damage; burden and injury need not be proportional.",
-      "significance": "key"
-    },
-    {
-      "sign": "Inclusion bodies or multinucleated cells",
-      "mechanism": "Can suggest viral cytopathic change but require organism-specific interpretation.",
-      "significance": "key"
-    },
-    {
-      "sign": "Unexpected infection after immunosuppression",
-      "mechanism": "The failed defence helps organise the differential, including opportunistic and reactivated infections.",
-      "significance": "key"
-    }
+
+  examFindings: [
+    { sign: 'A grey adherent pharyngeal membrane that bleeds when peeled, a bull neck, and ten days later a prolonged PR interval and a nasal voice', mechanism: 'Diphtheria toxin ADP-ribosylates elongation factor 2, so protein synthesis halts and epithelium necroses; the membrane is fibrin, dead epithelium and leukocytes, and it is adherent because it is the tissue itself. The toxin then circulates to myocardium and nerve, which is why the cardiac and palatal signs are delayed by one to two weeks', significance: 'key' },
+    { sign: 'Trismus with opisthotonos in a fully conscious, fully sensate patient — against descending diplopia, dysphagia and symmetrical flaccid weakness with normal sensation and normal cerebrospinal fluid', mechanism: 'The same zinc metalloprotease chemistry cleaving SNARE proteins at two different synapses. Tetanospasmin reaches inhibitory spinal interneurons, so glycine and GABA release stops and motor neurons fire unopposed. Botulinum toxin stays at the peripheral cholinergic terminal, so acetylcholine release stops. Consciousness is preserved in both because neither lesion is cortical, and the descending direction separates botulism from the ascending Guillain-Barre syndrome', significance: 'key' },
+    { sign: 'Litres of painless watery rice-water stool with no blood, no fever and no faecal leukocytes, over a biopsy showing entirely intact mucosa', mechanism: 'Cholera toxin ADP-ribosylates the Gs alpha subunit and locks adenylate cyclase on; cAMP drives PKA phosphorylation of CFTR and chloride with water follows. The mucosa is normal because nothing was invaded — this is pure secretion, which is the whole discriminator from an invasive dysentery', significance: 'key' },
+    { sign: 'Fever, diffuse macular erythroderma with later desquamation, hypotension and multi-organ involvement — with negative blood cultures and a trivial or invisible local wound', mechanism: 'A superantigen such as TSST-1 bridges MHC class II directly to the T-cell receptor beta chain outside the peptide groove, activating up to 20% of the T-cell pool and releasing IL-2, interferon-gamma and TNF at once. The organism never needs to enter the blood; the negative cultures are the expected finding, not a contradiction', significance: 'key' },
+    { sign: 'A colonic biopsy in a transplant recipient showing a large cell with one basophilic intranuclear inclusion inside a clear halo, plus smaller granular cytoplasmic inclusions', mechanism: 'Cytomegalovirus. The owl-eye nuclear inclusion alone can be mimicked, but the presence of BOTH nuclear and cytoplasmic inclusions in an enlarged cell is effectively specific, and the enlargement is what gives the virus its name', significance: 'key' },
+    { sign: 'A hepatitis B carrier with an enormous viral load and a persistently normal ALT, who develops a severe hepatitic flare when rituximab is stopped', mechanism: 'HBV is not cytopathic, so ALT tracks CD8 killing of infected hepatocytes rather than viral replication. Suppressing the immune system let the infected cell mass expand in silence; restoring it turned a large, previously tolerated target into simultaneous cytotoxic destruction. The clearest bedside evidence that the host causes the disease', significance: 'key' },
   ],
-  "investigations": [
-    {
-      "clue": "Culture",
-      "meaning": "Can recover viable organisms and support susceptibility testing, but yield depends on sampling and previous therapy."
-    },
-    {
-      "clue": "Nucleic acid amplification",
-      "meaning": "Detects microbial genetic material; a positive result does not always establish viable invasive disease."
-    },
-    {
-      "clue": "Serology",
-      "meaning": "Can reflect exposure or immune response, with timing and immune status affecting interpretation."
-    }
+
+  investigations: [
+    { clue: 'Whether the culture came from a normally sterile site', meaning: 'This single question settles most culture interpretation. Blood, cerebrospinal fluid, joint fluid and deep tissue are sterile, so growth means infection. Sputum, ulcer swabs, catheter urine and tracheal aspirates are not, so growth may be colonisation and must be read against the tissue response and the clinical picture. The rule is categorical, and it is why a swab of an open wound is the least informative specimen routinely sent' },
+    { clue: 'Antitoxin timing, and toxin assays where culture is useless', meaning: 'Antitoxin neutralises only toxin still free in the circulation; once tetanospasmin has been internalised into the neuron no antibody can reach it, so existing spasms do not regress and antitoxin only prevents further binding — which is why it is given on clinical suspicion, before confirmation. The same logic makes culture the wrong test: tetanus is diagnosed clinically and wound culture is positive in only about a third, and botulism is diagnosed by detecting toxin in serum, stool or the food, not by growing the organism' },
+    { clue: 'Endotoxin is heat-stable: sterile is not the same as pyrogen-free', meaning: 'Autoclaving kills the Gram-negative organism and leaves lipid A structurally intact and fully able to engage TLR4. Intravenous fluids, dialysate and implantable devices therefore require depyrogenation — dry heat, ultrafiltration — and are tested by the limulus amoebocyte lysate assay. An exotoxin would have been destroyed by the same autoclave; the difference is protein against lipopolysaccharide' },
+    { clue: 'ALT read against HBV DNA rather than alongside it', meaning: 'ALT is a readout of the cytotoxic T-cell response, and HBV DNA is a readout of the virus, so in hepatitis B they are expected to move in opposite directions. A high DNA with a normal ALT is immune tolerance, not mild disease; a falling DNA with a rising ALT is seroconversion, not treatment failure. Reading ALT as a marker of viral activity inverts both interpretations' },
+    { clue: 'The CD4 count as a predictive instrument rather than a severity score', meaning: 'Because the defect names the organism, the number sets the differential before any specimen is taken. Pneumocystis pneumonia and disseminated toxoplasmosis appear below about 200, cryptococcal meningitis and oesophageal candidiasis below about 100, and CMV retinitis and disseminated Mycobacterium avium complex below about 50. Above 500 the differential reverts to that of an immunocompetent host' },
+    { clue: 'Tissue immunohistochemistry for CMV against a blood PCR', meaning: 'Blood PCR detects viraemia and cannot by itself establish end-organ disease, and in gastrointestinal CMV it is frequently NEGATIVE while the colon is ulcerated — so a negative blood PCR does not exclude tissue-invasive disease and a positive one does not confirm it. Biopsy with immunohistochemistry is what proves invasion, because inclusions on H and E are specific but insensitive' },
   ],
-  "treatment": [
-    {
-      "logic": "Control organism and source",
-      "detail": "Antimicrobial choice depends on the likely or established agent and site; an abscess or infected device may also require source control."
-    },
-    {
-      "logic": "Vaccination can target a toxin",
-      "detail": "Tetanus toxoid induces protective antitoxin responses. This illustrates a strategy for certain toxins, not a universal property of all exotoxins."
-    }
+
+  treatment: [
+    { logic: 'Match the intervention to the route of injury — killing the organism is only one of five options', detail: 'If the injury is **direct cytopathic**, the antiviral or antibiotic is the treatment. If it is **exotoxin already released**, killing the organism achieves nothing: staphylococcal food poisoning and botulism need no antibiotic at all, and in **Shiga-toxin-producing E. coli O157:H7 antibiotics raise the risk of haemolytic uraemic syndrome** because the bacterial SOS response induces the toxin-encoding prophage and increases toxin release. The rule is clean: **when the disease is caused by a toxin that has already been made, killing the organism does not help and may harm.** Where the toxin is still being produced, **clindamycin is added to a beta-lactam in streptococcal necrotising infection precisely because it inhibits ribosomal protein synthesis and switches toxin production off** — and because a beta-lactam loses potency against a stationary-phase high-inoculum organism, the Eagle effect. If the injury is **immune-mediated**, the calculus inverts: corticosteroids are given in tuberculous meningitis and pericarditis, and in severe Pneumocystis pneumonia, because the inflammation is what is killing the patient. If the organism sits in a **biofilm**, the device is removed. And if the damage is **transformation**, prevention is the only mechanism available — which is the argument for the HPV vaccine. The tissue-level consequences of each of these: [[rbp-host-response-infection-patterns]].' },
+    { logic: 'Vaccination is the mechanistic argument made concrete, including where it fails', detail: 'Each vaccine strategy is a direct read-off from the pathogenesis. **Where disease is caused by one exotoxin, the toxoid prevents everything** — formaldehyde-treated tetanus and diphtheria toxin elicits neutralising antitoxin, and the organism is left entirely alone. **You cannot do this with endotoxin**: lipid A is a lipid, weakly antigenic, non-neutralisable, and the injury is a downstream host cytokine programme rather than an enzymatic action to be blocked, which is why anti-endotoxin and anti-TNF sepsis trials have all failed. **Where virulence depends on a capsule, the answer is conjugation**: a bare polysaccharide is a T-independent antigen that infants under two cannot respond to, but coupling it to a protein carrier recruits T-cell help and generates memory — the change that collapsed invasive Haemophilus influenzae type b and pneumococcal disease in children. **Where the organism varies its antigens faster than memory can be built, there is no vaccine**: gonorrhoea has none, HIV has none, and influenza must be reformulated annually because of drift, with shift producing the pandemics. And **where the agent transforms cells, the vaccine prevents a cancer** — HPV immunisation works upstream of E6 and E7 and is the clearest demonstration that infection-driven carcinogenesis is preventable: [[rbp-carcinogenesis-tumour-progression]].' },
   ],
-  "mnemonics": [
+
+  mnemonics: [
     {
-      "hook": "Agent + site + host",
-      "expansion": [
-        "Agent: replication, toxins and evasion.",
-        "Site: portal and tissue tropism.",
-        "Host: barriers, immune status and inflammatory response."
-      ]
-    }
-  ],
-  "traps": [
-    {
-      "questionCategory": "Sepsis mechanism",
-      "wrongInstinct": "Only Gram-negative endotoxin can cause sepsis.",
-      "rightAnswer": "Multiple classes of organisms can provoke dysregulated systemic responses.",
-      "why": "Different microbial molecules activate overlapping innate pathways."
-    },
-    {
-      "questionCategory": "A positive molecular test",
-      "wrongInstinct": "It always proves active invasive disease.",
-      "rightAnswer": "Interpret detection with symptoms, site, timing and assay characteristics.",
-      "why": "Colonisation, residual nucleic acid and latent infection can complicate the result."
-    }
-  ],
-  "quiz": [
-    {
-      "id": "q1",
-      "stem": "Which component of Gram-negative lipopolysaccharide is central to endotoxin activity?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Peptidoglycan alone"
-        },
-        {
-          "id": "b",
-          "text": "Lipid A"
-        },
-        {
-          "id": "c",
-          "text": "Viral capsid"
-        },
-        {
-          "id": "d",
-          "text": "Fungal ergosterol"
-        }
+      hook: 'Exotoxin is a scalpel; endotoxin is a fire alarm',
+      expansion: [
+        'Protein against lipopolysaccharide; secreted by the living against released by the dead when the Gram-negative cell lyses',
+        'One enzymatic target against one stereotyped host cytokine programme — which is why the exotoxin syndrome names the organism and the endotoxin syndrome never does',
+        'Antigenic, neutralisable by antitoxin and convertible to a toxoid, against weakly antigenic with no antitoxin and no toxoid',
+        'Heat-labile at around 60 degrees against heat-stable through the autoclave — which is why sterile intravenous fluid still has to be depyrogenated',
       ],
-      "answerId": "b",
-      "explanation": "Lipid A engages innate recognition through the TLR4-associated pathway and can promote inflammatory and procoagulant responses.",
-      "tests": "mechanism"
     },
     {
-      "id": "q2",
-      "stem": "Why can a tetanus toxoid vaccine protect without containing live bacteria?",
-      "options": [
-        {
-          "id": "a",
-          "text": "It generates neutralising immunity against the toxin"
-        },
-        {
-          "id": "b",
-          "text": "It permanently eliminates every skin wound"
-        },
-        {
-          "id": "c",
-          "text": "It blocks all complement activation"
-        },
-        {
-          "id": "d",
-          "text": "It targets only Gram-negative endotoxin"
-        }
+      hook: 'The defect names the organism',
+      expansion: [
+        'Neutrophils missing or dysfunctional: pyogenic bacteria, plus invasive Aspergillus and Candida',
+        'Terminal complement C5 to C9 missing, or blocked by eculizumab: recurrent Neisseria, and nothing else in particular',
+        'Spleen or antibody missing: encapsulated organisms — pneumococcus, Haemophilus influenzae type b, meningococcus — because opsonisation is the only route past a capsule',
+        'T cells missing: intracellular organisms — Pneumocystis, mycobacteria, Cryptococcus, Toxoplasma, CMV and the endemic dimorphic fungi — with the CD4 count giving the threshold for each',
       ],
-      "answerId": "a",
-      "explanation": "Disease is mediated by tetanus toxin, so an immune response to an inactivated toxin can protect against its effects.",
-      "tests": "mechanism"
+    },
+  ],
+
+  traps: [
+    {
+      questionCategory: 'Whether tissue damage measures organism burden',
+      wrongInstinct: 'Extensive necrosis means a heavy microbial load, so the answer is a more aggressive organism or broader antimicrobial cover',
+      rightAnswer: 'Read the mismatch in both directions. Damage far exceeding the organism count means the HOST RESPONSE is doing the injuring — hepatitis B, tuberculous caseation, immune reconstitution. Organisms swarming with almost no damage means the host response has FAILED — lepromatous leprosy, disseminated mycobacteria in advanced HIV',
+      why: 'Injury is the product of the organism and the response, so either factor can dominate. HBV kills no cells yet produces hepatitis, while the immunotolerant carrier with a viral load in the hundreds of millions has a normal ALT — one virus, both extremes, and the variable is entirely the CD8 response.',
     },
     {
-      "id": "q3",
-      "stem": "A pathogen nucleic acid test remains positive after clinical recovery. Which inference is safest?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Live invasive organisms are necessarily present"
-        },
-        {
-          "id": "b",
-          "text": "Every positive result is contamination"
-        },
-        {
-          "id": "c",
-          "text": "Detection must be interpreted with the assay, sampling site and clinical context"
-        },
-        {
-          "id": "d",
-          "text": "Treatment has certainly failed"
-        }
+      questionCategory: 'Reaching for an antibiotic in a bacterial illness',
+      wrongInstinct: 'The illness is caused by a bacterium, so an antibiotic is always at least part of the answer',
+      rightAnswer: 'If the disease is produced by a toxin that has already been made, killing the organism is useless and can be harmful. Staphylococcal food poisoning and botulism need supportive care and, for botulism, antitoxin; in Shiga-toxin-producing E. coli O157:H7, antibiotics increase the risk of haemolytic uraemic syndrome',
+      why: 'Antibiotics act on the organism, not on a protein already circulating. Worse, killing the organism releases what it contains: the bacterial SOS response induces the Shiga-toxin-encoding prophage, and lysis of Gram-negatives liberates lipid A. The mechanism of the disease, not the class of the pathogen, decides whether an antimicrobial helps.',
+    },
+  ],
+
+  quiz: [
+    {
+      id: 'q1',
+      stem: 'A man with chronic hepatitis B has had an HBV DNA in the hundreds of millions of IU/mL for years with a persistently normal ALT and a liver biopsy showing minimal inflammation. He receives rituximab for lymphoma, and six weeks after the last dose he develops jaundice with an ALT of 2400 and a falling HBV DNA. The best explanation is:',
+      options: [
+        { id: 'a', text: 'Rituximab selected a more cytopathic HBV variant, which is now directly lysing hepatocytes' },
+        { id: 'b', text: 'HBV is not cytopathic; withdrawal of B-cell depletion restored cytotoxic T-cell killing of a greatly expanded pool of infected hepatocytes' },
+        { id: 'c', text: 'The rising ALT reflects rituximab hepatotoxicity and is unrelated to the hepatitis B infection' },
+        { id: 'd', text: 'The falling DNA shows the infection is resolving, so the transaminitis must have a second, unrelated cause' },
       ],
-      "answerId": "c",
-      "explanation": "Nucleic acid detection is not identical to proof of viable organisms or active disease; residual material and other explanations depend on the infection and test.",
-      "tests": "investigation"
-    }
-  ]
+      answerId: 'b',
+      explanation: 'Hepatitis B virus buds rather than lyses and has no direct cytopathic effect, so the hepatitis of hepatitis B is delivered by CD8 cytotoxic T cells recognising viral peptide on MHC class I and killing the hepatocyte. That is why ALT is a readout of the immune response rather than of the virus, and why the two move in opposite directions: the immunotolerant carrier carries an enormous viral load with a normal ALT and a near-normal liver, and seroconversion presents as a falling DNA with a rising ALT. Immunosuppression allowed the infected hepatocyte mass to expand unopposed; restoring the response turned that mass into simultaneous cytotoxic destruction. This is the single clearest bedside demonstration of the chapter thesis, and the same logic explains the flare when antiretrovirals are started in coinfection, the dissemination of contained tuberculosis after TNF blockade, and immune reconstitution inflammatory syndrome, where patients deteriorate as CD4 counts rise and organism burden falls.',
+      tests: 'mechanism',
+    },
+    {
+      id: 'q2',
+      stem: 'A patient passes several litres of painless, odourless watery stool containing flecks of mucus. There is no fever, no blood and no faecal leukocytes, and a duodenal biopsy shows a completely intact mucosa with no inflammatory infiltrate. The molecular event responsible is:',
+      options: [
+        { id: 'a', text: 'Invasion of the enterocyte with intracellular replication, which destroys the brush border while leaving the lamina propria intact' },
+        { id: 'b', text: 'ADP-ribosylation of the Gs alpha subunit, disabling its GTPase so adenylate cyclase is permanently active, raising cAMP and driving PKA phosphorylation of CFTR' },
+        { id: 'c', text: 'Lipid A engagement of TLR4 on the enterocyte, producing a local cytokine-driven secretory response' },
+        { id: 'd', text: 'Cleavage of SNARE proteins in enteric neurons, blocking the inhibitory transmitters that normally restrain secretion' },
+      ],
+      answerId: 'b',
+      explanation: 'This is cholera, and the intact mucosa is the discriminator rather than an incidental detail. The A subunit of cholera toxin ADP-ribosylates an arginine of the Gs alpha subunit, abolishing its intrinsic GTPase activity so adenylate cyclase can never be switched off; cAMP rises, protein kinase A phosphorylates the CFTR chloride channel, and chloride with water follows into the lumen at up to a litre an hour. Nothing is invaded and nothing is killed, which is precisely why the stool is painless and free of blood and leukocytes, why there is no fever, and why the biopsy is normal — the whole illness is a signalling lesion, and the death is from hypovolaemia. Enterotoxigenic E. coli heat-labile toxin does the same thing, and pertussis toxin reaches the same cAMP endpoint by ADP-ribosylating Gi instead. Option a describes an invasive pathogen, which would produce dysentery with an abnormal biopsy; option c describes endotoxin signalling; option d is the tetanus and botulinum mechanism.',
+      tests: 'mechanism',
+    },
+    {
+      id: 'q3',
+      stem: 'A student asks why an effective toxoid vaccine exists for tetanus and diphtheria but no equivalent has ever been produced against the endotoxin of Gram-negative sepsis, despite decades of trials. The most complete answer is:',
+      options: [
+        { id: 'a', text: 'Endotoxin is released only after the organism lyses, so by the time it appears the patient is already too unwell for any vaccine to matter' },
+        { id: 'b', text: 'Lipid A is a lipopolysaccharide rather than a protein: it is weakly antigenic, cannot be formaldehyde-treated into an immunogenic toxoid, and the injury is a downstream stereotyped host cytokine programme rather than a single enzymatic action that antibody could block' },
+        { id: 'c', text: 'Endotoxin is destroyed by heat during vaccine manufacture, so no stable preparation can be made' },
+        { id: 'd', text: 'Gram-negative organisms vary their lipid A structure as rapidly as influenza varies haemagglutinin, so any vaccine is outrun within a season' },
+      ],
+      answerId: 'b',
+      explanation: 'A toxoid works because an exotoxin is a protein with a single enzymatic target: it is strongly antigenic, formaldehyde treatment abolishes the catalytic activity while preserving the epitopes, and the resulting neutralising antibody intercepts the toxin before it reaches elongation factor 2 or a SNARE protein. Endotoxin breaks every one of those conditions. It is a lipopolysaccharide and therefore a poor immunogen with no protein to inactivate; more fundamentally, it has no enzymatic action to neutralise, because the injury is produced by the host — lipid A engages TLR4 through LBP, CD14 and MD-2, and NF-kappaB releases TNF, IL-1, IL-6 and endothelial tissue factor, giving a stereotyped programme of fever, vasodilatation, capillary leak and disseminated intravascular coagulation. That is why both anti-endotoxin and anti-TNF trials failed. Option c states the opposite of the truth: endotoxin is heat-stable and survives autoclaving, which is why intravenous fluids must be depyrogenated rather than merely sterilised. Option d confuses it with antigenic variation, and option a misidentifies what a vaccine would be for.',
+      tests: 'treatment',
+    },
+  ],
 };
 
 export default rbpInfectiousAgentsInjuryMechanisms;

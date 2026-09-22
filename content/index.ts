@@ -1800,6 +1800,17 @@ import rbpCirrhosisPortal from './lectures/rbp-cirrhosis-portal-hypertension';
 import rbpCholestasisBiliary from './lectures/rbp-cholestasis-biliary-liver-tumours';
 import rbpPancreatitis from './lectures/rbp-pancreatitis-acute-chronic';
 import rbpPancreaticNeoplasia from './lectures/rbp-pancreatic-neoplasia';
+import rbpTestisPenis from './lectures/rbp-testis-penis-pathology';
+import rbpProstate from './lectures/rbp-prostate-pathology';
+import rbpLowerUrinary from './lectures/rbp-lower-urinary-tract-pathology';
+import rbpCervixVulva from './lectures/rbp-cervix-vulva-vagina-pathology';
+import rbpUterineCorpus from './lectures/rbp-uterine-corpus-pathology';
+import rbpOvarianPlacental from './lectures/rbp-ovarian-placental-pathology';
+import rbpBreastPathology from './lectures/rbp-breast-pathology';
+import rbpPituitaryPathology from './lectures/rbp-pituitary-pathology';
+import rbpThyroidPathology from './lectures/rbp-thyroid-pathology';
+import rbpAdrenalPathology from './lectures/rbp-adrenal-pathology';
+import rbpParathyroidMen from './lectures/rbp-parathyroid-endocrine-neoplasia';
 
 export * from './curriculum';
 
@@ -3153,6 +3164,12 @@ export const lectures: Lecture[] = [
   rbpHepaticInjury, rbpCirrhosisPortal,
   rbpCholestasisBiliary, rbpPancreatitis,
   rbpPancreaticNeoplasia,
+  rbpTestisPenis, rbpProstate,
+  rbpLowerUrinary, rbpCervixVulva,
+  rbpUterineCorpus, rbpOvarianPlacental,
+  rbpBreastPathology, rbpPituitaryPathology,
+  rbpThyroidPathology, rbpAdrenalPathology,
+  rbpParathyroidMen,
 ];
 
 // Register the additional-topic sources → subject so they group and resolve
